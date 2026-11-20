@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="456" viewBox="0 0 1180 456">
+<rect width="1180" height="456" fill="#ffffff"/>
+<style>text { font-family: -apple-system, Helvetica, Arial, sans-serif; fill: #1f2937; }</style>
+<rect x="86" y="42" width="472" height="352" fill="#fafafa" stroke="#374151" stroke-width="1.5"/>
+<text x="322.0" y="29.0" text-anchor="middle" font-size="14.6" font-weight="700">(a) Cubic-Grid Wire Stretching Penalty</text>
+<text x="322.0" y="435.0" text-anchor="middle" font-size="13.4" font-weight="600">Inverse Bath Temperature β = 1 / T (Colder →)</text>
+<text x="28.0" y="218.0" text-anchor="middle" font-size="13.4" font-weight="600" transform="rotate(-90 28.0 218.0)">Quantum Memory Lifetime</text>
+<line x1="113.8" y1="42" x2="113.8" y2="394" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="113.8" y1="394" x2="113.8" y2="399" stroke="#374151" stroke-width="1.2"/>
+<text x="113.8" y="414" text-anchor="middle" font-size="12.0">5.5</text>
+<line x1="252.6" y1="42" x2="252.6" y2="394" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="252.6" y1="394" x2="252.6" y2="399" stroke="#374151" stroke-width="1.2"/>
+<text x="252.6" y="414" text-anchor="middle" font-size="12.0">6.0</text>
+<line x1="391.4" y1="42" x2="391.4" y2="394" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="391.4" y1="394" x2="391.4" y2="399" stroke="#374151" stroke-width="1.2"/>
+<text x="391.4" y="414" text-anchor="middle" font-size="12.0">6.5</text>
+<line x1="530.2" y1="42" x2="530.2" y2="394" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="530.2" y1="394" x2="530.2" y2="399" stroke="#374151" stroke-width="1.2"/>
+<text x="530.2" y="414" text-anchor="middle" font-size="12.0">7.0</text>
+<line x1="86" y1="382.0" x2="558" y2="382.0" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="382.0" x2="86" y2="382.0" stroke="#374151" stroke-width="1.2"/>
+<text x="78" y="386.5" text-anchor="end" font-size="12.0">10²</text>
+<line x1="86" y1="304.7" x2="558" y2="304.7" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="304.7" x2="86" y2="304.7" stroke="#374151" stroke-width="1.2"/>
+<text x="78" y="309.2" text-anchor="end" font-size="12.0">10³</text>
+<line x1="86" y1="227.4" x2="558" y2="227.4" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="227.4" x2="86" y2="227.4" stroke="#374151" stroke-width="1.2"/>
+<text x="78" y="231.9" text-anchor="end" font-size="12.0">10⁴</text>
+<line x1="86" y1="150.1" x2="558" y2="150.1" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="150.1" x2="86" y2="150.1" stroke="#374151" stroke-width="1.2"/>
+<text x="78" y="154.6" text-anchor="end" font-size="12.0">10⁵</text>
+<line x1="86" y1="72.8" x2="558" y2="72.8" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="72.8" x2="86" y2="72.8" stroke="#374151" stroke-width="1.2"/>
+<text x="78" y="77.3" text-anchor="end" font-size="12.0">10⁶</text>
+<polyline fill="none" stroke="#059669" stroke-width="2.9" points="113.8,234.4 252.6,194.1 391.4,138.5 530.2,80.7"/>
+<circle cx="113.8" cy="234.4" r="4.7" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="252.6" cy="194.1" r="4.7" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="391.4" cy="138.5" r="4.7" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="530.2" cy="80.7" r="4.7" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#2563eb" stroke-width="2.9" points="113.8,341.4 252.6,289.4 391.4,245.3 530.2,195.2"/>
+<circle cx="113.8" cy="341.4" r="4.7" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="252.6" cy="289.4" r="4.7" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="391.4" cy="245.3" r="4.7" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="530.2" cy="195.2" r="4.7" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#dc2626" stroke-width="2.9" points="113.8,380.4 252.6,357.8 391.4,332.2"/>
+<circle cx="113.8" cy="380.4" r="4.7" fill="#dc2626" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="252.6" cy="357.8" r="4.7" fill="#dc2626" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="391.4" cy="332.2" r="4.7" fill="#dc2626" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="391.4" y1="146.5" x2="391.4" y2="324.2" stroke="#b91c1c" stroke-width="2.0" stroke-dasharray="3,3"/>
+<polygon points="391.4,140.5 386.9,148.5 395.9,148.5" fill="#b91c1c"/>
+<polygon points="391.4,330.2 386.9,322.2 395.9,322.2" fill="#b91c1c"/>
+<text x="399.9" y="192.3" text-anchor="start" font-size="12.2" font-weight="700" fill="#b91c1c">321× loss</text>
+<rect x="96.0" y="52.0" width="308.0" height="68.8" rx="6" fill="#ffffff" fill-opacity="0.96" stroke="#d1d5db" stroke-width="1.1"/>
+<line x1="104.0" y1="63.8" x2="125.0" y2="63.8" stroke="#059669" stroke-width="2.7"/>
+<circle cx="114.5" cy="63.8" r="3.9" fill="#059669"/>
+<text x="132.0" y="67.8" font-size="11.5">Unstretched Graph (3,3) (1,480 qubits)</text>
+<line x1="104.0" y1="83.4" x2="125.0" y2="83.4" stroke="#2563eb" stroke-width="2.7"/>
+<circle cx="114.5" cy="83.4" r="3.9" fill="#2563eb"/>
+<text x="132.0" y="87.4" font-size="11.5">Tighter Cubic Grid (4,6) (10,280 qubits)</text>
+<line x1="104.0" y1="103.0" x2="125.0" y2="103.0" stroke="#dc2626" stroke-width="2.7"/>
+<circle cx="114.5" cy="103.0" r="3.9" fill="#dc2626"/>
+<text x="132.0" y="107.0" font-size="11.5">Scale-8 Cubic Grid (8,8) (56,312 qubits)</text>
+<rect x="676" y="42" width="472" height="352" fill="#fafafa" stroke="#374151" stroke-width="1.5"/>
+<text x="912.0" y="29.0" text-anchor="middle" font-size="14.6" font-weight="700">(b) Closing the X / Z Sector Imbalance</text>
+<text x="912.0" y="435.0" text-anchor="middle" font-size="13.4" font-weight="600">Inverse Bath Temperature β = 1 / T (Colder →)</text>
+<text x="618.0" y="218.0" text-anchor="middle" font-size="13.4" font-weight="600" transform="rotate(-90 618.0 218.0)">Mean Sector / Memory Lifetime</text>
+<line x1="697.5" y1="42" x2="697.5" y2="394" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="697.5" y1="394" x2="697.5" y2="399" stroke="#374151" stroke-width="1.2"/>
+<text x="697.5" y="414" text-anchor="middle" font-size="12.0">5.0</text>
+<line x1="804.7" y1="42" x2="804.7" y2="394" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="804.7" y1="394" x2="804.7" y2="399" stroke="#374151" stroke-width="1.2"/>
+<text x="804.7" y="414" text-anchor="middle" font-size="12.0">5.5</text>
+<line x1="912.0" y1="42" x2="912.0" y2="394" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="912.0" y1="394" x2="912.0" y2="399" stroke="#374151" stroke-width="1.2"/>
+<text x="912.0" y="414" text-anchor="middle" font-size="12.0">6.0</text>
+<line x1="1019.3" y1="42" x2="1019.3" y2="394" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="1019.3" y1="394" x2="1019.3" y2="399" stroke="#374151" stroke-width="1.2"/>
+<text x="1019.3" y="414" text-anchor="middle" font-size="12.0">6.5</text>
+<line x1="1126.5" y1="42" x2="1126.5" y2="394" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="1126.5" y1="394" x2="1126.5" y2="399" stroke="#374151" stroke-width="1.2"/>
+<text x="1126.5" y="414" text-anchor="middle" font-size="12.0">7.0</text>
+<line x1="676" y1="350.2" x2="1148" y2="350.2" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="350.2" x2="676" y2="350.2" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="354.7" text-anchor="end" font-size="12.0">10⁴</text>
+<line x1="676" y1="302.6" x2="1148" y2="302.6" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="302.6" x2="676" y2="302.6" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="307.1" text-anchor="end" font-size="12.0">10⁵</text>
+<line x1="676" y1="255.0" x2="1148" y2="255.0" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="255.0" x2="676" y2="255.0" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="259.5" text-anchor="end" font-size="12.0">10⁶</text>
+<line x1="676" y1="207.4" x2="1148" y2="207.4" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="207.4" x2="676" y2="207.4" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="211.9" text-anchor="end" font-size="12.0">10⁷</text>
+<line x1="676" y1="159.9" x2="1148" y2="159.9" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="159.9" x2="676" y2="159.9" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="164.4" text-anchor="end" font-size="12.0">10⁸</text>
+<line x1="676" y1="112.3" x2="1148" y2="112.3" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="112.3" x2="676" y2="112.3" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="116.8" text-anchor="end" font-size="12.0">10⁹</text>
+<line x1="676" y1="64.7" x2="1148" y2="64.7" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="64.7" x2="676" y2="64.7" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="69.2" text-anchor="end" font-size="12.0">10¹⁰</text>
+<polyline fill="none" stroke="#2563eb" stroke-width="2.9" stroke-dasharray="6,4" points="804.7,219.3 912.0,172.8 1019.3,117.9"/>
+<circle cx="804.7" cy="219.3" r="4.7" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="912.0" cy="172.8" r="4.7" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1019.3" cy="117.9" r="4.7" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#059669" stroke-width="2.9" points="697.5,346.6 804.7,299.7 912.0,249.6 1019.3,190.4 1126.5,146.7"/>
+<circle cx="697.5" cy="346.6" r="4.7" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="804.7" cy="299.7" r="4.7" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="912.0" cy="249.6" r="4.7" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1019.3" cy="190.4" r="4.7" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1126.5" cy="146.7" r="4.7" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#dc2626" stroke-width="2.9" points="697.5,381.3 804.7,341.7 912.0,301.7 1019.3,273.8 1126.5,237.8"/>
+<circle cx="697.5" cy="381.3" r="4.7" fill="#dc2626" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="804.7" cy="341.7" r="4.7" fill="#dc2626" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="912.0" cy="301.7" r="4.7" fill="#dc2626" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1019.3" cy="273.8" r="4.7" fill="#dc2626" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1126.5" cy="237.8" r="4.7" fill="#dc2626" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="1019.3" y1="198.4" x2="1019.3" y2="265.8" stroke="#047857" stroke-width="2.0" stroke-dasharray="3,3"/>
+<polygon points="1019.3,192.4 1014.8,200.4 1023.8,200.4" fill="#047857"/>
+<polygon points="1019.3,271.8 1014.8,263.8 1023.8,263.8" fill="#047857"/>
+<text x="1027.8" y="236.3" text-anchor="start" font-size="12.2" font-weight="700" fill="#047857">57× gain</text>
+<rect x="686.0" y="52.0" width="308.0" height="68.8" rx="6" fill="#ffffff" fill-opacity="0.96" stroke="#d1d5db" stroke-width="1.1"/>
+<line x1="694.0" y1="63.8" x2="715.0" y2="63.8" stroke="#2563eb" stroke-width="2.7" stroke-dasharray="6,4"/>
+<circle cx="704.5" cy="63.8" r="3.9" fill="#2563eb"/>
+<text x="722.0" y="67.8" font-size="11.5">508-Qubit Torus: Z-Errors Alone (strong)</text>
+<line x1="694.0" y1="83.4" x2="715.0" y2="83.4" stroke="#059669" stroke-width="2.7"/>
+<circle cx="704.5" cy="83.4" r="3.9" fill="#059669"/>
+<text x="722.0" y="87.4" font-size="11.5">Balanced 2→1 Bridges (1,172q: 57× gain)</text>
+<line x1="694.0" y1="103.0" x2="715.0" y2="103.0" stroke="#dc2626" stroke-width="2.7"/>
+<circle cx="704.5" cy="103.0" r="3.9" fill="#dc2626"/>
+<text x="722.0" y="107.0" font-size="11.5">508-Qubit Torus: X-Errors (bottleneck)</text>
+</svg>

@@ -1,0 +1,94 @@
+kmc__sq_rx_iso_s0_X_err__uniform__gain_uf__b1.60 | KMC dec=maj_uf beta=1.60 N=2 K=1 trials=36 mean_t=4.3846e+00 sem_t=6.8620e-01 median_t=3.2367e+00 mean_flips=2.1 bails=0 capped=0
+kmc__sq_rx_iso_s0_X_err__uniform__gain_uf__b2.08 | KMC dec=maj_uf beta=2.08 N=2 K=1 trials=36 mean_t=4.0541e+00 sem_t=5.4571e-01 median_t=3.3394e+00 mean_flips=1.6 bails=0 capped=0
+kmc__sq_rx_iso_s1_X_err__uniform__gain_uf__b1.60 | KMC dec=maj_uf beta=1.60 N=19 K=1 trials=36 mean_t=8.6159e+00 sem_t=1.3491e+00 median_t=5.8647e+00 mean_flips=32.8 bails=0 capped=0
+kmc__sq_rx_iso_s1_X_err__uniform__gain_uf__b2.08 | KMC dec=maj_uf beta=2.08 N=19 K=1 trials=36 mean_t=1.6601e+01 sem_t=2.7737e+00 median_t=1.2090e+01 mean_flips=39.1 bails=0 capped=0
+kmc__sq_rx_iso_s2_X_err__uniform__gain_uf__b1.60 | KMC dec=maj_uf beta=1.60 N=203 K=1 trials=36 mean_t=1.4023e+01 sem_t=1.1013e+00 median_t=1.4140e+01 mean_flips=366.8 bails=0 capped=0
+kmc__sq_rx_iso_s2_X_err__uniform__gain_uf__b2.08 | KMC dec=maj_uf beta=2.08 N=203 K=1 trials=36 mean_t=9.6341e+01 sem_t=1.3698e+01 median_t=8.0111e+01 mean_flips=1489.7 bails=0 capped=0
+kmc__sq_rx_iso_s3_X_err__uniform__gain_uf__b1.60 | KMC dec=maj_uf beta=1.60 N=2311 K=1 trials=36 mean_t=1.4929e+01 sem_t=1.6046e+00 median_t=1.2948e+01 mean_flips=3518.7 bails=0 capped=0
+kmc__sq_rx_iso_s3_X_err__uniform__gain_uf__b2.08 | KMC dec=maj_uf beta=2.08 N=2311 K=1 trials=36 mean_t=1.8875e+02 sem_t=1.7226e+01 median_t=1.6657e+02 mean_flips=21025.0 bails=0 capped=0
+kmc__sq_rx_iso_s4_X_err__uniform__gain_uf__b1.60 | KMC dec=maj_uf beta=1.60 N=27107 K=1 trials=36 mean_t=1.4367e+01 sem_t=8.6333e-01 median_t=1.3508e+01 mean_flips=33196.0 bails=0 capped=0
+kmc__sq_rx_iso_s4_X_err__uniform__gain_uf__b2.08 | KMC dec=maj_uf beta=2.08 N=27107 K=1 trials=36 mean_t=1.7136e+02 sem_t=1.6389e+01 median_t=1.6425e+02 mean_flips=159316.2 bails=0 capped=0
+kmc__rottor_rx_s0_X_err__uniform__gain_uf__b1.60 | KMC dec=maj_uf beta=1.60 N=4 K=2 trials=36 mean_t=7.0778e+00 sem_t=1.0171e+00 median_t=4.8810e+00 mean_flips=1.5 bails=0 capped=0
+kmc__rottor_rx_s0_X_err__uniform__gain_uf__b2.08 | KMC dec=maj_uf beta=2.08 N=4 K=2 trials=36 mean_t=2.5418e+01 sem_t=5.1419e+00 median_t=1.3229e+01 mean_flips=1.6 bails=0 capped=0
+kmc__rottor_rx_s1_X_err__uniform__gain_uf__b1.60 | KMC dec=maj_uf beta=1.60 N=38 K=2 trials=36 mean_t=6.8303e+00 sem_t=1.1544e+00 median_t=4.6004e+00 mean_flips=25.2 bails=0 capped=0
+kmc__rottor_rx_s1_X_err__uniform__gain_uf__b2.08 | KMC dec=maj_uf beta=2.08 N=38 K=2 trials=36 mean_t=1.6539e+01 sem_t=3.3358e+00 median_t=1.0207e+01 mean_flips=26.8 bails=0 capped=0
+kmc__rottor_rx_s2_X_err__uniform__gain_uf__b1.60 | KMC dec=maj_uf beta=1.60 N=332 K=2 trials=36 mean_t=7.6465e+00 sem_t=6.9045e-01 median_t=6.5555e+00 mean_flips=233.5 bails=0 capped=0
+kmc__rottor_rx_s2_X_err__uniform__gain_uf__b2.08 | KMC dec=maj_uf beta=2.08 N=332 K=2 trials=36 mean_t=3.4320e+01 sem_t=3.6779e+00 median_t=2.8008e+01 mean_flips=528.0 bails=0 capped=0
+kmc__rottor_rx_s3_X_err__uniform__gain_uf__b1.60 | KMC dec=maj_uf beta=1.60 N=3100 K=2 trials=36 mean_t=8.5001e+00 sem_t=3.9911e-01 median_t=8.0249e+00 mean_flips=2028.6 bails=0 capped=0
+kmc__rottor_rx_s3_X_err__uniform__gain_uf__b2.08 | KMC dec=maj_uf beta=2.08 N=3100 K=2 trials=36 mean_t=4.9011e+01 sem_t=3.9038e+00 median_t=4.2718e+01 mean_flips=5493.2 bails=0 capped=0
+kmc__sq_rx_iso_s0_X_err__uniform__gain_uf__b1.75 | KMC dec=maj_uf beta=1.75 N=2 K=1 trials=36 mean_t=4.9608e+00 sem_t=6.5388e-01 median_t=3.9792e+00 mean_flips=2.0 bails=0 capped=0
+kmc__sq_rx_iso_s0_X_err__uniform__gain_uf__b2.15 | KMC dec=maj_uf beta=2.15 N=2 K=1 trials=36 mean_t=5.9462e+00 sem_t=9.8512e-01 median_t=3.6962e+00 mean_flips=1.8 bails=0 capped=0
+kmc__sq_rx_iso_s1_X_err__uniform__gain_uf__b1.75 | KMC dec=maj_uf beta=1.75 N=19 K=1 trials=36 mean_t=1.1866e+01 sem_t=2.1343e+00 median_t=6.8181e+00 mean_flips=36.4 bails=0 capped=0
+kmc__sq_rx_iso_s1_X_err__uniform__gain_uf__b2.15 | KMC dec=maj_uf beta=2.15 N=19 K=1 trials=36 mean_t=2.3337e+01 sem_t=5.7257e+00 median_t=1.6706e+01 mean_flips=55.1 bails=0 capped=0
+kmc__sq_rx_iso_s2_X_err__uniform__gain_uf__b1.75 | KMC dec=maj_uf beta=1.75 N=203 K=1 trials=36 mean_t=2.1846e+01 sem_t=2.6162e+00 median_t=1.6576e+01 mean_flips=493.7 bails=0 capped=0
+kmc__sq_rx_iso_s2_X_err__uniform__gain_uf__b2.15 | KMC dec=maj_uf beta=2.15 N=203 K=1 trials=36 mean_t=1.3551e+02 sem_t=2.7154e+01 median_t=6.7157e+01 mean_flips=1890.8 bails=0 capped=0
+kmc__sq_rx_iso_s3_X_err__uniform__gain_uf__b1.75 | KMC dec=maj_uf beta=1.75 N=2311 K=1 trials=36 mean_t=2.7839e+01 sem_t=4.6838e+00 median_t=2.1301e+01 mean_flips=5514.1 bails=0 capped=0
+kmc__sq_rx_iso_s3_X_err__uniform__gain_uf__b2.15 | KMC dec=maj_uf beta=2.15 N=2311 K=1 trials=36 mean_t=4.3336e+02 sem_t=6.2766e+01 median_t=2.9648e+02 mean_flips=41524.9 bails=0 capped=0
+kmc__sq_rx_iso_s4_X_err__uniform__gain_uf__b1.75 | KMC dec=maj_uf beta=1.75 N=27107 K=1 trials=36 mean_t=1.9160e+01 sem_t=8.5494e-01 median_t=1.7346e+01 mean_flips=32367.9 bails=0 capped=0
+kmc__sq_rx_iso_s4_X_err__uniform__gain_uf__b2.15 | KMC dec=maj_uf beta=2.15 N=27107 K=1 trials=36 mean_t=5.5983e+02 sem_t=6.2432e+01 median_t=4.0068e+02 mean_flips=439253.2 bails=0 capped=0
+kmc__rottor_rx_s0_X_err__uniform__gain_uf__b1.75 | KMC dec=maj_uf beta=1.75 N=4 K=2 trials=36 mean_t=9.5508e+00 sem_t=1.3169e+00 median_t=8.1447e+00 mean_flips=1.5 bails=0 capped=0
+kmc__rottor_rx_s0_X_err__uniform__gain_uf__b2.15 | KMC dec=maj_uf beta=2.15 N=4 K=2 trials=36 mean_t=1.6488e+01 sem_t=2.2387e+00 median_t=1.4758e+01 mean_flips=1.4 bails=0 capped=0
+kmc__rottor_rx_s1_X_err__uniform__gain_uf__b1.75 | KMC dec=maj_uf beta=1.75 N=38 K=2 trials=36 mean_t=6.9427e+00 sem_t=1.0937e+00 median_t=5.1890e+00 mean_flips=22.6 bails=0 capped=0
+kmc__rottor_rx_s1_X_err__uniform__gain_uf__b2.15 | KMC dec=maj_uf beta=2.15 N=38 K=2 trials=36 mean_t=2.4245e+01 sem_t=4.3563e+00 median_t=1.3612e+01 mean_flips=40.2 bails=0 capped=0
+kmc__rottor_rx_s2_X_err__uniform__gain_uf__b1.75 | KMC dec=maj_uf beta=1.75 N=332 K=2 trials=36 mean_t=1.1091e+01 sem_t=8.3739e-01 median_t=1.0395e+01 mean_flips=278.1 bails=0 capped=0
+kmc__rottor_rx_s2_X_err__uniform__gain_uf__b2.15 | KMC dec=maj_uf beta=2.15 N=332 K=2 trials=36 mean_t=4.1020e+01 sem_t=3.8675e+00 median_t=3.6415e+01 mean_flips=558.5 bails=0 capped=0
+kmc__rottor_rx_s3_X_err__uniform__gain_uf__b1.75 | KMC dec=maj_uf beta=1.75 N=3100 K=2 trials=36 mean_t=1.3011e+01 sem_t=5.0501e-01 median_t=1.2220e+01 mean_flips=2542.4 bails=0 capped=0
+kmc__rottor_rx_s3_X_err__uniform__gain_uf__b2.15 | KMC dec=maj_uf beta=2.15 N=3100 K=2 trials=36 mean_t=6.5307e+01 sem_t=3.6867e+00 median_t=6.0270e+01 mean_flips=6238.0 bails=0 capped=0
+kmc__sq_rx_iso_s0_X_err__uniform__gain_uf__b1.90 | KMC dec=maj_uf beta=1.90 N=2 K=1 trials=36 mean_t=5.5393e+00 sem_t=9.0442e-01 median_t=3.6184e+00 mean_flips=1.8 bails=0 capped=0
+kmc__sq_rx_iso_s0_X_err__uniform__gain_uf__b2.22 | KMC dec=maj_uf beta=2.22 N=2 K=1 trials=36 mean_t=6.3602e+00 sem_t=9.6145e-01 median_t=5.1672e+00 mean_flips=2.1 bails=0 capped=0
+kmc__sq_rx_iso_s1_X_err__uniform__gain_uf__b1.90 | KMC dec=maj_uf beta=1.90 N=19 K=1 trials=36 mean_t=1.1826e+01 sem_t=1.4266e+00 median_t=1.1069e+01 mean_flips=32.6 bails=0 capped=0
+kmc__sq_rx_iso_s1_X_err__uniform__gain_uf__b2.22 | KMC dec=maj_uf beta=2.22 N=19 K=1 trials=36 mean_t=2.2092e+01 sem_t=3.2126e+00 median_t=1.8148e+01 mean_flips=41.9 bails=0 capped=0
+kmc__sq_rx_iso_s2_X_err__uniform__gain_uf__b1.90 | KMC dec=maj_uf beta=1.90 N=203 K=1 trials=36 mean_t=4.4440e+01 sem_t=5.6118e+00 median_t=3.7995e+01 mean_flips=851.3 bails=0 capped=0
+kmc__sq_rx_iso_s2_X_err__uniform__gain_uf__b2.22 | KMC dec=maj_uf beta=2.22 N=203 K=1 trials=36 mean_t=1.5471e+02 sem_t=2.2849e+01 median_t=1.2317e+02 mean_flips=2028.0 bails=0 capped=0
+kmc__sq_rx_iso_s3_X_err__uniform__gain_uf__b1.90 | KMC dec=maj_uf beta=1.90 N=2311 K=1 trials=36 mean_t=4.4169e+01 sem_t=3.6218e+00 median_t=4.0831e+01 mean_flips=6521.3 bails=0 capped=0
+kmc__sq_rx_iso_s3_X_err__uniform__gain_uf__b2.22 | KMC dec=maj_uf beta=2.22 N=2311 K=1 trials=36 mean_t=1.3703e+03 sem_t=2.1510e+02 median_t=9.6482e+02 mean_flips=112179.5 bails=0 capped=0
+kmc__sq_rx_iso_s4_X_err__uniform__gain_uf__b1.90 | KMC dec=maj_uf beta=1.90 N=27107 K=1 trials=36 mean_t=4.1236e+01 sem_t=1.9308e+00 median_t=3.9456e+01 mean_flips=55980.3 bails=0 capped=0
+kmc__sq_rx_iso_s4_X_err__uniform__gain_uf__b2.22 | KMC dec=maj_uf beta=2.22 N=27107 K=1 trials=36 mean_t=2.3177e+03 sem_t=2.9229e+02 median_t=1.5627e+03 mean_flips=1407134.2 bails=0 capped=0
+kmc__rottor_rx_s0_X_err__uniform__gain_uf__b1.90 | KMC dec=maj_uf beta=1.90 N=4 K=2 trials=36 mean_t=1.0095e+01 sem_t=1.5716e+00 median_t=6.5016e+00 mean_flips=1.3 bails=0 capped=0
+kmc__rottor_rx_s0_X_err__uniform__gain_uf__b2.22 | KMC dec=maj_uf beta=2.22 N=4 K=2 trials=36 mean_t=2.4888e+01 sem_t=4.4836e+00 median_t=1.7191e+01 mean_flips=1.1 bails=0 capped=0
+kmc__rottor_rx_s1_X_err__uniform__gain_uf__b1.90 | KMC dec=maj_uf beta=1.90 N=38 K=2 trials=36 mean_t=1.4066e+01 sem_t=1.8354e+00 median_t=9.5771e+00 mean_flips=31.4 bails=0 capped=0
+kmc__rottor_rx_s1_X_err__uniform__gain_uf__b2.22 | KMC dec=maj_uf beta=2.22 N=38 K=2 trials=36 mean_t=2.4571e+01 sem_t=4.3227e+00 median_t=1.7460e+01 mean_flips=34.4 bails=0 capped=0
+kmc__rottor_rx_s2_X_err__uniform__gain_uf__b1.90 | KMC dec=maj_uf beta=1.90 N=332 K=2 trials=36 mean_t=1.5935e+01 sem_t=2.2614e+00 median_t=1.3116e+01 mean_flips=330.3 bails=0 capped=0
+kmc__rottor_rx_s2_X_err__uniform__gain_uf__b2.22 | KMC dec=maj_uf beta=2.22 N=332 K=2 trials=36 mean_t=5.3862e+01 sem_t=6.8759e+00 median_t=4.2959e+01 mean_flips=663.5 bails=0 capped=0
+kmc__rottor_rx_s3_X_err__uniform__gain_uf__b1.90 | KMC dec=maj_uf beta=1.90 N=3100 K=2 trials=36 mean_t=2.1550e+01 sem_t=9.9101e-01 median_t=2.0284e+01 mean_flips=3376.6 bails=0 capped=0
+kmc__rottor_rx_s3_X_err__uniform__gain_uf__b2.22 | KMC dec=maj_uf beta=2.22 N=3100 K=2 trials=36 mean_t=1.1054e+02 sem_t=8.7424e+00 median_t=1.0398e+02 mean_flips=8775.4 bails=0 capped=0
+kmc__sq_rx_iso_s0_X_err__uniform__gain_uf__b2.00 | KMC dec=maj_uf beta=2.00 N=2 K=1 trials=36 mean_t=7.0747e+00 sem_t=1.2675e+00 median_t=5.3860e+00 mean_flips=1.7 bails=0 capped=0
+kmc__sq_rx_iso_s0_X_err__uniform__gain_uf__b2.28 | KMC dec=maj_uf beta=2.28 N=2 K=1 trials=36 mean_t=1.0358e+01 sem_t=1.7302e+00 median_t=8.0064e+00 mean_flips=2.4 bails=0 capped=0
+kmc__sq_rx_iso_s1_X_err__uniform__gain_uf__b2.00 | KMC dec=maj_uf beta=2.00 N=19 K=1 trials=36 mean_t=2.4360e+01 sem_t=4.7291e+00 median_t=9.6550e+00 mean_flips=61.0 bails=0 capped=0
+kmc__sq_rx_iso_s1_X_err__uniform__gain_uf__b2.28 | KMC dec=maj_uf beta=2.28 N=19 K=1 trials=36 mean_t=2.1866e+01 sem_t=3.9105e+00 median_t=1.2114e+01 mean_flips=45.4 bails=0 capped=0
+kmc__sq_rx_iso_s2_X_err__uniform__gain_uf__b2.00 | KMC dec=maj_uf beta=2.00 N=203 K=1 trials=36 mean_t=6.2041e+01 sem_t=1.0633e+01 median_t=4.3580e+01 mean_flips=1038.5 bails=0 capped=0
+kmc__sq_rx_iso_s2_X_err__uniform__gain_uf__b2.28 | KMC dec=maj_uf beta=2.28 N=203 K=1 trials=36 mean_t=3.9984e+02 sem_t=1.3416e+02 median_t=2.2848e+02 mean_flips=4801.0 bails=0 capped=0
+kmc__sq_rx_iso_s3_X_err__uniform__gain_uf__b2.00 | KMC dec=maj_uf beta=2.00 N=2311 K=1 trials=36 mean_t=1.0108e+02 sem_t=1.1721e+01 median_t=7.5458e+01 mean_flips=13242.8 bails=0 capped=0
+kmc__sq_rx_iso_s3_X_err__uniform__gain_uf__b2.28 | KMC dec=maj_uf beta=2.28 N=2311 K=1 trials=36 mean_t=4.2498e+03 sem_t=1.3363e+03 median_t=2.2024e+03 mean_flips=308309.7 bails=0 capped=0
+kmc__sq_rx_iso_s4_X_err__uniform__gain_uf__b2.00 | KMC dec=maj_uf beta=2.00 N=27107 K=1 trials=36 mean_t=8.1442e+01 sem_t=5.3974e+00 median_t=7.7066e+01 mean_flips=91627.8 bails=0 capped=0
+kmc__sq_rx_iso_s4_X_err__uniform__gain_uf__b2.28 | KMC dec=maj_uf beta=2.28 N=27107 K=1 trials=36 mean_t=7.8593e+04 sem_t=1.7345e+04 median_t=3.9442e+04 mean_flips=37361869.4 bails=0 capped=0
+kmc__rottor_rx_s0_X_err__uniform__gain_uf__b2.00 | KMC dec=maj_uf beta=2.00 N=4 K=2 trials=36 mean_t=1.3754e+01 sem_t=2.3417e+00 median_t=8.6716e+00 mean_flips=1.3 bails=0 capped=0
+kmc__rottor_rx_s0_X_err__uniform__gain_uf__b2.28 | KMC dec=maj_uf beta=2.28 N=4 K=2 trials=36 mean_t=2.5053e+01 sem_t=4.5772e+00 median_t=1.9171e+01 mean_flips=1.3 bails=0 capped=0
+kmc__rottor_rx_s1_X_err__uniform__gain_uf__b2.00 | KMC dec=maj_uf beta=2.00 N=38 K=2 trials=36 mean_t=1.2522e+01 sem_t=1.9051e+00 median_t=8.8272e+00 mean_flips=24.7 bails=0 capped=0
+kmc__rottor_rx_s1_X_err__uniform__gain_uf__b2.28 | KMC dec=maj_uf beta=2.28 N=38 K=2 trials=36 mean_t=2.6063e+01 sem_t=4.6440e+00 median_t=1.6090e+01 mean_flips=33.0 bails=0 capped=0
+kmc__rottor_rx_s2_X_err__uniform__gain_uf__b2.00 | KMC dec=maj_uf beta=2.00 N=332 K=2 trials=36 mean_t=2.3678e+01 sem_t=1.9659e+00 median_t=2.1723e+01 mean_flips=407.7 bails=0 capped=0
+kmc__rottor_rx_s2_X_err__uniform__gain_uf__b2.28 | KMC dec=maj_uf beta=2.28 N=332 K=2 trials=36 mean_t=6.8931e+01 sem_t=7.0803e+00 median_t=6.4082e+01 mean_flips=724.4 bails=0 capped=0
+kmc__rottor_rx_s3_X_err__uniform__gain_uf__b2.00 | KMC dec=maj_uf beta=2.00 N=3100 K=2 trials=36 mean_t=3.1129e+01 sem_t=1.3109e+00 median_t=2.8867e+01 mean_flips=4017.1 bails=0 capped=0
+kmc__rottor_rx_s3_X_err__uniform__gain_uf__b2.28 | KMC dec=maj_uf beta=2.28 N=3100 K=2 trials=36 mean_t=1.7574e+02 sem_t=1.3269e+01 median_t=1.5484e+02 mean_flips=12342.7 bails=0 capped=0
+kmc__sq_rx_iso_s5_X_err__uniform__gain_uf__b2.00 | TIMEOUT
+kmc__sq_rx_iso_s5_X_err__uniform__gain_uf__b2.08 | TIMEOUT
+kmc__sq_rx_iso_s5_X_err__uniform__gain_uf__b2.15 | TIMEOUT
+kmc__sq_rx_iso_s5_X_err__uniform__gain_uf__b2.22 | TIMEOUT
+kmc__sq_rx_iso_s5_X_err__uniform__gain_uf__b2.28 | TIMEOUT
+kmc__rottor_rx_s5_X_err__uniform__gain_uf__b2.00 | TIMEOUT
+kmc__rottor_rx_s5_X_err__uniform__gain_uf__b2.08 | TIMEOUT
+kmc__rottor_rx_s5_X_err__uniform__gain_uf__b2.15 | TIMEOUT
+kmc__rottor_rx_s5_X_err__uniform__gain_uf__b2.22 | TIMEOUT
+kmc__rottor_rx_s5_X_err__uniform__gain_uf__b2.28 | TIMEOUT
+kmc__sq_rx_s5_X_err__uniform__gain_uf__b2.00 | TIMEOUT
+kmc__sq_rx_s5_X_err__uniform__gain_uf__b2.08 | TIMEOUT
+kmc__sq_rx_s5_X_err__uniform__gain_uf__b2.15 | TIMEOUT
+kmc__sq_rx_s5_X_err__uniform__gain_uf__b2.22 | TIMEOUT
+kmc__sq_rx_s5_X_err__uniform__gain_uf__b2.28 | TIMEOUT
+kmc__rottor_L2r1_s5_Z_err__uniform__gain_uf__b5.50 | TIMEOUT
+kmc__rottor_L2r1_s5_Z_err__uniform__gain_uf__b5.75 | TIMEOUT
+kmc__rottor_L2r1_s5_Z_err__uniform__gain_uf__b6.00 | TIMEOUT
+kmc__rottor_L2r1_s5_Z_err__uniform__gain_uf__b6.15 | TIMEOUT
+kmc__rottor_L2r1_s5_Z_err__uniform__gain_uf__b6.30 | TIMEOUT
+kmc__sq_L2r1_s5_Z_err__uniform__uf__b6.12 | TIMEOUT
+kmc__sq_L2r1_s5_Z_err__uniform__uf__b6.18 | TIMEOUT
