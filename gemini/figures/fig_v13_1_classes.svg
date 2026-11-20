@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="456" viewBox="0 0 1180 456">
+<rect width="1180" height="456" fill="#ffffff"/>
+<style>text { font-family: -apple-system, Helvetica, Arial, sans-serif; fill: #1f2937; }</style>
+<rect x="86" y="42" width="472" height="352" fill="#fafafa" stroke="#374151" stroke-width="1.5"/>
+<rect x="86" y="42" width="472" height="352" fill="none" stroke="#374151" stroke-width="1.5"/>
+<text x="322.0" y="29.0" text-anchor="middle" font-size="14.8" font-weight="700">(a) Lifetime Growth Relative to Smallest Code</text>
+<text x="322.0" y="435.0" text-anchor="middle" font-size="13.5" font-weight="600">Physical Qubit Count N (Log Scale)</text>
+<text x="28.0" y="218.0" text-anchor="middle" font-size="13.5" font-weight="600" transform="rotate(-90 28.0 218.0)">Relative Memory Lifetime</text>
+<line x1="98.9" y1="42" x2="98.9" y2="394" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="98.9" y1="394" x2="98.9" y2="399" stroke="#374151" stroke-width="1.2"/>
+<text x="98.9" y="414" text-anchor="middle" font-size="12.1">20</text>
+<line x1="201.7" y1="42" x2="201.7" y2="394" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="201.7" y1="394" x2="201.7" y2="399" stroke="#374151" stroke-width="1.2"/>
+<text x="201.7" y="414" text-anchor="middle" font-size="12.1">200</text>
+<line x1="304.6" y1="42" x2="304.6" y2="394" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="304.6" y1="394" x2="304.6" y2="399" stroke="#374151" stroke-width="1.2"/>
+<text x="304.6" y="414" text-anchor="middle" font-size="12.1">2k</text>
+<line x1="407.5" y1="42" x2="407.5" y2="394" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="407.5" y1="394" x2="407.5" y2="399" stroke="#374151" stroke-width="1.2"/>
+<text x="407.5" y="414" text-anchor="middle" font-size="12.1">20k</text>
+<line x1="541.4" y1="42" x2="541.4" y2="394" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="541.4" y1="394" x2="541.4" y2="399" stroke="#374151" stroke-width="1.2"/>
+<text x="541.4" y="414" text-anchor="middle" font-size="12.1">400k</text>
+<line x1="86" y1="378.9" x2="558" y2="378.9" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="378.9" x2="86" y2="378.9" stroke="#374151" stroke-width="1.2"/>
+<text x="78" y="383.4" text-anchor="end" font-size="12.1">0.05×</text>
+<line x1="86" y1="329.7" x2="558" y2="329.7" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="329.7" x2="86" y2="329.7" stroke="#374151" stroke-width="1.2"/>
+<text x="78" y="334.2" text-anchor="end" font-size="12.1">1×</text>
+<line x1="86" y1="254.0" x2="558" y2="254.0" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="254.0" x2="86" y2="254.0" stroke="#374151" stroke-width="1.2"/>
+<text x="78" y="258.5" text-anchor="end" font-size="12.1">10²×</text>
+<line x1="86" y1="178.3" x2="558" y2="178.3" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="178.3" x2="86" y2="178.3" stroke="#374151" stroke-width="1.2"/>
+<text x="78" y="182.8" text-anchor="end" font-size="12.1">10⁴×</text>
+<line x1="86" y1="329.7" x2="558" y2="329.7" stroke="#6b7280" stroke-width="1.6" stroke-dasharray="6,4"/>
+<text x="548.0" y="345.2" text-anchor="end" font-size="11.6" font-weight="600" fill="#6b7280">1× = No Gain From Growing Code Size</text>
+<polyline fill="none" stroke="#ea580c" stroke-width="2.9" stroke-dasharray="7,3" points="96.6,329.7 321.4,229.0 544.0,170.0"/>
+<circle cx="96.6" cy="329.7" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="321.4" cy="229.0" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="544.0" cy="170.0" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#be123c" stroke-width="2.9" points="96.6,329.7 202.4,299.4 311.1,265.4 421.1,231.4 531.7,227.2"/>
+<circle cx="96.6" cy="329.7" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="202.4" cy="299.4" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="311.1" cy="265.4" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="421.1" cy="231.4" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="531.7" cy="227.2" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#7c3aed" stroke-width="2.9" points="143.2,329.7 211.7,307.9 256.8,288.2 290.5,281.4 317.4,276.8 339.8,283.9"/>
+<circle cx="143.2" cy="329.7" r="4.8" fill="#7c3aed" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="211.7" cy="307.9" r="4.8" fill="#7c3aed" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="256.8" cy="288.2" r="4.8" fill="#7c3aed" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="290.5" cy="281.4" r="4.8" fill="#7c3aed" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="317.4" cy="276.8" r="4.8" fill="#7c3aed" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="339.8" cy="283.9" r="4.8" fill="#7c3aed" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#2563eb" stroke-width="2.9" stroke-dasharray="5,4" points="156.1,329.7 187.1,335.9 236.2,332.9 267.1,340.7 277.1,344.0 285.3,347.2 298.1,356.9 308.1,356.3"/>
+<circle cx="156.1" cy="329.7" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="187.1" cy="335.9" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="236.2" cy="332.9" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="267.1" cy="340.7" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="277.1" cy="344.0" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="285.3" cy="347.2" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="298.1" cy="356.9" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="308.1" cy="356.3" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#4b5563" stroke-width="2.9" stroke-dasharray="3,3" points="119.9,329.7 156.1,345.1 201.7,357.3 243.8,374.0 280.0,378.7 311.1,376.6"/>
+<circle cx="119.9" cy="329.7" r="4.8" fill="#4b5563" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="156.1" cy="345.1" r="4.8" fill="#4b5563" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="201.7" cy="357.3" r="4.8" fill="#4b5563" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="243.8" cy="374.0" r="4.8" fill="#4b5563" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="280.0" cy="378.7" r="4.8" fill="#4b5563" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="311.1" cy="376.6" r="4.8" fill="#4b5563" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="96.0" y="52.0" width="338.5" height="107.0" rx="6" fill="#ffffff" fill-opacity="0.96" stroke="#d1d5db" stroke-width="1.1"/>
+<line x1="104.0" y1="63.6" x2="125.0" y2="63.6" stroke="#ea580c" stroke-width="2.6" stroke-dasharray="7,3"/>
+<circle cx="114.5" cy="63.6" r="3.9" fill="#ea580c"/>
+<text x="132.0" y="67.6" font-size="11.5">3D Welded Quantum (to 424k: 16,623×)</text>
+<line x1="104.0" y1="83.0" x2="125.0" y2="83.0" stroke="#be123c" stroke-width="2.6"/>
+<circle cx="114.5" cy="83.0" r="3.9" fill="#be123c"/>
+<text x="132.0" y="87.0" font-size="11.5">3D Welded Single-Sector (5 scales: 512×)</text>
+<line x1="104.0" y1="102.4" x2="125.0" y2="102.4" stroke="#7c3aed" stroke-width="2.6"/>
+<circle cx="114.5" cy="102.4" r="3.9" fill="#7c3aed"/>
+<text x="132.0" y="106.4" font-size="11.5">Haah 3D Cubic Code (peaks at 25×, turns over)</text>
+<line x1="104.0" y1="121.8" x2="125.0" y2="121.8" stroke="#2563eb" stroke-width="2.6" stroke-dasharray="5,4"/>
+<circle cx="114.5" cy="121.8" r="3.9" fill="#2563eb"/>
+<text x="132.0" y="125.8" font-size="11.5">Scaled 2D Bivariate Bicycle (falls &lt; 1×)</text>
+<line x1="104.0" y1="141.2" x2="125.0" y2="141.2" stroke="#4b5563" stroke-width="2.6" stroke-dasharray="3,3"/>
+<circle cx="114.5" cy="141.2" r="3.9" fill="#4b5563"/>
+<text x="132.0" y="145.2" font-size="11.5">2D Toric Code (falls as 1 / N)</text>
+<rect x="676" y="42" width="472" height="352" fill="#fafafa" stroke="#374151" stroke-width="1.5"/>
+<rect x="676" y="42" width="472" height="352" fill="none" stroke="#374151" stroke-width="1.5"/>
+<text x="912.0" y="29.0" text-anchor="middle" font-size="14.8" font-weight="700">(b) Additive vs. Multiplicative Energy Barriers</text>
+<text x="912.0" y="435.0" text-anchor="middle" font-size="13.5" font-weight="600">Physical Qubit Count N (Log Scale)</text>
+<text x="618.0" y="218.0" text-anchor="middle" font-size="13.5" font-weight="600" transform="rotate(-90 618.0 218.0)">Effective Energy Barrier</text>
+<line x1="684.2" y1="42" x2="684.2" y2="394" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="684.2" y1="394" x2="684.2" y2="399" stroke="#374151" stroke-width="1.2"/>
+<text x="684.2" y="414" text-anchor="middle" font-size="12.1">2</text>
+<line x1="784.1" y1="42" x2="784.1" y2="394" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="784.1" y1="394" x2="784.1" y2="399" stroke="#374151" stroke-width="1.2"/>
+<text x="784.1" y="414" text-anchor="middle" font-size="12.1">30</text>
+<line x1="887.8" y1="42" x2="887.8" y2="394" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="887.8" y1="394" x2="887.8" y2="399" stroke="#374151" stroke-width="1.2"/>
+<text x="887.8" y="414" text-anchor="middle" font-size="12.1">500</text>
+<line x1="998.3" y1="42" x2="998.3" y2="394" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="998.3" y1="394" x2="998.3" y2="399" stroke="#374151" stroke-width="1.2"/>
+<text x="998.3" y="414" text-anchor="middle" font-size="12.1">10k</text>
+<line x1="1134.3" y1="42" x2="1134.3" y2="394" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="1134.3" y1="394" x2="1134.3" y2="399" stroke="#374151" stroke-width="1.2"/>
+<text x="1134.3" y="414" text-anchor="middle" font-size="12.1">400k</text>
+<line x1="676" y1="394.0" x2="1148" y2="394.0" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="394.0" x2="676" y2="394.0" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="398.5" text-anchor="end" font-size="12.1">0</text>
+<line x1="676" y1="334.1" x2="1148" y2="334.1" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="334.1" x2="676" y2="334.1" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="338.6" text-anchor="end" font-size="12.1">5</text>
+<line x1="676" y1="274.2" x2="1148" y2="274.2" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="274.2" x2="676" y2="274.2" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="278.7" text-anchor="end" font-size="12.1">10</text>
+<line x1="676" y1="214.3" x2="1148" y2="214.3" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="214.3" x2="676" y2="214.3" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="218.8" text-anchor="end" font-size="12.1">15</text>
+<line x1="676" y1="154.4" x2="1148" y2="154.4" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="154.4" x2="676" y2="154.4" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="158.9" text-anchor="end" font-size="12.1">20</text>
+<polyline fill="none" stroke="#be123c" stroke-width="2.9" points="684.2,380.1 767.2,364.4 854.6,334.6 944.3,247.7 1035.1,160.5 1126.3,127.3"/>
+<circle cx="684.2" cy="380.1" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="767.2" cy="364.4" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="854.6" cy="334.6" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="944.3" cy="247.7" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1035.1" cy="160.5" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1126.3" cy="127.3" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#ea580c" stroke-width="2.9" stroke-dasharray="7,3" points="767.2,378.0 952.8,353.7 1136.4,309.2"/>
+<circle cx="767.2" cy="378.0" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="952.8" cy="353.7" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1136.4" cy="309.2" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#7c3aed" stroke-width="2.9" points="805.8,343.0 862.3,321.6 899.5,310.2 927.3,297.3 949.5,283.2 968.0,288.5"/>
+<circle cx="805.8" cy="343.0" r="4.8" fill="#7c3aed" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="862.3" cy="321.6" r="4.8" fill="#7c3aed" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="899.5" cy="310.2" r="4.8" fill="#7c3aed" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="927.3" cy="297.3" r="4.8" fill="#7c3aed" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="949.5" cy="283.2" r="4.8" fill="#7c3aed" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="968.0" cy="288.5" r="4.8" fill="#7c3aed" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#2563eb" stroke-width="2.9" stroke-dasharray="5,4" points="816.4,344.6 841.9,343.2 882.4,329.1 908.0,329.2 916.2,329.0 922.9,329.4 933.5,329.7 941.8,327.5"/>
+<circle cx="816.4" cy="344.6" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="841.9" cy="343.2" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="882.4" cy="329.1" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="908.0" cy="329.2" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="916.2" cy="329.0" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="922.9" cy="329.4" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="933.5" cy="329.7" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="941.8" cy="327.5" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#4b5563" stroke-width="2.9" stroke-dasharray="3,3" points="786.5,368.6 816.4,366.4 854.0,372.2 888.7,376.7 918.6,379.2 944.3,379.6"/>
+<circle cx="786.5" cy="368.6" r="4.8" fill="#4b5563" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="816.4" cy="366.4" r="4.8" fill="#4b5563" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="854.0" cy="372.2" r="4.8" fill="#4b5563" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="888.7" cy="376.7" r="4.8" fill="#4b5563" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="918.6" cy="379.2" r="4.8" fill="#4b5563" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="944.3" cy="379.6" r="4.8" fill="#4b5563" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="686.0" y="52.0" width="338.5" height="107.0" rx="6" fill="#ffffff" fill-opacity="0.96" stroke="#d1d5db" stroke-width="1.1"/>
+<line x1="694.0" y1="63.6" x2="715.0" y2="63.6" stroke="#be123c" stroke-width="2.6"/>
+<circle cx="704.5" cy="63.6" r="3.9" fill="#be123c"/>
+<text x="722.0" y="67.6" font-size="11.5">3D Welded Single-Sector (6 levels: curves up)</text>
+<line x1="694.0" y1="83.0" x2="715.0" y2="83.0" stroke="#ea580c" stroke-width="2.6" stroke-dasharray="7,3"/>
+<circle cx="704.5" cy="83.0" r="3.9" fill="#ea580c"/>
+<text x="722.0" y="87.0" font-size="11.5">3D Welded Quantum (424k: doubles each cycle)</text>
+<line x1="694.0" y1="102.4" x2="715.0" y2="102.4" stroke="#7c3aed" stroke-width="2.6"/>
+<circle cx="704.5" cy="102.4" r="3.9" fill="#7c3aed"/>
+<text x="722.0" y="106.4" font-size="11.5">Haah 3D Cubic (straight log N, bends down)</text>
+<line x1="694.0" y1="121.8" x2="715.0" y2="121.8" stroke="#2563eb" stroke-width="2.6" stroke-dasharray="5,4"/>
+<circle cx="704.5" cy="121.8" r="3.9" fill="#2563eb"/>
+<text x="722.0" y="125.8" font-size="11.5">Scaled 2D Bivariate Bicycle (flat ≈ 5.4)</text>
+<line x1="694.0" y1="141.2" x2="715.0" y2="141.2" stroke="#4b5563" stroke-width="2.6" stroke-dasharray="3,3"/>
+<circle cx="704.5" cy="141.2" r="3.9" fill="#4b5563"/>
+<text x="722.0" y="145.2" font-size="11.5">2D Toric Code (flat ≤ 2.3)</text>
+</svg>

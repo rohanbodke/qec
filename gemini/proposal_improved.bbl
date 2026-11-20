@@ -152,6 +152,15 @@
   }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Journal of
   Computational Physics}\ }\textbf {\bibinfo {volume} {17}},\ \bibinfo {pages}
   {10} (\bibinfo {year} {1975})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Allen}\ \emph {et~al.}(2005)\citenamefont {Allen},
+  \citenamefont {Warren},\ and\ \citenamefont {ten Wolde}}]{allen_ffs2005}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~J.}\ \bibnamefont
+  {Allen}}, \bibinfo {author} {\bibfnamefont {P.~B.}\ \bibnamefont {Warren}},\
+  and\ \bibinfo {author} {\bibfnamefont {P.~R.}\ \bibnamefont {ten Wolde}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review
+  Letters}\ }\textbf {\bibinfo {volume} {94}},\ \bibinfo {pages} {018104}
+  (\bibinfo {year} {2005})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Delfosse}\ and\ \citenamefont
   {Nickerson}(2021)}]{delfosse_uf}%
   \BibitemOpen
@@ -168,13 +177,4 @@
   {Kalachev}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
   {Quantum}\ }\textbf {\bibinfo {volume} {5}},\ \bibinfo {pages} {585}
   (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Allen}\ \emph {et~al.}(2005)\citenamefont {Allen},
-  \citenamefont {Warren},\ and\ \citenamefont {ten Wolde}}]{allen_ffs2005}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~J.}\ \bibnamefont
-  {Allen}}, \bibinfo {author} {\bibfnamefont {P.~B.}\ \bibnamefont {Warren}},\
-  and\ \bibinfo {author} {\bibfnamefont {P.~R.}\ \bibnamefont {ten Wolde}},\
-  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review
-  Letters}\ }\textbf {\bibinfo {volume} {94}},\ \bibinfo {pages} {018104}
-  (\bibinfo {year} {2005})}\BibitemShut {NoStop}%
 \end{thebibliography}%

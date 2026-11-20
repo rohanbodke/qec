@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="505" viewBox="0 0 1180 505">
+<rect width="1180" height="505" fill="#ffffff"/>
+<style>text { font-family: -apple-system, Helvetica, Arial, sans-serif; fill: #1f2937; }</style>
+<rect x="16" y="14" width="368" height="476" rx="12" fill="#f9fafb" stroke="#cbd5e1" stroke-width="1.6"/>
+<text x="200.0" y="46" text-anchor="middle" font-size="15.2" font-weight="700">(a) Welding Splits Errors at 3-Way Seams</text>
+<rect x="406" y="14" width="368" height="476" rx="12" fill="#f9fafb" stroke="#cbd5e1" stroke-width="1.6"/>
+<text x="590.0" y="46" text-anchor="middle" font-size="15.2" font-weight="700">(b) Why a 2×2 Cross Contracts by 2 / 5</text>
+<rect x="796" y="14" width="368" height="476" rx="12" fill="#f9fafb" stroke="#cbd5e1" stroke-width="1.6"/>
+<text x="980.0" y="46" text-anchor="middle" font-size="15.2" font-weight="700">(c) Cutting One Arm Opens a Sheet Hole</text>
+<polygon points="44,322 174,264 356,264 226,322" fill="#dbeafe" fill-opacity="0.88" stroke="#2563eb" stroke-width="2.2"/>
+<line x1="109" y1="293" x2="291" y2="293" stroke="#93c5fd" stroke-width="1.4"/>
+<line x1="135" y1="322" x2="265" y2="264" stroke="#93c5fd" stroke-width="1.4"/>
+<text x="348" y="284" text-anchor="end" font-size="12.2" font-weight="700" fill="#1e40af">Sheet 1</text>
+<polygon points="135,293 265,235 265,115 135,173" fill="#fde68a" fill-opacity="0.93" stroke="#d97706" stroke-width="2.4"/>
+<line x1="200" y1="264" x2="200" y2="144" stroke="#f59e0b" stroke-width="1.5"/>
+<text x="206" y="224" font-size="12.4" font-weight="700" fill="#b45309">Bridge</text>
+<polygon points="44,202 174,144 356,144 226,202" fill="#dbeafe" fill-opacity="0.86" stroke="#2563eb" stroke-width="2.2"/>
+<line x1="109" y1="173" x2="291" y2="173" stroke="#93c5fd" stroke-width="1.4"/>
+<line x1="135" y1="202" x2="265" y2="144" stroke="#b91c1c" stroke-width="4.6"/>
+<text x="72" y="194" font-size="12.2" font-weight="700" fill="#1e40af">Sheet 0</text>
+<circle cx="118" cy="166" r="9.5" fill="#dc2626" stroke="#ffffff" stroke-width="1.8"/>
+<circle cx="234" cy="164" r="9.5" fill="#dc2626" stroke="#ffffff" stroke-width="1.8"/>
+<circle cx="188" cy="212" r="9.5" fill="#dc2626" stroke="#ffffff" stroke-width="1.8"/>
+<path d="M 130,166 Q 178,152 220,162" fill="none" stroke="#991b1b" stroke-width="2.3" stroke-dasharray="4,3"/>
+<path d="M 130,170 Q 158,195 176,208" fill="none" stroke="#991b1b" stroke-width="2.3" stroke-dasharray="4,3"/>
+<text x="200" y="96" text-anchor="middle" font-size="13.2" font-weight="700" fill="#b91c1c">3-Way Seam Splits 1 Defect → 2</text>
+<rect x="34" y="362" width="332" height="108" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.3"/>
+<text x="200" y="388" text-anchor="middle" font-size="13.2" font-weight="600" fill="#374151">Flat sheet move: 1 defect → 1 (ΔE = 0)</text>
+<text x="200" y="416" text-anchor="middle" font-size="13.4" font-weight="700" fill="#047857">3-way seam move: 1 defect → 2 (ΔE &gt; 0)</text>
+<text x="200" y="446" text-anchor="middle" font-size="12.8" font-weight="600" fill="#1f2937">Every scale multiplies the energy barrier</text>
+<rect x="480" y="96" width="220" height="220" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.8"/>
+<text x="535" y="156" text-anchor="middle" font-size="12.4" font-weight="700" fill="#1e40af">Sheet 0</text>
+<text x="645" y="156" text-anchor="middle" font-size="12.4" font-weight="700" fill="#1e40af">Sheet 0</text>
+<text x="535" y="266" text-anchor="middle" font-size="12.4" font-weight="700" fill="#1e40af">Sheet 0</text>
+<text x="645" y="266" text-anchor="middle" font-size="12.4" font-weight="700" fill="#1e40af">Sheet 0</text>
+<line x1="590" y1="96" x2="590" y2="316" stroke="#dc2626" stroke-width="6.5"/>
+<line x1="480" y1="206" x2="700" y2="206" stroke="#dc2626" stroke-width="6.5"/>
+<circle cx="590" cy="96" r="7.5" fill="#d97706" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="590" cy="316" r="7.5" fill="#d97706" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="480" cy="206" r="7.5" fill="#d97706" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="700" cy="206" r="7.5" fill="#d97706" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="590" cy="206" r="8.0" fill="#1e3a8a" stroke="#ffffff" stroke-width="1.6"/>
+<text x="590" y="84" text-anchor="middle" font-size="12.8" font-weight="700" fill="#1e3a8a">Each Wall = 5 Sub-Edges (2 + 2 + 1)</text>
+<text x="590" y="340" text-anchor="middle" font-size="12.8" font-weight="700" fill="#b91c1c">4 Interior Seam Checks Violated</text>
+<rect x="424" y="362" width="332" height="108" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.3"/>
+<text x="590" y="388" text-anchor="middle" font-size="13.1" font-weight="600" fill="#374151">Flipping 1 sheet = 2/5 on each of 4 walls (8/5)</text>
+<text x="590" y="416" text-anchor="middle" font-size="13.5" font-weight="700" fill="#047857">Coarse syndrome shrinks by (8/5) ÷ 4 = 2/5</text>
+<text x="590" y="446" text-anchor="middle" font-size="12.8" font-weight="600" fill="#1f2937">174× smaller cell per qubit than scale-8</text>
+<rect x="870" y="96" width="220" height="220" fill="#fef2f2" stroke="#b91c1c" stroke-width="2.8"/>
+<line x1="870" y1="206" x2="1090" y2="206" stroke="#2563eb" stroke-width="6.5"/>
+<line x1="980" y1="96" x2="980" y2="206" stroke="#2563eb" stroke-width="6.5"/>
+<line x1="980" y1="206" x2="980" y2="316" stroke="#9ca3af" stroke-width="3.0" stroke-dasharray="6,6"/>
+<circle cx="980" cy="251" r="28" fill="#fee2e2" stroke="#dc2626" stroke-width="3.0" stroke-dasharray="5,4"/>
+<text x="980" y="248" text-anchor="middle" font-size="12.8" font-weight="700" fill="#b91c1c">Open</text>
+<text x="980" y="264" text-anchor="middle" font-size="12.8" font-weight="700" fill="#b91c1c">Hole</text>
+<text x="980" y="84" text-anchor="middle" font-size="12.8" font-weight="700" fill="#b91c1c">Missing 4th Bridge Arm</text>
+<text x="980" y="340" text-anchor="middle" font-size="12.8" font-weight="700" fill="#991b1b">Unchecked Logical Loop Threads Gap</text>
+<rect x="814" y="362" width="332" height="108" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.3"/>
+<text x="980" y="388" text-anchor="middle" font-size="13.1" font-weight="600" fill="#374151">Dangling bridge end opens a sheet gap</text>
+<text x="980" y="416" text-anchor="middle" font-size="13.5" font-weight="700" fill="#b91c1c">Encoded torus qubits jump: 2 → 1,004</text>
+<text x="980" y="446" text-anchor="middle" font-size="12.8" font-weight="600" fill="#1f2937">Proves the 4-arm cross is minimal</text>
+</svg>
