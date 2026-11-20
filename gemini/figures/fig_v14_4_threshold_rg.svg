@@ -1,0 +1,253 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="660" viewBox="0 0 1180 660">
+<rect width="1180" height="660" fill="#ffffff"/>
+<style>text { font-family: -apple-system, Helvetica, Arial, sans-serif; fill: #1f2937; }</style>
+<rect x="18" y="12" width="1144" height="202" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.6"/>
+<text x="590" y="38" text-anchor="middle" font-size="15.6" font-weight="700">(a) What "Zooming Out" Across 2×2 Cells Means Visually (No Global Decoder)</text>
+<rect x="36" y="50" width="536" height="150" rx="9" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.4"/>
+<text x="304" y="72" text-anchor="middle" font-size="13.6" font-weight="700" fill="#065f46">Cold Bath (Below Tc): Small Pairs Cancel Inside 2×2 Cells</text>
+<rect x="76" y="86" width="96" height="96" fill="#ffffff" stroke="#64748b" stroke-width="2.0"/>
+<rect x="77.5" y="87.5" width="21.0" height="21.0" fill="#ef4444" fill-opacity="0.86"/>
+<rect x="101.5" y="87.5" width="21.0" height="21.0" fill="#ef4444" fill-opacity="0.86"/>
+<rect x="125.5" y="135.5" width="21.0" height="21.0" fill="#ef4444" fill-opacity="0.86"/>
+<rect x="125.5" y="159.5" width="21.0" height="21.0" fill="#ef4444" fill-opacity="0.86"/>
+<line x1="100" y1="86" x2="100" y2="182" stroke="#cbd5e1" stroke-width="1.0"/>
+<line x1="76" y1="110" x2="172" y2="110" stroke="#cbd5e1" stroke-width="1.0"/>
+<line x1="124" y1="86" x2="124" y2="182" stroke="#1e293b" stroke-width="2.2"/>
+<line x1="76" y1="134" x2="172" y2="134" stroke="#1e293b" stroke-width="2.2"/>
+<line x1="148" y1="86" x2="148" y2="182" stroke="#cbd5e1" stroke-width="1.0"/>
+<line x1="76" y1="158" x2="172" y2="158" stroke="#cbd5e1" stroke-width="1.0"/>
+<rect x="76" y="86" width="96" height="96" fill="none" stroke="#1e293b" stroke-width="2.2"/>
+<text x="124" y="194" text-anchor="middle" font-size="11.5" font-weight="600" fill="#065f46">Fine Lattice</text>
+<line x1="192" y1="134" x2="258" y2="134" stroke="#047857" stroke-width="2.8"/>
+<polygon points="266,134 256,128 256,140" fill="#047857"/>
+<text x="228" y="124" text-anchor="middle" font-size="11.4" font-weight="700" fill="#047857">Group 2×2</text>
+<rect x="284" y="98" width="72" height="72" fill="#ffffff" stroke="#64748b" stroke-width="2.0"/>
+<line x1="320" y1="98" x2="320" y2="170" stroke="#cbd5e1" stroke-width="1.0"/>
+<line x1="284" y1="134" x2="356" y2="134" stroke="#cbd5e1" stroke-width="1.0"/>
+<rect x="284" y="98" width="72" height="72" fill="none" stroke="#1e293b" stroke-width="2.2"/>
+<text x="320" y="194" text-anchor="middle" font-size="11.5" font-weight="700" fill="#065f46">Clean Coarse Grid!</text>
+<text x="462" y="124" text-anchor="middle" font-size="12.4" font-weight="700" fill="#065f46">Defects shrink</text>
+<text x="462" y="144" text-anchor="middle" font-size="12.4" font-weight="700" fill="#065f46">to 0% as we</text>
+<text x="462" y="164" text-anchor="middle" font-size="12.4" font-weight="700" fill="#065f46">zoom out ↓</text>
+<rect x="608" y="50" width="536" height="150" rx="9" fill="#fff1f2" stroke="#fecdd3" stroke-width="1.4"/>
+<text x="876" y="72" text-anchor="middle" font-size="13.6" font-weight="700" fill="#9f1239">Warm Bath (Above Tc): Error Chains Cross Cell Walls &amp; Multiply</text>
+<rect x="648" y="86" width="96" height="96" fill="#ffffff" stroke="#64748b" stroke-width="2.0"/>
+<rect x="673.5" y="87.5" width="21.0" height="21.0" fill="#ef4444" fill-opacity="0.86"/>
+<rect x="697.5" y="111.5" width="21.0" height="21.0" fill="#ef4444" fill-opacity="0.86"/>
+<rect x="649.5" y="135.5" width="21.0" height="21.0" fill="#ef4444" fill-opacity="0.86"/>
+<rect x="721.5" y="135.5" width="21.0" height="21.0" fill="#ef4444" fill-opacity="0.86"/>
+<rect x="673.5" y="159.5" width="21.0" height="21.0" fill="#ef4444" fill-opacity="0.86"/>
+<line x1="672" y1="86" x2="672" y2="182" stroke="#cbd5e1" stroke-width="1.0"/>
+<line x1="648" y1="110" x2="744" y2="110" stroke="#cbd5e1" stroke-width="1.0"/>
+<line x1="696" y1="86" x2="696" y2="182" stroke="#1e293b" stroke-width="2.2"/>
+<line x1="648" y1="134" x2="744" y2="134" stroke="#1e293b" stroke-width="2.2"/>
+<line x1="720" y1="86" x2="720" y2="182" stroke="#cbd5e1" stroke-width="1.0"/>
+<line x1="648" y1="158" x2="744" y2="158" stroke="#cbd5e1" stroke-width="1.0"/>
+<rect x="648" y="86" width="96" height="96" fill="none" stroke="#1e293b" stroke-width="2.2"/>
+<text x="696" y="194" text-anchor="middle" font-size="11.5" font-weight="600" fill="#9f1239">Fine Lattice</text>
+<line x1="764" y1="134" x2="830" y2="134" stroke="#be123c" stroke-width="2.8"/>
+<polygon points="838,134 828,128 828,140" fill="#be123c"/>
+<text x="800" y="124" text-anchor="middle" font-size="11.4" font-weight="700" fill="#be123c">Group 2×2</text>
+<rect x="856" y="98" width="72" height="72" fill="#ffffff" stroke="#64748b" stroke-width="2.0"/>
+<rect x="857.5" y="99.5" width="33.0" height="33.0" fill="#ef4444" fill-opacity="0.86"/>
+<rect x="893.5" y="99.5" width="33.0" height="33.0" fill="#ef4444" fill-opacity="0.86"/>
+<rect x="857.5" y="135.5" width="33.0" height="33.0" fill="#ef4444" fill-opacity="0.86"/>
+<rect x="893.5" y="135.5" width="33.0" height="33.0" fill="#ef4444" fill-opacity="0.86"/>
+<line x1="892" y1="98" x2="892" y2="170" stroke="#cbd5e1" stroke-width="1.0"/>
+<line x1="856" y1="134" x2="928" y2="134" stroke="#cbd5e1" stroke-width="1.0"/>
+<rect x="856" y="98" width="72" height="72" fill="none" stroke="#1e293b" stroke-width="2.2"/>
+<text x="892" y="194" text-anchor="middle" font-size="11.5" font-weight="700" fill="#9f1239">Scrambled Grid!</text>
+<text x="1036" y="124" text-anchor="middle" font-size="12.4" font-weight="700" fill="#9f1239">Defects grow</text>
+<text x="1036" y="144" text-anchor="middle" font-size="12.4" font-weight="700" fill="#9f1239">toward 50%</text>
+<text x="1036" y="164" text-anchor="middle" font-size="12.4" font-weight="700" fill="#9f1239">random noise ↑</text>
+<rect x="86" y="250" width="472" height="348" fill="#fafafa" stroke="#374151" stroke-width="1.5"/>
+<rect x="86.8" y="250.0" width="470.4" height="190.1" fill="#fff1f2"/>
+<rect x="86.8" y="444.9" width="470.4" height="153.1" fill="#ecfdf5"/>
+<rect x="86" y="250" width="472" height="348" fill="none" stroke="#374151" stroke-width="1.5"/>
+<text x="322.0" y="237.0" text-anchor="middle" font-size="14.8" font-weight="700">(b) Live Defect Zoom-Out Inside One 322k-Qubit Bath</text>
+<text x="322.0" y="639.0" text-anchor="middle" font-size="13.5" font-weight="600">Zoom-Out Step: Fine Lattice (322k) → Coarse Cell (19q)</text>
+<text x="28.0" y="424.0" text-anchor="middle" font-size="13.5" font-weight="600" transform="rotate(-90 28.0 424.0)">Violated Check Fraction</text>
+<line x1="107.2" y1="250" x2="107.2" y2="598" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="107.2" y1="598" x2="107.2" y2="603" stroke="#374151" stroke-width="1.2"/>
+<text x="107.2" y="618" text-anchor="middle" font-size="12.1">322k</text>
+<line x1="213.3" y1="250" x2="213.3" y2="598" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="213.3" y1="598" x2="213.3" y2="603" stroke="#374151" stroke-width="1.2"/>
+<text x="213.3" y="618" text-anchor="middle" font-size="12.1">27k</text>
+<line x1="319.3" y1="250" x2="319.3" y2="598" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="319.3" y1="598" x2="319.3" y2="603" stroke="#374151" stroke-width="1.2"/>
+<text x="319.3" y="618" text-anchor="middle" font-size="12.1">2.3k</text>
+<line x1="425.4" y1="250" x2="425.4" y2="598" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="425.4" y1="598" x2="425.4" y2="603" stroke="#374151" stroke-width="1.2"/>
+<text x="425.4" y="618" text-anchor="middle" font-size="12.1">203q</text>
+<line x1="531.5" y1="250" x2="531.5" y2="598" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="531.5" y1="598" x2="531.5" y2="603" stroke="#374151" stroke-width="1.2"/>
+<text x="531.5" y="618" text-anchor="middle" font-size="12.1">19q</text>
+<line x1="86" y1="573.8" x2="558" y2="573.8" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="573.8" x2="86" y2="573.8" stroke="#374151" stroke-width="1.2"/>
+<text x="78" y="578.3" text-anchor="end" font-size="12.1">0.03%</text>
+<line x1="86" y1="513.2" x2="558" y2="513.2" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="513.2" x2="86" y2="513.2" stroke="#374151" stroke-width="1.2"/>
+<text x="78" y="517.7" text-anchor="end" font-size="12.1">0.3%</text>
+<line x1="86" y1="452.5" x2="558" y2="452.5" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="452.5" x2="86" y2="452.5" stroke="#374151" stroke-width="1.2"/>
+<text x="78" y="457.0" text-anchor="end" font-size="12.1">3%</text>
+<line x1="86" y1="391.8" x2="558" y2="391.8" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="391.8" x2="86" y2="391.8" stroke="#374151" stroke-width="1.2"/>
+<text x="78" y="396.3" text-anchor="end" font-size="12.1">30%</text>
+<polyline fill="none" stroke="#dc2626" stroke-width="2.9" stroke-dasharray="5,4" points="107.2,402.0 213.3,399.0 319.3,397.9 425.4,398.0 531.5,396.2"/>
+<circle cx="107.2" cy="402.0" r="4.8" fill="#dc2626" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="213.3" cy="399.0" r="4.8" fill="#dc2626" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="319.3" cy="397.9" r="4.8" fill="#dc2626" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="425.4" cy="398.0" r="4.8" fill="#dc2626" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="531.5" cy="396.2" r="4.8" fill="#dc2626" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#ea580c" stroke-width="2.9" stroke-dasharray="5,4" points="107.2,423.8 213.3,413.6 319.3,405.5 425.4,401.7 531.5,399.5"/>
+<circle cx="107.2" cy="423.8" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="213.3" cy="413.6" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="319.3" cy="405.5" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="425.4" cy="401.7" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="531.5" cy="399.5" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#1f2937" stroke-width="2.9" points="107.2,441.2 213.3,438.7 319.3,441.1 425.4,448.9 531.5,450.0"/>
+<circle cx="107.2" cy="441.2" r="4.8" fill="#1f2937" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="213.3" cy="438.7" r="4.8" fill="#1f2937" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="319.3" cy="441.1" r="4.8" fill="#1f2937" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="425.4" cy="448.9" r="4.8" fill="#1f2937" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="531.5" cy="450.0" r="4.8" fill="#1f2937" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#2563eb" stroke-width="2.9" points="107.2,460.6 213.3,470.5 319.3,490.0 425.4,514.1"/>
+<circle cx="107.2" cy="460.6" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="213.3" cy="470.5" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="319.3" cy="490.0" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="425.4" cy="514.1" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#059669" stroke-width="2.9" points="107.2,481.9 213.3,499.9 319.3,520.3 425.4,574.8"/>
+<circle cx="107.2" cy="481.9" r="4.8" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="213.3" cy="499.9" r="4.8" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="319.3" cy="520.3" r="4.8" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="425.4" cy="574.8" r="4.8" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<text x="542.1" y="382.9" text-anchor="end" font-size="11.8" font-weight="700" fill="#b91c1c">Too Warm: Multiplies ↑</text>
+<text x="544.2" y="547.3" text-anchor="end" font-size="11.8" font-weight="700" fill="#047857">Hits Exact 0% ↓</text>
+<rect x="96.0" y="260.0" width="202.0" height="107.0" rx="6" fill="#ffffff" fill-opacity="0.96" stroke="#d1d5db" stroke-width="1.1"/>
+<line x1="104.0" y1="271.6" x2="125.0" y2="271.6" stroke="#dc2626" stroke-width="2.6" stroke-dasharray="5,4"/>
+<circle cx="114.5" cy="271.6" r="3.9" fill="#dc2626"/>
+<text x="132.0" y="275.6" font-size="11.5">Warm Bath (β = 1.35)</text>
+<line x1="104.0" y1="291.0" x2="125.0" y2="291.0" stroke="#ea580c" stroke-width="2.6" stroke-dasharray="5,4"/>
+<circle cx="114.5" cy="291.0" r="3.9" fill="#ea580c"/>
+<text x="132.0" y="295.0" font-size="11.5">Just Above Tc (β = 1.86)</text>
+<line x1="104.0" y1="310.4" x2="125.0" y2="310.4" stroke="#1f2937" stroke-width="2.6"/>
+<circle cx="114.5" cy="310.4" r="3.9" fill="#1f2937"/>
+<text x="132.0" y="314.4" font-size="11.5">At Threshold (β = 2.00)</text>
+<line x1="104.0" y1="329.8" x2="125.0" y2="329.8" stroke="#2563eb" stroke-width="2.6"/>
+<circle cx="114.5" cy="329.8" r="3.9" fill="#2563eb"/>
+<text x="132.0" y="333.8" font-size="11.5">Below Tc (β = 2.15)</text>
+<line x1="104.0" y1="349.2" x2="125.0" y2="349.2" stroke="#059669" stroke-width="2.6"/>
+<circle cx="114.5" cy="349.2" r="3.9" fill="#059669"/>
+<text x="132.0" y="353.2" font-size="11.5">Cold Bath (β = 2.35)</text>
+<rect x="676" y="250" width="472" height="348" fill="#fafafa" stroke="#374151" stroke-width="1.5"/>
+<rect x="971.0" y="250.8" width="177.0" height="346.4" fill="#ecfdf5"/>
+<rect x="676" y="250" width="472" height="348" fill="none" stroke="#374151" stroke-width="1.5"/>
+<text x="912.0" y="237.0" text-anchor="middle" font-size="14.8" font-weight="700">(c) Five Code Sizes Share the Same Threshold</text>
+<text x="912.0" y="639.0" text-anchor="middle" font-size="13.5" font-weight="600">Inverse Bath Temperature β = 1 / T (Colder →)</text>
+<text x="618.0" y="424.0" text-anchor="middle" font-size="13.5" font-weight="600" transform="rotate(-90 618.0 424.0)">Mean Memory Lifetime</text>
+<line x1="694.4" y1="250" x2="694.4" y2="598" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="694.4" y1="598" x2="694.4" y2="603" stroke="#374151" stroke-width="1.2"/>
+<text x="694.4" y="618" text-anchor="middle" font-size="12.1">1.25</text>
+<line x1="786.6" y1="250" x2="786.6" y2="598" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="786.6" y1="598" x2="786.6" y2="603" stroke="#374151" stroke-width="1.2"/>
+<text x="786.6" y="618" text-anchor="middle" font-size="12.1">1.5</text>
+<line x1="878.8" y1="250" x2="878.8" y2="598" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="878.8" y1="598" x2="878.8" y2="603" stroke="#374151" stroke-width="1.2"/>
+<text x="878.8" y="618" text-anchor="middle" font-size="12.1">1.75</text>
+<line x1="971.0" y1="250" x2="971.0" y2="598" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="971.0" y1="598" x2="971.0" y2="603" stroke="#374151" stroke-width="1.2"/>
+<text x="971.0" y="618" text-anchor="middle" font-size="12.1">2.0</text>
+<line x1="1063.2" y1="250" x2="1063.2" y2="598" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="1063.2" y1="598" x2="1063.2" y2="603" stroke="#374151" stroke-width="1.2"/>
+<text x="1063.2" y="618" text-anchor="middle" font-size="12.1">2.25</text>
+<line x1="676" y1="554.2" x2="1148" y2="554.2" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="554.2" x2="676" y2="554.2" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="558.7" text-anchor="end" font-size="12.1">10¹</text>
+<line x1="676" y1="481.3" x2="1148" y2="481.3" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="481.3" x2="676" y2="481.3" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="485.8" text-anchor="end" font-size="12.1">10²</text>
+<line x1="676" y1="408.5" x2="1148" y2="408.5" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="408.5" x2="676" y2="408.5" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="413.0" text-anchor="end" font-size="12.1">10³</text>
+<line x1="676" y1="335.7" x2="1148" y2="335.7" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="335.7" x2="676" y2="335.7" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="340.2" text-anchor="end" font-size="12.1">10⁴</text>
+<line x1="676" y1="262.8" x2="1148" y2="262.8" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="262.8" x2="676" y2="262.8" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="267.3" text-anchor="end" font-size="12.1">10⁵</text>
+<line x1="971.0" y1="250" x2="971.0" y2="598" stroke="#374151" stroke-width="1.7" stroke-dasharray="5,4"/>
+<text x="978.5" y="584.0" text-anchor="start" font-size="11.7" font-weight="700" fill="#374151">Fixed Threshold β ≈ 2.0</text>
+<polyline fill="none" stroke="#7f1d1d" stroke-width="2.9" points="878.8,547.2 934.1,516.7 971.0,506.5 989.4,487.3 1007.9,460.9 1026.3,438.7 1044.8,400.4 1063.2,316.8"/>
+<circle cx="878.8" cy="547.2" r="4.8" fill="#7f1d1d" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="934.1" cy="516.7" r="4.8" fill="#7f1d1d" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="971.0" cy="506.5" r="4.8" fill="#7f1d1d" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="989.4" cy="487.3" r="4.8" fill="#7f1d1d" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1007.9" cy="460.9" r="4.8" fill="#7f1d1d" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1026.3" cy="438.7" r="4.8" fill="#7f1d1d" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1044.8" cy="400.4" r="4.8" fill="#7f1d1d" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1063.2" cy="316.8" r="4.8" fill="#7f1d1d" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#be123c" stroke-width="2.9" points="786.6,556.3 878.8,533.0 934.1,505.0 971.0,484.9 989.4,476.2 1007.9,453.2 1026.3,424.2 1044.8,392.9 1063.2,324.9"/>
+<circle cx="786.6" cy="556.3" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="878.8" cy="533.0" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="934.1" cy="505.0" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="971.0" cy="484.9" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="989.4" cy="476.2" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1007.9" cy="453.2" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1026.3" cy="424.2" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1044.8" cy="392.9" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1063.2" cy="324.9" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#ea580c" stroke-width="2.9" points="694.4,581.8 786.6,558.6 878.8,529.7 934.1,510.1 971.0,489.3 989.4,473.1 1007.9,460.8 1026.3,442.0 1044.8,419.1 1063.2,390.3"/>
+<circle cx="694.4" cy="581.8" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="786.6" cy="558.6" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="878.8" cy="529.7" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="934.1" cy="510.1" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="971.0" cy="489.3" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="989.4" cy="473.1" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1007.9" cy="460.8" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1026.3" cy="442.0" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1044.8" cy="419.1" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1063.2" cy="390.3" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#2563eb" stroke-width="2.9" stroke-dasharray="6,3" points="694.4,577.0 786.6,557.5 878.8,528.0 934.1,514.3 971.0,494.7 989.4,486.3 1007.9,482.8 1026.3,473.3 1044.8,462.8 1063.2,455.7"/>
+<circle cx="694.4" cy="577.0" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="786.6" cy="557.5" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="878.8" cy="528.0" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="934.1" cy="514.3" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="971.0" cy="494.7" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="989.4" cy="486.3" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1007.9" cy="482.8" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1026.3" cy="473.3" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1044.8" cy="462.8" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1063.2" cy="455.7" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#6b7280" stroke-width="2.9" stroke-dasharray="3,3" points="694.4,573.9 786.6,561.5 878.8,545.4 934.1,539.8 971.0,532.8 989.4,534.3 1007.9,528.6 1026.3,527.6 1044.8,520.2 1063.2,514.1"/>
+<circle cx="694.4" cy="573.9" r="4.8" fill="#6b7280" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="786.6" cy="561.5" r="4.8" fill="#6b7280" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="878.8" cy="545.4" r="4.8" fill="#6b7280" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="934.1" cy="539.8" r="4.8" fill="#6b7280" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="971.0" cy="532.8" r="4.8" fill="#6b7280" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="989.4" cy="534.3" r="4.8" fill="#6b7280" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1007.9" cy="528.6" r="4.8" fill="#6b7280" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1026.3" cy="527.6" r="4.8" fill="#6b7280" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1044.8" cy="520.2" r="4.8" fill="#6b7280" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1063.2" cy="514.1" r="4.8" fill="#6b7280" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="1063.2" y1="324.8" x2="1063.2" y2="506.1" stroke="#7f1d1d" stroke-width="2.1" stroke-dasharray="3,3"/>
+<polygon points="1063.2,318.8 1058.7,326.8 1067.7,326.8" fill="#7f1d1d"/>
+<polygon points="1063.2,512.1 1058.7,504.1 1067.7,504.1" fill="#7f1d1d"/>
+<text x="1071.7" y="415.8" text-anchor="start" font-size="12.3" font-weight="700" fill="#7f1d1d">512×</text>
+<rect x="686.0" y="260.0" width="202.0" height="107.0" rx="6" fill="#ffffff" fill-opacity="0.96" stroke="#d1d5db" stroke-width="1.1"/>
+<line x1="694.0" y1="271.6" x2="715.0" y2="271.6" stroke="#7f1d1d" stroke-width="2.6"/>
+<circle cx="704.5" cy="271.6" r="3.9" fill="#7f1d1d"/>
+<text x="722.0" y="275.6" font-size="11.5">Scale 5 (322,159 qubits)</text>
+<line x1="694.0" y1="291.0" x2="715.0" y2="291.0" stroke="#be123c" stroke-width="2.6"/>
+<circle cx="704.5" cy="291.0" r="3.9" fill="#be123c"/>
+<text x="722.0" y="295.0" font-size="11.5">Scale 4 (27,107 qubits)</text>
+<line x1="694.0" y1="310.4" x2="715.0" y2="310.4" stroke="#ea580c" stroke-width="2.6"/>
+<circle cx="704.5" cy="310.4" r="3.9" fill="#ea580c"/>
+<text x="722.0" y="314.4" font-size="11.5">Scale 3 (2,311 qubits)</text>
+<line x1="694.0" y1="329.8" x2="715.0" y2="329.8" stroke="#2563eb" stroke-width="2.6" stroke-dasharray="6,3"/>
+<circle cx="704.5" cy="329.8" r="3.9" fill="#2563eb"/>
+<text x="722.0" y="333.8" font-size="11.5">Scale 2 (203 qubits)</text>
+<line x1="694.0" y1="349.2" x2="715.0" y2="349.2" stroke="#6b7280" stroke-width="2.6" stroke-dasharray="3,3"/>
+<circle cx="704.5" cy="349.2" r="3.9" fill="#6b7280"/>
+<text x="722.0" y="353.2" font-size="11.5">Scale 1 (19 qubits)</text>
+</svg>

@@ -1,0 +1,257 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="836" viewBox="0 0 1180 836">
+<rect width="1180" height="836" fill="#ffffff"/>
+<style>text { font-family: -apple-system, Helvetica, Arial, sans-serif; fill: #1f2937; }</style>
+<rect x="42" y="42" width="516" height="326" rx="10" fill="#f8fafc" stroke="#374151" stroke-width="1.5"/>
+<text x="300.0" y="29.0" text-anchor="middle" font-size="14.8" font-weight="700">(a) Alternating X and Z Bridges Protect Both Sectors</text>
+<rect x="62" y="64" width="214" height="196" rx="9" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+<text x="169" y="87" text-anchor="middle" font-size="13.2" font-weight="700" fill="#1e40af">Odd Step: X-Bridges</text>
+<rect x="117" y="104" width="104" height="104" fill="#ffffff" stroke="#2563eb" stroke-width="2.4"/>
+<line x1="169" y1="104" x2="169" y2="208" stroke="#2563eb" stroke-width="5.2"/>
+<line x1="117" y1="156" x2="221" y2="156" stroke="#2563eb" stroke-width="5.2"/>
+<text x="169" y="230" text-anchor="middle" font-size="11.8" font-weight="700" fill="#047857">X errors shrink × 2/5</text>
+<text x="169" y="248" text-anchor="middle" font-size="11.5" font-weight="600" fill="#64748b">(Z sector waits: × 1)</text>
+<line x1="282" y1="162" x2="312" y2="162" stroke="#475569" stroke-width="2.6"/>
+<polygon points="320,162 310,156 310,168" fill="#475569"/>
+<rect x="324" y="64" width="214" height="196" rx="9" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+<text x="431" y="87" text-anchor="middle" font-size="13.2" font-weight="700" fill="#991b1b">Even Step: Z-Bridges</text>
+<rect x="379" y="104" width="104" height="104" fill="#ffffff" stroke="#dc2626" stroke-width="2.4"/>
+<line x1="431" y1="104" x2="431" y2="208" stroke="#dc2626" stroke-width="5.2"/>
+<line x1="379" y1="156" x2="483" y2="156" stroke="#dc2626" stroke-width="5.2"/>
+<text x="431" y="230" text-anchor="middle" font-size="11.8" font-weight="700" fill="#047857">Z errors shrink × 2/5</text>
+<text x="431" y="248" text-anchor="middle" font-size="11.5" font-weight="600" fill="#64748b">(X sector waits: × 1)</text>
+<rect x="62" y="276" width="476" height="76" rx="8" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.4"/>
+<text x="300.0" y="302" text-anchor="middle" font-size="13.2" font-weight="700" fill="#065f46">Net Effect Over Every 2-Step Quantum Cycle:</text>
+<text x="300.0" y="325" text-anchor="middle" font-size="12.4" font-weight="600" fill="#1f2937">Both X and Z syndromes contract by 2/5; waiting steps</text>
+<text x="300.0" y="343" text-anchor="middle" font-size="12.4" font-weight="600" fill="#1f2937">create the sawtooth flow in (b) and shift Tc to β ≈ 6.0</text>
+<rect x="676" y="42" width="472" height="326" fill="#fafafa" stroke="#374151" stroke-width="1.5"/>
+<rect x="676.8" y="42.0" width="470.4" height="160.3" fill="#fff1f2"/>
+<rect x="676.8" y="208.0" width="470.4" height="160.0" fill="#ecfdf5"/>
+<rect x="676" y="42" width="472" height="326" fill="none" stroke="#374151" stroke-width="1.5"/>
+<text x="912.0" y="29.0" text-anchor="middle" font-size="14.8" font-weight="700">(b) Alternating (X, Z) Zoom-Out (94,774q Torus)</text>
+<text x="912.0" y="409.0" text-anchor="middle" font-size="13.5" font-weight="600">Zoom-Out Step (Z-Steps Tick Up; X-Steps Drop to 0%)</text>
+<text x="618.0" y="205.0" text-anchor="middle" font-size="13.5" font-weight="600" transform="rotate(-90 618.0 205.0)">Violated Check Fraction</text>
+<line x1="697.2" y1="42" x2="697.2" y2="368" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="697.2" y1="368" x2="697.2" y2="373" stroke="#374151" stroke-width="1.2"/>
+<text x="697.2" y="388" text-anchor="middle" font-size="12.1">95k</text>
+<line x1="803.3" y1="42" x2="803.3" y2="368" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="803.3" y1="368" x2="803.3" y2="373" stroke="#374151" stroke-width="1.2"/>
+<text x="803.3" y="388" text-anchor="middle" font-size="12.1">5.8k (Z)</text>
+<line x1="909.3" y1="42" x2="909.3" y2="368" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="909.3" y1="368" x2="909.3" y2="373" stroke="#374151" stroke-width="1.2"/>
+<text x="909.3" y="388" text-anchor="middle" font-size="12.1">646q (X)</text>
+<line x1="1015.4" y1="42" x2="1015.4" y2="368" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="1015.4" y1="368" x2="1015.4" y2="373" stroke="#374151" stroke-width="1.2"/>
+<text x="1015.4" y="388" text-anchor="middle" font-size="12.1">38q (Z)</text>
+<line x1="1121.5" y1="42" x2="1121.5" y2="368" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="1121.5" y1="368" x2="1121.5" y2="373" stroke="#374151" stroke-width="1.2"/>
+<text x="1121.5" y="388" text-anchor="middle" font-size="12.1">Seed (X)</text>
+<line x1="676" y1="335.3" x2="1148" y2="335.3" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="335.3" x2="676" y2="335.3" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="339.8" text-anchor="end" font-size="12.1">0.01%</text>
+<line x1="676" y1="281.0" x2="1148" y2="281.0" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="281.0" x2="676" y2="281.0" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="285.5" text-anchor="end" font-size="12.1">0.1%</text>
+<line x1="676" y1="226.6" x2="1148" y2="226.6" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="226.6" x2="676" y2="226.6" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="231.1" text-anchor="end" font-size="12.1">1%</text>
+<line x1="676" y1="172.3" x2="1148" y2="172.3" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="172.3" x2="676" y2="172.3" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="176.8" text-anchor="end" font-size="12.1">10%</text>
+<polyline fill="none" stroke="#dc2626" stroke-width="2.9" stroke-dasharray="5,4" points="697.2,249.7 803.3,197.7 909.3,184.7 1015.4,142.4 1121.5,150.7"/>
+<circle cx="697.2" cy="249.7" r="4.8" fill="#dc2626" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="803.3" cy="197.7" r="4.8" fill="#dc2626" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="909.3" cy="184.7" r="4.8" fill="#dc2626" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1015.4" cy="142.4" r="4.8" fill="#dc2626" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1121.5" cy="150.7" r="4.8" fill="#dc2626" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#ea580c" stroke-width="2.9" stroke-dasharray="5,4" points="697.2,299.1 803.3,248.9 909.3,251.1 1015.4,206.5 1121.5,192.9"/>
+<circle cx="697.2" cy="299.1" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="803.3" cy="248.9" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="909.3" cy="251.1" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1015.4" cy="206.5" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1121.5" cy="192.9" r="4.8" fill="#ea580c" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#2563eb" stroke-width="2.9" points="697.2,320.6 803.3,268.9 909.3,272.2 1015.4,235.2 1121.5,365.3"/>
+<circle cx="697.2" cy="320.6" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="803.3" cy="268.9" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="909.3" cy="272.2" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1015.4" cy="235.2" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1121.5" cy="365.3" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#059669" stroke-width="2.9" points="697.2,338.1 803.3,292.2 909.3,310.2 1015.4,267.9 1121.5,365.3"/>
+<circle cx="697.2" cy="338.1" r="4.8" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="803.3" cy="292.2" r="4.8" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="909.3" cy="310.2" r="4.8" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1015.4" cy="267.9" r="4.8" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1121.5" cy="365.3" r="4.8" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<text x="1052.5" y="350.7" text-anchor="end" font-size="11.8" font-weight="700" fill="#047857">Drops to Exact 0% →</text>
+<rect x="686.0" y="52.0" width="221.5" height="87.6" rx="6" fill="#ffffff" fill-opacity="0.96" stroke="#d1d5db" stroke-width="1.1"/>
+<line x1="694.0" y1="63.6" x2="715.0" y2="63.6" stroke="#dc2626" stroke-width="2.6" stroke-dasharray="5,4"/>
+<circle cx="704.5" cy="63.6" r="3.9" fill="#dc2626"/>
+<text x="722.0" y="67.6" font-size="11.5">Too Warm (β = 4.5: grows)</text>
+<line x1="694.0" y1="83.0" x2="715.0" y2="83.0" stroke="#ea580c" stroke-width="2.6" stroke-dasharray="5,4"/>
+<circle cx="704.5" cy="83.0" r="3.9" fill="#ea580c"/>
+<text x="722.0" y="87.0" font-size="11.5">Above Tc (β = 5.5: nonzero)</text>
+<line x1="694.0" y1="102.4" x2="715.0" y2="102.4" stroke="#2563eb" stroke-width="2.6"/>
+<circle cx="704.5" cy="102.4" r="3.9" fill="#2563eb"/>
+<text x="722.0" y="106.4" font-size="11.5">At Threshold (β = 6.0 → 0%)</text>
+<line x1="694.0" y1="121.8" x2="715.0" y2="121.8" stroke="#059669" stroke-width="2.6"/>
+<circle cx="704.5" cy="121.8" r="3.9" fill="#059669"/>
+<text x="722.0" y="125.8" font-size="11.5">Cold Bath (β = 6.5 → 0%)</text>
+<rect x="86" y="464" width="472" height="316" fill="#fafafa" stroke="#374151" stroke-width="1.5"/>
+<rect x="86" y="464" width="472" height="316" fill="none" stroke="#374151" stroke-width="1.5"/>
+<text x="322.0" y="451.0" text-anchor="middle" font-size="14.8" font-weight="700">(c) Three Uniform Quantum Levels to 423,559 Qubits</text>
+<text x="322.0" y="821.0" text-anchor="middle" font-size="13.5" font-weight="600">Inverse Bath Temperature β = 1 / T (Colder →)</text>
+<text x="28.0" y="622.0" text-anchor="middle" font-size="13.5" font-weight="600" transform="rotate(-90 28.0 622.0)">Quantum Memory Lifetime</text>
+<line x1="105.3" y1="464" x2="105.3" y2="780" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="105.3" y1="780" x2="105.3" y2="785" stroke="#374151" stroke-width="1.2"/>
+<text x="105.3" y="800" text-anchor="middle" font-size="12.1">4.5</text>
+<line x1="202.1" y1="464" x2="202.1" y2="780" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="202.1" y1="780" x2="202.1" y2="785" stroke="#374151" stroke-width="1.2"/>
+<text x="202.1" y="800" text-anchor="middle" font-size="12.1">5.0</text>
+<line x1="298.8" y1="464" x2="298.8" y2="780" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="298.8" y1="780" x2="298.8" y2="785" stroke="#374151" stroke-width="1.2"/>
+<text x="298.8" y="800" text-anchor="middle" font-size="12.1">5.5</text>
+<line x1="395.5" y1="464" x2="395.5" y2="780" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="395.5" y1="780" x2="395.5" y2="785" stroke="#374151" stroke-width="1.2"/>
+<text x="395.5" y="800" text-anchor="middle" font-size="12.1">6.0</text>
+<line x1="492.2" y1="464" x2="492.2" y2="780" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="492.2" y1="780" x2="492.2" y2="785" stroke="#374151" stroke-width="1.2"/>
+<text x="492.2" y="800" text-anchor="middle" font-size="12.1">6.5</text>
+<line x1="86" y1="768.6" x2="558" y2="768.6" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="768.6" x2="86" y2="768.6" stroke="#374151" stroke-width="1.2"/>
+<text x="78" y="773.1" text-anchor="end" font-size="12.1">10¹</text>
+<line x1="86" y1="717.5" x2="558" y2="717.5" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="717.5" x2="86" y2="717.5" stroke="#374151" stroke-width="1.2"/>
+<text x="78" y="722.0" text-anchor="end" font-size="12.1">10²</text>
+<line x1="86" y1="666.3" x2="558" y2="666.3" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="666.3" x2="86" y2="666.3" stroke="#374151" stroke-width="1.2"/>
+<text x="78" y="670.8" text-anchor="end" font-size="12.1">10³</text>
+<line x1="86" y1="615.2" x2="558" y2="615.2" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="615.2" x2="86" y2="615.2" stroke="#374151" stroke-width="1.2"/>
+<text x="78" y="619.7" text-anchor="end" font-size="12.1">10⁴</text>
+<line x1="86" y1="564.0" x2="558" y2="564.0" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="564.0" x2="86" y2="564.0" stroke="#374151" stroke-width="1.2"/>
+<text x="78" y="568.5" text-anchor="end" font-size="12.1">10⁵</text>
+<line x1="86" y1="512.8" x2="558" y2="512.8" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="512.8" x2="86" y2="512.8" stroke="#374151" stroke-width="1.2"/>
+<text x="78" y="517.3" text-anchor="end" font-size="12.1">10⁶</text>
+<polyline fill="none" stroke="#be123c" stroke-width="2.9" points="298.8,642.2 347.1,615.5 366.5,608.6 395.5,588.6 414.9,562.2 443.9,538.6 463.2,529.1 492.2,506.4"/>
+<circle cx="298.8" cy="642.2" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="347.1" cy="615.5" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="366.5" cy="608.6" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="395.5" cy="588.6" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="414.9" cy="562.2" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="443.9" cy="538.6" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="463.2" cy="529.1" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="492.2" cy="506.4" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#059669" stroke-width="2.9" points="105.3,713.1 202.1,683.9 298.8,654.3 347.1,641.5 366.5,633.9 395.5,625.1 414.9,612.9 443.9,607.3 463.2,596.3 492.2,586.2"/>
+<circle cx="105.3" cy="713.1" r="4.8" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="202.1" cy="683.9" r="4.8" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="298.8" cy="654.3" r="4.8" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="347.1" cy="641.5" r="4.8" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="366.5" cy="633.9" r="4.8" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="395.5" cy="625.1" r="4.8" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="414.9" cy="612.9" r="4.8" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="443.9" cy="607.3" r="4.8" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="463.2" cy="596.3" r="4.8" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="492.2" cy="586.2" r="4.8" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#6b7280" stroke-width="2.9" stroke-dasharray="4,3" points="105.3,768.8 202.1,757.7 298.8,747.8 347.1,741.2 366.5,738.5 395.5,735.3 414.9,736.0 443.9,730.9 463.2,725.0 492.2,722.4"/>
+<circle cx="105.3" cy="768.8" r="4.8" fill="#6b7280" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="202.1" cy="757.7" r="4.8" fill="#6b7280" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="298.8" cy="747.8" r="4.8" fill="#6b7280" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="347.1" cy="741.2" r="4.8" fill="#6b7280" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="366.5" cy="738.5" r="4.8" fill="#6b7280" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="395.5" cy="735.3" r="4.8" fill="#6b7280" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="414.9" cy="736.0" r="4.8" fill="#6b7280" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="443.9" cy="730.9" r="4.8" fill="#6b7280" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="463.2" cy="725.0" r="4.8" fill="#6b7280" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="492.2" cy="722.4" r="4.8" fill="#6b7280" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="492.2" y1="514.4" x2="492.2" y2="714.4" stroke="#be123c" stroke-width="2.1" stroke-dasharray="3,3"/>
+<polygon points="492.2,508.4 487.7,516.4 496.7,516.4" fill="#be123c"/>
+<polygon points="492.2,720.4 487.7,712.4 496.7,712.4" fill="#be123c"/>
+<text x="500.7" y="642.5" text-anchor="start" font-size="12.3" font-weight="700" fill="#be123c">16,623×</text>
+<rect x="96.0" y="474.0" width="260.5" height="68.2" rx="6" fill="#ffffff" fill-opacity="0.96" stroke="#d1d5db" stroke-width="1.1"/>
+<line x1="104.0" y1="485.6" x2="125.0" y2="485.6" stroke="#be123c" stroke-width="2.6"/>
+<circle cx="114.5" cy="485.6" r="3.9" fill="#be123c"/>
+<text x="132.0" y="489.6" font-size="11.5">Level 3 (423,559q: barrier = 7.1)</text>
+<line x1="104.0" y1="505.0" x2="125.0" y2="505.0" stroke="#059669" stroke-width="2.6"/>
+<circle cx="114.5" cy="505.0" r="3.9" fill="#059669"/>
+<text x="132.0" y="509.0" font-size="11.5">Level 2 (2,911q: barrier = 3.4)</text>
+<line x1="104.0" y1="524.4" x2="125.0" y2="524.4" stroke="#6b7280" stroke-width="2.6" stroke-dasharray="4,3"/>
+<circle cx="114.5" cy="524.4" r="3.9" fill="#6b7280"/>
+<text x="132.0" y="528.4" font-size="11.5">Level 1 (19q: barrier = 1.3)</text>
+<rect x="676" y="464" width="472" height="316" fill="#fafafa" stroke="#374151" stroke-width="1.5"/>
+<rect x="676" y="464" width="472" height="316" fill="none" stroke="#374151" stroke-width="1.5"/>
+<text x="912.0" y="451.0" text-anchor="middle" font-size="14.8" font-weight="700">(d) Torus (94,774q): Local Readout Matches Global</text>
+<text x="912.0" y="821.0" text-anchor="middle" font-size="13.5" font-weight="600">Inverse Bath Temperature β = 1 / T (Colder →)</text>
+<text x="618.0" y="622.0" text-anchor="middle" font-size="13.5" font-weight="600" transform="rotate(-90 618.0 622.0)">Quantum Memory Lifetime</text>
+<line x1="707.1" y1="464" x2="707.1" y2="780" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="707.1" y1="780" x2="707.1" y2="785" stroke="#374151" stroke-width="1.2"/>
+<text x="707.1" y="800" text-anchor="middle" font-size="12.1">5.5</text>
+<line x1="862.3" y1="464" x2="862.3" y2="780" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="862.3" y1="780" x2="862.3" y2="785" stroke="#374151" stroke-width="1.2"/>
+<text x="862.3" y="800" text-anchor="middle" font-size="12.1">6.0</text>
+<line x1="939.9" y1="464" x2="939.9" y2="780" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="939.9" y1="780" x2="939.9" y2="785" stroke="#374151" stroke-width="1.2"/>
+<text x="939.9" y="800" text-anchor="middle" font-size="12.1">6.25</text>
+<line x1="1017.6" y1="464" x2="1017.6" y2="780" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="1017.6" y1="780" x2="1017.6" y2="785" stroke="#374151" stroke-width="1.2"/>
+<text x="1017.6" y="800" text-anchor="middle" font-size="12.1">6.5</text>
+<line x1="1095.2" y1="464" x2="1095.2" y2="780" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="1095.2" y1="780" x2="1095.2" y2="785" stroke="#374151" stroke-width="1.2"/>
+<text x="1095.2" y="800" text-anchor="middle" font-size="12.1">6.75</text>
+<line x1="676" y1="760.6" x2="1148" y2="760.6" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="760.6" x2="676" y2="760.6" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="765.1" text-anchor="end" font-size="12.1">10³</text>
+<line x1="676" y1="696.1" x2="1148" y2="696.1" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="696.1" x2="676" y2="696.1" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="700.6" text-anchor="end" font-size="12.1">10⁴</text>
+<line x1="676" y1="631.7" x2="1148" y2="631.7" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="631.7" x2="676" y2="631.7" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="636.2" text-anchor="end" font-size="12.1">10⁵</text>
+<line x1="676" y1="567.3" x2="1148" y2="567.3" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="567.3" x2="676" y2="567.3" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="571.8" text-anchor="end" font-size="12.1">10⁶</text>
+<line x1="676" y1="502.8" x2="1148" y2="502.8" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="671" y1="502.8" x2="676" y2="502.8" stroke="#374151" stroke-width="1.2"/>
+<text x="668" y="507.3" text-anchor="end" font-size="12.1">10⁷</text>
+<polyline fill="none" stroke="#be123c" stroke-width="2.9" points="707.1,748.5 862.3,680.1 939.9,615.6 1017.6,558.1 1064.2,533.6"/>
+<circle cx="707.1" cy="748.5" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="862.3" cy="680.1" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="939.9" cy="615.6" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1017.6" cy="558.1" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1064.2" cy="533.6" r="4.8" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#ea580c" stroke-width="2.9" stroke-dasharray="6,3" points="707.1,766.9 862.3,677.6 939.9,624.0 1017.6,560.4 1064.2,530.0"/>
+<circle cx="707.1" cy="766.9" r="4.9" fill="#ffffff" stroke="#ea580c" stroke-width="2.2"/>
+<circle cx="862.3" cy="677.6" r="4.9" fill="#ffffff" stroke="#ea580c" stroke-width="2.2"/>
+<circle cx="939.9" cy="624.0" r="4.9" fill="#ffffff" stroke="#ea580c" stroke-width="2.2"/>
+<circle cx="1017.6" cy="560.4" r="4.9" fill="#ffffff" stroke="#ea580c" stroke-width="2.2"/>
+<circle cx="1064.2" cy="530.0" r="4.9" fill="#ffffff" stroke="#ea580c" stroke-width="2.2"/>
+<polyline fill="none" stroke="#2563eb" stroke-width="2.9" points="707.1,699.8 862.3,659.1 939.9,633.2 1017.6,609.5 1064.2,597.9"/>
+<circle cx="707.1" cy="699.8" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="862.3" cy="659.1" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="939.9" cy="633.2" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1017.6" cy="609.5" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1064.2" cy="597.9" r="4.8" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#059669" stroke-width="2.9" stroke-dasharray="4,3" points="707.1,702.6 862.3,657.5 939.9,632.4 1017.6,613.0 1064.2,599.8"/>
+<circle cx="707.1" cy="702.6" r="4.9" fill="#ffffff" stroke="#059669" stroke-width="2.2"/>
+<circle cx="862.3" cy="657.5" r="4.9" fill="#ffffff" stroke="#059669" stroke-width="2.2"/>
+<circle cx="939.9" cy="632.4" r="4.9" fill="#ffffff" stroke="#059669" stroke-width="2.2"/>
+<circle cx="1017.6" cy="613.0" r="4.9" fill="#ffffff" stroke="#059669" stroke-width="2.2"/>
+<circle cx="1064.2" cy="599.8" r="4.9" fill="#ffffff" stroke="#059669" stroke-width="2.2"/>
+<line x1="1064.2" y1="541.6" x2="1064.2" y2="589.9" stroke="#be123c" stroke-width="2.1" stroke-dasharray="3,3"/>
+<polygon points="1064.2,535.6 1059.7,543.6 1068.7,543.6" fill="#be123c"/>
+<polygon points="1064.2,595.9 1059.7,587.9 1068.7,587.9" fill="#be123c"/>
+<text x="1072.7" y="568.6" text-anchor="start" font-size="12.3" font-weight="700" fill="#be123c">10×</text>
+<rect x="686.0" y="474.0" width="299.5" height="87.6" rx="6" fill="#ffffff" fill-opacity="0.96" stroke="#d1d5db" stroke-width="1.1"/>
+<line x1="694.0" y1="485.6" x2="715.0" y2="485.6" stroke="#be123c" stroke-width="2.6"/>
+<circle cx="704.5" cy="485.6" r="3.9" fill="#be123c"/>
+<text x="722.0" y="489.6" font-size="11.5">Cycle 2 (94,774q): Global Decoder (10×)</text>
+<line x1="694.0" y1="505.0" x2="715.0" y2="505.0" stroke="#ea580c" stroke-width="2.6" stroke-dasharray="6,3"/>
+<circle cx="704.5" cy="505.0" r="3.9" fill="#ffffff" stroke="#ea580c" stroke-width="2.0"/>
+<text x="722.0" y="509.0" font-size="11.5">Cycle 2 (94,774q): Fast Local Readout</text>
+<line x1="694.0" y1="524.4" x2="715.0" y2="524.4" stroke="#2563eb" stroke-width="2.6"/>
+<circle cx="704.5" cy="524.4" r="3.9" fill="#2563eb"/>
+<text x="722.0" y="528.4" font-size="11.5">Cycle 1 (646q): Global Decoder</text>
+<line x1="694.0" y1="543.8" x2="715.0" y2="543.8" stroke="#059669" stroke-width="2.6" stroke-dasharray="4,3"/>
+<circle cx="704.5" cy="543.8" r="3.9" fill="#ffffff" stroke="#059669" stroke-width="2.0"/>
+<text x="722.0" y="547.8" font-size="11.5">Cycle 1 (646q): Fast Local Readout</text>
+</svg>
