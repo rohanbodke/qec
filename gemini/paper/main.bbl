@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{21}%
+\begin{thebibliography}{20}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -229,12 +229,4 @@
   {Preskill}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
   {Physical Review Letters}\ }\textbf {\bibinfo {volume} {123}},\ \bibinfo
   {pages} {020501} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Breuckmann}\ and\ \citenamefont
-  {Terhal}(2016)}]{breuckmann2016hyperbolic}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.~P.}\ \bibnamefont
-  {Breuckmann}}\ and\ \bibinfo {author} {\bibfnamefont {B.~M.}\ \bibnamefont
-  {Terhal}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {IEEE
-  Transactions on Information Theory}\ }\textbf {\bibinfo {volume} {62}},\
-  \bibinfo {pages} {3731} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
 \end{thebibliography}%
