@@ -1,0 +1,36 @@
+kmc__rottor_iso_L2r1_s2_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=646 K=2 trials=120 mean_t=8.7870e+03 sem_t=8.0685e+02 median_t=5.6963e+03 mean_flips=6055.8 bails=0 capped=0
+kmc__rottor_iso_L2r1_s2_X_err__uniform__uf__b6.25 | KMC dec=uf beta=6.25 N=646 K=2 trials=120 mean_t=9.4867e+04 sem_t=1.1728e+04 median_t=5.6863e+04 mean_flips=13108.6 bails=0 capped=0
+kmc__rottor_iso_L2r1_s2_X_err__uniform__uf__b6.65 | KMC dec=uf beta=6.65 N=646 K=2 trials=120 mean_t=3.3441e+05 sem_t=3.5442e+04 median_t=1.8655e+05 mean_flips=20732.6 bails=0 capped=0
+kmc__rottor_iso_L2r1_s2_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=646 K=2 trials=80 mean_t=1.2244e+07 sem_t=1.5282e+06 median_t=7.8538e+06 mean_flips=526425.4 bails=0 capped=0
+kmc__sq_iso_L2r1_s1_Z_err__uniform__uf__b4.50 | KMC dec=uf beta=4.50 N=19 K=1 trials=160 mean_t=9.9133e+00 sem_t=7.5493e-01 median_t=6.7094e+00 mean_flips=2.4 bails=0 capped=0
+kmc__sq_iso_L2r1_s1_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=19 K=1 trials=160 mean_t=2.5510e+01 sem_t=1.8996e+00 median_t=1.9878e+01 mean_flips=2.5 bails=0 capped=0
+kmc__sq_iso_L2r1_s1_Z_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=19 K=1 trials=160 mean_t=4.4825e+01 sem_t=3.8305e+00 median_t=2.8394e+01 mean_flips=2.3 bails=0 capped=0
+kmc__sq_iso_L2r1_s1_Z_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=19 K=1 trials=160 mean_t=8.0285e+01 sem_t=6.5248e+00 median_t=5.2439e+01 mean_flips=2.5 bails=0 capped=0
+kmc__sq_iso_L2r1_s3_Z_err__uniform__uf__b5.00 | KMC dec=uf beta=5.00 N=2911 K=1 trials=64 mean_t=4.5383e+02 sem_t=5.9144e+01 median_t=3.2404e+02 mean_flips=5913.0 bails=0 capped=0
+kmc__sq_iso_L2r1_s3_Z_err__uniform__uf__b5.75 | KMC dec=uf beta=5.75 N=2911 K=1 trials=64 mean_t=3.0558e+03 sem_t=3.0199e+02 median_t=2.6370e+03 mean_flips=15439.2 bails=0 capped=0
+kmc__sq_iso_L2r1_s3_Z_err__uniform__uf__b6.25 | KMC dec=uf beta=6.25 N=2911 K=1 trials=64 mean_t=1.4231e+04 sem_t=2.2551e+03 median_t=7.8004e+03 mean_flips=37635.0 bails=0 capped=0
+kmc__sq_iso_L2r1_s3_X_err__uniform__uf__b4.50 | KMC dec=uf beta=4.50 N=2911 K=1 trials=48 mean_t=5.7301e+05 sem_t=1.3941e+05 median_t=3.5832e+05 mean_flips=4760323.5 bails=0 capped=0
+kmc__rottor_iso_L2r1_s2_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=646 K=2 trials=120 mean_t=3.7591e+04 sem_t=3.6700e+03 median_t=2.4950e+04 mean_flips=9753.3 bails=0 capped=0
+kmc__rottor_iso_L2r1_s2_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=646 K=2 trials=120 mean_t=2.2126e+05 sem_t=2.0646e+04 median_t=1.5434e+05 mean_flips=18503.7 bails=0 capped=0
+kmc__rottor_iso_L2r1_s2_X_err__uniform__uf__b6.80 | KMC dec=uf beta=6.80 N=646 K=2 trials=120 mean_t=6.3662e+05 sem_t=7.1342e+04 median_t=4.5677e+05 mean_flips=28667.0 bails=0 capped=0
+kmc__rottor_iso_L2r1_s2_Z_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=646 K=2 trials=80 mean_t=1.5758e+08 sem_t=1.5584e+07 median_t=1.1200e+08 mean_flips=2403404.4 bails=0 capped=0
+kmc__sq_iso_L2r1_s1_Z_err__uniform__uf__b5.00 | KMC dec=uf beta=5.00 N=19 K=1 trials=160 mean_t=1.6386e+01 sem_t=1.1965e+00 median_t=1.1614e+01 mean_flips=2.3 bails=0 capped=0
+kmc__sq_iso_L2r1_s1_Z_err__uniform__uf__b5.75 | KMC dec=uf beta=5.75 N=19 K=1 trials=160 mean_t=3.4330e+01 sem_t=2.9099e+00 median_t=2.2360e+01 mean_flips=2.0 bails=0 capped=0
+kmc__sq_iso_L2r1_s1_Z_err__uniform__uf__b6.25 | KMC dec=uf beta=6.25 N=19 K=1 trials=160 mean_t=5.4722e+01 sem_t=4.0047e+00 median_t=4.3241e+01 mean_flips=2.2 bails=0 capped=0
+kmc__sq_iso_L2r1_s3_Z_err__uniform__uf__b4.50 | KMC dec=uf beta=4.50 N=2911 K=1 trials=64 mean_t=1.2154e+02 sem_t=1.3453e+01 median_t=8.4097e+01 mean_flips=2568.3 bails=0 capped=0
+kmc__sq_iso_L2r1_s3_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=2911 K=1 trials=64 mean_t=1.7162e+03 sem_t=2.1717e+02 median_t=1.1779e+03 mean_flips=11755.0 bails=0 capped=0
+kmc__sq_iso_L2r1_s3_Z_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=2911 K=1 trials=64 mean_t=6.4047e+03 sem_t=8.6192e+02 median_t=4.2632e+03 mean_flips=23888.6 bails=0 capped=0
+kmc__sq_iso_L2r1_s3_Z_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=2911 K=1 trials=64 mean_t=3.6724e+04 sem_t=4.9688e+03 median_t=2.2703e+04 mean_flips=70690.4 bails=0 capped=0
+kmc__sq_iso_L2r1_s3_X_err__uniform__uf__b5.00 | KMC dec=uf beta=5.00 N=2911 K=1 trials=48 mean_t=5.6884e+06 sem_t=9.6444e+05 median_t=3.1896e+06 mean_flips=25990387.5 bails=0 capped=0
+kmc__rottor_iso_L2r1_s4_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=94774 K=2 trials=20 mean_t=1.5404e+03 sem_t=1.4548e+02 median_t=1.5406e+03 mean_flips=237803.2 bails=0 capped=0
+kmc__rottor_iso_L2r1_s4_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=94774 K=2 trials=20 mean_t=1.7734e+04 sem_t=2.1655e+03 median_t=1.5472e+04 mean_flips=1069913.9 bails=0 capped=0
+kmc__rottor_iso_L2r1_s4_X_err__uniform__uf__b6.25 | KMC dec=uf beta=6.25 N=94774 K=2 trials=20 mean_t=1.7784e+05 sem_t=4.4445e+04 median_t=1.0253e+05 mean_flips=6095585.8 bails=0 capped=0
+kmc__rottor_iso_L2r1_s4_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=94774 K=2 trials=20 mean_t=1.3875e+06 sem_t=3.4749e+05 median_t=6.7557e+05 mean_flips=23382361.1 bails=0 capped=0
+kmc__rottor_iso_L2r1_s4_X_err__uniform__uf__b6.65 | KMC dec=uf beta=6.65 N=94774 K=2 trials=20 mean_t=3.3266e+06 sem_t=7.3733e+05 median_t=2.4925e+06 mean_flips=39130742.0 bails=0 capped=0
+kmc__rottor_iso_L2r1_s4_X_err__uniform__uf__b6.80 | KMC dec=uf beta=6.80 N=94774 K=2 trials=20 mean_t=1.3634e+07 sem_t=2.6590e+06 median_t=1.2827e+07 mean_flips=105427489.2 bails=0 capped=1
+kmc__rottor_iso_L2r1_s4_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=94774 K=2 trials=16 mean_t=4.5604e+07 sem_t=7.9183e+03 median_t=4.5613e+07 mean_flips=250000000.0 bails=0 capped=16
+kmc__rottor_iso_L2r1_s4_Z_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=94774 K=2 trials=16 mean_t=1.2812e+08 sem_t=1.6978e+04 median_t=1.2812e+08 mean_flips=250000000.0 bails=0 capped=16
+kmc__sq_iso_L2r1_s5_Z_err__uniform__uf__b6.25 | TIMEOUT
+kmc__sq_iso_L2r1_s5_Z_err__uniform__uf__b6.35 | TIMEOUT
+kmc__sq_iso_L2r1_s5_Z_err__uniform__uf__b6.50 | TIMEOUT
+kmc__sq_iso_L2r1_s5_X_err__uniform__uf__b5.00 | KMC dec=uf beta=5.00 N=423559 K=1 trials=12 mean_t=1.1529e+06 sem_t=4.8890e+03 median_t=1.1593e+06 mean_flips=200000000.0 bails=0 capped=12
