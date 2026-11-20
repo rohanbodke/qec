@@ -1,0 +1,318 @@
+=== 0. V4 ZERO-TRUST EXECUTION AUDIT ===
+Total timeouts/errors: 42
+  TIMEOUT|CLS_CROSS|cls_l3_r2_step3.code
+  TIMEOUT|CLS_CROSS|cls_l3_r2_step3.code
+  TIMEOUT|GIBBS|sq_aniso_L2r1_s4_Xerr.code
+  TIMEOUT|CLS_CROSS|cls_l2_r1_step3.code
+  TIMEOUT|CLS_CROSS|cls_l2_r1_step3.code
+  TIMEOUT|CLS_CROSS|cls_l2_r1_step3.code
+  TIMEOUT|CLS_CROSS|cls_l2_r1_step3.code
+  TIMEOUT|CLS_CROSS|cls_l3_r2_step4.code
+  TIMEOUT|CLS_CROSS|cls_l2_r1_step3.code
+  TIMEOUT|CLS_CROSS|cls_l3_r2_step4.code
+  TIMEOUT|CLS_CROSS|cls_l2_r1_step3.code
+  TIMEOUT|CLS_CROSS|cls_l3_r2_step4.code
+  TIMEOUT|CLS_CROSS|cls_l2_r1_step3.code
+  TIMEOUT|CLS_CROSS|cls_l2_r1_step3.code
+  TIMEOUT|SCALING|haah_cubic_L9_Xerr.code
+  TIMEOUT|SCALING|haah_cubic_L9_Xerr.code
+  TIMEOUT|CLS_CROSS|cls_l2_r1_step4.code
+  TIMEOUT|SCALING|haah_cubic_L11_Xerr.code
+  TIMEOUT|CLS_CROSS|cls_l2_r1_step4.code
+  TIMEOUT|SCALING|haah_cubic_L11_Xerr.code
+  TIMEOUT|CLS_CROSS|cls_l2_r1_step4.code
+  TIMEOUT|CLS_CROSS|cls_l2_r1_step5.code
+  TIMEOUT|CLS_CROSS|cls_l2_r1_step5.code
+  TIMEOUT|SCALING|haah_cubic_L13_Xerr.code
+  TIMEOUT|CLS_CROSS|cls_l2_r1_step5.code
+  TIMEOUT|SCALING|haah_cubic_L13_Xerr.code
+  TIMEOUT|CLS_CROSS|cls_l2_r1_step5.code
+  TIMEOUT|SCALING|haah_cubic_L13_Xerr.code
+  TIMEOUT|Q_MULTICYCLE|sq_aniso_hyb21_s3_Xerr.code
+  TIMEOUT|CLS_CROSS|cls_l3_r1_step3.code
+Total KMC (code, beta) points: 496 | Points with any capped trial: 6
+  CAPPED: haah_cubic_L7_Xerr.code beta=5.0: 1/48
+  CAPPED: haah_cubic_L9_Xerr.code beta=4.5: 1/72
+  CAPPED: cls_l2_r1_step4.code beta=4.25: 3/32
+  CAPPED: haah_cubic_L11_Xerr.code beta=4.5: 1/72
+  CAPPED: sq_aniso_hyb21_s3_Xerr.code beta=4.5: 2/32
+  CAPPED: sq_aniso_L2r1_s4_Zerr.code beta=5.0: 1/32
+
+=== 1. V4 EXACT CODE PARAMETERS ACROSS ALL 4 SYMMETRY CLASSES ===
+  bb_gross_12x6_Xerr.code              | N=   144 M=    72 M_meta=   6 K=12 w_max= 6 w_avg=6.00 qdeg= 3 d<=  12 Delta<=  5
+  bb_gross_12x6_Zerr.code              | N=   144 M=    72 M_meta=   6 K=12 w_max= 6 w_avg=6.00 qdeg= 3 d<=  12 Delta<=  5
+  bb_gross_18x12_Xerr.code             | N=   432 M=   216 M_meta=   6 K=12 w_max= 6 w_avg=6.00 qdeg= 3 d<=  20 Delta<=  5
+  bb_gross_18x12_Zerr.code             | N=   432 M=   216 M_meta=   6 K=12 w_max= 6 w_avg=6.00 qdeg= 3 d<=  22 Delta<=  5
+  bb_gross_24x18_Xerr.code             | N=   864 M=   432 M_meta=   6 K=12 w_max= 6 w_avg=6.00 qdeg= 3 d<=  48 Delta<=  8
+  bb_gross_24x18_Zerr.code             | N=   864 M=   432 M_meta=   6 K=12 w_max= 6 w_avg=6.00 qdeg= 3 d<=  46 Delta<=  9
+  bb_gross_30x18_Xerr.code             | N=  1080 M=   540 M_meta=   6 K=12 w_max= 6 w_avg=6.00 qdeg= 3 d<=  52 Delta<=  8
+  bb_gross_30x18_Zerr.code             | N=  1080 M=   540 M_meta=   6 K=12 w_max= 6 w_avg=6.00 qdeg= 3 d<=  50 Delta<=  7
+  bb_gross_36x18_Xerr.code             | N=  1296 M=   648 M_meta=   6 K=12 w_max= 6 w_avg=6.00 qdeg= 3 d<=  58 Delta<=  8
+  bb_gross_36x18_Zerr.code             | N=  1296 M=   648 M_meta=   6 K=12 w_max= 6 w_avg=6.00 qdeg= 3 d<=  46 Delta<=  8
+  bb_gross_48x18_Xerr.code             | N=  1728 M=   864 M_meta=   6 K=12 w_max= 6 w_avg=6.00 qdeg= 3 d<=  44 Delta<=  8
+  bb_gross_48x18_Zerr.code             | N=  1728 M=   864 M_meta=   6 K=12 w_max= 6 w_avg=6.00 qdeg= 3 d<=  64 Delta<= 11
+  bb_gross_60x18_Xerr.code             | N=  2160 M=  1080 M_meta=   6 K=12 w_max= 6 w_avg=6.00 qdeg= 3 d<=  62 Delta<= 10
+  bb_gross_60x18_Zerr.code             | N=  2160 M=  1080 M_meta=   6 K=12 w_max= 6 w_avg=6.00 qdeg= 3 d<=  50 Delta<=  9
+  bb_gross_6x6_Xerr.code               | N=    72 M=    36 M_meta=   6 K=12 w_max= 6 w_avg=6.00 qdeg= 3 d<=   6 Delta<=  4
+  bb_gross_6x6_Zerr.code               | N=    72 M=    36 M_meta=   6 K=12 w_max= 6 w_avg=6.00 qdeg= 3 d<=   6 Delta<=  4
+  cls_l2_r1_step0.code                 | N=     4 M=     4 M_meta=   1 K= 1 w_max= 2 w_avg=2.00 qdeg= 2 d<=   4 Delta<=  2
+  cls_l2_r1_step1.code                 | N=    20 M=    24 M_meta=   5 K= 1 w_max= 2 w_avg=2.00 qdeg= 3 d<=  20 Delta<=  5
+  cls_l2_r1_step2.code                 | N=   100 M=    88 M_meta=   5 K= 1 w_max= 3 w_avg=2.45 qdeg= 3 d<=  40 Delta<=  5
+  cls_l2_r1_step3.code                 | N=   500 M=   576 M_meta=  93 K= 1 w_max= 3 w_avg=2.14 qdeg= 3 d<= 215 Delta<= 14
+  cls_l2_r1_step4.code                 | N=  2500 M=  2152 M_meta=  93 K= 1 w_max= 3 w_avg=2.54 qdeg= 3 d<= 537 Delta<= 12
+  cls_l2_r1_step5.code                 | N= 12500 M= 14304 M_meta=2245 K= 1 w_max= 3 w_avg=2.16 qdeg= 3 d<=2770 Delta<=527
+  cls_l3_r1_step0.code                 | N=     4 M=     4 M_meta=   1 K= 1 w_max= 2 w_avg=2.00 qdeg= 2 d<=   4 Delta<=  2
+  cls_l3_r1_step1.code                 | N=    28 M=    32 M_meta=   5 K= 1 w_max= 2 w_avg=2.00 qdeg= 3 d<=  28 Delta<=  5
+  cls_l3_r1_step2.code                 | N=   196 M=   176 M_meta=   5 K= 1 w_max= 3 w_avg=2.32 qdeg= 3 d<=  86 Delta<=  5
+  cls_l3_r1_step3.code                 | N=  1372 M=  1528 M_meta= 181 K= 1 w_max= 3 w_avg=2.07 qdeg= 3 d<= 616 Delta<= 15
+  cls_l3_r1_step4.code                 | N=  9604 M=  8544 M_meta= 181 K= 1 w_max= 3 w_avg=2.35 qdeg= 3 d<=2274 Delta<= 14
+  cls_l3_r2_step0.code                 | N=     4 M=     4 M_meta=   1 K= 1 w_max= 2 w_avg=2.00 qdeg= 2 d<=   4 Delta<=  2
+  cls_l3_r2_step1.code                 | N=    32 M=    40 M_meta=   9 K= 1 w_max= 2 w_avg=2.00 qdeg= 3 d<=  32 Delta<=  5
+  cls_l3_r2_step2.code                 | N=   256 M=   208 M_meta=   9 K= 1 w_max= 3 w_avg=2.62 qdeg= 3 d<= 106 Delta<=  5
+  cls_l3_r2_step3.code                 | N=  2048 M=  2464 M_meta= 473 K= 1 w_max= 3 w_avg=2.10 qdeg= 3 d<= 896 Delta<= 40
+  cls_l3_r2_step4.code                 | N= 16384 M= 13120 M_meta= 473 K= 1 w_max= 3 w_avg=2.66 qdeg= 3 d<=3501 Delta<= 16
+  haah_cubic_L11_Xerr.code             | N=  2662 M=  1331 M_meta=   1 K= 2 w_max= 8 w_avg=8.00 qdeg= 4 d<= 519 Delta<= 58
+  haah_cubic_L11_Zerr.code             | N=  2662 M=  1331 M_meta=   1 K= 2 w_max= 8 w_avg=8.00 qdeg= 4 d<= 527 Delta<= 74
+  haah_cubic_L13_Xerr.code             | N=  4394 M=  2197 M_meta=   1 K= 2 w_max= 8 w_avg=8.00 qdeg= 4 d<= 911 Delta<= 98
+  haah_cubic_L13_Zerr.code             | N=  4394 M=  2197 M_meta=   1 K= 2 w_max= 8 w_avg=8.00 qdeg= 4 d<= 909 Delta<=100
+  haah_cubic_L3_Xerr.code              | N=    54 M=    27 M_meta=   1 K= 2 w_max= 8 w_avg=8.00 qdeg= 4 d<=   9 Delta<=  4
+  haah_cubic_L3_Zerr.code              | N=    54 M=    27 M_meta=   1 K= 2 w_max= 8 w_avg=8.00 qdeg= 4 d<=   9 Delta<=  6
+  haah_cubic_L5_Xerr.code              | N=   250 M=   125 M_meta=   1 K= 2 w_max= 8 w_avg=8.00 qdeg= 4 d<=  19 Delta<=  6
+  haah_cubic_L5_Zerr.code              | N=   250 M=   125 M_meta=   1 K= 2 w_max= 8 w_avg=8.00 qdeg= 4 d<=  19 Delta<=  6
+  haah_cubic_L7_Xerr.code              | N=   686 M=   343 M_meta=   1 K= 2 w_max= 8 w_avg=8.00 qdeg= 4 d<=  95 Delta<= 16
+  haah_cubic_L7_Zerr.code              | N=   686 M=   343 M_meta=   1 K= 2 w_max= 8 w_avg=8.00 qdeg= 4 d<= 107 Delta<= 22
+  haah_cubic_L9_Xerr.code              | N=  1458 M=   729 M_meta=   1 K= 2 w_max= 8 w_avg=8.00 qdeg= 4 d<= 257 Delta<= 42
+  haah_cubic_L9_Zerr.code              | N=  1458 M=   729 M_meta=   1 K= 2 w_max= 8 w_avg=8.00 qdeg= 4 d<= 265 Delta<= 40
+  layer_13_1_3_Xerr.code               | N=  4837 M=  2418 M_meta=   0 K= 1 w_max= 6 w_avg=3.98 qdeg= 3 d<=  54 Delta<=  3
+  layer_13_1_3_Zerr.code               | N=  4837 M=  2418 M_meta=   0 K= 1 w_max= 6 w_avg=3.98 qdeg= 3 d<=  48 Delta<=  2
+  layer_15_35_Xerr.code                | N=  7001 M=  3466 M_meta=   0 K= 1 w_max= 6 w_avg=3.97 qdeg= 3 d<=  60 Delta<=  2
+  layer_15_35_Zerr.code                | N=  7001 M=  3534 M_meta=   0 K= 1 w_max= 6 w_avg=3.93 qdeg= 3 d<=  84 Delta<=  4
+  layer_512_Xerr.code                  | N=   437 M=   218 M_meta=   0 K= 1 w_max= 6 w_avg=3.87 qdeg= 3 d<=  12 Delta<=  2
+  layer_512_Zerr.code                  | N=   437 M=   218 M_meta=   0 K= 1 w_max= 6 w_avg=3.87 qdeg= 3 d<=  11 Delta<=  2
+  layer_913_Xerr.code                  | N=  1853 M=   926 M_meta=   0 K= 1 w_max= 6 w_avg=3.91 qdeg= 3 d<=  31 Delta<=  2
+  layer_913_Zerr.code                  | N=  1853 M=   926 M_meta=   0 K= 1 w_max= 6 w_avg=3.91 qdeg= 3 d<=  18 Delta<=  2
+  layer_913_ksep2_Xerr.code            | N=  5429 M=  2714 M_meta=   0 K= 1 w_max= 6 w_avg=3.94 qdeg= 3 d<=  82 Delta<=  3
+  layer_913_ksep2_Zerr.code            | N=  5429 M=  2714 M_meta=   0 K= 1 w_max= 6 w_avg=3.94 qdeg= 3 d<=  49 Delta<=  2
+  layer_steane_Xerr.code               | N=   743 M=   371 M_meta=   0 K= 1 w_max= 6 w_avg=3.97 qdeg= 3 d<=  12 Delta<=  2
+  layer_steane_Zerr.code               | N=   743 M=   371 M_meta=   0 K= 1 w_max= 6 w_avg=3.97 qdeg= 3 d<=  13 Delta<=  2
+  loc3d_tor2_aniso_L2r1_s0_Xerr.code   | N=     8 M=     4 M_meta=   1 K= 2 w_max= 4 w_avg=4.00 qdeg= 2 d<=   2 Delta<=  2
+  loc3d_tor2_aniso_L2r1_s0_Zerr.code   | N=     8 M=     4 M_meta=   1 K= 2 w_max= 4 w_avg=4.00 qdeg= 2 d<=   2 Delta<=  2
+  loc3d_tor2_aniso_L2r1_s1_Xerr.code   | N=    76 M=    48 M_meta=   5 K= 2 w_max= 4 w_avg=4.00 qdeg= 4 d<=   8 Delta<=  3
+  loc3d_tor2_aniso_L2r1_s1_Zerr.code   | N=    76 M=    32 M_meta=   1 K= 2 w_max= 5 w_avg=4.75 qdeg= 2 d<=   4 Delta<=  2
+  loc3d_tor2_aniso_L2r1_s2_Xerr.code   | N=  1016 M=   464 M_meta=   5 K= 2 w_max= 6 w_avg=4.76 qdeg= 4 d<=  20 Delta<=  3
+  loc3d_tor2_aniso_L2r1_s2_Zerr.code   | N=  1016 M=   576 M_meta=  21 K= 2 w_max= 5 w_avg=4.31 qdeg= 4 d<=  24 Delta<=  5
+  loc3d_tor2_aniso_L2r1_s3_Xerr.code   | N=  7768 M=  4560 M_meta= 277 K= 2 w_max= 6 w_avg=4.34 qdeg= 4 d<= 143 Delta<= 10
+  loc3d_tor2_aniso_L2r1_s3_Zerr.code   | N=  7768 M=  3504 M_meta=  21 K= 2 w_max= 7 w_avg=4.85 qdeg= 4 d<=  79 Delta<=  5
+  nonloc_rp2_aniso_L2r1_s0_Xerr.code   | N=     6 M=     3 M_meta=   1 K= 1 w_max= 4 w_avg=4.00 qdeg= 2 d<=   2 Delta<=  2
+  nonloc_rp2_aniso_L2r1_s0_Zerr.code   | N=     6 M=     4 M_meta=   1 K= 1 w_max= 3 w_avg=3.00 qdeg= 2 d<=   3 Delta<=  2
+  nonloc_rp2_aniso_L2r1_s1_Xerr.code   | N=    57 M=    36 M_meta=   5 K= 1 w_max= 4 w_avg=4.00 qdeg= 4 d<=  10 Delta<=  4
+  nonloc_rp2_aniso_L2r1_s1_Zerr.code   | N=    57 M=    26 M_meta=   1 K= 1 w_max= 5 w_avg=4.38 qdeg= 2 d<=   4 Delta<=  2
+  nonloc_rp2_aniso_L2r1_s2_Xerr.code   | N=   762 M=   348 M_meta=   5 K= 1 w_max= 6 w_avg=4.76 qdeg= 4 d<=  22 Delta<=  4
+  nonloc_rp2_aniso_L2r1_s2_Zerr.code   | N=   762 M=   436 M_meta=  18 K= 1 w_max= 5 w_avg=4.32 qdeg= 4 d<=  29 Delta<=  5
+  nonloc_rp2_aniso_L2r1_s3_Xerr.code   | N=  5826 M=  3420 M_meta= 213 K= 1 w_max= 6 w_avg=4.34 qdeg= 4 d<= 177 Delta<= 14
+  nonloc_rp2_aniso_L2r1_s3_Zerr.code   | N=  5826 M=  2636 M_meta=  18 K= 1 w_max= 7 w_avg=4.86 qdeg= 4 d<=  75 Delta<=  5
+  sq_aniso_L2r1_s0_Xerr.code           | N=     2 M=     1 M_meta=   0 K= 1 w_max= 2 w_avg=2.00 qdeg= 1 d<=   2 Delta<=  1
+  sq_aniso_L2r1_s0_Zerr.code           | N=     2 M=     0 M_meta=   0 K= 1 w_max= 0 w_avg=0.00 qdeg= 0 d<=   1 Delta<=  0
+  sq_aniso_L2r1_s1_Xerr.code           | N=    19 M=    12 M_meta=   0 K= 1 w_max= 4 w_avg=3.17 qdeg= 4 d<=   6 Delta<=  2
+  sq_aniso_L2r1_s1_Zerr.code           | N=    19 M=     6 M_meta=   0 K= 1 w_max= 5 w_avg=4.33 qdeg= 2 d<=   2 Delta<=  1
+  sq_aniso_L2r1_s2_Xerr.code           | N=   254 M=   116 M_meta=   0 K= 1 w_max= 6 w_avg=4.38 qdeg= 4 d<=  10 Delta<=  2
+  sq_aniso_L2r1_s2_Zerr.code           | N=   254 M=   140 M_meta=   3 K= 1 w_max= 5 w_avg=4.03 qdeg= 4 d<=  10 Delta<=  2
+  sq_aniso_L2r1_s3_Xerr.code           | N=  1942 M=  1140 M_meta=  64 K= 1 w_max= 6 w_avg=4.17 qdeg= 4 d<=  61 Delta<=  6
+  sq_aniso_L2r1_s3_Zerr.code           | N=  1942 M=   868 M_meta=   3 K= 1 w_max= 7 w_avg=4.69 qdeg= 4 d<=  23 Delta<=  3
+  sq_aniso_L2r1_s4_Xerr.code           | N= 25148 M= 11188 M_meta=  64 K= 1 w_max= 7 w_avg=4.84 qdeg= 4 d<= 240 Delta<=  6
+  sq_aniso_L2r1_s4_Zerr.code           | N= 25148 M= 14600 M_meta= 577 K= 1 w_max= 7 w_avg=4.28 qdeg= 5 d<= 238 Delta<= 12
+  sq_aniso_hyb21_s0_Xerr.code          | N=     2 M=     1 M_meta=   0 K= 1 w_max= 2 w_avg=2.00 qdeg= 1 d<=   2 Delta<=  1
+  sq_aniso_hyb21_s0_Zerr.code          | N=     2 M=     0 M_meta=   0 K= 1 w_max= 0 w_avg=0.00 qdeg= 0 d<=   1 Delta<=  0
+  sq_aniso_hyb21_s1_Xerr.code          | N=    44 M=    30 M_meta=   3 K= 1 w_max= 4 w_avg=3.47 qdeg= 4 d<=   8 Delta<=  3
+  sq_aniso_hyb21_s1_Zerr.code          | N=    44 M=    16 M_meta=   0 K= 1 w_max= 5 w_avg=4.50 qdeg= 2 d<=   3 Delta<=  1
+  sq_aniso_hyb21_s2_Xerr.code          | N=   586 M=   276 M_meta=   3 K= 1 w_max= 6 w_avg=4.49 qdeg= 4 d<=  16 Delta<=  3
+  sq_aniso_hyb21_s2_Zerr.code          | N=   586 M=   320 M_meta=   8 K= 1 w_max= 5 w_avg=4.20 qdeg= 4 d<=  15 Delta<=  3
+  sq_aniso_hyb21_s3_Xerr.code          | N=  9860 M=  6432 M_meta= 725 K= 1 w_max= 6 w_avg=4.15 qdeg= 4 d<= 185 Delta<= 19
+  sq_aniso_hyb21_s3_Zerr.code          | N=  9860 M=  4160 M_meta=   8 K= 1 w_max= 7 w_avg=4.93 qdeg= 4 d<=  85 Delta<=  3
+  toric2d_L10_Xerr.code                | N=   200 M=   100 M_meta=   1 K= 2 w_max= 4 w_avg=4.00 qdeg= 2 d<=  10 Delta<=  2
+  toric2d_L10_Zerr.code                | N=   200 M=   100 M_meta=   1 K= 2 w_max= 4 w_avg=4.00 qdeg= 2 d<=  10 Delta<=  2
+  toric2d_L16_Xerr.code                | N=   512 M=   256 M_meta=   1 K= 2 w_max= 4 w_avg=4.00 qdeg= 2 d<=  18 Delta<=  2
+  toric2d_L16_Zerr.code                | N=   512 M=   256 M_meta=   1 K= 2 w_max= 4 w_avg=4.00 qdeg= 2 d<=  16 Delta<=  2
+  toric2d_L24_Xerr.code                | N=  1152 M=   576 M_meta=   1 K= 2 w_max= 4 w_avg=4.00 qdeg= 2 d<=  30 Delta<=  2
+  toric2d_L24_Zerr.code                | N=  1152 M=   576 M_meta=   1 K= 2 w_max= 4 w_avg=4.00 qdeg= 2 d<=  30 Delta<=  2
+  toric2d_L34_Xerr.code                | N=  2312 M=  1156 M_meta=   1 K= 2 w_max= 4 w_avg=4.00 qdeg= 2 d<=  48 Delta<=  2
+  toric2d_L34_Zerr.code                | N=  2312 M=  1156 M_meta=   1 K= 2 w_max= 4 w_avg=4.00 qdeg= 2 d<=  50 Delta<=  2
+  toric2d_L4_Xerr.code                 | N=    32 M=    16 M_meta=   1 K= 2 w_max= 4 w_avg=4.00 qdeg= 2 d<=   4 Delta<=  2
+  toric2d_L4_Zerr.code                 | N=    32 M=    16 M_meta=   1 K= 2 w_max= 4 w_avg=4.00 qdeg= 2 d<=   4 Delta<=  2
+  toric2d_L6_Xerr.code                 | N=    72 M=    36 M_meta=   1 K= 2 w_max= 4 w_avg=4.00 qdeg= 2 d<=   6 Delta<=  2
+  toric2d_L6_Zerr.code                 | N=    72 M=    36 M_meta=   1 K= 2 w_max= 4 w_avg=4.00 qdeg= 2 d<=   6 Delta<=  2
+
+=== 2. FIXED-TEMPERATURE SCALING & EFFECTIVE BARRIER Delta_eff(N) = d(ln <t>)/d(beta) ===
+  bb_gross_12x6_Xerr.code              | N=   144 K=12 | Deff= 4.24(6) | b=3.5:5.594e+03(c=0) | b=4:4.851e+04(c=0) | b=4.25:1.553e+05(c=0) | b=4.5:4.927e+05(c=0) | b=4.75:9.577e+05(c=0) | b=5:3.495e+06(c=0)
+  bb_gross_18x12_Xerr.code             | N=   432 K=12 | Deff= 5.42(6) | b=3.5:3.385e+03(c=0) | b=4:5.162e+04(c=0) | b=4.25:1.868e+05(c=0) | b=4.5:6.782e+05(c=0) | b=4.75:2.826e+06(c=0) | b=5:1.208e+07(c=0)
+  bb_gross_24x18_Xerr.code             | N=   864 K=12 | Deff= 5.41(6) | b=3.5:2.123e+03(c=0) | b=4:3.116e+04(c=0) | b=4.25:1.158e+05(c=0) | b=4.5:4.661e+05(c=0) | b=4.75:1.537e+06(c=0) | b=5:7.813e+06(c=0)
+  bb_gross_30x18_Xerr.code             | N=  1080 K=12 | Deff= 5.42(6) | b=3.5:1.542e+03(c=0) | b=4:2.492e+04(c=0) | b=4.25:9.500e+04(c=0) | b=4.5:3.578e+05(c=0) | b=4.75:1.441e+06(c=0) | b=5:5.224e+06(c=0)
+  bb_gross_36x18_Xerr.code             | N=  1296 K=12 | Deff= 5.39(6) | b=3.5:1.548e+03(c=0) | b=4:1.760e+04(c=0) | b=4.25:7.812e+04(c=0) | b=4.5:3.040e+05(c=0) | b=4.75:1.377e+06(c=0) | b=5:4.338e+06(c=0)
+  bb_gross_48x18_Xerr.code             | N=  1728 K=12 | Deff= 5.36(6) | b=3.5:1.272e+03(c=0) | b=4:1.586e+04(c=0) | b=4.25:4.329e+04(c=0) | b=4.5:2.137e+05(c=0) | b=4.75:9.906e+05(c=0) | b=5:3.761e+06(c=0)
+  bb_gross_60x18_Xerr.code             | N=  2160 K=12 | Deff= 5.55(6) | b=3.5:8.378e+02(c=0) | b=4:1.148e+04(c=0) | b=4.25:4.498e+04(c=0) | b=4.5:1.858e+05(c=0) | b=4.75:8.610e+05(c=0) | b=5:3.275e+06(c=0)
+  bb_gross_6x6_Xerr.code               | N=    72 K=12 | Deff= 4.12(6) | b=3.5:7.960e+03(c=0) | b=4:8.487e+04(c=0) | b=4.25:2.267e+05(c=0) | b=4.5:6.828e+05(c=0) | b=4.75:1.172e+06(c=0) | b=5:4.720e+06(c=0)
+  cls_l2_r1_step0.code                 | N=     4 K= 1 | Deff= 2.07(7) | b=2.5:2.090e+02(c=0) | b=3:8.059e+02(c=0) | b=3.25:1.176e+03(c=0) | b=3.5:2.404e+03(c=0) | b=3.75:2.784e+03(c=0) | b=4:4.142e+03(c=0) | b=4.25:8.249e+03(c=0) | b=4.5:1.794e+04(c=0) | b=4.75:2.984e+04(c=0) | b=5:3.763e+04(c=0)
+  cls_l2_r1_step1.code                 | N=    20 K= 1 | Deff= 5.02(7) | b=2.5:8.099e+03(c=0) | b=3:1.227e+05(c=0) | b=3.25:4.510e+05(c=0) | b=3.5:1.321e+06(c=0) | b=3.75:4.264e+06(c=0) | b=4:1.469e+07(c=0) | b=4.25:5.751e+07(c=0) | b=4.5:1.864e+08(c=0) | b=4.75:7.660e+08(c=0) | b=5:2.160e+09(c=0)
+  cls_l2_r1_step2.code                 | N=   100 K= 1 | Deff= 5.09(7) | b=2.5:1.740e+02(c=0) | b=3:1.489e+03(c=0) | b=3.25:3.494e+03(c=0) | b=3.5:1.501e+04(c=0) | b=3.75:4.968e+04(c=0) | b=4:1.874e+05(c=0) | b=4.25:6.000e+05(c=0) | b=4.5:2.191e+06(c=0) | b=4.75:9.220e+06(c=0) | b=5:2.929e+07(c=0)
+  cls_l2_r1_step3.code                 | N=   500 K= 1 | Deff=  N/A    | b=2.5:3.544e+04(c=0) | b=3:2.058e+07(c=0)
+  cls_l2_r1_step4.code                 | N=  2500 K= 1 | Deff=11.17(3) | b=2.5:1.133e+02(c=0) | b=3:7.508e+02(c=0) | b=3.25:1.959e+03(c=0) | b=3.5:9.872e+03(c=0) | b=3.75:8.682e+04(c=0) | b=4:2.635e+06(c=0) | b=4.25:2.743e+07(c=3)
+  cls_l2_r1_step5.code                 | N= 12500 K= 1 | Deff=  N/A    | b=2.5:1.596e+04(c=0)
+  cls_l3_r1_step0.code                 | N=     4 K= 1 | Deff= 2.05(7) | b=2.5:2.441e+02(c=0) | b=3:8.355e+02(c=0) | b=3.25:1.158e+03(c=0) | b=3.5:2.324e+03(c=0) | b=3.75:3.241e+03(c=0) | b=4:4.202e+03(c=0) | b=4.25:6.947e+03(c=0) | b=4.5:1.785e+04(c=0) | b=4.75:3.030e+04(c=0) | b=5:3.884e+04(c=0)
+  cls_l3_r1_step1.code                 | N=    28 K= 1 | Deff= 4.99(7) | b=2.5:4.114e+03(c=0) | b=3:6.087e+04(c=0) | b=3.25:1.373e+05(c=0) | b=3.5:5.596e+05(c=0) | b=3.75:2.713e+06(c=0) | b=4:8.215e+06(c=0) | b=4.25:2.603e+07(c=0) | b=4.5:1.338e+08(c=0) | b=4.75:3.947e+08(c=0) | b=5:9.082e+08(c=0)
+  cls_l3_r1_step2.code                 | N=   196 K= 1 | Deff= 4.86(7) | b=2.5:1.239e+02(c=0) | b=3:4.928e+02(c=0) | b=3.25:1.011e+03(c=0) | b=3.5:2.581e+03(c=0) | b=3.75:7.313e+03(c=0) | b=4:1.991e+04(c=0) | b=4.25:8.103e+04(c=0) | b=4.5:2.748e+05(c=0) | b=4.75:9.682e+05(c=0) | b=5:3.472e+06(c=0)
+  cls_l3_r1_step3.code                 | N=  1372 K= 1 | Deff=  N/A    | b=2.5:2.815e+03(c=0) | b=3:1.264e+05(c=0) | b=3.25:1.946e+06(c=0)
+  cls_l3_r1_step4.code                 | N=  9604 K= 1 | Deff= 5.70(6) | b=2.5:1.115e+02(c=0) | b=3:3.825e+02(c=0) | b=3.25:6.854e+02(c=0) | b=3.5:1.620e+03(c=0) | b=3.75:4.213e+03(c=0) | b=4:2.160e+04(c=0) | b=4.25:5.922e+04(c=0) | b=4.5:3.057e+05(c=0) | b=4.75:2.194e+06(c=0)
+  cls_l3_r2_step0.code                 | N=     4 K= 1 | Deff= 2.02(7) | b=2.5:2.019e+02(c=0) | b=3:8.098e+02(c=0) | b=3.25:1.110e+03(c=0) | b=3.5:2.488e+03(c=0) | b=3.75:2.968e+03(c=0) | b=4:4.477e+03(c=0) | b=4.25:8.151e+03(c=0) | b=4.5:1.771e+04(c=0) | b=4.75:2.989e+04(c=0) | b=5:3.765e+04(c=0)
+  cls_l3_r2_step1.code                 | N=    32 K= 1 | Deff= 5.13(7) | b=2.5:2.899e+04(c=0) | b=3:3.804e+05(c=0) | b=3.25:1.939e+06(c=0) | b=3.5:6.688e+06(c=0) | b=3.75:2.409e+07(c=0) | b=4:8.396e+07(c=0) | b=4.25:2.966e+08(c=0) | b=4.5:1.162e+09(c=0) | b=4.75:3.774e+09(c=0) | b=5:1.506e+10(c=0)
+  cls_l3_r2_step2.code                 | N=   256 K= 1 | Deff= 5.39(7) | b=2.5:1.689e+02(c=0) | b=3:9.961e+02(c=0) | b=3.25:2.702e+03(c=0) | b=3.5:9.849e+03(c=0) | b=3.75:5.060e+04(c=0) | b=4:1.792e+05(c=0) | b=4.25:7.356e+05(c=0) | b=4.5:2.648e+06(c=0) | b=4.75:1.191e+07(c=0) | b=5:3.041e+07(c=0)
+  cls_l3_r2_step3.code                 | N=  2048 K= 1 | Deff=  N/A    | b=2.5:4.827e+04(c=0)
+  cls_l3_r2_step4.code                 | N= 16384 K= 1 | Deff= 7.06(4) | b=2.5:1.227e+02(c=0) | b=3:5.916e+02(c=0) | b=3.25:2.026e+03(c=0) | b=3.5:5.193e+03(c=0) | b=3.75:2.214e+04(c=0) | b=4:1.263e+05(c=0) | b=4.25:1.046e+06(c=0)
+  haah_cubic_L11_Xerr.code             | N=  2662 K= 2 | Deff= 9.25(3) | b=3.5:5.014e+04(c=0) | b=4:5.723e+06(c=0) | b=4.25:5.012e+07(c=0) | b=4.5:3.665e+08(c=1)
+  haah_cubic_L13_Xerr.code             | N=  4394 K= 2 | Deff= 8.81(3) | b=3.5:4.459e+04(c=0) | b=4:3.892e+06(c=0) | b=4.25:3.244e+07(c=0)
+  haah_cubic_L3_Xerr.code              | N=    54 K= 2 | Deff= 4.25(6) | b=3.5:9.490e+04(c=0) | b=4:6.540e+05(c=0) | b=4.25:2.000e+06(c=0) | b=4.5:6.818e+06(c=0) | b=4.75:1.802e+07(c=0) | b=5:5.198e+07(c=0)
+  haah_cubic_L5_Xerr.code              | N=   250 K= 2 | Deff= 6.05(6) | b=3.5:1.248e+05(c=0) | b=4:2.309e+06(c=0) | b=4.25:7.514e+06(c=0) | b=4.5:5.086e+07(c=0) | b=4.75:2.021e+08(c=0) | b=5:1.091e+09(c=0)
+  haah_cubic_L7_Xerr.code              | N=   686 K= 2 | Deff= 6.99(5) | b=3.5:1.108e+05(c=0) | b=4:4.598e+06(c=0) | b=4.25:2.498e+07(c=0) | b=4.5:1.506e+08(c=0) | b=4.75:6.575e+08(c=0) | b=5:2.970e+09(c=1)
+  haah_cubic_L9_Xerr.code              | N=  1458 K= 2 | Deff= 8.07(3) | b=3.5:8.899e+04(c=0) | b=4:5.034e+06(c=0) | b=4.25:3.788e+07(c=0) | b=4.5:3.072e+08(c=1)
+  layer_13_1_3_Xerr.code               | N=  4837 K= 1 | Deff= 1.72(6) | b=3.5:2.001e+01(c=0) | b=4:4.352e+01(c=0) | b=4.25:6.380e+01(c=0) | b=4.5:9.398e+01(c=0) | b=4.75:1.363e+02(c=0) | b=5:2.996e+02(c=0)
+  layer_13_1_3_Zerr.code               | N=  4837 K= 1 | Deff= 1.61(6) | b=3.5:1.672e+01(c=0) | b=4:3.809e+01(c=0) | b=4.25:5.404e+01(c=0) | b=4.5:9.832e+01(c=0) | b=4.75:1.270e+02(c=0) | b=5:1.787e+02(c=0)
+  layer_15_35_Xerr.code                | N=  7001 K= 1 | Deff= 1.55(6) | b=3.5:1.580e+01(c=0) | b=4:3.074e+01(c=0) | b=4.25:4.341e+01(c=0) | b=4.5:6.600e+01(c=0) | b=4.75:1.026e+02(c=0) | b=5:1.615e+02(c=0)
+  layer_15_35_Zerr.code                | N=  7001 K= 1 | Deff= 1.70(6) | b=3.5:1.896e+01(c=0) | b=4:4.301e+01(c=0) | b=4.25:4.924e+01(c=0) | b=4.5:9.314e+01(c=0) | b=4.75:1.616e+02(c=0) | b=5:2.323e+02(c=0)
+  layer_512_Xerr.code                  | N=   437 K= 1 | Deff= 2.12(6) | b=3.5:3.721e+01(c=0) | b=4:8.334e+01(c=0) | b=4.25:1.875e+02(c=0) | b=4.5:3.105e+02(c=0) | b=4.75:7.080e+02(c=0) | b=5:6.636e+02(c=0)
+  layer_512_Zerr.code                  | N=   437 K= 1 | Deff= 1.91(6) | b=3.5:3.487e+01(c=0) | b=4:9.472e+01(c=0) | b=4.25:1.537e+02(c=0) | b=4.5:2.927e+02(c=0) | b=4.75:3.853e+02(c=0) | b=5:5.919e+02(c=0)
+  layer_913_Xerr.code                  | N=  1853 K= 1 | Deff= 1.97(6) | b=3.5:2.444e+01(c=0) | b=4:6.407e+01(c=0) | b=4.25:9.932e+01(c=0) | b=4.5:1.407e+02(c=0) | b=4.75:2.473e+02(c=0) | b=5:5.312e+02(c=0)
+  layer_913_Zerr.code                  | N=  1853 K= 1 | Deff= 1.87(6) | b=3.5:1.709e+01(c=0) | b=4:4.798e+01(c=0) | b=4.25:6.258e+01(c=0) | b=4.5:1.140e+02(c=0) | b=4.75:2.599e+02(c=0) | b=5:2.273e+02(c=0)
+  layer_913_ksep2_Xerr.code            | N=  5429 K= 1 | Deff= 1.44(6) | b=3.5:2.058e+01(c=0) | b=4:4.599e+01(c=0) | b=4.25:5.641e+01(c=0) | b=4.5:9.211e+01(c=0) | b=4.75:1.293e+02(c=0) | b=5:1.784e+02(c=0)
+  layer_913_ksep2_Zerr.code            | N=  5429 K= 1 | Deff= 1.52(6) | b=3.5:1.754e+01(c=0) | b=4:3.268e+01(c=0) | b=4.25:4.389e+01(c=0) | b=4.5:6.918e+01(c=0) | b=4.75:1.027e+02(c=0) | b=5:1.772e+02(c=0)
+  layer_steane_Xerr.code               | N=   743 K= 1 | Deff= 1.84(6) | b=3.5:3.465e+01(c=0) | b=4:6.285e+01(c=0) | b=4.25:1.079e+02(c=0) | b=4.5:1.683e+02(c=0) | b=4.75:3.645e+02(c=0) | b=5:4.696e+02(c=0)
+  layer_steane_Zerr.code               | N=   743 K= 1 | Deff= 2.03(6) | b=3.5:3.007e+01(c=0) | b=4:6.501e+01(c=0) | b=4.25:1.277e+02(c=0) | b=4.5:1.960e+02(c=0) | b=4.75:4.301e+02(c=0) | b=5:5.328e+02(c=0)
+  loc3d_tor2_aniso_L2r1_s0_Xerr.code   | N=     8 K= 2 | Deff= 2.00(6) | b=3.5:2.684e+02(c=0) | b=4:7.507e+02(c=0) | b=4.5:2.088e+03(c=0) | b=5:4.992e+03(c=0) | b=5.5:1.410e+04(c=0) | b=6:4.206e+04(c=0)
+  loc3d_tor2_aniso_L2r1_s0_Zerr.code   | N=     8 K= 2 | Deff= 2.08(6) | b=3.5:3.059e+02(c=0) | b=4:6.849e+02(c=0) | b=4.5:1.766e+03(c=0) | b=5:5.836e+03(c=0) | b=5.5:1.850e+04(c=0) | b=6:4.850e+04(c=0)
+  loc3d_tor2_aniso_L2r1_s1_Xerr.code   | N=    76 K= 2 | Deff= 3.11(6) | b=3.5:1.634e+03(c=0) | b=4:1.092e+04(c=0) | b=4.5:5.533e+04(c=0) | b=5:1.895e+05(c=0) | b=5.5:1.091e+06(c=0) | b=6:4.288e+06(c=0)
+  loc3d_tor2_aniso_L2r1_s1_Zerr.code   | N=    76 K= 2 | Deff= 2.14(6) | b=3.5:3.826e+01(c=0) | b=4:1.216e+02(c=0) | b=4.5:3.957e+02(c=0) | b=5:1.040e+03(c=0) | b=5.5:2.889e+03(c=0) | b=6:8.442e+03(c=0)
+  loc3d_tor2_aniso_L2r1_s2_Xerr.code   | N=  1016 K= 2 | Deff= 3.31(6) | b=3.5:2.571e+01(c=0) | b=4:7.273e+01(c=0) | b=4.5:3.889e+02(c=0) | b=5:1.819e+03(c=0) | b=5.5:1.305e+04(c=0) | b=6:8.916e+04(c=0)
+  loc3d_tor2_aniso_L2r1_s2_Zerr.code   | N=  1016 K= 2 | Deff= 5.41(6) | b=3.5:1.532e+02(c=0) | b=4:1.885e+03(c=0) | b=4.5:3.744e+04(c=0) | b=5:4.996e+05(c=0) | b=5.5:7.486e+06(c=0) | b=6:1.064e+08(c=0)
+  loc3d_tor2_aniso_L2r1_s3_Xerr.code   | N=  7768 K= 2 | Deff= 8.00(3) | b=3.5:4.953e+02(c=0) | b=4:1.387e+04(c=0) | b=4.5:1.480e+06(c=0)
+  loc3d_tor2_aniso_L2r1_s3_Zerr.code   | N=  7768 K= 2 | Deff= 2.81(6) | b=3.5:1.429e+01(c=0) | b=4:3.716e+01(c=0) | b=4.5:1.011e+02(c=0) | b=5:3.868e+02(c=0) | b=5.5:1.932e+03(c=0) | b=6:1.908e+04(c=0)
+  nonloc_rp2_aniso_L2r1_s0_Xerr.code   | N=     6 K= 1 | Deff= 2.09(6) | b=3.5:3.986e+02(c=0) | b=4:1.389e+03(c=0) | b=4.5:3.024e+03(c=0) | b=5:9.813e+03(c=0) | b=5.5:3.346e+04(c=0) | b=6:6.938e+04(c=0)
+  nonloc_rp2_aniso_L2r1_s0_Zerr.code   | N=     6 K= 1 | Deff= 1.97(6) | b=3.5:9.428e+02(c=0) | b=4:2.128e+03(c=0) | b=4.5:6.180e+03(c=0) | b=5:1.838e+04(c=0) | b=5.5:4.205e+04(c=0) | b=6:1.263e+05(c=0)
+  nonloc_rp2_aniso_L2r1_s1_Xerr.code   | N=    57 K= 1 | Deff= 4.08(6) | b=3.5:2.068e+04(c=0) | b=4:1.367e+05(c=0) | b=4.5:1.241e+06(c=0) | b=5:8.384e+06(c=0) | b=5.5:8.407e+07(c=0) | b=6:4.801e+08(c=0)
+  nonloc_rp2_aniso_L2r1_s1_Zerr.code   | N=    57 K= 1 | Deff= 2.08(6) | b=3.5:9.675e+01(c=0) | b=4:2.442e+02(c=0) | b=4.5:6.695e+02(c=0) | b=5:2.048e+03(c=0) | b=5.5:7.696e+03(c=0) | b=6:1.424e+04(c=0)
+  nonloc_rp2_aniso_L2r1_s2_Xerr.code   | N=   762 K= 1 | Deff= 4.07(6) | b=3.5:5.293e+01(c=0) | b=4:1.832e+02(c=0) | b=4.5:1.452e+03(c=0) | b=5:1.078e+04(c=0) | b=5.5:1.206e+05(c=0) | b=6:1.093e+06(c=0)
+  nonloc_rp2_aniso_L2r1_s2_Zerr.code   | N=   762 K= 1 | Deff= 5.44(6) | b=3.5:2.672e+02(c=0) | b=4:2.997e+03(c=0) | b=4.5:5.360e+04(c=0) | b=5:9.484e+05(c=0) | b=5.5:1.484e+07(c=0) | b=6:1.714e+08(c=0)
+  nonloc_rp2_aniso_L2r1_s3_Xerr.code   | N=  5826 K= 1 | Deff= 9.90(3) | b=3.5:6.670e+02(c=0) | b=4:5.010e+04(c=0) | b=4.5:1.335e+07(c=0)
+  nonloc_rp2_aniso_L2r1_s3_Zerr.code   | N=  5826 K= 1 | Deff= 3.42(6) | b=3.5:1.603e+01(c=0) | b=4:4.049e+01(c=0) | b=4.5:1.548e+02(c=0) | b=5:4.621e+02(c=0) | b=5.5:9.527e+03(c=0) | b=6:7.797e+04(c=0)
+  sq_aniso_L2r1_s0_Xerr.code           | N=     2 K= 1 | Deff= 0.98(6) | b=3.5:4.861e+01(c=0) | b=4:9.544e+01(c=0) | b=4.5:9.993e+01(c=0) | b=5:1.682e+02(c=0) | b=5.5:2.665e+02(c=0) | b=6:7.314e+02(c=0)
+  sq_aniso_L2r1_s0_Zerr.code           | N=     2 K= 1 | Deff= 0.08(6) | b=3.5:3.178e+00(c=0) | b=4:3.462e+00(c=0) | b=4.5:2.744e+00(c=0) | b=5:3.639e+00(c=0) | b=5.5:3.314e+00(c=0) | b=6:4.090e+00(c=0)
+  sq_aniso_L2r1_s1_Xerr.code           | N=    19 K= 1 | Deff= 2.08(6) | b=3.5:3.018e+02(c=0) | b=4:1.129e+03(c=0) | b=4.5:3.637e+03(c=0) | b=5:8.070e+03(c=0) | b=5.5:2.274e+04(c=0) | b=6:6.077e+04(c=0)
+  sq_aniso_L2r1_s1_Zerr.code           | N=    19 K= 1 | Deff= 1.06(6) | b=3.5:7.098e+00(c=0) | b=4:1.107e+01(c=0) | b=4.5:1.408e+01(c=0) | b=5:2.859e+01(c=0) | b=5.5:6.098e+01(c=0) | b=6:8.969e+01(c=0)
+  sq_aniso_L2r1_s2_Xerr.code           | N=   254 K= 1 | Deff= 2.06(6) | b=3.5:6.173e+01(c=0) | b=4:1.620e+02(c=0) | b=4.5:5.955e+02(c=0) | b=5:1.513e+03(c=0) | b=5.5:3.590e+03(c=0) | b=6:1.078e+04(c=0)
+  sq_aniso_L2r1_s2_Zerr.code           | N=   254 K= 1 | Deff= 2.39(6) | b=3.5:9.145e+01(c=0) | b=4:3.775e+02(c=0) | b=4.5:9.889e+02(c=0) | b=5:3.506e+03(c=0) | b=5.5:1.067e+04(c=0) | b=6:4.158e+04(c=0)
+  sq_aniso_L2r1_s3_Xerr.code           | N=  1942 K= 1 | Deff= 4.86(4) | b=3.5:2.315e+03(c=0) | b=4:1.792e+04(c=0) | b=4.5:1.680e+05(c=0) | b=5:3.614e+06(c=0)
+  sq_aniso_L2r1_s3_Zerr.code           | N=  1942 K= 1 | Deff= 2.52(6) | b=3.5:2.064e+01(c=0) | b=4:4.337e+01(c=0) | b=4.5:1.612e+02(c=0) | b=5:5.527e+02(c=0) | b=5.5:2.246e+03(c=0) | b=6:1.011e+04(c=0)
+  sq_aniso_L2r1_s4_Xerr.code           | N= 25148 K= 1 | Deff= 3.23(6) | b=3.5:1.950e+01(c=0) | b=4:4.328e+01(c=0) | b=4.5:1.251e+02(c=0) | b=5:4.242e+02(c=0) | b=5.5:5.454e+03(c=0) | b=6:6.818e+04(c=0)
+  sq_aniso_L2r1_s4_Zerr.code           | N= 25148 K= 1 | Deff= 6.29(3) | b=3.5:1.579e+02(c=0) | b=4:1.991e+03(c=0) | b=4.5:8.474e+04(c=0) | b=5:3.771e+06(c=1)
+  sq_aniso_hyb21_s0_Xerr.code          | N=     2 K= 1 | Deff= 0.97(6) | b=3.5:5.681e+01(c=0) | b=4:7.322e+01(c=0) | b=4.5:9.701e+01(c=0) | b=5:1.606e+02(c=0) | b=5.5:2.839e+02(c=0) | b=6:6.770e+02(c=0)
+  sq_aniso_hyb21_s0_Zerr.code          | N=     2 K= 1 | Deff= 0.09(6) | b=3.5:3.178e+00(c=0) | b=4:2.977e+00(c=0) | b=4.5:2.991e+00(c=0) | b=5:3.190e+00(c=0) | b=5.5:3.218e+00(c=0) | b=6:4.075e+00(c=0)
+  sq_aniso_hyb21_s1_Xerr.code          | N=    44 K= 1 | Deff= 2.97(6) | b=3.5:3.173e+03(c=0) | b=4:1.619e+04(c=0) | b=4.5:7.924e+04(c=0) | b=5:2.626e+05(c=0) | b=5.5:1.354e+06(c=0) | b=6:5.717e+06(c=0)
+  sq_aniso_hyb21_s1_Zerr.code          | N=    44 K= 1 | Deff= 1.05(6) | b=3.5:9.449e+00(c=0) | b=4:2.533e+01(c=0) | b=4.5:4.046e+01(c=0) | b=5:5.369e+01(c=0) | b=5.5:9.367e+01(c=0) | b=6:1.613e+02(c=0)
+  sq_aniso_hyb21_s2_Xerr.code          | N=   586 K= 1 | Deff= 3.06(6) | b=3.5:6.872e+01(c=0) | b=4:2.441e+02(c=0) | b=4.5:1.978e+03(c=0) | b=5:6.334e+03(c=0) | b=5.5:2.918e+04(c=0) | b=6:1.400e+05(c=0)
+  sq_aniso_hyb21_s2_Zerr.code          | N=   586 K= 1 | Deff= 3.35(6) | b=3.5:9.481e+01(c=0) | b=4:4.649e+02(c=0) | b=4.5:3.008e+03(c=0) | b=5:1.677e+04(c=0) | b=5.5:6.692e+04(c=0) | b=6:4.193e+05(c=0)
+  sq_aniso_hyb21_s3_Xerr.code          | N=  9860 K= 1 | Deff= 7.66(2) | b=3.5:2.716e+03(c=0) | b=4:1.252e+05(c=0) | b=4.5:7.358e+06(c=2)
+  sq_aniso_hyb21_s3_Zerr.code          | N=  9860 K= 1 | Deff= 2.05(6) | b=3.5:1.166e+01(c=0) | b=4:2.730e+01(c=0) | b=4.5:6.632e+01(c=0) | b=5:2.171e+02(c=0) | b=5.5:5.269e+02(c=0) | b=6:2.019e+03(c=0)
+  toric2d_L10_Xerr.code                | N=   200 K= 2 | Deff= 1.82(6) | b=3.5:2.792e+01(c=0) | b=4:5.758e+01(c=0) | b=4.25:7.768e+01(c=0) | b=4.5:1.713e+02(c=0) | b=4.75:2.783e+02(c=0) | b=5:3.688e+02(c=0)
+  toric2d_L16_Xerr.code                | N=   512 K= 2 | Deff= 1.44(6) | b=3.5:1.801e+01(c=0) | b=4:3.301e+01(c=0) | b=4.25:5.429e+01(c=0) | b=4.5:6.204e+01(c=0) | b=4.75:9.803e+01(c=0) | b=5:1.673e+02(c=0)
+  toric2d_L24_Xerr.code                | N=  1152 K= 2 | Deff= 1.24(6) | b=3.5:1.603e+01(c=0) | b=4:2.897e+01(c=0) | b=4.25:3.691e+01(c=0) | b=4.5:4.678e+01(c=0) | b=4.75:7.283e+01(c=0) | b=5:1.065e+02(c=0)
+  toric2d_L34_Xerr.code                | N=  2312 K= 2 | Deff= 1.20(6) | b=3.5:1.455e+01(c=0) | b=4:2.647e+01(c=0) | b=4.25:3.585e+01(c=0) | b=4.5:5.286e+01(c=0) | b=4.75:6.040e+01(c=0) | b=5:9.062e+01(c=0)
+  toric2d_L4_Xerr.code                 | N=    32 K= 2 | Deff= 2.12(6) | b=3.5:1.175e+02(c=0) | b=4:3.576e+02(c=0) | b=4.25:5.081e+02(c=0) | b=4.5:9.195e+02(c=0) | b=4.75:1.741e+03(c=0) | b=5:2.802e+03(c=0)
+  toric2d_L6_Xerr.code                 | N=    72 K= 2 | Deff= 2.30(6) | b=3.5:4.400e+01(c=0) | b=4:1.584e+02(c=0) | b=4.25:2.854e+02(c=0) | b=4.5:3.598e+02(c=0) | b=4.75:8.999e+02(c=0) | b=5:1.454e+03(c=0)
+
+=== 3. CHESI-LOSS / BDL SEC. 5 EQUILIBRIUM GIBBS CONFINEMENT & 1-FLIP INSTABILITY ===
+  bb_gross_12x6_Xerr.code              | b=4.00 t= 80.0 N=   144 | syn=2.315e-04 |Q_max|=  1.00 frac=6.944e-03 P_fail=0.0083 P_instab1=0.000e+00
+  bb_gross_12x6_Xerr.code              | b=4.50 t=150.0 N=   144 | syn=3.472e-04 |Q_max|=  0.15 frac=1.042e-03 P_fail=0.0000 P_instab1=0.000e+00
+  bb_gross_18x12_Xerr.code             | b=4.00 t= 80.0 N=   432 | syn=1.157e-04 |Q_max|=  0.13 frac=3.086e-04 P_fail=0.0000 P_instab1=0.000e+00
+  bb_gross_18x12_Xerr.code             | b=4.50 t=150.0 N=   432 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0000 P_instab1=0.000e+00
+  bb_gross_24x18_Xerr.code             | b=4.00 t= 80.0 N=   864 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0000 P_instab1=0.000e+00
+  bb_gross_24x18_Xerr.code             | b=4.50 t=150.0 N=   864 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0000 P_instab1=0.000e+00
+  bb_gross_30x18_Xerr.code             | b=4.00 t= 80.0 N=  1080 | syn=1.543e-04 |Q_max|=  1.74 frac=1.613e-03 P_fail=0.0000 P_instab1=0.000e+00
+  bb_gross_30x18_Xerr.code             | b=4.50 t=150.0 N=  1080 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0000 P_instab1=0.000e+00
+  bb_gross_36x18_Xerr.code             | b=4.00 t= 80.0 N=  1296 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0000 P_instab1=0.000e+00
+  bb_gross_36x18_Xerr.code             | b=4.50 t=150.0 N=  1296 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0000 P_instab1=0.000e+00
+  bb_gross_48x18_Xerr.code             | b=4.00 t= 80.0 N=  1728 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0000 P_instab1=0.000e+00
+  bb_gross_48x18_Xerr.code             | b=4.50 t=150.0 N=  1728 | syn=3.858e-05 |Q_max|=  1.46 frac=8.439e-04 P_fail=0.0000 P_instab1=0.000e+00
+  bb_gross_60x18_Xerr.code             | b=4.00 t= 80.0 N=  2160 | syn=1.235e-04 |Q_max|=  1.98 frac=9.182e-04 P_fail=0.0000 P_instab1=0.000e+00
+  bb_gross_60x18_Xerr.code             | b=4.50 t=150.0 N=  2160 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0000 P_instab1=0.000e+00
+  bb_gross_6x6_Xerr.code               | b=4.00 t= 80.0 N=    72 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0000 P_instab1=0.000e+00
+  bb_gross_6x6_Xerr.code               | b=4.50 t=150.0 N=    72 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0000 P_instab1=0.000e+00
+  cls_l2_r1_step0.code                 | b=4.00 t= 80.0 N=     4 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0000 P_instab1=0.000e+00
+  cls_l2_r1_step0.code                 | b=4.50 t=150.0 N=     4 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0250 P_instab1=0.000e+00
+  cls_l2_r1_step2.code                 | b=4.00 t= 80.0 N=   100 | syn=3.220e-03 |Q_max|=  1.60 frac=1.600e-02 P_fail=0.0000 P_instab1=0.000e+00
+  cls_l2_r1_step2.code                 | b=4.50 t=150.0 N=   100 | syn=1.042e-03 |Q_max|=  0.38 frac=3.833e-03 P_fail=0.0000 P_instab1=0.000e+00
+  cls_l2_r1_step4.code                 | b=4.00 t= 80.0 N=  2500 | syn=3.396e-03 |Q_max|= 29.15 frac=1.166e-02 P_fail=0.0000 P_instab1=0.000e+00
+  cls_l2_r1_step4.code                 | b=4.50 t=150.0 N=  2500 | syn=1.096e-03 |Q_max|=  9.30 frac=3.720e-03 P_fail=0.0000 P_instab1=0.000e+00
+  cls_l3_r2_step0.code                 | b=4.00 t= 80.0 N=     4 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0083 P_instab1=0.000e+00
+  cls_l3_r2_step0.code                 | b=4.50 t=150.0 N=     4 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0250 P_instab1=0.000e+00
+  cls_l3_r2_step2.code                 | b=4.00 t= 80.0 N=   256 | syn=3.526e-03 |Q_max|=  4.96 frac=1.937e-02 P_fail=0.0000 P_instab1=0.000e+00
+  cls_l3_r2_step2.code                 | b=4.50 t=150.0 N=   256 | syn=1.242e-03 |Q_max|=  1.30 frac=5.078e-03 P_fail=0.0000 P_instab1=0.000e+00
+  cls_l3_r2_step4.code                 | b=4.00 t= 80.0 N= 16384 | syn=4.092e-03 |Q_max|= 88.54 frac=5.404e-03 P_fail=0.0000 P_instab1=0.000e+00
+  cls_l3_r2_step4.code                 | b=4.50 t=150.0 N= 16384 | syn=1.389e-03 |Q_max|= 51.70 frac=3.155e-03 P_fail=0.0000 P_instab1=0.000e+00
+  haah_cubic_L11_Xerr.code             | b=4.00 t= 80.0 N=  2662 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0000 P_instab1=0.000e+00
+  haah_cubic_L11_Xerr.code             | b=4.50 t=150.0 N=  2662 | syn=2.504e-05 |Q_max|=  1.80 frac=6.762e-04 P_fail=0.0000 P_instab1=0.000e+00
+  haah_cubic_L13_Xerr.code             | b=4.00 t= 80.0 N=  4394 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0000 P_instab1=0.000e+00
+  haah_cubic_L13_Xerr.code             | b=4.50 t=150.0 N=  4394 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0000 P_instab1=0.000e+00
+  haah_cubic_L3_Xerr.code              | b=4.00 t= 80.0 N=    54 | syn=1.235e-03 |Q_max|=  0.90 frac=1.667e-02 P_fail=0.0167 P_instab1=0.000e+00
+  haah_cubic_L3_Xerr.code              | b=4.50 t=150.0 N=    54 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0000 P_instab1=0.000e+00
+  haah_cubic_L5_Xerr.code              | b=4.00 t= 80.0 N=   250 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0000 P_instab1=0.000e+00
+  haah_cubic_L5_Xerr.code              | b=4.50 t=150.0 N=   250 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0000 P_instab1=0.000e+00
+  haah_cubic_L7_Xerr.code              | b=4.00 t= 80.0 N=   686 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0000 P_instab1=0.000e+00
+  haah_cubic_L7_Xerr.code              | b=4.50 t=150.0 N=   686 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0000 P_instab1=0.000e+00
+  haah_cubic_L9_Xerr.code              | b=4.00 t= 80.0 N=  1458 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0000 P_instab1=0.000e+00
+  haah_cubic_L9_Xerr.code              | b=4.50 t=150.0 N=  1458 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0000 P_instab1=0.000e+00
+  layer_13_1_3_Xerr.code               | b=4.00 t= 80.0 N=  4837 | syn=1.775e-02 |Q_max|=2763.86 frac=5.714e-01 P_fail=0.4083 P_instab1=2.795e-02
+  layer_13_1_3_Xerr.code               | b=4.50 t=150.0 N=  4837 | syn=1.023e-02 |Q_max|=2468.78 frac=5.104e-01 P_fail=0.4750 P_instab1=2.083e-02
+  layer_15_35_Xerr.code                | b=4.00 t= 80.0 N=  7001 | syn=1.745e-02 |Q_max|=3402.19 frac=4.860e-01 P_fail=0.4750 P_instab1=2.183e-02
+  layer_15_35_Xerr.code                | b=4.50 t=150.0 N=  7001 | syn=1.102e-02 |Q_max|=2969.34 frac=4.241e-01 P_fail=0.5250 P_instab1=1.919e-02
+  layer_512_Xerr.code                  | b=4.00 t= 80.0 N=   437 | syn=1.781e-02 |Q_max|= 90.89 frac=2.080e-01 P_fail=0.4000 P_instab1=2.691e-02
+  layer_512_Xerr.code                  | b=4.50 t=150.0 N=   437 | syn=1.074e-02 |Q_max|= 53.54 frac=1.225e-01 P_fail=0.2583 P_instab1=1.352e-02
+  layer_913_Xerr.code                  | b=4.00 t= 80.0 N=  1853 | syn=1.746e-02 |Q_max|=705.58 frac=3.808e-01 P_fail=0.4500 P_instab1=2.604e-02
+  layer_913_Xerr.code                  | b=4.50 t=150.0 N=  1853 | syn=1.075e-02 |Q_max|=585.24 frac=3.158e-01 P_fail=0.3667 P_instab1=1.439e-02
+  layer_913_ksep2_Xerr.code            | b=4.00 t= 80.0 N=  5429 | syn=1.782e-02 |Q_max|=2621.78 frac=4.829e-01 P_fail=0.4500 P_instab1=3.054e-02
+  layer_913_ksep2_Xerr.code            | b=4.50 t=150.0 N=  5429 | syn=1.048e-02 |Q_max|=2283.60 frac=4.206e-01 P_fail=0.4917 P_instab1=2.510e-02
+  layer_steane_Xerr.code               | b=4.00 t= 80.0 N=   743 | syn=1.788e-02 |Q_max|=251.30 frac=3.382e-01 P_fail=0.3917 P_instab1=5.544e-02
+  layer_steane_Xerr.code               | b=4.50 t=150.0 N=   743 | syn=1.076e-02 |Q_max|=200.32 frac=2.696e-01 P_fail=0.3250 P_instab1=3.222e-02
+  loc3d_tor2_aniso_L2r1_s0_Xerr.code   | b=4.00 t= 80.0 N=     8 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.1750 P_instab1=5.000e-01
+  loc3d_tor2_aniso_L2r1_s0_Xerr.code   | b=4.50 t=150.0 N=     8 | syn=4.167e-03 |Q_max|=  0.07 frac=8.333e-03 P_fail=0.1083 P_instab1=5.000e-01
+  loc3d_tor2_aniso_L2r1_s1_Xerr.code   | b=4.00 t= 80.0 N=    76 | syn=1.042e-03 |Q_max|=  0.17 frac=2.303e-03 P_fail=0.0000 P_instab1=0.000e+00
+  loc3d_tor2_aniso_L2r1_s1_Xerr.code   | b=4.50 t=150.0 N=    76 | syn=3.472e-04 |Q_max|=  0.06 frac=7.675e-04 P_fail=0.0083 P_instab1=0.000e+00
+  loc3d_tor2_aniso_L2r1_s2_Xerr.code   | b=4.00 t= 80.0 N=  1016 | syn=1.647e-02 |Q_max|=449.22 frac=4.421e-01 P_fail=0.5333 P_instab1=5.580e-02
+  loc3d_tor2_aniso_L2r1_s2_Xerr.code   | b=4.50 t=150.0 N=  1016 | syn=7.831e-03 |Q_max|=251.19 frac=2.472e-01 P_fail=0.2833 P_instab1=1.853e-02
+  loc3d_tor2_aniso_L2r1_s3_Xerr.code   | b=4.00 t= 80.0 N=  7768 | syn=2.719e-03 |Q_max|=200.10 frac=2.576e-02 P_fail=0.0000 P_instab1=0.000e+00
+  loc3d_tor2_aniso_L2r1_s3_Xerr.code   | b=4.50 t=150.0 N=  7768 | syn=7.511e-04 |Q_max|= 45.39 frac=5.843e-03 P_fail=0.0000 P_instab1=0.000e+00
+  nonloc_rp2_aniso_L2r1_s0_Xerr.code   | b=4.00 t= 80.0 N=     6 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0417 P_instab1=5.000e-01
+  nonloc_rp2_aniso_L2r1_s0_Xerr.code   | b=4.50 t=150.0 N=     6 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.0583 P_instab1=5.000e-01
+  nonloc_rp2_aniso_L2r1_s1_Xerr.code   | b=4.00 t= 80.0 N=    57 | syn=4.630e-04 |Q_max|=  0.06 frac=1.023e-03 P_fail=0.0000 P_instab1=0.000e+00
+  nonloc_rp2_aniso_L2r1_s1_Xerr.code   | b=4.50 t=150.0 N=    57 | syn=4.630e-04 |Q_max|=  0.06 frac=1.023e-03 P_fail=0.0000 P_instab1=0.000e+00
+  nonloc_rp2_aniso_L2r1_s2_Xerr.code   | b=4.00 t= 80.0 N=   762 | syn=1.422e-02 |Q_max|=219.38 frac=2.879e-01 P_fail=0.2250 P_instab1=2.856e-02
+  nonloc_rp2_aniso_L2r1_s2_Xerr.code   | b=4.50 t=150.0 N=   762 | syn=6.777e-03 |Q_max|= 93.12 frac=1.222e-01 P_fail=0.0667 P_instab1=1.088e-02
+  nonloc_rp2_aniso_L2r1_s3_Xerr.code   | b=4.00 t= 80.0 N=  5826 | syn=2.663e-03 |Q_max|=155.05 frac=2.661e-02 P_fail=0.0000 P_instab1=0.000e+00
+  nonloc_rp2_aniso_L2r1_s3_Xerr.code   | b=4.50 t=150.0 N=  5826 | syn=9.137e-04 |Q_max|= 37.71 frac=6.472e-03 P_fail=0.0000 P_instab1=0.000e+00
+  sq_aniso_L2r1_s0_Xerr.code           | b=4.00 t= 80.0 N=     2 | syn=1.667e-02 |Q_max|=  0.03 frac=1.667e-02 P_fail=0.4250 P_instab1=5.000e-01
+  sq_aniso_L2r1_s0_Xerr.code           | b=4.50 t=150.0 N=     2 | syn=1.667e-02 |Q_max|=  0.03 frac=1.667e-02 P_fail=0.4833 P_instab1=5.000e-01
+  sq_aniso_L2r1_s0_Zerr.code           | b=4.00 t= 80.0 N=     2 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.5167 P_instab1=1.000e+00
+  sq_aniso_L2r1_s0_Zerr.code           | b=4.50 t=150.0 N=     2 | syn=0.000e+00 |Q_max|=  0.00 frac=0.000e+00 P_fail=0.5250 P_instab1=1.000e+00
+  sq_aniso_L2r1_s2_Xerr.code           | b=4.00 t= 80.0 N=   254 | syn=1.990e-02 |Q_max|= 52.36 frac=2.061e-01 P_fail=0.2750 P_instab1=2.694e-02
+  sq_aniso_L2r1_s2_Xerr.code           | b=4.50 t=150.0 N=   254 | syn=1.164e-02 |Q_max|= 27.17 frac=1.070e-01 P_fail=0.2667 P_instab1=3.906e-03
+  sq_aniso_L2r1_s2_Zerr.code           | b=4.00 t= 80.0 N=   254 | syn=1.024e-02 |Q_max|= 26.82 frac=1.056e-01 P_fail=0.1917 P_instab1=1.595e-02
+  sq_aniso_L2r1_s2_Zerr.code           | b=4.50 t=150.0 N=   254 | syn=7.857e-03 |Q_max|= 21.25 frac=8.366e-02 P_fail=0.1083 P_instab1=2.044e-02
+  sq_aniso_L2r1_s4_Xerr.code           | b=4.50 t=150.0 N= 25148 | syn=9.265e-03 |Q_max|=15717.51 frac=6.250e-01 P_fail=0.3750 P_instab1=2.750e-02
+  sq_aniso_L2r1_s4_Zerr.code           | b=4.00 t= 80.0 N= 25148 | syn=4.647e-03 |Q_max|=1298.83 frac=5.165e-02 P_fail=0.0000 P_instab1=0.000e+00
+  toric2d_L10_Xerr.code                | b=4.00 t= 80.0 N=   200 | syn=1.550e-02 |Q_max|= 45.04 frac=2.252e-01 P_fail=0.6333 P_instab1=5.646e-02
+  toric2d_L10_Xerr.code                | b=4.50 t=150.0 N=   200 | syn=9.167e-03 |Q_max|= 27.93 frac=1.397e-01 P_fail=0.6250 P_instab1=4.167e-02
+  toric2d_L16_Xerr.code                | b=4.00 t= 80.0 N=   512 | syn=1.803e-02 |Q_max|=191.74 frac=3.745e-01 P_fail=0.7750 P_instab1=1.129e-01
+  toric2d_L16_Xerr.code                | b=4.50 t=150.0 N=   512 | syn=1.087e-02 |Q_max|=158.63 frac=3.098e-01 P_fail=0.7667 P_instab1=7.199e-02
+  toric2d_L24_Xerr.code                | b=4.00 t= 80.0 N=  1152 | syn=1.719e-02 |Q_max|=445.16 frac=3.864e-01 P_fail=0.7750 P_instab1=8.102e-02
+  toric2d_L24_Xerr.code                | b=4.50 t=150.0 N=  1152 | syn=1.094e-02 |Q_max|=460.62 frac=3.998e-01 P_fail=0.7417 P_instab1=5.242e-02
+  toric2d_L34_Xerr.code                | b=4.00 t= 80.0 N=  2312 | syn=1.796e-02 |Q_max|=1127.46 frac=4.876e-01 P_fail=0.6833 P_instab1=6.661e-02
+  toric2d_L4_Xerr.code                 | b=4.00 t= 80.0 N=    32 | syn=5.208e-03 |Q_max|=  0.78 frac=2.448e-02 P_fail=0.2750 P_instab1=3.951e-03
+  toric2d_L4_Xerr.code                 | b=4.50 t=150.0 N=    32 | syn=2.083e-03 |Q_max|=  0.13 frac=4.167e-03 P_fail=0.1833 P_instab1=4.783e-03
+  toric2d_L6_Xerr.code                 | b=4.00 t= 80.0 N=    72 | syn=1.250e-02 |Q_max|=  5.48 frac=7.616e-02 P_fail=0.4083 P_instab1=1.078e-02
+  toric2d_L6_Xerr.code                 | b=4.50 t=150.0 N=    72 | syn=1.852e-03 |Q_max|=  0.46 frac=6.366e-03 P_fail=0.2750 P_instab1=4.670e-03

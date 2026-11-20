@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="465" viewBox="0 0 1180 465">
+<rect width="1180" height="465" fill="#ffffff"/>
+<style>text { font-family: -apple-system, Helvetica, Arial, sans-serif; fill: #1f2937; }</style>
+<rect x="88" y="46" width="470" height="358" fill="#fafafa" stroke="#374151" stroke-width="1.5"/>
+<text x="323.0" y="31.0" text-anchor="middle" font-size="15.4" font-weight="700">(a) Planar 2×2 Cross: Cycle 1 vs. Cycle 2</text>
+<text x="323.0" y="448.0" text-anchor="middle" font-size="14.0" font-weight="600">Inverse Bath Temperature β = 1 / T  (Colder →)</text>
+<text x="28.0" y="225.0" text-anchor="middle" font-size="14.0" font-weight="600" transform="rotate(-90 28.0 225.0)">Quantum Memory Lifetime</text>
+<line x1="115.3" y1="46" x2="115.3" y2="404" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="115.3" y1="404" x2="115.3" y2="409" stroke="#374151" stroke-width="1.2"/>
+<text x="115.3" y="426" text-anchor="middle" font-size="12.6">5.5</text>
+<line x1="252.0" y1="46" x2="252.0" y2="404" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="252.0" y1="404" x2="252.0" y2="409" stroke="#374151" stroke-width="1.2"/>
+<text x="252.0" y="426" text-anchor="middle" font-size="12.6">6.0</text>
+<line x1="388.6" y1="46" x2="388.6" y2="404" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="388.6" y1="404" x2="388.6" y2="409" stroke="#374151" stroke-width="1.2"/>
+<text x="388.6" y="426" text-anchor="middle" font-size="12.6">6.5</text>
+<line x1="525.2" y1="46" x2="525.2" y2="404" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="525.2" y1="404" x2="525.2" y2="409" stroke="#374151" stroke-width="1.2"/>
+<text x="525.2" y="426" text-anchor="middle" font-size="12.6">7.0</text>
+<line x1="88" y1="341.6" x2="558" y2="341.6" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="83" y1="341.6" x2="88" y2="341.6" stroke="#374151" stroke-width="1.2"/>
+<text x="79" y="346.1" text-anchor="end" font-size="12.6">10⁴</text>
+<line x1="88" y1="265.9" x2="558" y2="265.9" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="83" y1="265.9" x2="88" y2="265.9" stroke="#374151" stroke-width="1.2"/>
+<text x="79" y="270.4" text-anchor="end" font-size="12.6">10⁵</text>
+<line x1="88" y1="190.1" x2="558" y2="190.1" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="83" y1="190.1" x2="88" y2="190.1" stroke="#374151" stroke-width="1.2"/>
+<text x="79" y="194.6" text-anchor="end" font-size="12.6">10⁶</text>
+<line x1="88" y1="114.4" x2="558" y2="114.4" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="83" y1="114.4" x2="88" y2="114.4" stroke="#374151" stroke-width="1.2"/>
+<text x="79" y="118.9" text-anchor="end" font-size="12.6">10⁷</text>
+<polyline fill="none" stroke="#059669" stroke-width="3.0" points="115.3,378.8 252.0,295.5 320.3,244.8 388.6,205.6 456.9,155.4 525.2,116.6"/>
+<circle cx="115.3" cy="378.8" r="5.0" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="252.0" cy="295.5" r="5.0" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="320.3" cy="244.8" r="5.0" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="388.6" cy="205.6" r="5.0" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="456.9" cy="155.4" r="5.0" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="525.2" cy="116.6" r="5.0" fill="#059669" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#2563eb" stroke-width="3.0" stroke-dasharray="5,4" points="115.3,376.4 252.0,340.5 320.3,320.9 388.6,295.1 456.9,283.5 525.2,269.9"/>
+<circle cx="115.3" cy="376.4" r="5.0" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="252.0" cy="340.5" r="5.0" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="320.3" cy="320.9" r="5.0" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="388.6" cy="295.1" r="5.0" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="456.9" cy="283.5" r="5.0" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="525.2" cy="269.9" r="5.0" fill="#2563eb" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="525.2" y1="124.6" x2="525.2" y2="261.9" stroke="#047857" stroke-width="2.0" stroke-dasharray="3,3"/>
+<polygon points="525.2,118.6 520.7,126.6 529.7,126.6" fill="#047857"/>
+<polygon points="525.2,267.9 520.7,259.9 529.7,259.9" fill="#047857"/>
+<text x="516.2" y="197.3" text-anchor="end" font-size="12.4" font-weight="700" fill="#047857">106× gain</text>
+<rect x="99.0" y="57.0" width="298.2" height="54.0" rx="6" fill="#ffffff" fill-opacity="0.96" stroke="#d1d5db" stroke-width="1.1"/>
+<line x1="108.0" y1="69.8" x2="130.0" y2="69.8" stroke="#059669" stroke-width="2.8"/>
+<circle cx="119.0" cy="69.8" r="4.2" fill="#059669"/>
+<text x="137.0" y="74.0" font-size="12.2">Cycle 2 (25,148 qubits: slope = 5.3)</text>
+<line x1="108.0" y1="90.8" x2="130.0" y2="90.8" stroke="#2563eb" stroke-width="2.8" stroke-dasharray="5,4"/>
+<circle cx="119.0" cy="90.8" r="4.2" fill="#2563eb"/>
+<text x="137.0" y="95.0" font-size="12.2">Cycle 1 (254 qubits: slope = 2.4)</text>
+<rect x="678" y="46" width="470" height="358" fill="#fafafa" stroke="#374151" stroke-width="1.5"/>
+<text x="913.0" y="31.0" text-anchor="middle" font-size="15.4" font-weight="700">(b) Boundaryless Torus: Cycle 1 vs. Cycle 2</text>
+<text x="913.0" y="448.0" text-anchor="middle" font-size="14.0" font-weight="600">Inverse Bath Temperature β = 1 / T  (Colder →)</text>
+<text x="618.0" y="225.0" text-anchor="middle" font-size="14.0" font-weight="600" transform="rotate(-90 618.0 225.0)">Quantum Memory Lifetime</text>
+<line x1="706.9" y1="46" x2="706.9" y2="404" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="706.9" y1="404" x2="706.9" y2="409" stroke="#374151" stroke-width="1.2"/>
+<text x="706.9" y="426" text-anchor="middle" font-size="12.6">5.5</text>
+<line x1="887.7" y1="46" x2="887.7" y2="404" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="887.7" y1="404" x2="887.7" y2="409" stroke="#374151" stroke-width="1.2"/>
+<text x="887.7" y="426" text-anchor="middle" font-size="12.6">6.0</text>
+<line x1="978.1" y1="46" x2="978.1" y2="404" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="978.1" y1="404" x2="978.1" y2="409" stroke="#374151" stroke-width="1.2"/>
+<text x="978.1" y="426" text-anchor="middle" font-size="12.6">6.25</text>
+<line x1="1068.5" y1="46" x2="1068.5" y2="404" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="1068.5" y1="404" x2="1068.5" y2="409" stroke="#374151" stroke-width="1.2"/>
+<text x="1068.5" y="426" text-anchor="middle" font-size="12.6">6.5</text>
+<line x1="678" y1="395.3" x2="1148" y2="395.3" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="673" y1="395.3" x2="678" y2="395.3" stroke="#374151" stroke-width="1.2"/>
+<text x="669" y="399.8" text-anchor="end" font-size="12.6">10³</text>
+<line x1="678" y1="305.8" x2="1148" y2="305.8" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="673" y1="305.8" x2="678" y2="305.8" stroke="#374151" stroke-width="1.2"/>
+<text x="669" y="310.3" text-anchor="end" font-size="12.6">10⁴</text>
+<line x1="678" y1="216.3" x2="1148" y2="216.3" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="673" y1="216.3" x2="678" y2="216.3" stroke="#374151" stroke-width="1.2"/>
+<text x="669" y="220.8" text-anchor="end" font-size="12.6">10⁵</text>
+<line x1="678" y1="126.8" x2="1148" y2="126.8" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="673" y1="126.8" x2="678" y2="126.8" stroke="#374151" stroke-width="1.2"/>
+<text x="669" y="131.3" text-anchor="end" font-size="12.6">10⁶</text>
+<polyline fill="none" stroke="#be123c" stroke-width="3.0" points="706.9,373.4 887.7,274.0 978.1,203.6 1068.5,127.4"/>
+<circle cx="706.9" cy="373.4" r="5.0" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="887.7" cy="274.0" r="5.0" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="978.1" cy="203.6" r="5.0" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1068.5" cy="127.4" r="5.0" fill="#be123c" stroke="#ffffff" stroke-width="1.2"/>
+<polyline fill="none" stroke="#f97316" stroke-width="3.0" stroke-dasharray="5,4" points="706.9,289.8 887.7,214.6 978.1,192.9 1068.5,162.2"/>
+<circle cx="706.9" cy="289.8" r="5.0" fill="#f97316" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="887.7" cy="214.6" r="5.0" fill="#f97316" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="978.1" cy="192.9" r="5.0" fill="#f97316" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="1068.5" cy="162.2" r="5.0" fill="#f97316" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="1068.5" y1="135.4" x2="1068.5" y2="154.2" stroke="#be123c" stroke-width="2.0" stroke-dasharray="3,3"/>
+<polygon points="1068.5,129.4 1064.0,137.4 1073.0,137.4" fill="#be123c"/>
+<polygon points="1068.5,160.2 1064.0,152.2 1073.0,152.2" fill="#be123c"/>
+<text x="1077.5" y="148.8" text-anchor="start" font-size="12.4" font-weight="700" fill="#be123c">2.45×</text>
+<rect x="689.0" y="57.0" width="298.2" height="54.0" rx="6" fill="#ffffff" fill-opacity="0.96" stroke="#d1d5db" stroke-width="1.1"/>
+<line x1="698.0" y1="69.8" x2="720.0" y2="69.8" stroke="#be123c" stroke-width="2.8"/>
+<circle cx="709.0" cy="69.8" r="4.2" fill="#be123c"/>
+<text x="727.0" y="74.0" font-size="12.2">Cycle 2 (50,296 qubits: slope = 6.3)</text>
+<line x1="698.0" y1="90.8" x2="720.0" y2="90.8" stroke="#f97316" stroke-width="2.8" stroke-dasharray="5,4"/>
+<circle cx="709.0" cy="90.8" r="4.2" fill="#f97316"/>
+<text x="727.0" y="95.0" font-size="12.2">Cycle 1 (508 qubits: slope = 3.3)</text>
+</svg>

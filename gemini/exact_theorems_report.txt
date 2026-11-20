@@ -1,0 +1,17 @@
+=== THEOREM 2: Matroid Globally-Optimal Check-Weight Reduction ===
+  1-Rib Minimal (L=2, r=[1]) Step 3 (N=2911): Naive RREF HX max_w=11 (mean=5.67) -> Matroid-Optimal HX max_w=7 (mean=4.72), HZ max_w=6
+  2-Rib Minimal (L=3, r=[1,2]) Step 2 (N=2152): Naive RREF HX max_w=10 (mean=5.49) -> Matroid-Optimal HX max_w=6 (mean=4.11), HZ max_w=6
+  RP^2 Hemi-Cube (L=2, r=[1]) Step 2 (N=969): Naive RREF HX max_w=10 (mean=5.47) -> Matroid-Optimal HX max_w=6 (mean=4.29), HZ max_w=6
+=== THEOREM 1B: Exact 3D Quantum Doubled-Square Unit Cleaning ===
+  3D R_X Unit: 1-Rib Minimal (L=2, ribs=[1]): |int_checks|=8, |touch_qs|=19, |ker|=11, tested_syns=243, non_monotonic_viols=0, min_viol_|s_int|=NONE, max(|s_ext|/|s_int|)=1.000
+  3D R_X Unit: 1-Rib Centered (L=3, ribs=[1]): |int_checks|=18, |touch_qs|=41, |ker|=23, tested_syns=522, non_monotonic_viols=8, min_viol_|s_int|=1, max(|s_ext|/|s_int|)=2.000
+  3D R_X Unit: 2-Rib Minimal (L=3, ribs=[1,2]): |int_checks|=32, |touch_qs|=60, |ker|=29, tested_syns=1653, non_monotonic_viols=30, min_viol_|s_int|=1, max(|s_ext|/|s_int|)=3.000
+
+=== THEOREM 3: Explicit Z^3 Unit-Lattice Non-Collision Verification ===
+  Inhomogeneous 1-Rib Z^3 Embedding (l0=3, l1=5): |X_1|=24 unit squares (overlaps=0); Step 2 plane classes mod 5: X'_1=[0, 2], Copy=[1, 3], Cyl=[4] -> pairwise_disjoint=True
+  Inhomogeneous 2-Rib Z^3 Embedding (l0=4, l1=6): |X_1|=48 unit squares (overlaps=0); Step 2 plane classes mod 6: X'_1=[0, 2], Copy=[1, 3], Cyl=[4, 5] -> pairwise_disjoint=True
+
+=== THEOREM 4A: BDL Section 3.2 Tanner Replacement at Minimal Odd ell=3 ===
+  BDL Sec 3.2 Step 0: n=5, |HX|=2, |HZ|=2 -> Step 1 (R_X, ell=3): n=60, |HX|=24, |HZ|=38, bad_comm=0
+  BDL Sec 3.2 Step 2 (R_Z o R_X, ell=3): n=1336, |HX|=840, |HZ|=588, max_w=(6,5)
+  BDL Sec 3.2 on RP^2 [[6,1,(2,3)]] -> Step 1 (ell=3): n=132, max_w=(5,4) | Step 2 (ell=3): n=3672, |HX|=2344, |HZ|=1620, max_w=(6,5)

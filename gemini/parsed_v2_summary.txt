@@ -1,0 +1,176 @@
+=== 0. TIMEOUT / ERR SUMMARY ===
+Total timeouts/errors: 29
+  TIMEOUT|PHASE|cls_l4_r2_step4.code
+  TIMEOUT|PHASE|cls_l3_r1_step4.code
+  TIMEOUT|PHASE|cls_l4_r2_step4.code
+  TIMEOUT|NEW_Q|bdl_rp2_hyb21_s2_Zerr.code
+  TIMEOUT|PHASE|cls_l4_r2_step4.code
+  TIMEOUT|PHASE|cls_l3_r1_step4.code
+  TIMEOUT|NEW_Q|bdl_rp2_L2r1_s3_Xerr.code
+  TIMEOUT|NEW_Q|bdl_tor2_hyb21_s2_Zerr.code
+  TIMEOUT|PHASE|cls_l4_r2_step4.code
+  TIMEOUT|PHASE|cls_l3_r1_step4.code
+  TIMEOUT|PHASE|cls_l4_r2_step4.code
+  TIMEOUT|ANNEAL_HEAL|cls_l4_r2_step3.code
+  TIMEOUT|PHASE|cls_l4_r2_step4.code
+  TIMEOUT|ANNEAL_INF|bdl_sq_L3r2_s2_Xerr.code
+  TIMEOUT|NEW_Q|sec32_rp2_l3_s2_Zerr.code
+  TIMEOUT|PHASE|cls_l3_r1_step4.code
+  TIMEOUT|PHASE|cls_l3_r1_step4.code
+  TIMEOUT|NEW_Q|bdl_tor2_L3r1_s2_Zerr.code
+  TIMEOUT|PHASE|cls_l4_r2_step4.code
+  TIMEOUT|NEW_Q|bdl_rp2_L2r1_s3_Xerr.code
+  TIMEOUT|ANNEAL_INF|cls_l4_r2_step3.code
+  TIMEOUT|PHASE|cls_l3_r1_step4.code
+  TIMEOUT|ANNEAL_HEAL|cls_l4_r2_step3.code
+  TIMEOUT|PHASE|cls_l3_r1_step4.code
+  TIMEOUT|NEW_Q|sec32_rp2_l3_s1_Xerr.code
+  TIMEOUT|NEW_Q|bdl_tor2_L3r2_s2_Zerr.code
+  TIMEOUT|PHASE|cls_l3_r1_step4.code
+  TIMEOUT|PHASE|cls_l4_r2_step4.code
+  TIMEOUT|NEW_Q|bdl_tor2_L3r2_s2_Zerr.code
+
+=== 1. NEW V2 CODE STATS (N, K, Check Weights, Distance, Energy Barrier) ===
+  bdl_rp2_L2r1_s0_Xerr.code        | N=    6 M=    3 K= 1 max_cw= 4 mean_cw=4.00 qdeg= 2 d<=  2 Delta<= 2
+  bdl_rp2_L2r1_s0_Zerr.code        | N=    6 M=    4 K= 1 max_cw= 3 mean_cw=3.00 qdeg= 2 d<=  3 Delta<= 2
+  bdl_rp2_L2r1_s1_Xerr.code        | N=   57 M=   36 K= 1 max_cw= 4 mean_cw=4.00 qdeg= 4 d<= 10 Delta<= 4
+  bdl_rp2_L2r1_s1_Zerr.code        | N=   57 M=   26 K= 1 max_cw= 5 mean_cw=4.38 qdeg= 2 d<=  4 Delta<= 2
+  bdl_rp2_L2r1_s2_Xerr.code        | N=  969 M=  432 K= 1 max_cw= 6 mean_cw=4.83 qdeg= 4 d<= 21 Delta<= 4
+  bdl_rp2_L2r1_s2_Zerr.code        | N=  969 M=  568 K= 1 max_cw= 6 mean_cw=4.29 qdeg= 4 d<= 20 Delta<= 5
+  bdl_rp2_L2r1_s3_Xerr.code        | N= 8733 M= 5184 K= 1 max_cw= 6 mean_cw=4.35 qdeg= 4 d<=130 Delta<=11
+  bdl_rp2_L2r1_s3_Zerr.code        | N= 8733 M= 3938 K= 1 max_cw= 7 mean_cw=4.87 qdeg= 4 d<= 68 Delta<= 5
+  bdl_rp2_hyb21_s2_Xerr.code       | N= 2370 M= 1080 K= 1 max_cw= 6 mean_cw=4.83 qdeg= 4 d<= 54 Delta<= 5
+  bdl_rp2_hyb21_s2_Zerr.code       | N= 2370 M= 1360 K= 1 max_cw= 6 mean_cw=4.37 qdeg= 4 d<= 45 Delta<= 5
+  bdl_tor2_L3r1_s2_Xerr.code       | N= 5084 M= 2304 K= 2 max_cw= 6 mean_cw=4.58 qdeg= 4 d<= 61 Delta<= 3
+  bdl_tor2_L3r1_s2_Zerr.code       | N= 5084 M= 2856 K= 2 max_cw= 6 mean_cw=4.15 qdeg= 4 d<= 53 Delta<= 5
+  bdl_tor2_L3r2_s2_Xerr.code       | N= 8608 M= 3600 K= 2 max_cw= 6 mean_cw=5.07 qdeg= 4 d<= 83 Delta<= 5
+  bdl_tor2_L3r2_s2_Zerr.code       | N= 8608 M= 5392 K= 2 max_cw= 6 mean_cw=4.21 qdeg= 4 d<= 58 Delta<= 7
+  bdl_tor2_hyb12_s2_Xerr.code      | N= 3488 M= 1440 K= 2 max_cw= 6 mean_cw=5.07 qdeg= 4 d<= 38 Delta<= 3
+  bdl_tor2_hyb12_s2_Zerr.code      | N= 3488 M= 2208 K= 2 max_cw= 6 mean_cw=4.17 qdeg= 4 d<= 44 Delta<= 6
+  bdl_tor2_hyb21_s2_Xerr.code      | N= 3160 M= 1440 K= 2 max_cw= 6 mean_cw=4.83 qdeg= 4 d<= 39 Delta<= 5
+  bdl_tor2_hyb21_s2_Zerr.code      | N= 3160 M= 1808 K= 2 max_cw= 6 mean_cw=4.35 qdeg= 4 d<= 36 Delta<= 5
+  sec32_rp2_l3_s1_Xerr.code        | N=  132 M=   90 K= 1 max_cw= 4 mean_cw=4.00 qdeg= 4 d<= 12 Delta<= 5
+  sec32_rp2_l3_s1_Zerr.code        | N=  132 M=   56 K= 1 max_cw= 5 mean_cw=4.71 qdeg= 2 d<=  7 Delta<= 2
+  sec32_rp2_l3_s2_Xerr.code        | N= 3672 M= 1620 K= 1 max_cw= 5 mean_cw=4.89 qdeg= 4 d<= 91 Delta<= 5
+  sec32_rp2_l3_s2_Zerr.code        | N= 3672 M= 2344 K= 1 max_cw= 6 mean_cw=4.28 qdeg= 4 d<= 58 Delta<= 5
+  sec32_tanner_l3_s1_Xerr.code     | N=   60 M=   38 K= 1 max_cw= 4 mean_cw=3.58 qdeg= 4 d<=  8 Delta<= 3
+  sec32_tanner_l3_s1_Zerr.code     | N=   60 M=   24 K= 1 max_cw= 5 mean_cw=4.33 qdeg= 2 d<=  4 Delta<= 1
+  sec32_tanner_l3_s2_Xerr.code     | N= 1336 M=  588 K= 1 max_cw= 5 mean_cw=4.71 qdeg= 4 d<= 35 Delta<= 3
+  sec32_tanner_l3_s2_Zerr.code     | N= 1336 M=  840 K= 1 max_cw= 6 mean_cw=4.13 qdeg= 4 d<= 22 Delta<= 3
+
+=== 2. UNCAPPED 5-LEVEL PHASE CROSSING (Step 0, 2, 4 up to N=40,000!) ===
+  cls_l3_r1_step0.code     | 2.5:2.4807e+02(c=0) | 3.0:5.8856e+02(c=0) | 3.25:9.7210e+02(c=0) | 3.5:1.5676e+03(c=0) | 3.75:2.8202e+03(c=0) | 4.0:4.5202e+03(c=0) | 4.5:1.3273e+04(c=0) | 5.0:3.1196e+04(c=0)
+  cls_l3_r1_step2.code     | 2.5:1.1473e+02(c=0) | 3.0:3.8664e+02(c=0) | 3.25:7.9290e+02(c=0) | 3.5:2.3696e+03(c=0) | 3.75:7.2492e+03(c=0) | 4.0:2.1019e+04(c=0) | 4.5:3.1759e+05(c=0) | 5.0:3.6176e+06(c=0)
+  cls_l4_r2_step0.code     | 2.5:2.4813e+02(c=0) | 3.0:5.6428e+02(c=0) | 3.25:1.0161e+03(c=0) | 3.5:1.5806e+03(c=0) | 3.75:2.8036e+03(c=0) | 4.0:4.4628e+03(c=0) | 4.5:1.3455e+04(c=0) | 5.0:3.2502e+04(c=0)
+  cls_l4_r2_step2.code     | 2.5:1.1892e+02(c=0) | 3.0:4.6389e+02(c=0) | 3.25:9.6889e+02(c=0) | 3.5:2.1689e+03(c=0) | 3.75:9.2291e+03(c=0) | 4.0:3.0481e+04(c=0) | 4.5:5.2325e+05(c=0) | 5.0:6.9889e+06(c=0)
+
+=== 3. NEW QUANTUM ARCHITECTURES KMC LIFETIME (RP^2 K=1, Sec 3.2 ell=3, hyb21 vs hyb12, Torus L3r2 N=8608) ===
+  bdl_rp2_L2r1_s0_Xerr.code      | b=3:1.4694e+02(c=0) | b=4:1.1360e+03(c=0) | b=5:8.2820e+03(c=0) | b=6:6.8665e+04(c=0) | b=7:3.8401e+05(c=0)
+  bdl_rp2_L2r1_s0_Zerr.code      | b=3:2.8747e+02(c=0) | b=4:2.1279e+03(c=0) | b=5:1.6116e+04(c=0) | b=6:1.2538e+05(c=0) | b=7:7.0756e+05(c=0)
+  bdl_rp2_L2r1_s1_Xerr.code      | b=3:1.6756e+03(c=0) | b=4:1.5442e+05(c=0) | b=5:7.9725e+06(c=0) | b=6:4.7253e+08(c=0) | b=7:3.2194e+10(c=0)
+  bdl_rp2_L2r1_s1_Zerr.code      | b=3:2.0154e+01(c=0) | b=4:1.9590e+02(c=0) | b=5:1.8263e+03(c=0) | b=6:1.3883e+04(c=0) | b=7:9.9915e+04(c=0)
+  bdl_rp2_L2r1_s2_Xerr.code      | b=3:1.2426e+01(c=0) | b=4:1.0785e+02(c=0) | b=5:4.8194e+03(c=0) | b=6:4.2398e+05(c=0) | b=7:3.1062e+07(c=0)
+  bdl_rp2_L2r1_s2_Zerr.code      | b=3:4.0132e+01(c=0) | b=4:5.7641e+03(c=0) | b=5:1.9283e+06(c=0) | b=6:3.0879e+08(c=5) | b=7:6.5943e+09(c=78)
+  bdl_rp2_L2r1_s3_Xerr.code      | b=3:7.5177e+01(c=0) | b=4:7.0863e+04(c=0) | b=5:2.1011e+07(c=99)
+  bdl_rp2_L2r1_s3_Zerr.code      | b=3:7.2384e+00(c=0) | b=4:3.5425e+01(c=0) | b=5:4.8579e+02(c=0) | b=6:6.7792e+04(c=0) | b=7:1.6194e+07(c=2)
+  bdl_rp2_hyb21_s2_Xerr.code     | b=3:1.2013e+01(c=0) | b=4:1.1546e+02(c=0) | b=5:6.8936e+03(c=0) | b=6:3.1914e+06(c=0) | b=7:3.5240e+08(c=35)
+  bdl_rp2_hyb21_s2_Zerr.code     | b=3:3.4432e+01(c=0) | b=4:1.8907e+03(c=0) | b=5:1.1594e+06(c=0) | b=6:1.9364e+08(c=21)
+  bdl_tor2_L3r1_s2_Xerr.code     | b=3:5.5613e+00(c=0) | b=4:2.5181e+01(c=0) | b=5:1.4710e+02(c=0) | b=6:2.3442e+03(c=0) | b=7:7.9702e+04(c=0)
+  bdl_tor2_L3r1_s2_Zerr.code     | b=3:1.7294e+01(c=0) | b=4:2.5909e+02(c=0) | b=5:3.8715e+04(c=0) | b=6:8.5950e+06(c=0)
+  bdl_tor2_L3r2_s2_Xerr.code     | b=3:5.6867e+00(c=0) | b=4:2.8908e+01(c=0) | b=5:2.9095e+02(c=0) | b=6:1.6532e+04(c=0) | b=7:3.9254e+06(c=0)
+  bdl_tor2_L3r2_s2_Zerr.code     | b=3:5.4665e+01(c=0) | b=4:5.9999e+03(c=0) | b=5:1.8123e+06(c=0)
+  bdl_tor2_hyb12_s2_Xerr.code    | b=3:5.7510e+00(c=0) | b=4:2.7592e+01(c=0) | b=5:2.2746e+02(c=0) | b=6:5.1286e+03(c=0) | b=7:2.2531e+05(c=0)
+  bdl_tor2_hyb12_s2_Zerr.code    | b=3:6.3397e+01(c=0) | b=4:1.6090e+04(c=0) | b=5:3.7338e+06(c=0) | b=6:3.2937e+08(c=56) | b=7:3.0706e+09(c=96)
+  bdl_tor2_hyb21_s2_Xerr.code    | b=3:8.7003e+00(c=0) | b=4:7.2091e+01(c=0) | b=5:2.6622e+03(c=0) | b=6:6.1105e+05(c=0) | b=7:1.2540e+08(c=6)
+  bdl_tor2_hyb21_s2_Zerr.code    | b=3:2.5142e+01(c=0) | b=4:1.3853e+03(c=0) | b=5:6.6033e+05(c=0) | b=6:1.0265e+08(c=6)
+  sec32_rp2_l3_s1_Xerr.code      | b=3:6.6180e+03(c=0) | b=4:1.1383e+06(c=0) | b=5:1.6644e+08(c=0) | b=6:1.6344e+10(c=20)
+  sec32_rp2_l3_s1_Zerr.code      | b=3:1.1474e+01(c=0) | b=4:7.4091e+01(c=0) | b=5:8.0385e+02(c=0) | b=6:7.7264e+03(c=0) | b=7:4.1841e+04(c=0)
+  sec32_rp2_l3_s2_Xerr.code      | b=3:1.1394e+01(c=0) | b=4:7.4870e+01(c=0) | b=5:2.2385e+03(c=0) | b=6:6.3444e+05(c=0) | b=7:9.4929e+07(c=10)
+  sec32_rp2_l3_s2_Zerr.code      | b=3:1.8333e+02(c=0) | b=4:1.7297e+04(c=0) | b=5:3.7646e+06(c=0) | b=6:5.0433e+08(c=25)
+  sec32_tanner_l3_s1_Xerr.code   | b=3:3.3818e+02(c=0) | b=4:6.7445e+03(c=0) | b=5:1.5009e+05(c=0) | b=6:2.5778e+06(c=0) | b=7:5.8077e+07(c=0)
+  sec32_tanner_l3_s1_Zerr.code   | b=3:5.7035e+00(c=0) | b=4:2.1530e+01(c=0) | b=5:8.5633e+01(c=0) | b=6:1.9001e+02(c=0) | b=7:6.5462e+02(c=0)
+  sec32_tanner_l3_s2_Xerr.code   | b=3:1.2397e+01(c=0) | b=4:7.5445e+01(c=0) | b=5:1.3325e+03(c=0) | b=6:2.5788e+04(c=0) | b=7:5.3032e+05(c=0)
+  sec32_tanner_l3_s2_Zerr.code   | b=3:1.6255e+02(c=0) | b=4:7.4261e+03(c=0) | b=5:1.7557e+05(c=0) | b=6:4.2919e+06(c=1) | b=7:5.8625e+07(c=38)
+
+=== 4. COUPLED DEPOLARIZING DAVIES BATH (X, Y, Z simultaneous: y_scale=0.0 vs 1.0!) ===
+  bdl_rp2_hyb21_s2_ys0.0     | b=4:9.5737e+01(c=0) | b=5:1.1667e+04(c=0) | b=6:2.4950e+06(c=0)
+  bdl_rp2_hyb21_s2_ys1.0     | b=4:1.1279e+02(c=0) | b=5:9.7654e+03(c=0) | b=6:2.8203e+06(c=0)
+  bdl_tor2_hyb21_s2_ys0.0    | b=4:7.1130e+01(c=0) | b=5:2.5216e+03(c=0) | b=6:6.7700e+05(c=0)
+  bdl_tor2_hyb21_s2_ys1.0    | b=4:6.1373e+01(c=0) | b=5:2.4805e+03(c=0) | b=6:6.5565e+05(c=0)
+  layer_913_ys0.0            | b=4:2.8358e+01(c=0) | b=5:1.4616e+02(c=0) | b=6:1.7210e+03(c=0)
+  layer_913_ys1.0            | b=4:2.3051e+01(c=0) | b=5:1.1012e+02(c=0) | b=6:1.5139e+03(c=0)
+  sec32_rp2_l3_s2_ys0.0      | b=4:6.4488e+01(c=0) | b=5:2.2238e+03(c=0) | b=6:5.6725e+05(c=0)
+  sec32_rp2_l3_s2_ys1.0      | b=4:6.5828e+01(c=0) | b=5:1.6764e+03(c=0) | b=6:6.9578e+05(c=0)
+
+=== 5. 5-DECODER ACCURACY + MICROSECOND SPEED BENCHMARK (including NOVEL `rg_soft`!) ===
+  -- Code: bdl_rp2_hyb21_s2_Xerr.code --
+    bposd       | p=0.01:0.00000(2647.7us) | p=0.02:0.00000(12229.0us) | p=0.03:0.00000(7785.0us) | p=0.04:0.00000(7138.7us) | p=0.05:0.00000(15121.1us) | p=0.06:0.00000(14816.8us) | p=0.08:0.07000(15129.0us) | p=0.10:0.37000(9467.6us)
+    rg_soft     | p=0.01:0.00000(4701.5us) | p=0.02:0.00500(6425.6us) | p=0.03:0.04500(5067.7us) | p=0.04:0.15500(8643.9us) | p=0.05:0.25250(8354.4us) | p=0.06:0.38000(7497.0us) | p=0.08:0.47750(6948.7us) | p=0.10:0.49500(8793.7us)
+    uf          | p=0.01:0.00000(151.1us) | p=0.02:0.00000(595.4us) | p=0.03:0.00750(1494.8us) | p=0.04:0.05750(3021.8us) | p=0.05:0.12750(4086.1us) | p=0.06:0.23250(7834.4us) | p=0.08:0.42750(4188.1us) | p=0.10:0.51250(7748.2us)
+    rg_strict   | p=0.01:0.15750(2194.7us) | p=0.02:0.34250(5096.8us) | p=0.03:0.45750(5549.8us) | p=0.04:0.48750(5846.9us) | p=0.05:0.46500(6126.2us) | p=0.06:0.44750(6077.0us) | p=0.08:0.51750(5972.0us) | p=0.10:0.46250(4175.7us)
+    rg_relaxed  | p=0.01:0.17000(2697.5us) | p=0.02:0.34000(3395.1us) | p=0.03:0.48500(2968.7us) | p=0.04:0.47250(5391.8us) | p=0.05:0.49500(3299.8us) | p=0.06:0.45250(5930.3us) | p=0.08:0.53250(6252.4us) | p=0.10:0.47000(6325.0us)
+    bposd       KMC | b=4:1.1509e+02 | b=5:6.1128e+03 | b=6:3.4467e+06
+    rg_soft     KMC | b=4:1.3385e+02 | b=5:6.8340e+03 | b=6:3.1052e+06
+    uf          KMC | b=4:1.1489e+02 | b=5:6.9851e+03 | b=6:3.1420e+06
+    rg_strict   KMC | b=4:5.4223e+01 | b=5:5.4857e+03 | b=6:2.7410e+06
+    rg_relaxed  KMC | b=4:4.6174e+01 | b=5:4.0748e+03 | b=6:2.4433e+06
+  -- Code: bdl_sq_L3r1_s2_Xerr.code --
+    bposd       | p=0.01:0.00000(1434.0us) | p=0.02:0.00000(2074.3us) | p=0.03:0.00000(2622.7us) | p=0.04:0.00000(2446.4us) | p=0.05:0.00000(4918.9us) | p=0.06:0.01000(2823.4us) | p=0.08:0.07500(2828.8us) | p=0.10:0.26000(2463.5us)
+    rg_soft     | p=0.01:0.00000(486.5us) | p=0.02:0.04750(904.2us) | p=0.03:0.11250(2997.9us) | p=0.04:0.24500(3533.8us) | p=0.05:0.31000(2169.3us) | p=0.06:0.32500(4339.5us) | p=0.08:0.41000(4773.4us) | p=0.10:0.45750(3208.2us)
+    uf          | p=0.01:0.00000(103.0us) | p=0.02:0.00000(188.1us) | p=0.03:0.00000(246.1us) | p=0.04:0.01500(385.8us) | p=0.05:0.08250(1153.2us) | p=0.06:0.14500(782.9us) | p=0.08:0.25750(884.1us) | p=0.10:0.44250(1644.4us)
+    rg_strict   | p=0.01:0.02750(1090.1us) | p=0.02:0.10500(1063.5us) | p=0.03:0.23250(1127.1us) | p=0.04:0.31500(2293.2us) | p=0.05:0.40000(3630.0us) | p=0.06:0.44750(2695.4us) | p=0.08:0.50250(1950.8us) | p=0.10:0.52750(3671.9us)
+    rg_relaxed  | p=0.01:0.03000(428.5us) | p=0.02:0.13250(1047.9us) | p=0.03:0.23750(2024.7us) | p=0.04:0.31500(1634.9us) | p=0.05:0.38000(2575.6us) | p=0.06:0.42500(2859.1us) | p=0.08:0.50000(2591.9us) | p=0.10:0.52750(1941.0us)
+    bposd       KMC | b=4:5.9080e+01 | b=5:3.5141e+02 | b=6:3.6078e+03
+    rg_soft     KMC | b=4:3.6520e+01 | b=5:2.8355e+02 | b=6:3.0432e+03
+    uf          KMC | b=4:3.6909e+01 | b=5:2.3087e+02 | b=6:3.2290e+03
+    rg_strict   KMC | b=4:3.0168e+01 | b=5:3.0842e+02 | b=6:2.7663e+03
+    rg_relaxed  KMC | b=4:1.5159e+01 | b=5:1.5987e+02 | b=6:9.9538e+02
+  -- Code: bdl_sq_L3r2_s2_Xerr.code --
+    bposd       | p=0.01:0.00000(5872.1us) | p=0.02:0.00000(7024.2us) | p=0.03:0.00000(10725.7us) | p=0.04:0.00000(5313.8us) | p=0.05:0.00500(4340.0us) | p=0.06:0.02000(5360.0us) | p=0.08:0.19500(7635.5us) | p=0.10:0.37500(5333.8us)
+    rg_soft     | p=0.01:0.01500(2708.3us) | p=0.02:0.07000(5533.4us) | p=0.03:0.14750(6349.0us) | p=0.04:0.34750(5872.2us) | p=0.05:0.36500(10718.0us) | p=0.06:0.45750(6282.5us) | p=0.08:0.44500(10162.0us) | p=0.10:0.52250(11656.7us)
+    uf          | p=0.01:0.00000(145.2us) | p=0.02:0.00000(311.1us) | p=0.03:0.01750(1326.5us) | p=0.04:0.04250(1527.5us) | p=0.05:0.14000(2558.6us) | p=0.06:0.21500(4696.4us) | p=0.08:0.41250(8876.8us) | p=0.10:0.52000(2978.2us)
+    rg_strict   | p=0.01:0.02000(728.0us) | p=0.02:0.13000(1578.2us) | p=0.03:0.22750(2015.7us) | p=0.04:0.41500(2320.7us) | p=0.05:0.46500(3308.0us) | p=0.06:0.46000(2408.0us) | p=0.08:0.53750(2025.4us) | p=0.10:0.51750(4418.0us)
+    rg_relaxed  | p=0.01:0.06000(1415.5us) | p=0.02:0.17250(1446.5us) | p=0.03:0.24500(3677.8us) | p=0.04:0.40500(5281.6us) | p=0.05:0.47750(3182.5us) | p=0.06:0.44750(5666.8us) | p=0.08:0.52750(3024.5us) | p=0.10:0.51500(4307.0us)
+    bposd       KMC | b=4:5.9002e+01 | b=5:1.1569e+03 | b=6:1.8223e+04
+    rg_soft     KMC | b=4:6.3477e+01 | b=5:7.4761e+02 | b=6:1.5946e+04
+    uf          KMC | b=4:4.9506e+01 | b=5:7.3466e+02 | b=6:1.6766e+04
+    rg_strict   KMC | b=4:5.0240e+01 | b=5:8.2427e+02 | b=6:1.7352e+04
+    rg_relaxed  KMC | b=4:3.4212e+01 | b=5:3.8078e+02 | b=6:1.5777e+04
+
+=== 6A. BDL OUTLOOK #2 SOLVED: SIMULATED ANNEALING (10-stage b=1.5->6.0) vs COLD QUENCH (b=6.0) FROM T=inf ===
+  bdl_rp2_hyb21_s2_Xerr.code Quench(b=6)     | T=1e+02:syn=0.007261/Pf=0.5333/trap=0.9750 | T=1e+03:syn=0.001265/Pf=0.5333/trap=0.3000 | T=1e+04:syn=0.000255/Pf=0.4667/trap=0.1250 | T=1e+05:syn=0.000224/Pf=0.4500/trap=0.1000 | T=1e+06:syn=0.000177/Pf=0.5000/trap=0.0833
+  bdl_rp2_hyb21_s2_Xerr.code Anneal(1.5->6)  | T=1e+02:syn=0.010926/Pf=0.6083/trap=1.0000 | T=1e+03:syn=0.001991/Pf=0.4417/trap=0.5000 | T=1e+04:syn=0.000231/Pf=0.6000/trap=0.1000 | T=1e+05:syn=0.000185/Pf=0.5417/trap=0.0917 | T=1e+06:syn=0.000239/Pf=0.5000/trap=0.1250
+  bdl_sq_L3r2_s2_Xerr.code   Quench(b=6)     | T=1e+02:syn=0.005352/Pf=0.4833/trap=0.9833 | T=1e+03:syn=0.001657/Pf=0.4583/trap=0.7333 | T=1e+04:syn=0.001833/Pf=0.4917/trap=0.8083 | T=1e+05:syn=0.001926/Pf=0.5000/trap=0.8333 | T=1e+06:syn=0.002806/Pf=0.5417/trap=0.9583
+  bdl_sq_L3r2_s2_Xerr.code   Anneal(1.5->6)  | T=1e+02:syn=0.006685/Pf=0.4333/trap=1.0000 | T=1e+03:syn=0.002991/Pf=0.4417/trap=0.8750 | T=1e+04:syn=0.001620/Pf=0.4833/trap=0.7333 | T=1e+05:syn=0.001722/Pf=0.4917/trap=0.7917
+  cls_l3_r1_step3.code       Quench(b=6)     | T=1e+02:syn=0.035171/Pf=0.5417/trap=1.0000 | T=1e+03:syn=0.025196/Pf=0.5333/trap=1.0000 | T=1e+04:syn=0.012020/Pf=0.5417/trap=1.0000 | T=1e+05:syn=0.004870/Pf=0.5500/trap=0.8333 | T=1e+06:syn=0.002449/Pf=0.5000/trap=0.4667
+  cls_l3_r1_step3.code       Anneal(1.5->6)  | T=1e+02:syn=0.029139/Pf=0.5333/trap=1.0000 | T=1e+03:syn=0.013771/Pf=0.5000/trap=1.0000 | T=1e+04:syn=0.006506/Pf=0.5583/trap=0.9833 | T=1e+05:syn=0.001969/Pf=0.5250/trap=0.3917 | T=1e+06:syn=0.000098/Pf=0.5000/trap=0.0250
+  cls_l4_r2_step3.code       Quench(b=6)     | T=1e+02:syn=0.044804/Pf=0.5417/trap=1.0000 | T=1e+03:syn=0.032522/Pf=0.5000/trap=1.0000 | T=1e+04:syn=0.015557/Pf=0.4583/trap=1.0000 | T=1e+05:syn=0.006309/Pf=0.5833/trap=1.0000 | T=1e+06:syn=0.006296/Pf=0.4750/trap=1.0000
+  cls_l4_r2_step3.code       Anneal(1.5->6)  | T=1e+02:syn=0.035014/Pf=0.4583/trap=1.0000 | T=1e+03:syn=0.015017/Pf=0.4500/trap=1.0000 | T=1e+04:syn=0.006614/Pf=0.4833/trap=1.0000 | T=1e+05:syn=0.003357/Pf=0.5083/trap=0.9917
+
+=== 6B. AUTONOMOUS THERMAL SELF-HEALING OF CORRUPTED CODEWORDS (T=5e4) ===
+  bdl_rp2_hyb21_s2_Xerr.code Quench(b=6)     | p0=0.06:Pf=0.5150(syn=0.000213,trap=0.1050) | p0=0.10:Pf=0.4750(syn=0.000204,trap=0.1000) | p0=0.14:Pf=0.4900(syn=0.000102,trap=0.0500)
+  bdl_rp2_hyb21_s2_Xerr.code Anneal(1.5->6)  | p0=0.06:Pf=0.5100(syn=0.000241,trap=0.1200) | p0=0.10:Pf=0.5050(syn=0.000134,trap=0.0650) | p0=0.14:Pf=0.4900(syn=0.000236,trap=0.1100)
+  bdl_sq_L3r2_s2_Xerr.code   Quench(b=6)     | p0=0.06:Pf=0.5400(syn=0.001617,trap=0.7250) | p0=0.10:Pf=0.4450(syn=0.001672,trap=0.7150) | p0=0.14:Pf=0.5400(syn=0.001583,trap=0.7150)
+  bdl_sq_L3r2_s2_Xerr.code   Anneal(1.5->6)  | p0=0.06:Pf=0.5100(syn=0.001706,trap=0.7600) | p0=0.10:Pf=0.4350(syn=0.001600,trap=0.7000) | p0=0.14:Pf=0.5650(syn=0.001483,trap=0.7050)
+  cls_l3_r1_step3.code       Quench(b=6)     | p0=0.06:Pf=0.0000(syn=0.000026,trap=0.0200) | p0=0.10:Pf=0.0000(syn=0.000033,trap=0.0150) | p0=0.14:Pf=0.0000(syn=0.000164,trap=0.0600)
+  cls_l3_r1_step3.code       Anneal(1.5->6)  | p0=0.06:Pf=0.5150(syn=0.003364,trap=0.6400) | p0=0.10:Pf=0.4950(syn=0.003491,trap=0.6900) | p0=0.14:Pf=0.5150(syn=0.003498,trap=0.6850)
+  cls_l4_r2_step3.code       Quench(b=6)     | p0=0.06:Pf=0.0000(syn=0.000032,trap=0.0500) | p0=0.10:Pf=0.0000(syn=0.000107,trap=0.1300) | p0=0.14:Pf=0.0000(syn=0.000285,trap=0.3250)
+  cls_l4_r2_step3.code       Anneal(1.5->6)  | p0=0.10:Pf=0.4650(syn=0.003999,trap=1.0000)
+
+=== 7. GOLDILOCKS NOISY HYBRID ACTIVE-PASSIVE QEC (T_storage=1000, beta=5.0) ===
+  -- Code: bdl_rp2_hyb21_s2_Xerr.code --
+    p_act=0.000 | tau=2:0.00000 | tau=5:0.00000 | tau=10:0.00000 | tau=25:0.00000 | tau=50:0.00500 | tau=100:0.00500 | tau=250:0.03000 | tau=500:0.04000 | tau=1000:0.08000
+    p_act=0.002 | tau=2:0.03000 | tau=5:0.01000 | tau=10:0.01500 | tau=25:0.01500 | tau=50:0.02500 | tau=100:0.03000 | tau=250:0.08000 | tau=500:0.07500 | tau=1000:0.07500
+    p_act=0.005 | tau=2:0.48500 | tau=5:0.53500 | tau=10:0.41000 | tau=25:0.20000 | tau=50:0.19500 | tau=100:0.18000 | tau=250:0.09000 | tau=500:0.09000 | tau=1000:0.07000
+  -- Code: bdl_tor3_L2r1_s2_Xerr.code --
+    p_act=0.000 | tau=2:0.00000 | tau=5:0.00000 | tau=10:0.00000 | tau=25:0.00500 | tau=50:0.03000 | tau=100:0.17500 | tau=250:0.40500 | tau=500:0.51000 | tau=1000:0.47000
+    p_act=0.002 | tau=2:0.01000 | tau=5:0.17000 | tau=10:0.26000 | tau=25:0.33500 | tau=50:0.26500 | tau=100:0.36000 | tau=250:0.45500 | tau=500:0.54000 | tau=1000:0.57000
+    p_act=0.005 | tau=2:0.91000 | tau=5:0.96500 | tau=10:0.92500 | tau=25:0.89500 | tau=50:0.75500 | tau=100:0.75000 | tau=250:0.63500 | tau=500:0.58500 | tau=1000:0.54500
+  -- Code: layer_913_Xerr.code --
+    p_act=0.000 | tau=2:0.00000 | tau=5:0.00000 | tau=10:0.05500 | tau=25:0.27000 | tau=50:0.49500 | tau=100:0.64500 | tau=250:0.71500 | tau=500:0.59000 | tau=1000:0.54000
+    p_act=0.002 | tau=2:0.05000 | tau=5:0.16500 | tau=10:0.32500 | tau=25:0.54000 | tau=50:0.61000 | tau=100:0.68000 | tau=250:0.71500 | tau=500:0.70500 | tau=1000:0.49500
+    p_act=0.005 | tau=2:0.36000 | tau=5:0.66500 | tau=10:0.80500 | tau=25:0.82000 | tau=50:0.80500 | tau=100:0.86000 | tau=250:0.72000 | tau=500:0.67000 | tau=1000:0.48500
+  -- Code: toric2d_L20_Xerr.code --
+    p_act=0.000 | tau=2:0.00000 | tau=5:0.03000 | tau=10:0.37000 | tau=25:0.93500 | tau=50:0.98500 | tau=100:0.99500 | tau=250:1.00000 | tau=500:0.95000 | tau=1000:0.71500
+    p_act=0.002 | tau=2:0.18500 | tau=5:0.84000 | tau=10:0.99500 | tau=25:1.00000 | tau=50:0.99500 | tau=100:0.99500 | tau=250:0.99000 | tau=500:0.94500 | tau=1000:0.75500
+    p_act=0.005 | tau=2:0.87500 | tau=5:1.00000 | tau=10:1.00000 | tau=25:1.00000 | tau=50:1.00000 | tau=100:1.00000 | tau=250:1.00000 | tau=500:0.93500 | tau=1000:0.73000

@@ -1,0 +1,488 @@
+kmc__cubic_L5_X_err__uniform__uf__b4.25 | KMC dec=uf beta=4.25 N=250 K=2 trials=48 mean_t=8.5375e+06 sem_t=1.3666e+06 median_t=5.7942e+06 mean_flips=242803.1 capped=0
+kmc__rottor_L2r1_s2_X_err__uniform__uf__b6.75 | KMC dec=uf beta=6.75 N=508 K=2 trials=64 mean_t=8.4664e+05 sem_t=1.2048e+05 median_t=6.1174e+05 mean_flips=24033.7 capped=0
+ffs__sq_L2r1_s2_X_err__uniform__uf__b7.00 | FFS dec=uf beta=7.00 N=254 K=1 Phi0=4.0226e-02 Pfail=2.8596e-04 sem_P=4.3424e-05 mean_t=9.6577e+04 sem_t=1.4666e+04 valid_reps=6/6 movie_peak_E=-1.0
+ffs__sq_L2r1_s2_Z_err__uniform__uf__b6.50 | FFS dec=uf beta=6.50 N=254 K=1 Phi0=4.2390e-02 Pfail=3.7490e-04 sem_P=5.3935e-05 mean_t=6.5878e+04 sem_t=9.4774e+03 valid_reps=6/6 movie_peak_E=-1.0
+ffs__rottor_hyb12_s2_X_err__uniform__uf__b7.50 | TIMEOUT
+ffs__sq_L3r2_s2_X_err__uniform__uf__b7.50 | TIMEOUT
+kmc__rottor_cb3rib_s3_Z_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=3462 K=98 trials=64 mean_t=5.9379e-02 sem_t=7.0590e-03 median_t=4.4316e-02 mean_flips=1.0 capped=0
+kmc__rottor_cb2rib_s2_Z_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=372 K=34 trials=64 mean_t=9.2297e-02 sem_t=1.0621e-02 median_t=6.5224e-02 mean_flips=1.0 capped=0
+kmc__rottor_cb2rib_s4_Z_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=30592 K=2812 trials=24 mean_t=1.2085e-03 sem_t=1.9666e-04 median_t=1.0464e-03 mean_flips=1.0 capped=0
+kmc__sq_cb3rib_s3_Z_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=1710 K=45 trials=64 mean_t=6.4585e-02 sem_t=7.4561e-03 median_t=4.4256e-02 mean_flips=1.0 capped=0
+kmc__sq_cb2rib_s2_Z_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=188 K=14 trials=64 mean_t=2.7916e-01 sem_t=3.3538e-02 median_t=1.8235e-01 mean_flips=1.0 capped=0
+kmc__sq_cb2rib_s4_Z_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=15324 K=1306 trials=24 mean_t=1.9147e-03 sem_t=4.1123e-04 median_t=1.2643e-03 mean_flips=1.0 capped=0
+kmc__sq_z3_4_6_r2_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=10280 K=1 trials=64 mean_t=3.3562e+02 sem_t=3.9973e+01 median_t=2.4444e+02 mean_flips=10654.3 capped=0
+kmc__sq_bdl_8_8_r2_X_err__pin_norm__uf__b5.50 | KMC dec=uf beta=5.50 N=56312 K=1 trials=24 mean_t=1.6695e+02 sem_t=1.1978e+01 median_t=1.5571e+02 mean_flips=20009.8 capped=0
+cool__sq_L2r1_s2_X_err__soft_seam__hot__t1500 | COOL proto=soft_seam init=hot t_tot=1500.0 N=254 K=1 trials=100 syn_dens=0.00095 mean_max_cl=2.2 p_zero_syn=0.900 p_exact_heal=0.460 p_log_survive=0.500
+cool__rottor_L2r1_s2_X_err__quench__hot__t100 | COOL proto=quench init=hot t_tot=100.0 N=508 K=2 trials=100 syn_dens=0.00379 mean_max_cl=96.3 p_zero_syn=0.650 p_exact_heal=0.190 p_log_survive=0.300
+cool__rottor_L2r1_s2_Z_err__soft_seam__hot__t1500 | COOL proto=soft_seam init=hot t_tot=1500.0 N=508 K=2 trials=100 syn_dens=0.00347 mean_max_cl=61.5 p_zero_syn=0.750 p_exact_heal=0.180 p_log_survive=0.210
+cool__rottor_hyb21_s2_Z_err__quench__hot__t100 | COOL proto=quench init=hot t_tot=100.0 N=1172 K=2 trials=100 syn_dens=0.00806 mean_max_cl=363.7 p_zero_syn=0.110 p_exact_heal=0.030 p_log_survive=0.270
+cool__sq_L2r1_s3_X_err__soft_seam__hot__t1500 | COOL proto=soft_seam init=hot t_tot=1500.0 N=1942 K=1 trials=100 syn_dens=0.00189 mean_max_cl=350.0 p_zero_syn=0.340 p_exact_heal=0.160 p_log_survive=0.510
+cool__rottor_L2r1_s3_X_err__quench__hot__t100 | COOL proto=quench init=hot t_tot=100.0 N=3884 K=2 trials=100 syn_dens=0.01142 mean_max_cl=2513.3 p_zero_syn=0.000 p_exact_heal=0.000 p_log_survive=0.180
+cool__rottor_L2r1_s3_Z_err__soft_seam__hot__t1500 | COOL proto=soft_seam init=hot t_tot=1500.0 N=3884 K=2 trials=100 syn_dens=0.00109 mean_max_cl=498.3 p_zero_syn=0.540 p_exact_heal=0.120 p_log_survive=0.210
+kmc__cubic_L7_X_err__uniform__uf__b4.25 | KMC dec=uf beta=4.25 N=686 K=2 trials=48 mean_t=2.3885e+07 sem_t=3.6801e+06 median_t=1.4905e+07 mean_flips=1616585.9 capped=0
+ffs__sq_L2r1_s2_X_err__uniform__uf__b7.50 | FFS dec=uf beta=7.50 N=254 K=1 Phi0=2.4374e-02 Pfail=2.0298e-04 sem_P=4.7976e-05 mean_t=2.1553e+05 sem_t=5.0940e+04 valid_reps=6/6 movie_peak_E=-1.0
+ffs__sq_L2r1_s2_Z_err__uniform__uf__b7.00 | FFS dec=uf beta=7.00 N=254 K=1 Phi0=2.5641e-02 Pfail=1.7121e-04 sem_P=2.2679e-05 mean_t=2.3396e+05 sem_t=3.0991e+04 valid_reps=6/6 movie_peak_E=-1.0
+ffs__rottor_hyb12_s2_X_err__uniform__uf__b8.00 | TIMEOUT
+ffs__sq_L3r2_s2_X_err__uniform__uf__b8.00 | TIMEOUT
+kmc__rottor_cb3rib_s3_Z_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=3462 K=98 trials=64 mean_t=5.5394e-02 sem_t=6.4726e-03 median_t=4.3859e-02 mean_flips=1.0 capped=0
+kmc__rottor_cb2rib_s2_Z_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=372 K=34 trials=64 mean_t=1.2446e-01 sem_t=1.2422e-02 median_t=9.8190e-02 mean_flips=1.0 capped=0
+kmc__rottor_cb2rib_s4_Z_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=30592 K=2812 trials=24 mean_t=1.5692e-03 sem_t=2.6718e-04 median_t=1.3268e-03 mean_flips=1.0 capped=0
+kmc__sq_cb3rib_s3_Z_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=1710 K=45 trials=64 mean_t=5.7144e-02 sem_t=7.0743e-03 median_t=4.2123e-02 mean_flips=1.0 capped=0
+kmc__sq_cb2rib_s2_Z_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=188 K=14 trials=64 mean_t=2.7227e-01 sem_t=2.8466e-02 median_t=2.3997e-01 mean_flips=1.0 capped=0
+kmc__sq_cb2rib_s4_Z_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=15324 K=1306 trials=24 mean_t=2.5059e-03 sem_t=3.7085e-04 median_t=2.2731e-03 mean_flips=1.0 capped=0
+kmc__sq_z3_4_6_r2_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=10280 K=1 trials=64 mean_t=1.5788e+03 sem_t=2.4209e+02 median_t=9.2381e+02 mean_flips=33796.2 capped=0
+kmc__sq_bdl_8_8_r2_X_err__pin_norm__uf__b6.00 | KMC dec=uf beta=6.00 N=56312 K=1 trials=24 mean_t=3.9156e+02 sem_t=4.8012e+01 median_t=3.3554e+02 mean_flips=36389.2 capped=0
+cool__sq_L2r1_s2_X_err__quench__noisy_0.01__t1000 | COOL proto=quench init=noisy_0.01 t_tot=1000.0 N=254 K=1 trials=100 syn_dens=0.00129 mean_max_cl=4.7 p_zero_syn=0.860 p_exact_heal=0.810 p_log_survive=0.950
+cool__rottor_L2r1_s2_X_err__anneal__hot__t100 | COOL proto=anneal init=hot t_tot=100.0 N=508 K=2 trials=100 syn_dens=0.00582 mean_max_cl=133.3 p_zero_syn=0.500 p_exact_heal=0.120 p_log_survive=0.220
+cool__rottor_L2r1_s2_Z_err__quench__noisy_0.01__t1000 | COOL proto=quench init=noisy_0.01 t_tot=1000.0 N=508 K=2 trials=100 syn_dens=0.00000 mean_max_cl=0.0 p_zero_syn=1.000 p_exact_heal=0.980 p_log_survive=0.980
+cool__rottor_hyb21_s2_Z_err__anneal__hot__t100 | COOL proto=anneal init=hot t_tot=100.0 N=1172 K=2 trials=100 syn_dens=0.00918 mean_max_cl=423.6 p_zero_syn=0.100 p_exact_heal=0.010 p_log_survive=0.240
+cool__sq_L2r1_s3_X_err__quench__noisy_0.01__t1000 | COOL proto=quench init=noisy_0.01 t_tot=1000.0 N=1942 K=1 trials=100 syn_dens=0.00048 mean_max_cl=8.9 p_zero_syn=0.590 p_exact_heal=0.590 p_log_survive=1.000
+cool__rottor_L2r1_s3_X_err__anneal__hot__t100 | COOL proto=anneal init=hot t_tot=100.0 N=3884 K=2 trials=100 syn_dens=0.00845 mean_max_cl=2606.0 p_zero_syn=0.000 p_exact_heal=0.000 p_log_survive=0.250
+cool__rottor_L2r1_s3_Z_err__quench__noisy_0.01__t1000 | COOL proto=quench init=noisy_0.01 t_tot=1000.0 N=3884 K=2 trials=100 syn_dens=0.00072 mean_max_cl=318.4 p_zero_syn=0.650 p_exact_heal=0.390 p_log_survive=0.510
+kmc__cubic_L5_X_err__uniform__uf__b4.50 | KMC dec=uf beta=4.50 N=250 K=2 trials=48 mean_t=4.6406e+07 sem_t=9.1288e+06 median_t=2.5700e+07 mean_flips=1343340.6 capped=0
+ffs__sq_L2r1_s2_X_err__uniform__uf__b8.00 | FFS dec=uf beta=8.00 N=254 K=1 Phi0=1.4774e-02 Pfail=1.8122e-04 sem_P=5.8282e-05 mean_t=3.8874e+05 sem_t=1.2502e+05 valid_reps=6/6 movie_peak_E=-1.0
+ffs__sq_L2r1_s2_Z_err__uniform__uf__b7.50 | FFS dec=uf beta=7.50 N=254 K=1 Phi0=1.5526e-02 Pfail=1.4269e-04 sem_P=5.2266e-05 mean_t=4.5870e+05 sem_t=1.6802e+05 valid_reps=6/6 movie_peak_E=-1.0
+kmc__rottor_hyb12_s2_Z_err__uniform__uf__b5.00 | KMC dec=uf beta=5.00 N=1292 K=2 trials=48 mean_t=4.1177e+06 sem_t=6.9965e+05 median_t=2.6100e+06 mean_flips=976084.5 capped=0
+kmc__sq_L3r2_s2_Z_err__uniform__uf__b5.00 | KMC dec=uf beta=5.00 N=1480 K=1 trials=48 mean_t=1.2580e+05 sem_t=2.2077e+04 median_t=7.1401e+04 mean_flips=184077.9 capped=0
+kmc__rottor_cb3rib_s3_Z_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=3462 K=98 trials=64 mean_t=5.7514e-02 sem_t=6.4956e-03 median_t=4.3091e-02 mean_flips=1.0 capped=0
+kmc__rottor_cb2rib_s2_Z_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=372 K=34 trials=64 mean_t=1.2322e-01 sem_t=1.6857e-02 median_t=7.8491e-02 mean_flips=1.0 capped=0
+kmc__rottor_cb2rib_s4_Z_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=30592 K=2812 trials=24 mean_t=9.3988e-04 sem_t=1.5792e-04 median_t=7.2308e-04 mean_flips=1.0 capped=0
+kmc__sq_cb3rib_s3_Z_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=1710 K=45 trials=64 mean_t=5.3762e-02 sem_t=6.2225e-03 median_t=3.9015e-02 mean_flips=1.0 capped=0
+kmc__sq_cb2rib_s2_Z_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=188 K=14 trials=64 mean_t=2.3609e-01 sem_t=2.9752e-02 median_t=1.7039e-01 mean_flips=1.0 capped=0
+kmc__sq_cb2rib_s4_Z_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=15324 K=1306 trials=24 mean_t=4.2102e-03 sem_t=9.3706e-04 median_t=2.9273e-03 mean_flips=1.0 capped=0
+kmc__sq_z3_4_6_r2_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=10280 K=1 trials=64 mean_t=5.8674e+03 sem_t=9.3302e+02 median_t=2.7930e+03 mean_flips=74218.5 capped=0
+kmc__sq_bdl_8_8_r2_X_err__pin_norm__uf__b6.50 | KMC dec=uf beta=6.50 N=56312 K=1 trials=24 mean_t=6.0905e+02 sem_t=3.3569e+01 median_t=6.1272e+02 mean_flips=43113.2 capped=0
+cool__sq_L2r1_s2_X_err__quench__noisy_0.02__t1000 | COOL proto=quench init=noisy_0.02 t_tot=1000.0 N=254 K=1 trials=100 syn_dens=0.00121 mean_max_cl=4.2 p_zero_syn=0.870 p_exact_heal=0.740 p_log_survive=0.870
+cool__rottor_L2r1_s2_X_err__soft_seam__hot__t100 | COOL proto=soft_seam init=hot t_tot=100.0 N=508 K=2 trials=100 syn_dens=0.00470 mean_max_cl=77.2 p_zero_syn=0.630 p_exact_heal=0.130 p_log_survive=0.240
+cool__rottor_L2r1_s2_Z_err__quench__noisy_0.02__t1000 | COOL proto=quench init=noisy_0.02 t_tot=1000.0 N=508 K=2 trials=100 syn_dens=0.00014 mean_max_cl=2.4 p_zero_syn=0.990 p_exact_heal=0.850 p_log_survive=0.850
+cool__rottor_hyb21_s2_Z_err__soft_seam__hot__t100 | COOL proto=soft_seam init=hot t_tot=100.0 N=1172 K=2 trials=100 syn_dens=0.00929 mean_max_cl=384.0 p_zero_syn=0.090 p_exact_heal=0.010 p_log_survive=0.260
+cool__sq_L2r1_s3_X_err__quench__noisy_0.02__t1000 | COOL proto=quench init=noisy_0.02 t_tot=1000.0 N=1942 K=1 trials=100 syn_dens=0.00051 mean_max_cl=24.6 p_zero_syn=0.600 p_exact_heal=0.600 p_log_survive=1.000
+cool__rottor_L2r1_s3_X_err__soft_seam__hot__t100 | COOL proto=soft_seam init=hot t_tot=100.0 N=3884 K=2 trials=100 syn_dens=0.00991 mean_max_cl=2474.9 p_zero_syn=0.000 p_exact_heal=0.000 p_log_survive=0.240
+cool__rottor_L2r1_s3_Z_err__quench__noisy_0.02__t1000 | COOL proto=quench init=noisy_0.02 t_tot=1000.0 N=3884 K=2 trials=100 syn_dens=0.00073 mean_max_cl=298.4 p_zero_syn=0.640 p_exact_heal=0.230 p_log_survive=0.350
+kmc__cubic_L7_X_err__uniform__uf__b4.50 | KMC dec=uf beta=4.50 N=686 K=2 trials=48 mean_t=1.5101e+08 sem_t=1.9105e+07 median_t=1.0759e+08 mean_flips=7508445.6 capped=0
+ffs__rottor_L2r1_s2_X_err__uniform__uf__b7.00 | TIMEOUT
+kmc__rottor_L2r1_s2_Z_err__uniform__uf__b5.00 | KMC dec=uf beta=5.00 N=508 K=2 trials=64 mean_t=3.9653e+05 sem_t=4.4962e+04 median_t=2.8792e+05 mean_flips=56824.5 capped=0
+ffs__sq_L2r1_s2_Z_err__uniform__uf__b8.00 | FFS dec=uf beta=8.00 N=254 K=1 Phi0=9.4076e-03 Pfail=5.1592e-05 sem_P=1.5826e-05 mean_t=2.0801e+06 sem_t=6.3806e+05 valid_reps=6/6 movie_peak_E=-1.0
+kmc__rottor_hyb12_s2_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=1292 K=2 trials=48 mean_t=5.8828e+07 sem_t=8.9017e+06 median_t=3.7190e+07 mean_flips=4911367.1 capped=0
+kmc__sq_L3r2_s2_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=1480 K=1 trials=48 mean_t=9.3603e+05 sem_t=1.6943e+05 median_t=6.6737e+05 mean_flips=730512.5 capped=0
+kmc__rottor_cb3rib_s3_Z_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=3462 K=98 trials=64 mean_t=3.9644e-02 sem_t=4.9188e-03 median_t=2.4344e-02 mean_flips=1.0 capped=0
+kmc__rottor_cb2rib_s2_Z_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=372 K=34 trials=64 mean_t=1.2202e-01 sem_t=1.3259e-02 median_t=9.5493e-02 mean_flips=1.0 capped=0
+kmc__rottor_cb2rib_s4_Z_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=30592 K=2812 trials=24 mean_t=1.6627e-03 sem_t=3.4651e-04 median_t=1.4086e-03 mean_flips=1.0 capped=0
+kmc__sq_cb3rib_s3_Z_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=1710 K=45 trials=64 mean_t=6.9741e-02 sem_t=9.5424e-03 median_t=3.9822e-02 mean_flips=1.0 capped=0
+kmc__sq_cb2rib_s2_Z_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=188 K=14 trials=64 mean_t=2.6565e-01 sem_t=3.6525e-02 median_t=1.6480e-01 mean_flips=1.0 capped=0
+kmc__sq_cb2rib_s4_Z_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=15324 K=1306 trials=24 mean_t=3.3152e-03 sem_t=5.9049e-04 median_t=2.9320e-03 mean_flips=1.0 capped=0
+kmc__sq_z3_4_6_r2_X_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=10280 K=1 trials=64 mean_t=2.6073e+04 sem_t=4.1832e+03 median_t=1.6078e+04 mean_flips=189879.9 capped=0
+kmc__sq_bdl_8_8_r2_X_err__pin_norm__uf__b7.00 | TIMEOUT
+cool__sq_L2r1_s2_X_err__quench__noisy_0.03__t1000 | COOL proto=quench init=noisy_0.03 t_tot=1000.0 N=254 K=1 trials=100 syn_dens=0.00112 mean_max_cl=2.8 p_zero_syn=0.890 p_exact_heal=0.710 p_log_survive=0.780
+cool__rottor_L2r1_s2_X_err__quench__hot__t400 | COOL proto=quench init=hot t_tot=400.0 N=508 K=2 trials=100 syn_dens=0.00116 mean_max_cl=39.6 p_zero_syn=0.870 p_exact_heal=0.210 p_log_survive=0.210
+cool__rottor_L2r1_s2_Z_err__quench__noisy_0.03__t1000 | COOL proto=quench init=noisy_0.03 t_tot=1000.0 N=508 K=2 trials=100 syn_dens=0.00021 mean_max_cl=3.1 p_zero_syn=0.980 p_exact_heal=0.830 p_log_survive=0.850
+cool__rottor_hyb21_s2_Z_err__quench__hot__t400 | COOL proto=quench init=hot t_tot=400.0 N=1172 K=2 trials=100 syn_dens=0.00256 mean_max_cl=152.2 p_zero_syn=0.610 p_exact_heal=0.100 p_log_survive=0.210
+cool__sq_L2r1_s3_X_err__quench__noisy_0.03__t1000 | COOL proto=quench init=noisy_0.03 t_tot=1000.0 N=1942 K=1 trials=100 syn_dens=0.00073 mean_max_cl=65.8 p_zero_syn=0.560 p_exact_heal=0.560 p_log_survive=0.980
+cool__rottor_L2r1_s3_X_err__quench__hot__t400 | COOL proto=quench init=hot t_tot=400.0 N=3884 K=2 trials=100 syn_dens=0.00710 mean_max_cl=2347.4 p_zero_syn=0.000 p_exact_heal=0.000 p_log_survive=0.280
+cool__rottor_L2r1_s3_Z_err__quench__noisy_0.03__t1000 | COOL proto=quench init=noisy_0.03 t_tot=1000.0 N=3884 K=2 trials=100 syn_dens=0.00088 mean_max_cl=342.4 p_zero_syn=0.620 p_exact_heal=0.150 p_log_survive=0.240
+kmc__cubic_L5_X_err__uniform__uf__b4.75 | KMC dec=uf beta=4.75 N=250 K=2 trials=48 mean_t=2.1520e+08 sem_t=3.6331e+07 median_t=1.2450e+08 mean_flips=3612318.9 capped=0
+ffs__rottor_L2r1_s2_X_err__uniform__uf__b7.50 | FFS dec=uf beta=7.50 N=508 K=2 Phi0=1.2972e-04 Pfail=9.0682e-04 sem_P=7.7357e-05 mean_t=8.5145e+06 sem_t=7.2634e+05 valid_reps=6/6 movie_peak_E=3.0
+kmc__rottor_L2r1_s2_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=508 K=2 trials=64 mean_t=5.6422e+06 sem_t=7.1833e+05 median_t=4.2385e+06 mean_flips=270008.9 capped=0
+kmc__rottor_hyb21_s2_X_err__uniform__uf__b5.00 | KMC dec=uf beta=5.00 N=1172 K=2 trials=48 mean_t=1.1883e+04 sem_t=1.7749e+03 median_t=8.3846e+03 mean_flips=22457.5 capped=0
+kmc__rottor_L3r2_s2_X_err__uniform__uf__b5.00 | KMC dec=uf beta=5.00 N=2960 K=2 trials=48 mean_t=5.8681e+02 sem_t=7.1549e+01 median_t=4.1107e+02 mean_flips=6059.5 capped=0
+kmc__rottor_cb3rib_s2_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=444 K=17 trials=64 mean_t=1.4587e+02 sem_t=2.0626e+01 median_t=8.8485e+01 mean_flips=39.4 capped=0
+kmc__rottor_cb3rib_s4_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=40264 K=1004 trials=24 mean_t=2.2007e+00 sem_t=3.9781e-01 median_t=1.6242e+00 mean_flips=16.4 capped=0
+kmc__rottor_cb2rib_s3_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=3080 K=300 trials=64 mean_t=6.4799e+00 sem_t=6.0638e-01 median_t=4.9635e+00 mean_flips=13.3 capped=0
+kmc__sq_cb3rib_s2_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=222 K=9 trials=64 mean_t=8.6665e+01 sem_t=1.0163e+01 median_t=5.4840e+01 mean_flips=74.8 capped=0
+kmc__sq_cb3rib_s4_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=20082 K=510 trials=24 mean_t=2.4176e+00 sem_t=4.4422e-01 median_t=2.3730e+00 mean_flips=29.1 capped=0
+kmc__sq_cb2rib_s3_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=1522 K=130 trials=64 mean_t=1.0858e+01 sem_t=1.1782e+00 median_t=8.4069e+00 mean_flips=26.4 capped=0
+kmc__sq_z3_3_5_r1_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=3067 K=1 trials=64 mean_t=3.9219e+02 sem_t=5.8900e+01 median_t=2.1146e+02 mean_flips=4264.5 capped=0
+kmc__sq_z3_4_6_r2_X_err__pin_norm__uf__b5.50 | KMC dec=uf beta=5.50 N=10280 K=1 trials=64 mean_t=2.1326e+02 sem_t=1.1513e+01 median_t=1.8591e+02 mean_flips=7654.2 capped=0
+kmc__sq_bdl_8_8_r2_X_err__hill_norm__uf__b5.50 | KMC dec=uf beta=5.50 N=56312 K=1 trials=24 mean_t=6.0679e+01 sem_t=6.9253e+00 median_t=4.6647e+01 mean_flips=11876.5 capped=0
+cool__sq_L2r1_s2_X_err__quench__noisy_0.04__t1000 | COOL proto=quench init=noisy_0.04 t_tot=1000.0 N=254 K=1 trials=100 syn_dens=0.00172 mean_max_cl=6.5 p_zero_syn=0.820 p_exact_heal=0.640 p_log_survive=0.750
+cool__rottor_L2r1_s2_X_err__anneal__hot__t400 | COOL proto=anneal init=hot t_tot=400.0 N=508 K=2 trials=100 syn_dens=0.00069 mean_max_cl=16.8 p_zero_syn=0.920 p_exact_heal=0.220 p_log_survive=0.240
+cool__rottor_L2r1_s2_Z_err__quench__noisy_0.04__t1000 | COOL proto=quench init=noisy_0.04 t_tot=1000.0 N=508 K=2 trials=100 syn_dens=0.00042 mean_max_cl=9.8 p_zero_syn=0.970 p_exact_heal=0.520 p_log_survive=0.530
+cool__rottor_hyb21_s2_Z_err__anneal__hot__t400 | COOL proto=anneal init=hot t_tot=400.0 N=1172 K=2 trials=100 syn_dens=0.00238 mean_max_cl=148.8 p_zero_syn=0.590 p_exact_heal=0.150 p_log_survive=0.210
+cool__sq_L2r1_s3_X_err__quench__noisy_0.04__t1000 | COOL proto=quench init=noisy_0.04 t_tot=1000.0 N=1942 K=1 trials=100 syn_dens=0.00137 mean_max_cl=180.7 p_zero_syn=0.440 p_exact_heal=0.420 p_log_survive=0.930
+cool__rottor_L2r1_s3_X_err__anneal__hot__t400 | COOL proto=anneal init=hot t_tot=400.0 N=3884 K=2 trials=100 syn_dens=0.00450 mean_max_cl=2216.3 p_zero_syn=0.010 p_exact_heal=0.000 p_log_survive=0.290
+cool__rottor_L2r1_s3_Z_err__quench__noisy_0.04__t1000 | COOL proto=quench init=noisy_0.04 t_tot=1000.0 N=3884 K=2 trials=100 syn_dens=0.00063 mean_max_cl=291.6 p_zero_syn=0.710 p_exact_heal=0.100 p_log_survive=0.160
+kmc__cubic_L7_X_err__uniform__uf__b4.75 | KMC dec=uf beta=4.75 N=686 K=2 trials=48 mean_t=5.9464e+08 sem_t=7.8556e+07 median_t=4.4680e+08 mean_flips=14165477.8 capped=0
+ffs__rottor_L2r1_s2_X_err__uniform__uf__b8.00 | TIMEOUT
+kmc__rottor_L2r1_s2_Z_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=508 K=2 trials=64 mean_t=5.3549e+07 sem_t=8.3371e+06 median_t=3.6000e+07 mean_flips=900554.3 capped=0
+kmc__rottor_hyb21_s2_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=1172 K=2 trials=48 mean_t=1.1523e+05 sem_t=1.6032e+04 median_t=8.5715e+04 mean_flips=68764.6 capped=0
+kmc__rottor_L3r2_s2_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=2960 K=2 trials=48 mean_t=6.0312e+03 sem_t=8.4927e+02 median_t=3.1606e+03 mean_flips=29539.2 capped=0
+kmc__rottor_cb3rib_s2_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=444 K=17 trials=64 mean_t=3.1052e+02 sem_t=4.3523e+01 median_t=1.6552e+02 mean_flips=69.7 capped=0
+kmc__rottor_cb3rib_s4_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=40264 K=1004 trials=24 mean_t=1.6242e+00 sem_t=2.9076e-01 median_t=1.3475e+00 mean_flips=5.4 capped=0
+kmc__rottor_cb2rib_s3_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=3080 K=300 trials=64 mean_t=8.0682e+00 sem_t=1.1247e+00 median_t=4.2382e+00 mean_flips=11.7 capped=0
+kmc__sq_cb3rib_s2_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=222 K=9 trials=64 mean_t=1.5207e+02 sem_t=1.9779e+01 median_t=9.8191e+01 mean_flips=83.3 capped=0
+kmc__sq_cb3rib_s4_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=20082 K=510 trials=24 mean_t=7.4146e+00 sem_t=1.5531e+00 median_t=4.9464e+00 mean_flips=75.9 capped=0
+kmc__sq_cb2rib_s3_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=1522 K=130 trials=64 mean_t=1.2876e+01 sem_t=1.3653e+00 median_t=9.7191e+00 mean_flips=22.0 capped=0
+kmc__sq_z3_3_5_r1_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=3067 K=1 trials=64 mean_t=1.4979e+03 sem_t=2.3842e+02 median_t=5.1919e+02 mean_flips=10497.0 capped=0
+kmc__sq_z3_4_6_r2_X_err__pin_norm__uf__b6.00 | KMC dec=uf beta=6.00 N=10280 K=1 trials=64 mean_t=4.6048e+02 sem_t=3.3963e+01 median_t=3.9082e+02 mean_flips=12846.3 capped=0
+kmc__sq_bdl_8_8_r2_X_err__hill_norm__uf__b6.00 | KMC dec=uf beta=6.00 N=56312 K=1 trials=24 mean_t=8.6761e+01 sem_t=5.9259e+00 median_t=8.3137e+01 mean_flips=9753.9 capped=0
+cool__sq_L2r1_s2_X_err__quench__noisy_0.06__t1000 | COOL proto=quench init=noisy_0.06 t_tot=1000.0 N=254 K=1 trials=100 syn_dens=0.00207 mean_max_cl=4.9 p_zero_syn=0.780 p_exact_heal=0.390 p_log_survive=0.530
+cool__rottor_L2r1_s2_X_err__soft_seam__hot__t400 | COOL proto=soft_seam init=hot t_tot=400.0 N=508 K=2 trials=100 syn_dens=0.00099 mean_max_cl=18.0 p_zero_syn=0.910 p_exact_heal=0.240 p_log_survive=0.280
+cool__rottor_L2r1_s2_Z_err__quench__noisy_0.06__t1000 | COOL proto=quench init=noisy_0.06 t_tot=1000.0 N=508 K=2 trials=100 syn_dens=0.00069 mean_max_cl=12.0 p_zero_syn=0.950 p_exact_heal=0.350 p_log_survive=0.350
+cool__rottor_hyb21_s2_Z_err__soft_seam__hot__t400 | COOL proto=soft_seam init=hot t_tot=400.0 N=1172 K=2 trials=100 syn_dens=0.00224 mean_max_cl=112.8 p_zero_syn=0.620 p_exact_heal=0.110 p_log_survive=0.230
+cool__sq_L2r1_s3_X_err__quench__noisy_0.06__t1000 | COOL proto=quench init=noisy_0.06 t_tot=1000.0 N=1942 K=1 trials=100 syn_dens=0.00213 mean_max_cl=313.7 p_zero_syn=0.200 p_exact_heal=0.190 p_log_survive=0.750
+cool__rottor_L2r1_s3_X_err__soft_seam__hot__t400 | COOL proto=soft_seam init=hot t_tot=400.0 N=3884 K=2 trials=100 syn_dens=0.00342 mean_max_cl=1831.0 p_zero_syn=0.120 p_exact_heal=0.030 p_log_survive=0.180
+cool__rottor_L2r1_s3_Z_err__quench__noisy_0.06__t1000 | COOL proto=quench init=noisy_0.06 t_tot=1000.0 N=3884 K=2 trials=100 syn_dens=0.00080 mean_max_cl=394.6 p_zero_syn=0.660 p_exact_heal=0.170 p_log_survive=0.240
+kmc__cubic_L5_X_err__uniform__uf__b5.00 | KMC dec=uf beta=5.00 N=250 K=2 trials=48 mean_t=8.9792e+08 sem_t=1.5092e+08 median_t=6.7873e+08 mean_flips=11253121.0 capped=0
+kmc__rottor_L2r1_s4_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=50296 K=2 trials=24 mean_t=1.7584e+03 sem_t=1.8434e+02 median_t=1.7702e+03 mean_flips=158237.5 capped=0
+kmc__rottor_L2r1_s2_Z_err__uniform__uf__b6.25 | KMC dec=uf beta=6.25 N=508 K=2 trials=64 mean_t=2.4974e+08 sem_t=3.4445e+07 median_t=1.4220e+08 mean_flips=2504397.9 capped=0
+kmc__rottor_hyb21_s2_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=1172 K=2 trials=48 mean_t=1.3017e+06 sem_t=1.8584e+05 median_t=1.0163e+06 mean_flips=258269.0 capped=0
+kmc__rottor_L3r2_s2_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=2960 K=2 trials=48 mean_t=5.8667e+04 sem_t=7.2113e+03 median_t=4.6478e+04 mean_flips=96664.1 capped=0
+kmc__rottor_cb3rib_s2_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=444 K=17 trials=64 mean_t=5.9352e+02 sem_t=6.0927e+01 median_t=5.2446e+02 mean_flips=75.4 capped=0
+kmc__rottor_cb3rib_s4_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=40264 K=1004 trials=24 mean_t=3.8076e+00 sem_t=6.8677e-01 median_t=3.2556e+00 mean_flips=11.6 capped=0
+kmc__rottor_cb2rib_s3_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=3080 K=300 trials=64 mean_t=1.7452e+01 sem_t=2.1263e+00 median_t=1.3098e+01 mean_flips=13.2 capped=0
+kmc__sq_cb3rib_s2_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=222 K=9 trials=64 mean_t=2.4362e+02 sem_t=4.2559e+01 median_t=1.5132e+02 mean_flips=89.5 capped=0
+kmc__sq_cb3rib_s4_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=20082 K=510 trials=24 mean_t=1.0339e+01 sem_t=1.5823e+00 median_t=8.7186e+00 mean_flips=64.1 capped=0
+kmc__sq_cb2rib_s3_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=1522 K=130 trials=64 mean_t=2.3044e+01 sem_t=3.0997e+00 median_t=1.5380e+01 mean_flips=26.2 capped=0
+kmc__sq_z3_3_5_r1_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=3067 K=1 trials=64 mean_t=3.9975e+03 sem_t=7.2274e+02 median_t=1.8947e+03 mean_flips=17716.4 capped=0
+kmc__sq_z3_4_6_r2_X_err__pin_norm__uf__b6.50 | KMC dec=uf beta=6.50 N=10280 K=1 trials=64 mean_t=9.1754e+02 sem_t=6.6437e+01 median_t=8.0587e+02 mean_flips=20461.0 capped=0
+kmc__sq_bdl_8_8_r2_X_err__hill_norm__uf__b6.50 | KMC dec=uf beta=6.50 N=56312 K=1 trials=24 mean_t=2.0303e+02 sem_t=2.4326e+01 median_t=1.7097e+02 mean_flips=17464.1 capped=0
+cool__sq_L2r1_s2_X_err__quench__noisy_0.08__t1000 | COOL proto=quench init=noisy_0.08 t_tot=1000.0 N=254 K=1 trials=100 syn_dens=0.00069 mean_max_cl=2.2 p_zero_syn=0.920 p_exact_heal=0.500 p_log_survive=0.560
+cool__rottor_L2r1_s2_X_err__quench__hot__t1500 | COOL proto=quench init=hot t_tot=1500.0 N=508 K=2 trials=100 syn_dens=0.00017 mean_max_cl=4.4 p_zero_syn=0.980 p_exact_heal=0.290 p_log_survive=0.300
+cool__rottor_L2r1_s2_Z_err__quench__noisy_0.08__t1000 | COOL proto=quench init=noisy_0.08 t_tot=1000.0 N=508 K=2 trials=100 syn_dens=0.00052 mean_max_cl=9.7 p_zero_syn=0.960 p_exact_heal=0.190 p_log_survive=0.200
+cool__rottor_hyb21_s2_Z_err__quench__hot__t1500 | COOL proto=quench init=hot t_tot=1500.0 N=1172 K=2 trials=100 syn_dens=0.00096 mean_max_cl=54.0 p_zero_syn=0.840 p_exact_heal=0.190 p_log_survive=0.240
+cool__sq_L2r1_s3_X_err__quench__noisy_0.08__t1000 | COOL proto=quench init=noisy_0.08 t_tot=1000.0 N=1942 K=1 trials=100 syn_dens=0.00280 mean_max_cl=482.0 p_zero_syn=0.110 p_exact_heal=0.080 p_log_survive=0.650
+cool__rottor_L2r1_s3_X_err__quench__hot__t1500 | COOL proto=quench init=hot t_tot=1500.0 N=3884 K=2 trials=100 syn_dens=0.00427 mean_max_cl=2132.0 p_zero_syn=0.000 p_exact_heal=0.000 p_log_survive=0.310
+cool__rottor_L2r1_s3_Z_err__quench__noisy_0.08__t1000 | COOL proto=quench init=noisy_0.08 t_tot=1000.0 N=3884 K=2 trials=100 syn_dens=0.00069 mean_max_cl=308.4 p_zero_syn=0.660 p_exact_heal=0.140 p_log_survive=0.220
+kmc__cubic_L7_X_err__uniform__uf__b5.00 | TIMEOUT
+kmc__rottor_L2r1_s4_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=50296 K=2 trials=24 mean_t=2.2690e+04 sem_t=4.7403e+03 median_t=1.5901e+04 mean_flips=893687.3 capped=0
+kmc__rottor_L2r1_s2_Z_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=508 K=2 trials=64 mean_t=7.6150e+08 sem_t=9.7888e+07 median_t=5.5236e+08 mean_flips=4577640.2 capped=0
+kmc__rottor_hyb21_s2_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=1172 K=2 trials=48 mean_t=2.2771e+07 sem_t=3.1402e+06 median_t=1.5448e+07 mean_flips=1563629.1 capped=0
+kmc__rottor_L3r2_s2_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=2960 K=2 trials=48 mean_t=8.3849e+05 sem_t=1.0396e+05 median_t=6.4966e+05 mean_flips=441668.3 capped=0
+kmc__rottor_cb3rib_s2_X_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=444 K=17 trials=64 mean_t=1.0169e+03 sem_t=1.4944e+02 median_t=6.7783e+02 mean_flips=62.9 capped=0
+kmc__rottor_cb3rib_s4_X_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=40264 K=1004 trials=24 mean_t=6.2674e+00 sem_t=1.0748e+00 median_t=4.4741e+00 mean_flips=9.8 capped=0
+kmc__rottor_cb2rib_s3_X_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=3080 K=300 trials=64 mean_t=2.2572e+01 sem_t=2.9875e+00 median_t=1.5538e+01 mean_flips=11.5 capped=0
+kmc__sq_cb3rib_s2_X_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=222 K=9 trials=64 mean_t=5.3924e+02 sem_t=8.2599e+01 median_t=2.9851e+02 mean_flips=110.2 capped=0
+kmc__sq_cb3rib_s4_X_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=20082 K=510 trials=24 mean_t=1.5821e+01 sem_t=4.0018e+00 median_t=8.0257e+00 mean_flips=65.2 capped=0
+kmc__sq_cb2rib_s3_X_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=1522 K=130 trials=64 mean_t=4.3892e+01 sem_t=5.9642e+00 median_t=3.5606e+01 mean_flips=30.0 capped=0
+kmc__sq_z3_3_5_r1_X_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=3067 K=1 trials=64 mean_t=1.1976e+04 sem_t=1.8044e+03 median_t=7.1569e+03 mean_flips=33559.9 capped=0
+kmc__sq_z3_4_6_r2_X_err__pin_norm__uf__b7.00 | KMC dec=uf beta=7.00 N=10280 K=1 trials=64 mean_t=2.2656e+03 sem_t=2.7398e+02 median_t=1.5671e+03 mean_flips=42221.6 capped=0
+kmc__sq_bdl_8_8_r2_X_err__hill_norm__uf__b7.00 | TIMEOUT
+cool__sq_L2r1_s2_X_err__quench__noisy_0.12__t1000 | COOL proto=quench init=noisy_0.12 t_tot=1000.0 N=254 K=1 trials=100 syn_dens=0.00172 mean_max_cl=3.9 p_zero_syn=0.820 p_exact_heal=0.500 p_log_survive=0.610
+cool__rottor_L2r1_s2_X_err__anneal__hot__t1500 | COOL proto=anneal init=hot t_tot=1500.0 N=508 K=2 trials=100 syn_dens=0.00009 mean_max_cl=4.1 p_zero_syn=0.990 p_exact_heal=0.250 p_log_survive=0.260
+cool__rottor_L2r1_s2_Z_err__quench__noisy_0.12__t1000 | COOL proto=quench init=noisy_0.12 t_tot=1000.0 N=508 K=2 trials=100 syn_dens=0.00087 mean_max_cl=13.5 p_zero_syn=0.940 p_exact_heal=0.250 p_log_survive=0.250
+cool__rottor_hyb21_s2_Z_err__anneal__hot__t1500 | COOL proto=anneal init=hot t_tot=1500.0 N=1172 K=2 trials=100 syn_dens=0.00022 mean_max_cl=9.5 p_zero_syn=0.950 p_exact_heal=0.180 p_log_survive=0.180
+cool__sq_L2r1_s3_X_err__quench__noisy_0.12__t1000 | COOL proto=quench init=noisy_0.12 t_tot=1000.0 N=1942 K=1 trials=100 syn_dens=0.00330 mean_max_cl=621.0 p_zero_syn=0.100 p_exact_heal=0.030 p_log_survive=0.540
+cool__rottor_L2r1_s3_X_err__anneal__hot__t1500 | COOL proto=anneal init=hot t_tot=1500.0 N=3884 K=2 trials=100 syn_dens=0.00267 mean_max_cl=1703.4 p_zero_syn=0.160 p_exact_heal=0.070 p_log_survive=0.250
+cool__rottor_L2r1_s3_Z_err__quench__noisy_0.12__t1000 | COOL proto=quench init=noisy_0.12 t_tot=1000.0 N=3884 K=2 trials=100 syn_dens=0.00088 mean_max_cl=409.2 p_zero_syn=0.610 p_exact_heal=0.200 p_log_survive=0.310
+kmc__caha_n11_code_100_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=2227 K=1 trials=64 mean_t=1.4917e+03 sem_t=2.0211e+02 median_t=9.1369e+02 mean_flips=6008.8 capped=0
+kmc__rottor_L2r1_s4_X_err__uniform__uf__b6.25 | KMC dec=uf beta=6.25 N=50296 K=2 trials=24 mean_t=1.3862e+05 sem_t=3.4233e+04 median_t=7.0824e+04 mean_flips=3338620.0 capped=0
+kmc__rottor_L2r1_s2_Z_err__uniform__uf__b6.75 | KMC dec=uf beta=6.75 N=508 K=2 trials=64 mean_t=3.4399e+09 sem_t=5.6583e+08 median_t=1.8020e+09 mean_flips=12428782.2 capped=0
+kmc__rottor_hyb21_s2_X_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=1172 K=2 trials=48 mean_t=1.8906e+08 sem_t=2.9878e+07 median_t=1.2213e+08 mean_flips=4656191.6 capped=0
+kmc__rottor_L3r2_s2_X_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=2960 K=2 trials=48 mean_t=9.0201e+06 sem_t=1.2886e+06 median_t=6.0087e+06 mean_flips=1637884.7 capped=0
+kmc__rottor_cb3rib_s2_X_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=444 K=17 trials=64 mean_t=1.9016e+03 sem_t=2.8630e+02 median_t=9.8454e+02 mean_flips=161.7 capped=0
+kmc__rottor_cb3rib_s4_X_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=40264 K=1004 trials=24 mean_t=1.0327e+01 sem_t=1.7546e+00 median_t=8.8807e+00 mean_flips=12.4 capped=0
+kmc__rottor_cb2rib_s3_X_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=3080 K=300 trials=64 mean_t=3.7745e+01 sem_t=5.0771e+00 median_t=2.4384e+01 mean_flips=12.4 capped=0
+kmc__sq_cb3rib_s2_X_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=222 K=9 trials=64 mean_t=8.3186e+02 sem_t=1.1350e+02 median_t=5.7460e+02 mean_flips=97.1 capped=0
+kmc__sq_cb3rib_s4_X_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=20082 K=510 trials=24 mean_t=3.1133e+01 sem_t=7.1791e+00 median_t=1.7527e+01 mean_flips=79.7 capped=0
+kmc__sq_cb2rib_s3_X_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=1522 K=130 trials=64 mean_t=8.6147e+01 sem_t=1.1487e+01 median_t=4.8184e+01 mean_flips=38.4 capped=0
+kmc__sq_z3_3_5_r1_X_err__pin_norm__uf__b5.50 | KMC dec=uf beta=5.50 N=3067 K=1 trials=64 mean_t=3.8815e+02 sem_t=2.9511e+01 median_t=3.4969e+02 mean_flips=5336.7 capped=0
+kmc__sq_z3_4_6_r2_X_err__hill_norm__uf__b5.50 | KMC dec=uf beta=5.50 N=10280 K=1 trials=64 mean_t=9.3147e+01 sem_t=7.7174e+00 median_t=8.1525e+01 mean_flips=4099.8 capped=0
+kmc__sq_bdl_8_8_r2_X_err__hill_bnd__uf__b5.50 | KMC dec=uf beta=5.50 N=56312 K=1 trials=24 mean_t=2.6829e+02 sem_t=2.3414e+01 median_t=2.4113e+02 mean_flips=16790.5 capped=0
+cool__sq_L2r1_s2_Z_err__quench__hot__t100 | COOL proto=quench init=hot t_tot=100.0 N=254 K=1 trials=100 syn_dens=0.00421 mean_max_cl=18.2 p_zero_syn=0.700 p_exact_heal=0.320 p_log_survive=0.500
+cool__rottor_L2r1_s2_X_err__soft_seam__hot__t1500 | COOL proto=soft_seam init=hot t_tot=1500.0 N=508 K=2 trials=100 syn_dens=0.00017 mean_max_cl=0.2 p_zero_syn=0.980 p_exact_heal=0.300 p_log_survive=0.300
+cool__rottor_hyb21_s2_X_err__quench__hot__t100 | COOL proto=quench init=hot t_tot=100.0 N=1172 K=2 trials=100 syn_dens=0.00612 mean_max_cl=331.4 p_zero_syn=0.210 p_exact_heal=0.040 p_log_survive=0.200
+cool__rottor_hyb21_s2_Z_err__soft_seam__hot__t1500 | COOL proto=soft_seam init=hot t_tot=1500.0 N=1172 K=2 trials=100 syn_dens=0.00069 mean_max_cl=24.5 p_zero_syn=0.900 p_exact_heal=0.200 p_log_survive=0.220
+cool__sq_L2r1_s3_Z_err__quench__hot__t100 | COOL proto=quench init=hot t_tot=100.0 N=1942 K=1 trials=100 syn_dens=0.00585 mean_max_cl=664.2 p_zero_syn=0.010 p_exact_heal=0.000 p_log_survive=0.520
+cool__rottor_L2r1_s3_X_err__soft_seam__hot__t1500 | COOL proto=soft_seam init=hot t_tot=1500.0 N=3884 K=2 trials=100 syn_dens=0.00146 mean_max_cl=1350.9 p_zero_syn=0.360 p_exact_heal=0.070 p_log_survive=0.270
+kmc__caha_n11_code_100_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=2227 K=1 trials=64 mean_t=2.3845e+03 sem_t=2.9928e+02 median_t=1.7588e+03 mean_flips=5276.6 capped=0
+kmc__rottor_L2r1_s4_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=50296 K=2 trials=24 mean_t=9.8649e+05 sem_t=2.8432e+05 median_t=4.7152e+05 mean_flips=12570358.9 capped=0
+ffs__rottor_L2r1_s2_Z_err__uniform__uf__b6.00 | FFS dec=uf beta=6.00 N=508 K=2 Phi0=2.0418e-03 Pfail=8.0565e-06 sem_P=1.9888e-06 mean_t=6.1155e+07 sem_t=1.5096e+07 valid_reps=6/6 movie_peak_E=-1.0
+ffs__rottor_hyb21_s2_X_err__uniform__uf__b6.00 | TIMEOUT
+ffs__rottor_L3r2_s2_X_err__uniform__uf__b6.00 | TIMEOUT
+kmc__rottor_cb3rib_s2_X_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=444 K=17 trials=64 mean_t=3.6458e+03 sem_t=4.2151e+02 median_t=2.7129e+03 mean_flips=154.2 capped=0
+kmc__rottor_cb3rib_s4_X_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=40264 K=1004 trials=24 mean_t=1.5202e+01 sem_t=3.9282e+00 median_t=9.1638e+00 mean_flips=6.9 capped=0
+kmc__rottor_cb2rib_s3_X_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=3080 K=300 trials=64 mean_t=7.7732e+01 sem_t=1.0553e+01 median_t=5.4480e+01 mean_flips=15.2 capped=0
+kmc__sq_cb3rib_s2_X_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=222 K=9 trials=64 mean_t=1.0024e+03 sem_t=1.2424e+02 median_t=7.2891e+02 mean_flips=78.9 capped=0
+kmc__sq_cb3rib_s4_X_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=20082 K=510 trials=24 mean_t=3.2231e+01 sem_t=8.1531e+00 median_t=1.7663e+01 mean_flips=72.7 capped=0
+kmc__sq_cb2rib_s3_X_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=1522 K=130 trials=64 mean_t=1.6050e+02 sem_t=2.3287e+01 median_t=1.0341e+02 mean_flips=41.1 capped=0
+kmc__sq_z3_3_5_r1_X_err__pin_norm__uf__b6.00 | KMC dec=uf beta=6.00 N=3067 K=1 trials=64 mean_t=8.0294e+02 sem_t=6.1322e+01 median_t=6.6521e+02 mean_flips=9169.9 capped=0
+kmc__sq_z3_4_6_r2_X_err__hill_norm__uf__b6.00 | KMC dec=uf beta=6.00 N=10280 K=1 trials=64 mean_t=1.7288e+02 sem_t=1.3698e+01 median_t=1.4723e+02 mean_flips=4929.5 capped=0
+kmc__sq_bdl_8_8_r2_X_err__hill_bnd__uf__b6.00 | TIMEOUT
+cool__sq_L2r1_s2_Z_err__anneal__hot__t100 | COOL proto=anneal init=hot t_tot=100.0 N=254 K=1 trials=100 syn_dens=0.00314 mean_max_cl=14.8 p_zero_syn=0.780 p_exact_heal=0.350 p_log_survive=0.470
+cool__rottor_L2r1_s2_X_err__quench__noisy_0.01__t1000 | COOL proto=quench init=noisy_0.01 t_tot=1000.0 N=508 K=2 trials=100 syn_dens=0.00017 mean_max_cl=2.3 p_zero_syn=0.980 p_exact_heal=0.760 p_log_survive=0.760
+cool__rottor_hyb21_s2_X_err__anneal__hot__t100 | COOL proto=anneal init=hot t_tot=100.0 N=1172 K=2 trials=100 syn_dens=0.00681 mean_max_cl=349.3 p_zero_syn=0.190 p_exact_heal=0.070 p_log_survive=0.300
+cool__rottor_hyb21_s2_Z_err__quench__noisy_0.01__t1000 | COOL proto=quench init=noisy_0.01 t_tot=1000.0 N=1172 K=2 trials=100 syn_dens=0.00009 mean_max_cl=4.2 p_zero_syn=0.970 p_exact_heal=0.960 p_log_survive=0.990
+cool__sq_L2r1_s3_Z_err__anneal__hot__t100 | COOL proto=anneal init=hot t_tot=100.0 N=1942 K=1 trials=100 syn_dens=0.00601 mean_max_cl=692.6 p_zero_syn=0.020 p_exact_heal=0.000 p_log_survive=0.570
+cool__rottor_L2r1_s3_X_err__quench__noisy_0.01__t1000 | COOL proto=quench init=noisy_0.01 t_tot=1000.0 N=3884 K=2 trials=100 syn_dens=0.00015 mean_max_cl=50.9 p_zero_syn=0.920 p_exact_heal=0.920 p_log_survive=1.000
+kmc__caha_n11_code_100_X_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=2227 K=1 trials=64 mean_t=8.2081e+03 sem_t=1.0256e+03 median_t=6.2659e+03 mean_flips=10071.2 capped=0
+kmc__rottor_L2r1_s4_X_err__uniform__uf__b6.75 | KMC dec=uf beta=6.75 N=50296 K=2 trials=24 mean_t=7.0525e+06 sem_t=8.8021e+05 median_t=8.8292e+06 mean_flips=46216637.7 capped=6
+ffs__rottor_L2r1_s2_Z_err__uniform__uf__b6.50 | FFS dec=uf beta=6.50 N=508 K=2 Phi0=7.5086e-04 Pfail=1.6969e-06 sem_P=2.1143e-07 mean_t=7.8653e+08 sem_t=9.7997e+07 valid_reps=6/6 movie_peak_E=-1.0
+ffs__rottor_hyb21_s2_X_err__uniform__uf__b6.50 | TIMEOUT
+ffs__rottor_L3r2_s2_X_err__uniform__uf__b6.50 | TIMEOUT
+kmc__rottor_cb3rib_s2_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=444 K=17 trials=64 mean_t=1.2046e-01 sem_t=1.0454e-02 median_t=1.0703e-01 mean_flips=1.0 capped=0
+kmc__rottor_cb3rib_s4_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=40264 K=1004 trials=24 mean_t=1.8085e-03 sem_t=3.8236e-04 median_t=1.5162e-03 mean_flips=1.0 capped=0
+kmc__rottor_cb2rib_s3_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=3080 K=300 trials=64 mean_t=1.0206e-01 sem_t=1.2608e-02 median_t=7.1497e-02 mean_flips=1.1 capped=0
+kmc__sq_cb3rib_s2_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=222 K=9 trials=64 mean_t=2.7316e-01 sem_t=2.4575e-02 median_t=2.3986e-01 mean_flips=1.1 capped=0
+kmc__sq_cb3rib_s4_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=20082 K=510 trials=24 mean_t=4.2042e-03 sem_t=6.3245e-04 median_t=3.7485e-03 mean_flips=1.0 capped=0
+kmc__sq_cb2rib_s3_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=1522 K=130 trials=64 mean_t=6.3302e-02 sem_t=7.3614e-03 median_t=4.4092e-02 mean_flips=1.1 capped=0
+kmc__sq_z3_3_5_r1_X_err__pin_norm__uf__b6.50 | KMC dec=uf beta=6.50 N=3067 K=1 trials=64 mean_t=1.9826e+03 sem_t=1.6480e+02 median_t=1.6780e+03 mean_flips=19315.6 capped=0
+kmc__sq_z3_4_6_r2_X_err__hill_norm__uf__b6.50 | KMC dec=uf beta=6.50 N=10280 K=1 trials=64 mean_t=5.0163e+02 sem_t=5.4520e+01 median_t=3.7460e+02 mean_flips=10354.4 capped=0
+kmc__sq_bdl_8_8_r2_X_err__hill_bnd__uf__b6.50 | TIMEOUT
+cool__sq_L2r1_s2_Z_err__soft_seam__hot__t100 | COOL proto=soft_seam init=hot t_tot=100.0 N=254 K=1 trials=100 syn_dens=0.01343 mean_max_cl=61.4 p_zero_syn=0.280 p_exact_heal=0.170 p_log_survive=0.450
+cool__rottor_L2r1_s2_X_err__quench__noisy_0.02__t1000 | COOL proto=quench init=noisy_0.02 t_tot=1000.0 N=508 K=2 trials=100 syn_dens=0.00017 mean_max_cl=1.9 p_zero_syn=0.980 p_exact_heal=0.550 p_log_survive=0.560
+cool__rottor_hyb21_s2_X_err__soft_seam__hot__t100 | COOL proto=soft_seam init=hot t_tot=100.0 N=1172 K=2 trials=100 syn_dens=0.00547 mean_max_cl=273.8 p_zero_syn=0.220 p_exact_heal=0.070 p_log_survive=0.230
+cool__rottor_hyb21_s2_Z_err__quench__noisy_0.02__t1000 | COOL proto=quench init=noisy_0.02 t_tot=1000.0 N=1172 K=2 trials=100 syn_dens=0.00086 mean_max_cl=49.5 p_zero_syn=0.840 p_exact_heal=0.770 p_log_survive=0.850
+cool__sq_L2r1_s3_Z_err__soft_seam__hot__t100 | COOL proto=soft_seam init=hot t_tot=100.0 N=1942 K=1 trials=100 syn_dens=0.00588 mean_max_cl=698.6 p_zero_syn=0.020 p_exact_heal=0.010 p_log_survive=0.440
+cool__rottor_L2r1_s3_X_err__quench__noisy_0.02__t1000 | COOL proto=quench init=noisy_0.02 t_tot=1000.0 N=3884 K=2 trials=100 syn_dens=0.00054 mean_max_cl=227.8 p_zero_syn=0.770 p_exact_heal=0.770 p_log_survive=0.990
+kmc__caha_n11_code_100_X_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=2227 K=1 trials=64 mean_t=1.3137e+04 sem_t=1.9648e+03 median_t=8.3151e+03 mean_flips=10724.3 capped=0
+kmc__sq_L2r1_s2_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=254 K=1 trials=64 mean_t=3.4721e+03 sem_t=6.2135e+02 median_t=1.9319e+03 mean_flips=3616.6 capped=0
+ffs__rottor_L2r1_s2_Z_err__uniform__uf__b7.00 | FFS dec=uf beta=7.00 N=508 K=2 Phi0=2.7616e-04 Pfail=4.4592e-07 sem_P=1.9813e-07 mean_t=8.1267e+09 sem_t=3.6108e+09 valid_reps=6/6 movie_peak_E=-1.0
+ffs__rottor_hyb21_s2_X_err__uniform__uf__b7.00 | TIMEOUT
+ffs__rottor_L3r2_s2_X_err__uniform__uf__b7.00 | TIMEOUT
+kmc__rottor_cb3rib_s2_Z_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=444 K=17 trials=64 mean_t=1.1265e-01 sem_t=1.4579e-02 median_t=7.7011e-02 mean_flips=1.0 capped=0
+kmc__rottor_cb3rib_s4_Z_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=40264 K=1004 trials=24 mean_t=2.1697e-03 sem_t=3.6796e-04 median_t=1.6926e-03 mean_flips=1.0 capped=0
+kmc__rottor_cb2rib_s3_Z_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=3080 K=300 trials=64 mean_t=1.0308e-01 sem_t=9.8778e-03 median_t=8.3803e-02 mean_flips=1.2 capped=0
+kmc__sq_cb3rib_s2_Z_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=222 K=9 trials=64 mean_t=2.1516e-01 sem_t=2.6315e-02 median_t=1.6550e-01 mean_flips=1.0 capped=0
+kmc__sq_cb3rib_s4_Z_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=20082 K=510 trials=24 mean_t=3.5595e-03 sem_t=5.5927e-04 median_t=3.0892e-03 mean_flips=1.0 capped=0
+kmc__sq_cb2rib_s3_Z_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=1522 K=130 trials=64 mean_t=7.0133e-02 sem_t=6.8741e-03 median_t=5.7158e-02 mean_flips=1.1 capped=0
+kmc__sq_z3_3_5_r1_X_err__pin_norm__uf__b7.00 | KMC dec=uf beta=7.00 N=3067 K=1 trials=64 mean_t=3.8716e+03 sem_t=4.2333e+02 median_t=3.1225e+03 mean_flips=32461.2 capped=0
+kmc__sq_z3_4_6_r2_X_err__hill_norm__uf__b7.00 | KMC dec=uf beta=7.00 N=10280 K=1 trials=64 mean_t=1.2559e+03 sem_t=1.1401e+02 median_t=1.0137e+03 mean_flips=17743.2 capped=0
+kmc__sq_bdl_8_8_r2_X_err__hill_bnd__uf__b7.00 | TIMEOUT
+cool__sq_L2r1_s2_Z_err__quench__hot__t400 | COOL proto=quench init=hot t_tot=400.0 N=254 K=1 trials=100 syn_dens=0.00079 mean_max_cl=2.4 p_zero_syn=0.920 p_exact_heal=0.420 p_log_survive=0.450
+cool__rottor_L2r1_s2_X_err__quench__noisy_0.03__t1000 | COOL proto=quench init=noisy_0.03 t_tot=1000.0 N=508 K=2 trials=100 syn_dens=0.00017 mean_max_cl=1.9 p_zero_syn=0.980 p_exact_heal=0.460 p_log_survive=0.470
+cool__rottor_hyb21_s2_X_err__quench__hot__t400 | COOL proto=quench init=hot t_tot=400.0 N=1172 K=2 trials=100 syn_dens=0.00147 mean_max_cl=87.7 p_zero_syn=0.790 p_exact_heal=0.210 p_log_survive=0.300
+cool__rottor_hyb21_s2_Z_err__quench__noisy_0.03__t1000 | COOL proto=quench init=noisy_0.03 t_tot=1000.0 N=1172 K=2 trials=100 syn_dens=0.00085 mean_max_cl=71.1 p_zero_syn=0.850 p_exact_heal=0.600 p_log_survive=0.670
+cool__sq_L2r1_s3_Z_err__quench__hot__t400 | COOL proto=quench init=hot t_tot=400.0 N=1942 K=1 trials=100 syn_dens=0.00274 mean_max_cl=335.2 p_zero_syn=0.180 p_exact_heal=0.110 p_log_survive=0.510
+cool__rottor_L2r1_s3_X_err__quench__noisy_0.03__t1000 | COOL proto=quench init=noisy_0.03 t_tot=1000.0 N=3884 K=2 trials=100 syn_dens=0.00144 mean_max_cl=655.1 p_zero_syn=0.440 p_exact_heal=0.440 p_log_survive=0.960
+kmc__caha_n11_code_100_X_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=2227 K=1 trials=64 mean_t=1.9657e+04 sem_t=2.9486e+03 median_t=1.2527e+04 mean_flips=9264.5 capped=0
+kmc__sq_L2r1_s4_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=25148 K=1 trials=24 mean_t=3.2297e+03 sem_t=8.5886e+02 median_t=1.8754e+03 mean_flips=194377.9 capped=0
+ffs__rottor_L2r1_s2_Z_err__uniform__uf__b7.50 | FFS dec=uf beta=7.50 N=508 K=2 Phi0=1.0158e-04 Pfail=6.6197e-08 sem_P=1.7501e-08 mean_t=1.4876e+11 sem_t=3.9329e+10 valid_reps=6/6 movie_peak_E=-1.0
+ffs__rottor_hyb21_s2_X_err__uniform__uf__b7.50 | TIMEOUT
+ffs__rottor_L3r2_s2_X_err__uniform__uf__b7.50 | TIMEOUT
+kmc__rottor_cb3rib_s2_Z_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=444 K=17 trials=64 mean_t=1.2398e-01 sem_t=1.4741e-02 median_t=8.5319e-02 mean_flips=1.0 capped=0
+kmc__rottor_cb3rib_s4_Z_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=40264 K=1004 trials=24 mean_t=1.8591e-03 sem_t=3.5845e-04 median_t=1.4718e-03 mean_flips=1.0 capped=0
+kmc__rottor_cb2rib_s3_Z_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=3080 K=300 trials=64 mean_t=1.2599e-01 sem_t=1.9105e-02 median_t=8.4766e-02 mean_flips=1.1 capped=0
+kmc__sq_cb3rib_s2_Z_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=222 K=9 trials=64 mean_t=2.6886e-01 sem_t=3.4239e-02 median_t=1.8902e-01 mean_flips=1.0 capped=0
+kmc__sq_cb3rib_s4_Z_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=20082 K=510 trials=24 mean_t=4.7791e-03 sem_t=8.2426e-04 median_t=3.4821e-03 mean_flips=1.0 capped=0
+kmc__sq_cb2rib_s3_Z_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=1522 K=130 trials=64 mean_t=1.0933e-01 sem_t=1.1540e-02 median_t=8.6992e-02 mean_flips=1.1 capped=0
+kmc__sq_z3_3_5_r1_X_err__hill_norm__uf__b5.50 | KMC dec=uf beta=5.50 N=3067 K=1 trials=64 mean_t=1.0309e+02 sem_t=8.2409e+00 median_t=8.4763e+01 mean_flips=1485.2 capped=0
+kmc__sq_z3_4_6_r2_X_err__hill_bnd__uf__b5.50 | KMC dec=uf beta=5.50 N=10280 K=1 trials=64 mean_t=4.8835e+02 sem_t=5.2720e+01 median_t=3.6012e+02 mean_flips=8424.1 capped=0
+kmc__sq_bdl_8_8_r2_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=56312 K=1 trials=24 mean_t=2.6889e+04 sem_t=5.4652e+03 median_t=2.2933e+04 mean_flips=1696972.4 capped=0
+cool__sq_L2r1_s2_Z_err__anneal__hot__t400 | COOL proto=anneal init=hot t_tot=400.0 N=254 K=1 trials=100 syn_dens=0.00029 mean_max_cl=0.5 p_zero_syn=0.970 p_exact_heal=0.540 p_log_survive=0.550
+cool__rottor_L2r1_s2_X_err__quench__noisy_0.04__t1000 | COOL proto=quench init=noisy_0.04 t_tot=1000.0 N=508 K=2 trials=100 syn_dens=0.00017 mean_max_cl=3.3 p_zero_syn=0.980 p_exact_heal=0.360 p_log_survive=0.370
+cool__rottor_hyb21_s2_X_err__anneal__hot__t400 | COOL proto=anneal init=hot t_tot=400.0 N=1172 K=2 trials=100 syn_dens=0.00290 mean_max_cl=183.7 p_zero_syn=0.590 p_exact_heal=0.180 p_log_survive=0.300
+cool__rottor_hyb21_s2_Z_err__quench__noisy_0.04__t1000 | COOL proto=quench init=noisy_0.04 t_tot=1000.0 N=1172 K=2 trials=100 syn_dens=0.00120 mean_max_cl=91.7 p_zero_syn=0.790 p_exact_heal=0.360 p_log_survive=0.410
+cool__sq_L2r1_s3_Z_err__anneal__hot__t400 | COOL proto=anneal init=hot t_tot=400.0 N=1942 K=1 trials=100 syn_dens=0.00306 mean_max_cl=386.4 p_zero_syn=0.180 p_exact_heal=0.090 p_log_survive=0.500
+cool__rottor_L2r1_s3_X_err__quench__noisy_0.04__t1000 | COOL proto=quench init=noisy_0.04 t_tot=1000.0 N=3884 K=2 trials=100 syn_dens=0.00276 mean_max_cl=1352.6 p_zero_syn=0.170 p_exact_heal=0.170 p_log_survive=0.850
+ffs__caha_n11_code_100_X_err__uniform__uf__b6.50 | TIMEOUT
+kmc__sq_L2r1_s2_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=254 K=1 trials=64 mean_t=1.0339e+04 sem_t=2.1015e+03 median_t=5.8917e+03 mean_flips=6550.2 capped=0
+ffs__rottor_L2r1_s2_Z_err__uniform__uf__b8.00 | FFS dec=uf beta=8.00 N=508 K=2 Phi0=3.7367e-05 Pfail=1.0769e-08 sem_P=6.0803e-09 mean_t=2.4852e+12 sem_t=1.4031e+12 valid_reps=5/6 movie_peak_E=-1.0
+ffs__rottor_hyb21_s2_X_err__uniform__uf__b8.00 | TIMEOUT
+ffs__rottor_L3r2_s2_X_err__uniform__uf__b8.00 | TIMEOUT
+kmc__rottor_cb3rib_s2_Z_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=444 K=17 trials=64 mean_t=1.4498e-01 sem_t=1.8301e-02 median_t=1.1309e-01 mean_flips=1.0 capped=0
+kmc__rottor_cb3rib_s4_Z_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=40264 K=1004 trials=24 mean_t=2.1801e-03 sem_t=4.3675e-04 median_t=1.5225e-03 mean_flips=1.0 capped=0
+kmc__rottor_cb2rib_s3_Z_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=3080 K=300 trials=64 mean_t=1.1419e-01 sem_t=1.3282e-02 median_t=7.9420e-02 mean_flips=1.0 capped=0
+kmc__sq_cb3rib_s2_Z_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=222 K=9 trials=64 mean_t=2.2741e-01 sem_t=3.1750e-02 median_t=1.5149e-01 mean_flips=1.0 capped=0
+kmc__sq_cb3rib_s4_Z_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=20082 K=510 trials=24 mean_t=3.9660e-03 sem_t=8.7475e-04 median_t=2.5071e-03 mean_flips=1.0 capped=0
+kmc__sq_cb2rib_s3_Z_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=1522 K=130 trials=64 mean_t=9.1961e-02 sem_t=9.8934e-03 median_t=5.9826e-02 mean_flips=1.1 capped=0
+kmc__sq_z3_3_5_r1_X_err__hill_norm__uf__b6.00 | KMC dec=uf beta=6.00 N=3067 K=1 trials=64 mean_t=1.6638e+02 sem_t=1.5047e+01 median_t=1.3266e+02 mean_flips=1683.1 capped=0
+kmc__sq_z3_4_6_r2_X_err__hill_bnd__uf__b6.00 | KMC dec=uf beta=6.00 N=10280 K=1 trials=64 mean_t=2.4551e+03 sem_t=3.6470e+02 median_t=1.4330e+03 mean_flips=25873.0 capped=0
+kmc__sq_bdl_8_8_r2_Z_err__pin_norm__uf__b5.50 | KMC dec=uf beta=5.50 N=56312 K=1 trials=24 mean_t=8.0360e+03 sem_t=1.2147e+03 median_t=7.7633e+03 mean_flips=1280750.7 capped=0
+cool__sq_L2r1_s2_Z_err__soft_seam__hot__t400 | COOL proto=soft_seam init=hot t_tot=400.0 N=254 K=1 trials=100 syn_dens=0.00293 mean_max_cl=15.6 p_zero_syn=0.780 p_exact_heal=0.400 p_log_survive=0.510
+cool__rottor_L2r1_s2_X_err__quench__noisy_0.06__t1000 | COOL proto=quench init=noisy_0.06 t_tot=1000.0 N=508 K=2 trials=100 syn_dens=0.00043 mean_max_cl=10.7 p_zero_syn=0.950 p_exact_heal=0.220 p_log_survive=0.240
+cool__rottor_hyb21_s2_X_err__soft_seam__hot__t400 | COOL proto=soft_seam init=hot t_tot=400.0 N=1172 K=2 trials=100 syn_dens=0.00141 mean_max_cl=79.6 p_zero_syn=0.790 p_exact_heal=0.250 p_log_survive=0.320
+cool__rottor_hyb21_s2_Z_err__quench__noisy_0.06__t1000 | COOL proto=quench init=noisy_0.06 t_tot=1000.0 N=1172 K=2 trials=100 syn_dens=0.00127 mean_max_cl=91.3 p_zero_syn=0.770 p_exact_heal=0.190 p_log_survive=0.240
+cool__sq_L2r1_s3_Z_err__soft_seam__hot__t400 | COOL proto=soft_seam init=hot t_tot=400.0 N=1942 K=1 trials=100 syn_dens=0.00247 mean_max_cl=300.7 p_zero_syn=0.240 p_exact_heal=0.120 p_log_survive=0.470
+cool__rottor_L2r1_s3_X_err__quench__noisy_0.06__t1000 | COOL proto=quench init=noisy_0.06 t_tot=1000.0 N=3884 K=2 trials=100 syn_dens=0.00461 mean_max_cl=2176.7 p_zero_syn=0.020 p_exact_heal=0.010 p_log_survive=0.400
+ffs__caha_n11_code_100_X_err__uniform__uf__b7.00 | TIMEOUT
+kmc__sq_L2r1_s4_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=25148 K=1 trials=24 mean_t=4.0675e+04 sem_t=8.0943e+03 median_t=3.6251e+04 mean_flips=1252927.4 capped=0
+kmc__rottor_L2r1_s4_Z_err__uniform__uf__b5.50 | TIMEOUT
+kmc__rottor_hyb21_s2_Z_err__uniform__uf__b5.00 | KMC dec=uf beta=5.00 N=1172 K=2 trials=48 mean_t=4.9645e+05 sem_t=7.2458e+04 median_t=4.1679e+05 mean_flips=189832.4 capped=0
+kmc__rottor_L3r2_s2_Z_err__uniform__uf__b5.00 | KMC dec=uf beta=5.00 N=2960 K=2 trials=48 mean_t=2.1430e+06 sem_t=2.7341e+05 median_t=1.9065e+06 mean_flips=1300734.6 capped=0
+kmc__rottor_cb3rib_s2_Z_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=444 K=17 trials=64 mean_t=1.5605e-01 sem_t=1.8370e-02 median_t=1.3224e-01 mean_flips=1.0 capped=0
+kmc__rottor_cb3rib_s4_Z_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=40264 K=1004 trials=24 mean_t=2.6284e-03 sem_t=5.5178e-04 median_t=1.4477e-03 mean_flips=1.0 capped=0
+kmc__rottor_cb2rib_s3_Z_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=3080 K=300 trials=64 mean_t=1.1972e-01 sem_t=1.3118e-02 median_t=9.9622e-02 mean_flips=1.0 capped=0
+kmc__sq_cb3rib_s2_Z_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=222 K=9 trials=64 mean_t=2.7005e-01 sem_t=4.1033e-02 median_t=1.9434e-01 mean_flips=1.0 capped=0
+kmc__sq_cb3rib_s4_Z_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=20082 K=510 trials=24 mean_t=2.8658e-03 sem_t=5.0278e-04 median_t=2.9195e-03 mean_flips=1.0 capped=0
+kmc__sq_cb2rib_s3_Z_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=1522 K=130 trials=64 mean_t=7.5109e-02 sem_t=1.0600e-02 median_t=5.0072e-02 mean_flips=1.0 capped=0
+kmc__sq_z3_3_5_r1_X_err__hill_norm__uf__b6.50 | KMC dec=uf beta=6.50 N=3067 K=1 trials=64 mean_t=3.4933e+02 sem_t=3.9620e+01 median_t=2.3142e+02 mean_flips=2543.3 capped=0
+kmc__sq_z3_4_6_r2_X_err__hill_bnd__uf__b6.50 | KMC dec=uf beta=6.50 N=10280 K=1 trials=64 mean_t=1.5547e+04 sem_t=2.6386e+03 median_t=7.1740e+03 mean_flips=98665.7 capped=0
+kmc__sq_bdl_8_8_r2_Z_err__hill_norm__uf__b5.50 | KMC dec=uf beta=5.50 N=56312 K=1 trials=24 mean_t=3.3779e+03 sem_t=6.1790e+02 median_t=2.9023e+03 mean_flips=261284.0 capped=0
+cool__sq_L2r1_s2_Z_err__quench__hot__t1500 | COOL proto=quench init=hot t_tot=1500.0 N=254 K=1 trials=100 syn_dens=0.00014 mean_max_cl=0.1 p_zero_syn=0.980 p_exact_heal=0.400 p_log_survive=0.400
+cool__rottor_L2r1_s2_X_err__quench__noisy_0.08__t1000 | COOL proto=quench init=noisy_0.08 t_tot=1000.0 N=508 K=2 trials=100 syn_dens=0.00026 mean_max_cl=3.9 p_zero_syn=0.970 p_exact_heal=0.270 p_log_survive=0.290
+cool__rottor_hyb21_s2_X_err__quench__hot__t1500 | COOL proto=quench init=hot t_tot=1500.0 N=1172 K=2 trials=100 syn_dens=0.00029 mean_max_cl=13.5 p_zero_syn=0.950 p_exact_heal=0.190 p_log_survive=0.200
+cool__rottor_hyb21_s2_Z_err__quench__noisy_0.08__t1000 | COOL proto=quench init=noisy_0.08 t_tot=1000.0 N=1172 K=2 trials=100 syn_dens=0.00140 mean_max_cl=88.3 p_zero_syn=0.770 p_exact_heal=0.150 p_log_survive=0.180
+cool__sq_L2r1_s3_Z_err__quench__hot__t1500 | COOL proto=quench init=hot t_tot=1500.0 N=1942 K=1 trials=100 syn_dens=0.00093 mean_max_cl=67.8 p_zero_syn=0.580 p_exact_heal=0.230 p_log_survive=0.430
+cool__rottor_L2r1_s3_X_err__quench__noisy_0.08__t1000 | COOL proto=quench init=noisy_0.08 t_tot=1000.0 N=3884 K=2 trials=100 syn_dens=0.00490 mean_max_cl=2241.3 p_zero_syn=0.000 p_exact_heal=0.000 p_log_survive=0.250
+ffs__caha_n11_code_100_X_err__uniform__uf__b7.50 | TIMEOUT
+kmc__sq_L2r1_s2_X_err__uniform__uf__b6.25 | KMC dec=uf beta=6.25 N=254 K=1 trials=64 mean_t=1.8755e+04 sem_t=2.3219e+03 median_t=1.2874e+04 mean_flips=9156.9 capped=0
+kmc__rottor_L2r1_s4_Z_err__uniform__uf__b6.00 | TIMEOUT
+kmc__rottor_hyb21_s2_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=1172 K=2 trials=48 mean_t=7.0691e+06 sem_t=1.0054e+06 median_t=5.8391e+06 mean_flips=893890.9 capped=0
+kmc__rottor_L3r2_s2_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=2960 K=2 trials=48 mean_t=2.6461e+07 sem_t=3.7689e+06 median_t=1.9130e+07 mean_flips=5600196.1 capped=0
+kmc__rottor_cb3rib_s2_Z_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=444 K=17 trials=64 mean_t=1.0975e-01 sem_t=1.5316e-02 median_t=8.2185e-02 mean_flips=1.0 capped=0
+kmc__rottor_cb3rib_s4_Z_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=40264 K=1004 trials=24 mean_t=1.7829e-03 sem_t=5.2914e-04 median_t=1.0175e-03 mean_flips=1.0 capped=0
+kmc__rottor_cb2rib_s3_Z_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=3080 K=300 trials=64 mean_t=1.2050e-01 sem_t=1.6086e-02 median_t=7.7945e-02 mean_flips=1.0 capped=0
+kmc__sq_cb3rib_s2_Z_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=222 K=9 trials=64 mean_t=2.4389e-01 sem_t=2.5833e-02 median_t=1.9302e-01 mean_flips=1.0 capped=0
+kmc__sq_cb3rib_s4_Z_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=20082 K=510 trials=24 mean_t=3.7787e-03 sem_t=8.7063e-04 median_t=1.8135e-03 mean_flips=1.0 capped=0
+kmc__sq_cb2rib_s3_Z_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=1522 K=130 trials=64 mean_t=7.8040e-02 sem_t=9.4226e-03 median_t=5.4032e-02 mean_flips=1.0 capped=0
+kmc__sq_z3_3_5_r1_X_err__hill_norm__uf__b7.00 | KMC dec=uf beta=7.00 N=3067 K=1 trials=64 mean_t=7.9567e+02 sem_t=1.0291e+02 median_t=5.1678e+02 mean_flips=3938.7 capped=0
+kmc__sq_z3_4_6_r2_X_err__hill_bnd__uf__b7.00 | KMC dec=uf beta=7.00 N=10280 K=1 trials=64 mean_t=7.3599e+04 sem_t=1.0451e+04 median_t=4.5662e+04 mean_flips=257682.3 capped=0
+kmc__sq_bdl_8_8_r2_Z_err__hill_bnd__uf__b5.50 | KMC dec=uf beta=5.50 N=56312 K=1 trials=24 mean_t=4.7503e+04 sem_t=6.7652e+03 median_t=3.8325e+04 mean_flips=1258896.3 capped=0
+cool__sq_L2r1_s2_Z_err__anneal__hot__t1500 | COOL proto=anneal init=hot t_tot=1500.0 N=254 K=1 trials=100 syn_dens=0.00050 mean_max_cl=1.3 p_zero_syn=0.940 p_exact_heal=0.500 p_log_survive=0.540
+cool__rottor_L2r1_s2_X_err__quench__noisy_0.12__t1000 | COOL proto=quench init=noisy_0.12 t_tot=1000.0 N=508 K=2 trials=100 syn_dens=0.00026 mean_max_cl=4.3 p_zero_syn=0.970 p_exact_heal=0.270 p_log_survive=0.290
+cool__rottor_hyb21_s2_X_err__anneal__hot__t1500 | COOL proto=anneal init=hot t_tot=1500.0 N=1172 K=2 trials=100 syn_dens=0.00025 mean_max_cl=20.6 p_zero_syn=0.960 p_exact_heal=0.200 p_log_survive=0.200
+cool__rottor_hyb21_s2_Z_err__quench__noisy_0.12__t1000 | COOL proto=quench init=noisy_0.12 t_tot=1000.0 N=1172 K=2 trials=100 syn_dens=0.00136 mean_max_cl=106.2 p_zero_syn=0.750 p_exact_heal=0.170 p_log_survive=0.250
+cool__sq_L2r1_s3_Z_err__anneal__hot__t1500 | COOL proto=anneal init=hot t_tot=1500.0 N=1942 K=1 trials=100 syn_dens=0.00106 mean_max_cl=111.5 p_zero_syn=0.500 p_exact_heal=0.220 p_log_survive=0.460
+cool__rottor_L2r1_s3_X_err__quench__noisy_0.12__t1000 | COOL proto=quench init=noisy_0.12 t_tot=1000.0 N=3884 K=2 trials=100 syn_dens=0.00517 mean_max_cl=2273.9 p_zero_syn=0.000 p_exact_heal=0.000 p_log_survive=0.170
+ffs__caha_n11_code_100_X_err__uniform__uf__b8.00 | TIMEOUT
+kmc__sq_L2r1_s4_X_err__uniform__uf__b6.25 | KMC dec=uf beta=6.25 N=25148 K=1 trials=24 mean_t=1.8984e+05 sem_t=5.5008e+04 median_t=1.1309e+05 mean_flips=4002569.0 capped=0
+kmc__sq_L2r1_s2_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=254 K=1 trials=64 mean_t=1.0737e+04 sem_t=1.6697e+03 median_t=6.7591e+03 mean_flips=3963.8 capped=0
+kmc__rottor_hyb12_s2_X_err__uniform__uf__b5.00 | KMC dec=uf beta=5.00 N=1292 K=2 trials=48 mean_t=5.0590e+02 sem_t=7.7302e+01 median_t=3.5771e+02 mean_flips=2524.8 capped=0
+kmc__sq_L3r2_s2_X_err__uniform__uf__b5.00 | KMC dec=uf beta=5.00 N=1480 K=1 trials=48 mean_t=1.5444e+03 sem_t=2.4821e+02 median_t=1.0657e+03 mean_flips=11970.5 capped=0
+kmc__rottor_cb3rib_s3_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=3462 K=98 trials=64 mean_t=1.1680e+02 sem_t=1.6300e+01 median_t=6.1994e+01 mean_flips=157.2 capped=0
+kmc__rottor_cb2rib_s2_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=372 K=34 trials=64 mean_t=9.9589e+01 sem_t=1.0080e+01 median_t=8.4692e+01 mean_flips=21.2 capped=0
+kmc__rottor_cb2rib_s4_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=30592 K=2812 trials=24 mean_t=3.4647e+00 sem_t=4.4584e-01 median_t=3.4391e+00 mean_flips=28.3 capped=0
+kmc__sq_cb3rib_s3_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=1710 K=45 trials=64 mean_t=3.0430e+02 sem_t=3.8971e+01 median_t=1.8895e+02 mean_flips=680.2 capped=0
+kmc__sq_cb2rib_s2_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=188 K=14 trials=64 mean_t=4.4076e+01 sem_t=5.4979e+00 median_t=3.1145e+01 mean_flips=31.8 capped=0
+kmc__sq_cb2rib_s4_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=15324 K=1306 trials=24 mean_t=3.8956e+00 sem_t=3.7830e-01 median_t=3.7102e+00 mean_flips=46.9 capped=0
+kmc__sq_z3_3_5_r1_X_err__hill_bnd__uf__b5.50 | KMC dec=uf beta=5.50 N=3067 K=1 trials=64 mean_t=1.3290e+03 sem_t=1.6852e+02 median_t=7.2035e+02 mean_flips=5481.7 capped=0
+kmc__sq_z3_4_6_r2_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=10280 K=1 trials=64 mean_t=5.6697e+04 sem_t=8.1897e+03 median_t=3.5052e+04 mean_flips=556454.8 capped=0
+cool__sq_L2r1_s2_X_err__quench__hot__t100 | COOL proto=quench init=hot t_tot=100.0 N=254 K=1 trials=100 syn_dens=0.00362 mean_max_cl=22.1 p_zero_syn=0.620 p_exact_heal=0.280 p_log_survive=0.490
+cool__sq_L2r1_s2_Z_err__soft_seam__hot__t1500 | COOL proto=soft_seam init=hot t_tot=1500.0 N=254 K=1 trials=100 syn_dens=0.00093 mean_max_cl=1.8 p_zero_syn=0.900 p_exact_heal=0.460 p_log_survive=0.510
+cool__rottor_L2r1_s2_Z_err__quench__hot__t100 | COOL proto=quench init=hot t_tot=100.0 N=508 K=2 trials=100 syn_dens=0.00851 mean_max_cl=140.3 p_zero_syn=0.440 p_exact_heal=0.040 p_log_survive=0.190
+cool__rottor_hyb21_s2_X_err__soft_seam__hot__t1500 | COOL proto=soft_seam init=hot t_tot=1500.0 N=1172 K=2 trials=100 syn_dens=0.00040 mean_max_cl=28.6 p_zero_syn=0.940 p_exact_heal=0.150 p_log_survive=0.170
+cool__sq_L2r1_s3_X_err__quench__hot__t100 | COOL proto=quench init=hot t_tot=100.0 N=1942 K=1 trials=100 syn_dens=0.01257 mean_max_cl=1195.8 p_zero_syn=0.000 p_exact_heal=0.000 p_log_survive=0.400
+cool__sq_L2r1_s3_Z_err__soft_seam__hot__t1500 | COOL proto=soft_seam init=hot t_tot=1500.0 N=1942 K=1 trials=100 syn_dens=0.00145 mean_max_cl=182.3 p_zero_syn=0.420 p_exact_heal=0.170 p_log_survive=0.400
+cool__rottor_L2r1_s3_Z_err__quench__hot__t100 | COOL proto=quench init=hot t_tot=100.0 N=3884 K=2 trials=100 syn_dens=0.00679 mean_max_cl=2248.2 p_zero_syn=0.000 p_exact_heal=0.000 p_log_survive=0.320
+ffs__caha_n11_code_100_X_err__uniform__uf__b8.50 | TIMEOUT
+kmc__sq_L2r1_s2_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=254 K=1 trials=64 mean_t=4.1095e+04 sem_t=7.0169e+03 median_t=2.0528e+04 mean_flips=15726.4 capped=0
+kmc__sq_L2r1_s4_Z_err__uniform__uf__b5.50 | TIMEOUT
+kmc__rottor_hyb12_s2_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=1292 K=2 trials=48 mean_t=2.7952e+03 sem_t=4.2148e+02 median_t=1.7173e+03 mean_flips=6668.9 capped=0
+kmc__sq_L3r2_s2_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=1480 K=1 trials=48 mean_t=8.1291e+03 sem_t=1.7138e+03 median_t=4.0550e+03 mean_flips=36182.7 capped=0
+kmc__rottor_cb3rib_s3_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=3462 K=98 trials=64 mean_t=2.9672e+02 sem_t=3.3212e+01 median_t=1.8166e+02 mean_flips=211.6 capped=0
+kmc__rottor_cb2rib_s2_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=372 K=34 trials=64 mean_t=1.8314e+02 sem_t=2.8812e+01 median_t=1.1010e+02 mean_flips=23.3 capped=0
+kmc__rottor_cb2rib_s4_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=30592 K=2812 trials=24 mean_t=4.6356e+00 sem_t=5.7448e-01 median_t=4.0138e+00 mean_flips=21.7 capped=0
+kmc__sq_cb3rib_s3_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=1710 K=45 trials=64 mean_t=5.9332e+02 sem_t=7.0582e+01 median_t=4.2878e+02 mean_flips=801.0 capped=0
+kmc__sq_cb2rib_s2_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=188 K=14 trials=64 mean_t=8.3136e+01 sem_t=9.6206e+00 median_t=5.8505e+01 mean_flips=34.8 capped=0
+kmc__sq_cb2rib_s4_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=15324 K=1306 trials=24 mean_t=4.2172e+00 sem_t=5.6662e-01 median_t=3.1458e+00 mean_flips=25.5 capped=0
+kmc__sq_z3_3_5_r1_X_err__hill_bnd__uf__b6.00 | KMC dec=uf beta=6.00 N=3067 K=1 trials=64 mean_t=2.9103e+03 sem_t=4.6942e+02 median_t=1.8268e+03 mean_flips=7237.8 capped=0
+kmc__sq_z3_4_6_r2_Z_err__pin_norm__uf__b5.50 | KMC dec=uf beta=5.50 N=10280 K=1 trials=64 mean_t=9.1685e+03 sem_t=9.8005e+02 median_t=6.0880e+03 mean_flips=266132.3 capped=0
+cool__sq_L2r1_s2_X_err__anneal__hot__t100 | COOL proto=anneal init=hot t_tot=100.0 N=254 K=1 trials=100 syn_dens=0.00310 mean_max_cl=15.9 p_zero_syn=0.660 p_exact_heal=0.270 p_log_survive=0.440
+cool__sq_L2r1_s2_Z_err__quench__noisy_0.01__t1000 | COOL proto=quench init=noisy_0.01 t_tot=1000.0 N=254 K=1 trials=100 syn_dens=0.00029 mean_max_cl=0.2 p_zero_syn=0.960 p_exact_heal=0.910 p_log_survive=0.950
+cool__rottor_L2r1_s2_Z_err__anneal__hot__t100 | COOL proto=anneal init=hot t_tot=100.0 N=508 K=2 trials=100 syn_dens=0.00736 mean_max_cl=103.2 p_zero_syn=0.500 p_exact_heal=0.150 p_log_survive=0.290
+cool__rottor_hyb21_s2_X_err__quench__noisy_0.01__t1000 | COOL proto=quench init=noisy_0.01 t_tot=1000.0 N=1172 K=2 trials=100 syn_dens=0.00007 mean_max_cl=1.1 p_zero_syn=0.980 p_exact_heal=0.890 p_log_survive=0.910
+cool__sq_L2r1_s3_X_err__anneal__hot__t100 | COOL proto=anneal init=hot t_tot=100.0 N=1942 K=1 trials=100 syn_dens=0.00771 mean_max_cl=978.5 p_zero_syn=0.010 p_exact_heal=0.000 p_log_survive=0.440
+cool__sq_L2r1_s3_Z_err__quench__noisy_0.01__t1000 | COOL proto=quench init=noisy_0.01 t_tot=1000.0 N=1942 K=1 trials=100 syn_dens=0.00101 mean_max_cl=61.8 p_zero_syn=0.490 p_exact_heal=0.340 p_log_survive=0.720
+cool__rottor_L2r1_s3_Z_err__anneal__hot__t100 | COOL proto=anneal init=hot t_tot=100.0 N=3884 K=2 trials=100 syn_dens=0.00743 mean_max_cl=2252.3 p_zero_syn=0.000 p_exact_heal=0.000 p_log_survive=0.280
+kmc__toric3d_L7_X_err__uniform__maj_uf__b1.75 | KMC dec=maj_uf beta=1.75 N=1029 K=3 trials=64 mean_t=7.2924e+06 sem_t=8.7030e+05 median_t=5.3383e+06 mean_flips=23702259.4 capped=0
+kmc__sq_L2r1_s4_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=25148 K=1 trials=24 mean_t=6.2448e+05 sem_t=1.7252e+05 median_t=2.6837e+05 mean_flips=9094810.6 capped=0
+kmc__sq_L2r1_s2_Z_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=254 K=1 trials=64 mean_t=3.4547e+04 sem_t=4.4522e+03 median_t=2.3200e+04 mean_flips=7013.6 capped=0
+kmc__rottor_hyb12_s2_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=1292 K=2 trials=48 mean_t=1.3519e+04 sem_t=1.9275e+03 median_t=1.1087e+04 mean_flips=13933.4 capped=0
+kmc__sq_L3r2_s2_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=1480 K=1 trials=48 mean_t=2.6926e+04 sem_t=4.0178e+03 median_t=1.8306e+04 mean_flips=69451.2 capped=0
+kmc__rottor_cb3rib_s3_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=3462 K=98 trials=64 mean_t=4.5637e+02 sem_t=6.1026e+01 median_t=3.2308e+02 mean_flips=215.6 capped=0
+kmc__rottor_cb2rib_s2_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=372 K=34 trials=64 mean_t=3.1097e+02 sem_t=3.7023e+01 median_t=2.4573e+02 mean_flips=35.5 capped=0
+kmc__rottor_cb2rib_s4_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=30592 K=2812 trials=24 mean_t=5.8503e+00 sem_t=1.3003e+00 median_t=4.2329e+00 mean_flips=21.6 capped=0
+kmc__sq_cb3rib_s3_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=1710 K=45 trials=64 mean_t=1.3280e+03 sem_t=2.1265e+02 median_t=7.1591e+02 mean_flips=1081.9 capped=0
+kmc__sq_cb2rib_s2_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=188 K=14 trials=64 mean_t=1.2366e+02 sem_t=1.4557e+01 median_t=8.4445e+01 mean_flips=28.5 capped=0
+kmc__sq_cb2rib_s4_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=15324 K=1306 trials=24 mean_t=6.3499e+00 sem_t=1.2666e+00 median_t=6.0011e+00 mean_flips=29.3 capped=0
+kmc__sq_z3_3_5_r1_X_err__hill_bnd__uf__b6.50 | KMC dec=uf beta=6.50 N=3067 K=1 trials=64 mean_t=1.6318e+04 sem_t=2.3196e+03 median_t=9.5272e+03 mean_flips=24126.7 capped=0
+kmc__sq_z3_4_6_r2_Z_err__hill_norm__uf__b5.50 | KMC dec=uf beta=5.50 N=10280 K=1 trials=64 mean_t=2.8592e+04 sem_t=5.3171e+03 median_t=1.4236e+04 mean_flips=284814.6 capped=0
+cool__sq_L2r1_s2_X_err__soft_seam__hot__t100 | COOL proto=soft_seam init=hot t_tot=100.0 N=254 K=1 trials=100 syn_dens=0.00155 mean_max_cl=6.6 p_zero_syn=0.820 p_exact_heal=0.430 p_log_survive=0.530
+cool__sq_L2r1_s2_Z_err__quench__noisy_0.02__t1000 | COOL proto=quench init=noisy_0.02 t_tot=1000.0 N=254 K=1 trials=100 syn_dens=0.00036 mean_max_cl=0.2 p_zero_syn=0.950 p_exact_heal=0.850 p_log_survive=0.900
+cool__rottor_L2r1_s2_Z_err__soft_seam__hot__t100 | COOL proto=soft_seam init=hot t_tot=100.0 N=508 K=2 trials=100 syn_dens=0.00837 mean_max_cl=128.8 p_zero_syn=0.430 p_exact_heal=0.080 p_log_survive=0.190
+cool__rottor_hyb21_s2_X_err__quench__noisy_0.02__t1000 | COOL proto=quench init=noisy_0.02 t_tot=1000.0 N=1172 K=2 trials=100 syn_dens=0.00045 mean_max_cl=23.5 p_zero_syn=0.930 p_exact_heal=0.640 p_log_survive=0.650
+cool__sq_L2r1_s3_X_err__soft_seam__hot__t100 | COOL proto=soft_seam init=hot t_tot=100.0 N=1942 K=1 trials=100 syn_dens=0.00888 mean_max_cl=929.2 p_zero_syn=0.000 p_exact_heal=0.000 p_log_survive=0.500
+cool__sq_L2r1_s3_Z_err__quench__noisy_0.02__t1000 | COOL proto=quench init=noisy_0.02 t_tot=1000.0 N=1942 K=1 trials=100 syn_dens=0.00108 mean_max_cl=83.5 p_zero_syn=0.530 p_exact_heal=0.300 p_log_survive=0.520
+cool__rottor_L2r1_s3_Z_err__soft_seam__hot__t100 | COOL proto=soft_seam init=hot t_tot=100.0 N=3884 K=2 trials=100 syn_dens=0.00740 mean_max_cl=2340.2 p_zero_syn=0.000 p_exact_heal=0.000 p_log_survive=0.210
+kmc__rottor_L2r1_s2_X_err__uniform__uf__b5.00 | KMC dec=uf beta=5.00 N=508 K=2 trials=64 mean_t=2.2185e+03 sem_t=2.8024e+02 median_t=1.5591e+03 mean_flips=2462.1 capped=0
+kmc__sq_L2r1_s2_X_err__uniform__uf__b6.75 | KMC dec=uf beta=6.75 N=254 K=1 trials=64 mean_t=4.6051e+04 sem_t=7.8967e+03 median_t=2.5046e+04 mean_flips=13843.4 capped=0
+kmc__sq_L2r1_s4_Z_err__uniform__uf__b6.00 | TIMEOUT
+kmc__rottor_hyb12_s2_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=1292 K=2 trials=48 mean_t=9.6390e+04 sem_t=1.8264e+04 median_t=5.3728e+04 mean_flips=31999.8 capped=0
+kmc__sq_L3r2_s2_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=1480 K=1 trials=48 mean_t=1.4134e+05 sem_t=2.0022e+04 median_t=9.9807e+04 mean_flips=215260.1 capped=0
+kmc__rottor_cb3rib_s3_X_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=3462 K=98 trials=64 mean_t=9.6413e+02 sem_t=1.2390e+02 median_t=6.6782e+02 mean_flips=261.8 capped=0
+kmc__rottor_cb2rib_s2_X_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=372 K=34 trials=64 mean_t=7.5031e+02 sem_t=9.9766e+01 median_t=4.7067e+02 mean_flips=63.3 capped=0
+kmc__rottor_cb2rib_s4_X_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=30592 K=2812 trials=24 mean_t=7.8780e+00 sem_t=1.7971e+00 median_t=5.0739e+00 mean_flips=15.5 capped=0
+kmc__sq_cb3rib_s3_X_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=1710 K=45 trials=64 mean_t=3.0023e+03 sem_t=3.9496e+02 median_t=2.2734e+03 mean_flips=1429.2 capped=0
+kmc__sq_cb2rib_s2_X_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=188 K=14 trials=64 mean_t=2.0025e+02 sem_t=2.5316e+01 median_t=1.3376e+02 mean_flips=31.0 capped=0
+kmc__sq_cb2rib_s4_X_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=15324 K=1306 trials=24 mean_t=8.5862e+00 sem_t=1.7452e+00 median_t=7.7831e+00 mean_flips=25.5 capped=0
+kmc__sq_z3_3_5_r1_X_err__hill_bnd__uf__b7.00 | KMC dec=uf beta=7.00 N=3067 K=1 trials=64 mean_t=2.6741e+04 sem_t=3.4446e+03 median_t=1.9588e+04 mean_flips=23228.0 capped=0
+kmc__sq_z3_4_6_r2_Z_err__hill_bnd__uf__b5.50 | KMC dec=uf beta=5.50 N=10280 K=1 trials=64 mean_t=1.0994e+05 sem_t=1.6090e+04 median_t=6.2344e+04 mean_flips=541124.5 capped=0
+cool__sq_L2r1_s2_X_err__quench__hot__t400 | COOL proto=quench init=hot t_tot=400.0 N=254 K=1 trials=100 syn_dens=0.00172 mean_max_cl=8.7 p_zero_syn=0.820 p_exact_heal=0.410 p_log_survive=0.480
+cool__sq_L2r1_s2_Z_err__quench__noisy_0.03__t1000 | COOL proto=quench init=noisy_0.03 t_tot=1000.0 N=254 K=1 trials=100 syn_dens=0.00043 mean_max_cl=0.2 p_zero_syn=0.940 p_exact_heal=0.740 p_log_survive=0.790
+cool__rottor_L2r1_s2_Z_err__quench__hot__t400 | COOL proto=quench init=hot t_tot=400.0 N=508 K=2 trials=100 syn_dens=0.00323 mean_max_cl=55.8 p_zero_syn=0.770 p_exact_heal=0.180 p_log_survive=0.260
+cool__rottor_hyb21_s2_X_err__quench__noisy_0.03__t1000 | COOL proto=quench init=noisy_0.03 t_tot=1000.0 N=1172 K=2 trials=100 syn_dens=0.00065 mean_max_cl=44.8 p_zero_syn=0.900 p_exact_heal=0.320 p_log_survive=0.360
+cool__sq_L2r1_s3_X_err__quench__hot__t400 | COOL proto=quench init=hot t_tot=400.0 N=1942 K=1 trials=100 syn_dens=0.00675 mean_max_cl=951.0 p_zero_syn=0.020 p_exact_heal=0.010 p_log_survive=0.520
+cool__sq_L2r1_s3_Z_err__quench__noisy_0.03__t1000 | COOL proto=quench init=noisy_0.03 t_tot=1000.0 N=1942 K=1 trials=100 syn_dens=0.00128 mean_max_cl=134.4 p_zero_syn=0.460 p_exact_heal=0.270 p_log_survive=0.550
+cool__rottor_L2r1_s3_Z_err__quench__hot__t400 | COOL proto=quench init=hot t_tot=400.0 N=3884 K=2 trials=100 syn_dens=0.00252 mean_max_cl=1098.6 p_zero_syn=0.100 p_exact_heal=0.010 p_log_survive=0.280
+kmc__rottor_L2r1_s2_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=508 K=2 trials=64 mean_t=1.5085e+04 sem_t=2.2882e+03 median_t=1.0420e+04 mean_flips=5872.1 capped=0
+kmc__sq_L2r1_s4_X_err__uniform__uf__b6.75 | KMC dec=uf beta=6.75 N=25148 K=1 trials=24 mean_t=2.8685e+06 sem_t=5.8438e+05 median_t=1.9515e+06 mean_flips=28971892.5 capped=3
+kmc__sq_L2r1_s2_Z_err__uniform__uf__b6.25 | KMC dec=uf beta=6.25 N=254 K=1 trials=64 mean_t=8.0001e+04 sem_t=9.4177e+03 median_t=5.9101e+04 mean_flips=12138.0 capped=0
+kmc__rottor_hyb12_s2_X_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=1292 K=2 trials=48 mean_t=5.6233e+05 sem_t=7.3716e+04 median_t=4.5642e+05 mean_flips=67688.6 capped=0
+kmc__sq_L3r2_s2_X_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=1480 K=1 trials=48 mean_t=7.8980e+05 sem_t=1.3766e+05 median_t=4.9706e+05 mean_flips=713076.5 capped=0
+kmc__rottor_cb3rib_s3_X_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=3462 K=98 trials=64 mean_t=2.0364e+03 sem_t=2.2468e+02 median_t=1.3856e+03 mean_flips=346.5 capped=0
+kmc__rottor_cb2rib_s2_X_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=372 K=34 trials=64 mean_t=7.9592e+02 sem_t=1.1812e+02 median_t=4.6314e+02 mean_flips=32.0 capped=0
+kmc__rottor_cb2rib_s4_X_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=30592 K=2812 trials=24 mean_t=1.8738e+01 sem_t=3.8174e+00 median_t=1.2865e+01 mean_flips=24.5 capped=0
+kmc__sq_cb3rib_s3_X_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=1710 K=45 trials=64 mean_t=4.7237e+03 sem_t=5.4486e+02 median_t=3.7023e+03 mean_flips=1360.6 capped=0
+kmc__sq_cb2rib_s2_X_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=188 K=14 trials=64 mean_t=3.2833e+02 sem_t=3.5790e+01 median_t=2.6608e+02 mean_flips=31.8 capped=0
+kmc__sq_cb2rib_s4_X_err__uniform__uf__b7.50 | KMC dec=uf beta=7.50 N=15324 K=1306 trials=24 mean_t=1.6271e+01 sem_t=2.4200e+00 median_t=1.3872e+01 mean_flips=32.0 capped=0
+kmc__sq_z3_3_5_r1_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=3067 K=1 trials=64 mean_t=8.6146e+03 sem_t=1.1983e+03 median_t=5.8878e+03 mean_flips=46166.7 capped=0
+kmc__sq_bdl_8_8_r2_X_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=56312 K=1 trials=24 mean_t=1.0483e+02 sem_t=1.1871e+01 median_t=9.4726e+01 mean_flips=12505.0 capped=0
+cool__sq_L2r1_s2_X_err__anneal__hot__t400 | COOL proto=anneal init=hot t_tot=400.0 N=254 K=1 trials=100 syn_dens=0.00164 mean_max_cl=4.8 p_zero_syn=0.820 p_exact_heal=0.430 p_log_survive=0.550
+cool__sq_L2r1_s2_Z_err__quench__noisy_0.04__t1000 | COOL proto=quench init=noisy_0.04 t_tot=1000.0 N=254 K=1 trials=100 syn_dens=0.00057 mean_max_cl=0.6 p_zero_syn=0.930 p_exact_heal=0.680 p_log_survive=0.740
+cool__rottor_L2r1_s2_Z_err__anneal__hot__t400 | COOL proto=anneal init=hot t_tot=400.0 N=508 K=2 trials=100 syn_dens=0.00097 mean_max_cl=17.7 p_zero_syn=0.930 p_exact_heal=0.270 p_log_survive=0.290
+cool__rottor_hyb21_s2_X_err__quench__noisy_0.04__t1000 | COOL proto=quench init=noisy_0.04 t_tot=1000.0 N=1172 K=2 trials=100 syn_dens=0.00062 mean_max_cl=35.1 p_zero_syn=0.900 p_exact_heal=0.300 p_log_survive=0.310
+cool__sq_L2r1_s3_X_err__anneal__hot__t400 | COOL proto=anneal init=hot t_tot=400.0 N=1942 K=1 trials=100 syn_dens=0.00263 mean_max_cl=404.2 p_zero_syn=0.170 p_exact_heal=0.050 p_log_survive=0.460
+cool__sq_L2r1_s3_Z_err__quench__noisy_0.04__t1000 | COOL proto=quench init=noisy_0.04 t_tot=1000.0 N=1942 K=1 trials=100 syn_dens=0.00127 mean_max_cl=115.2 p_zero_syn=0.410 p_exact_heal=0.180 p_log_survive=0.450
+cool__rottor_L2r1_s3_Z_err__anneal__hot__t400 | COOL proto=anneal init=hot t_tot=400.0 N=3884 K=2 trials=100 syn_dens=0.00344 mean_max_cl=1483.1 p_zero_syn=0.050 p_exact_heal=0.000 p_log_survive=0.180
+kmc__rottor_L2r1_s2_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=508 K=2 trials=64 mean_t=1.0442e+05 sem_t=1.4191e+04 median_t=6.6117e+04 mean_flips=14357.6 capped=0
+kmc__sq_L2r1_s2_X_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=254 K=1 trials=64 mean_t=8.7038e+04 sem_t=1.1515e+04 median_t=6.2769e+04 mean_flips=20351.3 capped=0
+kmc__sq_L2r1_s2_Z_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=254 K=1 trials=64 mean_t=9.0244e+04 sem_t=1.2009e+04 median_t=5.9303e+04 mean_flips=10443.0 capped=0
+ffs__rottor_hyb12_s2_X_err__uniform__uf__b6.00 | TIMEOUT
+ffs__sq_L3r2_s2_X_err__uniform__uf__b6.00 | TIMEOUT
+kmc__rottor_cb3rib_s3_X_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=3462 K=98 trials=64 mean_t=3.3771e+03 sem_t=4.4694e+02 median_t=2.0231e+03 mean_flips=393.4 capped=0
+kmc__rottor_cb2rib_s2_X_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=372 K=34 trials=64 mean_t=1.9170e+03 sem_t=2.7968e+02 median_t=1.0236e+03 mean_flips=63.6 capped=0
+kmc__rottor_cb2rib_s4_X_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=30592 K=2812 trials=24 mean_t=2.3773e+01 sem_t=4.2719e+00 median_t=1.6245e+01 mean_flips=16.5 capped=0
+kmc__sq_cb3rib_s3_X_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=1710 K=45 trials=64 mean_t=9.2512e+03 sem_t=1.1674e+03 median_t=5.4435e+03 mean_flips=1558.3 capped=0
+kmc__sq_cb2rib_s2_X_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=188 K=14 trials=64 mean_t=5.1831e+02 sem_t=6.7783e+01 median_t=3.3416e+02 mean_flips=32.0 capped=0
+kmc__sq_cb2rib_s4_X_err__uniform__uf__b8.00 | KMC dec=uf beta=8.00 N=15324 K=1306 trials=24 mean_t=2.5050e+01 sem_t=3.6859e+00 median_t=1.9505e+01 mean_flips=35.7 capped=0
+kmc__sq_z3_3_5_r1_Z_err__pin_norm__uf__b5.50 | KMC dec=uf beta=5.50 N=3067 K=1 trials=64 mean_t=2.4625e+03 sem_t=3.7275e+02 median_t=1.3206e+03 mean_flips=33740.3 capped=0
+kmc__sq_bdl_8_8_r2_X_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=56312 K=1 trials=24 mean_t=2.0567e+02 sem_t=1.7970e+01 median_t=1.8049e+02 mean_flips=15709.9 capped=0
+cool__sq_L2r1_s2_X_err__soft_seam__hot__t400 | COOL proto=soft_seam init=hot t_tot=400.0 N=254 K=1 trials=100 syn_dens=0.00224 mean_max_cl=7.9 p_zero_syn=0.810 p_exact_heal=0.430 p_log_survive=0.540
+cool__sq_L2r1_s2_Z_err__quench__noisy_0.06__t1000 | COOL proto=quench init=noisy_0.06 t_tot=1000.0 N=254 K=1 trials=100 syn_dens=0.00036 mean_max_cl=0.2 p_zero_syn=0.950 p_exact_heal=0.580 p_log_survive=0.610
+cool__rottor_L2r1_s2_Z_err__soft_seam__hot__t400 | COOL proto=soft_seam init=hot t_tot=400.0 N=508 K=2 trials=100 syn_dens=0.00656 mean_max_cl=107.2 p_zero_syn=0.530 p_exact_heal=0.130 p_log_survive=0.230
+cool__rottor_hyb21_s2_X_err__quench__noisy_0.06__t1000 | COOL proto=quench init=noisy_0.06 t_tot=1000.0 N=1172 K=2 trials=100 syn_dens=0.00043 mean_max_cl=31.4 p_zero_syn=0.940 p_exact_heal=0.260 p_log_survive=0.270
+cool__sq_L2r1_s3_X_err__soft_seam__hot__t400 | COOL proto=soft_seam init=hot t_tot=400.0 N=1942 K=1 trials=100 syn_dens=0.00449 mean_max_cl=570.9 p_zero_syn=0.120 p_exact_heal=0.050 p_log_survive=0.440
+cool__sq_L2r1_s3_Z_err__quench__noisy_0.06__t1000 | COOL proto=quench init=noisy_0.06 t_tot=1000.0 N=1942 K=1 trials=100 syn_dens=0.00128 mean_max_cl=99.5 p_zero_syn=0.470 p_exact_heal=0.170 p_log_survive=0.420
+cool__rottor_L2r1_s3_Z_err__soft_seam__hot__t400 | COOL proto=soft_seam init=hot t_tot=400.0 N=3884 K=2 trials=100 syn_dens=0.00294 mean_max_cl=1239.2 p_zero_syn=0.100 p_exact_heal=0.020 p_log_survive=0.260
+kmc__rottor_L2r1_s2_X_err__uniform__uf__b6.25 | KMC dec=uf beta=6.25 N=508 K=2 trials=64 mean_t=1.8273e+05 sem_t=2.0059e+04 median_t=1.5165e+05 mean_flips=14820.6 capped=0
+kmc__sq_L2r1_s4_X_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=25148 K=1 trials=24 mean_t=5.4561e+06 sem_t=7.4341e+05 median_t=4.0910e+06 mean_flips=39243060.7 capped=5
+kmc__sq_L2r1_s2_Z_err__uniform__uf__b6.75 | KMC dec=uf beta=6.75 N=254 K=1 trials=64 mean_t=2.2002e+05 sem_t=3.7716e+04 median_t=1.2293e+05 mean_flips=19458.1 capped=0
+ffs__rottor_hyb12_s2_X_err__uniform__uf__b6.50 | TIMEOUT
+kmc__rottor_cb3rib_s3_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=3462 K=98 trials=64 mean_t=5.0790e-02 sem_t=5.1480e-03 median_t=4.3616e-02 mean_flips=1.0 capped=0
+kmc__rottor_cb2rib_s2_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=372 K=34 trials=64 mean_t=1.2716e-01 sem_t=1.4999e-02 median_t=8.5731e-02 mean_flips=1.0 capped=0
+kmc__rottor_cb2rib_s4_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=30592 K=2812 trials=24 mean_t=1.6786e-03 sem_t=2.9917e-04 median_t=9.5994e-04 mean_flips=1.0 capped=0
+kmc__sq_cb3rib_s3_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=1710 K=45 trials=64 mean_t=6.7531e-02 sem_t=9.0867e-03 median_t=4.4050e-02 mean_flips=1.1 capped=0
+kmc__sq_cb2rib_s2_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=188 K=14 trials=64 mean_t=2.5484e-01 sem_t=2.8509e-02 median_t=2.0304e-01 mean_flips=1.0 capped=0
+kmc__sq_cb2rib_s4_Z_err__uniform__uf__b5.50 | KMC dec=uf beta=5.50 N=15324 K=1306 trials=24 mean_t=2.9977e-03 sem_t=6.1574e-04 median_t=1.9973e-03 mean_flips=1.0 capped=0
+kmc__sq_z3_3_5_r1_Z_err__hill_norm__uf__b5.50 | KMC dec=uf beta=5.50 N=3067 K=1 trials=64 mean_t=6.4345e+02 sem_t=9.2357e+01 median_t=4.0245e+02 mean_flips=5326.8 capped=0
+cool__sq_L2r1_s2_X_err__quench__hot__t1500 | COOL proto=quench init=hot t_tot=1500.0 N=254 K=1 trials=100 syn_dens=0.00216 mean_max_cl=4.5 p_zero_syn=0.780 p_exact_heal=0.360 p_log_survive=0.470
+cool__sq_L2r1_s2_Z_err__quench__noisy_0.08__t1000 | COOL proto=quench init=noisy_0.08 t_tot=1000.0 N=254 K=1 trials=100 syn_dens=0.00036 mean_max_cl=0.2 p_zero_syn=0.950 p_exact_heal=0.550 p_log_survive=0.590
+cool__rottor_L2r1_s2_Z_err__quench__hot__t1500 | COOL proto=quench init=hot t_tot=1500.0 N=508 K=2 trials=100 syn_dens=0.00028 mean_max_cl=7.2 p_zero_syn=0.980 p_exact_heal=0.190 p_log_survive=0.200
+cool__rottor_hyb21_s2_X_err__quench__noisy_0.08__t1000 | COOL proto=quench init=noisy_0.08 t_tot=1000.0 N=1172 K=2 trials=100 syn_dens=0.00040 mean_max_cl=28.8 p_zero_syn=0.940 p_exact_heal=0.240 p_log_survive=0.240
+cool__sq_L2r1_s3_X_err__quench__hot__t1500 | COOL proto=quench init=hot t_tot=1500.0 N=1942 K=1 trials=100 syn_dens=0.00256 mean_max_cl=550.0 p_zero_syn=0.140 p_exact_heal=0.090 p_log_survive=0.460
+cool__sq_L2r1_s3_Z_err__quench__noisy_0.08__t1000 | COOL proto=quench init=noisy_0.08 t_tot=1000.0 N=1942 K=1 trials=100 syn_dens=0.00128 mean_max_cl=125.1 p_zero_syn=0.470 p_exact_heal=0.190 p_log_survive=0.460
+cool__rottor_L2r1_s3_Z_err__quench__hot__t1500 | COOL proto=quench init=hot t_tot=1500.0 N=3884 K=2 trials=100 syn_dens=0.00045 mean_max_cl=164.8 p_zero_syn=0.770 p_exact_heal=0.200 p_log_survive=0.250
+kmc__rottor_L2r1_s2_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=508 K=2 trials=64 mean_t=4.0264e+05 sem_t=4.4848e+04 median_t=3.1038e+05 mean_flips=19389.6 capped=0
+ffs__sq_L2r1_s2_X_err__uniform__uf__b6.50 | FFS dec=uf beta=6.50 N=254 K=1 Phi0=6.6432e-02 Pfail=7.0447e-04 sem_P=3.7167e-05 mean_t=2.5394e+04 sem_t=1.3398e+03 valid_reps=6/6 movie_peak_E=-1.0
+kmc__sq_L2r1_s2_Z_err__uniform__uf__b7.00 | KMC dec=uf beta=7.00 N=254 K=1 trials=64 mean_t=2.5441e+05 sem_t=3.6853e+04 median_t=1.7643e+05 mean_flips=17236.5 capped=0
+ffs__rottor_hyb12_s2_X_err__uniform__uf__b7.00 | TIMEOUT
+ffs__sq_L3r2_s2_X_err__uniform__uf__b7.00 | TIMEOUT
+kmc__rottor_cb3rib_s3_Z_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=3462 K=98 trials=64 mean_t=5.8961e-02 sem_t=7.5653e-03 median_t=4.3219e-02 mean_flips=1.0 capped=0
+kmc__rottor_cb2rib_s2_Z_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=372 K=34 trials=64 mean_t=1.0924e-01 sem_t=1.1928e-02 median_t=8.0272e-02 mean_flips=1.0 capped=0
+kmc__rottor_cb2rib_s4_Z_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=30592 K=2812 trials=24 mean_t=1.4858e-03 sem_t=3.5109e-04 median_t=9.3144e-04 mean_flips=1.0 capped=0
+kmc__sq_cb3rib_s3_Z_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=1710 K=45 trials=64 mean_t=6.7641e-02 sem_t=8.5514e-03 median_t=4.9760e-02 mean_flips=1.0 capped=0
+kmc__sq_cb2rib_s2_Z_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=188 K=14 trials=64 mean_t=2.6565e-01 sem_t=3.1135e-02 median_t=2.1243e-01 mean_flips=1.0 capped=0
+kmc__sq_cb2rib_s4_Z_err__uniform__uf__b6.00 | KMC dec=uf beta=6.00 N=15324 K=1306 trials=24 mean_t=1.3331e-03 sem_t=2.9114e-04 median_t=7.1789e-04 mean_flips=1.0 capped=0
+kmc__sq_z3_3_5_r1_Z_err__hill_bnd__uf__b5.50 | KMC dec=uf beta=5.50 N=3067 K=1 trials=64 mean_t=1.9824e+04 sem_t=2.4503e+03 median_t=1.1491e+04 mean_flips=41884.5 capped=0
+kmc__sq_bdl_8_8_r2_X_err__uniform__uf__b7.00 | TIMEOUT
+cool__sq_L2r1_s2_X_err__anneal__hot__t1500 | COOL proto=anneal init=hot t_tot=1500.0 N=254 K=1 trials=100 syn_dens=0.00138 mean_max_cl=5.3 p_zero_syn=0.850 p_exact_heal=0.410 p_log_survive=0.460
+cool__sq_L2r1_s2_Z_err__quench__noisy_0.12__t1000 | COOL proto=quench init=noisy_0.12 t_tot=1000.0 N=254 K=1 trials=100 syn_dens=0.00093 mean_max_cl=3.1 p_zero_syn=0.910 p_exact_heal=0.470 p_log_survive=0.520
+cool__rottor_L2r1_s2_Z_err__anneal__hot__t1500 | COOL proto=anneal init=hot t_tot=1500.0 N=508 K=2 trials=100 syn_dens=0.00000 mean_max_cl=0.0 p_zero_syn=1.000 p_exact_heal=0.230 p_log_survive=0.230
+cool__rottor_hyb21_s2_X_err__quench__noisy_0.12__t1000 | COOL proto=quench init=noisy_0.12 t_tot=1000.0 N=1172 K=2 trials=100 syn_dens=0.00036 mean_max_cl=19.4 p_zero_syn=0.940 p_exact_heal=0.190 p_log_survive=0.220
+cool__sq_L2r1_s3_X_err__anneal__hot__t1500 | COOL proto=anneal init=hot t_tot=1500.0 N=1942 K=1 trials=100 syn_dens=0.00069 mean_max_cl=105.8 p_zero_syn=0.630 p_exact_heal=0.310 p_log_survive=0.470
+cool__sq_L2r1_s3_Z_err__quench__noisy_0.12__t1000 | COOL proto=quench init=noisy_0.12 t_tot=1000.0 N=1942 K=1 trials=100 syn_dens=0.00135 mean_max_cl=122.3 p_zero_syn=0.390 p_exact_heal=0.220 p_log_survive=0.510
+cool__rottor_L2r1_s3_Z_err__anneal__hot__t1500 | COOL proto=anneal init=hot t_tot=1500.0 N=3884 K=2 trials=100 syn_dens=0.00097 mean_max_cl=406.8 p_zero_syn=0.580 p_exact_heal=0.080 p_log_survive=0.180
+kmc__sq_bdl_8_8_r2_X_err__uniform__uf__b6.50 | KMC dec=uf beta=6.50 N=56312 K=1 trials=24 mean_t=4.4091e+02 sem_t=4.7163e+01 median_t=4.1384e+02 mean_flips=22295.0 capped=0
+ffs__rottor_L2r1_s2_X_err__uniform__uf__b6.00 | FFS dec=uf beta=6.00 N=508 K=2 Phi0=2.6063e-03 Pfail=5.8860e-03 sem_P=2.9170e-04 mean_t=6.7586e+04 sem_t=3.3495e+03 valid_reps=6/6 movie_peak_E=-1.0
+ffs__rottor_L2r1_s2_X_err__uniform__uf__b6.50 | FFS dec=uf beta=6.50 N=508 K=2 Phi0=9.5865e-04 Pfail=2.7879e-03 sem_P=1.8660e-04 mean_t=3.7885e+05 sem_t=2.5358e+04 valid_reps=6/6 movie_peak_E=-1.0
+ffs__sq_L3r2_s2_X_err__uniform__uf__b6.50 | FFS dec=uf beta=6.50 N=1480 K=1 Phi0=1.5878e-01 Pfail=8.0407e-05 sem_P=1.1416e-05 mean_t=1.4395e+05 sem_t=2.0439e+04 valid_reps=6/6 movie_peak_E=-1.0

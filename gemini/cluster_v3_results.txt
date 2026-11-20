@@ -1,0 +1,416 @@
+MFQEC|3D_Tor2_Sparse_974_Jgrad|dt=0.65s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00050 N=974 K=2 P_fail=0.7450 P_raw=0.6800 end_syn=0.03245
+SINGLESHOT|NL_IBM_Gross_144|dt=0.11s|SINGLESHOT rounds=20 p_data=0.0120 q_meas=0.0120 N=144 K=12 P_fail=0.0200
+KMC_UNI|nonloc_hyp_g3_aniso_s0_Xerr.code|dt=0.00s|KMC beta=4.00 N=24 K=6 trials=100 mean_t=3.2128e+02 median_t=3.0990e+02 capped=0
+SINGLESHOT|3D_Tor2_Hyb_2224|dt=1.42s|SINGLESHOT rounds=20 p_data=0.0080 q_meas=0.0080 N=2224 K=2 P_fail=0.1080
+KMC_JGRAD|loc3d_tor2_aniso_L2r1_s2_Zerr.code|dt=80.48s|KMC beta=4.00 N=1016 K=2 trials=100 mean_t=2.3703e+09 median_t=1.8202e+09 capped=10
+SINGLESHOT|NL_4DToric_1536|dt=1.37s|SINGLESHOT rounds=20 p_data=0.0160 q_meas=0.0160 N=1536 K=6 P_fail=0.0000
+MFQEC|NL_RP2_Aniso_762|dt=0.45s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00050 N=762 K=1 P_fail=0.4900 P_raw=0.4650 end_syn=0.03221
+STATS|bdl_rp2_hyb21_s2_Zerr.code|dt=0.48s|STATS N=2370 M=1360 M_meta=57 K=1 max_cw=6 mean_cw=4.37 qdeg=4 d<=55 Delta<=5
+MFQEC|3D_Layer_1853|dt=1.11s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00800 N=1853 K=1 P_fail=0.5000 P_raw=0.4200 end_syn=0.05785
+TIMEOUT|KMC_UNI|nonloc_toric4d_L4_Zerr.code
+KMC_UNI|loc3d_tor2_sparse_hyb21_s2_Xerr.code|dt=0.31s|KMC beta=6.00 N=2224 K=2 trials=100 mean_t=9.5781e+03 median_t=3.2753e+03 capped=0
+SINGLESHOT|3D_Layer_1853|dt=0.95s|SINGLESHOT rounds=20 p_data=0.0020 q_meas=0.0020 N=1853 K=1 P_fail=0.0000
+MFQEC|NL_4DToric_486|dt=0.35s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00200 N=486 K=6 P_fail=0.0500 P_raw=0.1200 end_syn=0.01238
+TIMEOUT|KMC_UNI|loc3d_tor2_sparse_hyb21_s2_Zerr.code
+SINGLESHOT|3D_Toric_String_1029|dt=0.52s|SINGLESHOT rounds=20 p_data=0.0080 q_meas=0.0080 N=1029 K=3 P_fail=0.8600
+KMC_UNI|nonloc_rp2_aniso_L2r1_s1_Zerr.code|dt=0.01s|KMC beta=6.00 N=57 K=1 trials=100 mean_t=1.2690e+04 median_t=9.5469e+03 capped=0
+KMC_UNI|loc3d_tor2_sparse_L2r1_s1_Zerr.code|dt=0.01s|KMC beta=7.00 N=71 K=2 trials=100 mean_t=5.9250e+04 median_t=4.6900e+04 capped=0
+MFQEC|NL_RP2_Aniso_762_Jgrad|dt=0.62s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00100 N=762 K=1 P_fail=0.4850 P_raw=0.4550 end_syn=0.03598
+KMC_UNI|loc3d_tor2_sparse_L2r1_s2_Zerr.code|dt=1.61s|KMC beta=5.00 N=974 K=2 trials=100 mean_t=9.9046e+05 median_t=6.8786e+05 capped=0
+KMC_UNI|nonloc_rp2_aniso_L2r1_s1_Zerr.code|dt=0.01s|KMC beta=7.00 N=57 K=1 trials=100 mean_t=1.1286e+05 median_t=8.5254e+04 capped=0
+STATS|nonloc_toric4d_L4_Xerr.code|dt=0.38s|STATS N=1536 M=1024 M_meta=259 K=6 max_cw=6 mean_cw=6.00 qdeg=4 d<=16 Delta<=10
+KMC_JGRAD|nonloc_rp2_aniso_L2r1_s2_Xerr.code|dt=33.13s|KMC beta=4.00 N=762 K=1 trials=100 mean_t=2.4822e+08 median_t=1.4778e+08 capped=0
+TIMEOUT|KMC_JGRAD|nonloc_hyp_g3_aniso_s2_Zerr.code
+KMC_JGRAD|loc3d_tor2_aniso_L2r1_s2_Xerr.code|dt=43.60s|KMC beta=6.00 N=1016 K=2 trials=100 mean_t=2.5606e+11 median_t=1.6165e+11 capped=1
+STATS|nonloc_rp2_aniso_L2r1_s0_Xerr.code|dt=0.01s|STATS N=6 M=3 M_meta=1 K=1 max_cw=4 mean_cw=4.00 qdeg=2 d<=2 Delta<=2
+KMC_UNI|nonloc_rp2_aniso_hyb21_s2_Zerr.code|dt=65.46s|KMC beta=6.00 N=1758 K=1 trials=100 mean_t=1.3176e+08 median_t=9.4390e+07 capped=12
+MFQEC|NL_IBM_2Gross_288|dt=0.25s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00050 N=288 K=12 P_fail=0.5950 P_raw=0.7800 end_syn=0.02889
+KMC_UNI|loc3d_tor2_sparse_L2r1_s0_Xerr.code|dt=0.00s|KMC beta=7.00 N=8 K=2 trials=100 mean_t=3.0369e+05 median_t=2.4809e+05 capped=0
+TIMEOUT|KMC_UNI|nonloc_toric4d_L4_Xerr.code
+SINGLESHOT|NL_RP2_Hyb_1758|dt=1.38s|SINGLESHOT rounds=20 p_data=0.0120 q_meas=0.0120 N=1758 K=1 P_fail=0.1760
+MFQEC|NL_IBM_2Gross_288|dt=0.12s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00000 N=288 K=12 P_fail=0.3550 P_raw=0.5100 end_syn=0.01660
+MFQEC|3D_Layer_1853|dt=0.86s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00000 N=1853 K=1 P_fail=0.4500 P_raw=0.4900 end_syn=0.02019
+KMC_UNI|loc3d_tor2_sparse_hyb21_s2_Zerr.code|dt=0.31s|KMC beta=3.00 N=2224 K=2 trials=100 mean_t=2.7199e+01 median_t=2.5550e+01 capped=0
+STATS|nonloc_hyp_g3_aniso_s0_Zerr.code|dt=0.01s|STATS N=24 M=8 M_meta=1 K=6 max_cw=6 mean_cw=6.00 qdeg=2 d<=3 Delta<=2
+KMC_UNI|nonloc_hyp_g3_aniso_s1_Xerr.code|dt=0.02s|KMC beta=4.00 N=228 K=6 trials=100 mean_t=5.4077e+03 median_t=3.9385e+03 capped=0
+KMC_UNI|nonloc_hyp_g3_aniso_s2_Xerr.code|dt=0.28s|KMC beta=3.00 N=3048 K=6 trials=100 mean_t=5.8584e+00 median_t=5.5059e+00 capped=0
+MFQEC|NL_RP2_Aniso_762_Jgrad|dt=0.52s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00200 N=762 K=1 P_fail=0.5750 P_raw=0.5250 end_syn=0.04362
+MFQEC|3D_Tor2_Hyb_2224|dt=1.47s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00800 N=2224 K=2 P_fail=0.7450 P_raw=0.7500 end_syn=0.07200
+SINGLESHOT|3D_Toric_String_1029|dt=0.56s|SINGLESHOT rounds=20 p_data=0.0120 q_meas=0.0120 N=1029 K=3 P_fail=0.8560
+SINGLESHOT|3D_Toric_Membrane_1029|dt=0.97s|SINGLESHOT rounds=20 p_data=0.0060 q_meas=0.0060 N=1029 K=3 P_fail=0.0000
+KMC_UNI|loc3d_tor2_sparse_L2r1_s1_Xerr.code|dt=0.03s|KMC beta=7.00 N=71 K=2 trials=100 mean_t=4.2100e+05 median_t=2.8962e+05 capped=0
+KMC_UNI|loc3d_tor2_sparse_L2r1_s2_Xerr.code|dt=0.07s|KMC beta=4.00 N=974 K=2 trials=100 mean_t=2.9559e+01 median_t=2.5051e+01 capped=0
+SINGLESHOT|3D_Toric_Membrane_1029|dt=1.25s|SINGLESHOT rounds=20 p_data=0.0200 q_meas=0.0200 N=1029 K=3 P_fail=0.0000
+SINGLESHOT|NL_IBM_Gross_144|dt=0.03s|SINGLESHOT rounds=20 p_data=0.0010 q_meas=0.0010 N=144 K=12 P_fail=0.0000
+KMC_UNI|nonloc_rp2_aniso_L2r1_s0_Xerr.code|dt=0.00s|KMC beta=4.00 N=6 K=1 trials=100 mean_t=1.2461e+03 median_t=8.2127e+02 capped=0
+KMC_JGRAD|loc3d_tor2_aniso_L2r1_s2_Xerr.code|dt=7.16s|KMC beta=5.00 N=1016 K=2 trials=100 mean_t=1.1406e+09 median_t=8.3964e+08 capped=0
+KMC_UNI|nonloc_rp2_aniso_L2r1_s2_Zerr.code|dt=37.41s|KMC beta=6.00 N=762 K=1 trials=100 mean_t=1.8667e+08 median_t=1.5408e+08 capped=1
+SINGLESHOT|3D_Layer_1853|dt=1.19s|SINGLESHOT rounds=20 p_data=0.0010 q_meas=0.0010 N=1853 K=1 P_fail=0.0000
+KMC_UNI|loc3d_tor2_aniso_hyb21_s2_Xerr.code|dt=2.27s|KMC beta=6.00 N=2344 K=2 trials=100 mean_t=9.1902e+05 median_t=7.0750e+05 capped=0
+STATS|loc3d_tor2_sparse_L2r1_s2_Zerr.code|dt=0.27s|STATS N=974 M=576 M_meta=26 K=2 max_cw=5 mean_cw=4.16 qdeg=4 d<=23 Delta<=5
+TIMEOUT|KMC_UNI|nonloc_rp2_aniso_hyb21_s2_Zerr.code
+SINGLESHOT|NL_RP2_Aniso_762|dt=0.44s|SINGLESHOT rounds=20 p_data=0.0200 q_meas=0.0200 N=762 K=1 P_fail=0.4640
+TIMEOUT|KMC_JGRAD|nonloc_hyp_g3_aniso_s2_Xerr.code
+SINGLESHOT|3D_Layer_1853|dt=0.95s|SINGLESHOT rounds=20 p_data=0.0060 q_meas=0.0060 N=1853 K=1 P_fail=0.0000
+MFQEC|NL_RP2_Aniso_762|dt=0.45s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00400 N=762 K=1 P_fail=0.5600 P_raw=0.4850 end_syn=0.05533
+MFQEC|3D_Tor2_Sparse_974|dt=0.57s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00800 N=974 K=2 P_fail=0.7700 P_raw=0.7400 end_syn=0.07085
+TIMEOUT|KMC_UNI|nonloc_toric4d_L3_Zerr.code
+SINGLESHOT|NL_IBM_Gross_144|dt=0.08s|SINGLESHOT rounds=20 p_data=0.0040 q_meas=0.0040 N=144 K=12 P_fail=0.0000
+MFQEC|2D_Toric_800|dt=0.52s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00200 N=800 K=2 P_fail=0.7700 P_raw=0.7650 end_syn=0.04298
+SINGLESHOT|3D_Toric_Membrane_1029|dt=1.08s|SINGLESHOT rounds=20 p_data=0.0080 q_meas=0.0080 N=1029 K=3 P_fail=0.0000
+KMC_UNI|loc3d_tor2_aniso_L2r1_s2_Xerr.code|dt=0.48s|KMC beta=7.00 N=1016 K=2 trials=100 mean_t=2.1431e+06 median_t=1.5646e+06 capped=0
+MFQEC|3D_Layer_1853|dt=1.26s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00100 N=1853 K=1 P_fail=0.5300 P_raw=0.4850 end_syn=0.02732
+SINGLESHOT|NL_4DToric_1536|dt=1.52s|SINGLESHOT rounds=20 p_data=0.0060 q_meas=0.0060 N=1536 K=6 P_fail=0.0000
+SINGLESHOT|3D_Toric_Membrane_1029|dt=1.07s|SINGLESHOT rounds=20 p_data=0.0020 q_meas=0.0020 N=1029 K=3 P_fail=0.0000
+TIMEOUT|KMC_JGRAD|nonloc_rp2_aniso_L2r1_s2_Xerr.code
+KMC_UNI|nonloc_ibm_twogross_288_Zerr.code|dt=0.03s|KMC beta=4.00 N=288 K=12 trials=100 mean_t=5.6681e+04 median_t=3.7687e+04 capped=0
+TIMEOUT|KMC_UNI|nonloc_toric4d_L4_Zerr.code
+KMC_UNI|nonloc_ibm_gross_144_Zerr.code|dt=0.01s|KMC beta=3.00 N=144 K=12 trials=100 mean_t=5.4856e+02 median_t=3.9718e+02 capped=0
+MFQEC|3D_Tor2_Sparse_974|dt=0.56s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00050 N=974 K=2 P_fail=0.7100 P_raw=0.7350 end_syn=0.03225
+KMC_UNI|nonloc_hyp_g3_aniso_s1_Zerr.code|dt=0.01s|KMC beta=6.00 N=228 K=6 trials=100 mean_t=1.8319e+03 median_t=1.4674e+03 capped=0
+SINGLESHOT|NL_4DToric_1536|dt=1.38s|SINGLESHOT rounds=20 p_data=0.0200 q_meas=0.0200 N=1536 K=6 P_fail=0.0000
+SINGLESHOT|3D_Toric_Membrane_1029|dt=0.96s|SINGLESHOT rounds=20 p_data=0.0120 q_meas=0.0120 N=1029 K=3 P_fail=0.0000
+MFQEC|2D_Toric_800|dt=0.51s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00400 N=800 K=2 P_fail=0.7350 P_raw=0.7300 end_syn=0.05333
+SINGLESHOT|3D_Toric_String_1029|dt=0.65s|SINGLESHOT rounds=20 p_data=0.0160 q_meas=0.0160 N=1029 K=3 P_fail=0.9040
+KMC_UNI|loc3d_tor2_sparse_hyb21_s2_Xerr.code|dt=0.25s|KMC beta=4.00 N=2224 K=2 trials=100 mean_t=2.3680e+01 median_t=1.9447e+01 capped=0
+STATS|loc3d_tor2_sparse_L2r1_s0_Zerr.code|dt=0.00s|STATS N=8 M=4 M_meta=1 K=2 max_cw=4 mean_cw=4.00 qdeg=2 d<=2 Delta<=2
+MFQEC|NL_IBM_Gross_144|dt=0.19s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00800 N=144 K=12 P_fail=1.0000 P_raw=1.0000 end_syn=0.08021
+KMC_UNI|nonloc_hyp_g3_aniso_s0_Xerr.code|dt=0.01s|KMC beta=7.00 N=24 K=6 trials=100 mean_t=1.2738e+05 median_t=1.1197e+05 capped=0
+SINGLESHOT|2D_Toric_800|dt=0.39s|SINGLESHOT rounds=20 p_data=0.0010 q_meas=0.0010 N=800 K=2 P_fail=0.0000
+SINGLESHOT|NL_4DToric_486|dt=0.68s|SINGLESHOT rounds=20 p_data=0.0160 q_meas=0.0160 N=486 K=6 P_fail=0.0000
+SINGLESHOT|3D_Tor2_Hyb_2224|dt=1.52s|SINGLESHOT rounds=20 p_data=0.0040 q_meas=0.0040 N=2224 K=2 P_fail=0.0000
+KMC_UNI|loc3d_tor2_sparse_L2r1_s0_Zerr.code|dt=0.01s|KMC beta=7.00 N=8 K=2 trials=100 mean_t=2.6558e+05 median_t=2.0898e+05 capped=0
+KMC_UNI|nonloc_ibm_gross_144_Zerr.code|dt=0.09s|KMC beta=7.00 N=144 K=12 trials=100 mean_t=1.2715e+10 median_t=8.2965e+09 capped=0
+KMC_UNI|loc3d_tor2_sparse_L2r1_s0_Xerr.code|dt=0.01s|KMC beta=3.00 N=8 K=2 trials=100 mean_t=8.1896e+01 median_t=6.0630e+01 capped=0
+KMC_UNI|nonloc_toric4d_L3_Zerr.code|dt=28.64s|KMC beta=4.00 N=486 K=6 trials=100 mean_t=2.7606e+10 median_t=2.3444e+10 capped=0
+STATS|loc3d_tor2_sparse_hyb21_s2_Zerr.code|dt=0.41s|STATS N=2224 M=1296 M_meta=53 K=2 max_cw=5 mean_cw=4.21 qdeg=4 d<=47 Delta<=5
+MFQEC|3D_Tor2_Hyb_2224|dt=1.77s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00050 N=2224 K=2 P_fail=0.7700 P_raw=0.7600 end_syn=0.03272
+MFQEC|NL_HypK6_3048|dt=2.60s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00400 N=3048 K=6 P_fail=0.9800 P_raw=0.9700 end_syn=0.05591
+SINGLESHOT|NL_IBM_2Gross_288|dt=0.27s|SINGLESHOT rounds=20 p_data=0.0200 q_meas=0.0200 N=288 K=12 P_fail=0.1920
+KMC_UNI|loc3d_tor2_aniso_hyb21_s2_Xerr.code|dt=0.36s|KMC beta=3.00 N=2344 K=2 trials=100 mean_t=9.0752e+00 median_t=8.7802e+00 capped=0
+TIMEOUT|KMC_UNI|nonloc_toric4d_L3_Xerr.code
+KMC_JGRAD|loc3d_tor2_sparse_L2r1_s2_Xerr.code|dt=0.07s|KMC beta=3.00 N=974 K=2 trials=100 mean_t=9.3243e+02 median_t=6.0636e+02 capped=0
+MFQEC|NL_HypK6_3048|dt=1.53s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00000 N=3048 K=6 P_fail=0.9950 P_raw=0.9900 end_syn=0.02780
+SINGLESHOT|NL_4DToric_486|dt=0.30s|SINGLESHOT rounds=20 p_data=0.0010 q_meas=0.0010 N=486 K=6 P_fail=0.0000
+KMC_JGRAD|loc3d_tor2_sparse_L2r1_s2_Xerr.code|dt=1.14s|KMC beta=6.00 N=974 K=2 trials=100 mean_t=1.1031e+08 median_t=7.6002e+07 capped=0
+MFQEC|NL_IBM_2Gross_288|dt=0.26s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00800 N=288 K=12 P_fail=0.9900 P_raw=1.0000 end_syn=0.08278
+SINGLESHOT|2D_Toric_800|dt=0.45s|SINGLESHOT rounds=20 p_data=0.0200 q_meas=0.0200 N=800 K=2 P_fail=0.7120
+KMC_UNI|nonloc_ibm_twogross_288_Zerr.code|dt=7.06s|KMC beta=7.00 N=288 K=12 trials=100 mean_t=2.7264e+11 median_t=1.7985e+11 capped=0
+KMC_UNI|nonloc_toric4d_L3_Zerr.code|dt=0.66s|KMC beta=3.00 N=486 K=6 trials=100 mean_t=1.0873e+07 median_t=6.6428e+06 capped=0
+KMC_JGRAD|loc3d_tor2_aniso_L2r1_s2_Xerr.code|dt=0.90s|KMC beta=4.00 N=1016 K=2 trials=100 mean_t=4.0580e+06 median_t=2.3140e+06 capped=0
+STATS|toric2d_L20_Xerr.code|dt=0.14s|STATS N=800 M=400 M_meta=1 K=2 max_cw=4 mean_cw=4.00 qdeg=2 d<=22 Delta<=2
+KMC_JGRAD|loc3d_tor2_aniso_L2r1_s2_Xerr.code|dt=0.11s|KMC beta=3.00 N=1016 K=2 trials=100 mean_t=9.2743e+03 median_t=6.6775e+03 capped=0
+KMC_UNI|loc3d_tor2_sparse_L2r1_s1_Zerr.code|dt=0.01s|KMC beta=3.00 N=71 K=2 trials=100 mean_t=1.2208e+01 median_t=9.1451e+00 capped=0
+SINGLESHOT|3D_Toric_String_1029|dt=0.47s|SINGLESHOT rounds=20 p_data=0.0020 q_meas=0.0020 N=1029 K=3 P_fail=0.0120
+KMC_UNI|nonloc_hyp_g3_aniso_s2_Zerr.code|dt=0.82s|KMC beta=3.00 N=3048 K=6 trials=100 mean_t=1.7389e+01 median_t=1.6803e+01 capped=0
+KMC_UNI|nonloc_rp2_aniso_L2r1_s2_Zerr.code|dt=2.33s|KMC beta=5.00 N=762 K=1 trials=100 mean_t=8.3249e+05 median_t=5.0355e+05 capped=0
+KMC_UNI|loc3d_tor2_aniso_hyb21_s2_Zerr.code|dt=0.47s|KMC beta=4.00 N=2344 K=2 trials=100 mean_t=8.4170e+02 median_t=5.8104e+02 capped=0
+STATS|loc3d_tor2_aniso_hyb21_s2_Xerr.code|dt=0.60s|STATS N=2344 M=1104 M_meta=17 K=2 max_cw=6 mean_cw=4.74 qdeg=4 d<=38 Delta<=5
+KMC_UNI|nonloc_hyp_g3_aniso_s2_Zerr.code|dt=1.12s|KMC beta=5.00 N=3048 K=6 trials=100 mean_t=8.9063e+04 median_t=6.1656e+04 capped=0
+MFQEC|3D_Tor2_Sparse_974_Jgrad|dt=1.09s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00100 N=974 K=2 P_fail=0.8000 P_raw=0.7600 end_syn=0.03571
+MFQEC|3D_Tor2_Sparse_974_Jgrad|dt=1.09s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00200 N=974 K=2 P_fail=0.6950 P_raw=0.7750 end_syn=0.04351
+KMC_JGRAD|loc3d_tor2_sparse_L2r1_s2_Xerr.code|dt=0.13s|KMC beta=4.00 N=974 K=2 trials=100 mean_t=6.8166e+04 median_t=4.9379e+04 capped=0
+KMC_UNI|nonloc_hyp_g3_aniso_s2_Xerr.code|dt=0.27s|KMC beta=5.00 N=3048 K=6 trials=100 mean_t=3.8979e+02 median_t=2.8278e+02 capped=0
+MFQEC|3D_Layer_1853|dt=1.44s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00200 N=1853 K=1 P_fail=0.5100 P_raw=0.5700 end_syn=0.03287
+KMC_UNI|nonloc_ibm_twogross_288_Zerr.code|dt=0.19s|KMC beta=5.00 N=288 K=12 trials=100 mean_t=1.0033e+07 median_t=6.4930e+06 capped=0
+MFQEC|NL_4DToric_486|dt=0.47s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00400 N=486 K=6 P_fail=0.2850 P_raw=0.4150 end_syn=0.03151
+KMC_UNI|nonloc_rp2_aniso_L2r1_s0_Xerr.code|dt=0.01s|KMC beta=5.00 N=6 K=1 trials=100 mean_t=8.3839e+03 median_t=4.6842e+03 capped=0
+MFQEC|3D_Tor2_Hyb_2224|dt=1.79s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00200 N=2224 K=2 P_fail=0.7400 P_raw=0.7750 end_syn=0.04219
+MFQEC|NL_IBM_Gross_144|dt=0.13s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00050 N=144 K=12 P_fail=0.6000 P_raw=0.6550 end_syn=0.02451
+MFQEC|NL_IBM_Gross_144|dt=0.13s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00100 N=144 K=12 P_fail=0.7450 P_raw=0.7900 end_syn=0.03826
+SINGLESHOT|NL_IBM_Gross_144|dt=0.05s|SINGLESHOT rounds=20 p_data=0.0020 q_meas=0.0020 N=144 K=12 P_fail=0.0000
+MFQEC|NL_HypK6_3048|dt=1.93s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00100 N=3048 K=6 P_fail=0.9950 P_raw=0.9900 end_syn=0.03674
+KMC_UNI|nonloc_rp2_aniso_L2r1_s0_Xerr.code|dt=0.01s|KMC beta=3.00 N=6 K=1 trials=100 mean_t=1.7335e+02 median_t=8.9356e+01 capped=0
+KMC_UNI|nonloc_rp2_aniso_hyb21_s2_Zerr.code|dt=0.19s|KMC beta=4.00 N=1758 K=1 trials=100 mean_t=1.2890e+03 median_t=7.7407e+02 capped=0
+STATS|nonloc_hyp_g3_aniso_s1_Zerr.code|dt=0.02s|STATS N=228 M=88 M_meta=1 K=6 max_cw=6 mean_cw=5.18 qdeg=2 d<=4 Delta<=2
+KMC_JGRAD|nonloc_hyp_g3_aniso_s2_Xerr.code|dt=0.19s|KMC beta=3.00 N=3048 K=6 trials=100 mean_t=1.3898e+03 median_t=1.0664e+03 capped=0
+MFQEC|NL_4DToric_486|dt=0.38s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00800 N=486 K=6 P_fail=0.9550 P_raw=0.9700 end_syn=0.09179
+SINGLESHOT|3D_Tor2_Sparse_974|dt=0.55s|SINGLESHOT rounds=20 p_data=0.0160 q_meas=0.0160 N=974 K=2 P_fail=0.6760
+KMC_UNI|nonloc_toric4d_L3_Xerr.code|dt=50.63s|KMC beta=4.00 N=486 K=6 trials=100 mean_t=3.2740e+10 median_t=1.9672e+10 capped=1
+KMC_UNI|nonloc_rp2_aniso_L2r1_s2_Xerr.code|dt=0.11s|KMC beta=3.00 N=762 K=1 trials=100 mean_t=1.3009e+01 median_t=1.1156e+01 capped=0
+KMC_UNI|loc3d_tor2_sparse_hyb21_s2_Xerr.code|dt=0.32s|KMC beta=3.00 N=2224 K=2 trials=100 mean_t=5.8816e+00 median_t=5.4880e+00 capped=0
+MFQEC|NL_IBM_2Gross_288|dt=0.36s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00100 N=288 K=12 P_fail=0.8600 P_raw=0.9150 end_syn=0.03826
+MFQEC|NL_RP2_Aniso_762_Jgrad|dt=0.87s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00050 N=762 K=1 P_fail=0.4700 P_raw=0.4750 end_syn=0.03152
+MFQEC|3D_Tor2_Sparse_974|dt=1.08s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00100 N=974 K=2 P_fail=0.7800 P_raw=0.8000 end_syn=0.03551
+TIMEOUT|KMC_UNI|nonloc_toric4d_L4_Xerr.code
+MFQEC|2D_Toric_800|dt=0.67s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00050 N=800 K=2 P_fail=0.7950 P_raw=0.7400 end_syn=0.03238
+MFQEC|2D_Toric_800|dt=0.61s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00100 N=800 K=2 P_fail=0.7300 P_raw=0.7900 end_syn=0.03580
+MFQEC|NL_RP2_Aniso_762_Jgrad|dt=0.33s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00000 N=762 K=1 P_fail=0.4150 P_raw=0.5400 end_syn=0.02797
+KMC_UNI|nonloc_rp2_aniso_L2r1_s1_Xerr.code|dt=0.24s|KMC beta=5.00 N=57 K=1 trials=100 mean_t=8.1926e+06 median_t=6.1168e+06 capped=0
+KMC_UNI|nonloc_ibm_gross_144_Zerr.code|dt=0.02s|KMC beta=5.00 N=144 K=12 trials=100 mean_t=3.6862e+06 median_t=2.3606e+06 capped=0
+KMC_UNI|nonloc_rp2_aniso_L2r1_s2_Zerr.code|dt=0.10s|KMC beta=3.00 N=762 K=1 trials=100 mean_t=3.8377e+01 median_t=3.1164e+01 capped=0
+TIMEOUT|KMC_UNI|nonloc_rp2_aniso_L2r1_s2_Zerr.code
+KMC_UNI|loc3d_tor2_sparse_L2r1_s0_Xerr.code|dt=0.00s|KMC beta=5.00 N=8 K=2 trials=100 mean_t=4.8519e+03 median_t=3.1835e+03 capped=0
+KMC_UNI|nonloc_rp2_aniso_L2r1_s1_Xerr.code|dt=0.01s|KMC beta=3.00 N=57 K=1 trials=100 mean_t=1.6443e+03 median_t=1.2241e+03 capped=0
+SINGLESHOT|NL_RP2_Hyb_1758|dt=0.89s|SINGLESHOT rounds=20 p_data=0.0010 q_meas=0.0010 N=1758 K=1 P_fail=0.0000
+SINGLESHOT|NL_4DToric_1536|dt=1.36s|SINGLESHOT rounds=20 p_data=0.0080 q_meas=0.0080 N=1536 K=6 P_fail=0.0000
+STATS|nonloc_hyp_g3_aniso_s2_Zerr.code|dt=0.79s|STATS N=3048 M=1712 M_meta=53 K=6 max_cw=6 mean_cw=4.38 qdeg=4 d<=33 Delta<=5
+TIMEOUT|KMC_UNI|nonloc_hyp_g3_aniso_s2_Zerr.code
+KMC_UNI|nonloc_ibm_gross_144_Xerr.code|dt=0.03s|KMC beta=6.00 N=144 K=12 trials=100 mean_t=1.9245e+08 median_t=1.4981e+08 capped=0
+KMC_UNI|loc3d_tor2_aniso_hyb21_s2_Zerr.code|dt=38.39s|KMC beta=6.00 N=2344 K=2 trials=100 mean_t=7.4330e+07 median_t=3.9443e+07 capped=2
+KMC_JGRAD|loc3d_tor2_sparse_L2r1_s2_Xerr.code|dt=0.20s|KMC beta=5.00 N=974 K=2 trials=100 mean_t=2.6834e+06 median_t=1.8763e+06 capped=0
+KMC_UNI|loc3d_tor2_sparse_L2r1_s0_Zerr.code|dt=0.00s|KMC beta=6.00 N=8 K=2 trials=100 mean_t=3.6674e+04 median_t=2.9992e+04 capped=0
+KMC_UNI|nonloc_hyp_g3_aniso_s0_Xerr.code|dt=0.01s|KMC beta=3.00 N=24 K=6 trials=100 mean_t=2.9291e+01 median_t=2.1917e+01 capped=0
+KMC_UNI|nonloc_hyp_g3_aniso_s1_Xerr.code|dt=0.07s|KMC beta=3.00 N=228 K=6 trials=100 mean_t=6.5791e+01 median_t=5.2130e+01 capped=0
+SINGLESHOT|3D_Toric_Membrane_1029|dt=1.73s|SINGLESHOT rounds=20 p_data=0.0010 q_meas=0.0010 N=1029 K=3 P_fail=0.0000
+SINGLESHOT|NL_HypK6_3048|dt=4.09s|SINGLESHOT rounds=20 p_data=0.0080 q_meas=0.0080 N=3048 K=6 P_fail=0.1000
+MFQEC|NL_IBM_2Gross_288|dt=0.44s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00200 N=288 K=12 P_fail=0.9950 P_raw=0.9950 end_syn=0.04924
+KMC_UNI|nonloc_ibm_twogross_288_Xerr.code|dt=0.03s|KMC beta=3.00 N=288 K=12 trials=100 mean_t=3.7257e+02 median_t=2.4818e+02 capped=0
+TIMEOUT|KMC_JGRAD|nonloc_rp2_aniso_L2r1_s2_Zerr.code
+SINGLESHOT|NL_RP2_Aniso_762|dt=0.70s|SINGLESHOT rounds=20 p_data=0.0060 q_meas=0.0060 N=762 K=1 P_fail=0.0040
+MFQEC|3D_Tor2_Sparse_974|dt=1.08s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00200 N=974 K=2 P_fail=0.6950 P_raw=0.7950 end_syn=0.04413
+KMC_UNI|nonloc_ibm_twogross_288_Xerr.code|dt=0.04s|KMC beta=4.00 N=288 K=12 trials=100 mean_t=6.2708e+04 median_t=4.5424e+04 capped=0
+KMC_UNI|nonloc_ibm_twogross_288_Xerr.code|dt=1.70s|KMC beta=6.00 N=288 K=12 trials=100 mean_t=1.6931e+09 median_t=1.3209e+09 capped=0
+TIMEOUT|KMC_JGRAD|nonloc_hyp_g3_aniso_s2_Zerr.code
+KMC_UNI|nonloc_hyp_g3_aniso_s0_Zerr.code|dt=0.00s|KMC beta=7.00 N=24 K=6 trials=100 mean_t=1.1401e+05 median_t=9.7063e+04 capped=0
+MFQEC|3D_Tor2_Sparse_974|dt=1.09s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00400 N=974 K=2 P_fail=0.7700 P_raw=0.7400 end_syn=0.05277
+KMC_UNI|nonloc_ibm_twogross_288_Xerr.code|dt=0.26s|KMC beta=5.00 N=288 K=12 trials=100 mean_t=1.2187e+07 median_t=9.4392e+06 capped=0
+MFQEC|3D_Tor2_Hyb_2224|dt=2.25s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00400 N=2224 K=2 P_fail=0.7650 P_raw=0.7200 end_syn=0.05374
+STATS|loc3d_tor2_sparse_L2r1_s0_Xerr.code|dt=0.01s|STATS N=8 M=4 M_meta=1 K=2 max_cw=4 mean_cw=4.00 qdeg=2 d<=2 Delta<=2
+KMC_UNI|loc3d_tor2_aniso_L2r1_s2_Xerr.code|dt=0.07s|KMC beta=4.00 N=1016 K=2 trials=100 mean_t=7.6714e+01 median_t=6.4203e+01 capped=0
+KMC_UNI|loc3d_tor2_sparse_L2r1_s1_Xerr.code|dt=0.01s|KMC beta=3.00 N=71 K=2 trials=100 mean_t=5.1840e+01 median_t=3.3681e+01 capped=0
+SINGLESHOT|3D_Tor2_Hyb_2224|dt=1.19s|SINGLESHOT rounds=20 p_data=0.0060 q_meas=0.0060 N=2224 K=2 P_fail=0.0040
+SINGLESHOT|NL_RP2_Aniso_762|dt=0.27s|SINGLESHOT rounds=20 p_data=0.0010 q_meas=0.0010 N=762 K=1 P_fail=0.0000
+SINGLESHOT|NL_IBM_2Gross_288|dt=0.16s|SINGLESHOT rounds=20 p_data=0.0040 q_meas=0.0040 N=288 K=12 P_fail=0.0000
+KMC_UNI|nonloc_ibm_twogross_288_Xerr.code|dt=6.83s|KMC beta=7.00 N=288 K=12 trials=100 mean_t=2.6243e+11 median_t=1.7666e+11 capped=0
+MFQEC|3D_Tor2_Sparse_974_Jgrad|dt=0.57s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00800 N=974 K=2 P_fail=0.7200 P_raw=0.7150 end_syn=0.06995
+STATS|loc3d_tor2_aniso_hyb21_s2_Zerr.code|dt=0.42s|STATS N=2344 M=1296 M_meta=41 K=2 max_cw=5 mean_cw=4.40 qdeg=4 d<=47 Delta<=5
+TIMEOUT|KMC_JGRAD|loc3d_tor2_aniso_L2r1_s2_Zerr.code
+STATS|nonloc_ibm_gross_144_Xerr.code|dt=0.01s|STATS N=144 M=72 M_meta=6 K=12 max_cw=6 mean_cw=6.00 qdeg=3 d<=12 Delta<=5
+KMC_UNI|loc3d_tor2_sparse_hyb21_s2_Xerr.code|dt=0.13s|KMC beta=5.00 N=2224 K=2 trials=100 mean_t=2.0515e+02 median_t=1.6589e+02 capped=0
+STATS|nonloc_rp2_aniso_L2r1_s2_Zerr.code|dt=0.12s|STATS N=762 M=436 M_meta=18 K=1 max_cw=5 mean_cw=4.32 qdeg=4 d<=29 Delta<=5
+SINGLESHOT|NL_IBM_2Gross_288|dt=0.12s|SINGLESHOT rounds=20 p_data=0.0080 q_meas=0.0080 N=288 K=12 P_fail=0.0000
+STATS|loc3d_tor2_sparse_L2r1_s1_Xerr.code|dt=0.01s|STATS N=71 M=40 M_meta=2 K=2 max_cw=4 mean_cw=4.00 qdeg=4 d<=8 Delta<=2
+KMC_UNI|nonloc_hyp_g3_aniso_s1_Zerr.code|dt=0.01s|KMC beta=7.00 N=228 K=6 trials=100 mean_t=1.2861e+04 median_t=1.0164e+04 capped=0
+MFQEC|3D_Layer_1853|dt=0.84s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00050 N=1853 K=1 P_fail=0.5000 P_raw=0.5250 end_syn=0.02420
+SINGLESHOT|NL_IBM_Gross_144|dt=0.06s|SINGLESHOT rounds=20 p_data=0.0060 q_meas=0.0060 N=144 K=12 P_fail=0.0000
+KMC_UNI|loc3d_tor2_sparse_L2r1_s2_Zerr.code|dt=0.06s|KMC beta=4.00 N=974 K=2 trials=100 mean_t=2.7486e+03 median_t=1.4597e+03 capped=0
+KMC_UNI|nonloc_hyp_g3_aniso_s1_Zerr.code|dt=0.01s|KMC beta=3.00 N=228 K=6 trials=100 mean_t=4.0276e+00 median_t=3.1635e+00 capped=0
+SINGLESHOT|NL_HypK6_3048|dt=1.30s|SINGLESHOT rounds=20 p_data=0.0020 q_meas=0.0020 N=3048 K=6 P_fail=0.0000
+KMC_UNI|loc3d_tor2_aniso_L2r1_s2_Xerr.code|dt=0.05s|KMC beta=5.00 N=1016 K=2 trials=100 mean_t=1.9307e+03 median_t=1.2773e+03 capped=0
+KMC_UNI|nonloc_hyp_g3_aniso_s1_Xerr.code|dt=6.91s|KMC beta=7.00 N=228 K=6 trials=100 mean_t=3.3471e+09 median_t=2.3608e+09 capped=0
+KMC_UNI|loc3d_tor2_sparse_L2r1_s1_Zerr.code|dt=0.01s|KMC beta=4.00 N=71 K=2 trials=100 mean_t=1.2468e+02 median_t=6.9225e+01 capped=0
+TIMEOUT|KMC_JGRAD|nonloc_rp2_aniso_L2r1_s2_Zerr.code
+KMC_UNI|loc3d_tor2_sparse_L2r1_s2_Xerr.code|dt=0.03s|KMC beta=3.00 N=974 K=2 trials=100 mean_t=6.2346e+00 median_t=5.7454e+00 capped=0
+MFQEC|3D_Tor2_Hyb_2224|dt=0.82s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00100 N=2224 K=2 P_fail=0.7750 P_raw=0.7450 end_syn=0.03628
+KMC_UNI|nonloc_rp2_aniso_L2r1_s0_Zerr.code|dt=0.00s|KMC beta=5.00 N=6 K=1 trials=100 mean_t=1.7357e+04 median_t=1.2922e+04 capped=0
+KMC_UNI|nonloc_rp2_aniso_L2r1_s1_Zerr.code|dt=0.00s|KMC beta=5.00 N=57 K=1 trials=100 mean_t=1.6779e+03 median_t=1.2145e+03 capped=0
+STATS|loc3d_tor2_sparse_hyb21_s2_Xerr.code|dt=0.24s|STATS N=2224 M=984 M_meta=5 K=2 max_cw=6 mean_cw=4.78 qdeg=4 d<=38 Delta<=3
+MFQEC|NL_4DToric_486|dt=0.21s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00050 N=486 K=6 P_fail=0.0000 P_raw=0.0350 end_syn=0.00343
+SINGLESHOT|NL_RP2_Aniso_762|dt=0.33s|SINGLESHOT rounds=20 p_data=0.0080 q_meas=0.0080 N=762 K=1 P_fail=0.0120
+KMC_UNI|nonloc_ibm_gross_144_Xerr.code|dt=0.01s|KMC beta=4.00 N=144 K=12 trials=100 mean_t=4.1273e+04 median_t=2.8770e+04 capped=0
+KMC_UNI|nonloc_rp2_aniso_hyb21_s2_Xerr.code|dt=0.18s|KMC beta=3.00 N=1758 K=1 trials=100 mean_t=1.3927e+01 median_t=1.1958e+01 capped=0
+SINGLESHOT|NL_RP2_Aniso_762|dt=0.29s|SINGLESHOT rounds=20 p_data=0.0020 q_meas=0.0020 N=762 K=1 P_fail=0.0000
+KMC_UNI|loc3d_tor2_sparse_L2r1_s1_Xerr.code|dt=0.01s|KMC beta=6.00 N=71 K=2 trials=100 mean_t=5.0385e+04 median_t=4.2213e+04 capped=0
+STATS|layer_913_Xerr.code|dt=0.22s|STATS N=1853 M=926 M_meta=0 K=1 max_cw=6 mean_cw=3.91 qdeg=3 d<=33 Delta<=2
+SINGLESHOT|NL_IBM_2Gross_288|dt=0.06s|SINGLESHOT rounds=20 p_data=0.0010 q_meas=0.0010 N=288 K=12 P_fail=0.0000
+SINGLESHOT|3D_Layer_1853|dt=0.80s|SINGLESHOT rounds=20 p_data=0.0120 q_meas=0.0120 N=1853 K=1 P_fail=0.2000
+KMC_UNI|loc3d_tor2_aniso_L2r1_s2_Zerr.code|dt=0.06s|KMC beta=4.00 N=1016 K=2 trials=100 mean_t=1.3497e+03 median_t=8.1943e+02 capped=0
+STATS|nonloc_rp2_aniso_L2r1_s1_Xerr.code|dt=0.01s|STATS N=57 M=36 M_meta=5 K=1 max_cw=4 mean_cw=4.00 qdeg=4 d<=10 Delta<=4
+SINGLESHOT|3D_Toric_Membrane_1029|dt=0.68s|SINGLESHOT rounds=20 p_data=0.0040 q_meas=0.0040 N=1029 K=3 P_fail=0.0000
+KMC_UNI|nonloc_rp2_aniso_hyb21_s2_Zerr.code|dt=0.23s|KMC beta=3.00 N=1758 K=1 trials=100 mean_t=2.7599e+01 median_t=2.6071e+01 capped=0
+KMC_UNI|nonloc_rp2_aniso_hyb21_s2_Xerr.code|dt=4.64s|KMC beta=6.00 N=1758 K=1 trials=100 mean_t=4.0441e+06 median_t=2.6038e+06 capped=0
+SINGLESHOT|NL_RP2_Aniso_762|dt=0.30s|SINGLESHOT rounds=20 p_data=0.0040 q_meas=0.0040 N=762 K=1 P_fail=0.0000
+SINGLESHOT|NL_RP2_Hyb_1758|dt=0.74s|SINGLESHOT rounds=20 p_data=0.0020 q_meas=0.0020 N=1758 K=1 P_fail=0.0000
+KMC_UNI|loc3d_tor2_aniso_L2r1_s2_Zerr.code|dt=12.71s|KMC beta=6.00 N=1016 K=2 trials=100 mean_t=8.3616e+07 median_t=3.9239e+07 capped=0
+KMC_UNI|nonloc_rp2_aniso_L2r1_s0_Zerr.code|dt=0.01s|KMC beta=7.00 N=6 K=1 trials=100 mean_t=7.5189e+05 median_t=6.3703e+05 capped=0
+KMC_UNI|nonloc_hyp_g3_aniso_s0_Zerr.code|dt=0.00s|KMC beta=5.00 N=24 K=6 trials=100 mean_t=2.2785e+03 median_t=1.9939e+03 capped=0
+STATS|nonloc_rp2_aniso_hyb21_s2_Xerr.code|dt=0.18s|STATS N=1758 M=828 M_meta=14 K=1 max_cw=6 mean_cw=4.74 qdeg=4 d<=38 Delta<=5
+KMC_UNI|nonloc_hyp_g3_aniso_s0_Zerr.code|dt=0.00s|KMC beta=4.00 N=24 K=6 trials=100 mean_t=3.2089e+02 median_t=2.7129e+02 capped=0
+KMC_UNI|loc3d_tor2_sparse_L2r1_s2_Zerr.code|dt=15.37s|KMC beta=6.00 N=974 K=2 trials=100 mean_t=1.5187e+08 median_t=1.0703e+08 capped=0
+KMC_JGRAD|nonloc_hyp_g3_aniso_s2_Zerr.code|dt=0.90s|KMC beta=3.00 N=3048 K=6 trials=100 mean_t=2.6256e+05 median_t=2.2462e+05 capped=0
+KMC_UNI|nonloc_rp2_aniso_L2r1_s1_Zerr.code|dt=0.01s|KMC beta=4.00 N=57 K=1 trials=100 mean_t=1.7726e+02 median_t=1.2316e+02 capped=0
+KMC_UNI|nonloc_hyp_g3_aniso_s2_Zerr.code|dt=0.17s|KMC beta=4.00 N=3048 K=6 trials=100 mean_t=4.1392e+02 median_t=3.1110e+02 capped=0
+SINGLESHOT|NL_4DToric_486|dt=0.31s|SINGLESHOT rounds=20 p_data=0.0080 q_meas=0.0080 N=486 K=6 P_fail=0.0000
+SINGLESHOT|3D_Tor2_Sparse_974|dt=0.43s|SINGLESHOT rounds=20 p_data=0.0200 q_meas=0.0200 N=974 K=2 P_fail=0.7480
+KMC_UNI|loc3d_tor2_aniso_hyb21_s2_Zerr.code|dt=78.10s|KMC beta=7.00 N=2344 K=2 trials=100 mean_t=1.9070e+09 median_t=2.2005e+09 capped=76
+KMC_JGRAD|nonloc_rp2_aniso_L2r1_s2_Zerr.code|dt=1.54s|KMC beta=3.00 N=762 K=1 trials=100 mean_t=2.4731e+06 median_t=1.6755e+06 capped=0
+STATS|nonloc_ibm_twogross_288_Xerr.code|dt=0.05s|STATS N=288 M=144 M_meta=6 K=12 max_cw=6 mean_cw=6.00 qdeg=3 d<=22 Delta<=6
+SINGLESHOT|NL_IBM_Gross_144|dt=0.07s|SINGLESHOT rounds=20 p_data=0.0080 q_meas=0.0080 N=144 K=12 P_fail=0.0040
+KMC_UNI|nonloc_hyp_g3_aniso_s2_Zerr.code|dt=10.43s|KMC beta=6.00 N=3048 K=6 trials=100 mean_t=2.2125e+07 median_t=1.6981e+07 capped=0
+STATS|toric3d_L7_Zerr.code|dt=0.13s|STATS N=1029 M=343 M_meta=1 K=3 max_cw=6 mean_cw=6.00 qdeg=2 d<=7 Delta<=2
+SINGLESHOT|NL_HypK6_3048|dt=1.52s|SINGLESHOT rounds=20 p_data=0.0200 q_meas=0.0200 N=3048 K=6 P_fail=0.9920
+TIMEOUT|KMC_JGRAD|loc3d_tor2_sparse_L2r1_s2_Zerr.code
+SINGLESHOT|3D_Layer_1853|dt=0.60s|SINGLESHOT rounds=20 p_data=0.0080 q_meas=0.0080 N=1853 K=1 P_fail=0.0120
+KMC_UNI|nonloc_rp2_aniso_hyb21_s2_Xerr.code|dt=51.90s|KMC beta=7.00 N=1758 K=1 trials=100 mean_t=4.4354e+08 median_t=4.2643e+08 capped=21
+MFQEC|NL_RP2_Aniso_762|dt=0.30s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00800 N=762 K=1 P_fail=0.4950 P_raw=0.4950 end_syn=0.07190
+SINGLESHOT|NL_RP2_Hyb_1758|dt=0.77s|SINGLESHOT rounds=20 p_data=0.0200 q_meas=0.0200 N=1758 K=1 P_fail=0.4520
+SINGLESHOT|NL_IBM_Gross_144|dt=0.07s|SINGLESHOT rounds=20 p_data=0.0200 q_meas=0.0200 N=144 K=12 P_fail=0.2000
+KMC_UNI|nonloc_ibm_gross_144_Xerr.code|dt=0.01s|KMC beta=5.00 N=144 K=12 trials=100 mean_t=2.9895e+06 median_t=2.1416e+06 capped=0
+SINGLESHOT|3D_Tor2_Sparse_974|dt=0.35s|SINGLESHOT rounds=20 p_data=0.0060 q_meas=0.0060 N=974 K=2 P_fail=0.0360
+KMC_UNI|nonloc_hyp_g3_aniso_s0_Zerr.code|dt=0.00s|KMC beta=3.00 N=24 K=6 trials=100 mean_t=3.6473e+01 median_t=2.6309e+01 capped=0
+KMC_JGRAD|loc3d_tor2_sparse_L2r1_s2_Zerr.code|dt=0.72s|KMC beta=3.00 N=974 K=2 trials=100 mean_t=7.1507e+05 median_t=6.0011e+05 capped=0
+SINGLESHOT|3D_Tor2_Sparse_974|dt=0.37s|SINGLESHOT rounds=20 p_data=0.0020 q_meas=0.0020 N=974 K=2 P_fail=0.0000
+SINGLESHOT|NL_4DToric_486|dt=0.25s|SINGLESHOT rounds=20 p_data=0.0020 q_meas=0.0020 N=486 K=6 P_fail=0.0000
+KMC_UNI|nonloc_hyp_g3_aniso_s0_Xerr.code|dt=0.01s|KMC beta=5.00 N=24 K=6 trials=100 mean_t=2.3636e+03 median_t=1.7754e+03 capped=0
+SINGLESHOT|NL_HypK6_3048|dt=1.27s|SINGLESHOT rounds=20 p_data=0.0010 q_meas=0.0010 N=3048 K=6 P_fail=0.0000
+SINGLESHOT|NL_RP2_Hyb_1758|dt=0.75s|SINGLESHOT rounds=20 p_data=0.0040 q_meas=0.0040 N=1758 K=1 P_fail=0.0000
+MFQEC|NL_RP2_Aniso_762_Jgrad|dt=0.35s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00800 N=762 K=1 P_fail=0.4750 P_raw=0.4650 end_syn=0.07451
+SINGLESHOT|3D_Layer_1853|dt=0.86s|SINGLESHOT rounds=20 p_data=0.0200 q_meas=0.0200 N=1853 K=1 P_fail=0.4560
+KMC_JGRAD|nonloc_hyp_g3_aniso_s2_Xerr.code|dt=4.82s|KMC beta=4.00 N=3048 K=6 trials=100 mean_t=8.0712e+06 median_t=6.2428e+06 capped=0
+SINGLESHOT|3D_Tor2_Hyb_2224|dt=0.86s|SINGLESHOT rounds=20 p_data=0.0020 q_meas=0.0020 N=2224 K=2 P_fail=0.0000
+KMC_UNI|nonloc_rp2_aniso_L2r1_s1_Zerr.code|dt=0.01s|KMC beta=3.00 N=57 K=1 trials=100 mean_t=2.0353e+01 median_t=1.4394e+01 capped=0
+SINGLESHOT|NL_4DToric_1536|dt=0.98s|SINGLESHOT rounds=20 p_data=0.0120 q_meas=0.0120 N=1536 K=6 P_fail=0.0000
+MFQEC|3D_Tor2_Sparse_974_Jgrad|dt=0.41s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00400 N=974 K=2 P_fail=0.7950 P_raw=0.8000 end_syn=0.05333
+MFQEC|NL_IBM_Gross_144|dt=0.07s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00200 N=144 K=12 P_fail=0.9550 P_raw=0.9650 end_syn=0.04868
+SINGLESHOT|NL_4DToric_486|dt=0.33s|SINGLESHOT rounds=20 p_data=0.0200 q_meas=0.0200 N=486 K=6 P_fail=0.0040
+KMC_UNI|nonloc_hyp_g3_aniso_s2_Xerr.code|dt=0.18s|KMC beta=6.00 N=3048 K=6 trials=100 mean_t=2.1584e+04 median_t=1.3938e+04 capped=0
+KMC_UNI|loc3d_tor2_sparse_L2r1_s2_Zerr.code|dt=78.29s|KMC beta=7.00 N=974 K=2 trials=100 mean_t=6.5429e+09 median_t=7.3984e+09 capped=78
+KMC_UNI|nonloc_rp2_aniso_L2r1_s2_Xerr.code|dt=0.50s|KMC beta=6.00 N=762 K=1 trials=100 mean_t=9.7307e+05 median_t=7.4770e+05 capped=0
+STATS|bdl_tor2_hyb21_s2_Xerr.code|dt=0.50s|STATS N=3160 M=1440 M_meta=17 K=2 max_cw=6 mean_cw=4.83 qdeg=4 d<=48 Delta<=5
+SINGLESHOT|3D_Toric_String_1029|dt=0.32s|SINGLESHOT rounds=20 p_data=0.0040 q_meas=0.0040 N=1029 K=3 P_fail=0.2960
+KMC_UNI|loc3d_tor2_sparse_L2r1_s0_Xerr.code|dt=0.00s|KMC beta=4.00 N=8 K=2 trials=100 mean_t=6.4414e+02 median_t=5.2197e+02 capped=0
+SINGLESHOT|NL_IBM_2Gross_288|dt=0.15s|SINGLESHOT rounds=20 p_data=0.0160 q_meas=0.0160 N=288 K=12 P_fail=0.0400
+KMC_UNI|loc3d_tor2_sparse_hyb21_s2_Zerr.code|dt=29.21s|KMC beta=6.00 N=2224 K=2 trials=100 mean_t=1.1117e+08 median_t=7.6632e+07 capped=4
+KMC_UNI|nonloc_hyp_g3_aniso_s1_Xerr.code|dt=0.08s|KMC beta=5.00 N=228 K=6 trials=100 mean_t=5.9426e+05 median_t=3.6327e+05 capped=0
+STATS|nonloc_rp2_aniso_L2r1_s1_Zerr.code|dt=0.01s|STATS N=57 M=26 M_meta=1 K=1 max_cw=5 mean_cw=4.38 qdeg=2 d<=4 Delta<=2
+KMC_UNI|loc3d_tor2_aniso_L2r1_s2_Zerr.code|dt=0.07s|KMC beta=3.00 N=1016 K=2 trials=100 mean_t=2.7889e+01 median_t=2.5533e+01 capped=0
+KMC_UNI|nonloc_hyp_g3_aniso_s1_Xerr.code|dt=0.74s|KMC beta=6.00 N=228 K=6 trials=100 mean_t=4.8932e+07 median_t=3.6217e+07 capped=0
+KMC_UNI|nonloc_ibm_gross_144_Xerr.code|dt=0.01s|KMC beta=3.00 N=144 K=12 trials=100 mean_t=5.2362e+02 median_t=3.2940e+02 capped=0
+SINGLESHOT|3D_Tor2_Sparse_974|dt=0.43s|SINGLESHOT rounds=20 p_data=0.0120 q_meas=0.0120 N=974 K=2 P_fail=0.5040
+KMC_UNI|nonloc_hyp_g3_aniso_s2_Xerr.code|dt=2.16s|KMC beta=7.00 N=3048 K=6 trials=100 mean_t=3.0747e+06 median_t=1.8379e+06 capped=0
+TIMEOUT|KMC_UNI|nonloc_toric4d_L3_Zerr.code
+TIMEOUT|KMC_UNI|nonloc_toric4d_L4_Xerr.code
+SINGLESHOT|NL_4DToric_1536|dt=0.72s|SINGLESHOT rounds=20 p_data=0.0010 q_meas=0.0010 N=1536 K=6 P_fail=0.0000
+TIMEOUT|KMC_UNI|nonloc_toric4d_L4_Xerr.code
+SINGLESHOT|NL_4DToric_486|dt=0.23s|SINGLESHOT rounds=20 p_data=0.0040 q_meas=0.0040 N=486 K=6 P_fail=0.0000
+KMC_UNI|nonloc_rp2_aniso_hyb21_s2_Zerr.code|dt=1.82s|KMC beta=5.00 N=1758 K=1 trials=100 mean_t=6.1252e+05 median_t=3.6552e+05 capped=0
+KMC_JGRAD|nonloc_hyp_g3_aniso_s2_Zerr.code|dt=47.72s|KMC beta=4.00 N=3048 K=6 trials=100 mean_t=6.4712e+08 median_t=4.0327e+08 capped=7
+KMC_UNI|nonloc_rp2_aniso_L2r1_s1_Xerr.code|dt=7.57s|KMC beta=7.00 N=57 K=1 trials=100 mean_t=3.2839e+10 median_t=2.0878e+10 capped=0
+KMC_UNI|nonloc_rp2_aniso_L2r1_s1_Xerr.code|dt=0.02s|KMC beta=4.00 N=57 K=1 trials=100 mean_t=1.2207e+05 median_t=7.8362e+04 capped=0
+MFQEC|2D_Toric_800|dt=0.17s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00000 N=800 K=2 P_fail=0.7000 P_raw=0.7250 end_syn=0.02793
+MFQEC|NL_IBM_Gross_144|dt=0.06s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00400 N=144 K=12 P_fail=1.0000 P_raw=1.0000 end_syn=0.06236
+STATS|nonloc_toric4d_L4_Zerr.code|dt=0.27s|STATS N=1536 M=1024 M_meta=259 K=6 max_cw=6 mean_cw=6.00 qdeg=4 d<=20 Delta<=10
+KMC_UNI|nonloc_rp2_aniso_L2r1_s2_Xerr.code|dt=0.05s|KMC beta=4.00 N=762 K=1 trials=100 mean_t=1.7502e+02 median_t=1.2921e+02 capped=0
+MFQEC|3D_Layer_1853|dt=0.85s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00400 N=1853 K=1 P_fail=0.5300 P_raw=0.4800 end_syn=0.04275
+KMC_UNI|loc3d_tor2_sparse_L2r1_s2_Xerr.code|dt=0.04s|KMC beta=6.00 N=974 K=2 trials=100 mean_t=4.4101e+03 median_t=2.7020e+03 capped=0
+KMC_UNI|loc3d_tor2_aniso_L2r1_s2_Xerr.code|dt=0.13s|KMC beta=6.00 N=1016 K=2 trials=100 mean_t=8.1389e+04 median_t=5.0866e+04 capped=0
+STATS|nonloc_hyp_g3_aniso_s2_Xerr.code|dt=0.58s|STATS N=3048 M=1392 M_meta=9 K=6 max_cw=6 mean_cw=4.76 qdeg=4 d<=24 Delta<=4
+SINGLESHOT|NL_4DToric_1536|dt=1.02s|SINGLESHOT rounds=20 p_data=0.0040 q_meas=0.0040 N=1536 K=6 P_fail=0.0000
+SINGLESHOT|3D_Tor2_Hyb_2224|dt=1.09s|SINGLESHOT rounds=20 p_data=0.0160 q_meas=0.0160 N=2224 K=2 P_fail=0.7520
+KMC_UNI|nonloc_ibm_gross_144_Zerr.code|dt=0.02s|KMC beta=4.00 N=144 K=12 trials=100 mean_t=4.8492e+04 median_t=3.8576e+04 capped=0
+SINGLESHOT|NL_IBM_2Gross_288|dt=0.33s|SINGLESHOT rounds=20 p_data=0.0120 q_meas=0.0120 N=288 K=12 P_fail=0.0000
+SINGLESHOT|NL_4DToric_1536|dt=2.41s|SINGLESHOT rounds=20 p_data=0.0020 q_meas=0.0020 N=1536 K=6 P_fail=0.0000
+SINGLESHOT|NL_4DToric_486|dt=0.70s|SINGLESHOT rounds=20 p_data=0.0060 q_meas=0.0060 N=486 K=6 P_fail=0.0000
+KMC_UNI|loc3d_tor2_sparse_L2r1_s1_Zerr.code|dt=0.01s|KMC beta=5.00 N=71 K=2 trials=100 mean_t=1.0160e+03 median_t=8.2714e+02 capped=0
+MFQEC|NL_HypK6_3048|dt=3.06s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00200 N=3048 K=6 P_fail=0.9750 P_raw=0.9900 end_syn=0.04330
+SINGLESHOT|2D_Toric_800|dt=0.73s|SINGLESHOT rounds=20 p_data=0.0080 q_meas=0.0080 N=800 K=2 P_fail=0.0240
+KMC_UNI|nonloc_hyp_g3_aniso_s0_Zerr.code|dt=0.01s|KMC beta=6.00 N=24 K=6 trials=100 mean_t=1.5373e+04 median_t=1.3868e+04 capped=0
+TIMEOUT|KMC_UNI|nonloc_toric4d_L4_Xerr.code
+SINGLESHOT|NL_RP2_Hyb_1758|dt=1.80s|SINGLESHOT rounds=20 p_data=0.0080 q_meas=0.0080 N=1758 K=1 P_fail=0.0040
+TIMEOUT|KMC_UNI|loc3d_tor2_aniso_L2r1_s2_Zerr.code
+KMC_UNI|nonloc_rp2_aniso_L2r1_s2_Xerr.code|dt=0.17s|KMC beta=5.00 N=762 K=1 trials=100 mean_t=1.0532e+04 median_t=8.3457e+03 capped=0
+SINGLESHOT|NL_4DToric_486|dt=0.71s|SINGLESHOT rounds=20 p_data=0.0120 q_meas=0.0120 N=486 K=6 P_fail=0.0000
+KMC_UNI|nonloc_ibm_twogross_288_Zerr.code|dt=1.44s|KMC beta=6.00 N=288 K=12 trials=100 mean_t=1.8191e+09 median_t=1.2838e+09 capped=0
+KMC_UNI|loc3d_tor2_aniso_L2r1_s2_Zerr.code|dt=1.48s|KMC beta=5.00 N=1016 K=2 trials=100 mean_t=5.0802e+05 median_t=3.6067e+05 capped=0
+TIMEOUT|KMC_JGRAD|nonloc_rp2_aniso_L2r1_s2_Zerr.code
+KMC_UNI|nonloc_hyp_g3_aniso_s1_Zerr.code|dt=0.01s|KMC beta=5.00 N=228 K=6 trials=100 mean_t=1.9916e+02 median_t=1.4351e+02 capped=0
+MFQEC|NL_4DToric_486|dt=0.67s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00100 N=486 K=6 P_fail=0.0100 P_raw=0.0500 end_syn=0.00664
+KMC_UNI|loc3d_tor2_aniso_hyb21_s2_Zerr.code|dt=2.17s|KMC beta=5.00 N=2344 K=2 trials=100 mean_t=2.9468e+05 median_t=2.1036e+05 capped=0
+TIMEOUT|KMC_JGRAD|nonloc_rp2_aniso_L2r1_s2_Xerr.code
+KMC_UNI|nonloc_ibm_gross_144_Zerr.code|dt=0.05s|KMC beta=6.00 N=144 K=12 trials=100 mean_t=1.9498e+08 median_t=1.2889e+08 capped=0
+KMC_UNI|loc3d_tor2_sparse_L2r1_s0_Zerr.code|dt=0.01s|KMC beta=5.00 N=8 K=2 trials=100 mean_t=4.9243e+03 median_t=3.8723e+03 capped=0
+SINGLESHOT|3D_Tor2_Sparse_974|dt=0.67s|SINGLESHOT rounds=20 p_data=0.0010 q_meas=0.0010 N=974 K=2 P_fail=0.0000
+MFQEC|NL_RP2_Aniso_762|dt=0.67s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00100 N=762 K=1 P_fail=0.5450 P_raw=0.5100 end_syn=0.03589
+KMC_UNI|nonloc_rp2_aniso_L2r1_s2_Zerr.code|dt=0.13s|KMC beta=4.00 N=762 K=1 trials=100 mean_t=3.0511e+03 median_t=1.7111e+03 capped=0
+STATS|toric3d_L7_Xerr.code|dt=0.82s|STATS N=1029 M=1029 M_meta=345 K=3 max_cw=4 mean_cw=4.00 qdeg=4 d<=71 Delta<=18
+SINGLESHOT|3D_Tor2_Hyb_2224|dt=2.08s|SINGLESHOT rounds=20 p_data=0.0010 q_meas=0.0010 N=2224 K=2 P_fail=0.0000
+KMC_UNI|nonloc_ibm_gross_144_Xerr.code|dt=0.10s|KMC beta=7.00 N=144 K=12 trials=100 mean_t=1.1263e+10 median_t=8.4235e+09 capped=0
+KMC_UNI|nonloc_rp2_aniso_L2r1_s0_Zerr.code|dt=0.01s|KMC beta=4.00 N=6 K=1 trials=100 mean_t=2.0056e+03 median_t=1.6459e+03 capped=0
+STATS|nonloc_toric4d_L3_Zerr.code|dt=0.16s|STATS N=486 M=324 M_meta=84 K=6 max_cw=6 mean_cw=6.00 qdeg=4 d<=9 Delta<=8
+KMC_UNI|loc3d_tor2_aniso_hyb21_s2_Xerr.code|dt=66.05s|KMC beta=7.00 N=2344 K=2 trials=100 mean_t=1.4939e+08 median_t=1.0154e+08 capped=5
+TIMEOUT|KMC_UNI|nonloc_toric4d_L4_Zerr.code
+MFQEC|NL_IBM_Gross_144|dt=0.08s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00000 N=144 K=12 P_fail=0.3800 P_raw=0.4050 end_syn=0.01590
+KMC_UNI|loc3d_tor2_sparse_L2r1_s1_Zerr.code|dt=0.01s|KMC beta=6.00 N=71 K=2 trials=100 mean_t=9.3798e+03 median_t=7.0356e+03 capped=0
+KMC_UNI|nonloc_rp2_aniso_L2r1_s2_Xerr.code|dt=15.93s|KMC beta=7.00 N=762 K=1 trials=100 mean_t=1.0452e+08 median_t=7.2340e+07 capped=0
+SINGLESHOT|2D_Toric_800|dt=0.72s|SINGLESHOT rounds=20 p_data=0.0060 q_meas=0.0060 N=800 K=2 P_fail=0.0040
+SINGLESHOT|NL_HypK6_3048|dt=3.11s|SINGLESHOT rounds=20 p_data=0.0040 q_meas=0.0040 N=3048 K=6 P_fail=0.0000
+STATS|nonloc_hyp_g3_aniso_s1_Xerr.code|dt=0.04s|STATS N=228 M=144 M_meta=9 K=6 max_cw=4 mean_cw=4.00 qdeg=4 d<=10 Delta<=4
+STATS|loc3d_tor2_aniso_L2r1_s2_Xerr.code|dt=0.37s|STATS N=1016 M=464 M_meta=5 K=2 max_cw=6 mean_cw=4.76 qdeg=4 d<=20 Delta<=3
+STATS|bdl_rp2_hyb21_s2_Xerr.code|dt=0.65s|STATS N=2370 M=1080 M_meta=14 K=1 max_cw=6 mean_cw=4.83 qdeg=4 d<=56 Delta<=5
+KMC_UNI|nonloc_rp2_aniso_L2r1_s1_Xerr.code|dt=2.23s|KMC beta=6.00 N=57 K=1 trials=100 mean_t=4.0880e+08 median_t=3.1163e+08 capped=0
+TIMEOUT|KMC_UNI|nonloc_toric4d_L3_Zerr.code
+SINGLESHOT|2D_Toric_800|dt=0.76s|SINGLESHOT rounds=20 p_data=0.0120 q_meas=0.0120 N=800 K=2 P_fail=0.2760
+KMC_UNI|nonloc_rp2_aniso_L2r1_s0_Zerr.code|dt=0.01s|KMC beta=3.00 N=6 K=1 trials=100 mean_t=3.3595e+02 median_t=2.5282e+02 capped=0
+SINGLESHOT|NL_IBM_2Gross_288|dt=0.19s|SINGLESHOT rounds=20 p_data=0.0020 q_meas=0.0020 N=288 K=12 P_fail=0.0000
+TIMEOUT|KMC_UNI|nonloc_toric4d_L3_Xerr.code
+KMC_UNI|loc3d_tor2_sparse_L2r1_s0_Xerr.code|dt=0.01s|KMC beta=6.00 N=8 K=2 trials=100 mean_t=3.7133e+04 median_t=2.5015e+04 capped=0
+MFQEC|3D_Tor2_Sparse_974|dt=0.52s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00000 N=974 K=2 P_fail=0.7300 P_raw=0.6950 end_syn=0.02844
+KMC_UNI|nonloc_rp2_aniso_L2r1_s0_Xerr.code|dt=0.01s|KMC beta=6.00 N=6 K=1 trials=100 mean_t=6.7643e+04 median_t=4.5892e+04 capped=0
+TIMEOUT|KMC_UNI|nonloc_toric4d_L3_Xerr.code
+MFQEC|NL_HypK6_3048|dt=3.03s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00800 N=3048 K=6 P_fail=0.9800 P_raw=0.9800 end_syn=0.07347
+MFQEC|NL_HypK6_3048|dt=2.89s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00050 N=3048 K=6 P_fail=0.9900 P_raw=0.9950 end_syn=0.03245
+KMC_UNI|loc3d_tor2_sparse_hyb21_s2_Zerr.code|dt=0.27s|KMC beta=4.00 N=2224 K=2 trials=100 mean_t=1.4327e+03 median_t=9.0063e+02 capped=0
+STATS|loc3d_tor2_aniso_L2r1_s2_Zerr.code|dt=0.45s|STATS N=1016 M=576 M_meta=21 K=2 max_cw=5 mean_cw=4.31 qdeg=4 d<=24 Delta<=5
+SINGLESHOT|NL_IBM_2Gross_288|dt=0.30s|SINGLESHOT rounds=20 p_data=0.0060 q_meas=0.0060 N=288 K=12 P_fail=0.0000
+KMC_UNI|nonloc_hyp_g3_aniso_s1_Zerr.code|dt=0.01s|KMC beta=4.00 N=228 K=6 trials=100 mean_t=2.1302e+01 median_t=1.3071e+01 capped=0
+KMC_UNI|loc3d_tor2_aniso_hyb21_s2_Xerr.code|dt=0.36s|KMC beta=4.00 N=2344 K=2 trials=100 mean_t=8.9690e+01 median_t=7.4752e+01 capped=0
+SINGLESHOT|3D_Tor2_Hyb_2224|dt=2.43s|SINGLESHOT rounds=20 p_data=0.0120 q_meas=0.0120 N=2224 K=2 P_fail=0.6320
+KMC_UNI|nonloc_rp2_aniso_L2r1_s0_Xerr.code|dt=0.01s|KMC beta=7.00 N=6 K=1 trials=100 mean_t=4.2540e+05 median_t=2.8555e+05 capped=0
+KMC_UNI|nonloc_hyp_g3_aniso_s2_Xerr.code|dt=0.44s|KMC beta=4.00 N=3048 K=6 trials=100 mean_t=2.8321e+01 median_t=2.5211e+01 capped=0
+SINGLESHOT|3D_Layer_1853|dt=1.63s|SINGLESHOT rounds=20 p_data=0.0040 q_meas=0.0040 N=1853 K=1 P_fail=0.0000
+TIMEOUT|KMC_JGRAD|nonloc_hyp_g3_aniso_s2_Xerr.code
+SINGLESHOT|NL_HypK6_3048|dt=3.63s|SINGLESHOT rounds=20 p_data=0.0060 q_meas=0.0060 N=3048 K=6 P_fail=0.0120
+SINGLESHOT|NL_RP2_Hyb_1758|dt=1.79s|SINGLESHOT rounds=20 p_data=0.0060 q_meas=0.0060 N=1758 K=1 P_fail=0.0000
+MFQEC|NL_IBM_2Gross_288|dt=0.29s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00400 N=288 K=12 P_fail=1.0000 P_raw=1.0000 end_syn=0.06097
+KMC_UNI|loc3d_tor2_sparse_L2r1_s2_Zerr.code|dt=0.12s|KMC beta=3.00 N=974 K=2 trials=100 mean_t=3.3615e+01 median_t=2.8898e+01 capped=0
+KMC_UNI|loc3d_tor2_sparse_hyb21_s2_Xerr.code|dt=1.64s|KMC beta=7.00 N=2224 K=2 trials=100 mean_t=4.5479e+05 median_t=2.6099e+05 capped=0
+KMC_UNI|loc3d_tor2_aniso_L2r1_s2_Xerr.code|dt=0.10s|KMC beta=3.00 N=1016 K=2 trials=100 mean_t=9.2676e+00 median_t=8.4383e+00 capped=0
+KMC_JGRAD|loc3d_tor2_sparse_L2r1_s2_Zerr.code|dt=66.33s|KMC beta=4.00 N=974 K=2 trials=100 mean_t=1.0495e+09 median_t=7.9042e+08 capped=1
+SINGLESHOT|3D_Toric_Membrane_1029|dt=1.68s|SINGLESHOT rounds=20 p_data=0.0160 q_meas=0.0160 N=1029 K=3 P_fail=0.0000
+MFQEC|3D_Tor2_Sparse_974_Jgrad|dt=0.52s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00000 N=974 K=2 P_fail=0.7250 P_raw=0.7300 end_syn=0.02814
+SINGLESHOT|NL_RP2_Aniso_762|dt=0.73s|SINGLESHOT rounds=20 p_data=0.0120 q_meas=0.0120 N=762 K=1 P_fail=0.1520
+SINGLESHOT|3D_Tor2_Hyb_2224|dt=2.59s|SINGLESHOT rounds=20 p_data=0.0200 q_meas=0.0200 N=2224 K=2 P_fail=0.7160
+TIMEOUT|KMC_UNI|nonloc_toric4d_L4_Zerr.code
+TIMEOUT|KMC_UNI|nonloc_toric4d_L4_Zerr.code
+SINGLESHOT|3D_Toric_String_1029|dt=0.92s|SINGLESHOT rounds=20 p_data=0.0200 q_meas=0.0200 N=1029 K=3 P_fail=0.8880
+SINGLESHOT|NL_HypK6_3048|dt=3.65s|SINGLESHOT rounds=20 p_data=0.0160 q_meas=0.0160 N=3048 K=6 P_fail=0.9640
+KMC_JGRAD|loc3d_tor2_aniso_L2r1_s2_Zerr.code|dt=2.03s|KMC beta=3.00 N=1016 K=2 trials=100 mean_t=1.1115e+06 median_t=6.9970e+05 capped=0
+SINGLESHOT|2D_Toric_800|dt=0.76s|SINGLESHOT rounds=20 p_data=0.0160 q_meas=0.0160 N=800 K=2 P_fail=0.5880
+SINGLESHOT|NL_RP2_Hyb_1758|dt=1.98s|SINGLESHOT rounds=20 p_data=0.0160 q_meas=0.0160 N=1758 K=1 P_fail=0.3800
+STATS|loc3d_tor2_sparse_L2r1_s1_Zerr.code|dt=0.01s|STATS N=71 M=32 M_meta=1 K=2 max_cw=5 mean_cw=4.44 qdeg=2 d<=4 Delta<=2
+KMC_UNI|loc3d_tor2_aniso_hyb21_s2_Zerr.code|dt=0.63s|KMC beta=3.00 N=2344 K=2 trials=100 mean_t=2.2156e+01 median_t=2.0093e+01 capped=0
+SINGLESHOT|2D_Toric_800|dt=0.71s|SINGLESHOT rounds=20 p_data=0.0040 q_meas=0.0040 N=800 K=2 P_fail=0.0000
+STATS|layer_913_Zerr.code|dt=0.40s|STATS N=1853 M=926 M_meta=0 K=1 max_cw=6 mean_cw=3.91 qdeg=3 d<=18 Delta<=2
+STATS|nonloc_rp2_aniso_L2r1_s0_Zerr.code|dt=0.01s|STATS N=6 M=4 M_meta=1 K=1 max_cw=3 mean_cw=3.00 qdeg=2 d<=3 Delta<=2
+KMC_UNI|loc3d_tor2_sparse_hyb21_s2_Zerr.code|dt=3.00s|KMC beta=5.00 N=2224 K=2 trials=100 mean_t=5.7428e+05 median_t=3.9884e+05 capped=0
+SINGLESHOT|3D_Layer_1853|dt=1.81s|SINGLESHOT rounds=20 p_data=0.0160 q_meas=0.0160 N=1853 K=1 P_fail=0.4360
+STATS|nonloc_hyp_g3_aniso_s0_Xerr.code|dt=0.01s|STATS N=24 M=12 M_meta=1 K=6 max_cw=4 mean_cw=4.00 qdeg=2 d<=2 Delta<=2
+KMC_UNI|loc3d_tor2_sparse_L2r1_s0_Zerr.code|dt=0.01s|KMC beta=3.00 N=8 K=2 trials=100 mean_t=8.4446e+01 median_t=6.9429e+01 capped=0
+MFQEC|NL_RP2_Aniso_762|dt=0.67s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00200 N=762 K=1 P_fail=0.4500 P_raw=0.4700 end_syn=0.04352
+KMC_JGRAD|nonloc_rp2_aniso_L2r1_s2_Xerr.code|dt=0.62s|KMC beta=3.00 N=762 K=1 trials=100 mean_t=8.8796e+04 median_t=5.7727e+04 capped=0
+MFQEC|NL_RP2_Aniso_762_Jgrad|dt=0.67s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00400 N=762 K=1 P_fail=0.5000 P_raw=0.4700 end_syn=0.05601
+MFQEC|3D_Tor2_Hyb_2224|dt=1.32s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00000 N=2224 K=2 P_fail=0.7700 P_raw=0.7500 end_syn=0.02776
+STATS|nonloc_rp2_aniso_hyb21_s2_Zerr.code|dt=0.43s|STATS N=1758 M=976 M_meta=33 K=1 max_cw=5 mean_cw=4.41 qdeg=4 d<=51 Delta<=5
+TIMEOUT|KMC_JGRAD|loc3d_tor2_aniso_L2r1_s2_Zerr.code
+KMC_UNI|nonloc_ibm_twogross_288_Zerr.code|dt=0.02s|KMC beta=3.00 N=288 K=12 trials=100 mean_t=3.7665e+02 median_t=3.1521e+02 capped=0
+STATS|nonloc_ibm_gross_144_Zerr.code|dt=0.03s|STATS N=144 M=72 M_meta=6 K=12 max_cw=6 mean_cw=6.00 qdeg=3 d<=12 Delta<=5
+KMC_UNI|loc3d_tor2_sparse_L2r1_s0_Zerr.code|dt=0.01s|KMC beta=4.00 N=8 K=2 trials=100 mean_t=6.5265e+02 median_t=5.0763e+02 capped=0
+KMC_UNI|nonloc_rp2_aniso_L2r1_s0_Zerr.code|dt=0.01s|KMC beta=6.00 N=6 K=1 trials=100 mean_t=1.3115e+05 median_t=9.9823e+04 capped=0
+STATS|loc3d_tor2_sparse_L2r1_s2_Xerr.code|dt=0.31s|STATS N=974 M=424 M_meta=2 K=2 max_cw=6 mean_cw=4.79 qdeg=4 d<=20 Delta<=2
+SINGLESHOT|3D_Toric_String_1029|dt=0.67s|SINGLESHOT rounds=20 p_data=0.0010 q_meas=0.0010 N=1029 K=3 P_fail=0.0040
+STATS|nonloc_ibm_twogross_288_Zerr.code|dt=0.07s|STATS N=288 M=144 M_meta=6 K=12 max_cw=6 mean_cw=6.00 qdeg=3 d<=20 Delta<=6
+SINGLESHOT|NL_HypK6_3048|dt=3.62s|SINGLESHOT rounds=20 p_data=0.0120 q_meas=0.0120 N=3048 K=6 P_fail=0.7680
+KMC_UNI|loc3d_tor2_sparse_L2r1_s2_Xerr.code|dt=0.08s|KMC beta=5.00 N=974 K=2 trials=100 mean_t=2.8036e+02 median_t=1.9529e+02 capped=0
+KMC_UNI|nonloc_hyp_g3_aniso_s0_Xerr.code|dt=0.01s|KMC beta=6.00 N=24 K=6 trials=100 mean_t=1.4375e+04 median_t=1.1256e+04 capped=0
+SINGLESHOT|NL_RP2_Aniso_762|dt=0.74s|SINGLESHOT rounds=20 p_data=0.0160 q_meas=0.0160 N=762 K=1 P_fail=0.3160
+TIMEOUT|KMC_JGRAD|loc3d_tor2_sparse_L2r1_s2_Zerr.code
+KMC_UNI|loc3d_tor2_sparse_L2r1_s1_Xerr.code|dt=0.01s|KMC beta=4.00 N=71 K=2 trials=100 mean_t=7.2811e+02 median_t=3.7945e+02 capped=0
+STATS|bdl_tor2_hyb21_s2_Zerr.code|dt=1.42s|STATS N=3160 M=1808 M_meta=73 K=2 max_cw=6 mean_cw=4.35 qdeg=4 d<=53 Delta<=5
+KMC_UNI|nonloc_rp2_aniso_hyb21_s2_Xerr.code|dt=0.56s|KMC beta=5.00 N=1758 K=1 trials=100 mean_t=2.0417e+04 median_t=1.3461e+04 capped=0
+SINGLESHOT|2D_Toric_800|dt=0.64s|SINGLESHOT rounds=20 p_data=0.0020 q_meas=0.0020 N=800 K=2 P_fail=0.0000
+KMC_UNI|loc3d_tor2_sparse_L2r1_s1_Xerr.code|dt=0.01s|KMC beta=5.00 N=71 K=2 trials=100 mean_t=5.5805e+03 median_t=4.4533e+03 capped=0
+KMC_UNI|nonloc_toric4d_L3_Xerr.code|dt=0.63s|KMC beta=3.00 N=486 K=6 trials=100 mean_t=8.0989e+06 median_t=5.3770e+06 capped=0
+KMC_UNI|loc3d_tor2_sparse_L2r1_s2_Xerr.code|dt=0.07s|KMC beta=7.00 N=974 K=2 trials=100 mean_t=3.9108e+04 median_t=2.8961e+04 capped=0
+KMC_UNI|nonloc_rp2_aniso_hyb21_s2_Xerr.code|dt=0.25s|KMC beta=4.00 N=1758 K=1 trials=100 mean_t=1.7880e+02 median_t=1.3226e+02 capped=0
+KMC_UNI|loc3d_tor2_aniso_hyb21_s2_Xerr.code|dt=0.30s|KMC beta=5.00 N=2344 K=2 trials=100 mean_t=4.4416e+03 median_t=2.9370e+03 capped=0
+STATS|nonloc_rp2_aniso_L2r1_s2_Xerr.code|dt=0.19s|STATS N=762 M=348 M_meta=5 K=1 max_cw=6 mean_cw=4.76 qdeg=4 d<=21 Delta<=4
+MFQEC|NL_4DToric_486|dt=0.25s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00000 N=486 K=6 P_fail=0.0000 P_raw=0.0100 end_syn=0.00040
+STATS|toric2d_L20_Zerr.code|dt=0.22s|STATS N=800 M=400 M_meta=1 K=2 max_cw=4 mean_cw=4.00 qdeg=2 d<=24 Delta<=2
+STATS|nonloc_toric4d_L3_Xerr.code|dt=0.16s|STATS N=486 M=324 M_meta=84 K=6 max_cw=6 mean_cw=6.00 qdeg=4 d<=9 Delta<=8
+MFQEC|NL_RP2_Aniso_762|dt=0.41s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00000 N=762 K=1 P_fail=0.3750 P_raw=0.5200 end_syn=0.02776
+SINGLESHOT|3D_Toric_String_1029|dt=0.91s|SINGLESHOT rounds=20 p_data=0.0060 q_meas=0.0060 N=1029 K=3 P_fail=0.7520
+SINGLESHOT|3D_Tor2_Sparse_974|dt=0.89s|SINGLESHOT rounds=20 p_data=0.0080 q_meas=0.0080 N=974 K=2 P_fail=0.1320
+MFQEC|2D_Toric_800|dt=1.27s|MFQEC sweeps=150 p_env=0.0020 p_gate=0.00800 N=800 K=2 P_fail=0.7100 P_raw=0.7750 end_syn=0.06933
+SINGLESHOT|NL_IBM_Gross_144|dt=0.29s|SINGLESHOT rounds=20 p_data=0.0160 q_meas=0.0160 N=144 K=12 P_fail=0.0880
+SINGLESHOT|3D_Tor2_Sparse_974|dt=1.59s|SINGLESHOT rounds=20 p_data=0.0040 q_meas=0.0040 N=974 K=2 P_fail=0.0040

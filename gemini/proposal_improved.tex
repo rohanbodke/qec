@@ -1,0 +1,53 @@
+\documentclass[aps,prx,reprint,superscriptaddress,nofootinbib,floatfix]{revtex4-2}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!65!black,citecolor=blue!65!black,urlcolor=blue!65!black]{hyperref}
+
+\begin{document}
+
+\title{Project Proposal: Simulating Three-Dimensional Self-Correcting Quantum Memories}
+
+\author{Harshil Avlani}
+\affiliation{Department of Physics and Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139, USA}
+\author{Rohan Bodke}
+\affiliation{Department of Physics and Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139, USA}
+\author{Rushil Shah}
+\affiliation{Department of Physics and Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139, USA}
+\author{Yichen Li}
+\affiliation{Department of Physics and Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139, USA}
+
+\date{November 2026 --- MIT 6.S980: Quantum Error Correction}
+
+\begin{abstract}
+A passive self-correcting quantum memory protects quantum states in a cold bath without measurements, using local check penalties so larger codes live exponentially longer. Recent proofs establish three-dimensional self-correction by welding surface-code sheets across all scales, but require roughly $5.4 \times 10^{24}$ expansion per step---or $56{,}312$ qubits per cycle on a cubic grid without a completed lifetime proof. We propose to shrink welded cells down to realistic scales ($100$ to $56{,}312$ qubits), validate a C++ continuous-time Monte Carlo and Forward Flux Sampling simulator on published three-dimensional Toric and Random Layer Code benchmarks, and determine the smallest working welded cell, the cost of cubic-grid wire stretching, multi-cycle self-correction crossings, and thermal cooling schedules past three-way junctions.
+\end{abstract}
+
+\maketitle
+
+\section{Motivation}
+
+Standard quantum error correction is active: circuits measure local checks thousands of times per second, and a classical decoder fixes errors continuously. If measurements stop, thermal noise quickly destroys the stored state. A passive self-correcting memory works instead like a magnetic hard drive \cite{quantumMemories}, storing qubits in the ground states of local check penalties inside a cold bath at temperature $T$ so errors cost energy $\Delta E > 0$ and heal naturally without measurements.
+
+True self-correction requires memory lifetime to grow without bound as system size grows at fixed $T < T_c$. This depends on the free-energy balance $\Delta F = \Delta E - T\,\Delta S$, which weighs the energy barrier $\Delta E$ against the entropy $\Delta S$ of zero-energy error paths. Two-dimensional toric codes fail because defects walk across the grid at flat energy cost once created, so lifetime drops inversely with size \cite{selfcorrecting2D}. Three-dimensional crystal codes with identical checks at every site, such as Haah's Cubic Code \cite{haah2011cubic}, block free string walks, but fractal symmetry limits their barrier to grow logarithmically \cite{yoshida2011, bravyi_haah2013}, causing lifetime to turn over above a finite size ceiling. Sparse-seam sheet codes either leave flat regions where defects wander freely \cite{michnicki2014, siva2017} or, with randomized check layers \cite{layercodesyale}, self-correct only up to a finite cutoff.
+
+Balasubramanian, Davydova, and Lin (BDL) recently proved that three-dimensional thermal self-correction exists \cite{selfcorrecting3D}, and Hayden proved zero-temperature quantum stability \cite{hayden2026}, by welding parallel surface-code sheets with perpendicular bridges across all scales so defects split at three-way junctions. However, both completed proofs expand lattice size by roughly $5.4 \times 10^{24}$ per step, and BDL's explicit scale-$8$ cubic-grid code already needs $56{,}312$ qubits for one cycle while leaving its lifetime proof open. Hayden (Section~8.3 of Ref.~\cite{hayden2026}) identifies leaner welded cells and passive cooling past three-way junctions as central open problems, motivating direct simulation.
+
+\section{Goals}
+
+We will shrink welded codes to tractable sizes ($100$ to $56{,}312$ qubits) to answer three focused questions. First, shrinking BDL's $8 \times 8$ square to $2 \times 2$ and $3 \times 3$ cells---and testing pruned bridges---will determine the smallest uniform confining cell that preserves logical qubits, while cubic-grid embeddings up to $56{,}312$ qubits will measure the cost of multi-qubit wire stretching and test fixed-budget check re-weighting. Second, holding bath temperature fixed while growing code size across two full $(X, Z)$ cycles---including pre-balanced bridge counts across odd and even steps---will test multi-cycle crossings against Toric, Random Layer \cite{layercodesyale}, and Cubic \cite{haah2011cubic} baselines. Third, cooling runs will compare automatic healing of small storage errors against gradual annealing versus sudden quenches from hot random states.
+
+\section{Methods and Validation}
+
+Our recursive builder places $Z$ checks on faces, qubits on edges, and $X$ checks at corners, optimizing local corner generators to keep check weights at most $6$ or $7$ while verifying exact commutation up to $56{,}312$ qubits. Single-qubit flips follow the Glauber rate $(1 + e^{\Delta E / T})^{-1}$ \cite{davies1974}, simulated separately for $X$ and $Z$ errors in C++ on the MIT SubMIT cluster via rejection-free continuous-time Monte Carlo \cite{bkl1975} and Union-Find decoding \cite{delfosse_uf, panteleev_bposd}. At cold temperatures, Forward Flux Sampling \cite{allen_ffs2005} with full ground-codeword relaxation reaches lifetimes up to $10^{11}$ without bias. We will first validate the simulator on the three-dimensional Toric Code loop benchmark and published Random Layer Code data of Gu, Caha et al.\ \cite{layercodesyale}.
+
+\section{Scope and Plan}
+
+Our simulations map finite-size scaling across two full cycles rather than asymptotic proofs, including the small-size regime below $2{,}500$ qubits where Cubic and Layer codes outlive single-cycle welded codes. \textbf{Weeks 1--2 (Harshil \& Rohan):} Build compact/pruned code generators, corner weight optimizer, cubic-grid collision checks, and Layer Code imports. \textbf{Weeks 3--4 (Harshil \& Rushil):} Validate C++ Monte Carlo and Forward Flux Sampling on published Toric and Layer benchmarks \cite{layercodesyale}. \textbf{Weeks 5--6 (Rushil \& Yichen):} Run two-cycle scaling, cubic-grid stretching, sector balancing, and cooling schedules. \textbf{Weeks 7--8 (All):} Synthesize findings and write the final paper.
+
+\bibliographystyle{apsrev4-2}
+\bibliography{references}
+
+\end{document}

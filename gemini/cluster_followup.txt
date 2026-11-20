@@ -1,0 +1,36 @@
+CROSS|cls_l3_r1_step0.code|b=3.0|dt=0.0s|KMC beta=3.00 dec=uf N=4 trials=160 mean_t=5.4351e+02 sem_t=3.8307e+01 median_t=4.1222e+02 mean_flips=18.2 capped=0
+CROSS|cls_l3_r1_step0.code|b=3.5|dt=0.0s|KMC beta=3.50 dec=uf N=4 trials=160 mean_t=1.5890e+03 sem_t=1.0479e+02 median_t=1.4594e+03 mean_flips=20.4 capped=0
+CROSS|cls_l3_r1_step0.code|b=4.0|dt=0.0s|KMC beta=4.00 dec=uf N=4 trials=160 mean_t=3.7343e+03 sem_t=2.5363e+02 median_t=2.6933e+03 mean_flips=17.8 capped=0
+CROSS|cls_l3_r1_step0.code|b=4.5|dt=0.0s|KMC beta=4.50 dec=uf N=4 trials=160 mean_t=1.0646e+04 sem_t=7.1036e+02 median_t=8.0625e+03 mean_flips=20.1 capped=0
+CROSS|cls_l3_r1_step0.code|b=5.0|dt=0.0s|KMC beta=5.00 dec=uf N=4 trials=160 mean_t=3.0003e+04 sem_t=2.1813e+03 median_t=2.2908e+04 mean_flips=18.2 capped=0
+CROSS|cls_l3_r1_step0.code|b=5.5|dt=0.0s|KMC beta=5.50 dec=uf N=4 trials=160 mean_t=7.9157e+04 sem_t=5.3524e+03 median_t=5.1079e+04 mean_flips=18.7 capped=0
+CROSS|cls_l3_r1_step2.code|b=3.0|dt=0.2s|KMC beta=3.00 dec=uf N=196 trials=160 mean_t=3.7294e+02 sem_t=2.4909e+01 median_t=2.8853e+02 mean_flips=2954.8 capped=0
+CROSS|cls_l3_r1_step2.code|b=3.5|dt=0.1s|KMC beta=3.50 dec=uf N=196 trials=160 mean_t=1.9712e+03 sem_t=1.7181e+02 median_t=1.1725e+03 mean_flips=7996.4 capped=0
+CROSS|cls_l3_r1_step2.code|b=4.0|dt=0.2s|KMC beta=4.00 dec=uf N=196 trials=160 mean_t=2.1010e+04 sem_t=1.8360e+03 median_t=1.2920e+04 mean_flips=33874.5 capped=0
+CROSS|cls_l3_r1_step2.code|b=4.5|dt=0.5s|KMC beta=4.50 dec=uf N=196 trials=160 mean_t=2.5008e+05 sem_t=2.2655e+04 median_t=1.6427e+05 mean_flips=128981.8 capped=0
+CROSS|cls_l3_r1_step2.code|b=5.0|dt=5.2s|KMC beta=5.00 dec=uf N=196 trials=160 mean_t=3.5100e+06 sem_t=2.7143e+05 median_t=2.6141e+06 mean_flips=587599.8 capped=0
+CROSS|cls_l3_r1_step2.code|b=5.5|dt=12.5s|KMC beta=5.50 dec=uf N=196 trials=160 mean_t=4.2278e+07 sem_t=4.0244e+06 median_t=2.5494e+07 mean_flips=2435404.4 capped=0
+CROSS|cls_l3_r1_step4.code|b=3.0|dt=73.3s|KMC beta=3.00 dec=uf N=9604 trials=48 mean_t=2.7274e+02 sem_t=1.5115e+01 median_t=2.5737e+02 mean_flips=106104.4 capped=0
+CROSS|cls_l3_r1_step4.code|b=5.0|dt=75.0s|KMC beta=5.00 dec=uf N=9604 trials=48 mean_t=2.0129e+06 sem_t=4.8799e+04 median_t=2.1021e+06 mean_flips=24658509.4 capped=46
+CROSS|cls_l3_r1_step4.code|b=5.5|dt=34.1s|KMC beta=5.50 dec=uf N=9604 trials=48 mean_t=7.3971e+06 sem_t=5.7546e+04 median_t=7.5113e+06 mean_flips=25000000.0 capped=48
+CROSS|cls_l4_r2_step0.code|b=3.0|dt=0.0s|KMC beta=3.00 dec=uf N=4 trials=160 mean_t=5.4151e+02 sem_t=3.8260e+01 median_t=4.1741e+02 mean_flips=18.4 capped=0
+CROSS|cls_l4_r2_step0.code|b=3.5|dt=0.0s|KMC beta=3.50 dec=uf N=4 trials=160 mean_t=1.4927e+03 sem_t=1.0119e+02 median_t=1.2546e+03 mean_flips=20.2 capped=0
+CROSS|cls_l4_r2_step0.code|b=4.0|dt=0.0s|KMC beta=4.00 dec=uf N=4 trials=160 mean_t=3.6800e+03 sem_t=2.4334e+02 median_t=2.7131e+03 mean_flips=17.8 capped=0
+CROSS|cls_l4_r2_step0.code|b=4.5|dt=0.0s|KMC beta=4.50 dec=uf N=4 trials=160 mean_t=1.0297e+04 sem_t=6.9074e+02 median_t=8.0625e+03 mean_flips=19.7 capped=0
+CROSS|cls_l4_r2_step0.code|b=5.0|dt=0.0s|KMC beta=5.00 dec=uf N=4 trials=160 mean_t=3.1021e+04 sem_t=2.2443e+03 median_t=2.3062e+04 mean_flips=18.8 capped=0
+CROSS|cls_l4_r2_step0.code|b=5.5|dt=0.0s|KMC beta=5.50 dec=uf N=4 trials=160 mean_t=8.3441e+04 sem_t=5.5628e+03 median_t=5.8869e+04 mean_flips=18.8 capped=0
+CROSS|cls_l4_r2_step2.code|b=3.0|dt=0.3s|KMC beta=3.00 dec=uf N=400 trials=160 mean_t=4.4696e+02 sem_t=3.1181e+01 median_t=3.2759e+02 mean_flips=7371.7 capped=0
+CROSS|cls_l4_r2_step2.code|b=3.5|dt=0.3s|KMC beta=3.50 dec=uf N=400 trials=160 mean_t=2.0806e+03 sem_t=1.3915e+02 median_t=1.5859e+03 mean_flips=18090.9 capped=0
+CROSS|cls_l4_r2_step2.code|b=4.0|dt=0.4s|KMC beta=4.00 dec=uf N=400 trials=160 mean_t=2.6352e+04 sem_t=2.2495e+03 median_t=1.6078e+04 mean_flips=97395.6 capped=0
+CROSS|cls_l4_r2_step2.code|b=4.5|dt=1.6s|KMC beta=4.50 dec=uf N=400 trials=160 mean_t=5.2666e+05 sem_t=4.7729e+04 median_t=3.6042e+05 mean_flips=622412.0 capped=0
+CROSS|cls_l4_r2_step2.code|b=5.0|dt=6.5s|KMC beta=5.00 dec=uf N=400 trials=160 mean_t=6.3831e+06 sem_t=4.9514e+05 median_t=4.1860e+06 mean_flips=2392346.1 capped=0
+CROSS|cls_l4_r2_step2.code|b=5.5|dt=26.5s|KMC beta=5.50 dec=uf N=400 trials=160 mean_t=8.4519e+07 sem_t=5.4031e+06 median_t=6.5676e+07 mean_flips=10770289.7 capped=24
+CROSS|cls_l4_r2_step4.code|b=5.5|dt=78.6s|KMC beta=5.50 dec=uf N=40000 trials=48 mean_t=1.5170e+06 sem_t=2.0626e+04 median_t=1.5271e+06 mean_flips=25000000.0 capped=48
+TIMEOUT|CROSS|cls_l3_r1_step4.code|b=3.5
+TIMEOUT|CROSS|cls_l3_r1_step4.code|b=4.0
+TIMEOUT|CROSS|cls_l3_r1_step4.code|b=4.5
+TIMEOUT|CROSS|cls_l4_r2_step4.code|b=3.0
+TIMEOUT|CROSS|cls_l4_r2_step4.code|b=3.5
+TIMEOUT|CROSS|cls_l4_r2_step4.code|b=4.0
+TIMEOUT|CROSS|cls_l4_r2_step4.code|b=4.5
+TIMEOUT|CROSS|cls_l4_r2_step4.code|b=5.0

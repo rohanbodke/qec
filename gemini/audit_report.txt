@@ -1,0 +1,22 @@
+=== AUDIT 1: Exact 64x64 Markov Master-Equation MFPT vs C++ KMC Engine ===
+  [RP2_s0_Xerr]
+    beta=3: Exact_Master_Eq =  1.351e+02 | C++_KMC =  1.469e+02 | ratio = 1.087
+    beta=4: Exact_Master_Eq =  9.943e+02 | C++_KMC =  1.136e+03 | ratio = 1.142
+    beta=5: Exact_Master_Eq =  7.343e+03 | C++_KMC =  8.282e+03 | ratio = 1.128
+    beta=6: Exact_Master_Eq =  5.425e+04 | C++_KMC =  6.867e+04 | ratio = 1.266
+    beta=7: Exact_Master_Eq =  4.009e+05 | C++_KMC =  3.840e+05 | ratio = 0.958
+  [RP2_s0_Zerr]
+    beta=3: Exact_Master_Eq =  1.015e+02 | C++_KMC =  2.875e+02 | ratio = 2.832
+    beta=4: Exact_Master_Eq =  7.459e+02 | C++_KMC =  2.128e+03 | ratio = 2.853
+    beta=5: Exact_Master_Eq =  5.507e+03 | C++_KMC =  1.612e+04 | ratio = 2.927
+    beta=6: Exact_Master_Eq =  4.069e+04 | C++_KMC =  1.254e+05 | ratio = 3.082
+    beta=7: Exact_Master_Eq =  3.007e+05 | C++_KMC =  7.076e+05 | ratio = 2.354
+
+=== AUDIT 2: Zero-Trust Algebraic CSS Verification of All V3 Track-A & Track-B Codes ===
+  TrackA_3D_Tor2_Sparse_974   | N= 974 K= 2 N/K= 487.0 | bad_comm=0 | meta=( 26,  2) | max_w=(5,6)
+  TrackA_3D_Tor2_Aniso_1016   | N=1016 K= 2 N/K= 508.0 | bad_comm=0 | meta=( 21,  5) | max_w=(5,6)
+  TrackB_NL_RP2_Aniso_762     | N= 762 K= 1 N/K= 762.0 | bad_comm=0 | meta=( 18,  5) | max_w=(5,6)
+  TrackB_NL_HypK6_3048        | N=3048 K= 6 N/K= 508.0 | bad_comm=0 | meta=( 53,  9) | max_w=(6,6)
+  TrackB_NL_IBM_Gross_144     | N= 144 K=12 N/K=  12.0 | bad_comm=0 | meta=(  6,  6) | max_w=(6,6)
+  TrackB_NL_IBM_2Gross_288    | N= 288 K=12 N/K=  24.0 | bad_comm=0 | meta=(  6,  6) | max_w=(6,6)
+  TrackB_NL_4DToric_486       | N= 486 K= 6 N/K=  81.0 | bad_comm=0 | meta=( 84, 84) | max_w=(6,6)

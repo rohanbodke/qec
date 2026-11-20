@@ -1,0 +1,1344 @@
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.09s|THRESHOLD p=0.0100 dec=rg_strict N=1292 trials=400 P_L=0.21250 sem=0.02045
+KMC_DEC|cls_l4_r2_step3.code|dt=30.91s|KMC beta=2.50 dec=bposd N=4000 trials=40 mean_t=4.2144e+03 sem_t=4.6400e+02 median_t=3.7844e+03 mean_flips=447863.2 capped=0
+KMC_DEC|bdl_sq_L3r2_s2_Xerr.code|dt=1.32s|KMC beta=4.50 dec=bposd N=2152 trials=40 mean_t=2.3400e+02 sem_t=5.7874e+01 median_t=1.2814e+02 mean_flips=4460.0 capped=0
+KMC_Q|bdl_surf2_L2r1_s2_Zerr.code|dt=0.37s|KMC beta=5.00 dec=uf N=1292 trials=120 mean_t=9.0089e+04 sem_t=9.3226e+03 median_t=5.5479e+04 mean_flips=90082.4 capped=0
+KMC_DEC|bdl_tor2_L2r1_s2_Zerr.code|dt=0.27s|KMC beta=4.50 dec=uf N=1292 trials=80 mean_t=1.4972e+05 sem_t=1.8074e+04 median_t=9.6160e+04 mean_flips=86033.9 capped=0
+KMC_Q|bdl_sq_L2r1_s2_Xerr.code|dt=0.08s|KMC beta=7.00 dec=uf N=323 trials=120 mean_t=6.2155e+04 sem_t=6.6211e+03 median_t=4.3743e+04 mean_flips=18337.0 capped=0
+HYBRID|bdl_tor3_L2r1_s2_Xerr.code|dt=0.37s|HYBRID beta=5.00 tau_ec=5.000e+03 cycles=20 T_tot=1.000e+05 N=2907 P_fail=1.00000
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.06s|THRESHOLD p=0.0100 dec=rg_strict N=2152 trials=400 P_L=0.02000 sem=0.00700
+KMC_DEC|cls_l4_r2_step3.code|dt=20.60s|KMC beta=3.50 dec=bposd N=4000 trials=40 mean_t=5.5685e+05 sem_t=5.1242e+03 median_t=5.6466e+05 mean_flips=5000000.0 capped=40
+KMC_Q|bdl_tor3_L2r1_s0_Xerr.code|dt=0.01s|KMC beta=6.00 dec=uf N=18 trials=120 mean_t=3.2399e+04 sem_t=2.4352e+03 median_t=2.8068e+04 mean_flips=23.4 capped=0
+THRESH|cls_l4_r2_step3.code|dt=0.12s|THRESHOLD p=0.1200 dec=rg_strict N=4000 trials=400 P_L=0.00000 sem=0.00000
+KMC_CLS|cls_l3_r1_step1.code|dt=0.77s|KMC beta=4.00 dec=uf N=28 trials=200 mean_t=7.9256e+06 sem_t=5.0549e+05 median_t=6.0536e+06 mean_flips=189438.3 capped=0
+KMC_Q|layer_512_Xerr.code|dt=0.04s|KMC beta=4.00 dec=uf N=437 trials=120 mean_t=7.3193e+01 sem_t=6.3250e+00 median_t=5.1406e+01 mean_flips=540.9 capped=0
+KMC_Q|bdl_tor3_L2r1_s2_Zerr.code|dt=0.40s|KMC beta=4.00 dec=uf N=2907 trials=120 mean_t=4.8632e+03 sem_t=3.9850e+02 median_t=3.4002e+03 mean_flips=22616.6 capped=0
+THRESH|cls_l3_r1_step3.code|dt=0.02s|THRESHOLD p=0.0200 dec=rg_strict N=1372 trials=400 P_L=0.00000 sem=0.00000
+KMC_DEC|cls_l3_r1_step3.code|dt=9.17s|KMC beta=3.50 dec=rg_relaxed N=1372 trials=80 mean_t=1.1909e+06 sem_t=2.3337e+04 median_t=1.2574e+06 mean_flips=4798962.3 capped=74
+THRESH|cls_l3_r1_step3.code|dt=0.04s|THRESHOLD p=0.0100 dec=bposd N=1372 trials=200 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_sq_L3r1_s2_Xerr.code|dt=0.18s|KMC beta=5.00 dec=uf N=1271 trials=120 mean_t=1.9752e+02 sem_t=1.9008e+01 median_t=1.2092e+02 mean_flips=1446.1 capped=0
+KMC_DEC|bdl_tor2_L2r1_s2_Xerr.code|dt=0.09s|KMC beta=5.50 dec=rg_relaxed N=1292 trials=80 mean_t=5.1660e+03 sem_t=6.6660e+02 median_t=2.5175e+03 mean_flips=6318.4 capped=0
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.16s|THRESHOLD p=0.1200 dec=rg_strict N=1292 trials=400 P_L=0.74250 sem=0.02186
+KMC_Q|layer_913_Xerr.code|dt=0.25s|KMC beta=6.00 dec=uf N=1853 trials=120 mean_t=3.6895e+03 sem_t=3.4060e+02 median_t=2.3425e+03 mean_flips=15429.5 capped=0
+KMC_DEC|cls_l3_r1_step2.code|dt=0.07s|KMC beta=3.00 dec=uf N=196 trials=80 mean_t=3.7924e+02 sem_t=3.8188e+01 median_t=2.5642e+02 mean_flips=3066.6 capped=0
+KMC_DEC|bdl_sq_L3r2_s2_Xerr.code|dt=0.20s|KMC beta=3.50 dec=rg_relaxed N=2152 trials=80 mean_t=1.1803e+01 sem_t=7.7849e-01 median_t=9.9906e+00 mean_flips=453.6 capped=0
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.06s|THRESHOLD p=0.0600 dec=uf N=1271 trials=400 P_L=0.14250 sem=0.01748
+KMC_DEC|cls_l3_r1_step2.code|dt=0.07s|KMC beta=2.50 dec=bposd N=196 trials=40 mean_t=9.7714e+01 sem_t=1.2629e+01 median_t=6.9499e+01 mean_flips=1316.3 capped=0
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.10s|THRESHOLD p=0.1000 dec=rg_relaxed N=1292 trials=400 P_L=0.74500 sem=0.02179
+KMC_Q|bdl_tor3_L2r1_s1_Xerr.code|dt=1.91s|KMC beta=6.00 dec=uf N=171 trials=120 mean_t=3.0660e+08 sem_t=2.8545e+07 median_t=2.2322e+08 mean_flips=630085.0 capped=0
+THRESH|cls_l3_r1_step3.code|dt=0.03s|THRESHOLD p=0.1000 dec=bposd N=1372 trials=200 P_L=0.00000 sem=0.00000
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=6.250e-02 syn_density=0.468623
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=1.250e-01 syn_density=0.442316
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=2.500e-01 syn_density=0.397421
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=5.000e-01 syn_density=0.333205
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=1.000e+00 syn_density=0.259836
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=2.000e+00 syn_density=0.190192
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=4.000e+00 syn_density=0.135588
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=8.000e+00 syn_density=0.095155
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=1.600e+01 syn_density=0.066915
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=3.200e+01 syn_density=0.051664
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=6.400e+01 syn_density=0.046551
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=1.280e+02 syn_density=0.044470
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=2.560e+02 syn_density=0.041621
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=5.120e+02 syn_density=0.037287
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=1.024e+03 syn_density=0.031999
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=2.048e+03 syn_density=0.026294
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=4.096e+03 syn_density=0.021514
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=8.192e+03 syn_density=0.017244
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=1.638e+04 syn_density=0.012879
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=3.277e+04 syn_density=0.009321
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=6.554e+04 syn_density=0.007217
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=1.311e+05 syn_density=0.005856
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=2.621e+05 syn_density=0.005127
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=5.243e+05 syn_density=0.005067
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=1.049e+06 syn_density=0.005067
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=2.097e+06 syn_density=0.005067
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=4.194e+06 syn_density=0.005067
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=8.389e+06 syn_density=0.005067
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=1.678e+07 syn_density=0.005067
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=3.355e+07 syn_density=0.005067
+COOL|cls_l4_r2_step3.code|dt=8.31s|COOL beta=6.00 t=6.711e+07 syn_density=0.005067
+KMC_Q|bdl_sq_L2r1_s3_Zerr.code|dt=0.33s|KMC beta=4.00 dec=uf N=2911 trials=120 mean_t=3.5502e+01 sem_t=1.7858e+00 median_t=3.1294e+01 mean_flips=907.9 capped=0
+KMC_DEC|bdl_tor2_L2r1_s2_Xerr.code|dt=0.11s|KMC beta=3.50 dec=rg_relaxed N=1292 trials=80 mean_t=1.0379e+01 sem_t=7.4949e-01 median_t=8.6801e+00 mean_flips=135.6 capped=0
+THRESH|cls_l3_r1_step3.code|dt=0.03s|THRESHOLD p=0.0800 dec=rg_strict N=1372 trials=400 P_L=0.00000 sem=0.00000
+THRESH|cls_l3_r1_step2.code|dt=0.03s|THRESHOLD p=0.1000 dec=uf N=196 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_sq_L2r1_s3_Zerr.code|dt=0.28s|KMC beta=6.00 dec=uf N=2911 trials=120 mean_t=7.8308e+03 sem_t=8.3120e+02 median_t=4.5456e+03 mean_flips=23204.1 capped=0
+THRESH|cls_l4_r2_step3.code|dt=0.03s|THRESHOLD p=0.0100 dec=rg_relaxed N=4000 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_tor2_hyb21_s2_Zerr.code|dt=4.12s|KMC beta=5.00 dec=uf N=3160 trials=120 mean_t=1.6337e+06 sem_t=1.5903e+05 median_t=1.0039e+06 mean_flips=788304.1 capped=0
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.12s|THRESHOLD p=0.1200 dec=rg_strict N=1292 trials=400 P_L=0.76000 sem=0.02135
+KMC_DEC|cls_l3_r1_step3.code|dt=10.84s|KMC beta=3.50 dec=rg_strict N=1372 trials=80 mean_t=1.2115e+06 sem_t=1.8860e+04 median_t=1.2588e+06 mean_flips=4867763.2 capped=76
+KMC_CLS|cls_l3_r1_step2.code|dt=0.17s|KMC beta=2.00 dec=uf N=196 trials=200 mean_t=3.8067e+01 sem_t=1.6840e+00 median_t=3.1989e+01 mean_flips=826.2 capped=0
+KMC_Q|toric2d_L6_Xerr.code|dt=0.01s|KMC beta=7.00 dec=uf N=72 trials=120 mean_t=6.6095e+04 sem_t=5.4688e+03 median_t=5.3555e+04 mean_flips=104.0 capped=0
+THRESH|cls_l4_r2_step2.code|dt=0.03s|THRESHOLD p=0.0800 dec=bposd N=400 trials=200 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_sq_L3r1_s2_Zerr.code|dt=4.37s|KMC beta=7.00 dec=uf N=1271 trials=120 mean_t=6.7614e+06 sem_t=6.6952e+05 median_t=4.7919e+06 mean_flips=1204301.8 capped=0
+HYBRID|layer_913_Xerr.code|dt=0.06s|HYBRID beta=5.00 tau_ec=1.000e+01 cycles=20 T_tot=2.000e+02 N=1853 P_fail=0.00833
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.17s|THRESHOLD p=0.0400 dec=rg_relaxed N=2152 trials=400 P_L=0.40000 sem=0.02449
+KMC_CLS|cls_l4_r2_step2.code|dt=0.80s|KMC beta=4.00 dec=uf N=400 trials=200 mean_t=2.4869e+04 sem_t=1.9235e+03 median_t=1.4882e+04 mean_flips=92411.6 capped=0
+KMC_Q|bdl_sq_L2r1_s1_Xerr.code|dt=0.01s|KMC beta=5.00 dec=uf N=19 trials=120 mean_t=7.0358e+03 sem_t=7.2296e+02 median_t=4.6933e+03 mean_flips=945.9 capped=0
+KMC_Q|bdl_tor2_L2r1_s1_Xerr.code|dt=0.01s|KMC beta=3.00 dec=uf N=76 trials=120 mean_t=2.6281e+02 sem_t=2.2719e+01 median_t=1.9840e+02 mean_flips=183.4 capped=0
+KMC_CLS|cls_l3_r1_step0.code|dt=0.01s|KMC beta=2.00 dec=uf N=4 trials=200 mean_t=7.1654e+01 sem_t=5.6752e+00 median_t=5.3128e+01 mean_flips=15.8 capped=0
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.05s|THRESHOLD p=0.0200 dec=uf N=1292 trials=400 P_L=0.00000 sem=0.00000
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.09s|THRESHOLD p=0.0200 dec=rg_relaxed N=1271 trials=400 P_L=0.11500 sem=0.01595
+THRESH|cls_l3_r1_step3.code|dt=0.03s|THRESHOLD p=0.0400 dec=rg_relaxed N=1372 trials=400 P_L=0.00000 sem=0.00000
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.05s|THRESHOLD p=0.0100 dec=bposd N=1292 trials=200 P_L=0.00000 sem=0.00000
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.02s|THRESHOLD p=0.0100 dec=uf N=1271 trials=400 P_L=0.00000 sem=0.00000
+KMC_DEC|bdl_tor2_hyb21_s2_Xerr.code|dt=0.48s|KMC beta=5.50 dec=uf N=3160 trials=80 mean_t=4.3055e+04 sem_t=5.4289e+03 median_t=2.7072e+04 mean_flips=87087.9 capped=0
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.1200 dec=bposd N=196 trials=200 P_L=0.00000 sem=0.00000
+KMC_CLS|cls_l4_r2_step1.code|dt=1.23s|KMC beta=3.50 dec=uf N=40 trials=200 mean_t=2.8520e+06 sem_t=2.3176e+05 median_t=1.7314e+06 mean_flips=212065.7 capped=0
+KMC_DEC|cls_l3_r1_step2.code|dt=0.09s|KMC beta=2.50 dec=uf N=196 trials=80 mean_t=9.8740e+01 sem_t=8.0810e+00 median_t=7.9919e+01 mean_flips=1328.3 capped=0
+KMC_Q|bdl_surf2_L2r1_s0_Xerr.code|dt=0.00s|KMC beta=3.00 dec=uf N=8 trials=120 mean_t=2.4148e+01 sem_t=2.8717e+00 median_t=1.3819e+01 mean_flips=11.5 capped=0
+KMC_CLS|cls_l4_r2_step1.code|dt=5.04s|KMC beta=4.00 dec=uf N=40 trials=200 mean_t=3.5054e+07 sem_t=2.9700e+06 median_t=2.0204e+07 mean_flips=907198.9 capped=0
+THRESH|cls_l3_r1_step3.code|dt=0.03s|THRESHOLD p=0.0600 dec=rg_relaxed N=1372 trials=400 P_L=0.00000 sem=0.00000
+KMC_DEC|cls_l4_r2_step2.code|dt=0.24s|KMC beta=2.50 dec=uf N=400 trials=80 mean_t=9.3964e+01 sem_t=5.6766e+00 median_t=8.5362e+01 mean_flips=2541.0 capped=0
+KMC_CLS|cls_l4_r2_step3.code|dt=27.40s|KMC beta=1.50 dec=uf N=4000 trials=100 mean_t=4.9171e+01 sem_t=1.5094e+00 median_t=4.6785e+01 mean_flips=29943.3 capped=0
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.20s|THRESHOLD p=0.0400 dec=rg_relaxed N=1292 trials=400 P_L=0.72750 sem=0.02226
+KMC_Q|bdl_tor2_L2r1_s2_Xerr.code|dt=0.14s|KMC beta=6.00 dec=uf N=1292 trials=120 mean_t=4.0069e+04 sem_t=3.7494e+03 median_t=2.6229e+04 mean_flips=16872.7 capped=0
+THRESH|cls_l3_r1_step2.code|dt=0.03s|THRESHOLD p=0.0800 dec=uf N=196 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_sq_L2r1_s2_Zerr.code|dt=0.03s|KMC beta=4.00 dec=uf N=323 trials=120 mean_t=3.2260e+02 sem_t=3.1822e+01 median_t=2.4123e+02 mean_flips=599.3 capped=0
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.16s|THRESHOLD p=0.0600 dec=uf N=2152 trials=400 P_L=0.21750 sem=0.02063
+THRESH|cls_l4_r2_step3.code|dt=0.08s|THRESHOLD p=0.1000 dec=bposd N=4000 trials=200 P_L=0.00000 sem=0.00000
+KMC_Q|toric3d_L3_Zerr.code|dt=0.01s|KMC beta=3.00 dec=uf N=81 trials=120 mean_t=7.1865e+00 sem_t=6.3080e-01 median_t=4.7945e+00 mean_flips=7.7 capped=0
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.16s|THRESHOLD p=0.1200 dec=rg_strict N=2152 trials=400 P_L=0.49500 sem=0.02500
+THRESH|cls_l4_r2_step2.code|dt=0.02s|THRESHOLD p=0.1000 dec=rg_strict N=400 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_sq_L3r2_s2_Zerr.code|dt=2.39s|KMC beta=5.00 dec=uf N=2152 trials=120 mean_t=5.6147e+05 sem_t=5.3229e+04 median_t=3.9111e+05 mean_flips=634906.8 capped=0
+KMC_CLS|cls_l3_r1_step1.code|dt=0.02s|KMC beta=1.50 dec=uf N=28 trials=200 mean_t=4.3547e+01 sem_t=2.2964e+00 median_t=3.5239e+01 mean_flips=196.2 capped=0
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.14s|THRESHOLD p=0.1000 dec=bposd N=1292 trials=200 P_L=0.18000 sem=0.02717
+THRESH|cls_l4_r2_step3.code|dt=0.11s|THRESHOLD p=0.1000 dec=rg_relaxed N=4000 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|toric3d_L5_Xerr.code|dt=61.68s|KMC beta=7.00 dec=uf N=375 trials=120 mean_t=2.8926e+16 sem_t=8.0938e+11 median_t=2.8925e+16 mean_flips=15000000.0 capped=120
+KMC_Q|bdl_sq_L3r1_s2_Xerr.code|dt=0.15s|KMC beta=6.00 dec=uf N=1271 trials=120 mean_t=2.0524e+03 sem_t=2.8086e+02 median_t=7.9275e+02 mean_flips=6064.8 capped=0
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.04s|THRESHOLD p=0.0400 dec=uf N=1271 trials=400 P_L=0.01250 sem=0.00556
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.28s|THRESHOLD p=0.0300 dec=rg_relaxed N=3160 trials=400 P_L=0.65000 sem=0.02385
+THRESH|cls_l4_r2_step3.code|dt=0.07s|THRESHOLD p=0.0800 dec=bposd N=4000 trials=200 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_sq_L2r1_s2_Zerr.code|dt=0.03s|KMC beta=5.00 dec=uf N=323 trials=120 mean_t=4.8710e+03 sem_t=4.9440e+02 median_t=3.0767e+03 mean_flips=2336.9 capped=0
+KMC_DEC|bdl_sq_L3r1_s2_Xerr.code|dt=0.08s|KMC beta=5.50 dec=rg_relaxed N=1271 trials=80 mean_t=1.8097e+02 sem_t=4.4725e+01 median_t=5.0026e+01 mean_flips=806.3 capped=0
+KMC_CLS|cls_l4_r2_step0.code|dt=0.01s|KMC beta=2.00 dec=uf N=4 trials=200 mean_t=7.1528e+01 sem_t=5.6788e+00 median_t=5.2982e+01 mean_flips=15.7 capped=0
+KMC_Q|toric3d_L3_Zerr.code|dt=0.01s|KMC beta=6.00 dec=uf N=81 trials=120 mean_t=5.3641e+03 sem_t=3.6677e+02 median_t=4.4415e+03 mean_flips=42.8 capped=0
+KMC_Q|toric3d_L7_Zerr.code|dt=0.01s|KMC beta=7.00 dec=uf N=1029 trials=120 mean_t=2.7860e+03 sem_t=2.5235e+02 median_t=2.3046e+03 mean_flips=464.2 capped=0
+KMC_DEC|cls_l3_r1_step3.code|dt=6.62s|KMC beta=3.00 dec=uf N=1372 trials=80 mean_t=9.4850e+04 sem_t=8.2074e+03 median_t=7.1657e+04 mean_flips=1591773.5 capped=4
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.18s|THRESHOLD p=0.0600 dec=rg_strict N=2152 trials=400 P_L=0.44250 sem=0.02483
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.08s|THRESHOLD p=0.0200 dec=bposd N=1292 trials=200 P_L=0.00000 sem=0.00000
+KMC_DEC|cls_l3_r1_step3.code|dt=4.38s|KMC beta=3.00 dec=rg_strict N=1372 trials=80 mean_t=7.1957e+04 sem_t=7.9588e+03 median_t=5.4455e+04 mean_flips=1177167.9 capped=2
+THRESH|cls_l3_r1_step3.code|dt=0.03s|THRESHOLD p=0.0200 dec=bposd N=1372 trials=200 P_L=0.00000 sem=0.00000
+KMC_CLS|cls_l4_r2_step2.code|dt=0.45s|KMC beta=1.50 dec=uf N=400 trials=200 mean_t=1.4662e+01 sem_t=6.5601e-01 median_t=1.2030e+01 mean_flips=1077.1 capped=0
+THRESH|cls_l4_r2_step2.code|dt=0.01s|THRESHOLD p=0.0200 dec=rg_relaxed N=400 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_tor2_hyb21_s2_Xerr.code|dt=0.70s|KMC beta=4.00 dec=uf N=3160 trials=120 mean_t=6.3406e+01 sem_t=2.8230e+00 median_t=5.7878e+01 mean_flips=1622.9 capped=0
+KMC_Q|toric3d_L5_Xerr.code|dt=71.72s|KMC beta=3.00 dec=uf N=375 trials=120 mean_t=3.1278e+09 sem_t=1.0237e+05 median_t=3.1278e+09 mean_flips=15000000.0 capped=120
+KMC_DEC|bdl_sq_L3r2_s2_Xerr.code|dt=0.25s|KMC beta=5.50 dec=rg_relaxed N=2152 trials=80 mean_t=2.6001e+03 sem_t=3.9675e+02 median_t=1.2929e+03 mean_flips=16291.8 capped=0
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.0600 dec=rg_relaxed N=196 trials=400 P_L=0.00250 sem=0.00250
+STATS|bdl_tor2_hyb21_s2_Zerr.code|dt=2.57s|STATS N=3160 M_check=1808 K=2 max_q_deg=6 rg=2 d<=36 Delta<=5
+KMC_DEC|bdl_tor2_L2r1_s2_Zerr.code|dt=0.11s|KMC beta=3.50 dec=rg_relaxed N=1292 trials=80 mean_t=8.4276e+01 sem_t=9.0646e+00 median_t=5.6321e+01 mean_flips=415.8 capped=0
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.0100 dec=rg_relaxed N=196 trials=400 P_L=0.00000 sem=0.00000
+KMC_DEC|cls_l3_r1_step3.code|dt=1.99s|KMC beta=2.50 dec=bposd N=1372 trials=40 mean_t=2.8974e+03 sem_t=2.9810e+02 median_t=2.3526e+03 mean_flips=151672.0 capped=0
+KMC_Q|bdl_sq_L3r1_s1_Xerr.code|dt=0.01s|KMC beta=3.00 dec=uf N=41 trials=120 mean_t=6.9810e+01 sem_t=7.6678e+00 median_t=4.0348e+01 mean_flips=139.2 capped=0
+KMC_DEC|cls_l3_r1_step3.code|dt=3.30s|KMC beta=2.50 dec=uf N=1372 trials=80 mean_t=2.2295e+03 sem_t=2.0867e+02 median_t=1.7582e+03 mean_flips=115214.1 capped=0
+KMC_Q|layer_steane_Xerr.code|dt=0.07s|KMC beta=3.00 dec=uf N=743 trials=120 mean_t=1.1237e+01 sem_t=8.1373e-01 median_t=9.8751e+00 mean_flips=316.2 capped=0
+KMC_Q|bdl_sq_L3r2_s2_Xerr.code|dt=0.37s|KMC beta=6.00 dec=uf N=2152 trials=120 mean_t=1.7220e+04 sem_t=1.7585e+03 median_t=1.1007e+04 mean_flips=61251.7 capped=0
+KMC_Q|toric2d_L6_Xerr.code|dt=0.01s|KMC beta=5.00 dec=uf N=72 trials=120 mean_t=1.0151e+03 sem_t=8.8101e+01 median_t=7.8827e+02 mean_flips=85.9 capped=0
+KMC_Q|bdl_tor3_L2r1_s1_Xerr.code|dt=0.02s|KMC beta=3.00 dec=uf N=171 trials=120 mean_t=3.2378e+02 sem_t=2.9920e+01 median_t=1.9271e+02 mean_flips=561.6 capped=0
+KMC_Q|bdl_sq_L3r2_s2_Xerr.code|dt=1.86s|KMC beta=7.00 dec=uf N=2152 trials=120 mean_t=4.1403e+05 sem_t=3.4816e+04 median_t=3.4263e+05 mean_flips=491026.1 capped=0
+KMC_Q|layer_512_Xerr.code|dt=0.06s|KMC beta=3.00 dec=uf N=437 trials=120 mean_t=1.3266e+01 sem_t=7.5682e-01 median_t=1.1281e+01 mean_flips=244.1 capped=0
+KMC_CLS|cls_l3_r1_step4.code|dt=60.17s|KMC beta=2.50 dec=uf N=9604 trials=40 mean_t=8.2566e+01 sem_t=3.2531e+00 median_t=8.0236e+01 mean_flips=52702.1 capped=0
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.16s|THRESHOLD p=0.1000 dec=rg_strict N=1292 trials=400 P_L=0.75250 sem=0.02158
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.01s|THRESHOLD p=0.0100 dec=uf N=1292 trials=400 P_L=0.00000 sem=0.00000
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.0200 dec=bposd N=196 trials=200 P_L=0.00000 sem=0.00000
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.20s|THRESHOLD p=0.0400 dec=rg_relaxed N=1271 trials=400 P_L=0.31250 sem=0.02318
+KMC_Q|toric3d_L5_Zerr.code|dt=0.01s|KMC beta=5.00 dec=uf N=375 trials=120 mean_t=1.1394e+02 sem_t=9.0347e+00 median_t=7.9985e+01 mean_flips=58.6 capped=0
+KMC_Q|bdl_sq_L3r2_s2_Xerr.code|dt=0.61s|KMC beta=4.00 dec=uf N=2152 trials=120 mean_t=4.0937e+01 sem_t=2.6888e+00 median_t=3.3578e+01 mean_flips=1138.9 capped=0
+KMC_Q|toric2d_L3_Xerr.code|dt=0.01s|KMC beta=3.00 dec=uf N=18 trials=120 mean_t=5.3246e+01 sem_t=5.1684e+00 median_t=3.5386e+01 mean_flips=13.1 capped=0
+KMC_DEC|bdl_sq_L3r2_s2_Xerr.code|dt=0.61s|KMC beta=3.50 dec=rg_strict N=2152 trials=80 mean_t=1.8954e+01 sem_t=1.2467e+00 median_t=1.6275e+01 mean_flips=834.1 capped=0
+KMC_DEC|cls_l4_r2_step3.code|dt=40.35s|KMC beta=2.50 dec=rg_strict N=4000 trials=80 mean_t=4.1282e+03 sem_t=3.1882e+02 median_t=3.5740e+03 mean_flips=434127.1 capped=0
+THRESH|cls_l3_r1_step3.code|dt=0.06s|THRESHOLD p=0.0800 dec=uf N=1372 trials=400 P_L=0.00000 sem=0.00000
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.32s|THRESHOLD p=0.1000 dec=uf N=2152 trials=400 P_L=0.51000 sem=0.02499
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.16s|THRESHOLD p=0.0300 dec=rg_strict N=1271 trials=400 P_L=0.23500 sem=0.02120
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.07s|THRESHOLD p=0.0100 dec=rg_relaxed N=1271 trials=400 P_L=0.03500 sem=0.00919
+KMC_CLS|cls_l3_r1_step0.code|dt=0.01s|KMC beta=1.50 dec=uf N=4 trials=200 mean_t=2.3895e+01 sem_t=1.8048e+00 median_t=1.5163e+01 mean_flips=11.8 capped=0
+KMC_Q|toric2d_L3_Xerr.code|dt=0.01s|KMC beta=5.00 dec=uf N=18 trials=120 mean_t=3.5167e+03 sem_t=2.6347e+02 median_t=2.7557e+03 mean_flips=19.4 capped=0
+KMC_Q|toric3d_L3_Zerr.code|dt=0.01s|KMC beta=4.00 dec=uf N=81 trials=120 mean_t=8.2530e+01 sem_t=6.7216e+00 median_t=5.5676e+01 mean_flips=25.1 capped=0
+HYBRID|layer_913_Xerr.code|dt=0.22s|HYBRID beta=5.00 tau_ec=5.000e+01 cycles=20 T_tot=1.000e+03 N=1853 P_fail=0.51667
+KMC_Q|bdl_sq_L2r1_s2_Zerr.code|dt=0.08s|KMC beta=6.00 dec=uf N=323 trials=120 mean_t=5.5277e+04 sem_t=4.7688e+03 median_t=3.6796e+04 mean_flips=8225.5 capped=0
+KMC_DEC|bdl_sq_L3r1_s2_Xerr.code|dt=0.27s|KMC beta=5.50 dec=rg_strict N=1271 trials=80 mean_t=7.4681e+02 sem_t=8.0211e+01 median_t=4.8819e+02 mean_flips=3621.7 capped=0
+KMC_Q|toric3d_L7_Zerr.code|dt=0.01s|KMC beta=6.00 dec=uf N=1029 trials=120 mean_t=3.1259e+02 sem_t=2.7154e+01 median_t=2.0318e+02 mean_flips=153.3 capped=0
+KMC_Q|toric3d_L7_Zerr.code|dt=0.03s|KMC beta=3.00 dec=uf N=1029 trials=120 mean_t=1.8501e+00 sem_t=8.1595e-02 median_t=1.7325e+00 mean_flips=26.2 capped=0
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.05s|THRESHOLD p=0.0200 dec=uf N=1292 trials=400 P_L=0.00250 sem=0.00250
+KMC_DEC|bdl_tor2_L2r1_s2_Zerr.code|dt=0.61s|KMC beta=4.50 dec=bposd N=1292 trials=40 mean_t=1.5444e+05 sem_t=2.9821e+04 median_t=8.7229e+04 mean_flips=88053.5 capped=0
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.41s|THRESHOLD p=0.1000 dec=rg_relaxed N=3160 trials=400 P_L=0.79250 sem=0.02028
+THRESH|cls_l3_r1_step3.code|dt=0.05s|THRESHOLD p=0.1000 dec=uf N=1372 trials=400 P_L=0.00000 sem=0.00000
+KMC_DEC|cls_l4_r2_step3.code|dt=14.69s|KMC beta=3.50 dec=rg_relaxed N=4000 trials=80 mean_t=5.5790e+05 sem_t=3.7957e+03 median_t=5.6466e+05 mean_flips=5000000.0 capped=80
+KMC_DEC|bdl_tor2_L2r1_s2_Zerr.code|dt=0.21s|KMC beta=4.50 dec=rg_relaxed N=1292 trials=80 mean_t=5.3917e+04 sem_t=9.6376e+03 median_t=7.7099e+03 mean_flips=30880.7 capped=0
+KMC_Q|bdl_tor3_L2r1_s2_Xerr.code|dt=0.62s|KMC beta=6.00 dec=uf N=2907 trials=120 mean_t=1.0372e+05 sem_t=9.2276e+03 median_t=8.1181e+04 mean_flips=98248.2 capped=0
+KMC_CLS|cls_l3_r1_step3.code|dt=3.72s|KMC beta=2.00 dec=uf N=1372 trials=100 mean_t=1.8386e+02 sem_t=1.0028e+01 median_t=1.5926e+02 mean_flips=22404.9 capped=0
+HYBRID|layer_913_Xerr.code|dt=0.14s|HYBRID beta=5.00 tau_ec=2.000e+02 cycles=20 T_tot=4.000e+03 N=1853 P_fail=0.99167
+KMC_Q|bdl_surf2_L2r1_s2_Zerr.code|dt=3.22s|KMC beta=6.00 dec=uf N=1292 trials=120 mean_t=2.7030e+06 sem_t=2.6333e+05 median_t=1.8335e+06 mean_flips=776215.2 capped=0
+THRESH|cls_l4_r2_step3.code|dt=0.13s|THRESHOLD p=0.0800 dec=rg_strict N=4000 trials=400 P_L=0.00000 sem=0.00000
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.14s|THRESHOLD p=0.1200 dec=rg_relaxed N=1271 trials=400 P_L=0.47500 sem=0.02497
+KMC_Q|bdl_tor2_L3r2_s1_Xerr.code|dt=55.14s|KMC beta=7.00 dec=uf N=176 trials=120 mean_t=8.9653e+10 sem_t=1.1212e+09 median_t=9.3074e+10 mean_flips=14448728.3 capped=111
+KMC_Q|bdl_surf2_L2r1_s1_Xerr.code|dt=0.02s|KMC beta=3.00 dec=uf N=76 trials=120 mean_t=1.8718e+02 sem_t=1.6382e+01 median_t=1.1914e+02 mean_flips=476.9 capped=0
+KMC_DEC|bdl_sq_L3r1_s2_Xerr.code|dt=0.15s|KMC beta=4.50 dec=rg_strict N=1271 trials=80 mean_t=9.3131e+01 sem_t=9.3332e+00 median_t=7.0579e+01 mean_flips=1050.4 capped=0
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.10s|THRESHOLD p=0.0600 dec=rg_strict N=1292 trials=400 P_L=0.73750 sem=0.02200
+KMC_Q|bdl_tor2_hyb21_s2_Xerr.code|dt=22.17s|KMC beta=7.00 dec=uf N=3160 trials=120 mean_t=9.5738e+07 sem_t=7.0557e+06 median_t=7.3923e+07 mean_flips=6473381.4 capped=20
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.09s|THRESHOLD p=0.0400 dec=bposd N=1271 trials=200 P_L=0.00000 sem=0.00000
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.11s|THRESHOLD p=0.0600 dec=bposd N=1292 trials=200 P_L=0.00000 sem=0.00000
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.09s|THRESHOLD p=0.0600 dec=bposd N=1271 trials=200 P_L=0.01000 sem=0.00704
+KMC_Q|bdl_surf2_L2r1_s2_Zerr.code|dt=0.16s|KMC beta=4.00 dec=uf N=1292 trials=120 mean_t=1.3435e+03 sem_t=1.3568e+02 median_t=7.8109e+02 mean_flips=6462.9 capped=0
+KMC_DEC|bdl_tor2_L2r1_s2_Zerr.code|dt=0.29s|KMC beta=4.50 dec=rg_strict N=1292 trials=80 mean_t=1.3733e+05 sem_t=1.8048e+04 median_t=9.6541e+04 mean_flips=78341.5 capped=0
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.06s|THRESHOLD p=0.0200 dec=rg_strict N=1271 trials=400 P_L=0.10500 sem=0.01533
+THRESH|cls_l3_r1_step3.code|dt=0.02s|THRESHOLD p=0.0300 dec=rg_strict N=1372 trials=400 P_L=0.00000 sem=0.00000
+THRESH|cls_l3_r1_step3.code|dt=0.03s|THRESHOLD p=0.0600 dec=uf N=1372 trials=400 P_L=0.00000 sem=0.00000
+THRESH|cls_l4_r2_step2.code|dt=0.01s|THRESHOLD p=0.0300 dec=rg_strict N=400 trials=400 P_L=0.00000 sem=0.00000
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.0200 dec=uf N=196 trials=400 P_L=0.00000 sem=0.00000
+KMC_DEC|cls_l4_r2_step2.code|dt=0.20s|KMC beta=3.50 dec=rg_strict N=400 trials=80 mean_t=1.9173e+03 sem_t=1.7573e+02 median_t=1.5875e+03 mean_flips=16829.7 capped=0
+KMC_DEC|bdl_sq_L3r2_s2_Xerr.code|dt=0.41s|KMC beta=4.50 dec=rg_strict N=2152 trials=80 mean_t=1.9691e+02 sem_t=2.9931e+01 median_t=1.4609e+02 mean_flips=3619.0 capped=0
+THRESH|cls_l3_r1_step3.code|dt=0.04s|THRESHOLD p=0.0800 dec=rg_relaxed N=1372 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_sq_L2r1_s2_Zerr.code|dt=0.04s|KMC beta=3.00 dec=uf N=323 trials=120 mean_t=3.1936e+01 sem_t=2.3992e+00 median_t=2.6949e+01 mean_flips=188.1 capped=0
+THRESH|cls_l4_r2_step3.code|dt=0.08s|THRESHOLD p=0.0100 dec=bposd N=4000 trials=200 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_tor2_L2r1_s1_Zerr.code|dt=0.01s|KMC beta=3.00 dec=uf N=76 trials=120 mean_t=9.4946e+00 sem_t=8.8047e-01 median_t=6.0404e+00 mean_flips=12.4 capped=0
+KMC_CLS|cls_l4_r2_step1.code|dt=0.04s|KMC beta=1.50 dec=uf N=40 trials=200 mean_t=7.4765e+01 sem_t=4.7278e+00 median_t=5.2726e+01 mean_flips=445.0 capped=0
+KMC_Q|bdl_sq_L3r2_s2_Xerr.code|dt=0.47s|KMC beta=3.00 dec=uf N=2152 trials=120 mean_t=7.4896e+00 sem_t=3.1739e-01 median_t=6.6045e+00 mean_flips=477.8 capped=0
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.40s|THRESHOLD p=0.0600 dec=rg_strict N=3160 trials=400 P_L=0.72250 sem=0.02239
+THRESH|cls_l3_r1_step2.code|dt=0.02s|THRESHOLD p=0.1200 dec=rg_relaxed N=196 trials=400 P_L=0.00250 sem=0.00250
+KMC_Q|layer_steane_Xerr.code|dt=0.13s|KMC beta=7.00 dec=uf N=743 trials=120 mean_t=3.8373e+04 sem_t=3.8308e+03 median_t=2.3065e+04 mean_flips=23483.9 capped=0
+THRESH|cls_l4_r2_step3.code|dt=0.05s|THRESHOLD p=0.0200 dec=rg_strict N=4000 trials=400 P_L=0.00000 sem=0.00000
+KMC_DEC|bdl_tor2_L2r1_s2_Zerr.code|dt=4.03s|KMC beta=5.50 dec=bposd N=1292 trials=40 mean_t=3.0813e+07 sem_t=3.9735e+06 median_t=2.5664e+07 mean_flips=1988405.8 capped=5
+THRESH|cls_l4_r2_step2.code|dt=0.01s|THRESHOLD p=0.0300 dec=uf N=400 trials=400 P_L=0.00000 sem=0.00000
+THRESH|cls_l4_r2_step3.code|dt=0.13s|THRESHOLD p=0.0800 dec=rg_relaxed N=4000 trials=400 P_L=0.00000 sem=0.00000
+KMC_DEC|cls_l3_r1_step2.code|dt=0.06s|KMC beta=3.00 dec=rg_relaxed N=196 trials=80 mean_t=2.1401e+02 sem_t=2.1806e+01 median_t=1.4669e+02 mean_flips=1578.5 capped=0
+KMC_DEC|bdl_tor2_L2r1_s2_Zerr.code|dt=4.61s|KMC beta=5.50 dec=uf N=1292 trials=80 mean_t=2.6906e+07 sem_t=2.8028e+06 median_t=1.8631e+07 mean_flips=1737243.6 capped=9
+THRESH|cls_l4_r2_step2.code|dt=0.02s|THRESHOLD p=0.1200 dec=uf N=400 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_sq_L2r1_s2_Xerr.code|dt=0.04s|KMC beta=3.00 dec=uf N=323 trials=120 mean_t=1.4158e+01 sem_t=1.0328e+00 median_t=1.1218e+01 mean_flips=193.0 capped=0
+KMC_CLS|cls_l3_r1_step3.code|dt=4.25s|KMC beta=2.50 dec=uf N=1372 trials=100 mean_t=2.2075e+03 sem_t=1.8389e+02 median_t=1.6449e+03 mean_flips=114061.6 capped=0
+THRESH|cls_l3_r1_step3.code|dt=0.02s|THRESHOLD p=0.0300 dec=bposd N=1372 trials=200 P_L=0.00000 sem=0.00000
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.08s|THRESHOLD p=0.0300 dec=uf N=2152 trials=400 P_L=0.02000 sem=0.00700
+KMC_Q|bdl_sq_L2r1_s3_Xerr.code|dt=2.03s|KMC beta=4.00 dec=uf N=2911 trials=120 mean_t=2.5097e+04 sem_t=2.5991e+03 median_t=1.4031e+04 mean_flips=400452.9 capped=0
+KMC_Q|bdl_sq_L3r2_s2_Zerr.code|dt=0.47s|KMC beta=3.00 dec=uf N=2152 trials=120 mean_t=1.1635e+02 sem_t=8.8414e+00 median_t=8.4056e+01 mean_flips=2848.5 capped=0
+KMC_DEC|bdl_sq_L3r2_s2_Xerr.code|dt=1.61s|KMC beta=5.50 dec=bposd N=2152 trials=40 mean_t=3.1375e+03 sem_t=6.5095e+02 median_t=1.9540e+03 mean_flips=20224.7 capped=0
+KMC_Q|bdl_tor2_L2r1_s0_Xerr.code|dt=0.01s|KMC beta=6.00 dec=uf N=8 trials=120 mean_t=3.8430e+04 sem_t=3.5803e+03 median_t=2.8057e+04 mean_flips=4.4 capped=0
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.02s|THRESHOLD p=0.0100 dec=uf N=2152 trials=400 P_L=0.00000 sem=0.00000
+STATS|bdl_tor2_L3r1_s2_Xerr.code|dt=5.29s|STATS N=5084 M_check=2304 K=2 max_q_deg=4 rg=2 d<=65 Delta<=3
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.11s|THRESHOLD p=0.1200 dec=rg_strict N=1271 trials=400 P_L=0.50000 sem=0.02500
+KMC_Q|bdl_tor3_L2r1_s1_Zerr.code|dt=0.01s|KMC beta=5.00 dec=uf N=171 trials=120 mean_t=3.9586e+02 sem_t=3.1377e+01 median_t=3.2047e+02 mean_flips=102.6 capped=0
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.20s|THRESHOLD p=0.0300 dec=uf N=1292 trials=400 P_L=0.03000 sem=0.00853
+KMC_DEC|bdl_tor2_hyb21_s2_Xerr.code|dt=0.85s|KMC beta=3.50 dec=rg_relaxed N=3160 trials=80 mean_t=8.1122e+00 sem_t=5.1743e-01 median_t=7.0413e+00 mean_flips=181.1 capped=0
+KMC_DEC|cls_l4_r2_step2.code|dt=0.64s|KMC beta=3.50 dec=bposd N=400 trials=40 mean_t=1.8582e+03 sem_t=2.3878e+02 median_t=1.3312e+03 mean_flips=16508.4 capped=0
+KMC_DEC|bdl_tor2_hyb21_s2_Xerr.code|dt=3.30s|KMC beta=5.50 dec=bposd N=3160 trials=40 mean_t=4.9749e+04 sem_t=8.6833e+03 median_t=2.9227e+04 mean_flips=101215.9 capped=0
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.44s|THRESHOLD p=0.0300 dec=uf N=3160 trials=400 P_L=0.03000 sem=0.00853
+KMC_CLS|cls_l3_r1_step2.code|dt=0.52s|KMC beta=4.00 dec=uf N=196 trials=200 mean_t=2.0741e+04 sem_t=1.6095e+03 median_t=1.3189e+04 mean_flips=33393.7 capped=0
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.22s|THRESHOLD p=0.0600 dec=rg_relaxed N=1292 trials=400 P_L=0.73500 sem=0.02207
+THRESH|cls_l4_r2_step2.code|dt=0.07s|THRESHOLD p=0.1000 dec=rg_relaxed N=400 trials=400 P_L=0.00000 sem=0.00000
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.09s|THRESHOLD p=0.0100 dec=bposd N=1271 trials=200 P_L=0.00000 sem=0.00000
+KMC_CLS|cls_l3_r1_step2.code|dt=0.28s|KMC beta=1.50 dec=uf N=196 trials=200 mean_t=1.4008e+01 sem_t=5.2558e-01 median_t=1.2122e+01 mean_flips=495.3 capped=0
+KMC_DEC|cls_l4_r2_step2.code|dt=0.49s|KMC beta=3.00 dec=bposd N=400 trials=40 mean_t=4.2380e+02 sem_t=4.9275e+01 median_t=3.2424e+02 mean_flips=7003.0 capped=0
+KMC_Q|bdl_tor2_L2r1_s1_Xerr.code|dt=0.03s|KMC beta=5.00 dec=uf N=76 trials=120 mean_t=2.1698e+05 sem_t=1.7957e+04 median_t=1.6707e+05 mean_flips=1676.5 capped=0
+KMC_DEC|bdl_tor2_L2r1_s2_Xerr.code|dt=0.28s|KMC beta=4.50 dec=rg_strict N=1292 trials=80 mean_t=1.0018e+02 sem_t=1.0088e+01 median_t=7.8192e+01 mean_flips=598.5 capped=0
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.57s|THRESHOLD p=0.0200 dec=rg_relaxed N=3160 trials=400 P_L=0.54000 sem=0.02492
+KMC_CLS|cls_l3_r1_step0.code|dt=0.01s|KMC beta=3.00 dec=uf N=4 trials=200 mean_t=5.9676e+02 sem_t=3.9173e+01 median_t=4.4130e+02 mean_flips=19.5 capped=0
+THRESH|cls_l3_r1_step3.code|dt=0.03s|THRESHOLD p=0.0300 dec=rg_relaxed N=1372 trials=400 P_L=0.00000 sem=0.00000
+HYBRID|toric2d_L20_Xerr.code|dt=0.03s|HYBRID beta=5.00 tau_ec=1.000e+01 cycles=20 T_tot=2.000e+02 N=800 P_fail=0.07500
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.17s|THRESHOLD p=0.0300 dec=bposd N=1271 trials=200 P_L=0.00000 sem=0.00000
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.22s|THRESHOLD p=0.1000 dec=rg_relaxed N=1271 trials=400 P_L=0.51750 sem=0.02498
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=6.250e-02 syn_density=0.438706
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=1.250e-01 syn_density=0.391927
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=2.500e-01 syn_density=0.325244
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=5.000e-01 syn_density=0.247504
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=1.000e+00 syn_density=0.182497
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=2.000e+00 syn_density=0.141541
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=4.000e+00 syn_density=0.121986
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=8.000e+00 syn_density=0.120515
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=1.600e+01 syn_density=0.117839
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=3.200e+01 syn_density=0.118429
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=6.400e+01 syn_density=0.120057
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=1.280e+02 syn_density=0.118140
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=2.560e+02 syn_density=0.119864
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=5.120e+02 syn_density=0.118815
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=1.024e+03 syn_density=0.118972
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=2.048e+03 syn_density=0.120491
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=4.096e+03 syn_density=0.120033
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=8.192e+03 syn_density=0.120214
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=1.638e+04 syn_density=0.119647
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=3.277e+04 syn_density=0.119647
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=6.554e+04 syn_density=0.119647
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=1.311e+05 syn_density=0.119647
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=2.621e+05 syn_density=0.119647
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=5.243e+05 syn_density=0.119647
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=1.049e+06 syn_density=0.119647
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=2.097e+06 syn_density=0.119647
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=4.194e+06 syn_density=0.119647
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=8.389e+06 syn_density=0.119647
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=1.678e+07 syn_density=0.119647
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=3.355e+07 syn_density=0.119647
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=17.29s|COOL beta=2.00 t=6.711e+07 syn_density=0.119647
+KMC_Q|bdl_tor2_L2r1_s1_Zerr.code|dt=0.01s|KMC beta=7.00 dec=uf N=76 trials=120 mean_t=6.3393e+04 sem_t=4.3961e+03 median_t=5.9413e+04 mean_flips=84.6 capped=0
+HYBRID|bdl_tor3_L2r1_s2_Xerr.code|dt=0.08s|HYBRID beta=5.00 tau_ec=1.000e+01 cycles=20 T_tot=2.000e+02 N=2907 P_fail=0.00000
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.16s|THRESHOLD p=0.0300 dec=rg_relaxed N=1292 trials=400 P_L=0.51750 sem=0.02498
+KMC_Q|bdl_tor3_L2r1_s2_Xerr.code|dt=1.11s|KMC beta=3.00 dec=uf N=2907 trials=120 mean_t=7.5663e+00 sem_t=2.4383e-01 median_t=7.4706e+00 mean_flips=444.3 capped=0
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.18s|THRESHOLD p=0.0800 dec=bposd N=1271 trials=200 P_L=0.07000 sem=0.01804
+KMC_Q|bdl_sq_L2r1_s1_Zerr.code|dt=0.01s|KMC beta=5.00 dec=uf N=19 trials=120 mean_t=2.4088e+01 sem_t=2.3614e+00 median_t=1.5006e+01 mean_flips=3.6 capped=0
+THRESH|cls_l4_r2_step2.code|dt=0.02s|THRESHOLD p=0.0800 dec=uf N=400 trials=400 P_L=0.00000 sem=0.00000
+HYBRID|bdl_tor3_L2r1_s2_Xerr.code|dt=0.25s|HYBRID beta=5.00 tau_ec=1.000e+03 cycles=20 T_tot=2.000e+04 N=2907 P_fail=1.00000
+THRESH|cls_l4_r2_step3.code|dt=0.10s|THRESHOLD p=0.0600 dec=rg_relaxed N=4000 trials=400 P_L=0.00000 sem=0.00000
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.0300 dec=uf N=196 trials=400 P_L=0.00000 sem=0.00000
+THRESH|cls_l4_r2_step2.code|dt=0.03s|THRESHOLD p=0.1000 dec=bposd N=400 trials=200 P_L=0.00000 sem=0.00000
+THRESH|cls_l3_r1_step3.code|dt=0.02s|THRESHOLD p=0.0300 dec=uf N=1372 trials=400 P_L=0.00000 sem=0.00000
+KMC_CLS|cls_l3_r1_step3.code|dt=45.18s|KMC beta=3.50 dec=uf N=1372 trials=100 mean_t=4.6604e+06 sem_t=1.0246e+05 median_t=4.9853e+06 mean_flips=18746522.0 capped=88
+KMC_Q|bdl_tor3_L2r1_s1_Zerr.code|dt=0.01s|KMC beta=7.00 dec=uf N=171 trials=120 mean_t=2.2620e+04 sem_t=1.6787e+03 median_t=1.9663e+04 mean_flips=191.0 capped=0
+THRESH|cls_l4_r2_step2.code|dt=0.03s|THRESHOLD p=0.1200 dec=rg_relaxed N=400 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|toric2d_L3_Xerr.code|dt=0.01s|KMC beta=6.00 dec=uf N=18 trials=120 mean_t=3.2531e+04 sem_t=2.4589e+03 median_t=2.8301e+04 mean_flips=23.1 capped=0
+KMC_Q|bdl_tor2_L3r2_s1_Xerr.code|dt=20.20s|KMC beta=6.00 dec=uf N=176 trials=120 mean_t=5.5257e+09 sem_t=3.8004e+08 median_t=4.5686e+09 mean_flips=6688146.1 capped=19
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.0100 dec=rg_strict N=196 trials=400 P_L=0.00000 sem=0.00000
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.11s|THRESHOLD p=0.0200 dec=rg_strict N=2152 trials=400 P_L=0.13000 sem=0.01682
+HYBRID|bdl_tor3_L2r1_s2_Xerr.code|dt=0.11s|HYBRID beta=5.00 tau_ec=5.000e+01 cycles=20 T_tot=1.000e+03 N=2907 P_fail=0.05000
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=6.250e-02 syn_density=0.457179
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=1.250e-01 syn_density=0.422862
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=2.500e-01 syn_density=0.373724
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=5.000e-01 syn_density=0.310131
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=1.000e+00 syn_density=0.243896
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=2.000e+00 syn_density=0.176081
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=4.000e+00 syn_density=0.115616
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=8.000e+00 syn_density=0.068058
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=1.600e+01 syn_density=0.035927
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=3.200e+01 syn_density=0.019102
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=6.400e+01 syn_density=0.009141
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=1.280e+02 syn_density=0.008503
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=2.560e+02 syn_density=0.008503
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=5.120e+02 syn_density=0.008503
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=1.024e+03 syn_density=0.008503
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=2.048e+03 syn_density=0.008503
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=4.096e+03 syn_density=0.008503
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=8.192e+03 syn_density=0.008503
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=1.638e+04 syn_density=0.007015
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=3.277e+04 syn_density=0.006803
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=6.554e+04 syn_density=0.005740
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=1.311e+05 syn_density=0.003614
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=2.621e+05 syn_density=0.002338
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=5.243e+05 syn_density=0.001063
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=1.049e+06 syn_density=0.000213
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=2.097e+06 syn_density=0.000213
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=4.194e+06 syn_density=0.000000
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=8.389e+06 syn_density=0.000000
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=1.678e+07 syn_density=0.000000
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=3.355e+07 syn_density=0.000000
+COOL|toric3d_L7_Xerr.code|dt=0.25s|COOL beta=6.00 t=6.711e+07 syn_density=0.000000
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.09s|THRESHOLD p=0.0400 dec=rg_strict N=1271 trials=400 P_L=0.31000 sem=0.02312
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.11s|THRESHOLD p=0.0100 dec=rg_relaxed N=2152 trials=400 P_L=0.05500 sem=0.01140
+KMC_Q|bdl_surf2_L2r1_s1_Xerr.code|dt=3.93s|KMC beta=7.00 dec=uf N=76 trials=120 mean_t=3.0594e+07 sem_t=2.7036e+06 median_t=2.1741e+07 mean_flips=1231451.9 capped=0
+KMC_Q|bdl_tor2_hyb21_s2_Xerr.code|dt=1.82s|KMC beta=6.00 dec=uf N=3160 trials=120 mean_t=6.1146e+05 sem_t=5.1580e+04 median_t=4.8553e+05 mean_flips=365908.7 capped=0
+KMC_DEC|cls_l3_r1_step3.code|dt=4.50s|KMC beta=3.00 dec=bposd N=1372 trials=40 mean_t=8.3608e+04 sem_t=1.1217e+04 median_t=6.9436e+04 mean_flips=1389018.7 capped=1
+KMC_Q|toric3d_L3_Xerr.code|dt=26.31s|KMC beta=4.00 dec=uf N=81 trials=120 mean_t=2.6443e+11 sem_t=2.1106e+10 median_t=1.8434e+11 mean_flips=4848118.3 capped=7
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.1000 dec=bposd N=196 trials=200 P_L=0.00000 sem=0.00000
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.14s|THRESHOLD p=0.0600 dec=rg_strict N=1271 trials=400 P_L=0.44750 sem=0.02486
+KMC_CLS|cls_l4_r2_step3.code|dt=69.07s|KMC beta=2.50 dec=uf N=4000 trials=100 mean_t=6.8046e+03 sem_t=7.2357e+02 median_t=5.4388e+03 mean_flips=735735.6 capped=0
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.20s|THRESHOLD p=0.0400 dec=rg_strict N=1292 trials=400 P_L=0.76250 sem=0.02128
+KMC_Q|bdl_tor3_L2r1_s1_Zerr.code|dt=0.01s|KMC beta=4.00 dec=uf N=171 trials=120 mean_t=4.1256e+01 sem_t=3.4469e+00 median_t=3.1285e+01 mean_flips=37.2 capped=0
+KMC_DEC|bdl_tor2_L2r1_s2_Xerr.code|dt=0.08s|KMC beta=5.50 dec=uf N=1292 trials=80 mean_t=8.2849e+03 sem_t=9.4389e+02 median_t=5.1001e+03 mean_flips=10147.3 capped=0
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.40s|THRESHOLD p=0.1000 dec=rg_strict N=3160 trials=400 P_L=0.79000 sem=0.02037
+KMC_Q|bdl_tor3_L2r1_s2_Xerr.code|dt=0.53s|KMC beta=5.00 dec=uf N=2907 trials=120 mean_t=8.5705e+02 sem_t=7.4385e+01 median_t=6.7402e+02 mean_flips=7666.5 capped=0
+THRESH|cls_l4_r2_step2.code|dt=0.01s|THRESHOLD p=0.0200 dec=bposd N=400 trials=200 P_L=0.00000 sem=0.00000
+KMC_DEC|cls_l3_r1_step2.code|dt=0.11s|KMC beta=3.50 dec=bposd N=196 trials=40 mean_t=1.7619e+03 sem_t=2.9379e+02 median_t=1.1816e+03 mean_flips=7832.9 capped=0
+KMC_CLS|cls_l4_r2_step2.code|dt=0.45s|KMC beta=2.00 dec=uf N=400 trials=200 mean_t=3.6987e+01 sem_t=1.6059e+00 median_t=2.9859e+01 mean_flips=1674.0 capped=0
+THRESH|cls_l4_r2_step2.code|dt=0.01s|THRESHOLD p=0.0100 dec=rg_strict N=400 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|toric2d_L30_Xerr.code|dt=0.10s|KMC beta=6.00 dec=uf N=1800 trials=120 mean_t=3.2525e+02 sem_t=2.2470e+01 median_t=2.6303e+02 mean_flips=477.3 capped=0
+KMC_CLS|cls_l4_r2_step2.code|dt=0.45s|KMC beta=2.50 dec=uf N=400 trials=200 mean_t=1.0167e+02 sem_t=4.2584e+00 median_t=9.0553e+01 mean_flips=2786.4 capped=0
+KMC_Q|toric3d_L3_Xerr.code|dt=0.43s|KMC beta=3.00 dec=uf N=81 trials=120 mean_t=9.3345e+07 sem_t=8.1696e+06 median_t=6.8494e+07 mean_flips=96985.7 capped=0
+KMC_Q|bdl_tor2_L2r1_s2_Zerr.code|dt=55.55s|KMC beta=7.00 dec=uf N=1292 trials=120 mean_t=4.6814e+09 sem_t=8.6314e+07 median_t=4.9259e+09 mean_flips=14254685.4 capped=111
+KMC_Q|bdl_surf2_L2r1_s0_Xerr.code|dt=0.00s|KMC beta=6.00 dec=uf N=8 trials=120 mean_t=5.4895e+02 sem_t=4.3704e+01 median_t=4.3864e+02 mean_flips=14.6 capped=0
+KMC_Q|bdl_sq_L2r1_s1_Xerr.code|dt=0.01s|KMC beta=6.00 dec=uf N=19 trials=120 mean_t=6.2517e+04 sem_t=7.2459e+03 median_t=3.5028e+04 mean_flips=3084.8 capped=0
+KMC_Q|bdl_sq_L2r1_s3_Xerr.code|dt=33.11s|KMC beta=5.00 dec=uf N=2911 trials=120 mean_t=2.4766e+06 sem_t=1.0862e+05 median_t=3.2910e+06 mean_flips=11272367.9 capped=72
+KMC_DEC|bdl_sq_L3r2_s2_Xerr.code|dt=1.04s|KMC beta=3.50 dec=bposd N=2152 trials=40 mean_t=2.1986e+01 sem_t=2.0990e+00 median_t=1.9437e+01 mean_flips=1013.5 capped=0
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.0200 dec=rg_strict N=196 trials=400 P_L=0.00250 sem=0.00250
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.0400 dec=bposd N=196 trials=200 P_L=0.00000 sem=0.00000
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.02s|THRESHOLD p=0.0100 dec=uf N=1292 trials=400 P_L=0.00000 sem=0.00000
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.30s|THRESHOLD p=0.0600 dec=rg_relaxed N=3160 trials=400 P_L=0.73000 sem=0.02220
+THRESH|cls_l4_r2_step2.code|dt=0.02s|THRESHOLD p=0.0600 dec=bposd N=400 trials=200 P_L=0.00000 sem=0.00000
+THRESH|cls_l4_r2_step3.code|dt=0.10s|THRESHOLD p=0.0300 dec=bposd N=4000 trials=200 P_L=0.00000 sem=0.00000
+KMC_DEC|bdl_tor2_L2r1_s2_Zerr.code|dt=0.70s|KMC beta=3.50 dec=bposd N=1292 trials=40 mean_t=4.4727e+02 sem_t=5.5419e+01 median_t=3.3464e+02 mean_flips=3274.2 capped=0
+KMC_DEC|cls_l4_r2_step3.code|dt=22.72s|KMC beta=2.50 dec=rg_relaxed N=4000 trials=80 mean_t=4.2779e+03 sem_t=3.6885e+02 median_t=3.5119e+03 mean_flips=454011.2 capped=0
+KMC_Q|toric2d_L30_Xerr.code|dt=0.19s|KMC beta=3.00 dec=uf N=1800 trials=120 mean_t=7.1240e+00 sem_t=1.7251e-01 median_t=6.9759e+00 mean_flips=283.9 capped=0
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.51s|THRESHOLD p=0.0800 dec=uf N=3160 trials=400 P_L=0.73000 sem=0.02220
+THRESH|cls_l3_r1_step3.code|dt=0.03s|THRESHOLD p=0.1200 dec=bposd N=1372 trials=200 P_L=0.00000 sem=0.00000
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.09s|THRESHOLD p=0.0200 dec=rg_relaxed N=1292 trials=400 P_L=0.41000 sem=0.02459
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=6.250e-02 syn_density=0.436111
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=1.250e-01 syn_density=0.384792
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=2.500e-01 syn_density=0.317188
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=5.000e-01 syn_density=0.243611
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=1.000e+00 syn_density=0.177726
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=2.000e+00 syn_density=0.136233
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=4.000e+00 syn_density=0.118594
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=8.000e+00 syn_density=0.118715
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=1.600e+01 syn_density=0.119757
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=3.200e+01 syn_density=0.119740
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=6.400e+01 syn_density=0.117378
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=1.280e+02 syn_density=0.118003
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=2.560e+02 syn_density=0.120191
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=5.120e+02 syn_density=0.118906
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=1.024e+03 syn_density=0.118385
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=2.048e+03 syn_density=0.118264
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=4.096e+03 syn_density=0.118559
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=8.192e+03 syn_density=0.119010
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=1.638e+04 syn_density=0.118264
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=3.277e+04 syn_density=0.119375
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=6.554e+04 syn_density=0.119375
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=1.311e+05 syn_density=0.119375
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=2.621e+05 syn_density=0.119375
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=5.243e+05 syn_density=0.119375
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=1.049e+06 syn_density=0.119375
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=2.097e+06 syn_density=0.119375
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=4.194e+06 syn_density=0.119375
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=8.389e+06 syn_density=0.119375
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=1.678e+07 syn_density=0.119375
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=3.355e+07 syn_density=0.119375
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=12.58s|COOL beta=2.00 t=6.711e+07 syn_density=0.119375
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=6.250e-02 syn_density=0.472442
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=1.250e-01 syn_density=0.448043
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=2.500e-01 syn_density=0.406414
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=5.000e-01 syn_density=0.344895
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=1.000e+00 syn_density=0.275708
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=2.000e+00 syn_density=0.216071
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=4.000e+00 syn_density=0.173255
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=8.000e+00 syn_density=0.142415
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=1.600e+01 syn_density=0.123405
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=3.200e+01 syn_density=0.108629
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=6.400e+01 syn_density=0.103321
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=1.280e+02 syn_density=0.100233
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=2.560e+02 syn_density=0.099067
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=5.120e+02 syn_density=0.098955
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=1.024e+03 syn_density=0.100591
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=2.048e+03 syn_density=0.101143
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=4.096e+03 syn_density=0.098024
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=8.192e+03 syn_density=0.102544
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=1.638e+04 syn_density=0.100397
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=3.277e+04 syn_density=0.098883
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=6.554e+04 syn_density=0.100683
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=1.311e+05 syn_density=0.100683
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=2.621e+05 syn_density=0.100683
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=5.243e+05 syn_density=0.100683
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=1.049e+06 syn_density=0.100683
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=2.097e+06 syn_density=0.100683
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=4.194e+06 syn_density=0.100683
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=8.389e+06 syn_density=0.100683
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=1.678e+07 syn_density=0.100683
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=3.355e+07 syn_density=0.100683
+COOL|cls_l3_r1_step3.code|dt=10.14s|COOL beta=2.00 t=6.711e+07 syn_density=0.100683
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.09s|THRESHOLD p=0.1200 dec=uf N=1271 trials=400 P_L=0.49500 sem=0.02500
+KMC_CLS|cls_l3_r1_step4.code|dt=71.32s|KMC beta=3.00 dec=uf N=9604 trials=40 mean_t=2.7164e+02 sem_t=1.7362e+01 median_t=2.5080e+02 mean_flips=105605.3 capped=0
+KMC_DEC|cls_l3_r1_step2.code|dt=0.09s|KMC beta=3.00 dec=bposd N=196 trials=40 mean_t=3.5277e+02 sem_t=4.6094e+01 median_t=2.7486e+02 mean_flips=2806.9 capped=0
+KMC_Q|toric3d_L3_Xerr.code|dt=67.99s|KMC beta=5.00 dec=uf N=81 trials=120 mean_t=4.3504e+13 sem_t=5.3442e+11 median_t=4.4886e+13 mean_flips=14537173.8 capped=113
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.30s|THRESHOLD p=0.0200 dec=rg_strict N=3160 trials=400 P_L=0.55500 sem=0.02485
+KMC_Q|bdl_tor2_L2r1_s0_Xerr.code|dt=0.01s|KMC beta=7.00 dec=uf N=8 trials=120 mean_t=2.7330e+05 sem_t=2.6290e+04 median_t=1.9505e+05 mean_flips=4.7 capped=0
+THRESH|cls_l4_r2_step2.code|dt=0.04s|THRESHOLD p=0.1200 dec=bposd N=400 trials=200 P_L=0.00000 sem=0.00000
+STATS|layer_913_Xerr.code|dt=0.61s|STATS N=1853 M_check=926 K=1 max_q_deg=3 rg=0 d<=30 Delta<=2
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.07s|THRESHOLD p=0.0800 dec=uf N=1271 trials=400 P_L=0.25750 sem=0.02186
+THRESH|cls_l4_r2_step3.code|dt=0.07s|THRESHOLD p=0.0600 dec=uf N=4000 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|toric3d_L7_Xerr.code|dt=69.86s|KMC beta=7.00 dec=uf N=1029 trials=120 mean_t=1.0541e+16 sem_t=3.9836e+11 median_t=1.0541e+16 mean_flips=15000000.0 capped=120
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.03s|THRESHOLD p=0.0100 dec=uf N=3160 trials=400 P_L=0.00000 sem=0.00000
+KMC_DEC|cls_l4_r2_step3.code|dt=22.61s|KMC beta=3.00 dec=rg_strict N=4000 trials=80 mean_t=1.1798e+05 sem_t=4.8564e+03 median_t=1.4142e+05 mean_flips=3980816.2 capped=43
+THRESH|cls_l4_r2_step2.code|dt=0.01s|THRESHOLD p=0.0400 dec=rg_strict N=400 trials=400 P_L=0.00000 sem=0.00000
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.40s|THRESHOLD p=0.1200 dec=bposd N=3160 trials=200 P_L=0.77000 sem=0.02976
+KMC_Q|bdl_sq_L3r2_s1_Xerr.code|dt=7.34s|KMC beta=7.00 dec=uf N=44 trials=120 mean_t=1.0490e+08 sem_t=9.7499e+06 median_t=7.1431e+07 mean_flips=3061597.0 capped=1
+KMC_CLS|cls_l3_r1_step1.code|dt=0.17s|KMC beta=3.50 dec=uf N=28 trials=200 mean_t=5.4190e+05 sem_t=4.1123e+04 median_t=3.4238e+05 mean_flips=37841.1 capped=0
+KMC_Q|bdl_sq_L2r1_s2_Zerr.code|dt=0.10s|KMC beta=7.00 dec=uf N=323 trials=120 mean_t=5.2720e+05 sem_t=4.6907e+04 median_t=3.6405e+05 mean_flips=26942.6 capped=0
+KMC_Q|bdl_tor2_L2r1_s1_Zerr.code|dt=0.01s|KMC beta=4.00 dec=uf N=76 trials=120 mean_t=9.9306e+01 sem_t=8.1651e+00 median_t=7.5127e+01 mean_flips=38.6 capped=0
+THRESH|cls_l4_r2_step3.code|dt=0.03s|THRESHOLD p=0.0100 dec=uf N=4000 trials=400 P_L=0.00000 sem=0.00000
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.16s|THRESHOLD p=0.0600 dec=rg_relaxed N=2152 trials=400 P_L=0.46000 sem=0.02492
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.16s|THRESHOLD p=0.0600 dec=uf N=1292 trials=400 P_L=0.26500 sem=0.02207
+KMC_DEC|bdl_sq_L3r1_s2_Xerr.code|dt=0.57s|KMC beta=4.50 dec=bposd N=1271 trials=40 mean_t=1.2908e+02 sem_t=1.6883e+01 median_t=1.0275e+02 mean_flips=1573.4 capped=0
+KMC_Q|bdl_surf2_L2r1_s0_Xerr.code|dt=0.01s|KMC beta=5.00 dec=uf N=8 trials=120 mean_t=2.0641e+02 sem_t=1.8407e+01 median_t=1.5163e+02 mean_flips=16.4 capped=0
+KMC_Q|bdl_tor3_L2r1_s1_Zerr.code|dt=0.01s|KMC beta=3.00 dec=uf N=171 trials=120 mean_t=6.5868e+00 sem_t=4.6856e-01 median_t=5.3525e+00 mean_flips=21.3 capped=0
+THRESH|cls_l4_r2_step2.code|dt=0.01s|THRESHOLD p=0.0100 dec=rg_relaxed N=400 trials=400 P_L=0.00000 sem=0.00000
+KMC_DEC|cls_l4_r2_step3.code|dt=38.64s|KMC beta=3.00 dec=bposd N=4000 trials=40 mean_t=9.0228e+04 sem_t=8.3329e+03 median_t=1.0151e+05 mean_flips=3083154.1 capped=13
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.16s|THRESHOLD p=0.1200 dec=rg_relaxed N=2152 trials=400 P_L=0.49250 sem=0.02500
+KMC_Q|toric3d_L5_Zerr.code|dt=0.01s|KMC beta=4.00 dec=uf N=375 trials=120 mean_t=1.4873e+01 sem_t=1.2545e+00 median_t=1.2620e+01 mean_flips=19.3 capped=0
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.0600 dec=bposd N=196 trials=200 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_tor2_L2r1_s2_Zerr.code|dt=30.74s|KMC beta=6.00 dec=uf N=1292 trials=120 mean_t=3.4149e+08 sem_t=2.1036e+07 median_t=3.0170e+08 mean_flips=7877041.7 capped=27
+THRESH|cls_l4_r2_step2.code|dt=0.03s|THRESHOLD p=0.0600 dec=rg_relaxed N=400 trials=400 P_L=0.00000 sem=0.00000
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.17s|THRESHOLD p=0.1200 dec=uf N=2152 trials=400 P_L=0.52250 sem=0.02497
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.08s|THRESHOLD p=0.0200 dec=rg_strict N=1292 trials=400 P_L=0.39000 sem=0.02439
+KMC_Q|bdl_tor2_hyb21_s2_Xerr.code|dt=0.39s|KMC beta=5.00 dec=uf N=3160 trials=120 mean_t=2.7177e+03 sem_t=2.6301e+02 median_t=1.8236e+03 mean_flips=16987.6 capped=0
+KMC_Q|bdl_surf2_L2r1_s2_Xerr.code|dt=0.15s|KMC beta=4.00 dec=uf N=1292 trials=120 mean_t=6.6196e+01 sem_t=5.1521e+00 median_t=5.1551e+01 mean_flips=1138.2 capped=0
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.16s|THRESHOLD p=0.1000 dec=bposd N=2152 trials=200 P_L=0.37500 sem=0.03423
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=6.250e-02 syn_density=0.469527
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=1.250e-01 syn_density=0.442541
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=2.500e-01 syn_density=0.397129
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=5.000e-01 syn_density=0.333862
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=1.000e+00 syn_density=0.258058
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=2.000e+00 syn_density=0.190834
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=4.000e+00 syn_density=0.140942
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=8.000e+00 syn_density=0.104825
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=1.600e+01 syn_density=0.072848
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=3.200e+01 syn_density=0.048491
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=6.400e+01 syn_density=0.035923
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=1.280e+02 syn_density=0.033040
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=2.560e+02 syn_density=0.031322
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=5.120e+02 syn_density=0.028428
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=1.024e+03 syn_density=0.024644
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=2.048e+03 syn_density=0.020615
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=4.096e+03 syn_density=0.015799
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=8.192e+03 syn_density=0.011852
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=1.638e+04 syn_density=0.009213
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=3.277e+04 syn_density=0.007496
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=6.554e+04 syn_density=0.005992
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=1.311e+05 syn_density=0.004612
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=2.621e+05 syn_density=0.003272
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=5.243e+05 syn_density=0.002147
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=1.049e+06 syn_density=0.001483
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=2.097e+06 syn_density=0.001524
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=4.194e+06 syn_density=0.001483
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=8.389e+06 syn_density=0.001483
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=1.678e+07 syn_density=0.001524
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=3.355e+07 syn_density=0.001524
+COOL|cls_l3_r1_step3.code|dt=4.63s|COOL beta=6.00 t=6.711e+07 syn_density=0.001503
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.08s|THRESHOLD p=0.0200 dec=rg_relaxed N=2152 trials=400 P_L=0.17500 sem=0.01900
+KMC_Q|layer_913_Xerr.code|dt=0.19s|KMC beta=4.00 dec=uf N=1853 trials=120 mean_t=4.5742e+01 sem_t=2.7922e+00 median_t=3.8652e+01 mean_flips=1310.4 capped=0
+KMC_DEC|bdl_sq_L3r1_s2_Xerr.code|dt=0.09s|KMC beta=4.50 dec=uf N=1271 trials=80 mean_t=8.1785e+01 sem_t=7.9766e+00 median_t=5.4528e+01 mean_flips=903.7 capped=0
+THRESH|cls_l4_r2_step2.code|dt=0.01s|THRESHOLD p=0.0400 dec=bposd N=400 trials=200 P_L=0.00000 sem=0.00000
+HYBRID|bdl_tor3_L2r1_s2_Zerr.code|dt=0.05s|HYBRID beta=5.00 tau_ec=1.000e+03 cycles=20 T_tot=2.000e+04 N=2907 P_fail=0.00000
+THRESH|cls_l4_r2_step2.code|dt=0.01s|THRESHOLD p=0.0200 dec=uf N=400 trials=400 P_L=0.00000 sem=0.00000
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.07s|THRESHOLD p=0.0800 dec=uf N=1292 trials=400 P_L=0.65250 sem=0.02381
+KMC_DEC|cls_l3_r1_step3.code|dt=1.37s|KMC beta=2.50 dec=rg_strict N=1372 trials=80 mean_t=1.3414e+03 sem_t=1.0654e+02 median_t=1.1947e+03 mean_flips=67333.2 capped=0
+KMC_Q|bdl_tor2_L2r1_s0_Xerr.code|dt=0.00s|KMC beta=5.00 dec=uf N=8 trials=120 mean_t=4.2726e+03 sem_t=4.1433e+02 median_t=2.5403e+03 mean_flips=4.3 capped=0
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.12s|THRESHOLD p=0.1000 dec=rg_strict N=2152 trials=400 P_L=0.51500 sem=0.02499
+THRESH|cls_l4_r2_step3.code|dt=0.06s|THRESHOLD p=0.1200 dec=bposd N=4000 trials=200 P_L=0.00000 sem=0.00000
+KMC_CLS|cls_l3_r1_step1.code|dt=0.02s|KMC beta=2.00 dec=uf N=28 trials=200 mean_t=3.1287e+02 sem_t=2.3833e+01 median_t=1.9744e+02 mean_flips=654.3 capped=0
+THRESH|cls_l4_r2_step3.code|dt=0.05s|THRESHOLD p=0.0400 dec=uf N=4000 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_surf2_L2r1_s0_Xerr.code|dt=0.01s|KMC beta=4.00 dec=uf N=8 trials=120 mean_t=5.9670e+01 sem_t=6.3196e+00 median_t=4.8913e+01 mean_flips=10.8 capped=0
+KMC_DEC|bdl_sq_L3r2_s2_Xerr.code|dt=0.17s|KMC beta=5.50 dec=uf N=2152 trials=80 mean_t=2.9337e+03 sem_t=4.4511e+02 median_t=1.6378e+03 mean_flips=18522.0 capped=0
+THRESH|cls_l3_r1_step3.code|dt=0.04s|THRESHOLD p=0.1200 dec=uf N=1372 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_tor2_hyb21_s2_Zerr.code|dt=0.70s|KMC beta=3.00 dec=uf N=3160 trials=120 mean_t=3.9791e+01 sem_t=1.4440e+00 median_t=3.8041e+01 mean_flips=1344.3 capped=0
+KMC_Q|layer_steane_Xerr.code|dt=0.05s|KMC beta=6.00 dec=uf N=743 trials=120 mean_t=4.1179e+03 sem_t=4.3551e+02 median_t=2.7317e+03 mean_flips=6455.1 capped=0
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.0200 dec=rg_relaxed N=196 trials=400 P_L=0.00250 sem=0.00250
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.08s|THRESHOLD p=0.1200 dec=bposd N=1271 trials=200 P_L=0.39000 sem=0.03449
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.08s|THRESHOLD p=0.0800 dec=rg_strict N=1292 trials=400 P_L=0.74000 sem=0.02193
+KMC_Q|toric3d_L5_Xerr.code|dt=54.21s|KMC beta=6.00 dec=uf N=375 trials=120 mean_t=5.2973e+14 sem_t=1.8254e+10 median_t=5.2972e+14 mean_flips=15000000.0 capped=120
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.06s|THRESHOLD p=0.1200 dec=uf N=1292 trials=400 P_L=0.74750 sem=0.02172
+KMC_Q|toric2d_L3_Xerr.code|dt=0.01s|KMC beta=7.00 dec=uf N=18 trials=120 mean_t=2.0871e+05 sem_t=1.3562e+04 median_t=1.6543e+05 mean_flips=16.6 capped=0
+KMC_Q|bdl_sq_L3r2_s1_Xerr.code|dt=0.01s|KMC beta=3.00 dec=uf N=44 trials=120 mean_t=4.8184e+02 sem_t=4.6885e+01 median_t=3.0745e+02 mean_flips=782.8 capped=0
+KMC_CLS|cls_l4_r2_step2.code|dt=0.35s|KMC beta=3.00 dec=uf N=400 trials=200 mean_t=4.5384e+02 sem_t=2.8224e+01 median_t=3.3101e+02 mean_flips=7502.4 capped=0
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.30s|THRESHOLD p=0.1200 dec=uf N=3160 trials=400 P_L=0.76000 sem=0.02135
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.0600 dec=uf N=196 trials=400 P_L=0.00000 sem=0.00000
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.07s|THRESHOLD p=0.0100 dec=rg_strict N=1292 trials=400 P_L=0.27750 sem=0.02239
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.15s|THRESHOLD p=0.0300 dec=bposd N=2152 trials=200 P_L=0.00000 sem=0.00000
+HYBRID|toric2d_L20_Xerr.code|dt=0.08s|HYBRID beta=5.00 tau_ec=5.000e+03 cycles=20 T_tot=1.000e+05 N=800 P_fail=1.00000
+KMC_Q|bdl_tor3_L2r1_s2_Zerr.code|dt=29.71s|KMC beta=6.00 dec=uf N=2907 trials=120 mean_t=1.8809e+08 sem_t=9.9520e+06 median_t=2.3840e+08 mean_flips=9774093.6 capped=52
+THRESH|cls_l3_r1_step3.code|dt=0.03s|THRESHOLD p=0.1200 dec=rg_relaxed N=1372 trials=400 P_L=0.00000 sem=0.00000
+KMC_DEC|bdl_tor2_L2r1_s2_Xerr.code|dt=0.06s|KMC beta=5.50 dec=rg_strict N=1292 trials=80 mean_t=7.2690e+03 sem_t=8.4152e+02 median_t=5.1001e+03 mean_flips=8319.0 capped=0
+KMC_Q|bdl_tor3_L2r1_s2_Xerr.code|dt=0.34s|KMC beta=4.00 dec=uf N=2907 trials=120 mean_t=4.1964e+01 sem_t=1.7020e+00 median_t=4.1441e+01 mean_flips=1016.9 capped=0
+KMC_Q|bdl_sq_L2r1_s1_Xerr.code|dt=0.01s|KMC beta=3.00 dec=uf N=19 trials=120 mean_t=9.7031e+01 sem_t=9.4630e+00 median_t=6.7561e+01 mean_flips=95.5 capped=0
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.01s|THRESHOLD p=0.0200 dec=uf N=1271 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_tor2_L2r1_s1_Xerr.code|dt=0.02s|KMC beta=6.00 dec=uf N=76 trials=120 mean_t=4.7901e+06 sem_t=4.1756e+05 median_t=3.4434e+06 mean_flips=4839.5 capped=0
+KMC_Q|bdl_surf2_L2r1_s1_Xerr.code|dt=0.28s|KMC beta=6.00 dec=uf N=76 trials=120 mean_t=1.4071e+06 sem_t=1.3883e+05 median_t=1.0863e+06 mean_flips=154855.5 capped=0
+KMC_Q|bdl_sq_L3r2_s2_Zerr.code|dt=11.85s|KMC beta=6.00 dec=uf N=2152 trials=120 mean_t=1.4361e+07 sem_t=1.1649e+06 median_t=9.4388e+06 mean_flips=5045510.6 capped=8
+KMC_Q|bdl_tor3_L2r1_s1_Zerr.code|dt=0.01s|KMC beta=6.00 dec=uf N=171 trials=120 mean_t=2.4287e+03 sem_t=2.0319e+02 median_t=2.0525e+03 mean_flips=134.8 capped=0
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.03s|THRESHOLD p=0.0300 dec=uf N=1292 trials=400 P_L=0.01750 sem=0.00656
+KMC_Q|bdl_tor2_L3r1_s1_Xerr.code|dt=0.03s|KMC beta=5.00 dec=uf N=164 trials=120 mean_t=8.0817e+04 sem_t=6.8367e+03 median_t=5.5659e+04 mean_flips=3905.5 capped=0
+KMC_Q|bdl_sq_L3r2_s1_Xerr.code|dt=0.03s|KMC beta=4.00 dec=uf N=44 trials=120 mean_t=1.2289e+04 sem_t=1.3667e+03 median_t=6.6830e+03 mean_flips=7250.4 capped=0
+THRESH|cls_l4_r2_step3.code|dt=0.06s|THRESHOLD p=0.0400 dec=bposd N=4000 trials=200 P_L=0.00000 sem=0.00000
+KMC_DEC|bdl_tor2_hyb21_s2_Xerr.code|dt=0.33s|KMC beta=4.50 dec=rg_relaxed N=3160 trials=80 mean_t=7.9915e+01 sem_t=9.8949e+00 median_t=5.1647e+01 mean_flips=846.7 capped=0
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.23s|THRESHOLD p=0.0800 dec=rg_strict N=3160 trials=400 P_L=0.76250 sem=0.02128
+KMC_Q|bdl_sq_L3r1_s2_Xerr.code|dt=0.13s|KMC beta=4.00 dec=uf N=1271 trials=120 mean_t=3.3851e+01 sem_t=2.3752e+00 median_t=2.6458e+01 mean_flips=583.6 capped=0
+KMC_Q|bdl_sq_L2r1_s1_Xerr.code|dt=0.01s|KMC beta=4.00 dec=uf N=19 trials=120 mean_t=8.1456e+02 sem_t=8.5721e+01 median_t=4.6919e+02 mean_flips=296.4 capped=0
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.30s|THRESHOLD p=0.0200 dec=bposd N=3160 trials=200 P_L=0.00000 sem=0.00000
+KMC_DEC|bdl_tor2_L2r1_s2_Xerr.code|dt=0.07s|KMC beta=4.50 dec=uf N=1292 trials=80 mean_t=1.7655e+02 sem_t=1.7366e+01 median_t=1.2856e+02 mean_flips=1208.3 capped=0
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.13s|THRESHOLD p=0.0800 dec=rg_strict N=2152 trials=400 P_L=0.53750 sem=0.02493
+KMC_Q|bdl_tor3_L2r1_s2_Zerr.code|dt=51.84s|KMC beta=7.00 dec=uf N=2907 trials=120 mean_t=2.1410e+09 sem_t=2.4413e+07 median_t=2.1888e+09 mean_flips=14678652.8 capped=115
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.07s|THRESHOLD p=0.0800 dec=bposd N=1292 trials=200 P_L=0.21000 sem=0.02880
+KMC_DEC|cls_l3_r1_step3.code|dt=2.29s|KMC beta=3.00 dec=rg_relaxed N=1372 trials=80 mean_t=6.2097e+04 sem_t=7.1248e+03 median_t=4.1909e+04 mean_flips=1020869.8 capped=0
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.32s|THRESHOLD p=0.0600 dec=uf N=3160 trials=400 P_L=0.39000 sem=0.02439
+KMC_DEC|bdl_sq_L3r2_s2_Xerr.code|dt=0.17s|KMC beta=3.50 dec=uf N=2152 trials=80 mean_t=1.8469e+01 sem_t=1.2335e+00 median_t=1.5864e+01 mean_flips=802.5 capped=0
+KMC_DEC|bdl_tor2_L2r1_s2_Xerr.code|dt=0.09s|KMC beta=3.50 dec=uf N=1292 trials=80 mean_t=1.7661e+01 sem_t=1.2669e+00 median_t=1.5387e+01 mean_flips=306.1 capped=0
+KMC_Q|layer_913_Xerr.code|dt=0.34s|KMC beta=7.00 dec=uf N=1853 trials=120 mean_t=4.3920e+04 sem_t=4.8994e+03 median_t=2.6382e+04 mean_flips=71343.9 capped=0
+KMC_Q|bdl_tor2_L2r1_s2_Zerr.code|dt=0.15s|KMC beta=3.00 dec=uf N=1292 trials=120 mean_t=5.5071e+01 sem_t=3.2013e+00 median_t=4.9738e+01 mean_flips=774.3 capped=0
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.17s|THRESHOLD p=0.0100 dec=bposd N=3160 trials=200 P_L=0.00000 sem=0.00000
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.03s|THRESHOLD p=0.0200 dec=uf N=2152 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_tor2_L2r1_s0_Xerr.code|dt=0.00s|KMC beta=4.00 dec=uf N=8 trials=120 mean_t=6.9225e+02 sem_t=6.2996e+01 median_t=4.4283e+02 mean_flips=4.1 capped=0
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.08s|THRESHOLD p=0.1200 dec=rg_relaxed N=1292 trials=400 P_L=0.75250 sem=0.02158
+KMC_DEC|cls_l3_r1_step2.code|dt=0.04s|KMC beta=3.50 dec=rg_relaxed N=196 trials=80 mean_t=1.2342e+03 sem_t=1.5629e+02 median_t=7.3583e+02 mean_flips=4868.9 capped=0
+KMC_Q|bdl_tor2_hyb21_s2_Zerr.code|dt=52.79s|KMC beta=7.00 dec=uf N=3160 trials=120 mean_t=1.8985e+09 sem_t=2.4308e+07 median_t=1.9430e+09 mean_flips=14661448.9 capped=115
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.03s|THRESHOLD p=0.0100 dec=rg_strict N=1271 trials=400 P_L=0.02750 sem=0.00818
+KMC_Q|toric2d_L30_Xerr.code|dt=0.04s|KMC beta=7.00 dec=uf N=1800 trials=120 mean_t=2.1471e+03 sem_t=2.0788e+02 median_t=1.2800e+03 mean_flips=860.7 capped=0
+KMC_Q|bdl_tor2_L2r1_s2_Zerr.code|dt=0.11s|KMC beta=4.00 dec=uf N=1292 trials=120 mean_t=6.9922e+03 sem_t=7.5544e+02 median_t=4.3150e+03 mean_flips=14076.1 capped=0
+THRESH|cls_l4_r2_step3.code|dt=0.08s|THRESHOLD p=0.1200 dec=rg_relaxed N=4000 trials=400 P_L=0.00000 sem=0.00000
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.10s|THRESHOLD p=0.0800 dec=rg_strict N=1292 trials=400 P_L=0.75500 sem=0.02150
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.11s|THRESHOLD p=0.1000 dec=rg_relaxed N=2152 trials=400 P_L=0.51500 sem=0.02499
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.0800 dec=rg_relaxed N=196 trials=400 P_L=0.00750 sem=0.00431
+KMC_CLS|cls_l3_r1_step0.code|dt=0.01s|KMC beta=3.50 dec=uf N=4 trials=200 mean_t=1.5244e+03 sem_t=8.9203e+01 median_t=1.3459e+03 mean_flips=20.3 capped=0
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.16s|THRESHOLD p=0.0800 dec=bposd N=2152 trials=200 P_L=0.20500 sem=0.02855
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.08s|THRESHOLD p=0.0800 dec=rg_strict N=1271 trials=400 P_L=0.50500 sem=0.02500
+THRESH|cls_l3_r1_step3.code|dt=0.02s|THRESHOLD p=0.0400 dec=rg_strict N=1372 trials=400 P_L=0.00000 sem=0.00000
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.13s|THRESHOLD p=0.0800 dec=uf N=2152 trials=400 P_L=0.41750 sem=0.02466
+KMC_Q|bdl_tor2_L3r1_s1_Xerr.code|dt=0.10s|KMC beta=7.00 dec=uf N=164 trials=120 mean_t=3.6079e+07 sem_t=3.2118e+06 median_t=2.7289e+07 mean_flips=29441.4 capped=0
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=6.250e-02 syn_density=0.445231
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=1.250e-01 syn_density=0.399631
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=2.500e-01 syn_density=0.335449
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=5.000e-01 syn_density=0.256510
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=1.000e+00 syn_density=0.187391
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=2.000e+00 syn_density=0.139703
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=4.000e+00 syn_density=0.124783
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=8.000e+00 syn_density=0.121636
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=1.600e+01 syn_density=0.119629
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=3.200e+01 syn_density=0.119846
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=6.400e+01 syn_density=0.118679
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=1.280e+02 syn_density=0.120985
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=2.560e+02 syn_density=0.118544
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=5.120e+02 syn_density=0.119737
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=1.024e+03 syn_density=0.116564
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=2.048e+03 syn_density=0.118001
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=4.096e+03 syn_density=0.118625
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=8.192e+03 syn_density=0.119385
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=1.638e+04 syn_density=0.118652
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=3.277e+04 syn_density=0.118435
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=6.554e+04 syn_density=0.118435
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=1.311e+05 syn_density=0.118435
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=2.621e+05 syn_density=0.118435
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=5.243e+05 syn_density=0.118435
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=1.049e+06 syn_density=0.118435
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=2.097e+06 syn_density=0.118435
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=4.194e+06 syn_density=0.118435
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=8.389e+06 syn_density=0.118435
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=1.678e+07 syn_density=0.118435
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=3.355e+07 syn_density=0.118435
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=8.44s|COOL beta=2.00 t=6.711e+07 syn_density=0.118435
+KMC_Q|bdl_tor3_L2r1_s0_Xerr.code|dt=0.01s|KMC beta=4.00 dec=uf N=18 trials=120 mean_t=4.9865e+02 sem_t=3.8082e+01 median_t=4.1820e+02 mean_flips=16.5 capped=0
+KMC_DEC|cls_l3_r1_step2.code|dt=0.04s|KMC beta=2.50 dec=rg_relaxed N=196 trials=80 mean_t=5.7108e+01 sem_t=4.6150e+00 median_t=5.1075e+01 mean_flips=687.0 capped=0
+KMC_Q|bdl_sq_L3r1_s1_Xerr.code|dt=0.02s|KMC beta=6.00 dec=uf N=41 trials=120 mean_t=4.0589e+04 sem_t=4.5897e+03 median_t=2.6291e+04 mean_flips=4175.5 capped=0
+THRESH|cls_l4_r2_step3.code|dt=0.06s|THRESHOLD p=0.0600 dec=rg_strict N=4000 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|toric2d_L20_Xerr.code|dt=0.05s|KMC beta=3.00 dec=uf N=800 trials=120 mean_t=8.2957e+00 sem_t=2.9442e-01 median_t=7.6485e+00 mean_flips=151.1 capped=0
+KMC_DEC|cls_l3_r1_step3.code|dt=7.75s|KMC beta=3.50 dec=uf N=1372 trials=80 mean_t=1.2013e+06 sem_t=2.1081e+04 median_t=1.2577e+06 mean_flips=4831341.9 capped=75
+KMC_CLS|cls_l4_r2_step0.code|dt=0.01s|KMC beta=1.50 dec=uf N=4 trials=200 mean_t=2.4771e+01 sem_t=1.8124e+00 median_t=1.7922e+01 mean_flips=12.4 capped=0
+KMC_Q|toric2d_L12_Xerr.code|dt=0.02s|KMC beta=6.00 dec=uf N=288 trials=120 mean_t=2.0142e+03 sem_t=1.9325e+02 median_t=1.3836e+03 mean_flips=301.2 capped=0
+THRESH|cls_l3_r1_step3.code|dt=0.03s|THRESHOLD p=0.1000 dec=rg_strict N=1372 trials=400 P_L=0.00000 sem=0.00000
+KMC_CLS|cls_l3_r1_step2.code|dt=0.12s|KMC beta=3.50 dec=uf N=196 trials=200 mean_t=1.9269e+03 sem_t=1.5319e+02 median_t=1.1782e+03 mean_flips=7803.8 capped=0
+KMC_Q|toric2d_L12_Xerr.code|dt=0.01s|KMC beta=7.00 dec=uf N=288 trials=120 mean_t=1.9595e+04 sem_t=1.4605e+03 median_t=1.5884e+04 mean_flips=472.0 capped=0
+KMC_DEC|cls_l3_r1_step2.code|dt=0.05s|KMC beta=3.00 dec=rg_strict N=196 trials=80 mean_t=2.7870e+02 sem_t=3.7989e+01 median_t=1.6517e+02 mean_flips=2087.8 capped=0
+KMC_Q|toric3d_L5_Xerr.code|dt=55.34s|KMC beta=5.00 dec=uf N=375 trials=120 mean_t=9.6959e+12 sem_t=2.9275e+08 median_t=9.6959e+12 mean_flips=15000000.0 capped=120
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=6.250e-02 syn_density=0.431372
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=1.250e-01 syn_density=0.380816
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=2.500e-01 syn_density=0.309705
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=5.000e-01 syn_density=0.225642
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=1.000e+00 syn_density=0.149062
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=2.000e+00 syn_density=0.094583
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=4.000e+00 syn_density=0.055816
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=8.000e+00 syn_density=0.033299
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=1.600e+01 syn_density=0.022760
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=3.200e+01 syn_density=0.020139
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=6.400e+01 syn_density=0.018715
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=1.280e+02 syn_density=0.017812
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=2.560e+02 syn_density=0.017274
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=5.120e+02 syn_density=0.018229
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=1.024e+03 syn_density=0.017691
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=2.048e+03 syn_density=0.016944
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=4.096e+03 syn_density=0.018507
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=8.192e+03 syn_density=0.017691
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=1.638e+04 syn_density=0.016997
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=3.277e+04 syn_density=0.016337
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=6.554e+04 syn_density=0.018247
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=1.311e+05 syn_density=0.017795
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=2.621e+05 syn_density=0.018906
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=5.243e+05 syn_density=0.018906
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=1.049e+06 syn_density=0.018906
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=2.097e+06 syn_density=0.018906
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=4.194e+06 syn_density=0.018906
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=8.389e+06 syn_density=0.018906
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=1.678e+07 syn_density=0.018906
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=3.355e+07 syn_density=0.018906
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=7.14s|COOL beta=4.00 t=6.711e+07 syn_density=0.018906
+KMC_Q|bdl_sq_L2r1_s1_Zerr.code|dt=0.00s|KMC beta=3.00 dec=uf N=19 trials=120 mean_t=2.8754e+00 sem_t=2.2725e-01 median_t=2.2305e+00 mean_flips=2.8 capped=0
+HYBRID|bdl_tor3_L2r1_s2_Zerr.code|dt=0.02s|HYBRID beta=5.00 tau_ec=1.000e+01 cycles=20 T_tot=2.000e+02 N=2907 P_fail=0.00000
+KMC_Q|bdl_surf2_L2r1_s2_Xerr.code|dt=0.16s|KMC beta=6.00 dec=uf N=1292 trials=120 mean_t=2.5672e+04 sem_t=3.0476e+03 median_t=1.4756e+04 mean_flips=47152.2 capped=0
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.1000 dec=rg_strict N=196 trials=400 P_L=0.01000 sem=0.00497
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=6.250e-02 syn_density=0.443672
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=1.250e-01 syn_density=0.401016
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=2.500e-01 syn_density=0.338203
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=5.000e-01 syn_density=0.254766
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=1.000e+00 syn_density=0.179453
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=2.000e+00 syn_density=0.116719
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=4.000e+00 syn_density=0.071250
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=8.000e+00 syn_density=0.042266
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=1.600e+01 syn_density=0.024453
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=3.200e+01 syn_density=0.014531
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=6.400e+01 syn_density=0.008281
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=1.280e+02 syn_density=0.004766
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=2.560e+02 syn_density=0.002969
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=5.120e+02 syn_density=0.002578
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=1.024e+03 syn_density=0.001875
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=2.048e+03 syn_density=0.001719
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=4.096e+03 syn_density=0.002656
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=8.192e+03 syn_density=0.001875
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=1.638e+04 syn_density=0.001484
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=3.277e+04 syn_density=0.002266
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=6.554e+04 syn_density=0.002500
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=1.311e+05 syn_density=0.001328
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=2.621e+05 syn_density=0.002266
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=5.243e+05 syn_density=0.001719
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=1.049e+06 syn_density=0.001250
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=2.097e+06 syn_density=0.002266
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=4.194e+06 syn_density=0.005313
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=8.389e+06 syn_density=0.005313
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=1.678e+07 syn_density=0.005313
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=3.355e+07 syn_density=0.005313
+COOL|toric2d_L20_Xerr.code|dt=5.65s|COOL beta=6.00 t=6.711e+07 syn_density=0.005313
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.14s|THRESHOLD p=0.0100 dec=rg_strict N=3160 trials=400 P_L=0.29000 sem=0.02269
+HYBRID|layer_913_Xerr.code|dt=0.36s|HYBRID beta=5.00 tau_ec=5.000e+03 cycles=20 T_tot=1.000e+05 N=1853 P_fail=1.00000
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.07s|THRESHOLD p=0.1200 dec=bposd N=1292 trials=200 P_L=0.76500 sem=0.02998
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.24s|THRESHOLD p=0.1200 dec=rg_relaxed N=3160 trials=400 P_L=0.76500 sem=0.02120
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.11s|THRESHOLD p=0.0800 dec=bposd N=1292 trials=200 P_L=0.02000 sem=0.00990
+KMC_Q|bdl_sq_L2r1_s1_Zerr.code|dt=0.01s|KMC beta=6.00 dec=uf N=19 trials=120 mean_t=7.1187e+01 sem_t=6.2042e+00 median_t=5.5105e+01 mean_flips=3.4 capped=0
+KMC_CLS|cls_l3_r1_step4.code|dt=63.22s|KMC beta=3.50 dec=uf N=9604 trials=40 mean_t=1.2418e+03 sem_t=7.3241e+01 median_t=1.1506e+03 mean_flips=277357.3 capped=0
+KMC_DEC|bdl_tor2_hyb21_s2_Xerr.code|dt=1.35s|KMC beta=3.50 dec=bposd N=3160 trials=40 mean_t=3.2012e+01 sem_t=2.5310e+00 median_t=2.9061e+01 mean_flips=1504.5 capped=0
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.11s|THRESHOLD p=0.0200 dec=bposd N=2152 trials=200 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_tor2_hyb21_s2_Zerr.code|dt=30.30s|KMC beta=6.00 dec=uf N=3160 trials=120 mean_t=1.6549e+08 sem_t=8.1463e+06 median_t=1.7959e+08 mean_flips=9708105.8 capped=47
+THRESH|cls_l4_r2_step3.code|dt=0.06s|THRESHOLD p=0.0800 dec=uf N=4000 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|layer_512_Xerr.code|dt=0.06s|KMC beta=7.00 dec=uf N=437 trials=120 mean_t=4.9872e+04 sem_t=5.0537e+03 median_t=3.4236e+04 mean_flips=19554.3 capped=0
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.14s|THRESHOLD p=0.0100 dec=rg_relaxed N=3160 trials=400 P_L=0.30500 sem=0.02302
+KMC_Q|toric3d_L5_Zerr.code|dt=0.01s|KMC beta=3.00 dec=uf N=375 trials=120 mean_t=2.8041e+00 sem_t=1.7382e-01 median_t=2.1711e+00 mean_flips=14.4 capped=0
+KMC_Q|toric3d_L3_Xerr.code|dt=44.47s|KMC beta=7.00 dec=uf N=81 trials=120 mean_t=1.3391e+17 sem_t=4.4446e+12 median_t=1.3390e+17 mean_flips=15000000.0 capped=120
+KMC_CLS|cls_l4_r2_step1.code|dt=0.04s|KMC beta=2.50 dec=uf N=40 trials=200 mean_t=1.2350e+04 sem_t=9.8345e+02 median_t=7.1684e+03 mean_flips=9084.0 capped=0
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.1200 dec=rg_strict N=196 trials=400 P_L=0.00500 sem=0.00353
+KMC_Q|toric3d_L5_Zerr.code|dt=0.01s|KMC beta=6.00 dec=uf N=375 trials=120 mean_t=9.3949e+02 sem_t=8.9213e+01 median_t=6.8038e+02 mean_flips=143.2 capped=0
+KMC_Q|bdl_sq_L2r1_s3_Xerr.code|dt=34.20s|KMC beta=7.00 dec=uf N=2911 trials=120 mean_t=2.7815e+07 sem_t=4.4070e+03 median_t=2.7816e+07 mean_flips=15000000.0 capped=120
+THRESH|cls_l3_r1_step3.code|dt=0.03s|THRESHOLD p=0.1000 dec=rg_relaxed N=1372 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_tor2_L2r1_s2_Xerr.code|dt=0.18s|KMC beta=7.00 dec=uf N=1292 trials=120 mean_t=9.6155e+05 sem_t=9.3247e+04 median_t=7.3505e+05 mean_flips=46424.1 capped=0
+HYBRID|bdl_sq_L3r2_s2_Xerr.code|dt=0.05s|HYBRID beta=5.00 tau_ec=1.000e+01 cycles=20 T_tot=2.000e+02 N=2152 P_fail=0.00833
+THRESH|cls_l4_r2_step3.code|dt=0.05s|THRESHOLD p=0.0600 dec=bposd N=4000 trials=200 P_L=0.00000 sem=0.00000
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.21s|THRESHOLD p=0.0400 dec=rg_strict N=3160 trials=400 P_L=0.70750 sem=0.02275
+KMC_DEC|cls_l4_r2_step2.code|dt=0.11s|KMC beta=2.50 dec=rg_strict N=400 trials=80 mean_t=6.8185e+01 sem_t=5.9784e+00 median_t=5.3481e+01 mean_flips=1798.1 capped=0
+KMC_DEC|bdl_tor2_L2r1_s2_Zerr.code|dt=4.04s|KMC beta=5.50 dec=rg_strict N=1292 trials=80 mean_t=2.6496e+07 sem_t=2.7427e+06 median_t=1.8922e+07 mean_flips=1710683.4 capped=8
+KMC_DEC|cls_l4_r2_step3.code|dt=9.08s|KMC beta=3.50 dec=uf N=4000 trials=80 mean_t=5.5878e+05 sem_t=3.7035e+03 median_t=5.6466e+05 mean_flips=5000000.0 capped=80
+KMC_Q|toric2d_L6_Xerr.code|dt=0.01s|KMC beta=6.00 dec=uf N=72 trials=120 mean_t=8.2281e+03 sem_t=7.5547e+02 median_t=6.0468e+03 mean_flips=102.6 capped=0
+THRESH|cls_l3_r1_step3.code|dt=0.01s|THRESHOLD p=0.0100 dec=uf N=1372 trials=400 P_L=0.00000 sem=0.00000
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.1000 dec=rg_relaxed N=196 trials=400 P_L=0.01000 sem=0.00497
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.0800 dec=rg_strict N=196 trials=400 P_L=0.00750 sem=0.00431
+KMC_Q|bdl_sq_L3r1_s2_Zerr.code|dt=0.47s|KMC beta=6.00 dec=uf N=1271 trials=120 mean_t=2.8189e+05 sem_t=2.6035e+04 median_t=2.1031e+05 mean_flips=155186.9 capped=0
+KMC_DEC|bdl_sq_L3r1_s2_Xerr.code|dt=0.08s|KMC beta=3.50 dec=uf N=1271 trials=80 mean_t=1.6857e+01 sem_t=1.0418e+00 median_t=1.5045e+01 mean_flips=451.4 capped=0
+KMC_Q|toric3d_L7_Zerr.code|dt=0.02s|KMC beta=5.00 dec=uf N=1029 trials=120 mean_t=3.4311e+01 sem_t=2.6916e+00 median_t=2.5916e+01 mean_flips=40.4 capped=0
+STATS|bdl_tor2_L3r1_s2_Zerr.code|dt=5.18s|STATS N=5084 M_check=2856 K=2 max_q_deg=6 rg=2 d<=53 Delta<=5
+KMC_Q|bdl_sq_L3r1_s2_Xerr.code|dt=0.11s|KMC beta=3.00 dec=uf N=1271 trials=120 mean_t=7.7293e+00 sem_t=3.6839e-01 median_t=6.8645e+00 mean_flips=310.9 capped=0
+KMC_CLS|cls_l3_r1_step3.code|dt=37.33s|KMC beta=4.00 dec=uf N=1372 trials=100 mean_t=1.6474e+07 sem_t=1.4319e+04 median_t=1.6496e+07 mean_flips=20000000.0 capped=100
+KMC_DEC|bdl_tor2_L2r1_s2_Xerr.code|dt=0.26s|KMC beta=4.50 dec=bposd N=1292 trials=40 mean_t=1.7407e+02 sem_t=1.9841e+01 median_t=1.3657e+02 mean_flips=1217.8 capped=0
+KMC_CLS|cls_l3_r1_step3.code|dt=6.06s|KMC beta=3.00 dec=uf N=1372 trials=100 mean_t=1.0850e+05 sem_t=1.0539e+04 median_t=7.2165e+04 mean_flips=1806432.1 capped=0
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.10s|THRESHOLD p=0.0600 dec=rg_relaxed N=1292 trials=400 P_L=0.77250 sem=0.02096
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.09s|THRESHOLD p=0.0200 dec=rg_relaxed N=1292 trials=400 P_L=0.60000 sem=0.02449
+KMC_Q|bdl_sq_L2r1_s3_Zerr.code|dt=0.32s|KMC beta=3.00 dec=uf N=2911 trials=120 mean_t=7.3212e+00 sem_t=2.7968e-01 median_t=6.7277e+00 mean_flips=460.2 capped=0
+KMC_Q|bdl_sq_L2r1_s1_Zerr.code|dt=0.00s|KMC beta=4.00 dec=uf N=19 trials=120 mean_t=7.6914e+00 sem_t=7.2313e-01 median_t=4.8781e+00 mean_flips=3.3 capped=0
+KMC_Q|toric3d_L7_Xerr.code|dt=48.88s|KMC beta=3.00 dec=uf N=1029 trials=120 mean_t=1.1399e+09 sem_t=4.1781e+04 median_t=1.1399e+09 mean_flips=15000000.0 capped=120
+KMC_Q|bdl_tor3_L2r1_s2_Zerr.code|dt=0.48s|KMC beta=3.00 dec=uf N=2907 trials=120 mean_t=4.6732e+01 sem_t=1.8254e+00 median_t=4.5533e+01 mean_flips=1467.3 capped=0
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.10s|THRESHOLD p=0.1200 dec=rg_relaxed N=1292 trials=400 P_L=0.74500 sem=0.02179
+KMC_Q|bdl_tor3_L2r1_s0_Xerr.code|dt=0.01s|KMC beta=3.00 dec=uf N=18 trials=120 mean_t=5.3676e+01 sem_t=4.9685e+00 median_t=3.8712e+01 mean_flips=14.1 capped=0
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=6.250e-02 syn_density=0.458121
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=1.250e-01 syn_density=0.426719
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=2.500e-01 syn_density=0.379282
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=5.000e-01 syn_density=0.318878
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=1.000e+00 syn_density=0.253735
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=2.000e+00 syn_density=0.192147
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=4.000e+00 syn_density=0.134202
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=8.000e+00 syn_density=0.084700
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=1.600e+01 syn_density=0.052144
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=3.200e+01 syn_density=0.028547
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=6.400e+01 syn_density=0.010842
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=1.280e+02 syn_density=0.005315
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=2.560e+02 syn_density=0.001944
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=5.120e+02 syn_density=0.001610
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=1.024e+03 syn_density=0.002369
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=2.048e+03 syn_density=0.001579
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=4.096e+03 syn_density=0.001458
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=8.192e+03 syn_density=0.001822
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=1.638e+04 syn_density=0.001761
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=3.277e+04 syn_density=0.001518
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=6.554e+04 syn_density=0.001245
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=1.311e+05 syn_density=0.001853
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=2.621e+05 syn_density=0.001701
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=5.243e+05 syn_density=0.001701
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=1.049e+06 syn_density=0.001124
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=2.097e+06 syn_density=0.001184
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=4.194e+06 syn_density=0.001458
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=8.389e+06 syn_density=0.004981
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=1.678e+07 syn_density=0.004981
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=3.355e+07 syn_density=0.004981
+COOL|toric3d_L7_Xerr.code|dt=8.99s|COOL beta=2.00 t=6.711e+07 syn_density=0.004981
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.32s|THRESHOLD p=0.0300 dec=bposd N=3160 trials=200 P_L=0.00000 sem=0.00000
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.09s|THRESHOLD p=0.0100 dec=bposd N=2152 trials=200 P_L=0.00000 sem=0.00000
+KMC_Q|toric3d_L7_Xerr.code|dt=56.69s|KMC beta=6.00 dec=uf N=1029 trials=120 mean_t=1.9305e+14 sem_t=6.2214e+09 median_t=1.9305e+14 mean_flips=15000000.0 capped=120
+KMC_Q|bdl_sq_L2r1_s2_Xerr.code|dt=0.02s|KMC beta=4.00 dec=uf N=323 trials=120 mean_t=9.5002e+01 sem_t=9.2030e+00 median_t=5.9731e+01 mean_flips=520.2 capped=0
+KMC_Q|bdl_surf2_L2r1_s1_Xerr.code|dt=0.02s|KMC beta=4.00 dec=uf N=76 trials=120 mean_t=3.9819e+03 sem_t=4.1170e+02 median_t=2.4260e+03 mean_flips=3444.2 capped=0
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=6.250e-02 syn_density=0.432605
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=1.250e-01 syn_density=0.383886
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=2.500e-01 syn_density=0.315900
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=5.000e-01 syn_density=0.235122
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=1.000e+00 syn_density=0.158927
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=2.000e+00 syn_density=0.101876
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=4.000e+00 syn_density=0.061740
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=8.000e+00 syn_density=0.036253
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=1.600e+01 syn_density=0.021750
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=3.200e+01 syn_density=0.013443
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=6.400e+01 syn_density=0.009018
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=1.280e+02 syn_density=0.005654
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=2.560e+02 syn_density=0.003882
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=5.120e+02 syn_density=0.002399
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=1.024e+03 syn_density=0.001073
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=2.048e+03 syn_density=0.000518
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=4.096e+03 syn_density=0.000338
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=8.192e+03 syn_density=0.000446
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=1.638e+04 syn_density=0.000494
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=3.277e+04 syn_density=0.000615
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=6.554e+04 syn_density=0.000422
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=1.311e+05 syn_density=0.000374
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=2.621e+05 syn_density=0.000434
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=5.243e+05 syn_density=0.000482
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=1.049e+06 syn_density=0.000398
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=2.097e+06 syn_density=0.000313
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=4.194e+06 syn_density=0.000362
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=8.389e+06 syn_density=0.002206
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=1.678e+07 syn_density=0.002206
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=3.355e+07 syn_density=0.002206
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=6.95s|COOL beta=6.00 t=6.711e+07 syn_density=0.002206
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.06s|THRESHOLD p=0.0300 dec=bposd N=1292 trials=200 P_L=0.00000 sem=0.00000
+KMC_DEC|bdl_tor2_L2r1_s2_Xerr.code|dt=0.07s|KMC beta=4.50 dec=rg_relaxed N=1292 trials=80 mean_t=1.0782e+02 sem_t=1.0887e+01 median_t=7.8843e+01 mean_flips=543.5 capped=0
+HYBRID|bdl_tor3_L2r1_s2_Zerr.code|dt=0.02s|HYBRID beta=5.00 tau_ec=5.000e+01 cycles=20 T_tot=1.000e+03 N=2907 P_fail=0.00000
+KMC_Q|bdl_tor2_L2r1_s1_Xerr.code|dt=0.01s|KMC beta=4.00 dec=uf N=76 trials=120 mean_t=9.2071e+03 sem_t=7.7600e+02 median_t=6.8290e+03 mean_flips=610.5 capped=0
+KMC_Q|bdl_tor3_L2r1_s1_Xerr.code|dt=0.15s|KMC beta=5.00 dec=uf N=171 trials=120 mean_t=3.6841e+06 sem_t=3.5542e+05 median_t=2.6909e+06 mean_flips=59419.2 capped=0
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.07s|THRESHOLD p=0.1000 dec=rg_strict N=1292 trials=400 P_L=0.75500 sem=0.02150
+HYBRID|bdl_tor3_L2r1_s2_Xerr.code|dt=0.16s|HYBRID beta=5.00 tau_ec=2.000e+02 cycles=20 T_tot=4.000e+03 N=2907 P_fail=0.82500
+KMC_CLS|cls_l3_r1_step0.code|dt=0.01s|KMC beta=2.50 dec=uf N=4 trials=200 mean_t=1.8698e+02 sem_t=1.1566e+01 median_t=1.4723e+02 mean_flips=16.6 capped=0
+HYBRID|bdl_sq_L3r2_s2_Xerr.code|dt=0.10s|HYBRID beta=5.00 tau_ec=5.000e+01 cycles=20 T_tot=1.000e+03 N=2152 P_fail=0.28333
+KMC_DEC|bdl_tor2_hyb21_s2_Xerr.code|dt=0.39s|KMC beta=4.50 dec=rg_strict N=3160 trials=80 mean_t=9.3979e+01 sem_t=7.9588e+00 median_t=7.9119e+01 mean_flips=1053.1 capped=0
+KMC_CLS|cls_l3_r1_step4.code|dt=33.57s|KMC beta=1.50 dec=uf N=9604 trials=40 mean_t=1.1562e+01 sem_t=5.1282e-01 median_t=1.0715e+01 mean_flips=19354.5 capped=0
+THRESH|cls_l4_r2_step3.code|dt=0.03s|THRESHOLD p=0.0200 dec=uf N=4000 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|toric2d_L6_Xerr.code|dt=0.01s|KMC beta=4.00 dec=uf N=72 trials=120 mean_t=1.2515e+02 sem_t=1.2364e+01 median_t=7.1915e+01 mean_flips=53.7 capped=0
+THRESH|cls_l4_r2_step2.code|dt=0.01s|THRESHOLD p=0.0300 dec=bposd N=400 trials=200 P_L=0.00000 sem=0.00000
+KMC_DEC|bdl_tor2_L2r1_s2_Zerr.code|dt=0.09s|KMC beta=3.50 dec=uf N=1292 trials=80 mean_t=3.2546e+02 sem_t=3.0812e+01 median_t=2.4394e+02 mean_flips=2201.9 capped=0
+KMC_DEC|cls_l3_r1_step2.code|dt=0.04s|KMC beta=2.50 dec=rg_strict N=196 trials=80 mean_t=6.7081e+01 sem_t=5.3958e+00 median_t=5.4618e+01 mean_flips=816.4 capped=0
+KMC_DEC|cls_l4_r2_step2.code|dt=0.15s|KMC beta=3.50 dec=uf N=400 trials=80 mean_t=2.1261e+03 sem_t=1.7358e+02 median_t=1.7461e+03 mean_flips=18259.2 capped=0
+HYBRID|toric2d_L20_Xerr.code|dt=0.01s|HYBRID beta=5.00 tau_ec=2.000e+02 cycles=20 T_tot=4.000e+03 N=800 P_fail=1.00000
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.11s|THRESHOLD p=0.0400 dec=rg_strict N=2152 trials=400 P_L=0.41750 sem=0.02466
+THRESH|cls_l3_r1_step3.code|dt=0.03s|THRESHOLD p=0.1200 dec=rg_strict N=1372 trials=400 P_L=0.00000 sem=0.00000
+KMC_DEC|cls_l4_r2_step2.code|dt=0.14s|KMC beta=3.50 dec=rg_relaxed N=400 trials=80 mean_t=1.8098e+03 sem_t=1.6944e+02 median_t=1.4336e+03 mean_flips=15453.3 capped=0
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=6.250e-02 syn_density=0.440131
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=1.250e-01 syn_density=0.391520
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=2.500e-01 syn_density=0.319010
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=5.000e-01 syn_density=0.236274
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=1.000e+00 syn_density=0.158040
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=2.000e+00 syn_density=0.095215
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=4.000e+00 syn_density=0.055311
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=8.000e+00 syn_density=0.034993
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=1.600e+01 syn_density=0.023600
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=3.200e+01 syn_density=0.018419
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=6.400e+01 syn_density=0.017741
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=1.280e+02 syn_density=0.018419
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=2.560e+02 syn_density=0.019314
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=5.120e+02 syn_density=0.016195
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=1.024e+03 syn_density=0.018528
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=2.048e+03 syn_density=0.017958
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=4.096e+03 syn_density=0.018365
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=8.192e+03 syn_density=0.017931
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=1.638e+04 syn_density=0.018500
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=3.277e+04 syn_density=0.018717
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=6.554e+04 syn_density=0.018066
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=1.311e+05 syn_density=0.017063
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=2.621e+05 syn_density=0.020074
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=5.243e+05 syn_density=0.020074
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=1.049e+06 syn_density=0.020074
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=2.097e+06 syn_density=0.020074
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=4.194e+06 syn_density=0.020074
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=8.389e+06 syn_density=0.020074
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=1.678e+07 syn_density=0.020074
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=3.355e+07 syn_density=0.020074
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=7.65s|COOL beta=4.00 t=6.711e+07 syn_density=0.020074
+KMC_DEC|cls_l4_r2_step2.code|dt=0.16s|KMC beta=3.00 dec=uf N=400 trials=80 mean_t=4.2282e+02 sem_t=4.0688e+01 median_t=3.1378e+02 mean_flips=7095.8 capped=0
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=6.250e-02 syn_density=0.473629
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=1.250e-01 syn_density=0.448710
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=2.500e-01 syn_density=0.407387
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=5.000e-01 syn_density=0.348185
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=1.000e+00 syn_density=0.280110
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=2.000e+00 syn_density=0.217623
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=4.000e+00 syn_density=0.169691
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=8.000e+00 syn_density=0.134207
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=1.600e+01 syn_density=0.109061
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=3.200e+01 syn_density=0.093646
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=6.400e+01 syn_density=0.084526
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=1.280e+02 syn_density=0.079700
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=2.560e+02 syn_density=0.079463
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=5.120e+02 syn_density=0.077958
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=1.024e+03 syn_density=0.079175
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=2.048e+03 syn_density=0.078526
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=4.096e+03 syn_density=0.078593
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=8.192e+03 syn_density=0.079339
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=1.638e+04 syn_density=0.077931
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=3.277e+04 syn_density=0.077931
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=6.554e+04 syn_density=0.077931
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=1.311e+05 syn_density=0.077931
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=2.621e+05 syn_density=0.077931
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=5.243e+05 syn_density=0.077931
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=1.049e+06 syn_density=0.077931
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=2.097e+06 syn_density=0.077931
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=4.194e+06 syn_density=0.077931
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=8.389e+06 syn_density=0.077931
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=1.678e+07 syn_density=0.077931
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=3.355e+07 syn_density=0.077931
+COOL|cls_l4_r2_step3.code|dt=7.29s|COOL beta=2.00 t=6.711e+07 syn_density=0.077931
+THRESH|cls_l4_r2_step3.code|dt=0.06s|THRESHOLD p=0.0200 dec=bposd N=4000 trials=200 P_L=0.00000 sem=0.00000
+HYBRID|toric2d_L20_Xerr.code|dt=0.03s|HYBRID beta=5.00 tau_ec=1.000e+03 cycles=20 T_tot=2.000e+04 N=800 P_fail=1.00000
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.08s|THRESHOLD p=0.0400 dec=bposd N=1292 trials=200 P_L=0.00000 sem=0.00000
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.14s|THRESHOLD p=0.0800 dec=uf N=1292 trials=400 P_L=0.63000 sem=0.02414
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.07s|THRESHOLD p=0.0300 dec=rg_strict N=1292 trials=400 P_L=0.50000 sem=0.02500
+KMC_Q|bdl_surf2_L2r1_s2_Xerr.code|dt=0.92s|KMC beta=7.00 dec=uf N=1292 trials=120 mean_t=5.0631e+05 sem_t=4.8255e+04 median_t=3.4714e+05 mean_flips=302770.7 capped=0
+KMC_DEC|cls_l4_r2_step3.code|dt=32.99s|KMC beta=3.00 dec=uf N=4000 trials=80 mean_t=1.3354e+05 sem_t=2.9303e+03 median_t=1.4330e+05 mean_flips=4579542.9 capped=60
+KMC_Q|bdl_tor2_hyb21_s2_Zerr.code|dt=0.34s|KMC beta=4.00 dec=uf N=3160 trials=120 mean_t=3.1232e+03 sem_t=2.7753e+02 median_t=2.0329e+03 mean_flips=17749.7 capped=0
+KMC_Q|layer_512_Xerr.code|dt=0.03s|KMC beta=6.00 dec=uf N=437 trials=120 mean_t=3.9337e+03 sem_t=4.3708e+02 median_t=2.1883e+03 mean_flips=3906.2 capped=0
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.09s|THRESHOLD p=0.0400 dec=uf N=1292 trials=400 P_L=0.08250 sem=0.01376
+KMC_Q|toric2d_L20_Xerr.code|dt=0.02s|KMC beta=6.00 dec=uf N=800 trials=120 mean_t=5.9770e+02 sem_t=5.9679e+01 median_t=3.8040e+02 mean_flips=360.0 capped=0
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.0400 dec=rg_strict N=196 trials=400 P_L=0.00000 sem=0.00000
+KMC_DEC|bdl_sq_L3r1_s2_Xerr.code|dt=0.06s|KMC beta=4.50 dec=rg_relaxed N=1271 trials=80 mean_t=3.4841e+01 sem_t=4.5867e+00 median_t=2.3379e+01 mean_flips=346.3 capped=0
+KMC_DEC|cls_l4_r2_step3.code|dt=9.15s|KMC beta=3.50 dec=rg_strict N=4000 trials=80 mean_t=5.5951e+05 sem_t=3.6611e+03 median_t=5.6475e+05 mean_flips=5000000.0 capped=80
+KMC_Q|bdl_sq_L2r1_s1_Xerr.code|dt=0.02s|KMC beta=7.00 dec=uf N=19 trials=120 mean_t=4.3958e+05 sem_t=4.6181e+04 median_t=3.1613e+05 mean_flips=8022.7 capped=0
+THRESH|cls_l3_r1_step3.code|dt=0.01s|THRESHOLD p=0.0100 dec=rg_strict N=1372 trials=400 P_L=0.00000 sem=0.00000
+KMC_CLS|cls_l4_r2_step2.code|dt=0.39s|KMC beta=3.50 dec=uf N=400 trials=200 mean_t=2.1236e+03 sem_t=1.2715e+02 median_t=1.6367e+03 mean_flips=18525.7 capped=0
+THRESH|cls_l4_r2_step3.code|dt=0.04s|THRESHOLD p=0.0300 dec=rg_relaxed N=4000 trials=400 P_L=0.00000 sem=0.00000
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.10s|THRESHOLD p=0.0400 dec=uf N=2152 trials=400 P_L=0.04250 sem=0.01009
+KMC_Q|bdl_surf2_L2r1_s1_Xerr.code|dt=0.07s|KMC beta=5.00 dec=uf N=76 trials=120 mean_t=8.8506e+04 sem_t=9.5312e+03 median_t=4.7155e+04 mean_flips=26876.2 capped=0
+KMC_Q|bdl_tor2_L2r1_s1_Xerr.code|dt=0.05s|KMC beta=7.00 dec=uf N=76 trials=120 mean_t=8.9312e+07 sem_t=8.0372e+06 median_t=6.3425e+07 mean_flips=12166.7 capped=0
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.0400 dec=rg_relaxed N=196 trials=400 P_L=0.00000 sem=0.00000
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=6.250e-02 syn_density=0.437416
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=1.250e-01 syn_density=0.388708
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=2.500e-01 syn_density=0.318938
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=5.000e-01 syn_density=0.237449
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=1.000e+00 syn_density=0.161579
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=2.000e+00 syn_density=0.103009
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=4.000e+00 syn_density=0.063995
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=8.000e+00 syn_density=0.038653
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=1.600e+01 syn_density=0.026078
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=3.200e+01 syn_density=0.020122
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=6.400e+01 syn_density=0.018434
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=1.280e+02 syn_density=0.017530
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=2.560e+02 syn_density=0.018289
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=5.120e+02 syn_density=0.018133
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=1.024e+03 syn_density=0.018097
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=2.048e+03 syn_density=0.017916
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=4.096e+03 syn_density=0.018555
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=8.192e+03 syn_density=0.019133
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=1.638e+04 syn_density=0.019194
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=3.277e+04 syn_density=0.018217
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=6.554e+04 syn_density=0.018663
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=1.311e+05 syn_density=0.018109
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=2.621e+05 syn_density=0.018109
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=5.243e+05 syn_density=0.018109
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=1.049e+06 syn_density=0.018109
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=2.097e+06 syn_density=0.018109
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=4.194e+06 syn_density=0.018109
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=8.389e+06 syn_density=0.018109
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=1.678e+07 syn_density=0.018109
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=3.355e+07 syn_density=0.018109
+COOL|bdl_tor3_L2r1_s2_Xerr.code|dt=8.95s|COOL beta=4.00 t=6.711e+07 syn_density=0.018109
+KMC_CLS|cls_l4_r2_step0.code|dt=0.01s|KMC beta=2.50 dec=uf N=4 trials=200 mean_t=1.8936e+02 sem_t=1.1607e+01 median_t=1.5298e+02 mean_flips=16.9 capped=0
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.32s|THRESHOLD p=0.0400 dec=bposd N=3160 trials=200 P_L=0.00000 sem=0.00000
+KMC_Q|layer_steane_Xerr.code|dt=0.05s|KMC beta=5.00 dec=uf N=743 trials=120 mean_t=3.8509e+02 sem_t=3.0535e+01 median_t=3.1679e+02 mean_flips=1652.6 capped=0
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.07s|THRESHOLD p=0.1000 dec=uf N=1271 trials=400 P_L=0.45500 sem=0.02490
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.02s|THRESHOLD p=0.0300 dec=uf N=1271 trials=400 P_L=0.00000 sem=0.00000
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.0800 dec=bposd N=196 trials=200 P_L=0.00000 sem=0.00000
+KMC_DEC|bdl_tor2_L2r1_s2_Zerr.code|dt=3.08s|KMC beta=5.50 dec=rg_relaxed N=1292 trials=80 mean_t=1.7678e+07 sem_t=2.6041e+06 median_t=5.8267e+06 mean_flips=1140701.7 capped=6
+KMC_Q|bdl_tor2_L3r2_s1_Xerr.code|dt=0.03s|KMC beta=3.00 dec=uf N=176 trials=120 mean_t=1.5535e+03 sem_t=1.5524e+02 median_t=1.0842e+03 mean_flips=1425.0 capped=0
+THRESH|cls_l3_r1_step3.code|dt=0.01s|THRESHOLD p=0.0100 dec=rg_relaxed N=1372 trials=400 P_L=0.00000 sem=0.00000
+KMC_CLS|cls_l4_r2_step3.code|dt=74.50s|KMC beta=3.00 dec=uf N=4000 trials=100 mean_t=3.2731e+05 sem_t=1.7023e+04 median_t=2.9966e+05 mean_flips=11531235.8 capped=19
+KMC_Q|bdl_sq_L2r1_s3_Xerr.code|dt=0.86s|KMC beta=3.00 dec=uf N=2911 trials=120 mean_t=8.1760e+01 sem_t=6.2908e+00 median_t=6.6255e+01 mean_flips=5391.0 capped=0
+KMC_Q|bdl_sq_L3r1_s1_Xerr.code|dt=0.03s|KMC beta=7.00 dec=uf N=41 trials=120 mean_t=2.8122e+05 sem_t=2.4392e+04 median_t=2.0008e+05 mean_flips=10771.8 capped=0
+KMC_Q|layer_512_Xerr.code|dt=0.02s|KMC beta=5.00 dec=uf N=437 trials=120 mean_t=4.7654e+02 sem_t=3.8807e+01 median_t=3.7980e+02 mean_flips=1268.0 capped=0
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.06s|THRESHOLD p=0.0100 dec=rg_relaxed N=1292 trials=400 P_L=0.37750 sem=0.02424
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.08s|THRESHOLD p=0.0300 dec=rg_relaxed N=1292 trials=400 P_L=0.62000 sem=0.02427
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.03s|THRESHOLD p=0.0200 dec=bposd N=1292 trials=200 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_tor3_L2r1_s1_Xerr.code|dt=11.16s|KMC beta=7.00 dec=uf N=171 trials=120 mean_t=1.8835e+10 sem_t=1.4526e+09 median_t=1.5150e+10 mean_flips=5133439.2 capped=9
+THRESH|cls_l4_r2_step2.code|dt=0.02s|THRESHOLD p=0.0800 dec=rg_relaxed N=400 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_sq_L2r1_s3_Zerr.code|dt=0.16s|KMC beta=5.00 dec=uf N=2911 trials=120 mean_t=3.5624e+02 sem_t=2.6841e+01 median_t=2.6967e+02 mean_flips=3430.4 capped=0
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=6.250e-02 syn_density=0.443828
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=1.250e-01 syn_density=0.402578
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=2.500e-01 syn_density=0.335938
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=5.000e-01 syn_density=0.256094
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=1.000e+00 syn_density=0.181172
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=2.000e+00 syn_density=0.117578
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=4.000e+00 syn_density=0.071641
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=8.000e+00 syn_density=0.044844
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=1.600e+01 syn_density=0.028359
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=3.200e+01 syn_density=0.020547
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=6.400e+01 syn_density=0.016484
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=1.280e+02 syn_density=0.017266
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=2.560e+02 syn_density=0.019141
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=5.120e+02 syn_density=0.018906
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=1.024e+03 syn_density=0.018125
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=2.048e+03 syn_density=0.017656
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=4.096e+03 syn_density=0.018125
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=8.192e+03 syn_density=0.018594
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=1.638e+04 syn_density=0.018750
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=3.277e+04 syn_density=0.018359
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=6.554e+04 syn_density=0.017188
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=1.311e+05 syn_density=0.018203
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=2.621e+05 syn_density=0.018516
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=5.243e+05 syn_density=0.020781
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=1.049e+06 syn_density=0.020781
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=2.097e+06 syn_density=0.020781
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=4.194e+06 syn_density=0.020781
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=8.389e+06 syn_density=0.020781
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=1.678e+07 syn_density=0.020781
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=3.355e+07 syn_density=0.020781
+COOL|toric2d_L20_Xerr.code|dt=5.57s|COOL beta=4.00 t=6.711e+07 syn_density=0.020781
+KMC_Q|bdl_tor2_L2r1_s1_Zerr.code|dt=0.01s|KMC beta=6.00 dec=uf N=76 trials=120 mean_t=6.7356e+03 sem_t=4.9672e+02 median_t=5.5687e+03 mean_flips=69.7 capped=0
+KMC_DEC|cls_l3_r1_step2.code|dt=0.05s|KMC beta=3.50 dec=rg_strict N=196 trials=80 mean_t=1.3265e+03 sem_t=1.6022e+02 median_t=1.0040e+03 mean_flips=5218.9 capped=0
+KMC_Q|toric2d_L30_Xerr.code|dt=0.11s|KMC beta=5.00 dec=uf N=1800 trials=120 mean_t=8.0747e+01 sem_t=4.4936e+00 median_t=7.2598e+01 mean_flips=369.3 capped=0
+KMC_DEC|bdl_tor2_L2r1_s2_Xerr.code|dt=0.18s|KMC beta=5.50 dec=bposd N=1292 trials=40 mean_t=7.8430e+03 sem_t=1.1743e+03 median_t=4.9672e+03 mean_flips=9369.5 capped=0
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.34s|THRESHOLD p=0.0600 dec=bposd N=3160 trials=200 P_L=0.00000 sem=0.00000
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.08s|THRESHOLD p=0.0600 dec=bposd N=1292 trials=200 P_L=0.03000 sem=0.01206
+KMC_CLS|cls_l3_r1_step2.code|dt=0.12s|KMC beta=3.00 dec=uf N=196 trials=200 mean_t=3.6752e+02 sem_t=2.2253e+01 median_t=2.7987e+02 mean_flips=2905.2 capped=0
+KMC_Q|bdl_tor2_L3r1_s1_Xerr.code|dt=0.02s|KMC beta=3.00 dec=uf N=164 trials=120 mean_t=7.3167e+01 sem_t=5.7953e+00 median_t=5.6538e+01 mean_flips=237.7 capped=0
+KMC_Q|toric2d_L20_Xerr.code|dt=0.01s|KMC beta=7.00 dec=uf N=800 trials=120 mean_t=7.0788e+03 sem_t=6.8614e+02 median_t=4.9776e+03 mean_flips=1045.2 capped=0
+KMC_DEC|bdl_sq_L3r1_s2_Xerr.code|dt=0.37s|KMC beta=3.50 dec=bposd N=1271 trials=40 mean_t=2.2445e+01 sem_t=2.8129e+00 median_t=1.6601e+01 mean_flips=684.4 capped=0
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.07s|THRESHOLD p=0.1000 dec=uf N=1292 trials=400 P_L=0.73000 sem=0.02220
+KMC_Q|toric3d_L7_Zerr.code|dt=0.02s|KMC beta=4.00 dec=uf N=1029 trials=120 mean_t=7.6466e+00 sem_t=4.8923e-01 median_t=6.4007e+00 mean_flips=28.8 capped=0
+KMC_Q|layer_steane_Xerr.code|dt=0.05s|KMC beta=4.00 dec=uf N=743 trials=120 mean_t=5.4861e+01 sem_t=4.5377e+00 median_t=4.1736e+01 mean_flips=611.4 capped=0
+THRESH|cls_l4_r2_step2.code|dt=0.02s|THRESHOLD p=0.0800 dec=rg_strict N=400 trials=400 P_L=0.00000 sem=0.00000
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.36s|THRESHOLD p=0.1000 dec=bposd N=3160 trials=200 P_L=0.60500 sem=0.03457
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.06s|THRESHOLD p=0.0200 dec=bposd N=1271 trials=200 P_L=0.00000 sem=0.00000
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=6.250e-02 syn_density=0.458880
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=1.250e-01 syn_density=0.424198
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=2.500e-01 syn_density=0.376002
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=5.000e-01 syn_density=0.312044
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=1.000e+00 syn_density=0.244868
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=2.000e+00 syn_density=0.178602
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=4.000e+00 syn_density=0.115646
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=8.000e+00 syn_density=0.065810
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=1.600e+01 syn_density=0.038508
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=3.200e+01 syn_density=0.019527
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=6.400e+01 syn_density=0.006651
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=1.280e+02 syn_density=0.006226
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=2.560e+02 syn_density=0.006226
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=5.120e+02 syn_density=0.005983
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=1.024e+03 syn_density=0.005375
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=2.048e+03 syn_density=0.004798
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=4.096e+03 syn_density=0.002794
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=8.192e+03 syn_density=0.001306
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=1.638e+04 syn_density=0.000425
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=3.277e+04 syn_density=0.000000
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=6.554e+04 syn_density=0.000000
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=1.311e+05 syn_density=0.000000
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=2.621e+05 syn_density=0.000000
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=5.243e+05 syn_density=0.000000
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=1.049e+06 syn_density=0.000000
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=2.097e+06 syn_density=0.000000
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=4.194e+06 syn_density=0.000000
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=8.389e+06 syn_density=0.000000
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=1.678e+07 syn_density=0.000000
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=3.355e+07 syn_density=0.000000
+COOL|toric3d_L7_Xerr.code|dt=0.09s|COOL beta=4.00 t=6.711e+07 syn_density=0.000000
+KMC_CLS|cls_l3_r1_step2.code|dt=0.23s|KMC beta=2.50 dec=uf N=196 trials=200 mean_t=9.7275e+01 sem_t=4.7182e+00 median_t=7.5963e+01 mean_flips=1304.8 capped=0
+KMC_Q|toric2d_L3_Xerr.code|dt=0.01s|KMC beta=4.00 dec=uf N=18 trials=120 mean_t=4.6702e+02 sem_t=3.6293e+01 median_t=3.9938e+02 mean_flips=16.4 capped=0
+KMC_Q|bdl_sq_L3r2_s2_Zerr.code|dt=0.62s|KMC beta=4.00 dec=uf N=2152 trials=120 mean_t=1.0208e+04 sem_t=1.1674e+03 median_t=5.0375e+03 mean_flips=47855.5 capped=0
+THRESH|cls_l4_r2_step2.code|dt=0.02s|THRESHOLD p=0.0200 dec=rg_strict N=400 trials=400 P_L=0.00000 sem=0.00000
+THRESH|cls_l4_r2_step3.code|dt=0.07s|THRESHOLD p=0.0200 dec=rg_relaxed N=4000 trials=400 P_L=0.00000 sem=0.00000
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=6.250e-02 syn_density=0.468597
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=1.250e-01 syn_density=0.441151
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=2.500e-01 syn_density=0.397446
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=5.000e-01 syn_density=0.332563
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=1.000e+00 syn_density=0.258661
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=2.000e+00 syn_density=0.193196
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=4.000e+00 syn_density=0.143335
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=8.000e+00 syn_density=0.107412
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=1.600e+01 syn_density=0.077051
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=3.200e+01 syn_density=0.051794
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=6.400e+01 syn_density=0.036874
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=1.280e+02 syn_density=0.030616
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=2.560e+02 syn_density=0.024245
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=5.120e+02 syn_density=0.017854
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=1.024e+03 syn_density=0.014337
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=2.048e+03 syn_density=0.010563
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=4.096e+03 syn_density=0.008590
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=8.192e+03 syn_density=0.007189
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=1.638e+04 syn_density=0.005573
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=3.277e+04 syn_density=0.004387
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=6.554e+04 syn_density=0.003109
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=1.311e+05 syn_density=0.002096
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=2.621e+05 syn_density=0.001728
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=5.243e+05 syn_density=0.001012
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=1.049e+06 syn_density=0.000798
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=2.097e+06 syn_density=0.000992
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=4.194e+06 syn_density=0.002107
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=8.389e+06 syn_density=0.002107
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=1.678e+07 syn_density=0.002107
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=3.355e+07 syn_density=0.002107
+COOL|cls_l3_r1_step3.code|dt=11.61s|COOL beta=4.00 t=6.711e+07 syn_density=0.002107
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.11s|THRESHOLD p=0.0600 dec=uf N=1292 trials=400 P_L=0.31000 sem=0.02312
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.40s|THRESHOLD p=0.0300 dec=rg_strict N=3160 trials=400 P_L=0.64250 sem=0.02396
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=6.250e-02 syn_density=0.448672
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=1.250e-01 syn_density=0.407188
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=2.500e-01 syn_density=0.342188
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=5.000e-01 syn_density=0.259453
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=1.000e+00 syn_density=0.198203
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=2.000e+00 syn_density=0.151953
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=4.000e+00 syn_density=0.127656
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=8.000e+00 syn_density=0.121719
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=1.600e+01 syn_density=0.117734
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=3.200e+01 syn_density=0.121641
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=6.400e+01 syn_density=0.115234
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=1.280e+02 syn_density=0.120078
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=2.560e+02 syn_density=0.116406
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=5.120e+02 syn_density=0.122344
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=1.024e+03 syn_density=0.118438
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=2.048e+03 syn_density=0.116016
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=4.096e+03 syn_density=0.120156
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=8.192e+03 syn_density=0.117188
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=1.638e+04 syn_density=0.118828
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=3.277e+04 syn_density=0.116641
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=6.554e+04 syn_density=0.118516
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=1.311e+05 syn_density=0.118516
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=2.621e+05 syn_density=0.118516
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=5.243e+05 syn_density=0.118516
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=1.049e+06 syn_density=0.118516
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=2.097e+06 syn_density=0.118516
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=4.194e+06 syn_density=0.118516
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=8.389e+06 syn_density=0.118516
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=1.678e+07 syn_density=0.118516
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=3.355e+07 syn_density=0.118516
+COOL|toric2d_L20_Xerr.code|dt=13.18s|COOL beta=2.00 t=6.711e+07 syn_density=0.118516
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.21s|THRESHOLD p=0.0300 dec=rg_strict N=1292 trials=400 P_L=0.62250 sem=0.02424
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.24s|THRESHOLD p=0.1000 dec=rg_relaxed N=1292 trials=400 P_L=0.76250 sem=0.02128
+THRESH|cls_l4_r2_step2.code|dt=0.02s|THRESHOLD p=0.1000 dec=uf N=400 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_tor2_L3r1_s1_Xerr.code|dt=0.02s|KMC beta=4.00 dec=uf N=164 trials=120 mean_t=2.5124e+03 sem_t=2.2964e+02 median_t=1.7442e+03 mean_flips=1084.2 capped=0
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.87s|THRESHOLD p=0.1000 dec=uf N=3160 trials=400 P_L=0.75250 sem=0.02158
+KMC_CLS|cls_l4_r2_step3.code|dt=72.78s|KMC beta=2.00 dec=uf N=4000 trials=100 mean_t=3.8922e+02 sem_t=1.7668e+01 median_t=3.3852e+02 mean_flips=112595.0 capped=0
+KMC_Q|bdl_tor2_L2r1_s2_Xerr.code|dt=0.15s|KMC beta=5.00 dec=uf N=1292 trials=120 mean_t=9.2683e+02 sem_t=9.4617e+01 median_t=5.1749e+02 mean_flips=3084.1 capped=0
+THRESH|cls_l4_r2_step3.code|dt=0.08s|THRESHOLD p=0.0300 dec=uf N=4000 trials=400 P_L=0.00000 sem=0.00000
+KMC_CLS|cls_l3_r1_step1.code|dt=0.04s|KMC beta=2.50 dec=uf N=28 trials=200 mean_t=3.3537e+03 sem_t=2.4720e+02 median_t=2.3263e+03 mean_flips=2400.7 capped=0
+KMC_Q|bdl_tor2_hyb21_s2_Xerr.code|dt=1.23s|KMC beta=3.00 dec=uf N=3160 trials=120 mean_t=7.8487e+00 sem_t=2.6747e-01 median_t=7.8986e+00 mean_flips=484.5 capped=0
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.74s|THRESHOLD p=0.0800 dec=bposd N=3160 trials=200 P_L=0.15000 sem=0.02525
+KMC_DEC|cls_l4_r2_step2.code|dt=0.24s|KMC beta=3.00 dec=rg_relaxed N=400 trials=80 mean_t=2.1018e+02 sem_t=1.8135e+01 median_t=1.6442e+02 mean_flips=3205.8 capped=0
+KMC_Q|bdl_sq_L2r1_s2_Xerr.code|dt=0.06s|KMC beta=6.00 dec=uf N=323 trials=120 mean_t=6.4919e+03 sem_t=8.5179e+02 median_t=3.5369e+03 mean_flips=5117.8 capped=0
+KMC_Q|bdl_surf2_L2r1_s2_Zerr.code|dt=26.79s|KMC beta=7.00 dec=uf N=1292 trials=120 mean_t=5.6777e+07 sem_t=4.0781e+06 median_t=4.5185e+07 mean_flips=5464151.1 capped=7
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.0100 dec=uf N=196 trials=400 P_L=0.00000 sem=0.00000
+HYBRID|bdl_sq_L3r2_s2_Xerr.code|dt=0.73s|HYBRID beta=5.00 tau_ec=5.000e+03 cycles=20 T_tot=1.000e+05 N=2152 P_fail=1.00000
+KMC_Q|bdl_surf2_L2r1_s2_Zerr.code|dt=0.31s|KMC beta=3.00 dec=uf N=1292 trials=120 mean_t=4.2178e+01 sem_t=2.2581e+00 median_t=3.7980e+01 mean_flips=836.2 capped=0
+KMC_DEC|cls_l4_r2_step3.code|dt=40.88s|KMC beta=3.00 dec=rg_relaxed N=4000 trials=80 mean_t=1.1005e+05 sem_t=5.2229e+03 median_t=1.3644e+05 mean_flips=3705026.2 capped=36
+KMC_Q|bdl_tor2_L3r1_s1_Xerr.code|dt=0.08s|KMC beta=6.00 dec=uf N=164 trials=120 mean_t=1.7320e+06 sem_t=1.6445e+05 median_t=1.1952e+06 mean_flips=10707.6 capped=0
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.19s|THRESHOLD p=0.0200 dec=rg_strict N=1292 trials=400 P_L=0.54500 sem=0.02490
+KMC_CLS|cls_l4_r2_step0.code|dt=0.01s|KMC beta=4.00 dec=uf N=4 trials=200 mean_t=3.8235e+03 sem_t=2.2451e+02 median_t=2.8138e+03 mean_flips=18.6 capped=0
+KMC_Q|bdl_tor3_L2r1_s2_Xerr.code|dt=7.87s|KMC beta=7.00 dec=uf N=2907 trials=120 mean_t=1.3592e+07 sem_t=1.5909e+06 median_t=7.7011e+06 mean_flips=1297962.4 capped=0
+KMC_Q|toric2d_L12_Xerr.code|dt=0.02s|KMC beta=4.00 dec=uf N=288 trials=120 mean_t=3.4262e+01 sem_t=2.3127e+00 median_t=2.9227e+01 mean_flips=73.8 capped=0
+HYBRID|bdl_sq_L3r2_s2_Xerr.code|dt=0.22s|HYBRID beta=5.00 tau_ec=2.000e+02 cycles=20 T_tot=4.000e+03 N=2152 P_fail=0.94167
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.32s|THRESHOLD p=0.0400 dec=bposd N=2152 trials=200 P_L=0.00000 sem=0.00000
+KMC_DEC|bdl_tor2_L2r1_s2_Xerr.code|dt=0.70s|KMC beta=3.50 dec=bposd N=1292 trials=40 mean_t=2.4380e+01 sem_t=2.2387e+00 median_t=2.2505e+01 mean_flips=469.6 capped=0
+KMC_Q|layer_913_Xerr.code|dt=0.32s|KMC beta=5.00 dec=uf N=1853 trials=120 mean_t=3.3869e+02 sem_t=2.9151e+01 median_t=2.5488e+02 mean_flips=3686.5 capped=0
+KMC_DEC|bdl_tor2_hyb21_s2_Xerr.code|dt=0.65s|KMC beta=3.50 dec=rg_strict N=3160 trials=80 mean_t=1.0353e+01 sem_t=6.3064e-01 median_t=1.0425e+01 mean_flips=280.2 capped=0
+THRESH|cls_l3_r1_step3.code|dt=0.03s|THRESHOLD p=0.0400 dec=uf N=1372 trials=400 P_L=0.00000 sem=0.00000
+THRESH|cls_l3_r1_step2.code|dt=0.02s|THRESHOLD p=0.0600 dec=rg_strict N=196 trials=400 P_L=0.00000 sem=0.00000
+KMC_CLS|cls_l4_r2_step1.code|dt=0.04s|KMC beta=2.00 dec=uf N=40 trials=200 mean_t=7.1737e+02 sem_t=5.3445e+01 median_t=5.1428e+02 mean_flips=1736.8 capped=0
+KMC_DEC|cls_l3_r1_step3.code|dt=2.49s|KMC beta=2.50 dec=rg_relaxed N=1372 trials=80 mean_t=1.1987e+03 sem_t=1.2282e+02 median_t=9.9767e+02 mean_flips=59930.2 capped=0
+KMC_Q|bdl_sq_L3r1_s1_Xerr.code|dt=0.02s|KMC beta=4.00 dec=uf N=41 trials=120 mean_t=5.5998e+02 sem_t=5.5591e+01 median_t=3.3668e+02 mean_flips=425.2 capped=0
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.09s|THRESHOLD p=0.0100 dec=rg_relaxed N=1292 trials=400 P_L=0.22250 sem=0.02080
+KMC_Q|layer_913_Xerr.code|dt=0.37s|KMC beta=3.00 dec=uf N=1853 trials=120 mean_t=9.2577e+00 sem_t=4.0575e-01 median_t=8.8623e+00 mean_flips=612.8 capped=0
+KMC_Q|bdl_sq_L3r1_s1_Xerr.code|dt=0.02s|KMC beta=5.00 dec=uf N=41 trials=120 mean_t=4.8994e+03 sem_t=5.7606e+02 median_t=2.6388e+03 mean_flips=1378.0 capped=0
+KMC_Q|toric2d_L20_Xerr.code|dt=0.07s|KMC beta=4.00 dec=uf N=800 trials=120 mean_t=2.8407e+01 sem_t=1.2110e+00 median_t=2.7086e+01 mean_flips=169.9 capped=0
+KMC_DEC|bdl_sq_L3r2_s2_Xerr.code|dt=0.36s|KMC beta=5.50 dec=rg_strict N=2152 trials=80 mean_t=2.9661e+03 sem_t=4.0272e+02 median_t=1.7696e+03 mean_flips=18859.7 capped=0
+KMC_DEC|bdl_tor2_hyb21_s2_Xerr.code|dt=0.55s|KMC beta=5.50 dec=rg_relaxed N=3160 trials=80 mean_t=1.9831e+04 sem_t=3.7902e+03 median_t=3.4137e+03 mean_flips=39706.0 capped=0
+KMC_DEC|bdl_sq_L3r2_s2_Xerr.code|dt=0.56s|KMC beta=4.50 dec=uf N=2152 trials=80 mean_t=1.6214e+02 sem_t=2.1342e+01 median_t=1.1139e+02 mean_flips=2914.2 capped=0
+KMC_DEC|bdl_sq_L3r1_s2_Xerr.code|dt=1.83s|KMC beta=5.50 dec=bposd N=1271 trials=40 mean_t=8.2645e+02 sem_t=1.0027e+02 median_t=5.7073e+02 mean_flips=4015.0 capped=0
+KMC_Q|toric2d_L30_Xerr.code|dt=0.29s|KMC beta=4.00 dec=uf N=1800 trials=120 mean_t=2.2274e+01 sem_t=8.8174e-01 median_t=2.1259e+01 mean_flips=309.5 capped=0
+THRESH|cls_l3_r1_step2.code|dt=0.02s|THRESHOLD p=0.0300 dec=rg_relaxed N=196 trials=400 P_L=0.00000 sem=0.00000
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.68s|THRESHOLD p=0.0400 dec=uf N=3160 trials=400 P_L=0.12750 sem=0.01668
+THRESH|cls_l3_r1_step2.code|dt=0.02s|THRESHOLD p=0.1200 dec=uf N=196 trials=400 P_L=0.00000 sem=0.00000
+STATS|bdl_tor2_hyb21_s2_Xerr.code|dt=3.31s|STATS N=3160 M_check=1440 K=2 max_q_deg=4 rg=2 d<=42 Delta<=5
+KMC_Q|bdl_sq_L3r2_s2_Xerr.code|dt=0.50s|KMC beta=5.00 dec=uf N=2152 trials=120 mean_t=6.5386e+02 sem_t=8.3326e+01 median_t=3.3717e+02 mean_flips=7296.2 capped=0
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.24s|THRESHOLD p=0.1200 dec=bposd N=1292 trials=200 P_L=0.42500 sem=0.03496
+KMC_Q|bdl_tor3_L2r1_s0_Xerr.code|dt=0.01s|KMC beta=7.00 dec=uf N=18 trials=120 mean_t=2.0782e+05 sem_t=1.3426e+04 median_t=1.7207e+05 mean_flips=16.5 capped=0
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.25s|THRESHOLD p=0.0800 dec=rg_relaxed N=2152 trials=400 P_L=0.52500 sem=0.02497
+KMC_Q|bdl_tor2_L2r1_s2_Xerr.code|dt=0.23s|KMC beta=3.00 dec=uf N=1292 trials=120 mean_t=8.2583e+00 sem_t=3.2601e-01 median_t=7.3222e+00 mean_flips=218.4 capped=0
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.17s|THRESHOLD p=0.1000 dec=bposd N=1292 trials=200 P_L=0.52500 sem=0.03531
+KMC_CLS|cls_l3_r1_step1.code|dt=0.08s|KMC beta=3.00 dec=uf N=28 trials=200 mean_t=4.4351e+04 sem_t=3.4448e+03 median_t=2.7680e+04 mean_flips=9525.9 capped=0
+KMC_Q|toric2d_L12_Xerr.code|dt=0.03s|KMC beta=3.00 dec=uf N=288 trials=120 mean_t=8.5980e+00 sem_t=4.3252e-01 median_t=7.5968e+00 mean_flips=60.1 capped=0
+KMC_CLS|cls_l3_r1_step0.code|dt=0.01s|KMC beta=4.00 dec=uf N=4 trials=200 mean_t=3.7696e+03 sem_t=2.2157e+02 median_t=2.7131e+03 mean_flips=18.3 capped=0
+HYBRID|bdl_sq_L3r2_s2_Xerr.code|dt=0.24s|HYBRID beta=5.00 tau_ec=1.000e+03 cycles=20 T_tot=2.000e+04 N=2152 P_fail=1.00000
+KMC_Q|bdl_tor3_L2r1_s0_Xerr.code|dt=0.01s|KMC beta=5.00 dec=uf N=18 trials=120 mean_t=3.8643e+03 sem_t=2.9308e+02 median_t=3.0704e+03 mean_flips=20.4 capped=0
+KMC_DEC|bdl_tor2_hyb21_s2_Xerr.code|dt=0.77s|KMC beta=3.50 dec=uf N=3160 trials=80 mean_t=2.2415e+01 sem_t=9.8826e-01 median_t=2.2391e+01 mean_flips=871.7 capped=0
+KMC_DEC|bdl_tor2_L2r1_s2_Xerr.code|dt=0.18s|KMC beta=3.50 dec=rg_strict N=1292 trials=80 mean_t=1.0465e+01 sem_t=7.4071e-01 median_t=9.4218e+00 mean_flips=137.2 capped=0
+KMC_CLS|cls_l3_r1_step3.code|dt=4.45s|KMC beta=1.50 dec=uf N=1372 trials=100 mean_t=3.5742e+01 sem_t=1.5918e+00 median_t=3.1552e+01 mean_flips=8130.4 capped=0
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.23s|THRESHOLD p=0.0800 dec=rg_relaxed N=1292 trials=400 P_L=0.78000 sem=0.02071
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=6.250e-02 syn_density=0.440375
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=1.250e-01 syn_density=0.393907
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=2.500e-01 syn_density=0.322727
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=5.000e-01 syn_density=0.238146
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=1.000e+00 syn_density=0.159451
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=2.000e+00 syn_density=0.097358
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=4.000e+00 syn_density=0.054986
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=8.000e+00 syn_density=0.029080
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=1.600e+01 syn_density=0.013726
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=3.200e+01 syn_density=0.007568
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=6.400e+01 syn_density=0.004042
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=1.280e+02 syn_density=0.003499
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=2.560e+02 syn_density=0.003228
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=5.120e+02 syn_density=0.002333
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=1.024e+03 syn_density=0.002767
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=2.048e+03 syn_density=0.002550
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=4.096e+03 syn_density=0.002713
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=8.192e+03 syn_density=0.002523
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=1.638e+04 syn_density=0.002658
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=3.277e+04 syn_density=0.002631
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=6.554e+04 syn_density=0.002794
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=1.311e+05 syn_density=0.002414
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=2.621e+05 syn_density=0.002523
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=5.243e+05 syn_density=0.002875
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=1.049e+06 syn_density=0.002333
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=2.097e+06 syn_density=0.004259
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=4.194e+06 syn_density=0.004259
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=8.389e+06 syn_density=0.004259
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=1.678e+07 syn_density=0.004259
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=3.355e+07 syn_density=0.004259
+COOL|bdl_sq_L3r1_s2_Xerr.code|dt=14.50s|COOL beta=6.00 t=6.711e+07 syn_density=0.004259
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.44s|THRESHOLD p=0.0400 dec=rg_relaxed N=3160 trials=400 P_L=0.70000 sem=0.02291
+KMC_Q|bdl_sq_L3r2_s1_Xerr.code|dt=1.71s|KMC beta=6.00 dec=uf N=44 trials=120 mean_t=5.3773e+06 sem_t=5.1505e+05 median_t=3.9985e+06 mean_flips=426662.8 capped=0
+KMC_Q|bdl_surf2_L2r1_s2_Xerr.code|dt=0.17s|KMC beta=5.00 dec=uf N=1292 trials=120 mean_t=7.0370e+02 sem_t=6.7063e+01 median_t=4.2424e+02 mean_flips=4219.5 capped=0
+THRESH|cls_l4_r2_step2.code|dt=0.02s|THRESHOLD p=0.0400 dec=rg_relaxed N=400 trials=400 P_L=0.00000 sem=0.00000
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.28s|THRESHOLD p=0.1000 dec=uf N=1292 trials=400 P_L=0.68750 sem=0.02318
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.15s|THRESHOLD p=0.0600 dec=rg_relaxed N=1271 trials=400 P_L=0.44500 sem=0.02485
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.15s|THRESHOLD p=0.0400 dec=rg_relaxed N=1292 trials=400 P_L=0.64750 sem=0.02389
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.29s|THRESHOLD p=0.1200 dec=uf N=1292 trials=400 P_L=0.69750 sem=0.02297
+KMC_Q|bdl_sq_L3r1_s2_Zerr.code|dt=0.25s|KMC beta=5.00 dec=uf N=1271 trials=120 mean_t=1.0322e+04 sem_t=1.2370e+03 median_t=6.4387e+03 mean_flips=21086.8 capped=0
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.46s|THRESHOLD p=0.0800 dec=rg_relaxed N=3160 trials=400 P_L=0.75750 sem=0.02143
+KMC_CLS|cls_l4_r2_step1.code|dt=0.34s|KMC beta=3.00 dec=uf N=40 trials=200 mean_t=2.1921e+05 sem_t=1.7057e+04 median_t=1.4440e+05 mean_flips=48876.0 capped=0
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=6.250e-02 syn_density=0.468880
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=1.250e-01 syn_density=0.442306
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=2.500e-01 syn_density=0.398324
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=5.000e-01 syn_density=0.334285
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=1.000e+00 syn_density=0.260826
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=2.000e+00 syn_density=0.192323
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=4.000e+00 syn_density=0.137849
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=8.000e+00 syn_density=0.096961
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=1.600e+01 syn_density=0.067303
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=3.200e+01 syn_density=0.051199
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=6.400e+01 syn_density=0.043276
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=1.280e+02 syn_density=0.036424
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=2.560e+02 syn_density=0.030243
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=5.120e+02 syn_density=0.024157
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=1.024e+03 syn_density=0.018618
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=2.048e+03 syn_density=0.013481
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=4.096e+03 syn_density=0.009916
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=8.192e+03 syn_density=0.007896
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=1.638e+04 syn_density=0.006304
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=3.277e+04 syn_density=0.004983
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=6.554e+04 syn_density=0.004134
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=1.311e+05 syn_density=0.003291
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=2.621e+05 syn_density=0.002726
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=5.243e+05 syn_density=0.002421
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=1.049e+06 syn_density=0.002401
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=2.097e+06 syn_density=0.002478
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=4.194e+06 syn_density=0.002478
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=8.389e+06 syn_density=0.002478
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=1.678e+07 syn_density=0.002478
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=3.355e+07 syn_density=0.002478
+COOL|cls_l4_r2_step3.code|dt=12.87s|COOL beta=4.00 t=6.711e+07 syn_density=0.002478
+KMC_DEC|bdl_tor2_L2r1_s2_Zerr.code|dt=0.21s|KMC beta=3.50 dec=rg_strict N=1292 trials=80 mean_t=1.6117e+02 sem_t=2.0246e+01 median_t=1.2138e+02 mean_flips=891.0 capped=0
+KMC_DEC|bdl_sq_L3r1_s2_Xerr.code|dt=0.26s|KMC beta=3.50 dec=rg_strict N=1271 trials=80 mean_t=1.5385e+01 sem_t=1.0089e+00 median_t=1.3059e+01 mean_flips=401.6 capped=0
+KMC_Q|toric3d_L5_Zerr.code|dt=0.01s|KMC beta=7.00 dec=uf N=375 trials=120 mean_t=8.6644e+03 sem_t=7.3914e+02 median_t=6.9639e+03 mean_flips=192.2 capped=0
+THRESH|cls_l4_r2_step3.code|dt=0.10s|THRESHOLD p=0.0400 dec=rg_relaxed N=4000 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_sq_L3r2_s2_Zerr.code|dt=57.96s|KMC beta=7.00 dec=uf N=2152 trials=120 mean_t=1.0150e+08 sem_t=3.1687e+06 median_t=1.2350e+08 mean_flips=12312178.5 capped=73
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.15s|THRESHOLD p=0.0400 dec=rg_strict N=1292 trials=400 P_L=0.66000 sem=0.02369
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.19s|THRESHOLD p=0.0300 dec=rg_relaxed N=2152 trials=400 P_L=0.24750 sem=0.02158
+HYBRID|bdl_tor3_L2r1_s2_Zerr.code|dt=0.30s|HYBRID beta=5.00 tau_ec=5.000e+03 cycles=20 T_tot=1.000e+05 N=2907 P_fail=0.06667
+KMC_Q|bdl_sq_L2r1_s3_Xerr.code|dt=62.82s|KMC beta=6.00 dec=uf N=2911 trials=120 mean_t=9.7433e+06 sem_t=9.5763e+04 median_t=9.8953e+06 mean_flips=14773637.6 capped=117
+KMC_Q|bdl_sq_L3r1_s2_Zerr.code|dt=0.26s|KMC beta=3.00 dec=uf N=1271 trials=120 mean_t=1.9139e+01 sem_t=1.0123e+00 median_t=1.6354e+01 mean_flips=458.5 capped=0
+KMC_Q|bdl_sq_L3r1_s2_Xerr.code|dt=0.32s|KMC beta=7.00 dec=uf N=1271 trials=120 mean_t=3.1175e+04 sem_t=4.2040e+03 median_t=1.3952e+04 mean_flips=34895.1 capped=0
+HYBRID|layer_913_Xerr.code|dt=0.19s|HYBRID beta=5.00 tau_ec=1.000e+03 cycles=20 T_tot=2.000e+04 N=1853 P_fail=1.00000
+KMC_Q|toric3d_L3_Zerr.code|dt=0.01s|KMC beta=5.00 dec=uf N=81 trials=120 mean_t=6.4810e+02 sem_t=4.2320e+01 median_t=6.4184e+02 mean_flips=37.8 capped=0
+THRESH|cls_l3_r1_step3.code|dt=0.04s|THRESHOLD p=0.0600 dec=bposd N=1372 trials=200 P_L=0.00000 sem=0.00000
+THRESH|cls_l3_r1_step3.code|dt=0.02s|THRESHOLD p=0.0200 dec=rg_relaxed N=1372 trials=400 P_L=0.00000 sem=0.00000
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.21s|THRESHOLD p=0.0300 dec=rg_strict N=2152 trials=400 P_L=0.23000 sem=0.02104
+KMC_Q|toric2d_L20_Xerr.code|dt=0.05s|KMC beta=5.00 dec=uf N=800 trials=120 mean_t=1.0246e+02 sem_t=7.5857e+00 median_t=7.6976e+01 mean_flips=192.0 capped=0
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=6.250e-02 syn_density=0.433437
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=1.250e-01 syn_density=0.381962
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=2.500e-01 syn_density=0.309583
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=5.000e-01 syn_density=0.227969
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=1.000e+00 syn_density=0.149566
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=2.000e+00 syn_density=0.089757
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=4.000e+00 syn_density=0.050972
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=8.000e+00 syn_density=0.028507
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=1.600e+01 syn_density=0.014358
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=3.200e+01 syn_density=0.008958
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=6.400e+01 syn_density=0.006701
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=1.280e+02 syn_density=0.005330
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=2.560e+02 syn_density=0.003490
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=5.120e+02 syn_density=0.002326
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=1.024e+03 syn_density=0.002083
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=2.048e+03 syn_density=0.001337
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=4.096e+03 syn_density=0.001406
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=8.192e+03 syn_density=0.001406
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=1.638e+04 syn_density=0.001684
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=3.277e+04 syn_density=0.001840
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=6.554e+04 syn_density=0.001493
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=1.311e+05 syn_density=0.001667
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=2.621e+05 syn_density=0.001875
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=5.243e+05 syn_density=0.001910
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=1.049e+06 syn_density=0.001233
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=2.097e+06 syn_density=0.002882
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=4.194e+06 syn_density=0.002882
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=8.389e+06 syn_density=0.002882
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=1.678e+07 syn_density=0.002882
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=3.355e+07 syn_density=0.002882
+COOL|bdl_sq_L3r2_s2_Xerr.code|dt=14.57s|COOL beta=6.00 t=6.711e+07 syn_density=0.002882
+THRESH|cls_l4_r2_step2.code|dt=0.04s|THRESHOLD p=0.1200 dec=rg_strict N=400 trials=400 P_L=0.00000 sem=0.00000
+THRESH|cls_l4_r2_step3.code|dt=0.09s|THRESHOLD p=0.0300 dec=rg_strict N=4000 trials=400 P_L=0.00000 sem=0.00000
+THRESH|cls_l4_r2_step3.code|dt=0.19s|THRESHOLD p=0.1200 dec=uf N=4000 trials=400 P_L=0.00000 sem=0.00000
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.12s|THRESHOLD p=0.0300 dec=rg_relaxed N=1271 trials=400 P_L=0.23750 sem=0.02128
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.16s|THRESHOLD p=0.1000 dec=rg_strict N=1271 trials=400 P_L=0.52500 sem=0.02497
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.33s|THRESHOLD p=0.0600 dec=bposd N=2152 trials=200 P_L=0.02000 sem=0.00990
+HYBRID|bdl_tor3_L2r1_s2_Zerr.code|dt=0.05s|HYBRID beta=5.00 tau_ec=2.000e+02 cycles=20 T_tot=4.000e+03 N=2907 P_fail=0.00000
+KMC_Q|toric2d_L6_Xerr.code|dt=0.01s|KMC beta=3.00 dec=uf N=72 trials=120 mean_t=1.4761e+01 sem_t=1.3697e+00 median_t=9.5986e+00 mean_flips=23.3 capped=0
+THRESH|cls_l4_r2_step3.code|dt=0.05s|THRESHOLD p=0.0100 dec=rg_strict N=4000 trials=400 P_L=0.00000 sem=0.00000
+KMC_DEC|bdl_sq_L3r2_s2_Xerr.code|dt=0.31s|KMC beta=4.50 dec=rg_relaxed N=2152 trials=80 mean_t=9.5274e+01 sem_t=1.6218e+01 median_t=6.7231e+01 mean_flips=1609.0 capped=0
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.0300 dec=bposd N=196 trials=200 P_L=0.00000 sem=0.00000
+KMC_DEC|bdl_tor2_hyb21_s2_Xerr.code|dt=4.18s|KMC beta=4.50 dec=bposd N=3160 trials=40 mean_t=3.3084e+02 sem_t=3.0773e+01 median_t=2.6585e+02 mean_flips=5670.4 capped=0
+KMC_DEC|cls_l3_r1_step3.code|dt=8.33s|KMC beta=3.50 dec=bposd N=1372 trials=40 mean_t=1.1674e+06 sem_t=3.9943e+04 median_t=1.2618e+06 mean_flips=4700620.0 capped=36
+THRESH|bdl_sq_L3r2_s2_Xerr.code|dt=0.33s|THRESHOLD p=0.1200 dec=bposd N=2152 trials=200 P_L=0.46500 sem=0.03527
+HYBRID|toric2d_L20_Xerr.code|dt=0.03s|HYBRID beta=5.00 tau_ec=5.000e+01 cycles=20 T_tot=1.000e+03 N=800 P_fail=0.98333
+KMC_Q|bdl_sq_L2r1_s1_Zerr.code|dt=0.01s|KMC beta=7.00 dec=uf N=19 trials=120 mean_t=2.0681e+02 sem_t=1.7205e+01 median_t=1.5584e+02 mean_flips=4.2 capped=0
+KMC_DEC|cls_l4_r2_step2.code|dt=0.27s|KMC beta=2.50 dec=rg_relaxed N=400 trials=80 mean_t=6.9521e+01 sem_t=6.5410e+00 median_t=5.5065e+01 mean_flips=1824.1 capped=0
+KMC_Q|toric2d_L12_Xerr.code|dt=0.01s|KMC beta=5.00 dec=uf N=288 trials=120 mean_t=1.8772e+02 sem_t=1.9870e+01 median_t=1.3468e+02 mean_flips=119.5 capped=0
+THRESH|cls_l4_r2_step3.code|dt=0.18s|THRESHOLD p=0.1000 dec=rg_strict N=4000 trials=400 P_L=0.00000 sem=0.00000
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.08s|THRESHOLD p=0.0400 dec=uf N=1292 trials=400 P_L=0.06500 sem=0.01233
+KMC_Q|bdl_sq_L3r2_s1_Xerr.code|dt=0.24s|KMC beta=5.00 dec=uf N=44 trials=120 mean_t=2.8102e+05 sem_t=2.7607e+04 median_t=1.8462e+05 mean_flips=60722.6 capped=0
+KMC_Q|bdl_tor2_L3r2_s1_Xerr.code|dt=0.13s|KMC beta=4.00 dec=uf N=176 trials=120 mean_t=2.4721e+05 sem_t=2.1791e+04 median_t=1.8411e+05 mean_flips=19827.1 capped=0
+KMC_Q|bdl_tor3_L2r1_s1_Xerr.code|dt=0.06s|KMC beta=4.00 dec=uf N=171 trials=120 mean_t=4.4648e+04 sem_t=4.5572e+03 median_t=3.0240e+04 mean_flips=6410.2 capped=0
+KMC_DEC|bdl_tor2_hyb21_s2_Xerr.code|dt=0.56s|KMC beta=4.50 dec=uf N=3160 trials=80 mean_t=2.3294e+02 sem_t=1.9962e+01 median_t=1.9278e+02 mean_flips=3516.6 capped=0
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.22s|THRESHOLD p=0.0600 dec=rg_strict N=1292 trials=400 P_L=0.80000 sem=0.02000
+THRESH|cls_l4_r2_step2.code|dt=0.02s|THRESHOLD p=0.0300 dec=rg_relaxed N=400 trials=400 P_L=0.00000 sem=0.00000
+STATS|cls_l4_r2_step3.code|dt=28.51s|STATS N=4000 M_check=4672 K=1 max_q_deg=3 rg=3 d<=1760 Delta<=29
+THRESH|bdl_tor2_L2r1_s2_Xerr.code|dt=0.22s|THRESHOLD p=0.0800 dec=rg_relaxed N=1292 trials=400 P_L=0.75000 sem=0.02165
+KMC_Q|bdl_tor2_L2r1_s2_Xerr.code|dt=0.29s|KMC beta=4.00 dec=uf N=1292 trials=120 mean_t=5.7401e+01 sem_t=3.3103e+00 median_t=4.7414e+01 mean_flips=642.9 capped=0
+THRESH|cls_l4_r2_step3.code|dt=0.29s|THRESHOLD p=0.1000 dec=uf N=4000 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_tor2_L2r1_s1_Zerr.code|dt=0.01s|KMC beta=5.00 dec=uf N=76 trials=120 mean_t=8.1084e+02 sem_t=6.5316e+01 median_t=6.8073e+02 mean_flips=57.3 capped=0
+THRESH|cls_l3_r1_step3.code|dt=0.05s|THRESHOLD p=0.0800 dec=bposd N=1372 trials=200 P_L=0.00000 sem=0.00000
+THRESH|cls_l4_r2_step2.code|dt=0.01s|THRESHOLD p=0.0100 dec=uf N=400 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|toric3d_L3_Zerr.code|dt=0.01s|KMC beta=7.00 dec=uf N=81 trials=120 mean_t=3.7627e+04 sem_t=2.4913e+03 median_t=3.1514e+04 mean_flips=43.8 capped=0
+KMC_Q|bdl_tor2_L2r1_s0_Xerr.code|dt=0.01s|KMC beta=3.00 dec=uf N=8 trials=120 mean_t=1.0240e+02 sem_t=9.5305e+00 median_t=6.9488e+01 mean_flips=4.4 capped=0
+KMC_Q|bdl_tor2_L2r1_s2_Zerr.code|dt=2.99s|KMC beta=5.00 dec=uf N=1292 trials=120 mean_t=1.8740e+06 sem_t=1.5025e+05 median_t=1.3888e+06 mean_flips=348973.6 capped=0
+THRESH|cls_l3_r1_step3.code|dt=0.06s|THRESHOLD p=0.0400 dec=bposd N=1372 trials=200 P_L=0.00000 sem=0.00000
+KMC_DEC|bdl_tor2_hyb21_s2_Xerr.code|dt=0.84s|KMC beta=5.50 dec=rg_strict N=3160 trials=80 mean_t=3.3655e+04 sem_t=4.6361e+03 median_t=1.7685e+04 mean_flips=67128.8 capped=0
+THRESH|cls_l4_r2_step3.code|dt=0.19s|THRESHOLD p=0.0400 dec=rg_strict N=4000 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_tor2_L3r2_s1_Xerr.code|dt=2.03s|KMC beta=5.00 dec=uf N=176 trials=120 mean_t=4.0144e+07 sem_t=3.8891e+06 median_t=2.9563e+07 mean_flips=376341.1 capped=0
+KMC_DEC|cls_l4_r2_step2.code|dt=0.55s|KMC beta=2.50 dec=bposd N=400 trials=40 mean_t=1.0435e+02 sem_t=8.1117e+00 median_t=9.5344e+01 mean_flips=2852.6 capped=0
+KMC_CLS|cls_l4_r2_step0.code|dt=0.01s|KMC beta=3.50 dec=uf N=4 trials=200 mean_t=1.5206e+03 sem_t=8.8663e+01 median_t=1.3459e+03 mean_flips=20.0 capped=0
+KMC_DEC|cls_l3_r1_step2.code|dt=0.09s|KMC beta=3.50 dec=uf N=196 trials=80 mean_t=1.7505e+03 sem_t=2.2990e+02 median_t=1.0288e+03 mean_flips=7216.8 capped=0
+KMC_DEC|bdl_sq_L3r1_s2_Xerr.code|dt=0.17s|KMC beta=5.50 dec=uf N=1271 trials=80 mean_t=6.9388e+02 sem_t=9.3839e+01 median_t=4.3964e+02 mean_flips=3318.4 capped=0
+KMC_DEC|cls_l4_r2_step2.code|dt=0.25s|KMC beta=3.00 dec=rg_strict N=400 trials=80 mean_t=2.7119e+02 sem_t=2.8454e+01 median_t=1.7973e+02 mean_flips=4296.3 capped=0
+THRESH|cls_l3_r1_step3.code|dt=0.03s|THRESHOLD p=0.0200 dec=uf N=1372 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_surf2_L2r1_s2_Xerr.code|dt=0.25s|KMC beta=3.00 dec=uf N=1292 trials=120 mean_t=9.9745e+00 sem_t=5.4045e-01 median_t=8.8496e+00 mean_flips=410.1 capped=0
+KMC_Q|bdl_tor3_L2r1_s2_Zerr.code|dt=6.34s|KMC beta=5.00 dec=uf N=2907 trials=120 mean_t=1.9340e+06 sem_t=1.9645e+05 median_t=1.2839e+06 mean_flips=817878.6 capped=0
+KMC_Q|bdl_sq_L2r1_s2_Xerr.code|dt=0.04s|KMC beta=5.00 dec=uf N=323 trials=120 mean_t=8.2351e+02 sem_t=8.0025e+01 median_t=5.6202e+02 mean_flips=1722.4 capped=0
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.0300 dec=rg_strict N=196 trials=400 P_L=0.00000 sem=0.00000
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.13s|THRESHOLD p=0.0400 dec=bposd N=1292 trials=200 P_L=0.00000 sem=0.00000
+KMC_DEC|bdl_sq_L3r1_s2_Xerr.code|dt=0.15s|KMC beta=3.50 dec=rg_relaxed N=1271 trials=80 mean_t=8.6601e+00 sem_t=5.2684e-01 median_t=7.7442e+00 mean_flips=191.2 capped=0
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.12s|THRESHOLD p=0.0200 dec=uf N=3160 trials=400 P_L=0.00000 sem=0.00000
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.0100 dec=bposd N=196 trials=200 P_L=0.00000 sem=0.00000
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.11s|THRESHOLD p=0.0300 dec=bposd N=1292 trials=200 P_L=0.00000 sem=0.00000
+THRESH|bdl_tor2_hyb21_s2_Xerr.code|dt=0.45s|THRESHOLD p=0.1200 dec=rg_strict N=3160 trials=400 P_L=0.75000 sem=0.02165
+THRESH|cls_l4_r2_step2.code|dt=0.01s|THRESHOLD p=0.0400 dec=uf N=400 trials=400 P_L=0.00000 sem=0.00000
+THRESH|bdl_tor2_L2r1_s2_Zerr.code|dt=0.05s|THRESHOLD p=0.0100 dec=bposd N=1292 trials=200 P_L=0.00000 sem=0.00000
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.15s|THRESHOLD p=0.0800 dec=rg_relaxed N=1271 trials=400 P_L=0.50250 sem=0.02500
+KMC_Q|bdl_sq_L2r1_s3_Zerr.code|dt=1.34s|KMC beta=7.00 dec=uf N=2911 trials=120 mean_t=2.1944e+05 sem_t=1.8959e+04 median_t=1.7987e+05 mean_flips=186211.5 capped=0
+KMC_CLS|cls_l4_r2_step0.code|dt=0.01s|KMC beta=3.00 dec=uf N=4 trials=200 mean_t=5.3684e+02 sem_t=3.4890e+01 median_t=4.0467e+02 mean_flips=18.2 capped=0
+THRESH|cls_l4_r2_step2.code|dt=0.01s|THRESHOLD p=0.0100 dec=bposd N=400 trials=200 P_L=0.00000 sem=0.00000
+THRESH|bdl_sq_L3r1_s2_Xerr.code|dt=0.15s|THRESHOLD p=0.1000 dec=bposd N=1271 trials=200 P_L=0.26000 sem=0.03102
+THRESH|cls_l3_r1_step2.code|dt=0.01s|THRESHOLD p=0.0400 dec=uf N=196 trials=400 P_L=0.00000 sem=0.00000
+KMC_Q|bdl_sq_L3r1_s2_Zerr.code|dt=0.19s|KMC beta=4.00 dec=uf N=1271 trials=120 mean_t=2.0009e+02 sem_t=1.8588e+01 median_t=1.4138e+02 mean_flips=1635.2 capped=0
+KMC_Q|bdl_surf2_L2r1_s0_Xerr.code|dt=0.01s|KMC beta=7.00 dec=uf N=8 trials=120 mean_t=1.5594e+03 sem_t=1.2418e+02 median_t=1.1078e+03 mean_flips=14.1 capped=0
+STATS|layer_913_Zerr.code|dt=1.03s|STATS N=1853 M_check=926 K=1 max_q_deg=3 rg=0 d<=16 Delta<=2
+THRESH|cls_l3_r1_step3.code|dt=0.04s|THRESHOLD p=0.0600 dec=rg_strict N=1372 trials=400 P_L=0.00000 sem=0.00000
+THRESH|cls_l4_r2_step2.code|dt=0.03s|THRESHOLD p=0.0600 dec=rg_strict N=400 trials=400 P_L=0.00000 sem=0.00000
+THRESH|cls_l4_r2_step2.code|dt=0.02s|THRESHOLD p=0.0600 dec=uf N=400 trials=400 P_L=0.00000 sem=0.00000

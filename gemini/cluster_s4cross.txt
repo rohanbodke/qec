@@ -1,0 +1,8 @@
+S4CROSS|cls_l3_r1_step4.code|dt=26.6s|KMC beta=2.50 dec=uf N=9604 trials=24 mean_t=8.5632e+01 sem_t=5.8329e+00 median_t=8.9731e+01 mean_flips=55415.8 capped=0
+S4CROSS|cls_l3_r1_step4.code|dt=32.2s|KMC beta=3.00 dec=uf N=9604 trials=24 mean_t=3.0101e+02 sem_t=1.7695e+01 median_t=2.8991e+02 mean_flips=118087.2 capped=0
+S4CROSS|cls_l3_r1_step4.code|dt=38.6s|KMC beta=3.25 dec=uf N=9604 trials=24 mean_t=6.5625e+02 sem_t=4.8417e+01 median_t=6.6414e+02 mean_flips=200744.5 capped=0
+S4CROSS|cls_l3_r1_step4.code|dt=66.6s|KMC beta=3.40 dec=uf N=9604 trials=24 mean_t=1.1373e+03 sem_t=1.5931e+02 median_t=9.5261e+02 mean_flips=295051.7 capped=0
+S4CROSS|cls_l3_r1_step4.code|dt=36.5s|KMC beta=3.50 dec=uf N=9604 trials=24 mean_t=1.2140e+03 sem_t=8.6538e+01 median_t=1.2177e+03 mean_flips=270217.0 capped=0
+S4CROSS|cls_l3_r1_step4.code|dt=48.9s|KMC beta=3.60 dec=uf N=9604 trials=24 mean_t=2.3058e+03 sem_t=4.6838e+02 median_t=1.6364e+03 mean_flips=464330.5 capped=0
+S4CROSS|cls_l3_r1_step4.code|dt=49.4s|KMC beta=3.75 dec=uf N=9604 trials=24 mean_t=4.2257e+03 sem_t=5.9969e+02 median_t=3.4647e+03 mean_flips=688029.2 capped=0
+S4CROSS|cls_l3_r1_step4.code|dt=111.0s|KMC beta=4.00 dec=uf N=9604 trials=24 mean_t=1.1806e+04 sem_t=1.4193e+03 median_t=1.0119e+04 mean_flips=1314796.7 capped=0

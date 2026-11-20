@@ -1,0 +1,4 @@
+=== EXPLICIT Z^3 UNIT-LATTICE COORDINATE COLLISION AUDIT ===
+  Z^3 Inhomogeneous 1-Rib (l0=3, l1=5): |F1|=96 (max_occ=1), |F2|=5568 (max_occ=1, overlaps=0)
+  Z^3 Inhomogeneous 2-Rib (l0=4, l1=6): |F1|=192 (max_occ=1), |F2|=17664 (max_occ=1, overlaps=0)
+  Z^3 BDL Explicit Scale  (l0=8, l1=8): |F1|=640 (max_occ=1), |F2|=99840 (max_occ=1, overlaps=0)

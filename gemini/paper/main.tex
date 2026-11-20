@@ -1,0 +1,148 @@
+\documentclass[aps,prx,reprint,superscriptaddress,nofootinbib,floatfix]{revtex4-2}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!65!black,citecolor=blue!65!black,urlcolor=blue!65!black]{hyperref}
+
+\begin{document}
+
+\title{Simulating Three-Dimensional Self-Correcting Quantum Memories:\texorpdfstring{\\}{ }Compact Welded Cells, Cubic-Grid Limits, and Thermal Cooling}
+
+\author{Harshil Avlani}
+\affiliation{Department of Physics and Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139, USA}
+\author{Rohan Bodke}
+\affiliation{Department of Physics and Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139, USA}
+\author{Rushil Shah}
+\affiliation{Department of Physics and Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139, USA}
+\author{Yichen Li}
+\affiliation{Department of Physics and Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139, USA}
+
+\date{November 2026 --- MIT 6.S980: Quantum Error Correction}
+
+\begin{abstract}
+A passive self-correcting quantum memory stores quantum states in a cold bath without measurements, using local energy penalties so larger codes live exponentially longer. Recent proofs establish three-dimensional self-correction by welding two-dimensional surface-code sheets across all scales, but require astronomical system sizes and leave compact cells, cubic-grid layouts, and cooling open. Using validated thermal Monte Carlo and rare-event simulations up to $56{,}312$ qubits, we show that shrinking each welded cell to a $2 \times 2$ four-arm bridge cross cuts first-cycle size by $220\times$ per logical qubit while preserving multi-cycle self-correction ($106\times$ planar gain, $2.45\times$ torus gain), whereas removing even one bridge arm spawns unprotected logical defects. Conversely, embedding onto a single cubic grid stretches edges into seven-qubit zero-energy wires that cut lifetime by $321\times$, while pre-balancing bridges across $X$ and $Z$ steps boosts lifetime by up to $336\times$. Finally, cold baths heal small errors automatically without measurements, whereas cooling from hot disorder requires gradual annealing past three-way junctions.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+
+Standard quantum error correction is active \cite{bravyi_bb2024}: hardware circuits measure stabilizer checks continuously, and a classical computer tracks and fixes errors in real time. If measurements stop, thermal noise quickly destroys the stored state. A passive self-correcting quantum memory works instead like a magnetic hard drive \cite{quantumMemories, selfcorrecting4D, alicki4D}. Logical qubits sit in the ground states of local check penalties coupled to a cold bath at temperature $T$. Errors that violate checks cost energy $\Delta E > 0$ and are suppressed at low temperature, while flips that heal checks release energy and happen naturally without measurements.
+
+\begin{figure*}[t!]
+  \centering
+  \includegraphics[width=\textwidth]{../figures/fig_v9_1_classes.png}
+  \caption{\textbf{How Energy Barriers and Defect Entropy Separate Quantum Code Families.} \textbf{(a)}~Lifetime relative to each family's smallest code as physical qubit count $N$ grows at fixed bath temperature: two-dimensional codes fall below $1\times$, Haah's Cubic Code rises to $25\times$ before turning over, and compact three-dimensional welded codes climb to $106\times$ across a second cycle. \textbf{(b)}~Corresponding low-temperature energy barriers hit flat ceilings in two dimensions, grow logarithmically in Haah's Cubic Code, and nearly double across cycles in compact welded codes.}
+  \label{fig:classes}
+\end{figure*}
+
+For passive storage to work, holding $T$ fixed below a critical temperature $T_c > 0$ and growing the code must increase memory lifetime without bound. Whether this happens is set by the free-energy barrier \cite{chesi2010, siva2017}:
+\begin{equation}
+  \Delta F \;=\; \Delta E \;-\; T\,\Delta S,
+\end{equation}
+which pits the energy cost $\Delta E$ of growing an error against the entropy $\Delta S$ counting how many ways defects can appear and wander at zero extra energy cost.
+
+Figure~\ref{fig:classes} shows how this competition divides quantum codes into distinct regimes as qubit count $N$ grows. In two-dimensional Toric \cite{selfcorrecting2D} and scaled Bivariate Bicycle codes \cite{bravyi_bb2024}, creating two defects costs constant energy, after which they walk across the grid for free; larger lattices only add starting points, capping the barrier and driving lifetime down below $1\times$. Three-dimensional crystal codes with identical checks at every site, such as Haah's Cubic Code \cite{haah2011cubic}, lock errors into immobile clusters, but fractal symmetry limits their barrier to grow only logarithmically with size \cite{yoshida2011, bravyi_haah2013}; lifetime rises to $25\times$ and then turns over once background thermal defects screen clusters. Random Layer Codes \cite{layercodesyale} similarly self-correct up to a finite size cutoff, while sparse-seam sheet codes \cite{michnicki2014, siva2017, layercodesydney} leave flat regions where defects wander freely.
+
+Balasubramanian, Davydova, and Lin (BDL) \cite{selfcorrecting3D} recently proved that multi-scale welded three-dimensional codes achieve true thermal self-correction, and Hayden \cite{hayden2026} proved stability under zero-temperature quantum perturbations. However, both completed proofs use randomized layouts that expand system size by roughly $5.4 \times 10^{24}$ per step, and BDL's explicit cubic-grid layout at subdivision scale $8$ already requires $56{,}312$ qubits for one cycle ($> 10^9$ for two) while leaving its lifetime proof open. In Section~8.3 of Ref.~\cite{hayden2026}, Hayden highlights this scale-$8$ code and identifies leaner welded cells and cooling past three-way junctions as central open problems. We use direct simulation to resolve both.
+
+\begin{figure*}[t!]
+  \centering
+  \includegraphics[width=\textwidth]{../figures/fig_v9_2_geometry.png}
+  \caption{\textbf{Mechanism and Design Limits of Three-Dimensional Welded Memories.} \textbf{(a)}~Welding parallel surface-code sheets with perpendicular bridges forces any defect crossing a three-way seam to split into two defects, costing extra energy. \textbf{(b)}~A $2 \times 2$ cell with a full four-arm bridge cross is the smallest uniform confining cell ($254$ qubits planar, $508$ on a torus). \textbf{(c)}~Cutting off one bridge arm mid-cell leaves an open ``buttonhole'' gap that creates unprotected logical qubits. \textbf{(d)}~Routing on a single cubic grid at scale $8$ turns each edge into a seven-qubit wire where defects hop at zero energy cost.}
+  \label{fig:geometry}
+\end{figure*}
+
+\section{Welded Code Mechanism and Compact Cells}
+
+A welded three-dimensional code blocks free defect walks through three-way sheet junctions (Fig.~\ref{fig:geometry}a). In a single two-dimensional surface code, faces host $Z$ checks, corners host $X$ checks, and edges host qubits, allowing a single violated check to walk across the flat sheet at zero extra energy cost. Each welding step duplicates the sheet into two parallel copies joined by perpendicular bridge sheets along three-way seams. Flipping a qubit on a three-way seam violates checks on two sheets at once, forcing one defect to split into two and raising the energy. Repeating this doubling across all scales---welding $X$ bridges on odd steps and $Z$ bridges on even steps---confines both error types across every length scale.
+
+To reach multi-cycle sizes in simulation, we shrink BDL's $8 \times 8$, two-bridge cell down to a $2 \times 2$ square containing a single four-arm bridge cross while keeping one-edge bridges unsubdivided across their thickness (Fig.~\ref{fig:geometry}b). Every bridge arm reaches the cell walls, preserving exact check commutation and all encoded qubits while cutting first-cycle size by $220\times$ per logical qubit ($254$ qubits on a planar patch, $508$ qubits on a two-qubit rotated torus). Figure~\ref{fig:geometry}c,d illustrates the two failure modes that bracket this design: cutting off one bridge arm mid-cell leaves a hole between the sheets that creates unprotected qubits, whereas routing on a single cubic grid at scale $8$ stretches every edge into a seven-qubit wire where defects walk for free. Finally, searching the small check space at each corner for minimum-weight generators keeps all check weights at most $6$ or $7$ (instead of $10$ to $11$ under naive row reduction), and our builder verifies exact commutation on every code up to $56{,}312$ qubits.
+
+\begin{figure*}[t!]
+  \centering
+  \includegraphics[width=\textwidth]{../figures/fig_v9_3_validation.png}
+  \caption{\textbf{Simulator Validation Against Published Three-Dimensional Benchmarks.} \textbf{(a)}~Three-dimensional Toric Code benchmark of Gu, Caha et al.\ \cite{layercodesyale}: loop-like $X$ errors grow exponentially with lattice size $L$, whereas point-like $Z$ errors decay inversely with qubit count. \textbf{(b)}~Across $18$ published Random Layer Code instances \cite{layercodesyale}, our simulator reproduces the partial self-correction peak at $n = 13$ and subsequent finite-size turnover.}
+  \label{fig:validation}
+\end{figure*}
+
+\section{Thermal Simulation and Validation}
+
+In a thermal bath at inverse temperature $\beta = 1 / T$ \cite{davies1974}, flipping a qubit that changes violated-check energy by $\Delta E$ occurs at the Glauber rate $(1 + e^{\beta \Delta E})^{-1}$: healing moves happen near unit rate, flat moves at rate $1/2$, and uphill moves are suppressed by $e^{-\beta \Delta E}$. We simulate $X$ and $Z$ errors separately in C++ on the MIT SubMIT cluster using rejection-free continuous-time Monte Carlo \cite{bkl1975} (coupled depolarizing baths agree within sampling noise). Memory lifetime is the mean bath time until cluster Union-Find decoding \cite{delfosse_uf, panteleev_bposd, kubica_sweep2019} fails, taking the shorter of the $X$ and $Z$ lifetimes. To reach lifetimes up to $10^{11}$ without censoring, we pair direct runs with Forward Flux Sampling \cite{allen_ffs2005}, chaining milestone-crossing probabilities across six independent replicas and relaxing every candidate crossing back to an exact ground codeword so barrier-top bounces are never overcounted. Across cold welded overlap tests ($\beta = 6.5$ to $7.0$), Forward Flux Sampling matches direct Monte Carlo within $0.6$ standard errors (ratios $0.92$ to $1.14$); for Haah's Cubic Code we use strictly uncapped direct Monte Carlo.
+
+We validated our engine on two published benchmarks from Gu, Caha et al.\ \cite{layercodesyale} across $2{,}350$ total lifetime runs. On the three-dimensional Toric Code ($81$ to $1{,}029$ qubits, zero capped runs; Fig.~\ref{fig:validation}a), membrane $X$ errors grow exponentially from $1.95 \times 10^3$ to $7.29 \times 10^6$ at $\beta = 1.75$, while point $Z$ errors shrink with size. Across $18$ Random Layer Code matrices ($2{,}142$ to $11{,}208$ qubits; Fig.~\ref{fig:validation}b) from the authors' repository, we obtain $1{,}480.5 \pm 219.1$ on \texttt{n=11, code\_100} at $\beta = 6.0$ versus their published $1{,}513.9$ ($2\%$ agreement) and reproduce their turnover past $n = 13$.
+
+\begin{figure*}[t!]
+  \centering
+  \includegraphics[width=\textwidth]{../figures/fig_v9_4_crossings.png}
+  \caption{\textbf{Two-Cycle Three-Dimensional Self-Correction in Compact $2 \times 2$ Cross Codes.} \textbf{(a)}~On planar patches, the second full cycle ($25{,}148$ qubits) overtakes the first ($254$ qubits) near $\beta = 5.5$, more than doubling the barrier slope and reaching $106\times$ longer lifetime at $\beta = 7.0$. \textbf{(b)}~On a boundaryless two-qubit torus, the second cycle ($50{,}296$ qubits) overtakes the first ($508$ qubits) at $\beta \approx 6.3$, nearly doubling the barrier slope and reaching $2.45\times$ longer lifetime by $\beta = 6.5$.}
+  \label{fig:crossings}
+\end{figure*}
+
+\begin{table*}[t!]
+\caption{\textbf{Summary of Key Three-Dimensional Architectures and Benchmarks.} Physical qubits, encoded logical qubits, maximum $(X, Z)$ check weights, effective energy barrier slopes (matched over $\beta \in [5.5, 6.5]$ for two-cycle welded pairs), and measured memory lifetimes.}
+\label{tab:codes}
+\begin{ruledtabular}
+\begin{tabular}{lccccc}
+Architecture & Qubits & Logicals & Check Weight & Barrier Slope & Lifetime ($\beta = 6.5$ / Cold) \\
+\colrule
+Scale-8 Cubic Grid $(8,8)$ & $56{,}312$ & $1$ & $(6,6)$ & $1.44$ & $4.41 \times 10^2$ ($\beta=6.5$) \\
+Scale-8 Grid + Wire Traps & $56{,}312$ & $1$ & $(6,6)$ & $1.29$ & $6.09 \times 10^2$ ($\mathbf{1.38\times}$, $\beta=6.5$) \\
+Tighter Cubic Grid $(4,6)$ & $10{,}280$ & $1$ & $(6,6)$ & $2.87$ & $5.87 \times 10^3$ ($\mathbf{13.3\times}$, $\beta=6.5$) \\
+Compact Unstretched $(3,3)$ & $1{,}480$ & $1$ & $(5,6)$ & $2.95$ & $\mathbf{1.41 \times 10^5}$ ($\mathbf{321\times}$, $\beta=6.5$) \\
+\colrule
+Planar $2 \times 2$ Cross Cycle 1 & $254$ & $1$ & $(5,6)$ & $2.43$ & $4.11 \times 10^4$ / $8.85 \times 10^4$ ($\beta=7.0$) \\
+Planar $2 \times 2$ Cross Cycle 2 & $25{,}148$ & $1$ & $(7,7)$ & $\mathbf{5.32}$ & $6.25 \times 10^5$ / $\mathbf{9.34 \times 10^6}$ ($\mathbf{106\times}$) \\
+Torus $2 \times 2$ Cross Cycle 1 & $508$ & $2$ & $(5,6)$ & $3.26$ & $4.03 \times 10^5$ ($\beta=6.5$) \\
+Torus $2 \times 2$ Cross Cycle 2 & $\mathbf{50{,}296}$ & $2$ & $(7,7)$ & $\mathbf{6.27}$ & $\mathbf{9.86 \times 10^5}$ ($\mathbf{2.45\times}$, $\beta=6.5$) \\
+Torus Balanced $2 \to 1$ & $1{,}172$ & $2$ & $(5,6)$ & $5.02$ & $2.28 \times 10^7$ / $\mathbf{1.89 \times 10^8}$ ($\beta=7.0$) \\
+Torus Reversed $1 \to 2$ & $1{,}292$ & $2$ & $(5,6)$ & $3.47$ & $9.64 \times 10^4$ / $5.62 \times 10^5$ ($\beta=7.0$) \\
+Pruned 3-Arm T-Bridge & $40{,}264$ & $1{,}004$ & $(7,6)$ & $+0.04$ & $1.86 \times 10^{-3}$ (collapsed) \\
+\colrule
+Gu--Caha Random Layer ($n=13$) & $3{,}645$ & $1$ & $(6,6)$ & $2.94$ & $4.45 \times 10^4$ ($\beta=7.0$; peaks $n=13$) \\
+Haah 3D Cubic Code ($L=5$) & $250$ & $2$ & $(8,8)$ & $6.05$ & $8.98 \times 10^8$ ($\beta=5.0$; peaks $L=11$) \\
+\end{tabular}
+\end{ruledtabular}
+\end{table*}
+
+\section{Multi-Cycle Scaling, Cubic-Grid Cost, and Sector Balance}
+
+We first test whether growing the compact $2 \times 2$ four-arm cross across two full $(X, Z)$ cycles increases lifetime at fixed temperature (Fig.~\ref{fig:crossings} and Table~\ref{tab:codes}). Although BDL's proof uses two bridges per square to avoid all uphill cleanup hops, a single four-arm cross incurs only occasional single-unit seam hops while keeping confinement intact. On planar patches ($254$ to $25{,}148$ qubits; Fig.~\ref{fig:crossings}a), Cycle~2 overtakes Cycle~1 below $\beta \approx 5.5$, more than doubling the matched barrier slope ($2.43$ to $5.32$) and living $106\times$ longer by $\beta = 7.0$. Removing open boundaries on the two-qubit torus ($508$ to $50{,}296$ qubits; Fig.~\ref{fig:crossings}b) strengthens Cycle~1 and shifts the crossover to $\beta \approx 6.3$, where Cycle~2 nearly doubles the barrier slope ($3.26$ to $6.27$) and lives $2.45\times$ longer at $\beta = 6.5$.
+
+Pruning bridges any further breaks the memory immediately (Table~\ref{tab:codes}). Cutting just one arm per cell into an alternating three-arm T-bridge---while keeping all checks commuting---tears buttonhole openings around dangling ends, multiplying encoded torus qubits from $2$ to $1{,}004$ across four steps and collapsing lifetime below $0.002$ at $40{,}264$ qubits. Leaving whole cell edges unwelded on a sparse global schedule avoids holes ($974$ qubits) but loses sheet confinement and cuts lifetime $55\times$, confirming that the $2 \times 2$ four-arm cross is the smallest uniform confining cell.
+
+\begin{figure*}[t!]
+  \centering
+  \includegraphics[width=\textwidth]{../figures/fig_v9_5_tradeoffs.png}
+  \caption{\textbf{Cubic-Grid Wire Stretching and Sector Pre-Balancing.} \textbf{(a)}~Stretching the same two-bridge code onto a single cubic grid cuts $\beta = 6.5$ lifetime by $321\times$ via zero-energy wire hopping; fixed-budget wire traps recover less than $2\times$ without steepening the slope. \textbf{(b)}~On the $508$-qubit torus, $Z$ errors outlive $X$ errors by $1{,}890\times$ at $\beta = 6.5$; putting two bridges on Step~1 and one on Step~2 ($1{,}172$ qubits) closes this bottleneck and boosts overall memory lifetime $57\times$.}
+  \label{fig:tradeoffs}
+\end{figure*}
+
+Embedding the same first-cycle, two-bridge code onto a single three-dimensional cubic grid reveals why compact multi-layer connectivity matters (Fig.~\ref{fig:tradeoffs}a and Table~\ref{tab:codes}). At Cycle~1, direct grid enumeration finds zero collisions at both BDL's $(8, 8)$ scale ($56{,}312$ qubits before routing ancillas) and a tighter $(4, 6)$ scale ($10{,}280$ qubits). At $\beta = 6.5$, however, the $(8, 8)$ grid code lives $321\times$ shorter than the unstretched $(3, 3)$ code ($441$ vs.\ $1.41 \times 10^5$, using $38\times$ more qubits), while the $(4, 6)$ grid recovers $13.3\times$. Scale-$8$ subdivision turns every edge into a seven-qubit wire where defects hop at zero energy cost, inflating defect entropy. Adding alternating high/low check traps along wires under a fixed average check strength ($\langle J\rangle = 1$) slows hopping by $1.38\times$ to $1.90\times$, whereas smooth wire hills weaken sheet checks and hurt lifetime; neither steepens the barrier slope ($1.29$ vs.\ $1.44$), showing that geometric compression is essential.
+
+Alternating $X$ and $Z$ steps also creates a large imbalance between the two error types (Fig.~\ref{fig:tradeoffs}b). Step~1 welds $X$ bridges on a tiny four-qubit seed, whereas Step~2 welds $Z$ bridges while multiplying qubit count without raising the $X$ barrier. Consequently, $Z$ errors on the $508$-qubit torus live $1{,}890\times$ longer than $X$ errors at $\beta = 6.5$ and $17{,}500\times$ longer at $\beta = 7.5$. Investing two bridges on Step~1 and one on Step~2 ($2 \to 1$ balancing, $1{,}172$ qubits) fixes this bottleneck on the exact same torus seed, lifting overall lifetime $57\times$ above symmetric $1 \to 1$ and $236\times$ to $336\times$ above reversed $1 \to 2$ ($1{,}292$ qubits). Still, because each full cycle multiplies qubit count roughly hundredfold, single-cycle welded barriers remain modest: below roughly $2{,}500$ qubits, Haah's Cubic Code and Random Layer Codes live longer until hitting their finite-size ceilings (Table~\ref{tab:codes}).
+
+\begin{figure*}[t!]
+  \centering
+  \includegraphics[width=\textwidth]{../figures/fig_v9_6_cooling.png}
+  \caption{\textbf{Passive Self-Healing vs.\ Cooling From Hot Disorder.} \textbf{(a)}~During storage in a cold bath ($\beta = 6.5$), two-qubit torus codewords with small physical noise below the $\approx 6\%$ threshold heal back to the exact initial state ($76\%$ to $98\%$ at $1\%$ noise) with zero measurements and no decoder; above threshold, initial noise has already scrambled the logical state to its $25\%$ random-guess floor. \textbf{(b)}~Starting from a completely random hot state ($50\%$ noise), a sudden cold quench freezes defects onto three-way junctions ($14\%$ clean at $1{,}942$ qubits), whereas gradual cooling clears junctions cleanly ($63\%$ at $1{,}942$ qubits, $100\%$ at $508$ qubits).}
+  \label{fig:cooling}
+\end{figure*}
+
+\section{Passive Self-Healing and Cooling}
+
+Finally, we test whether three-way junctions trap defects during thermal relaxation, separating storage error healing from hot-state preparation (Fig.~\ref{fig:cooling}). When a stored codeword suffers small noise below its roughly $6\%$ error threshold and sits in a cold bath ($\beta = 6.5$), nearby defect pairs contract locally inside cells and restore the \emph{exact original codeword} with zero measurements and no decoder: at $1\%$ noise, exact recovery reaches $76\%$ to $98\%$ across our two-qubit torus codes ($81\%$ to $91\%$ on $254$-qubit planar patches, and $92\%$ on a $3{,}884$-qubit three-step torus; Fig.~\ref{fig:cooling}a). Above threshold ($8\%$ to $12\%$ noise), cooling still clears $91\%$ to $97\%$ of runs to defect-free states, but the heavy initial noise has already randomized which logical codeword was stored ($25\%$ survival for two logical qubits).
+
+Cooling from a completely random hot state ($50\%$ noise) behaves differently because dense defect webs span every three-way junction from the start (Fig.~\ref{fig:cooling}b). On three-step quantum codes ($1{,}942$ and $3{,}884$ qubits), a sudden cold quench freezes defects onto junctions, yielding clean ground states on only $14\%$ and $0\%$ of $X$-error runs. Lowering temperature gradually ($\beta$ from $1.8$ to $6.5$) lets defects cross junctions and cancel before freezing, lifting clean preparation $4.5\times$ to $63\%$ at $1{,}942$ qubits and reaching $99\%$ to $100\%$ on the $508$-qubit torus.
+
+\section{Conclusion}
+
+The free-energy balance $\Delta F = \Delta E - T\,\Delta S$ governs every practical trade-off in three-dimensional passive quantum memories. Shrinking welded cells to their minimal $2 \times 2$ four-arm cross unlocks multi-cycle self-correction at tens of thousands of qubits, while the $321\times$ cubic-grid wire penalty shows why compact multi-layer routing, $2 \to 1$ sector balancing, and gradual cooling are essential for passive quantum storage.
+
+\bibliographystyle{apsrev4-2}
+\bibliography{references}
+
+\end{document}

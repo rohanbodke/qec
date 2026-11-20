@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="480" viewBox="0 0 760 480">
+<rect width="760" height="480" fill="#ffffff"/>
+<style>text { font-family: -apple-system, Helvetica, Arial, sans-serif; fill: #1f2937; }</style>
+<rect x="86" y="46" width="638" height="372" fill="#fafafa" stroke="#374151" stroke-width="1.3"/>
+<text x="405.0" y="32.0" text-anchor="middle" font-size="13.5" font-weight="700">PRL Layer-Code Validation, Welded X/Z Asymmetry &amp; 2→1 Pre-Compensation</text>
+<text x="405.0" y="458.0" text-anchor="middle" font-size="12.3" font-weight="600">Inverse Bath Temperature β = 1/T</text>
+<text x="32.0" y="232.0" text-anchor="middle" font-size="12.3" font-weight="600" transform="rotate(-90 32.0 232.0)">Memory Lifetime &lt;t&gt;</text>
+<line x1="119.6" y1="46" x2="119.6" y2="418" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="119.6" y1="418" x2="119.6" y2="423" stroke="#374151" stroke-width="1.1"/>
+<text x="119.6" y="437" text-anchor="middle" font-size="11.0">5.5</text>
+<line x1="231.5" y1="46" x2="231.5" y2="418" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="231.5" y1="418" x2="231.5" y2="423" stroke="#374151" stroke-width="1.1"/>
+<text x="231.5" y="437" text-anchor="middle" font-size="11.0">6.0</text>
+<line x1="343.4" y1="46" x2="343.4" y2="418" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="343.4" y1="418" x2="343.4" y2="423" stroke="#374151" stroke-width="1.1"/>
+<text x="343.4" y="437" text-anchor="middle" font-size="11.0">6.5</text>
+<line x1="455.4" y1="46" x2="455.4" y2="418" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="455.4" y1="418" x2="455.4" y2="423" stroke="#374151" stroke-width="1.1"/>
+<text x="455.4" y="437" text-anchor="middle" font-size="11.0">7.0</text>
+<line x1="567.3" y1="46" x2="567.3" y2="418" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="567.3" y1="418" x2="567.3" y2="423" stroke="#374151" stroke-width="1.1"/>
+<text x="567.3" y="437" text-anchor="middle" font-size="11.0">7.5</text>
+<line x1="679.2" y1="46" x2="679.2" y2="418" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="679.2" y1="418" x2="679.2" y2="423" stroke="#374151" stroke-width="1.1"/>
+<text x="679.2" y="437" text-anchor="middle" font-size="11.0">8.0</text>
+<line x1="86" y1="404.9" x2="724" y2="404.9" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="404.9" x2="86" y2="404.9" stroke="#374151" stroke-width="1.1"/>
+<text x="78" y="408.9" text-anchor="end" font-size="11.0">10³</text>
+<line x1="86" y1="339.1" x2="724" y2="339.1" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="339.1" x2="86" y2="339.1" stroke="#374151" stroke-width="1.1"/>
+<text x="78" y="343.1" text-anchor="end" font-size="11.0">10⁵</text>
+<line x1="86" y1="273.2" x2="724" y2="273.2" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="273.2" x2="86" y2="273.2" stroke="#374151" stroke-width="1.1"/>
+<text x="78" y="277.2" text-anchor="end" font-size="11.0">10⁷</text>
+<line x1="86" y1="207.4" x2="724" y2="207.4" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="207.4" x2="86" y2="207.4" stroke="#374151" stroke-width="1.1"/>
+<text x="78" y="211.4" text-anchor="end" font-size="11.0">10⁹</text>
+<line x1="86" y1="141.6" x2="724" y2="141.6" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="141.6" x2="86" y2="141.6" stroke="#374151" stroke-width="1.1"/>
+<text x="78" y="145.6" text-anchor="end" font-size="11.0">10¹¹</text>
+<line x1="86" y1="75.7" x2="724" y2="75.7" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="75.7" x2="86" y2="75.7" stroke="#374151" stroke-width="1.1"/>
+<text x="78" y="79.7" text-anchor="end" font-size="11.0">10¹³</text>
+<polyline fill="none" stroke="#059669" stroke-width="2.5" points="119.6,281.4 231.5,249.2 287.5,227.2 343.4,211.3 399.4,189.7 455.4,177.4 567.3,135.9 679.2,95.6"/>
+<circle cx="119.6" cy="281.4" r="4.0" fill="#059669" stroke="#ffffff" stroke-width="0.9"/>
+<circle cx="231.5" cy="249.2" r="4.0" fill="#059669" stroke="#ffffff" stroke-width="0.9"/>
+<circle cx="287.5" cy="227.2" r="4.0" fill="#059669" stroke="#ffffff" stroke-width="0.9"/>
+<circle cx="343.4" cy="211.3" r="4.0" fill="#059669" stroke="#ffffff" stroke-width="0.9"/>
+<circle cx="399.4" cy="189.7" r="4.0" fill="#059669" stroke="#ffffff" stroke-width="0.9"/>
+<circle cx="455.4" cy="177.4" r="4.0" fill="#059669" stroke="#ffffff" stroke-width="0.9"/>
+<circle cx="567.3" cy="135.9" r="4.0" fill="#059669" stroke="#ffffff" stroke-width="0.9"/>
+<circle cx="679.2" cy="95.6" r="4.0" fill="#059669" stroke="#ffffff" stroke-width="0.9"/>
+<polyline fill="none" stroke="#7c3aed" stroke-width="2.5" points="119.6,337.0 231.5,302.4 343.4,261.5 455.4,231.2"/>
+<circle cx="119.6" cy="337.0" r="4.0" fill="#7c3aed" stroke="#ffffff" stroke-width="0.9"/>
+<circle cx="231.5" cy="302.4" r="4.0" fill="#7c3aed" stroke="#ffffff" stroke-width="0.9"/>
+<circle cx="343.4" cy="261.5" r="4.0" fill="#7c3aed" stroke="#ffffff" stroke-width="0.9"/>
+<circle cx="455.4" cy="231.2" r="4.0" fill="#7c3aed" stroke="#ffffff" stroke-width="0.9"/>
+<polyline fill="none" stroke="#dc2626" stroke-width="2.5" points="119.6,366.1 231.5,338.4 287.5,330.4 343.4,319.2 399.4,308.5 567.3,275.5"/>
+<circle cx="119.6" cy="366.1" r="4.0" fill="#dc2626" stroke="#ffffff" stroke-width="0.9"/>
+<circle cx="231.5" cy="338.4" r="4.0" fill="#dc2626" stroke="#ffffff" stroke-width="0.9"/>
+<circle cx="287.5" cy="330.4" r="4.0" fill="#dc2626" stroke="#ffffff" stroke-width="0.9"/>
+<circle cx="343.4" cy="319.2" r="4.0" fill="#dc2626" stroke="#ffffff" stroke-width="0.9"/>
+<circle cx="399.4" cy="308.5" r="4.0" fill="#dc2626" stroke="#ffffff" stroke-width="0.9"/>
+<circle cx="567.3" cy="275.5" r="4.0" fill="#dc2626" stroke="#ffffff" stroke-width="0.9"/>
+<polyline fill="none" stroke="#f97316" stroke-width="2.5" stroke-dasharray="4,3" points="119.6,390.2 231.5,367.7 343.4,339.6 455.4,314.4"/>
+<circle cx="119.6" cy="390.2" r="4.0" fill="#f97316" stroke="#ffffff" stroke-width="0.9"/>
+<circle cx="231.5" cy="367.7" r="4.0" fill="#f97316" stroke="#ffffff" stroke-width="0.9"/>
+<circle cx="343.4" cy="339.6" r="4.0" fill="#f97316" stroke="#ffffff" stroke-width="0.9"/>
+<circle cx="455.4" cy="314.4" r="4.0" fill="#f97316" stroke="#ffffff" stroke-width="0.9"/>
+<polyline fill="none" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="5,3" points="231.5,399.2 343.4,392.5 455.4,374.8 567.3,368.1 679.2,362.3"/>
+<circle cx="231.5" cy="399.2" r="4.0" fill="#2563eb" stroke="#ffffff" stroke-width="0.9"/>
+<circle cx="343.4" cy="392.5" r="4.0" fill="#2563eb" stroke="#ffffff" stroke-width="0.9"/>
+<circle cx="455.4" cy="374.8" r="4.0" fill="#2563eb" stroke="#ffffff" stroke-width="0.9"/>
+<circle cx="567.3" cy="368.1" r="4.0" fill="#2563eb" stroke="#ffffff" stroke-width="0.9"/>
+<circle cx="679.2" cy="362.3" r="4.0" fill="#2563eb" stroke="#ffffff" stroke-width="0.9"/>
+<circle cx="231.5" cy="399.0" r="5.5" fill="#111827" stroke="#ffffff" stroke-width="0.9"/>
+<rect x="96.0" y="56.0" width="378.0" height="113.2" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="#d1d5db" stroke-width="1"/>
+<line x1="104.0" y1="66.8" x2="123.0" y2="66.8" stroke="#059669" stroke-width="2.2"/>
+<circle cx="113.5" cy="66.8" r="3.2" fill="#059669"/>
+<text x="129.0" y="70.6" font-size="10.3">[[4,2,2]] 1→1 Z-Sector (N=508: 1,890×–17,500× &gt; X)</text>
+<line x1="104.0" y1="84.0" x2="123.0" y2="84.0" stroke="#7c3aed" stroke-width="2.2"/>
+<circle cx="113.5" cy="84.0" r="3.2" fill="#7c3aed"/>
+<text x="129.0" y="87.8" font-size="10.3">[[4,2,2]] 2→1 Hybrid min(tX,tZ) (N=1,172: pre-balanced!)</text>
+<line x1="104.0" y1="101.2" x2="123.0" y2="101.2" stroke="#dc2626" stroke-width="2.2"/>
+<circle cx="113.5" cy="101.2" r="3.2" fill="#dc2626"/>
+<text x="129.0" y="105.0" font-size="10.3">[[4,2,2]] 1→1 X-Sector (N=508)</text>
+<line x1="104.0" y1="118.4" x2="123.0" y2="118.4" stroke="#f97316" stroke-width="2.2" stroke-dasharray="4,3"/>
+<circle cx="113.5" cy="118.4" r="3.2" fill="#f97316"/>
+<text x="129.0" y="122.2" font-size="10.3">[[4,2,2]] Reversed 1→2 Hybrid (N=1,292)</text>
+<line x1="104.0" y1="135.6" x2="123.0" y2="135.6" stroke="#2563eb" stroke-width="2.2" stroke-dasharray="5,3"/>
+<circle cx="113.5" cy="135.6" r="3.2" fill="#2563eb"/>
+<text x="129.0" y="139.4" font-size="10.3">Gu–Caha Layer code_100 (N=2,227: matches PRL)</text>
+<line x1="104.0" y1="152.8" x2="123.0" y2="152.8" stroke="#111827" stroke-width="2.2"/>
+<circle cx="113.5" cy="152.8" r="3.2" fill="#111827"/>
+<text x="129.0" y="156.6" font-size="10.3">Published Gu–Caha PRL Point (n=11 code_100, β=6)</text>
+</svg>

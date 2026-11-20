@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="500" viewBox="0 0 760 500">
+<rect width="760" height="500" fill="#ffffff"/>
+<style>text { font-family: -apple-system, Helvetica, Arial, sans-serif; fill: #1f2937; }</style>
+<rect x="86" y="48" width="636" height="382" fill="#fafafa" stroke="#374151" stroke-width="1.3"/>
+<text x="404.0" y="34.0" text-anchor="middle" font-size="14.2" font-weight="700">Ultra-Compact 3D-Local vs Non-Local Thermal Frontier &amp; Pruning Collapse</text>
+<text x="404.0" y="472.0" text-anchor="middle" font-size="13.0" font-weight="600">Inverse Bath Temperature β = 1/T</text>
+<text x="30.0" y="239.0" text-anchor="middle" font-size="13.0" font-weight="600" transform="rotate(-90 30.0 239.0)">Two-Sector Memory Lifetime min(&lt;t_X&gt;, &lt;t_Z&gt;)</text>
+<line x1="108.2" y1="48" x2="108.2" y2="430" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="108.2" y1="430" x2="108.2" y2="435" stroke="#374151" stroke-width="1.2"/>
+<text x="108.2" y="450" text-anchor="middle" font-size="11.2">3</text>
+<line x1="256.1" y1="48" x2="256.1" y2="430" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="256.1" y1="430" x2="256.1" y2="435" stroke="#374151" stroke-width="1.2"/>
+<text x="256.1" y="450" text-anchor="middle" font-size="11.2">4</text>
+<line x1="404.0" y1="48" x2="404.0" y2="430" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="404.0" y1="430" x2="404.0" y2="435" stroke="#374151" stroke-width="1.2"/>
+<text x="404.0" y="450" text-anchor="middle" font-size="11.2">5</text>
+<line x1="551.9" y1="48" x2="551.9" y2="430" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="551.9" y1="430" x2="551.9" y2="435" stroke="#374151" stroke-width="1.2"/>
+<text x="551.9" y="450" text-anchor="middle" font-size="11.2">6</text>
+<line x1="699.8" y1="48" x2="699.8" y2="430" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="699.8" y1="430" x2="699.8" y2="435" stroke="#374151" stroke-width="1.2"/>
+<text x="699.8" y="450" text-anchor="middle" font-size="11.2">7</text>
+<line x1="86" y1="416.3" x2="722" y2="416.3" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="416.3" x2="86" y2="416.3" stroke="#374151" stroke-width="1.2"/>
+<text x="77" y="420.3" text-anchor="end" font-size="11.2">10¹</text>
+<line x1="86" y1="347.5" x2="722" y2="347.5" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="347.5" x2="86" y2="347.5" stroke="#374151" stroke-width="1.2"/>
+<text x="77" y="351.5" text-anchor="end" font-size="11.2">10³</text>
+<line x1="86" y1="278.6" x2="722" y2="278.6" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="278.6" x2="86" y2="278.6" stroke="#374151" stroke-width="1.2"/>
+<text x="77" y="282.6" text-anchor="end" font-size="11.2">10⁵</text>
+<line x1="86" y1="209.8" x2="722" y2="209.8" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="209.8" x2="86" y2="209.8" stroke="#374151" stroke-width="1.2"/>
+<text x="77" y="213.8" text-anchor="end" font-size="11.2">10⁷</text>
+<line x1="86" y1="140.9" x2="722" y2="140.9" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="140.9" x2="86" y2="140.9" stroke="#374151" stroke-width="1.2"/>
+<text x="77" y="144.9" text-anchor="end" font-size="11.2">10⁹</text>
+<line x1="86" y1="72.1" x2="722" y2="72.1" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="81" y1="72.1" x2="86" y2="72.1" stroke="#374151" stroke-width="1.2"/>
+<text x="77" y="76.1" text-anchor="end" font-size="11.2">10¹¹</text>
+<polyline fill="none" stroke="#16a34a" stroke-width="2.4" stroke-dasharray="6,3" points="108.2,362.2 256.1,287.1 404.0,209.7 551.9,133.0 699.8,57.6"/>
+<polygon points="108.2,357.4 103.8,362.2 108.2,367.0 112.6,362.2" fill="#16a34a" stroke="#fff" stroke-width="0.9"/>
+<polygon points="256.1,282.3 251.7,287.1 256.1,291.9 260.5,287.1" fill="#16a34a" stroke="#fff" stroke-width="0.9"/>
+<polygon points="404.0,204.9 399.6,209.7 404.0,214.5 408.4,209.7" fill="#16a34a" stroke="#fff" stroke-width="0.9"/>
+<polygon points="551.9,128.2 547.5,133.0 551.9,137.8 556.3,133.0" fill="#16a34a" stroke="#fff" stroke-width="0.9"/>
+<polygon points="699.8,52.8 695.4,57.6 699.8,62.4 704.2,57.6" fill="#16a34a" stroke="#fff" stroke-width="0.9"/>
+<polyline fill="none" stroke="#0891b2" stroke-width="2.4" stroke-dasharray="6,3" points="108.2,357.1 256.1,291.8 404.0,227.8 551.9,165.5 699.8,104.7"/>
+<polygon points="108.2,352.3 103.9,360.7 112.5,360.7" fill="#0891b2" stroke="#fff" stroke-width="0.9"/>
+<polygon points="256.1,287.0 251.8,295.4 260.4,295.4" fill="#0891b2" stroke="#fff" stroke-width="0.9"/>
+<polygon points="404.0,223.0 399.7,231.4 408.3,231.4" fill="#0891b2" stroke="#fff" stroke-width="0.9"/>
+<polygon points="551.9,160.7 547.6,169.1 556.2,169.1" fill="#0891b2" stroke="#fff" stroke-width="0.9"/>
+<polygon points="699.8,99.9 695.5,108.3 704.1,108.3" fill="#0891b2" stroke="#fff" stroke-width="0.9"/>
+<polyline fill="none" stroke="#dc2626" stroke-width="2.4" points="108.2,411.3 256.1,373.2 404.0,302.4 551.9,223.3 699.8,153.1"/>
+<circle cx="108.2" cy="411.3" r="4.0" fill="#dc2626" stroke="#fff" stroke-width="0.9"/>
+<circle cx="256.1" cy="373.2" r="4.0" fill="#dc2626" stroke="#fff" stroke-width="0.9"/>
+<circle cx="404.0" cy="302.4" r="4.0" fill="#dc2626" stroke="#fff" stroke-width="0.9"/>
+<circle cx="551.9" cy="223.3" r="4.0" fill="#dc2626" stroke="#fff" stroke-width="0.9"/>
+<circle cx="699.8" cy="153.1" r="4.0" fill="#dc2626" stroke="#fff" stroke-width="0.9"/>
+<polyline fill="none" stroke="#ea580c" stroke-width="2.4" points="108.2,417.8 256.1,383.5 404.0,325.2 551.9,245.4 699.8,169.3"/>
+<rect x="104.6" y="414.2" width="7.2" height="7.2" fill="#ea580c" stroke="#fff" stroke-width="0.9"/>
+<rect x="252.5" y="379.9" width="7.2" height="7.2" fill="#ea580c" stroke="#fff" stroke-width="0.9"/>
+<rect x="400.4" y="321.6" width="7.2" height="7.2" fill="#ea580c" stroke="#fff" stroke-width="0.9"/>
+<rect x="548.3" y="241.8" width="7.2" height="7.2" fill="#ea580c" stroke="#fff" stroke-width="0.9"/>
+<rect x="696.2" y="165.7" width="7.2" height="7.2" fill="#ea580c" stroke="#fff" stroke-width="0.9"/>
+<polyline fill="none" stroke="#2563eb" stroke-width="2.4" points="108.2,412.4 256.1,373.5 404.0,312.3 551.9,244.6 699.8,174.7"/>
+<circle cx="108.2" cy="412.4" r="4.0" fill="#2563eb" stroke="#fff" stroke-width="0.9"/>
+<circle cx="256.1" cy="373.5" r="4.0" fill="#2563eb" stroke="#fff" stroke-width="0.9"/>
+<circle cx="404.0" cy="312.3" r="4.0" fill="#2563eb" stroke="#fff" stroke-width="0.9"/>
+<circle cx="551.9" cy="244.6" r="4.0" fill="#2563eb" stroke="#fff" stroke-width="0.9"/>
+<circle cx="699.8" cy="174.7" r="4.0" fill="#2563eb" stroke="#fff" stroke-width="0.9"/>
+<polyline fill="none" stroke="#7c3aed" stroke-width="2.4" points="108.2,424.3 256.1,400.7 404.0,361.5 551.9,301.5 699.8,227.4"/>
+<polygon points="108.2,419.5 103.9,427.9 112.5,427.9" fill="#7c3aed" stroke="#fff" stroke-width="0.9"/>
+<polygon points="256.1,395.9 251.8,404.3 260.4,404.3" fill="#7c3aed" stroke="#fff" stroke-width="0.9"/>
+<polygon points="404.0,356.7 399.7,365.1 408.3,365.1" fill="#7c3aed" stroke="#fff" stroke-width="0.9"/>
+<polygon points="551.9,296.7 547.6,305.1 556.2,305.1" fill="#7c3aed" stroke="#fff" stroke-width="0.9"/>
+<polygon points="699.8,222.6 695.5,231.0 704.1,231.0" fill="#7c3aed" stroke="#fff" stroke-width="0.9"/>
+<polyline fill="none" stroke="#0d9488" stroke-width="2.4" points="108.2,417.4 256.1,385.8 404.0,337.6 551.9,281.7 699.8,232.8"/>
+<rect x="104.6" y="413.8" width="7.2" height="7.2" fill="#0d9488" stroke="#fff" stroke-width="0.9"/>
+<rect x="252.5" y="382.2" width="7.2" height="7.2" fill="#0d9488" stroke="#fff" stroke-width="0.9"/>
+<rect x="400.4" y="334.0" width="7.2" height="7.2" fill="#0d9488" stroke="#fff" stroke-width="0.9"/>
+<rect x="548.3" y="278.1" width="7.2" height="7.2" fill="#0d9488" stroke="#fff" stroke-width="0.9"/>
+<rect x="696.2" y="229.2" width="7.2" height="7.2" fill="#0d9488" stroke="#fff" stroke-width="0.9"/>
+<polyline fill="none" stroke="#6b7280" stroke-width="2.4" stroke-dasharray="3,3" points="108.2,423.4 256.1,400.1 404.0,366.5 551.9,325.3 699.8,292.6"/>
+<polygon points="108.2,418.6 103.8,423.4 108.2,428.2 112.6,423.4" fill="#6b7280" stroke="#fff" stroke-width="0.9"/>
+<polygon points="256.1,395.3 251.7,400.1 256.1,404.9 260.5,400.1" fill="#6b7280" stroke="#fff" stroke-width="0.9"/>
+<polygon points="404.0,361.7 399.6,366.5 404.0,371.3 408.4,366.5" fill="#6b7280" stroke="#fff" stroke-width="0.9"/>
+<polygon points="551.9,320.5 547.5,325.3 551.9,330.1 556.3,325.3" fill="#6b7280" stroke="#fff" stroke-width="0.9"/>
+<polygon points="699.8,287.8 695.4,292.6 699.8,297.4 704.2,292.6" fill="#6b7280" stroke="#fff" stroke-width="0.9"/>
+<rect x="96.0" y="58.0" width="407.0" height="152.4" rx="5" fill="#ffffff" fill-opacity="0.93" stroke="#d1d5db" stroke-width="1"/>
+<line x1="104.0" y1="68.8" x2="123.0" y2="68.8" stroke="#16a34a" stroke-width="2.3" stroke-dasharray="6,3"/>
+<circle cx="113.5" cy="68.8" r="3.2" fill="#16a34a"/>
+<text x="129.0" y="72.8" font-size="10.6">[Non-Local] IBM Two-Gross [[288,12,18]] (24 q/log, Δ=6)</text>
+<line x1="104.0" y1="86.6" x2="123.0" y2="86.6" stroke="#0891b2" stroke-width="2.3" stroke-dasharray="6,3"/>
+<circle cx="113.5" cy="86.6" r="3.2" fill="#0891b2"/>
+<text x="129.0" y="90.6" font-size="10.6">[Non-Local] IBM Gross [[144,12,12]] (12 q/log, Δ=5)</text>
+<line x1="104.0" y1="104.4" x2="123.0" y2="104.4" stroke="#dc2626" stroke-width="2.3"/>
+<circle cx="113.5" cy="104.4" r="3.2" fill="#dc2626"/>
+<text x="129.0" y="108.4" font-size="10.6">[Non-Local] RP² Aniso Hyb 2→1 (N=1758, K=1, +27% vs V2)</text>
+<line x1="104.0" y1="122.2" x2="123.0" y2="122.2" stroke="#ea580c" stroke-width="2.3"/>
+<circle cx="113.5" cy="122.2" r="3.2" fill="#ea580c"/>
+<text x="129.0" y="126.2" font-size="10.6">[3D-Local] T² Aniso Hyb 2→1 (N=2344, K=2, +50% vs V2!)</text>
+<line x1="104.0" y1="140.0" x2="123.0" y2="140.0" stroke="#2563eb" stroke-width="2.3"/>
+<circle cx="113.5" cy="140.0" r="3.2" fill="#2563eb"/>
+<text x="129.0" y="144.0" font-size="10.6">[Non-Local] RP² Aniso 1-Rib (N=762, K=1, 3.4× &gt; V2!)</text>
+<line x1="104.0" y1="157.8" x2="123.0" y2="157.8" stroke="#7c3aed" stroke-width="2.3"/>
+<circle cx="113.5" cy="157.8" r="3.2" fill="#7c3aed"/>
+<text x="129.0" y="161.8" font-size="10.6">[Non-Local] Hyperbolic {4,6} Sheaf (N=3048, K=6, 508 q/l)</text>
+<line x1="104.0" y1="175.6" x2="123.0" y2="175.6" stroke="#0d9488" stroke-width="2.3"/>
+<circle cx="113.5" cy="175.6" r="3.2" fill="#0d9488"/>
+<text x="129.0" y="179.6" font-size="10.6">[3D-Local] T² Aniso 1-Rib (N=1016, K=2, 508 q/log)</text>
+<line x1="104.0" y1="193.4" x2="123.0" y2="193.4" stroke="#6b7280" stroke-width="2.3" stroke-dasharray="3,3"/>
+<circle cx="113.5" cy="193.4" r="3.2" fill="#6b7280"/>
+<text x="129.0" y="197.4" font-size="10.6">[3D-Local] Over-Pruned Sparse T² (N=974 — Barrier Collapse!)</text>
+</svg>

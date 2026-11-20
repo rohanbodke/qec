@@ -1,0 +1,217 @@
+=== V6 AMBITIOUS CAMPAIGN SUMMARY (KMC=412, FFS=133, COOL=132, ERR/TO=199) ===
+
+WARNINGS / TIMEOUTS:
+  ffs__caha_n19_code_199_X_err__uniform__uf__b8.00: TIMEOUT
+  ffs__caha_n19_code_199_X_err__uniform__uf__b9.00: TIMEOUT
+  kmc__sq_L2r1_s3_X_err__uniform__uf__b6.00: TIMEOUT
+  ffs__caha_n19_code_236_X_err__uniform__uf__b8.00: TIMEOUT
+  kmc__sq_L2r1_s3_X_err__uniform__uf__b6.50: TIMEOUT
+  ffs__caha_n19_code_236_X_err__uniform__uf__b9.00: TIMEOUT
+  ffs__sq_L2r1_s3_X_err__uniform__uf__b6.50: TIMEOUT
+  ffs__sq_L2r1_s3_X_err__uniform__uf__b7.00: TIMEOUT
+  ffs__sq_L2r1_s3_X_err__uniform__uf__b7.50: TIMEOUT
+  ffs__sq_L2r1_s3_X_err__uniform__uf__b8.00: TIMEOUT
+  ffs__sq_L2r1_s3_Z_err__uniform__uf__b6.50: TIMEOUT
+  ffs__rottor_cb3rib_s3_X_err__uniform__uf__b8.00: TIMEOUT
+  ffs__sq_L2r1_s3_Z_err__uniform__uf__b7.00: TIMEOUT
+  ffs__cubic_L7_X_err__uniform__uf__b5.00: TIMEOUT
+  ffs__rottor_cb3rib_s3_X_err__uniform__uf__b8.50: TIMEOUT
+  ffs__sq_L2r1_s3_Z_err__uniform__uf__b7.50: TIMEOUT
+  ffs__cubic_L7_X_err__uniform__uf__b6.00: TIMEOUT
+  ffs__sq_L2r1_s3_Z_err__uniform__uf__b8.00: TIMEOUT
+  ffs__cubic_L7_X_err__uniform__uf__b7.00: TIMEOUT
+  ffs__cubic_L7_X_err__uniform__uf__b8.00: FFS dec=uf beta=8.00 N=686 K=2 VALID_REPS=0 mean_t=-1 sem_t=-1
+  kmc__cubic_L9_X_err__uniform__uf__b5.00: TIMEOUT
+  ffs__sq_L2r1_s4_X_err__uniform__uf__b6.50: TIMEOUT
+  ffs__cubic_L9_X_err__uniform__uf__b5.00: TIMEOUT
+  ffs__sq_L2r1_s4_X_err__uniform__uf__b7.00: TIMEOUT
+  ffs__cubic_L9_X_err__uniform__uf__b6.00: TIMEOUT
+
+=== 1A. 3D TORIC CODE ONE-SECTOR BENCHMARK (Gu-Caha Appendix E.3) ===
+  Sector X_err (dec=sweep_uf):
+    L=3 (N=  81, Deff= 9.04): b=1.50: 2.678e+02 (c=0) | b=1.75: 1.949e+03 (c=0) | b=2.00: 1.732e+04 (c=0) | b=2.25: 1.794e+05 (c=0)
+    L=4 (N= 192, Deff=12.91): b=1.50: 4.068e+02 (c=0) | b=1.75: 1.754e+04 (c=0) | b=2.00: 4.847e+05 (c=0) | b=2.25: 1.117e+07 (c=0)
+    L=5 (N= 375, Deff=19.33): b=1.50: 6.800e+02 (c=0) | b=1.75: 1.255e+05 (c=0) | b=2.00: 1.070e+07 (c=0) | b=2.25: 2.823e+08 (c=27)
+    L=6 (N= 648, Deff=29.58): b=1.50: 7.168e+02 (c=0) | b=1.75: 1.166e+06 (c=0)
+    L=7 (N=1029, Deff=  nan): b=1.50: 1.028e+03 (c=0) | b=1.75: 6.632e+06 (c=10)
+  Sector Z_err (dec=uf):
+    L=3 (N=  81, Deff= 1.94): b=2.00: 1.727e+00 (c=0) | b=3.00: 1.087e+01 (c=0) | b=4.00: 8.298e+01 (c=0)
+    L=4 (N= 192, Deff= 1.75): b=2.00: 9.531e-01 (c=0) | b=3.00: 4.108e+00 (c=0) | b=4.00: 3.186e+01 (c=0)
+    L=5 (N= 375, Deff= 1.44): b=2.00: 8.905e-01 (c=0) | b=3.00: 3.028e+00 (c=0) | b=4.00: 1.594e+01 (c=0)
+    L=6 (N= 648, Deff= 1.30): b=2.00: 7.285e-01 (c=0) | b=3.00: 2.506e+00 (c=0) | b=4.00: 9.796e+00 (c=0)
+    L=7 (N=1029, Deff= 1.23): b=2.00: 6.632e-01 (c=0) | b=3.00: 1.823e+00 (c=0) | b=4.00: 7.753e+00 (c=0)
+
+=== 1B. GU-CAHA RANDOM LAYER CODES (PRL 136, 210601) ===
+  n=11 (<N>= 2193): b=6.0(KMC): 3.205e+03(c=0) | b=7.0(KMC): 3.524e+04(c=0) | b=8.0(KMC): 4.489e+05(c=0)
+  n=13 (<N>= 3645): b=6.0(KMC): 3.175e+03(c=0) | b=7.0(KMC): 4.446e+04(c=0) | b=8.0(KMC): 1.133e+06(c=0)
+  n=15 (<N>= 5601): b=6.0(KMC): 1.794e+03(c=0) | b=7.0(KMC): 2.862e+04(c=0) | b=8.0(KMC): 4.364e+05(c=0)
+  n=17 (<N>= 7919): b=6.0(KMC): 1.450e+03(c=0) | b=7.0(KMC): 2.622e+04(c=0) | b=8.0(KMC): 7.582e+05(c=0)
+  n=19 (<N>=10955): b=6.0(KMC): 1.235e+03(c=0) | b=7.0(KMC): 2.790e+04(c=0) | b=8.0(KMC): 1.011e+06(c=0)
+  Individual n=11 codes at beta=6.0:
+    code_100     (N=2227): 1480.5 +- 219.1 (c=0)
+    code_113     (N=2151): 4708.4 +- 516.2 (c=0)
+    code_11      (N=2142): 4082.4 +- 749.3 (c=0)
+    code_120     (N=2142): 2127.6 +- 424.0 (c=0)
+    code_128     (N=2254): 4767.5 +- 542.7 (c=0)
+    code_151     (N=2247): 2066.4 +- 242.0 (c=0)
+
+=== 2A. HEAD-TO-HEAD KMC vs FFS+COMMITTOR VALIDATION ===
+  cubic_L5_X_err               b=5.00 (N=   250): KMC=9.435e+08+-2.12e+08 | FFS=1.231e+08+-1.22e+06 | FFS/KMC=0.13
+  rottor_L2r1_s2_X_err         b=6.00 (N=   508): KMC=8.278e+04+-1.60e+04 | FFS=5.668e+04+-6.07e+03 | FFS/KMC=0.68
+  rottor_L2r1_s2_X_err         b=6.50 (N=   508): KMC=4.482e+05+-1.05e+05 | FFS=2.720e+05+-1.75e+04 | FFS/KMC=0.61
+  rottor_L2r1_s2_Z_err         b=6.00 (N=   508): KMC=8.231e+07+-1.95e+07 | FFS=3.478e+07+-1.15e+07 | FFS/KMC=0.42
+  rottor_L2r1_s2_Z_err         b=6.50 (N=   508): KMC=8.004e+08+-1.70e+08 | FFS=4.079e+08+-1.73e+08 | FFS/KMC=0.51
+  rottor_cb2rib_s2_X_err       b=6.00 (N=   364): KMC=1.348e+03+-1.70e+02 | FFS=9.370e+02+-7.75e+00 | FFS/KMC=0.70
+  rottor_cb2rib_s2_X_err       b=6.50 (N=   364): KMC=3.256e+03+-5.14e+02 | FFS=2.532e+03+-6.80e+00 | FFS/KMC=0.78
+  rottor_cb2rib_s2_Z_err       b=6.00 (N=   364): KMC=6.318e-01+-2.85e-02 | FFS=1.289e-01+-9.54e-04 | FFS/KMC=0.20
+  rottor_cb2rib_s2_Z_err       b=6.50 (N=   364): KMC=6.231e-01+-2.07e-02 | FFS=1.293e-01+-1.81e-03 | FFS/KMC=0.21
+  rottor_cb2rib_s3_X_err       b=6.00 (N=  2880): KMC=1.265e+02+-1.63e+01 | FFS=1.486e+02+-4.99e+00 | FFS/KMC=1.17
+  rottor_cb2rib_s3_X_err       b=6.50 (N=  2880): KMC=3.422e+02+-5.10e+01 | FFS=3.414e+02+-7.29e-01 | FFS/KMC=1.00
+  rottor_cb2rib_s3_Z_err       b=6.00 (N=  2880): KMC=5.958e-01+-1.45e-02 | FFS=6.196e-01+-4.19e-02 | FFS/KMC=1.04
+  rottor_cb2rib_s3_Z_err       b=6.50 (N=  2880): KMC=5.943e-01+-1.57e-02 | FFS=3.292e-01+-1.33e-02 | FFS/KMC=0.55
+  rottor_cb2rib_s4_X_err       b=6.00 (N= 30096): KMC=1.052e+01+-1.49e+00 | FFS=2.034e+01+-5.59e-02 | FFS/KMC=1.93
+  rottor_cb2rib_s4_X_err       b=6.50 (N= 30096): KMC=1.531e+01+-2.04e+00 | FFS=2.701e+01+-8.14e-02 | FFS/KMC=1.76
+  rottor_cb2rib_s4_Z_err       b=6.00 (N= 30096): KMC=5.015e-01+-2.26e-04 | FFS=1.640e-01+-3.90e-02 | FFS/KMC=0.33
+  rottor_cb2rib_s4_Z_err       b=6.50 (N= 30096): KMC=5.016e-01+-2.40e-04 | FFS=5.151e-02+-7.09e-03 | FFS/KMC=0.10
+  rottor_cb3rib_s2_X_err       b=6.00 (N=   440): KMC=1.216e+03+-1.80e+02 | FFS=1.017e+03+-6.74e+00 | FFS/KMC=0.84
+  rottor_cb3rib_s2_X_err       b=6.50 (N=   440): KMC=4.491e+03+-5.15e+02 | FFS=2.693e+03+-1.68e+01 | FFS/KMC=0.60
+  rottor_cb3rib_s2_Z_err       b=6.00 (N=   440): KMC=6.133e-01+-1.86e-02 | FFS=1.333e-01+-2.59e-03 | FFS/KMC=0.22
+  rottor_cb3rib_s2_Z_err       b=6.50 (N=   440): KMC=6.116e-01+-1.48e-02 | FFS=1.294e-01+-1.42e-03 | FFS/KMC=0.21
+  rottor_cb3rib_s3_X_err       b=6.00 (N=  3402): KMC=4.069e+02+-8.03e+01 | FFS=4.827e+02+-1.99e+00 | FFS/KMC=1.19
+  rottor_cb3rib_s3_X_err       b=6.50 (N=  3402): KMC=1.524e+03+-2.46e+02 | FFS=1.372e+03+-2.68e+01 | FFS/KMC=0.90
+  rottor_cb3rib_s3_Z_err       b=6.00 (N=  3402): KMC=5.563e-01+-8.26e-03 | FFS=1.249e-01+-4.90e-03 | FFS/KMC=0.22
+  rottor_cb3rib_s3_Z_err       b=6.50 (N=  3402): KMC=5.541e-01+-9.73e-03 | FFS=8.123e-02+-7.46e-03 | FFS/KMC=0.15
+  rottor_cb3rib_s4_X_err       b=6.00 (N= 40096): KMC=3.993e+00+-6.59e-01 | FFS=9.493e+00+-1.11e-01 | FFS/KMC=2.38
+  rottor_cb3rib_s4_X_err       b=6.50 (N= 40096): KMC=4.861e+00+-9.09e-01 | FFS=1.014e+01+-1.05e-01 | FFS/KMC=2.09
+  rottor_cb3rib_s4_Z_err       b=6.00 (N= 40096): KMC=5.020e-01+-3.52e-04 | FFS=5.853e-02+-1.53e-02 | FFS/KMC=0.12
+  rottor_cb3rib_s4_Z_err       b=6.50 (N= 40096): KMC=5.021e-01+-3.59e-04 | FFS=3.490e-02+-8.79e-03 | FFS/KMC=0.07
+  sq_L2r1_s2_X_err             b=6.50 (N=   254): KMC=2.738e+04+-4.72e+03 | FFS=2.126e+04+-3.51e+03 | FFS/KMC=0.78
+  sq_L2r1_s2_Z_err             b=6.50 (N=   254): KMC=7.963e+04+-1.77e+04 | FFS=4.164e+04+-7.74e+03 | FFS/KMC=0.52
+  sq_L2r1_s3_Z_err             b=6.50 (N=  1942): KMC=2.538e+04+-4.16e+03 | FFS=1.525e+04+-4.17e+03 | FFS/KMC=0.60
+  sq_L3r2_s2_X_err             b=6.00 (N=  1480): KMC=2.790e+04+-5.02e+03 | FFS=1.801e+04+-1.63e+03 | FFS/KMC=0.65
+  sq_L3r2_s2_X_err             b=6.50 (N=  1480): KMC=1.954e+05+-3.32e+04 | FFS=8.631e+04+-2.23e+04 | FFS/KMC=0.44
+  sq_cb2rib_s2_X_err           b=6.50 (N=   188): KMC=1.712e+02+-2.81e+01 | FFS=1.292e+02+-2.69e+00 | FFS/KMC=0.75
+  sq_cb2rib_s2_Z_err           b=6.50 (N=   188): KMC=7.919e-01+-5.06e-02 | FFS=2.743e-01+-4.38e-03 | FFS/KMC=0.35
+  sq_cb2rib_s3_X_err           b=6.50 (N=  1474): KMC=4.253e+01+-7.40e+00 | FFS=5.279e+01+-5.83e-01 | FFS/KMC=1.24
+  sq_cb2rib_s3_Z_err           b=6.50 (N=  1474): KMC=5.651e-01+-1.04e-02 | FFS=1.517e-01+-9.60e-03 | FFS/KMC=0.27
+  sq_cb2rib_s4_X_err           b=6.50 (N= 15228): KMC=9.118e+00+-9.62e-01 | FFS=1.841e+01+-1.21e-01 | FFS/KMC=2.02
+  sq_cb2rib_s4_Z_err           b=6.50 (N= 15228): KMC=5.040e-01+-5.29e-04 | FFS=7.867e-02+-1.07e-02 | FFS/KMC=0.16
+  sq_cb3rib_s2_X_err           b=6.50 (N=   222): KMC=2.789e+02+-4.76e+01 | FFS=2.571e+02+-1.53e+01 | FFS/KMC=0.92
+  sq_cb3rib_s2_Z_err           b=6.50 (N=   222): KMC=7.069e-01+-3.71e-02 | FFS=2.668e-01+-2.00e-03 | FFS/KMC=0.38
+  sq_cb3rib_s3_X_err           b=6.50 (N=  1710): KMC=1.132e+03+-1.95e+02 | FFS=1.541e+03+-2.12e+02 | FFS/KMC=1.36
+  sq_cb3rib_s3_Z_err           b=6.50 (N=  1710): KMC=5.709e-01+-1.23e-02 | FFS=1.210e-01+-3.83e-03 | FFS/KMC=0.21
+  sq_cb3rib_s4_X_err           b=6.50 (N= 20082): KMC=8.298e+00+-1.12e+00 | FFS=1.888e+01+-1.90e-01 | FFS/KMC=2.27
+  sq_cb3rib_s4_Z_err           b=6.50 (N= 20082): KMC=5.040e-01+-4.81e-04 | FFS=5.002e-02+-1.23e-02 | FFS/KMC=0.10
+  sq_cb3rib_s5_Z_err           b=6.50 (N=153802): KMC=5.009e-01+-2.35e-04 | FFS=2.144e-01+-1.09e-02 | FFS/KMC=0.43
+
+=== 2B. HAAH 3D CUBIC CODE A (KMC + FFS UP TO BETA=8.0) ===
+  L= 5 (N= 250, Deff= 3.95): b=4.25(KMC): 1.047e+07 | b=5.00(KMC): 9.435e+08 | b=6.00(FFS): 8.930e+09 | b=7.00(FFS): 4.736e+11 | b=8.00(FFS): 2.404e+13
+  L= 7 (N= 686, Deff= 7.52): b=4.25(KMC): 2.428e+07 | b=5.00(FFS): 2.161e+09 | b=6.00(FFS): 1.135e+13
+  L= 9 (N=1458, Deff=  nan): b=4.25(KMC): 3.398e+07
+  L=11 (N=2662, Deff=  nan): b=4.25(KMC): 3.986e+07
+
+=== 3. WELDED QUANTUM HIERARCHIES (SEPARATE X/Z & min(t_X, t_Z), KMC + FFS) ===
+  [Boundaryless [[4,2,2]] Full 4-Rib]
+    s=2 (N=   508, Deff= 3.26): b=5.50: 9.99e+03[X,KMC] | b=6.00: 8.28e+04[X,KMC] | b=6.50: 4.48e+05[X,KMC] | b=7.00: 1.46e+06[X,FFS] | b=7.50: 6.09e+06[X,FFS] | b=8.00: 3.83e+07[X,FFS]
+    s=3 (N=  3884, Deff=  nan): b=6.00: 3.93e+04[Z,KMC(c=32)]
+    s=4 (N= 50296, Deff=  nan): b=6.00: 1.67e+04[X,KMC]
+  [Boundaryless [[4,2,2]] Lean 3-Rib (Checkerboard T)]
+    s=2 (N=   440, Deff=-0.00): b=5.50: 5.87e-01[Z,KMC] | b=6.00: 6.13e-01[Z,KMC] | b=6.50: 6.12e-01[Z,KMC] | b=7.00: 1.27e-01[Z,FFS] | b=7.50: 1.26e-01[Z,FFS] | b=8.00: 1.25e-01[Z,FFS] | b=8.50: 1.26e-01[Z,FFS]
+    s=3 (N=  3402, Deff=-2.11): b=5.50: 5.51e-01[Z,KMC] | b=6.00: 5.56e-01[Z,KMC] | b=6.50: 5.54e-01[Z,KMC] | b=7.00: 7.85e-02[Z,FFS] | b=7.50: 6.73e-02[Z,FFS]
+    s=4 (N= 40096, Deff=-0.01): b=5.50: 5.02e-01[Z,KMC] | b=6.00: 5.02e-01[Z,KMC] | b=6.50: 5.02e-01[Z,KMC] | b=7.00: 7.81e-03[Z,FFS] | b=7.50: 7.05e-03[Z,FFS] | b=8.00: 2.85e-03[Z,FFS] | b=8.50: 7.00e-03[Z,FFS]
+  [Boundaryless [[4,2,2]] Percolating 2-Rib (Control)]
+    s=2 (N=   364, Deff=-1.60): b=5.50: 6.06e-01[Z,KMC] | b=6.00: 6.32e-01[Z,KMC] | b=6.50: 6.23e-01[Z,KMC] | b=7.00: 1.26e-01[Z,FFS] | b=7.50: 1.25e-01[Z,FFS]
+    s=3 (N=  2880, Deff=-1.13): b=5.50: 5.76e-01[Z,KMC] | b=6.00: 5.96e-01[Z,KMC] | b=6.50: 5.94e-01[Z,KMC] | b=7.00: 2.46e-01[Z,FFS] | b=7.50: 1.93e-01[Z,FFS]
+    s=4 (N= 30096, Deff=-3.35): b=5.50: 5.01e-01[Z,KMC] | b=6.00: 5.02e-01[Z,KMC] | b=6.50: 5.02e-01[Z,KMC] | b=7.00: 1.69e-02[Z,FFS] | b=7.50: 1.76e-02[Z,FFS]
+  [Planar Full 4-Rib (Up to s=5, N=189,988!)]
+    s=2 (N=   254, Deff= 1.72): b=5.50: 2.79e+03[X,KMC] | b=6.00: 8.41e+03[X,KMC] | b=6.50: 2.74e+04[X,KMC] | b=7.00: 6.93e+04[X,FFS] | b=7.50: 2.40e+05[X,FFS] | b=8.00: 3.87e+05[X,FFS]
+    s=3 (N=  1942, Deff= 4.22): b=5.50: 1.18e+03[Z,KMC(c=11)] | b=6.00: 9.71e+03[Z,KMC(c=22)]
+    s=4 (N= 25148, Deff= 6.42): b=5.50: 2.37e+03[X,KMC] | b=6.00: 5.86e+04[X,KMC]
+  [Planar Lean 3-Rib (Up to s=5!)]
+    s=2 (N=   222, Deff=-0.04): b=5.50: 7.87e-01[Z,KMC] | b=6.00: 7.96e-01[Z,KMC] | b=6.50: 7.07e-01[Z,KMC] | b=7.00: 2.61e-01[Z,FFS] | b=7.50: 2.57e-01[Z,FFS] | b=8.00: 2.52e-01[Z,FFS]
+    s=3 (N=  1710, Deff=-0.24): b=5.50: 5.70e-01[Z,KMC] | b=6.00: 5.54e-01[Z,KMC] | b=6.50: 5.71e-01[Z,KMC] | b=7.00: 8.62e-02[Z,FFS] | b=7.50: 7.42e-02[Z,FFS] | b=8.00: 6.79e-02[Z,FFS]
+    s=4 (N= 20082, Deff=-0.83): b=5.50: 5.03e-01[Z,KMC] | b=6.00: 5.04e-01[Z,KMC] | b=6.50: 5.04e-01[Z,KMC] | b=7.00: 1.80e-02[Z,FFS] | b=7.50: 1.57e-02[Z,FFS] | b=8.00: 7.84e-03[Z,FFS]
+    s=5 (N=153802, Deff=-0.00): b=5.50: 5.01e-01[Z,KMC] | b=6.00: 5.01e-01[Z,KMC] | b=6.50: 5.01e-01[Z,KMC]
+  [Planar Percolating 2-Rib (Control)]
+    s=2 (N=   188, Deff=-1.13): b=5.50: 8.14e-01[Z,KMC] | b=6.00: 8.09e-01[Z,KMC] | b=6.50: 7.92e-01[Z,KMC] | b=7.00: 2.62e-01[Z,FFS]
+    s=3 (N=  1474, Deff=-1.57): b=5.50: 5.86e-01[Z,KMC] | b=6.00: 5.82e-01[Z,KMC] | b=6.50: 5.65e-01[Z,KMC] | b=7.00: 1.21e-01[Z,FFS]
+    s=4 (N= 15228, Deff=-2.91): b=5.50: 5.03e-01[Z,KMC] | b=6.00: 5.03e-01[Z,KMC] | b=6.50: 5.04e-01[Z,KMC] | b=7.00: 2.73e-02[Z,FFS]
+  [Planar Proven 2-Bridge (L=3, r=2)]
+    s=2 (N=  1480, Deff= 3.54): b=5.50: 5.69e+03[X,KMC] | b=6.00: 2.79e+04[X,KMC] | b=6.50: 1.95e+05[X,KMC]
+    s=3 (N= 22160, Deff= 3.73): b=5.50: 8.36e+02[Z,KMC(c=24)] | b=6.00: 6.37e+03[Z,KMC(c=32)] | b=6.50: 3.48e+04[Z,KMC(c=32)]
+
+=== 4. Z^3 CUBIC-GRID RESCUE (UNIFORM vs HILL vs PINNING-TRAP <J>==1.000 & BOUNDED [1, 2]) ===
+  [sq_z3_3_5_r1]
+    uniform    (N= 3067, Deff= 2.91): b=5.50: 3.15e+02[X,c=0] | b=6.00: 7.51e+02[X,c=0] | b=6.50: 2.13e+03[X,c=0] | b=7.00: 1.37e+04[X,c=0]
+    hill_norm  (N= 3067, Deff= 2.29): b=5.50: 1.49e+02[X,c=0] | b=6.00: 3.54e+02[X,c=0] | b=6.50: 1.14e+03[X,c=0] | b=7.00: 3.50e+03[X,c=0]
+    pin_norm   (N= 3067, Deff= 1.35): b=5.50: 3.15e+02[X,c=0] | b=6.00: 7.57e+02[X,c=0] | b=6.50: 1.63e+03[X,c=0] | b=7.00: 2.90e+03[X,c=0]
+    toll_norm  (N= 3067, Deff= 1.85): b=5.50: 6.87e+01[X,c=0] | b=6.00: 1.73e+02[X,c=0] | b=6.50: 5.28e+02[X,c=5] | b=7.00: 1.67e+03[X,c=13]
+    hill_bnd   (N= 3067, Deff= 2.77): b=5.50: 3.76e+02[X,c=0] | b=6.00: 1.22e+03[X,c=0] | b=6.50: 5.73e+03[X,c=0] | b=7.00: 1.95e+04[X,c=0]
+    pin_bnd    (N= 3067, Deff=  nan): b=5.50: 2.15e+07[X,c=30] | b=6.00: 1.77e+08[X,c=37] | b=6.50: 5.28e+08[X,c=54] | b=7.00: 9.65e+08[X,c=57]
+  [sq_z3_4_6_r2]
+    uniform    (N=10280, Deff= 2.75): b=5.50: 2.53e+02[X,c=0] | b=6.00: 9.40e+02[X,c=0] | b=6.50: 5.17e+03[X,c=0] | b=7.00: 1.47e+04[X,c=0]
+    hill_norm  (N=10280, Deff= 2.60): b=5.50: 1.68e+02[X,c=0] | b=6.00: 5.53e+02[X,c=0] | b=6.50: 2.33e+03[X,c=0] | b=7.00: 7.42e+03[X,c=0]
+    pin_norm   (N=10280, Deff= 1.47): b=5.50: 2.17e+02[X,c=0] | b=6.00: 4.02e+02[X,c=0] | b=6.50: 7.90e+02[X,c=0] | b=7.00: 1.75e+03[X,c=0]
+    toll_norm  (N=10280, Deff=  nan): b=5.50: 6.91e+01[X,c=0] | b=6.00: 2.63e+02[X,c=12] | b=6.50: 4.31e+02[X,c=25] | b=7.00: 9.13e+02[X,c=28]
+    hill_bnd   (N=10280, Deff= 2.95): b=5.50: 3.24e+02[X,c=0] | b=6.00: 1.26e+03[X,c=0] | b=6.50: 5.65e+03[X,c=0] | b=7.00: 2.41e+04[X,c=0]
+    pin_bnd    (N=10280, Deff=  nan): b=5.50: 5.24e+07[X,c=40] | b=6.00: 1.89e+08[X,c=61] | b=6.50: 3.27e+08[X,c=63] | b=7.00: 5.67e+08[X,c=63]
+  [tor2_z3_4_6_r2]
+    uniform    (N=41120, Deff= 2.43): b=5.50: 1.47e+02[X,c=0] | b=6.00: 4.98e+02[X,c=0] | b=6.50: 1.67e+03[X,c=0] | b=7.00: 8.40e+03[X,c=3]
+    hill_norm  (N=41120, Deff= 2.05): b=5.50: 1.13e+02[X,c=0] | b=6.00: 2.88e+02[X,c=0] | b=6.50: 8.55e+02[X,c=0] | b=7.00: 2.24e+03[X,c=0]
+    pin_norm   (N=41120, Deff= 1.24): b=5.50: 1.14e+02[X,c=0] | b=6.00: 2.35e+02[X,c=0] | b=6.50: 4.12e+02[X,c=0] | b=7.00: 8.17e+02[X,c=0]
+    toll_norm  (N=41120, Deff= 1.36): b=5.50: 1.16e+02[X,c=0] | b=6.00: 2.30e+02[X,c=0] | b=6.50: 6.67e+02[X,c=13] | b=7.00: 1.47e+03[X,c=20]
+    hill_bnd   (N=41120, Deff= 2.36): b=5.50: 1.90e+02[X,c=0] | b=6.00: 6.04e+02[X,c=0] | b=6.50: 2.01e+03[X,c=0] | b=7.00: 1.15e+04[X,c=6]
+    pin_bnd    (N=41120, Deff=  nan): b=5.50: 2.55e+07[X,c=20] | b=6.00: 4.36e+08[X,c=25] | b=6.50: 3.43e+09[X,c=36] | b=7.00: 1.85e+10[X,c=40]
+  [sq_bdl_8_8_r2]
+    uniform    (N=56312, Deff= 1.23): b=5.50: 9.69e+01[X,c=0] | b=6.00: 2.41e+02[X,c=0] | b=6.50: 3.33e+02[X,c=0]
+    hill_norm  (N=56312, Deff= 1.22): b=5.50: 6.32e+01[X,c=0] | b=6.00: 1.03e+02[X,c=0] | b=6.50: 2.13e+02[X,c=0]
+    pin_norm   (N=56312, Deff= 1.20): b=5.50: 1.74e+02[X,c=0] | b=6.00: 3.59e+02[X,c=0] | b=6.50: 5.79e+02[X,c=0] | b=7.00: 1.26e+03[X,c=5]
+    toll_norm  (N=56312, Deff=  nan): b=5.50: 2.79e+01[X,c=1] | b=6.00: 6.60e+01[X,c=15] | b=6.50: 6.99e+01[X,c=20] | b=7.00: 1.00e+02[X,c=20]
+    hill_bnd   (N=56312, Deff= 1.34): b=5.50: 1.42e+02[X,c=0] | b=6.00: 2.74e+02[X,c=0] | b=7.00: 1.06e+03[X,c=0]
+    pin_bnd    (N=56312, Deff=  nan): b=5.50: 4.15e+04[X,c=20] | b=6.00: 2.19e+05[X,c=20] | b=6.50: 1.24e+07[X,c=22] | b=7.00: 7.91e+07[X,c=28]
+
+=== 5. PASSIVE COOLING & STATE PREPARATION (QUENCH vs ANNEAL vs SOFT-JUNCTION) ===
+  rottor_L2r1_s2_X_err   (N=  508) hot        t=  50 -> quench: syn=0.0081, p0=0.23, surv=0.31 || anneal: syn=0.0101, p0=0.17, surv=0.19 || soft_junc: syn=0.0189, p0=0.00, surv=0.22
+  rottor_L2r1_s2_X_err   (N=  508) hot        t= 250 -> quench: syn=0.0015, p0=0.83, surv=0.34 || anneal: syn=0.0017, p0=0.81, surv=0.23 || soft_junc: syn=0.0073, p0=0.25, surv=0.28
+  rottor_L2r1_s2_X_err   (N=  508) hot        t=1000 -> quench: syn=0.0014, p0=0.84, surv=0.33 || anneal: syn=0.0004, p0=0.95, surv=0.19 || soft_junc: syn=0.0028, p0=0.67, surv=0.34
+  rottor_L2r1_s2_X_err   (N=  508) noisy_0.12 t=  50 -> quench: syn=0.0088, p0=0.28, surv=0.27 || anneal: syn=0.0090, p0=0.22, surv=0.38 || soft_junc: syn=0.0197, p0=0.02, surv=0.23
+  rottor_L2r1_s2_X_err   (N=  508) noisy_0.12 t= 250 -> quench: syn=0.0022, p0=0.75, surv=0.28 || anneal: syn=0.0019, p0=0.80, surv=0.16 || soft_junc: syn=0.0059, p0=0.36, surv=0.20
+  rottor_L2r1_s2_X_err   (N=  508) noisy_0.12 t=1000 -> quench: syn=0.0009, p0=0.91, surv=0.23 || anneal: syn=0.0005, p0=0.94, surv=0.28 || soft_junc: syn=0.0034, p0=0.61, surv=0.30
+  rottor_L2r1_s2_Z_err   (N=  508) hot        t=  50 -> quench: syn=0.0167, p0=0.06, surv=0.33 || anneal: syn=0.0159, p0=0.14, surv=0.16 || soft_junc: syn=0.0229, p0=0.02, surv=0.23
+  rottor_L2r1_s2_Z_err   (N=  508) hot        t= 250 -> quench: syn=0.0055, p0=0.59, surv=0.16 || anneal: syn=0.0036, p0=0.73, surv=0.33 || soft_junc: syn=0.0071, p0=0.50, surv=0.22
+  rottor_L2r1_s2_Z_err   (N=  508) hot        t=1000 -> quench: syn=0.0022, p0=0.84, surv=0.23 || anneal: syn=0.0002, p0=0.98, surv=0.25 || soft_junc: syn=0.0043, p0=0.69, surv=0.28
+  rottor_L2r1_s2_Z_err   (N=  508) noisy_0.12 t=  50 -> quench: syn=0.0138, p0=0.14, surv=0.36 || anneal: syn=0.0150, p0=0.17, surv=0.28 || soft_junc: syn=0.0195, p0=0.11, surv=0.33
+  rottor_L2r1_s2_Z_err   (N=  508) noisy_0.12 t= 250 -> quench: syn=0.0046, p0=0.67, surv=0.25 || anneal: syn=0.0030, p0=0.78, surv=0.25 || soft_junc: syn=0.0060, p0=0.56, surv=0.27
+  rottor_L2r1_s2_Z_err   (N=  508) noisy_0.12 t=1000 -> quench: syn=0.0030, p0=0.78, surv=0.28 || anneal: syn=0.0006, p0=0.95, surv=0.17 || soft_junc: syn=0.0050, p0=0.64, surv=0.19
+  rottor_L2r1_s3_X_err   (N= 3884) hot        t=  50 -> quench: syn=0.0182, p0=0.00, surv=0.27 || anneal: syn=0.0160, p0=0.00, surv=0.27 || soft_junc: syn=0.0209, p0=0.00, surv=0.22
+  rottor_L2r1_s3_X_err   (N= 3884) hot        t= 250 -> quench: syn=0.0095, p0=0.00, surv=0.22 || anneal: syn=0.0063, p0=0.00, surv=0.22 || soft_junc: syn=0.0073, p0=0.00, surv=0.27
+  rottor_L2r1_s3_X_err   (N= 3884) hot        t=1000 -> quench: syn=0.0072, p0=0.00, surv=0.20 || anneal: syn=0.0035, p0=0.08, surv=0.23 || soft_junc: syn=0.0043, p0=0.00, surv=0.31
+  rottor_L2r1_s3_X_err   (N= 3884) noisy_0.12 t=  50 -> quench: syn=0.0159, p0=0.00, surv=0.19 || anneal: syn=0.0152, p0=0.00, surv=0.23 || soft_junc: syn=0.0209, p0=0.00, surv=0.38
+  rottor_L2r1_s3_X_err   (N= 3884) noisy_0.12 t= 250 -> quench: syn=0.0093, p0=0.00, surv=0.25 || anneal: syn=0.0065, p0=0.00, surv=0.22 || soft_junc: syn=0.0071, p0=0.00, surv=0.23
+  rottor_L2r1_s3_X_err   (N= 3884) noisy_0.12 t=1000 -> quench: syn=0.0068, p0=0.00, surv=0.20 || anneal: syn=0.0035, p0=0.05, surv=0.34 || soft_junc: syn=0.0038, p0=0.05, surv=0.27
+  rottor_L2r1_s3_Z_err   (N= 3884) hot        t=  50 -> quench: syn=0.0098, p0=0.00, surv=0.31 || anneal: syn=0.0105, p0=0.00, surv=0.20 || soft_junc: syn=0.0132, p0=0.00, surv=0.14
+  rottor_L2r1_s3_Z_err   (N= 3884) hot        t= 250 -> quench: syn=0.0035, p0=0.02, surv=0.23 || anneal: syn=0.0039, p0=0.02, surv=0.17 || soft_junc: syn=0.0056, p0=0.00, surv=0.30
+  rottor_L2r1_s3_Z_err   (N= 3884) hot        t=1000 -> quench: syn=0.0007, p0=0.66, surv=0.30 || anneal: syn=0.0009, p0=0.59, surv=0.20 || soft_junc: syn=0.0026, p0=0.06, surv=0.22
+  rottor_L2r1_s3_Z_err   (N= 3884) noisy_0.12 t=  50 -> quench: syn=0.0100, p0=0.00, surv=0.23 || anneal: syn=0.0100, p0=0.00, surv=0.27 || soft_junc: syn=0.0136, p0=0.00, surv=0.25
+  rottor_L2r1_s3_Z_err   (N= 3884) noisy_0.12 t= 250 -> quench: syn=0.0031, p0=0.06, surv=0.31 || anneal: syn=0.0038, p0=0.00, surv=0.33 || soft_junc: syn=0.0061, p0=0.00, surv=0.31
+  rottor_L2r1_s3_Z_err   (N= 3884) noisy_0.12 t=1000 -> quench: syn=0.0006, p0=0.75, surv=0.23 || anneal: syn=0.0009, p0=0.56, surv=0.28 || soft_junc: syn=0.0023, p0=0.20, surv=0.22
+  sq_L2r1_s3_X_err       (N= 1942) hot        t=  50 -> quench: syn=0.0185, p0=0.00, surv=0.44 || anneal: syn=0.0146, p0=0.00, surv=0.48 || soft_junc: syn=0.0178, p0=0.00, surv=0.41
+  sq_L2r1_s3_X_err       (N= 1942) hot        t= 250 -> quench: syn=0.0109, p0=0.00, surv=0.39 || anneal: syn=0.0050, p0=0.03, surv=0.45 || soft_junc: syn=0.0060, p0=0.00, surv=0.47
+  sq_L2r1_s3_X_err       (N= 1942) hot        t=1000 -> quench: syn=0.0059, p0=0.02, surv=0.44 || anneal: syn=0.0014, p0=0.42, surv=0.55 || soft_junc: syn=0.0028, p0=0.16, surv=0.52
+  sq_L2r1_s3_X_err       (N= 1942) noisy_0.12 t=  50 -> quench: syn=0.0151, p0=0.00, surv=0.45 || anneal: syn=0.0142, p0=0.00, surv=0.42 || soft_junc: syn=0.0169, p0=0.00, surv=0.61
+  sq_L2r1_s3_X_err       (N= 1942) noisy_0.12 t= 250 -> quench: syn=0.0095, p0=0.00, surv=0.59 || anneal: syn=0.0056, p0=0.00, surv=0.50 || soft_junc: syn=0.0066, p0=0.03, surv=0.45
+  sq_L2r1_s3_X_err       (N= 1942) noisy_0.12 t=1000 -> quench: syn=0.0056, p0=0.02, surv=0.45 || anneal: syn=0.0009, p0=0.55, surv=0.45 || soft_junc: syn=0.0026, p0=0.17, surv=0.59
+  sq_L2r1_s3_Z_err       (N= 1942) hot        t=  50 -> quench: syn=0.0090, p0=0.00, surv=0.47 || anneal: syn=0.0076, p0=0.00, surv=0.50 || soft_junc: syn=0.0089, p0=0.00, surv=0.52
+  sq_L2r1_s3_Z_err       (N= 1942) hot        t= 250 -> quench: syn=0.0036, p0=0.05, surv=0.45 || anneal: syn=0.0034, p0=0.14, surv=0.44 || soft_junc: syn=0.0038, p0=0.09, surv=0.61
+  sq_L2r1_s3_Z_err       (N= 1942) hot        t=1000 -> quench: syn=0.0012, p0=0.58, surv=0.45 || anneal: syn=0.0011, p0=0.52, surv=0.52 || soft_junc: syn=0.0019, p0=0.39, surv=0.41
+  sq_L2r1_s3_Z_err       (N= 1942) noisy_0.12 t=  50 -> quench: syn=0.0083, p0=0.00, surv=0.44 || anneal: syn=0.0077, p0=0.00, surv=0.48 || soft_junc: syn=0.0091, p0=0.00, surv=0.59
+  sq_L2r1_s3_Z_err       (N= 1942) noisy_0.12 t= 250 -> quench: syn=0.0037, p0=0.06, surv=0.45 || anneal: syn=0.0032, p0=0.09, surv=0.45 || soft_junc: syn=0.0048, p0=0.03, surv=0.53
+  sq_L2r1_s3_Z_err       (N= 1942) noisy_0.12 t=1000 -> quench: syn=0.0011, p0=0.59, surv=0.53 || anneal: syn=0.0011, p0=0.56, surv=0.64 || soft_junc: syn=0.0021, p0=0.30, surv=0.56
+  sq_L2r1_s4_X_err       (N=25148) hot        t=  50 -> quench: syn=0.0081, p0=0.00, surv=0.58 || anneal: syn=0.0085, p0=0.00, surv=0.54 || soft_junc: syn=0.0148, p0=0.00, surv=0.46
+  sq_L2r1_s4_X_err       (N=25148) hot        t= 250 -> quench: syn=0.0032, p0=0.00, surv=0.71 || anneal: syn=0.0033, p0=0.00, surv=0.62 || soft_junc: syn=0.0062, p0=0.00, surv=0.62
+  sq_L2r1_s4_X_err       (N=25148) noisy_0.12 t=  50 -> quench: syn=0.0081, p0=0.00, surv=0.54 || anneal: syn=0.0084, p0=0.00, surv=0.50 || soft_junc: syn=0.0150, p0=0.00, surv=0.29
+  sq_L2r1_s4_X_err       (N=25148) noisy_0.12 t= 250 -> quench: syn=0.0032, p0=0.00, surv=0.54 || anneal: syn=0.0032, p0=0.00, surv=0.54 || soft_junc: syn=0.0061, p0=0.00, surv=0.54
+  sq_L2r1_s4_Z_err       (N=25148) hot        t=  50 -> quench: syn=0.0210, p0=0.00, surv=0.58 || anneal: syn=0.0199, p0=0.00, surv=0.67 || soft_junc: syn=0.0244, p0=0.00, surv=0.62
+  sq_L2r1_s4_Z_err       (N=25148) hot        t= 250 -> quench: syn=0.0090, p0=0.00, surv=0.58 || anneal: syn=0.0057, p0=0.00, surv=0.71 || soft_junc: syn=0.0091, p0=0.00, surv=0.42
+  sq_L2r1_s4_Z_err       (N=25148) noisy_0.12 t=  50 -> quench: syn=0.0192, p0=0.00, surv=0.58 || anneal: syn=0.0196, p0=0.00, surv=0.25 || soft_junc: syn=0.0232, p0=0.00, surv=0.25
+  sq_L2r1_s4_Z_err       (N=25148) noisy_0.12 t= 250 -> quench: syn=0.0085, p0=0.00, surv=0.62 || anneal: syn=0.0057, p0=0.00, surv=0.67 || soft_junc: syn=0.0089, p0=0.00, surv=0.58
