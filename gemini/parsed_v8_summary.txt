@@ -1,0 +1,102 @@
+=== V8 RIGOROUS MULTI-SCALE SUMMARY (KMC=140, FFS=0, TO/ERR=54) ===
+WARNINGS / TIMEOUTS:
+  ffs__rottor_rx_s3_X_err__uniform__uf__b2.50: TIMEOUT
+  ffs__rottor_rx_s3_X_err__uniform__uf__b2.75: TIMEOUT
+  ffs__rottor_rx_s3_X_err__uniform__uf__b3.00: TIMEOUT
+  kmc__rottor_rx_s4_X_err__uniform__uf__b1.00: TIMEOUT
+  kmc__rottor_rx_s4_X_err__uniform__uf__b1.25: TIMEOUT
+  kmc__rottor_rx_s4_X_err__uniform__uf__b1.50: TIMEOUT
+  kmc__rottor_rx_s4_X_err__uniform__uf__b1.75: TIMEOUT
+  kmc__rottor_rx_s4_X_err__uniform__uf__b2.00: TIMEOUT
+  kmc__sq_rx_s3_X_err__uniform__uf__b3.00: TIMEOUT
+  kmc__rottor_rx_s4_X_err__uniform__uf__b2.50: TIMEOUT
+  ffs__sq_rx_s3_X_err__uniform__uf__b2.65: TIMEOUT
+  ffs__rottor_rx_s4_X_err__uniform__uf__b2.50: TIMEOUT
+  ffs__sq_rx_s3_X_err__uniform__uf__b2.75: TIMEOUT
+  ffs__rottor_rx_s4_X_err__uniform__uf__b2.75: TIMEOUT
+  ffs__sq_rx_s3_X_err__uniform__uf__b3.00: TIMEOUT
+  ffs__rottor_rx_s4_X_err__uniform__uf__b3.00: TIMEOUT
+  ffs__sq_iso_L2r1_s4_X_err__uniform__uf__b6.50: TIMEOUT
+  kmc__sq_rx_s4_X_err__uniform__uf__b2.40: TIMEOUT
+  kmc__sq_rx_iso_s3_X_err__uniform__uf__b2.75: TIMEOUT
+  kmc__sq_iso_L2r1_s4_X_err__uniform__uf__b6.75: TIMEOUT
+  kmc__sq_rx_s4_X_err__uniform__uf__b2.50: TIMEOUT
+  kmc__sq_rx_iso_s3_X_err__uniform__uf__b3.00: TIMEOUT
+  ffs__sq_iso_L2r1_s4_X_err__uniform__uf__b6.75: TIMEOUT
+  kmc__sq_rx_s4_X_err__uniform__uf__b2.65: TIMEOUT
+  ffs__sq_rx_iso_s3_X_err__uniform__uf__b2.65: TIMEOUT
+  kmc__sq_iso_L2r1_s4_X_err__uniform__uf__b7.00: TIMEOUT
+  ffs__sq_rx_s4_X_err__uniform__uf__b2.65: TIMEOUT
+  ffs__sq_rx_iso_s3_X_err__uniform__uf__b2.75: TIMEOUT
+  ffs__sq_iso_L2r1_s4_X_err__uniform__uf__b7.00: TIMEOUT
+  ffs__sq_rx_s4_X_err__uniform__uf__b2.75: TIMEOUT
+  ffs__sq_rx_iso_s3_X_err__uniform__uf__b3.00: TIMEOUT
+  kmc__sq_iso_L2r1_s4_Z_err__uniform__uf__b5.00: TIMEOUT
+  ffs__sq_rx_s4_X_err__uniform__uf__b3.00: TIMEOUT
+  kmc__sq_rx_iso_s4_X_err__uniform__uf__b1.25: TIMEOUT
+  kmc__sq_iso_L2r1_s4_Z_err__uniform__uf__b5.50: TIMEOUT
+  kmc__sq_rx_iso_s4_X_err__uniform__uf__b1.50: TIMEOUT
+  ffs__sq_iso_L2r1_s4_Z_err__uniform__uf__b6.00: TIMEOUT
+  kmc__sq_rx_iso_s4_X_err__uniform__uf__b1.75: TIMEOUT
+  ffs__sq_iso_L2r1_s4_Z_err__uniform__uf__b6.25: TIMEOUT
+  kmc__sq_rx_iso_s4_X_err__uniform__uf__b2.00: TIMEOUT
+  ffs__sq_iso_L2r1_s4_Z_err__uniform__uf__b6.50: TIMEOUT
+  kmc__sq_rx_iso_s4_X_err__uniform__uf__b2.25: TIMEOUT
+  kmc__sq_rx_iso_s4_X_err__uniform__uf__b2.40: TIMEOUT
+  kmc__sq_rx_iso_s4_X_err__uniform__uf__b2.50: TIMEOUT
+  ffs__rottor_L2r1_s4_X_err__uniform__uf__b6.65: TIMEOUT
+  kmc__sq_rx_iso_s4_X_err__uniform__uf__b2.65: TIMEOUT
+  ffs__sq_rx_iso_s4_X_err__uniform__uf__b2.65: TIMEOUT
+  kmc__rottor_L2r1_s4_X_err__uniform__uf__b6.75: TIMEOUT
+  ffs__sq_rx_iso_s4_X_err__uniform__uf__b2.75: TIMEOUT
+  ffs__rottor_L2r1_s4_X_err__uniform__uf__b6.75: TIMEOUT
+  ffs__sq_rx_iso_s4_X_err__uniform__uf__b3.00: TIMEOUT
+  kmc__rottor_L2r1_s4_X_err__uniform__uf__b7.00: TIMEOUT
+  kmc__rottor_rx_s3_X_err__uniform__uf__b3.00: TIMEOUT
+  ffs__rottor_L2r1_s4_X_err__uniform__uf__b7.00: TIMEOUT
+
+=== 1. Torus 5-Scale 2x2 Cross (K=2) ===
+  s=0 (N=4, Deff[1.75, 2.0, 2.25]=2.10): b=1.00:2.313e+00[KMC] | b=1.25:3.273e+00[KMC] | b=1.50:5.894e+00[KMC] | b=1.75:8.907e+00[KMC] | b=2.00:1.569e+01[KMC] | b=2.25:2.551e+01[KMC] | b=2.50:3.513e+01[KMC] | b=2.75:6.571e+01[KMC] | b=3.00:1.098e+02[KMC]
+  s=1 (N=38, Deff[1.75, 2.0, 2.25]=2.69): b=1.00:1.809e+00[KMC] | b=1.25:2.776e+00[KMC] | b=1.50:4.883e+00[KMC] | b=1.75:8.318e+00[KMC] | b=2.00:1.615e+01[KMC] | b=2.25:3.200e+01[KMC] | b=2.50:7.151e+01[KMC] | b=2.75:1.765e+02[KMC] | b=3.00:3.457e+02[KMC]
+  s=2 (N=332, Deff[1.75, 2.0, 2.25]=3.76): b=1.00:1.675e+00[KMC] | b=1.25:2.993e+00[KMC] | b=1.50:4.987e+00[KMC] | b=1.75:9.378e+00[KMC] | b=2.00:2.271e+01[KMC] | b=2.25:6.136e+01[KMC] | b=2.50:3.551e+02[KMC] | b=2.75:3.283e+03[KMC] | b=3.00:2.468e+04[KMC]
+  s=3 (N=3100, Deff[1.75, 2.0, 2.25]=4.74): b=1.00:1.662e+00[KMC] | b=1.25:3.176e+00[KMC] | b=1.50:5.550e+00[KMC] | b=1.75:1.169e+01[KMC] | b=2.00:3.143e+01[KMC] | b=2.25:1.252e+02[KMC] | b=2.50:6.075e+03[KMC]
+  s=4 (N=29704, Deff[1.75, 2.0, 2.25]=6.15): b=1.25:3.291e+00[KMC] | b=1.50:6.262e+00[KMC] | b=1.75:1.245e+01[KMC] | b=2.00:3.662e+01[KMC] | b=2.25:2.697e+02[KMC] | b=2.40:5.702e+03[KMC]
+  Consecutive Scale Crossings:
+    s=0 -> s=1: beta_cross ≈ 1.93
+    s=1 -> s=2: beta_cross ≈ 1.13
+    s=2 -> s=3: beta_cross ≈ 1.03
+    s=3 -> s=4: at b=1.25, ratio t_4/t_3 = 1.04x
+
+=== 1. Planar Thin-Bridge 5-Scale 2x2 Cross (K=1) ===
+  s=0 (N=2, Deff[1.75, 2.0, 2.25]=1.09): b=1.25:3.516e+00[KMC] | b=1.50:4.283e+00[KMC] | b=1.75:4.879e+00[KMC] | b=2.00:6.380e+00[KMC] | b=2.25:8.407e+00[KMC] | b=2.50:9.656e+00[KMC] | b=2.75:1.075e+01[KMC] | b=3.00:1.489e+01[KMC]
+  s=1 (N=19, Deff[1.75, 2.0, 2.25]=1.92): b=1.25:5.365e+00[KMC] | b=1.50:7.783e+00[KMC] | b=1.75:1.306e+01[KMC] | b=2.00:1.971e+01[KMC] | b=2.25:3.408e+01[KMC] | b=2.50:4.231e+01[KMC] | b=2.75:6.646e+01[KMC] | b=3.00:1.614e+02[KMC]
+  s=2 (N=166, Deff[1.75, 2.0, 2.25]=3.80): b=1.25:4.736e+00[KMC] | b=1.50:9.703e+00[KMC] | b=1.75:1.888e+01[KMC] | b=2.00:4.127e+01[KMC] | b=2.25:1.262e+02[KMC] | b=2.50:4.850e+02[KMC] | b=2.75:1.546e+03[KMC] | b=3.00:5.626e+03[KMC]
+  s=3 (N=1550, Deff[1.75, 2.0, 2.25]=7.43): b=1.25:3.814e+00[KMC] | b=1.50:7.241e+00[KMC] | b=1.75:1.681e+01[KMC] | b=2.00:5.251e+01[KMC] | b=2.25:6.910e+02[KMC] | b=2.50:2.996e+04[KMC]
+  s=4 (N=14852, Deff[1.75, 2.0, 2.25]=10.26): b=1.25:3.965e+00[KMC] | b=1.50:7.403e+00[KMC] | b=1.75:1.724e+01[KMC] | b=2.00:6.376e+01[KMC] | b=2.25:2.919e+03[KMC]
+  Consecutive Scale Crossings:
+    s=0 -> s=1: at b=1.25, ratio t_1/t_0 = 1.53x
+    s=1 -> s=2: beta_cross ≈ 1.34
+    s=2 -> s=3: beta_cross ≈ 1.83
+    s=3 -> s=4: at b=1.25, ratio t_4/t_3 = 1.04x
+
+=== 1. Planar Uniform 5-Scale 2x2 Cross (K=1) ===
+  s=0 (N=2, Deff[1.75, 2.0, 2.25]=1.16): b=1.25:3.385e+00[KMC] | b=1.50:4.327e+00[KMC] | b=1.75:4.686e+00[KMC] | b=2.00:6.352e+00[KMC] | b=2.25:8.352e+00[KMC] | b=2.50:9.807e+00[KMC] | b=2.75:1.105e+01[KMC] | b=3.00:1.470e+01[KMC]
+  s=1 (N=19, Deff[1.75, 2.0, 2.25]=1.98): b=1.25:5.364e+00[KMC] | b=1.50:7.931e+00[KMC] | b=1.75:1.319e+01[KMC] | b=2.00:1.966e+01[KMC] | b=2.25:3.552e+01[KMC] | b=2.50:4.204e+01[KMC] | b=2.75:6.665e+01[KMC] | b=3.00:1.607e+02[KMC]
+  s=2 (N=203, Deff[1.75, 2.0, 2.25]=4.57): b=1.25:4.860e+00[KMC] | b=1.50:8.986e+00[KMC] | b=1.75:2.287e+01[KMC] | b=2.00:6.559e+01[KMC] | b=2.25:2.247e+02[KMC] | b=2.50:8.025e+02[KMC] | b=2.75:2.451e+03[KMC] | b=3.00:8.057e+03[KMC]
+  s=3 (N=2311, Deff[1.75, 2.0, 2.25]=8.82): b=1.25:4.169e+00[KMC] | b=1.50:8.677e+00[KMC] | b=1.75:2.165e+01[KMC] | b=2.00:7.759e+01[KMC] | b=2.25:1.778e+03[KMC] | b=2.50:9.020e+04[KMC]
+  s=4 (N=27107, Deff[1.75, 2.0, 2.25]=13.16): b=1.50:9.340e+00[KMC] | b=1.75:1.952e+01[KMC] | b=2.00:8.938e+01[KMC] | b=2.25:1.405e+04[KMC]
+  Consecutive Scale Crossings:
+    s=0 -> s=1: at b=1.25, ratio t_1/t_0 = 1.58x
+    s=1 -> s=2: beta_cross ≈ 1.36
+    s=2 -> s=3: beta_cross ≈ 1.81
+    s=3 -> s=4: beta_cross ≈ 1.86
+
+=== 2. PROVABLY CONTRACTIVE UNIFORM 2x2 TWO-CYCLE CROSSOVER (N=323 vs N=47,387) ===
+  s=2 X_err (N=323, Deff[5.5..6.65]=2.07): b=5.00:1.145e+03[KMC] | b=5.50:2.694e+03[KMC] | b=6.00:8.279e+03[KMC] | b=6.25:1.656e+04[KMC] | b=6.50:2.001e+04[KMC] | b=6.65:3.008e+04[KMC] | b=6.75:3.231e+04[KMC] | b=7.00:7.390e+04[KMC]
+  s=2 Z_err (N=323, Deff[5.5..6.65]=2.24): b=5.00:4.010e+03[KMC] | b=5.50:1.205e+04[KMC] | b=6.00:3.758e+04[KMC] | b=6.25:5.874e+04[KMC] | b=6.50:1.014e+05[KMC] | b=6.65:1.749e+05[KMC] | b=6.75:2.724e+05[KMC] | b=7.00:3.180e+05[KMC]
+  s=4 X_err (N=47387, Deff[5.5..6.65]=5.60): b=5.00:5.040e+02[KMC] | b=5.50:3.778e+03[KMC] | b=6.00:5.058e+04[KMC] | b=6.25:1.898e+05[KMC] | b=6.50:1.138e+06[KMC] | b=6.65:2.130e+06[KMC]
+  s=4 Z_err (N=None, Deff[5.5..6.65]=nan): 
+
+=== 3. EXTENDED COLD TORUS CYCLE 1 vs CYCLE 2 (b = 6.65, 6.75, 7.00) ===
+  rottor s=2: b=6.65:5.812e+05+-5.5e+04[KMC] | b=6.75:8.496e+05+-8.8e+04[KMC] | b=7.00:2.304e+06+-2.6e+05[KMC]
+  rottor s=4: b=6.65:4.284e+06+-8.1e+05[KMC]

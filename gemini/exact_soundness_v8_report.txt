@@ -1,0 +1,16 @@
+=== 1. 2D Classical Dual-Welded Ladder Contraction Constants ===
+  ell=3 (r=1 rungs, 7 edges/unit): Gamma_Rep=1.0000 (c_Rep=1.0000), Gamma_Par=1.0000 (c_Par=1.0000) ==> Single-Cell c_cycle = 1.0000
+  ell=4 (r=2 rungs, 10 edges/unit): Gamma_Rep=2.0000 (c_Rep=0.5000), Gamma_Par=1.0000 (c_Par=1.0000) ==> Single-Cell c_cycle = 0.5000
+  ell=5 (r=3 rungs, 13 edges/unit): Gamma_Rep=2.0000 (c_Rep=0.5000), Gamma_Par=1.0000 (c_Par=1.0000) ==> Single-Cell c_cycle = 0.5000
+
+=== 2. 3D Quantum Doubled-Square Units U_F (Exhaustive Single-Pass Proof) ===
+  [Uniform 2x2 Four-Arm Cross (L=2, r=1)] (faces=12, interior_edges=9):
+    Gamma_Rep = 2.5000 (c_Rep = 0.4000) | Gamma_Par = 1.0000 (c_Par = 1.0000) ==> FULL-CYCLE c_cycle = 0.4000
+  [Uniform 3x3 Single Cross (L=3, r=1)] (faces=24, interior_edges=25):
+    Gamma_Rep = 3.0000 (c_Rep = 0.3333) | Gamma_Par = 1.8000 (c_Par = 0.5556) ==> FULL-CYCLE c_cycle = 0.1852
+  [Mixed 3x2 Unit] (faces=19, interior_edges=16):
+    Gamma_Rep = 2.8571 (c_Rep = 0.3500) | Gamma_Par = 1.2000 (c_Par = 0.8333) ==> FULL-CYCLE c_cycle = 0.2917
+  [Thin-Bridge 2x1 Rect (Lx=2, Ly=1, rx=1)] (faces=5, interior_edges=2):
+    Gamma_Rep = 0.5556 (c_Rep = 1.8000) | Gamma_Par = 0.5000 (c_Par = 2.0000) ==> FULL-CYCLE c_cycle = 3.6000
+  [Thin-Bridge 3x1 Rect (Lx=3, Ly=1, rx={1,2})] (faces=8, interior_edges=4):
+    Gamma_Rep = 1.0000 (c_Rep = 1.0000) | Gamma_Par = 0.6000 (c_Par = 1.6667) ==> FULL-CYCLE c_cycle = 1.6667
