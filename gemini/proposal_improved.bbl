@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{14}%
+\begin{thebibliography}{25}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -50,6 +50,18 @@
 \providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
 \let\auto@bib@innerbib\@empty
 %</preamble>
+\bibitem [{\citenamefont {Bravyi}\ \emph {et~al.}(2024)\citenamefont {Bravyi},
+  \citenamefont {Cross}, \citenamefont {Gambetta}, \citenamefont {Maslov},
+  \citenamefont {Rall},\ and\ \citenamefont {Yoder}}]{bravyi_bb2024}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Bravyi}}, \bibinfo {author} {\bibfnamefont {A.~W.}\ \bibnamefont {Cross}},
+  \bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont {Gambetta}}, \bibinfo
+  {author} {\bibfnamefont {D.}~\bibnamefont {Maslov}}, \bibinfo {author}
+  {\bibfnamefont {P.}~\bibnamefont {Rall}},\ and\ \bibinfo {author}
+  {\bibfnamefont {T.~J.}\ \bibnamefont {Yoder}},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Nature}\ }\textbf {\bibinfo {volume} {627}},\
+  \bibinfo {pages} {778} (\bibinfo {year} {2024})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Brown}\ \emph {et~al.}(2016)\citenamefont {Brown},
   \citenamefont {Loss}, \citenamefont {Pachos}, \citenamefont {Self},\ and\
   \citenamefont {Wootton}}]{quantumMemories}%
@@ -62,6 +74,59 @@
   {\bibfield  {journal} {\bibinfo  {journal} {Reviews of Modern Physics}\
   }\textbf {\bibinfo {volume} {88}},\ \bibinfo {pages} {045005} (\bibinfo
   {year} {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Dennis}\ \emph {et~al.}(2002)\citenamefont {Dennis},
+  \citenamefont {Kitaev}, \citenamefont {Landahl},\ and\ \citenamefont
+  {Preskill}}]{selfcorrecting4D}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Dennis}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Kitaev}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Landahl}},\ and\ \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Preskill}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Journal of Mathematical Physics}\
+  }\textbf {\bibinfo {volume} {43}},\ \bibinfo {pages} {4452} (\bibinfo {year}
+  {2002})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Alicki}\ \emph {et~al.}(2010)\citenamefont {Alicki},
+  \citenamefont {Horodecki}, \citenamefont {Horodecki},\ and\ \citenamefont
+  {Horodecki}}]{alicki4D}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Alicki}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Horodecki}},
+  \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Horodecki}},\ and\
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Horodecki}},\ }\href@noop
+  {} {\bibfield  {journal} {\bibinfo  {journal} {Open Systems \& Information
+  Dynamics}\ }\textbf {\bibinfo {volume} {17}},\ \bibinfo {pages} {1} (\bibinfo
+  {year} {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Chesi}\ \emph {et~al.}(2010)\citenamefont {Chesi},
+  \citenamefont {Loss}, \citenamefont {Bravyi},\ and\ \citenamefont
+  {Terhal}}]{chesi2010}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Chesi}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Loss}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Bravyi}},\ and\ \bibinfo
+  {author} {\bibfnamefont {B.~M.}\ \bibnamefont {Terhal}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {New Journal of Physics}\ }\textbf
+  {\bibinfo {volume} {12}},\ \bibinfo {pages} {025013} (\bibinfo {year}
+  {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Siva}\ and\ \citenamefont
+  {Yoshida}(2017)}]{siva2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Siva}}\ and\ \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Yoshida}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review
+  A}\ }\textbf {\bibinfo {volume} {95}},\ \bibinfo {pages} {032324} (\bibinfo
+  {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bergamaschi}\ \emph {et~al.}(2025)\citenamefont
+  {Bergamaschi}, \citenamefont {Gheissari},\ and\ \citenamefont
+  {Liu}}]{bergamaschi2025mixing}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Bergamaschi}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Gheissari}},\ and\ \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Liu}},\ }\href@noop {} {\bibinfo {title} {Rapid mixing for {Gibbs} states
+  within a logical sector: a dynamical view of self-correcting quantum
+  memories}} (\bibinfo {year} {2025}),\ \Eprint
+  {https://arxiv.org/abs/2507.10976} {arXiv:2507.10976 [quant-ph]} \BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Bravyi}\ and\ \citenamefont
   {Terhal}(2009)}]{selfcorrecting2D}%
   \BibitemOpen
@@ -70,6 +135,26 @@
   {Terhal}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {New
   Journal of Physics}\ }\textbf {\bibinfo {volume} {11}},\ \bibinfo {pages}
   {043029} (\bibinfo {year} {2009})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hong}\ \emph {et~al.}(2025)\citenamefont {Hong},
+  \citenamefont {Guo},\ and\ \citenamefont {Lucas}}]{hong2025trivial}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Hong}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Guo}},\ and\
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Lucas}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Nature Communications}\ }\textbf
+  {\bibinfo {volume} {16}},\ \bibinfo {pages} {316} (\bibinfo {year}
+  {2025})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Guo}\ \emph {et~al.}(2026)\citenamefont {Guo},
+  \citenamefont {Hong}, \citenamefont {Kaufman},\ and\ \citenamefont
+  {Lucas}}]{guo2026neutral}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Guo}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Hong}}, \bibinfo
+  {author} {\bibfnamefont {A.~M.}\ \bibnamefont {Kaufman}},\ and\ \bibinfo
+  {author} {\bibfnamefont {A.}~\bibnamefont {Lucas}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {PRX Quantum}\ }\textbf {\bibinfo
+  {volume} {7}},\ \bibinfo {pages} {010301} (\bibinfo {year}
+  {2026})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Haah}(2011)}]{haah2011cubic}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
@@ -90,20 +175,31 @@
   }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review
   Letters}\ }\textbf {\bibinfo {volume} {111}},\ \bibinfo {pages} {200501}
   (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Stengele}\ \emph {et~al.}(2026)\citenamefont
+  {Stengele}, \citenamefont {Caha}, \citenamefont {Capel},\ and\ \citenamefont
+  {Warzel}}]{stengele2026haah}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Stengele}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Caha}},
+  \bibinfo {author} {\bibfnamefont {{\'A}.}~\bibnamefont {Capel}},\ and\
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Warzel}},\ }\href@noop {}
+  {\bibinfo {title} {Haah's {3D} cubic code thermalizes rapidly}} (\bibinfo
+  {year} {2026}),\ \Eprint {https://arxiv.org/abs/2609.39959} {arXiv:2609.39959
+  [quant-ph]} \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Michnicki}(2014)}]{michnicki2014}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~P.}\ \bibnamefont
   {Michnicki}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
   {Physical Review Letters}\ }\textbf {\bibinfo {volume} {113}},\ \bibinfo
   {pages} {130501} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Siva}\ and\ \citenamefont
-  {Yoshida}(2017)}]{siva2017}%
+\bibitem [{\citenamefont {Williamson}\ and\ \citenamefont
+  {Baspin}(2023)}]{layercodesydney}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
-  {Siva}}\ and\ \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Yoshida}},\
-  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review
-  A}\ }\textbf {\bibinfo {volume} {95}},\ \bibinfo {pages} {032324} (\bibinfo
-  {year} {2017})}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~J.}\ \bibnamefont
+  {Williamson}}\ and\ \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Baspin}},\ }\href@noop {} {\bibinfo {title} {Layer codes}} (\bibinfo {year}
+  {2023}),\ \Eprint {https://arxiv.org/abs/2309.16503} {arXiv:2309.16503
+  [quant-ph]} \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Gu}\ \emph {et~al.}(2026)\citenamefont {Gu},
   \citenamefont {Caha}, \citenamefont {Choe}, \citenamefont {He}, \citenamefont
   {Kubica},\ and\ \citenamefont {Tang}}]{layercodesyale}%
@@ -118,6 +214,12 @@
   \bibinfo {pages} {210601} (\bibinfo {year} {2026})},\ \Eprint
   {https://arxiv.org/abs/2510.06659} {arXiv:2510.06659 [quant-ph]} \BibitemShut
   {NoStop}%
+\bibitem [{\citenamefont {Williamson}(2026)}]{williamson2026layer}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~J.}\ \bibnamefont
+  {Williamson}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review Letters}\ }\textbf {\bibinfo {volume} {137}},\ \bibinfo
+  {pages} {090601} (\bibinfo {year} {2026})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Balasubramanian}\ \emph {et~al.}(2026)\citenamefont
   {Balasubramanian}, \citenamefont {Davydova},\ and\ \citenamefont
   {Lin}}]{selfcorrecting3D}%
@@ -137,12 +239,30 @@
   stability}} (\bibinfo {year} {2026}),\ \Eprint
   {https://arxiv.org/abs/2611.21749} {arXiv:2611.21749 [quant-ph]} \BibitemShut
   {NoStop}%
-\bibitem [{\citenamefont {Davies}(1974)}]{davies1974}%
+\bibitem [{\citenamefont {Delfosse}\ and\ \citenamefont
+  {Nickerson}(2021)}]{delfosse_uf}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~B.}\ \bibnamefont
-  {Davies}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {Communications in Mathematical Physics}\ }\textbf {\bibinfo {volume} {39}},\
-  \bibinfo {pages} {91} (\bibinfo {year} {1974})}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Delfosse}}\ and\ \bibinfo {author} {\bibfnamefont {N.~H.}\ \bibnamefont
+  {Nickerson}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Quantum}\ }\textbf {\bibinfo {volume} {5}},\ \bibinfo {pages} {595}
+  (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Delfosse}\ \emph {et~al.}(2022)\citenamefont
+  {Delfosse}, \citenamefont {Londe},\ and\ \citenamefont
+  {Beverland}}]{delfosse_qldpc_uf}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Delfosse}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Londe}},\
+  and\ \bibinfo {author} {\bibfnamefont {M.~E.}\ \bibnamefont {Beverland}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {IEEE Transactions
+  on Information Theory}\ }\textbf {\bibinfo {volume} {68}},\ \bibinfo {pages}
+  {3187} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kramers}(1940)}]{kramers1940}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~A.}\ \bibnamefont
+  {Kramers}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physica}\ }\textbf {\bibinfo {volume} {7}},\ \bibinfo {pages} {284}
+  (\bibinfo {year} {1940})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Bortz}\ \emph {et~al.}(1975)\citenamefont {Bortz},
   \citenamefont {Kalos},\ and\ \citenamefont {Lebowitz}}]{bkl1975}%
   \BibitemOpen
@@ -152,20 +272,10 @@
   }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Journal of
   Computational Physics}\ }\textbf {\bibinfo {volume} {17}},\ \bibinfo {pages}
   {10} (\bibinfo {year} {1975})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Delfosse}\ and\ \citenamefont
-  {Nickerson}(2021)}]{delfosse_uf}%
+\bibitem [{\citenamefont {Davies}(1974)}]{davies1974}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
-  {Delfosse}}\ and\ \bibinfo {author} {\bibfnamefont {N.~H.}\ \bibnamefont
-  {Nickerson}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {Quantum}\ }\textbf {\bibinfo {volume} {5}},\ \bibinfo {pages} {595}
-  (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Panteleev}\ and\ \citenamefont
-  {Kalachev}(2021)}]{panteleev_bposd}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
-  {Panteleev}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
-  {Kalachev}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {Quantum}\ }\textbf {\bibinfo {volume} {5}},\ \bibinfo {pages} {585}
-  (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~B.}\ \bibnamefont
+  {Davies}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Communications in Mathematical Physics}\ }\textbf {\bibinfo {volume} {39}},\
+  \bibinfo {pages} {91} (\bibinfo {year} {1974})}\BibitemShut {NoStop}%
 \end{thebibliography}%

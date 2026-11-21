@@ -1,0 +1,296 @@
+{
+  "auxiliary_cuts": {
+    "2x2": {
+      "num_states": 4096,
+      "num_hyperedges": 9,
+      "wall_subedges_per_wall": 5,
+      "min_positive_V_rep": 2,
+      "max_W_over_V_rep": 2.0,
+      "normalized_cut_constant": 0.4,
+      "num_extremizers": 40,
+      "max_rounded_majority_over_V_rep": 0.4,
+      "num_rounded_extremizers": 92,
+      "literal_xor_violations": 1163,
+      "sha256": "291d55bfaacd40fd7154ebc68a846cfd75001f3b9cafc533c26510424947c35a"
+    },
+    "3x3": {
+      "num_states": 16777216,
+      "num_hyperedges": 27,
+      "wall_subedges_per_wall": 7,
+      "min_positive_V_rep": 2,
+      "max_W_over_V_rep": 2.0,
+      "normalized_cut_constant": 0.2857142857142857,
+      "num_extremizers": 24,
+      "max_rounded_majority_over_V_rep": 0.2857142857142857,
+      "num_rounded_extremizers": 84,
+      "sha256": "aaeb924af328a20b27c130fdd7a9efd51b6b0c4c57b03f18fe64bb1eac62bd37"
+    }
+  },
+  "physical_sheaf_and_pockets": {
+    "coboundary_2x2_Z_weld": {
+      "N": 29,
+      "M_X": 16,
+      "M_Z": 12,
+      "min_phys_int_over_V_rep": 1.0,
+      "max_phys_int_over_V_rep": 2.2,
+      "max_W_bnd_over_phys_int": 1.0
+    },
+    "torus_3x3_R_X_pockets": {
+      "L2_1rib": {
+        "N": 171,
+        "M_X": 72,
+        "rank_H_X": 71,
+        "M_Z": 108,
+        "rank_H_Z": 98,
+        "K": 2,
+        "meta_Z_pockets": 10
+      },
+      "L3_1rib": {
+        "N": 369,
+        "M_X": 162,
+        "rank_H_X": 161,
+        "M_Z": 216,
+        "rank_H_Z": 206,
+        "K": 2,
+        "meta_Z_pockets": 10
+      },
+      "L3_2rib": {
+        "N": 396,
+        "M_X": 162,
+        "rank_H_X": 161,
+        "M_Z": 270,
+        "rank_H_Z": 233,
+        "K": 2,
+        "meta_Z_pockets": 37
+      }
+    }
+  },
+  "ablations": {
+    "cb3rib_torus": [
+      {
+        "step": 1,
+        "iter": "X",
+        "N": 38,
+        "K": 3,
+        "wt1_X_cols": 0,
+        "wt1_Z_cols": 0
+      },
+      {
+        "step": 2,
+        "iter": "Z",
+        "N": 444,
+        "K": 17,
+        "wt1_X_cols": 0,
+        "wt1_Z_cols": 16
+      },
+      {
+        "step": 3,
+        "iter": "X",
+        "N": 3462,
+        "K": 98,
+        "wt1_X_cols": 0,
+        "wt1_Z_cols": 40
+      },
+      {
+        "step": 4,
+        "iter": "Z",
+        "N": 40264,
+        "K": 1004,
+        "wt1_X_cols": 0,
+        "wt1_Z_cols": 1000
+      }
+    ],
+    "cb3rib_planar_cycle1": {
+      "N": 222,
+      "K": 9,
+      "wt1_nontrivial_Z_logical_count": 8,
+      "wt1_nontrivial_Z_logical_qubits": [
+        91,
+        93,
+        187,
+        189,
+        195,
+        196,
+        202,
+        203
+      ],
+      "full_4arm_cycle1_distances": [
+        11,
+        10
+      ],
+      "cb3rib_seed_dressed_subsystem_distances": [
+        6,
+        5
+      ]
+    },
+    "mixed_1step_planar": [
+      {
+        "step": 1,
+        "N": 23,
+        "M_X": 8,
+        "rank_H_X": 8,
+        "M_Z": 12,
+        "rank_H_Z": 12,
+        "K": 3,
+        "min_dX": null,
+        "min_X_logical_supp": null,
+        "min_dZ": 1,
+        "min_Z_logical_supp": [
+          4
+        ],
+        "all_K3_Z_basis_weights": [
+          1,
+          1,
+          1
+        ],
+        "max_dressed_dZ_over_all_logical_classes": 1
+      },
+      {
+        "step": 2,
+        "N": 271,
+        "M_X": 78,
+        "rank_H_X": 78,
+        "M_Z": 144,
+        "rank_H_Z": 144,
+        "K": 49
+      },
+      {
+        "step": 3,
+        "N": 3227,
+        "M_X": 762,
+        "rank_H_X": 762,
+        "M_Z": 1728,
+        "rank_H_Z": 1728,
+        "K": 737
+      }
+    ]
+  },
+  "packing_recurrences": {
+    "L=2_isotropic": [
+      {
+        "step_q": 0,
+        "faces": 1,
+        "expected_m_pow_q": 1,
+        "N_q": 2,
+        "tanner_diameter_D_q": 1,
+        "L_pow_q": 1
+      },
+      {
+        "step_q": 1,
+        "faces": 12,
+        "expected_m_pow_q": 12,
+        "N_q": 19,
+        "tanner_diameter_D_q": 4,
+        "L_pow_q": 2
+      },
+      {
+        "step_q": 2,
+        "faces": 144,
+        "expected_m_pow_q": 144,
+        "N_q": 323,
+        "tanner_diameter_D_q": 11,
+        "L_pow_q": 4
+      },
+      {
+        "step_q": 3,
+        "faces": 1728,
+        "expected_m_pow_q": 1728,
+        "N_q": 2911,
+        "tanner_diameter_D_q": 23,
+        "L_pow_q": 8
+      }
+    ],
+    "L=3_isotropic": [
+      {
+        "step_q": 0,
+        "faces": 1,
+        "expected_m_pow_q": 1,
+        "N_q": 2,
+        "tanner_diameter_D_q": 1,
+        "L_pow_q": 1
+      },
+      {
+        "step_q": 1,
+        "faces": 24,
+        "expected_m_pow_q": 24,
+        "N_q": 41,
+        "tanner_diameter_D_q": 6,
+        "L_pow_q": 3
+      },
+      {
+        "step_q": 2,
+        "faces": 576,
+        "expected_m_pow_q": 576,
+        "N_q": 1271,
+        "tanner_diameter_D_q": 22,
+        "L_pow_q": 9
+      },
+      {
+        "step_q": 3,
+        "faces": 13824,
+        "expected_m_pow_q": 13824,
+        "N_q": 24449,
+        "tanner_diameter_D_q": 67,
+        "L_pow_q": 27
+      }
+    ]
+  },
+  "exact_dynamics_and_wire_gibbs": {
+    "wire_gibbs_marginalization": [
+      {
+        "beta": 1.5,
+        "w": 2,
+        "beta_eff": 0.8554401710137967,
+        "max_tv_diff": 6.938893903907228e-18
+      },
+      {
+        "beta": 1.5,
+        "w": 3,
+        "beta_eff": 0.5241345396871032,
+        "max_tv_diff": 3.122502256758253e-17
+      },
+      {
+        "beta": 3.0,
+        "w": 2,
+        "beta_eff": 2.309328504577786,
+        "max_tv_diff": 2.7755575615628914e-17
+      },
+      {
+        "beta": 3.0,
+        "w": 3,
+        "beta_eff": 1.9079705456478402,
+        "max_tv_diff": 1.249000902703301e-16
+      },
+      {
+        "beta": 5.5,
+        "w": 2,
+        "beta_eff": 4.806869521001384,
+        "max_tv_diff": 1.3877787807814457e-17
+      },
+      {
+        "beta": 5.5,
+        "w": 3,
+        "beta_eff": 4.401432247960949,
+        "max_tv_diff": 9.71445146547012e-17
+      }
+    ],
+    "exact_ctmc_4_1_2": [
+      {
+        "beta": 2.0,
+        "detailed_balance_residual": 0.0,
+        "exact_mfpt_tau": 2.9855745801829854
+      },
+      {
+        "beta": 3.5,
+        "detailed_balance_residual": 4.336808689942018e-19,
+        "exact_mfpt_tau": 11.543516883467813
+      },
+      {
+        "beta": 5.0,
+        "detailed_balance_residual": 1.0842021724855044e-19,
+        "exact_mfpt_tau": 49.97217602535873
+      }
+    ]
+  },
+  "elapsed_seconds": 5.12
+}
