@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{27}%
+\begin{thebibliography}{26}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -135,14 +135,6 @@
   {Terhal}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {New
   Journal of Physics}\ }\textbf {\bibinfo {volume} {11}},\ \bibinfo {pages}
   {043029} (\bibinfo {year} {2009})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Breuckmann}\ and\ \citenamefont
-  {Terhal}(2016)}]{breuckmann2016hyperbolic}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.~P.}\ \bibnamefont
-  {Breuckmann}}\ and\ \bibinfo {author} {\bibfnamefont {B.~M.}\ \bibnamefont
-  {Terhal}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {IEEE
-  Transactions on Information Theory}\ }\textbf {\bibinfo {volume} {62}},\
-  \bibinfo {pages} {3731} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Hong}\ \emph {et~al.}(2025)\citenamefont {Hong},
   \citenamefont {Guo},\ and\ \citenamefont {Lucas}}]{hong2025trivial}%
   \BibitemOpen
@@ -163,6 +155,12 @@
   {\bibfield  {journal} {\bibinfo  {journal} {PRX Quantum}\ }\textbf {\bibinfo
   {volume} {7}},\ \bibinfo {pages} {010301} (\bibinfo {year}
   {2026})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Michnicki}(2014)}]{michnicki2014}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~P.}\ \bibnamefont
+  {Michnicki}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review Letters}\ }\textbf {\bibinfo {volume} {113}},\ \bibinfo
+  {pages} {130501} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Haah}(2011)}]{haah2011cubic}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
@@ -194,12 +192,6 @@
   {\bibinfo {title} {Haah's {3D} cubic code thermalizes rapidly}} (\bibinfo
   {year} {2026}),\ \Eprint {https://arxiv.org/abs/2609.39959} {arXiv:2609.39959
   [quant-ph]} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Michnicki}(2014)}]{michnicki2014}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~P.}\ \bibnamefont
-  {Michnicki}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {Physical Review Letters}\ }\textbf {\bibinfo {volume} {113}},\ \bibinfo
-  {pages} {130501} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Williamson}\ and\ \citenamefont
   {Baspin}(2023)}]{layercodesydney}%
   \BibitemOpen
@@ -288,10 +280,14 @@
   {Kalachev}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
   {Quantum}\ }\textbf {\bibinfo {volume} {5}},\ \bibinfo {pages} {585}
   (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Kramers}(1940)}]{kramers1940}%
+\bibitem [{\citenamefont {Qiu}\ \emph {et~al.}(2020)\citenamefont {Qiu},
+  \citenamefont {Zoller},\ and\ \citenamefont {Li}}]{qiu2020ising}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~A.}\ \bibnamefont
-  {Kramers}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {Physica}\ }\textbf {\bibinfo {volume} {7}},\ \bibinfo {pages} {284}
-  (\bibinfo {year} {1940})}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {X.}~\bibnamefont
+  {Qiu}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Zoller}},\ and\
+  \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont {Li}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {PRX Quantum}\ }\textbf {\bibinfo
+  {volume} {1}},\ \bibinfo {pages} {020311} (\bibinfo {year} {2020})},\ \Eprint
+  {https://arxiv.org/abs/2008.00006} {arXiv:2008.00006 [quant-ph]} \BibitemShut
+  {NoStop}%
 \end{thebibliography}%

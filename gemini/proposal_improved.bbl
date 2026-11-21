@@ -155,6 +155,12 @@
   {\bibfield  {journal} {\bibinfo  {journal} {PRX Quantum}\ }\textbf {\bibinfo
   {volume} {7}},\ \bibinfo {pages} {010301} (\bibinfo {year}
   {2026})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Michnicki}(2014)}]{michnicki2014}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~P.}\ \bibnamefont
+  {Michnicki}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review Letters}\ }\textbf {\bibinfo {volume} {113}},\ \bibinfo
+  {pages} {130501} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Haah}(2011)}]{haah2011cubic}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
@@ -186,12 +192,6 @@
   {\bibinfo {title} {Haah's {3D} cubic code thermalizes rapidly}} (\bibinfo
   {year} {2026}),\ \Eprint {https://arxiv.org/abs/2609.39959} {arXiv:2609.39959
   [quant-ph]} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Michnicki}(2014)}]{michnicki2014}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~P.}\ \bibnamefont
-  {Michnicki}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {Physical Review Letters}\ }\textbf {\bibinfo {volume} {113}},\ \bibinfo
-  {pages} {130501} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Williamson}\ and\ \citenamefont
   {Baspin}(2023)}]{layercodesydney}%
   \BibitemOpen
@@ -239,6 +239,12 @@
   stability}} (\bibinfo {year} {2026}),\ \Eprint
   {https://arxiv.org/abs/2611.21749} {arXiv:2611.21749 [quant-ph]} \BibitemShut
   {NoStop}%
+\bibitem [{\citenamefont {Davies}(1974)}]{davies1974}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~B.}\ \bibnamefont
+  {Davies}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Communications in Mathematical Physics}\ }\textbf {\bibinfo {volume} {39}},\
+  \bibinfo {pages} {91} (\bibinfo {year} {1974})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Bortz}\ \emph {et~al.}(1975)\citenamefont {Bortz},
   \citenamefont {Kalos},\ and\ \citenamefont {Lebowitz}}]{bkl1975}%
   \BibitemOpen
@@ -248,12 +254,6 @@
   }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Journal of
   Computational Physics}\ }\textbf {\bibinfo {volume} {17}},\ \bibinfo {pages}
   {10} (\bibinfo {year} {1975})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Davies}(1974)}]{davies1974}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~B.}\ \bibnamefont
-  {Davies}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {Communications in Mathematical Physics}\ }\textbf {\bibinfo {volume} {39}},\
-  \bibinfo {pages} {91} (\bibinfo {year} {1974})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Delfosse}\ and\ \citenamefont
   {Nickerson}(2021)}]{delfosse_uf}%
   \BibitemOpen
@@ -280,10 +280,14 @@
   {Kalachev}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
   {Quantum}\ }\textbf {\bibinfo {volume} {5}},\ \bibinfo {pages} {585}
   (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Kramers}(1940)}]{kramers1940}%
+\bibitem [{\citenamefont {Qiu}\ \emph {et~al.}(2020)\citenamefont {Qiu},
+  \citenamefont {Zoller},\ and\ \citenamefont {Li}}]{qiu2020ising}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~A.}\ \bibnamefont
-  {Kramers}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {Physica}\ }\textbf {\bibinfo {volume} {7}},\ \bibinfo {pages} {284}
-  (\bibinfo {year} {1940})}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {X.}~\bibnamefont
+  {Qiu}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Zoller}},\ and\
+  \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont {Li}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {PRX Quantum}\ }\textbf {\bibinfo
+  {volume} {1}},\ \bibinfo {pages} {020311} (\bibinfo {year} {2020})},\ \Eprint
+  {https://arxiv.org/abs/2008.00006} {arXiv:2008.00006 [quant-ph]} \BibitemShut
+  {NoStop}%
 \end{thebibliography}%

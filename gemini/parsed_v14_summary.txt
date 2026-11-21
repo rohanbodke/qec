@@ -1,0 +1,277 @@
+V14 Unified Summary: KMC=465, PAIRED_KMC=47, CADENCE=36, EXCUR=40, RGFLOW14=20 | errors=0 | timeouts=4
+  TIMEOUTS: ['cluster_v14_results.txt:cadence__sq_iso_L2r1_s4_X_err__b5.50_eta0', 'cluster_v14_results.txt:cadence__sq_iso_L2r1_s4_Z_err__b5.50_eta0', 'cluster_v14_results.txt:cadence__rottor_iso_L2r1_s4_X_err__b5.50_eta0', 'cluster_v14_results.txt:cadence__rottor_iso_L2r1_s4_Z_err__b5.50_eta0']
+
+=== 1. TWO-SECTOR LIFETIMES, SECTORS, & EXACT CENSORING BRACKETS ===
+  [rottor_iso_L2r1_s1 (N=38, K=2)] slope=1.92±0.08 win=[5.0, 6.5]
+    b=5.00: tau_Q=8.532e+02±8.34e+01 | tau_X=1.594e+05[0/120] | tau_Z=8.540e+02[0/120] (lim=Z)
+    b=5.50: tau_Q=1.958e+03±1.71e+02 | tau_X=6.487e+05[0/120] | tau_Z=1.967e+03[0/120] (lim=Z)
+    b=6.00: tau_Q=5.274e+03±5.41e+02 | tau_X=3.383e+06[0/120] | tau_Z=5.285e+03[0/120] (lim=Z)
+    b=6.25: tau_Q=8.854e+03±6.37e+02 | tau_X=7.388e+06[0/120] | tau_Z=8.854e+03[0/120] (lim=Z)
+    b=6.50: tau_Q=1.477e+04±1.38e+03 | tau_X=1.700e+07[0/120] | tau_Z=1.477e+04[0/120] (lim=Z)
+  [rottor_iso_L2r1_s2 (N=646, K=2)] slope=3.32±0.08 win=[5.0, 6.5]
+    b=5.00: tau_Q=1.457e+03±1.32e+02 | tau_X=1.457e+03[0/96] | tau_Z=1.031e+06[0/96] (lim=X)
+    b=5.50: tau_Q=8.866e+03±8.73e+02 | tau_X=8.920e+03[0/96] | tau_Z=1.147e+07[0/96] (lim=X)
+    b=6.00: tau_Q=4.890e+04±5.12e+03 | tau_X=4.890e+04[0/96] | tau_Z=1.330e+08[0/96] (lim=X)
+    b=6.25: tau_Q=9.370e+04±9.44e+03 | tau_X=9.370e+04[0/96] | tau_Z=5.887e+08[0/96] (lim=X)
+    b=6.50: tau_Q=2.124e+05±2.30e+04 | tau_X=2.124e+05[0/96] | tau_Z=1.947e+09[0/96] (lim=X)
+  [rottor_iso_L2r1_s3 (N=5822, K=2)] slope=5.06±0.31 win=[5.0, 6.5]
+    b=5.00: tau_Q=4.539e+02±4.42e+01 [brk +0.00%] | tau_X=8.181e+07[14/64] | tau_Z=4.539e+02[0/64] (lim=Z)
+    b=5.50: tau_Q=2.652e+03±2.56e+02 [brk +0.00%] | tau_X=4.075e+08[57/64] | tau_Z=2.652e+03[0/64] (lim=Z)
+    b=6.00: tau_Q=4.925e+04±6.21e+03 [brk +0.00%] | tau_X=1.178e+09[23/24] | tau_Z=4.925e+04[0/64] (lim=Z)
+    b=6.25: tau_Q=2.035e+05±2.73e+04 [brk +0.00%] | tau_X=2.043e+09[24/24] | tau_Z=2.035e+05[0/64] (lim=Z)
+    b=6.50: tau_Q=7.991e+05±9.04e+04 [brk +0.00%] | tau_X=3.280e+09[23/24] | tau_Z=7.991e+05[0/64] (lim=Z)
+  [rottor_iso_L2r1_s4 (N=94774, K=2)] slope=5.04±0.41 win=[5.0, 6.5]
+    b=5.00: tau_Q=2.962e+02±2.12e+01 [brk +0.00%] | tau_X=2.962e+02[0/36] | tau_Z=7.519e+06[36/36] (lim=X)
+    b=5.50: tau_Q=1.763e+03±1.61e+02 [brk +0.00%] | tau_X=1.763e+03[0/36] | tau_Z=2.187e+07[36/36] (lim=X)
+    b=6.00: tau_Q=3.248e+04±4.76e+03 [brk +0.00%] | tau_X=3.248e+04[0/36] | tau_Z=6.150e+07[24/24] (lim=X)
+    b=6.25: tau_Q=1.473e+05±2.22e+04 [brk +0.00%] | tau_X=1.472e+05[0/36] | tau_Z=1.024e+08[24/24] (lim=X)
+    b=6.50: tau_Q=9.301e+05±1.76e+05 [brk +0.00%] | tau_X=9.301e+05[0/36] | tau_Z=1.702e+08[24/24] (lim=X)
+  [sq_L3r1_s1 (N=41, K=1)] slope=0.94±0.05 win=[5.0, 7.5]
+    b=4.50: tau_Q=2.380e+01±2.76e+00 | tau_X=1.612e+03[0/120] | tau_Z=2.475e+01[0/120] (lim=Z)
+    b=5.00: tau_Q=2.852e+01±2.98e+00 | tau_X=4.531e+03[0/120] | tau_Z=2.896e+01[0/120] (lim=Z)
+    b=5.50: tau_Q=5.356e+01±5.91e+00 | tau_X=1.541e+04[0/120] | tau_Z=5.408e+01[0/120] (lim=Z)
+    b=6.00: tau_Q=8.142e+01±8.38e+00 | tau_X=4.313e+04[0/120] | tau_Z=8.271e+01[0/120] (lim=Z)
+    b=6.25: tau_Q=1.278e+02±1.83e+01 | tau_X=7.633e+04[0/120] | tau_Z=1.283e+02[0/120] (lim=Z)
+    b=6.50: tau_Q=1.404e+02±1.39e+01 | tau_X=1.283e+05[0/120] | tau_Z=1.408e+02[0/120] (lim=Z)
+    b=7.00: tau_Q=2.338e+02±3.16e+01 | tau_X=2.626e+05[0/120] | tau_Z=2.342e+02[0/120] (lim=Z)
+    b=7.50: tau_Q=3.005e+02±2.70e+01 | tau_X=9.269e+05[0/120] | tau_Z=3.006e+02[0/120] (lim=Z)
+  [sq_L3r1_s2 (N=1271, K=1)] slope=2.17±0.07 win=[5.0, 7.5]
+    b=4.50: tau_Q=9.129e+01±1.09e+01 | tau_X=9.377e+01[0/80] | tau_Z=2.150e+03[0/80] (lim=X)
+    b=5.00: tau_Q=3.046e+02±5.27e+01 | tau_X=3.188e+02[0/80] | tau_Z=1.272e+04[0/80] (lim=X)
+    b=5.50: tau_Q=1.081e+03±1.63e+02 | tau_X=1.095e+03[0/80] | tau_Z=6.622e+04[0/80] (lim=X)
+    b=6.00: tau_Q=3.675e+03±5.93e+02 | tau_X=3.755e+03[0/80] | tau_Z=3.285e+05[0/80] (lim=X)
+    b=6.25: tau_Q=5.975e+03±7.43e+02 | tau_X=6.064e+03[0/80] | tau_Z=9.821e+05[0/80] (lim=X)
+    b=6.50: tau_Q=8.827e+03±1.28e+03 | tau_X=8.826e+03[0/80] | tau_Z=1.757e+06[0/80] (lim=X)
+    b=7.00: tau_Q=2.986e+04±5.15e+03 | tau_X=3.024e+04[0/80] | tau_Z=1.015e+07[0/80] (lim=X)
+    b=7.50: tau_Q=7.521e+04±9.24e+03 | tau_X=7.521e+04[0/80] | tau_Z=4.160e+07[0/80] (lim=X)
+  [sq_L3r1_s3 (N=24449, K=1)] slope=2.80±0.20 win=[5.0, 7.5]
+    b=4.50: tau_Q=4.790e+01±4.56e+00 | tau_X=7.411e+03[0/32] | tau_Z=4.790e+01[0/32] (lim=Z)
+    b=5.00: tau_Q=1.368e+02±2.02e+01 | tau_X=1.248e+05[0/32] | tau_Z=1.368e+02[0/32] (lim=Z)
+    b=5.50: tau_Q=3.246e+02±3.41e+01 | tau_X=3.363e+06[0/32] | tau_Z=3.246e+02[0/32] (lim=Z)
+    b=6.00: tau_Q=1.212e+03±1.57e+02 [brk +0.00%] | tau_X=1.426e+07[8/16] | tau_Z=1.212e+03[0/32] (lim=Z)
+    b=6.25: tau_Q=2.093e+03±2.76e+02 [brk +0.00%] | tau_X=2.230e+07[11/16] | tau_Z=2.093e+03[0/32] (lim=Z)
+    b=6.50: tau_Q=3.858e+03±6.11e+02 [brk +0.00%] | tau_X=3.411e+07[15/16] | tau_Z=3.858e+03[0/32] (lim=Z)
+    b=7.00: tau_Q=2.542e+04±4.76e+03 [brk +0.00%] | tau_X=6.374e+07[16/16] | tau_Z=2.542e+04[0/32] (lim=Z)
+    b=7.50: tau_Q=1.708e+05±3.07e+04 [brk +0.00%] | tau_X=1.104e+08[16/16] | tau_Z=1.708e+05[0/32] (lim=Z)
+  [sq_aniso_L3r2_s2 (N=1480, K=1)] slope=3.21±0.11 win=[5.0, 6.5]
+    b=5.00: tau_Q=1.454e+03±1.61e+02 | tau_X=1.517e+03[0/80] | tau_Z=1.584e+05[0/80] (lim=X)
+    b=5.50: tau_Q=8.801e+03±2.16e+03 | tau_X=9.297e+03[0/80] | tau_Z=7.896e+05[0/80] (lim=X)
+    b=6.00: tau_Q=4.281e+04±4.75e+03 | tau_X=4.348e+04[0/80] | tau_Z=4.521e+06[0/80] (lim=X)
+    b=6.50: tau_Q=1.736e+05±1.89e+04 | tau_X=1.736e+05[0/80] | tau_Z=1.539e+07[0/80] (lim=X)
+  [sq_bdl_8_8_r2 (N=56312, K=1)] slope=1.31±0.15 win=[5.0, 7.0]
+    b=5.00: tau_Q=6.389e+01±5.70e+00 | tau_X=6.389e+01[0/28] | tau_Z=3.065e+03[0/28] (lim=X)
+    b=5.50: tau_Q=1.232e+02±1.67e+01 | tau_X=1.232e+02[0/28] | tau_Z=1.776e+04[0/28] (lim=X)
+    b=6.00: tau_Q=1.783e+02±1.36e+01 | tau_X=1.783e+02[0/28] | tau_Z=1.898e+05[0/28] (lim=X)
+    b=6.50: tau_Q=3.943e+02±3.31e+01 [brk +0.00%] | tau_X=3.942e+02[0/28] | tau_Z=1.193e+06[1/28] (lim=X)
+    b=7.00: tau_Q=1.168e+03±1.70e+02 [brk +0.00%] | tau_X=1.168e+03[0/28] | tau_Z=7.990e+06[3/28] (lim=X)
+  [sq_iso_L2r1_s1 (N=19, K=1)] slope=1.04±0.10 win=[5.0, 6.5]
+    b=5.00: tau_Q=1.486e+01±1.33e+00 | tau_X=9.652e+03[0/120] | tau_Z=1.491e+01[0/120] (lim=Z)
+    b=5.50: tau_Q=3.202e+01±2.69e+00 | tau_X=2.395e+04[0/120] | tau_Z=3.203e+01[0/120] (lim=Z)
+    b=6.00: tau_Q=4.616e+01±4.03e+00 | tau_X=5.451e+04[0/120] | tau_Z=4.616e+01[0/120] (lim=Z)
+    b=6.25: tau_Q=6.538e+01±6.41e+00 | tau_X=1.025e+05[0/120] | tau_Z=6.540e+01[0/120] (lim=Z)
+    b=6.50: tau_Q=7.233e+01±5.99e+00 | tau_X=1.592e+05[0/120] | tau_Z=7.233e+01[0/120] (lim=Z)
+  [sq_iso_L2r1_s2 (N=323, K=1)] slope=2.12±0.09 win=[5.0, 6.5]
+    b=5.00: tau_Q=8.461e+02±8.88e+01 | tau_X=1.273e+03[0/96] | tau_Z=4.539e+03[0/96] (lim=X)
+    b=5.50: tau_Q=2.043e+03±2.19e+02 | tau_X=2.682e+03[0/96] | tau_Z=1.252e+04[0/96] (lim=X)
+    b=6.00: tau_Q=6.155e+03±7.32e+02 | tau_X=7.968e+03[0/96] | tau_Z=4.650e+04[0/96] (lim=X)
+    b=6.25: tau_Q=1.250e+04±1.47e+03 | tau_X=1.696e+04[0/96] | tau_Z=7.594e+04[0/96] (lim=X)
+    b=6.50: tau_Q=1.888e+04±2.04e+03 | tau_X=2.421e+04[0/96] | tau_Z=1.316e+05[0/96] (lim=X)
+  [sq_iso_L2r1_s3 (N=2911, K=1)] slope=2.94±0.15 win=[5.0, 6.5]
+    b=5.00: tau_Q=4.541e+02±4.46e+01 [brk +0.00%] | tau_X=7.240e+06[5/64] | tau_Z=4.541e+02[0/64] (lim=Z)
+    b=5.50: tau_Q=1.502e+03±1.99e+02 [brk +0.00%] | tau_X=3.800e+07[29/64] | tau_Z=1.502e+03[0/64] (lim=Z)
+    b=6.00: tau_Q=6.913e+03±1.00e+03 [brk +0.00%] | tau_X=9.249e+07[57/64] | tau_Z=6.913e+03[0/64] (lim=Z)
+    b=6.25: tau_Q=1.637e+04±2.09e+03 [brk +0.00%] | tau_X=1.251e+08[62/64] | tau_Z=1.637e+04[0/64] (lim=Z)
+    b=6.50: tau_Q=4.806e+04±1.02e+04 [brk +0.00%] | tau_X=1.623e+08[62/64] | tau_Z=4.806e+04[0/64] (lim=Z)
+  [sq_iso_L2r1_s4 (N=47387, K=1)] slope=5.06±0.20 win=[5.0, 6.5]
+    b=5.00: tau_Q=4.011e+02±3.27e+01 [brk +0.00%] | tau_X=4.011e+02[0/36] | tau_Z=4.227e+06[15/36] (lim=X)
+    b=5.50: tau_Q=3.402e+03±7.12e+02 [brk +0.00%] | tau_X=3.402e+03[0/36] | tau_Z=1.331e+07[33/36] (lim=X)
+    b=6.00: tau_Q=4.238e+04±6.39e+03 [brk +0.00%] | tau_X=4.238e+04[0/36] | tau_Z=2.629e+07[36/36] (lim=X)
+    b=6.25: tau_Q=1.839e+05±2.85e+04 [brk +0.00%] | tau_X=1.839e+05[0/36] | tau_Z=3.558e+07[36/36] (lim=X)
+    b=6.50: tau_Q=1.055e+06±1.53e+05 [brk +0.00%] | tau_X=1.055e+06[0/36] | tau_Z=4.765e+07[36/36] (lim=X)
+  [sq_iso_L2r1_s5 (N=423559, K=1)] slope=6.14±0.28 win=[5.5, 6.5]
+    b=5.50: tau_Q=2.619e+03±3.62e+02 [brk +0.00%] | tau_X=9.429e+05[12/12] | tau_Z=2.619e+03[0/20] (lim=Z)
+    b=6.00: tau_Q=4.167e+04±5.78e+03 [brk +0.00%] | tau_X=1.766e+06[12/12] | tau_Z=4.167e+04[0/20] (lim=Z)
+    b=6.25: tau_Q=2.714e+05±9.17e+04 [brk +0.00%] | tau_X=2.371e+06[12/12] | tau_Z=2.714e+05[0/20] (lim=Z)
+    b=6.50: tau_Q=1.248e+06±2.09e+05 [brk +1.17%] | tau_X=3.153e+06[12/12] | tau_Z=1.262e+06[0/20] (lim=Z)
+  [sq_z3_3_5_r1 (N=3067, K=1)] slope=2.37±0.09 win=[5.0, 7.0]
+    b=5.00: tau_Q=1.151e+02±1.08e+01 | tau_X=1.285e+02[0/80] | tau_Z=1.027e+03[0/80] (lim=X)
+    b=5.50: tau_Q=2.975e+02±3.45e+01 | tau_X=3.099e+02[0/80] | tau_Z=6.405e+03[0/80] (lim=X)
+    b=6.00: tau_Q=1.227e+03±1.75e+02 | tau_X=1.281e+03[0/80] | tau_Z=4.795e+04[0/80] (lim=X)
+    b=6.50: tau_Q=4.352e+03±5.89e+02 | tau_X=4.480e+03[0/80] | tau_Z=2.347e+05[0/80] (lim=X)
+    b=7.00: tau_Q=1.151e+04±1.71e+03 | tau_X=1.157e+04[0/80] | tau_Z=8.481e+05[0/80] (lim=X)
+  [sq_z3_4_6_r2 (N=10280, K=1)] slope=2.45±0.14 win=[5.0, 7.0]
+    b=5.00: tau_Q=1.367e+02±1.48e+01 | tau_X=1.370e+02[0/48] | tau_Z=6.944e+03[0/48] (lim=X)
+    b=5.50: tau_Q=3.210e+02±3.85e+01 | tau_X=3.210e+02[0/48] | tau_Z=4.448e+04[0/48] (lim=X)
+    b=6.00: tau_Q=1.100e+03±1.67e+02 | tau_X=1.100e+03[0/48] | tau_Z=2.536e+05[0/48] (lim=X)
+    b=6.50: tau_Q=5.617e+03±1.15e+03 | tau_X=5.622e+03[0/48] | tau_Z=1.780e+06[0/48] (lim=X)
+    b=7.00: tau_Q=1.698e+04±2.35e+03 [brk +0.00%] | tau_X=1.706e+04[0/48] | tau_Z=1.516e+07[1/48] (lim=X)
+
+=== 1B. COMPLETE-CYCLE & HALF-STEP GAINS G(beta) ===
+  [planar_C1_to_C2: sq_iso_L2r1_s2 -> sq_iso_L2r1_s4]
+    b=5.00: G=0.474±0.064 (95% CI [0.361, 0.615]), N_ratio=146.71x
+    b=5.50: G=1.666±0.401 (95% CI [1.079, 2.591]), N_ratio=146.71x
+    b=6.00: G=6.886±1.331 (95% CI [4.592, 9.946]), N_ratio=146.71x
+    b=6.25: G=14.710±2.922 (95% CI [9.875, 21.215]), N_ratio=146.71x
+    b=6.50: G=55.899±10.387 (95% CI [38.228, 79.262]), N_ratio=146.71x
+  [planar_C2_to_s5_half: sq_iso_L2r1_s4 -> sq_iso_L2r1_s5]
+    b=5.50: G=0.770±0.195 (95% CI [0.480, 1.216]), N_ratio=8.94x
+    b=6.00: G=0.983±0.208 (95% CI [0.659, 1.487]), N_ratio=8.94x
+    b=6.25: G=1.476±0.567 (95% CI [0.692, 2.838]), N_ratio=8.94x
+    b=6.50: G=1.182±0.278 (95% CI [0.761, 1.818]), N_ratio=8.94x
+  [torus_C1_to_C2: rottor_iso_L2r1_s2 -> rottor_iso_L2r1_s4]
+    b=5.00: G=0.203±0.024 (95% CI [0.161, 0.254]), N_ratio=146.71x
+    b=5.50: G=0.199±0.027 (95% CI [0.153, 0.259]), N_ratio=146.71x
+    b=6.00: G=0.664±0.121 (95% CI [0.465, 0.930]), N_ratio=146.71x
+    b=6.25: G=1.572±0.291 (95% CI [1.078, 2.226]), N_ratio=146.71x
+    b=6.50: G=4.378±0.972 (95% CI [2.854, 6.594]), N_ratio=146.71x
+  [planar_3x3_C1_to_s3_half: sq_L3r1_s2 -> sq_L3r1_s3]
+    b=4.50: G=0.525±0.082 (95% CI [0.397, 0.705]), N_ratio=19.24x
+    b=5.00: G=0.449±0.105 (95% CI [0.289, 0.699]), N_ratio=19.24x
+    b=5.50: G=0.300±0.056 (95% CI [0.212, 0.438]), N_ratio=19.24x
+    b=6.00: G=0.330±0.072 (95% CI [0.220, 0.499]), N_ratio=19.24x
+    b=6.25: G=0.350±0.064 (95% CI [0.246, 0.498]), N_ratio=19.24x
+    b=6.50: G=0.437±0.099 (95% CI [0.285, 0.667]), N_ratio=19.24x
+    b=7.00: G=0.851±0.224 (95% CI [0.515, 1.386]), N_ratio=19.24x
+    b=7.50: G=2.271±0.510 (95% CI [1.426, 3.393]), N_ratio=19.24x
+
+=== 2. SELECTED-SCALE COUPLING INTERVENTION H(lambda; U) ===
+  [rottor_iso_L2r1_s4 :: macro_weld]
+    b=5.50 | lam=0.2: Q=1.63e+00(0.001x, X=1.71e+00, Z=2.19e+00) | lam=0.4: Q=1.17e+01(0.007x, X=1.17e+01, Z=5.29e+01) | lam=0.6: Q=6.13e+01(0.035x, X=6.13e+01, Z=1.91e+04) | lam=0.8: Q=4.22e+02(0.239x, X=4.22e+02, Z=2.21e+07)
+    b=6.00 | lam=0.2: Q=1.78e+00(0.000x, X=1.79e+00, Z=2.96e+00) | lam=0.4: Q=1.64e+01(0.001x, X=1.64e+01, Z=1.54e+02) | lam=0.6: Q=1.47e+02(0.005x, X=1.47e+02, Z=1.00e+06) | lam=0.8: Q=1.87e+03(0.057x, X=1.87e+03, Z=3.56e+07)
+    b=6.25 | lam=0.2: Q=2.11e+00(0.000x, X=2.24e+00, Z=3.11e+00) | lam=0.4: Q=2.44e+01(0.000x, X=2.44e+01, Z=2.72e+02) | lam=0.6: Q=2.61e+02(0.002x, X=2.61e+02, Z=5.31e+06) | lam=0.8: Q=5.26e+03(0.036x, X=5.26e+03, Z=5.73e+07)
+    b=6.50 | lam=0.2: Q=2.16e+00(0.000x, X=2.16e+00, Z=3.59e+00) | lam=0.4: Q=3.11e+01(0.000x, X=3.11e+01, Z=5.77e+02) | lam=0.6: Q=4.53e+02(0.000x, X=4.53e+02, Z=1.19e+07) | lam=0.8: Q=1.78e+04(0.019x, X=1.78e+04, Z=9.18e+07)
+  [rottor_iso_L2r1_s4 :: sub_weld]
+    b=5.50 | lam=0.2: Q=2.75e+00(0.002x, X=2.75e+00, Z=5.73e+01) | lam=0.4: Q=1.58e+01(0.009x, X=1.58e+01, Z=5.26e+02) | lam=0.6: Q=9.42e+01(0.053x, X=9.42e+01, Z=2.09e+05) | lam=0.8: Q=4.78e+02(0.271x, X=4.78e+02, Z=1.63e+07)
+    b=6.00 | lam=0.2: Q=3.59e+00(0.000x, X=3.59e+00, Z=1.47e+02) | lam=0.4: Q=3.15e+01(0.001x, X=3.15e+01, Z=1.26e+03) | lam=0.6: Q=2.81e+02(0.009x, X=2.81e+02, Z=3.31e+06) | lam=0.8: Q=2.12e+03(0.065x, X=2.12e+03, Z=2.48e+07)
+    b=6.25 | lam=0.2: Q=4.03e+00(0.000x, X=4.03e+00, Z=2.33e+02) | lam=0.4: Q=4.70e+01(0.000x, X=4.70e+01, Z=2.20e+03) | lam=0.6: Q=5.20e+02(0.004x, X=5.20e+02, Z=5.20e+06) | lam=0.8: Q=8.66e+03(0.059x, X=8.66e+03, Z=3.93e+07)
+    b=6.50 | lam=0.2: Q=5.11e+00(0.000x, X=5.11e+00, Z=3.28e+02) | lam=0.4: Q=7.21e+01(0.000x, X=7.21e+01, Z=5.47e+03) | lam=0.6: Q=1.05e+03(0.001x, X=1.05e+03, Z=7.94e+06) | lam=0.8: Q=4.29e+04(0.046x, X=4.29e+04, Z=6.18e+07)
+  [rottor_iso_L2r1_s4 :: all_c2_weld]
+    b=5.50 | lam=0.2: Q=5.32e-01(0.000x, X=5.40e-01, Z=8.56e-01) | lam=0.4: Q=3.03e+00(0.002x, X=3.03e+00, Z=5.25e+00) | lam=0.6: Q=1.87e+01(0.011x, X=1.87e+01, Z=1.46e+02) | lam=0.8: Q=1.73e+02(0.098x, X=1.73e+02, Z=1.12e+06)
+    b=6.00 | lam=0.2: Q=5.78e-01(0.000x, X=5.82e-01, Z=9.83e-01) | lam=0.4: Q=4.17e+00(0.000x, X=4.17e+00, Z=8.92e+00) | lam=0.6: Q=3.57e+01(0.001x, X=3.57e+01, Z=1.03e+03) | lam=0.8: Q=6.37e+02(0.020x, X=6.37e+02, Z=6.55e+06)
+    b=6.25 | lam=0.2: Q=6.30e-01(0.000x, X=6.35e-01, Z=1.05e+00) | lam=0.4: Q=4.33e+00(0.000x, X=4.33e+00, Z=1.29e+01) | lam=0.6: Q=4.95e+01(0.000x, X=4.95e+01, Z=3.12e+03) | lam=0.8: Q=1.29e+03(0.009x, X=1.29e+03, Z=1.02e+07)
+    b=6.50 | lam=0.2: Q=6.85e-01(0.000x, X=6.95e-01, Z=1.19e+00) | lam=0.4: Q=5.36e+00(0.000x, X=5.36e+00, Z=1.80e+01) | lam=0.6: Q=7.14e+01(0.000x, X=7.14e+01, Z=1.12e+04) | lam=0.8: Q=4.23e+03(0.005x, X=4.23e+03, Z=1.57e+07)
+  [sq_iso_L2r1_s4 :: macro_weld]
+    b=5.50 | lam=0.2: Q=2.15e+00(0.001x, X=2.91e+00, Z=2.58e+00) | lam=0.4: Q=1.63e+01(0.005x, X=1.93e+01, Z=3.98e+01) | lam=0.6: Q=7.51e+01(0.022x, X=7.51e+01, Z=1.34e+04) | lam=0.8: Q=4.44e+02(0.130x, X=4.44e+02, Z=5.88e+06)
+    b=6.00 | lam=0.2: Q=2.52e+00(0.000x, X=3.84e+00, Z=3.06e+00) | lam=0.4: Q=2.92e+01(0.001x, X=2.93e+01, Z=1.33e+02) | lam=0.6: Q=1.77e+02(0.004x, X=1.77e+02, Z=1.09e+05) | lam=0.8: Q=3.49e+03(0.082x, X=3.49e+03, Z=1.61e+07)
+    b=6.25 | lam=0.2: Q=2.73e+00(0.000x, X=4.21e+00, Z=3.56e+00) | lam=0.4: Q=4.77e+01(0.000x, X=4.90e+01, Z=2.76e+02) | lam=0.6: Q=3.07e+02(0.002x, X=3.07e+02, Z=3.94e+05) | lam=0.8: Q=8.01e+03(0.044x, X=8.01e+03, Z=2.13e+07)
+    b=6.50 | lam=0.2: Q=2.86e+00(0.000x, X=3.35e+00, Z=4.04e+00) | lam=0.4: Q=4.56e+01(0.000x, X=4.56e+01, Z=4.56e+02) | lam=0.6: Q=6.45e+02(0.001x, X=6.45e+02, Z=1.34e+06) | lam=0.8: Q=3.53e+04(0.033x, X=3.53e+04, Z=2.94e+07)
+  [sq_iso_L2r1_s4 :: sub_weld]
+    b=5.50 | lam=0.2: Q=3.55e+00(0.001x, X=3.56e+00, Z=4.80e+01) | lam=0.4: Q=2.25e+01(0.007x, X=2.25e+01, Z=7.79e+02) | lam=0.6: Q=1.34e+02(0.039x, X=1.34e+02, Z=1.80e+05) | lam=0.8: Q=8.11e+02(0.238x, X=8.11e+02, Z=7.96e+06)
+    b=6.00 | lam=0.2: Q=5.31e+00(0.000x, X=5.31e+00, Z=1.58e+02) | lam=0.4: Q=4.70e+01(0.001x, X=4.70e+01, Z=5.09e+03) | lam=0.6: Q=4.16e+02(0.010x, X=4.16e+02, Z=1.49e+06) | lam=0.8: Q=7.72e+03(0.182x, X=7.72e+03, Z=1.20e+07)
+    b=6.25 | lam=0.2: Q=5.20e+00(0.000x, X=5.20e+00, Z=1.77e+02) | lam=0.4: Q=6.44e+01(0.000x, X=6.44e+01, Z=1.04e+04) | lam=0.6: Q=9.52e+02(0.005x, X=9.52e+02, Z=3.06e+06) | lam=0.8: Q=2.40e+04(0.131x, X=2.40e+04, Z=1.62e+07)
+    b=6.50 | lam=0.2: Q=6.99e+00(0.000x, X=6.99e+00, Z=2.85e+02) | lam=0.4: Q=1.05e+02(0.000x, X=1.05e+02, Z=3.03e+04) | lam=0.6: Q=2.31e+03(0.002x, X=2.31e+03, Z=5.29e+06) | lam=0.8: Q=9.34e+04(0.088x, X=9.34e+04, Z=2.14e+07)
+  [sq_iso_L2r1_s4 :: all_c2_weld]
+    b=5.50 | lam=0.2: Q=6.51e-01(0.000x, X=6.90e-01, Z=1.04e+00) | lam=0.4: Q=3.90e+00(0.001x, X=4.35e+00, Z=6.11e+00) | lam=0.6: Q=2.35e+01(0.007x, X=2.35e+01, Z=2.11e+02) | lam=0.8: Q=2.45e+02(0.072x, X=2.45e+02, Z=4.73e+05)
+    b=6.00 | lam=0.2: Q=7.95e-01(0.000x, X=8.16e-01, Z=1.30e+00) | lam=0.4: Q=5.99e+00(0.000x, X=6.35e+00, Z=1.23e+01) | lam=0.6: Q=5.56e+01(0.001x, X=5.56e+01, Z=1.81e+03) | lam=0.8: Q=1.04e+03(0.025x, X=1.04e+03, Z=3.06e+06)
+    b=6.25 | lam=0.2: Q=7.66e-01(0.000x, X=7.88e-01, Z=1.39e+00) | lam=0.4: Q=7.03e+00(0.000x, X=7.43e+00, Z=1.75e+01) | lam=0.6: Q=7.64e+01(0.000x, X=7.64e+01, Z=4.41e+03) | lam=0.8: Q=2.96e+03(0.016x, X=2.96e+03, Z=6.18e+06)
+    b=6.50 | lam=0.2: Q=8.18e-01(0.000x, X=9.06e-01, Z=1.81e+00) | lam=0.4: Q=8.30e+00(0.000x, X=8.79e+00, Z=2.22e+01) | lam=0.6: Q=1.16e+02(0.000x, X=1.16e+02, Z=1.18e+04) | lam=0.8: Q=1.07e+04(0.010x, X=1.07e+04, Z=8.86e+06)
+
+=== 3. COARSE-SCALE EXCURSION & ESCAPE DIAGNOSTIC ===
+  excur__rottor_iso_L2r1_s4_X_err__macro_weld_l04__b5.50: mean_t=1.173e+01±5.99e-01, t1_frac=0.088, n_exc=1.33±0.09, P_esc=0.750, R_att=1.137e-01, multi_exc=30.6%
+  excur__rottor_iso_L2r1_s4_X_err__macro_weld_l04__b6.00: mean_t=1.635e+01±8.86e-01, t1_frac=0.073, n_exc=1.36±0.08, P_esc=0.735, R_att=8.324e-02, multi_exc=36.1%
+  excur__rottor_iso_L2r1_s4_X_err__macro_weld_l04__b6.25: mean_t=2.437e+01±1.10e+00, t1_frac=0.061, n_exc=1.44±0.09, P_esc=0.692, R_att=5.926e-02, multi_exc=41.7%
+  excur__rottor_iso_L2r1_s4_X_err__macro_weld_l04__b6.50: mean_t=3.107e+01±1.79e+00, t1_frac=0.052, n_exc=1.42±0.12, P_esc=0.706, R_att=4.559e-02, multi_exc=33.3%
+  excur__rottor_iso_L2r1_s4_X_err__macro_weld_l06__b5.50: mean_t=6.127e+01±2.81e+00, t1_frac=0.046, n_exc=1.44±0.09, P_esc=0.692, R_att=2.357e-02, multi_exc=41.7%
+  excur__rottor_iso_L2r1_s4_X_err__macro_weld_l06__b6.00: mean_t=1.469e+02±7.10e+00, t1_frac=0.027, n_exc=1.75±0.12, P_esc=0.571, R_att=1.191e-02, multi_exc=66.7%
+  excur__rottor_iso_L2r1_s4_X_err__macro_weld_l06__b6.25: mean_t=2.613e+02±1.76e+01, t1_frac=0.021, n_exc=1.92±0.15, P_esc=0.522, R_att=7.336e-03, multi_exc=63.9%
+  excur__rottor_iso_L2r1_s4_X_err__macro_weld_l06__b6.50: mean_t=4.532e+02±3.41e+01, t1_frac=0.014, n_exc=2.19±0.15, P_esc=0.456, R_att=4.842e-03, multi_exc=72.2%
+  excur__rottor_iso_L2r1_s4_X_err__sub_weld_l04__b5.50: mean_t=1.581e+01±6.03e-01, t1_frac=0.206, n_exc=1.44±0.10, P_esc=0.692, R_att=9.137e-02, multi_exc=38.9%
+  excur__rottor_iso_L2r1_s4_X_err__sub_weld_l04__b6.00: mean_t=3.151e+01±1.29e+00, t1_frac=0.170, n_exc=1.42±0.09, P_esc=0.706, R_att=4.496e-02, multi_exc=38.9%
+  excur__rottor_iso_L2r1_s4_X_err__sub_weld_l04__b6.25: mean_t=4.701e+01±2.44e+00, t1_frac=0.159, n_exc=1.31±0.08, P_esc=0.766, R_att=2.778e-02, multi_exc=30.6%
+  excur__rottor_iso_L2r1_s4_X_err__sub_weld_l04__b6.50: mean_t=7.214e+01±4.16e+00, t1_frac=0.101, n_exc=1.81±0.12, P_esc=0.554, R_att=2.503e-02, multi_exc=63.9%
+  excur__rottor_iso_L2r1_s4_X_err__sub_weld_l06__b5.50: mean_t=9.420e+01±4.69e+00, t1_frac=0.076, n_exc=1.81±0.14, P_esc=0.554, R_att=1.917e-02, multi_exc=55.6%
+  excur__rottor_iso_L2r1_s4_X_err__sub_weld_l06__b6.00: mean_t=2.813e+02±1.39e+01, t1_frac=0.043, n_exc=2.14±0.14, P_esc=0.468, R_att=7.603e-03, multi_exc=72.2%
+  excur__rottor_iso_L2r1_s4_X_err__sub_weld_l06__b6.25: mean_t=5.195e+02±2.58e+01, t1_frac=0.038, n_exc=1.89±0.12, P_esc=0.529, R_att=3.636e-03, multi_exc=66.7%
+  excur__rottor_iso_L2r1_s4_X_err__sub_weld_l06__b6.50: mean_t=1.045e+03±6.22e+01, t1_frac=0.025, n_exc=2.36±0.16, P_esc=0.424, R_att=2.259e-03, multi_exc=83.3%
+  excur__rottor_iso_L2r1_s4_X_err__uniform__b5.50: mean_t=1.763e+03±1.63e+02, t1_frac=0.012, n_exc=2.53±0.18, P_esc=0.396, R_att=1.434e-03, multi_exc=83.3%
+  excur__rottor_iso_L2r1_s4_X_err__uniform__b6.00: mean_t=3.248e+04±4.77e+03, t1_frac=0.003, n_exc=4.25±0.30, P_esc=0.235, R_att=1.309e-04, multi_exc=97.2%
+  excur__rottor_iso_L2r1_s4_X_err__uniform__b6.25: mean_t=1.472e+05±2.33e+04, t1_frac=0.001, n_exc=7.00±0.33, P_esc=0.143, R_att=4.754e-05, multi_exc=100.0%
+  excur__rottor_iso_L2r1_s4_X_err__uniform__b6.50: mean_t=9.301e+05±1.81e+05, t1_frac=0.001, n_exc=9.50±0.45, P_esc=0.105, R_att=1.021e-05, multi_exc=100.0%
+  excur__sq_iso_L2r1_s4_X_err__macro_weld_l04__b5.50: mean_t=1.935e+01±3.51e+00, t1_frac=0.091, n_exc=1.25±0.08, P_esc=0.800, R_att=6.461e-02, multi_exc=22.2%
+  excur__sq_iso_L2r1_s4_X_err__macro_weld_l04__b6.00: mean_t=2.928e+01±2.35e+00, t1_frac=0.072, n_exc=1.36±0.09, P_esc=0.735, R_att=4.648e-02, multi_exc=33.3%
+  excur__sq_iso_L2r1_s4_X_err__macro_weld_l04__b6.25: mean_t=4.896e+01±7.10e+00, t1_frac=0.054, n_exc=1.42±0.08, P_esc=0.706, R_att=2.893e-02, multi_exc=41.7%
+  excur__sq_iso_L2r1_s4_X_err__macro_weld_l04__b6.50: mean_t=4.560e+01±4.00e+00, t1_frac=0.051, n_exc=1.47±0.11, P_esc=0.679, R_att=3.229e-02, multi_exc=38.9%
+  excur__sq_iso_L2r1_s4_X_err__macro_weld_l06__b5.50: mean_t=7.507e+01±6.23e+00, t1_frac=0.072, n_exc=1.81±0.12, P_esc=0.554, R_att=2.405e-02, multi_exc=63.9%
+  excur__sq_iso_L2r1_s4_X_err__macro_weld_l06__b6.00: mean_t=1.772e+02±1.60e+01, t1_frac=0.037, n_exc=2.14±0.15, P_esc=0.468, R_att=1.207e-02, multi_exc=72.2%
+  excur__sq_iso_L2r1_s4_X_err__macro_weld_l06__b6.25: mean_t=3.072e+02±3.51e+01, t1_frac=0.046, n_exc=1.86±0.12, P_esc=0.537, R_att=6.058e-03, multi_exc=66.7%
+  excur__sq_iso_L2r1_s4_X_err__macro_weld_l06__b6.50: mean_t=6.451e+02±8.05e+01, t1_frac=0.023, n_exc=2.39±0.17, P_esc=0.419, R_att=3.703e-03, multi_exc=80.6%
+  excur__sq_iso_L2r1_s4_X_err__sub_weld_l04__b5.50: mean_t=2.248e+01±2.71e+00, t1_frac=0.220, n_exc=1.28±0.08, P_esc=0.783, R_att=5.684e-02, multi_exc=27.8%
+  excur__sq_iso_L2r1_s4_X_err__sub_weld_l04__b6.00: mean_t=4.695e+01±4.21e+00, t1_frac=0.164, n_exc=1.19±0.07, P_esc=0.837, R_att=2.544e-02, multi_exc=19.4%
+  excur__sq_iso_L2r1_s4_X_err__sub_weld_l04__b6.25: mean_t=6.437e+01±5.24e+00, t1_frac=0.148, n_exc=1.28±0.09, P_esc=0.783, R_att=1.985e-02, multi_exc=25.0%
+  excur__sq_iso_L2r1_s4_X_err__sub_weld_l04__b6.50: mean_t=1.046e+02±7.03e+00, t1_frac=0.118, n_exc=1.53±0.12, P_esc=0.655, R_att=1.461e-02, multi_exc=38.9%
+  excur__sq_iso_L2r1_s4_X_err__sub_weld_l06__b5.50: mean_t=1.339e+02±1.30e+01, t1_frac=0.084, n_exc=1.53±0.12, P_esc=0.655, R_att=1.141e-02, multi_exc=41.7%
+  excur__sq_iso_L2r1_s4_X_err__sub_weld_l06__b6.00: mean_t=4.162e+02±3.44e+01, t1_frac=0.042, n_exc=2.11±0.18, P_esc=0.474, R_att=5.072e-03, multi_exc=63.9%
+  excur__sq_iso_L2r1_s4_X_err__sub_weld_l06__b6.25: mean_t=9.523e+02±9.87e+01, t1_frac=0.029, n_exc=1.92±0.16, P_esc=0.522, R_att=2.013e-03, multi_exc=58.3%
+  excur__sq_iso_L2r1_s4_X_err__sub_weld_l06__b6.50: mean_t=2.311e+03±4.04e+02, t1_frac=0.038, n_exc=2.06±0.17, P_esc=0.486, R_att=8.895e-04, multi_exc=63.9%
+  excur__sq_iso_L2r1_s4_X_err__uniform__b5.50: mean_t=3.402e+03±7.20e+02, t1_frac=0.015, n_exc=2.53±0.20, P_esc=0.396, R_att=7.430e-04, multi_exc=83.3%
+  excur__sq_iso_L2r1_s4_X_err__uniform__b6.00: mean_t=4.238e+04±6.49e+03, t1_frac=0.009, n_exc=3.83±0.29, P_esc=0.261, R_att=9.045e-05, multi_exc=97.2%
+  excur__sq_iso_L2r1_s4_X_err__uniform__b6.25: mean_t=1.839e+05±2.88e+04, t1_frac=0.003, n_exc=5.78±0.32, P_esc=0.173, R_att=3.141e-05, multi_exc=100.0%
+  excur__sq_iso_L2r1_s4_X_err__uniform__b6.50: mean_t=1.055e+06±1.53e+05, t1_frac=0.002, n_exc=8.47±0.36, P_esc=0.118, R_att=8.029e-06, multi_exc=100.0%
+
+=== 4. PAIRED READOUT CADENCE AUDIT ===
+  cadence__rottor_iso_L2r1_s0_X_err__b4.50 (min_eta=0.00, tr=2000): m_min=2.201e+03, m05=2.201e+03, m20=2.201e+03, m50=2.201e+03 | r(20/min)=1.0000 CI95[1.0000,1.0000] | same=2000, delay_persist=0, missed_heal=0
+  cadence__rottor_iso_L2r1_s0_X_err__b5.50 (min_eta=0.00, tr=2000): m_min=1.636e+04, m05=1.636e+04, m20=1.636e+04, m50=1.636e+04 | r(20/min)=1.0000 CI95[1.0000,1.0000] | same=2000, delay_persist=0, missed_heal=0
+  cadence__rottor_iso_L2r1_s0_X_err__b6.50 (min_eta=0.00, tr=2000): m_min=1.219e+05, m05=1.219e+05, m20=1.219e+05, m50=1.219e+05 | r(20/min)=1.0000 CI95[1.0000,1.0000] | same=2000, delay_persist=0, missed_heal=0
+  cadence__rottor_iso_L2r1_s0_Z_err__b4.50 (min_eta=0.00, tr=2000): m_min=2.201e+03, m05=2.201e+03, m20=2.201e+03, m50=2.201e+03 | r(20/min)=1.0000 CI95[1.0000,1.0000] | same=2000, delay_persist=0, missed_heal=0
+  cadence__rottor_iso_L2r1_s0_Z_err__b5.50 (min_eta=0.00, tr=2000): m_min=1.636e+04, m05=1.636e+04, m20=1.636e+04, m50=1.636e+04 | r(20/min)=1.0000 CI95[1.0000,1.0000] | same=2000, delay_persist=0, missed_heal=0
+  cadence__rottor_iso_L2r1_s0_Z_err__b6.50 (min_eta=0.00, tr=2000): m_min=1.219e+05, m05=1.219e+05, m20=1.219e+05, m50=1.219e+05 | r(20/min)=1.0000 CI95[1.0000,1.0000] | same=2000, delay_persist=0, missed_heal=0
+  cadence__rottor_iso_L2r1_s2_X_err__b5.00 (min_eta=0.00, tr=120): m_min=5.725e+02, m05=1.157e+03, m20=1.392e+03, m50=1.739e+03 | r(20/min)=2.4312 CI95[2.0238,2.9068] | same=1, delay_persist=119, missed_heal=412
+  cadence__rottor_iso_L2r1_s2_X_err__b5.50 (min_eta=0.00, tr=120): m_min=3.049e+03, m05=6.928e+03, m20=8.191e+03, m50=9.806e+03 | r(20/min)=2.6862 CI95[2.2691,3.2244] | same=0, delay_persist=120, missed_heal=450
+  cadence__rottor_iso_L2r1_s2_X_err__b6.00 (min_eta=0.00, tr=120): m_min=1.418e+04, m05=3.490e+04, m20=4.690e+04, m50=5.371e+04 | r(20/min)=3.3071 CI95[2.6758,4.1217] | same=0, delay_persist=120, missed_heal=571
+  cadence__rottor_iso_L2r1_s2_X_err__b6.50 (min_eta=0.00, tr=120): m_min=5.358e+04, m05=1.720e+05, m20=2.071e+05, m50=2.383e+05 | r(20/min)=3.8660 CI95[3.0566,4.9344] | same=1, delay_persist=119, missed_heal=630
+  cadence__rottor_iso_L2r1_s2_Z_err__b5.00 (min_eta=0.00, tr=120): m_min=9.918e+04, m05=9.118e+05, m20=1.016e+06, m50=1.254e+06 | r(20/min)=10.2403 CI95[7.9251,13.1800] | same=0, delay_persist=120, missed_heal=1433
+  cadence__rottor_iso_L2r1_s2_Z_err__b5.50 (min_eta=0.00, tr=120): m_min=1.093e+06, m05=1.011e+07, m20=1.107e+07, m50=1.326e+07 | r(20/min)=10.1258 CI95[8.0712,12.8890] | same=0, delay_persist=120, missed_heal=1382
+  cadence__rottor_iso_L2r1_s2_Z_err__b6.50 (min_eta=0.00, tr=120): m_min=6.711e+07, m05=1.823e+09, m20=2.008e+09, m50=2.299e+09 | r(20/min)=29.9225 CI95[23.7133,37.6260] | same=0, delay_persist=120, missed_heal=2213
+  cadence__rottor_iso_L2r1_s4_X_err__b6.00_eta02 (min_eta=0.02, tr=36): m_min=1.638e+04, m05=1.819e+04, m20=3.248e+04, m50=4.356e+04 | r(20/min)=1.9833 CI95[1.5865,2.4217] | same=0, delay_persist=33, missed_heal=109
+  cadence__rottor_iso_L2r1_s4_X_err__b6.25_eta02 (min_eta=0.02, tr=36): m_min=9.825e+04, m05=1.087e+05, m20=1.472e+05, m50=1.956e+05 | r(20/min)=1.4987 CI95[1.2456,1.9799] | same=0, delay_persist=35, missed_heal=71
+  cadence__rottor_iso_L2r1_s4_X_err__b6.50_eta02 (min_eta=0.02, tr=36): m_min=5.062e+05, m05=5.640e+05, m20=9.301e+05, m50=1.226e+06 | r(20/min)=1.8373 CI95[1.3225,2.6324] | same=0, delay_persist=35, missed_heal=94
+  cadence__rottor_iso_L2r1_s4_Z_err__b6.00_eta02 (min_eta=0.02, tr=36): m_min=1.025e+08, m05=1.025e+08, m20=1.025e+08, m50=1.025e+08 | r(20/min)=1.0000 CI95[1.0000,1.0000] | same=36, delay_persist=0, missed_heal=0
+  cadence__rottor_iso_L2r1_s4_Z_err__b6.25_eta02 (min_eta=0.02, tr=24): m_min=1.024e+08, m05=1.024e+08, m20=1.024e+08, m50=1.024e+08 | r(20/min)=1.0000 CI95[1.0000,1.0000] | same=24, delay_persist=0, missed_heal=0
+  cadence__rottor_iso_L2r1_s4_Z_err__b6.50_eta02 (min_eta=0.02, tr=24): m_min=1.702e+08, m05=1.702e+08, m20=1.702e+08, m50=1.702e+08 | r(20/min)=1.0000 CI95[1.0000,1.0000] | same=24, delay_persist=0, missed_heal=0
+  cadence__sq_iso_L2r1_s0_X_err__b4.50 (min_eta=0.00, tr=2000): m_min=5.954e+01, m05=5.954e+01, m20=5.954e+01, m50=5.954e+01 | r(20/min)=1.0000 CI95[1.0000,1.0000] | same=2000, delay_persist=0, missed_heal=0
+  cadence__sq_iso_L2r1_s0_X_err__b5.50 (min_eta=0.00, tr=2000): m_min=1.639e+02, m05=1.639e+02, m20=1.639e+02, m50=1.639e+02 | r(20/min)=1.0000 CI95[1.0000,1.0000] | same=2000, delay_persist=0, missed_heal=0
+  cadence__sq_iso_L2r1_s0_X_err__b6.50 (min_eta=0.00, tr=2000): m_min=4.590e+02, m05=4.590e+02, m20=4.590e+02, m50=4.590e+02 | r(20/min)=1.0000 CI95[1.0000,1.0000] | same=2000, delay_persist=0, missed_heal=0
+  cadence__sq_iso_L2r1_s2_X_err__b5.00 (min_eta=0.00, tr=120): m_min=5.461e+02, m05=7.920e+02, m20=1.295e+03, m50=2.007e+03 | r(20/min)=2.3713 CI95[1.9444,2.9063] | same=3, delay_persist=117, missed_heal=379
+  cadence__sq_iso_L2r1_s2_X_err__b5.50 (min_eta=0.00, tr=120): m_min=1.295e+03, m05=1.892e+03, m20=2.574e+03, m50=3.764e+03 | r(20/min)=1.9878 CI95[1.6317,2.4735] | same=0, delay_persist=120, missed_heal=280
+  cadence__sq_iso_L2r1_s2_X_err__b6.00 (min_eta=0.00, tr=120): m_min=3.626e+03, m05=5.348e+03, m20=8.305e+03, m50=1.179e+04 | r(20/min)=2.2901 CI95[1.8222,2.9040] | same=0, delay_persist=120, missed_heal=300
+  cadence__sq_iso_L2r1_s2_X_err__b6.50 (min_eta=0.00, tr=120): m_min=1.037e+04, m05=1.528e+04, m20=2.546e+04, m50=5.527e+04 | r(20/min)=2.4559 CI95[1.9635,3.0267] | same=0, delay_persist=120, missed_heal=389
+  cadence__sq_iso_L2r1_s2_Z_err__b5.00 (min_eta=0.00, tr=120): m_min=9.917e+02, m05=2.715e+03, m20=4.403e+03, m50=5.830e+03 | r(20/min)=4.4402 CI95[3.4212,5.7642] | same=3, delay_persist=117, missed_heal=691
+  cadence__sq_iso_L2r1_s2_Z_err__b5.50 (min_eta=0.00, tr=120): m_min=2.718e+03, m05=9.444e+03, m20=1.226e+04, m50=1.701e+04 | r(20/min)=4.5085 CI95[3.5089,5.7702] | same=0, delay_persist=120, missed_heal=844
+  cadence__sq_iso_L2r1_s2_Z_err__b6.00 (min_eta=0.00, tr=120): m_min=7.772e+03, m05=3.874e+04, m20=4.770e+04, m50=7.662e+04 | r(20/min)=6.1376 CI95[4.8815,7.6298] | same=0, delay_persist=120, missed_heal=1013
+  cadence__sq_iso_L2r1_s2_Z_err__b6.50 (min_eta=0.00, tr=120): m_min=1.969e+04, m05=1.043e+05, m20=1.375e+05, m50=1.631e+05 | r(20/min)=6.9802 CI95[5.5196,8.8881] | same=0, delay_persist=120, missed_heal=1157
+  cadence__sq_iso_L2r1_s4_X_err__b6.00_eta02 (min_eta=0.02, tr=36): m_min=3.016e+04, m05=3.170e+04, m20=4.238e+04, m50=8.074e+04 | r(20/min)=1.4049 CI95[1.2444,1.6189] | same=0, delay_persist=35, missed_heal=49
+  cadence__sq_iso_L2r1_s4_X_err__b6.25_eta02 (min_eta=0.02, tr=36): m_min=1.292e+05, m05=1.330e+05, m20=1.839e+05, m50=5.557e+05 | r(20/min)=1.4236 CI95[1.2081,1.7183] | same=0, delay_persist=31, missed_heal=40
+  cadence__sq_iso_L2r1_s4_X_err__b6.50_eta02 (min_eta=0.02, tr=36): m_min=7.224e+05, m05=7.591e+05, m20=1.055e+06, m50=1.717e+06 | r(20/min)=1.4606 CI95[1.2173,1.8085] | same=0, delay_persist=32, missed_heal=55
+  cadence__sq_iso_L2r1_s4_Z_err__b6.00_eta02 (min_eta=0.02, tr=36): m_min=3.506e+07, m05=3.506e+07, m20=3.506e+07, m50=3.506e+07 | r(20/min)=1.0000 CI95[1.0000,1.0000] | same=36, delay_persist=0, missed_heal=0
+  cadence__sq_iso_L2r1_s4_Z_err__b6.25_eta02 (min_eta=0.02, tr=24): m_min=2.846e+07, m05=2.846e+07, m20=2.846e+07, m50=2.846e+07 | r(20/min)=1.0000 CI95[1.0000,1.0000] | same=24, delay_persist=0, missed_heal=0
+  cadence__sq_iso_L2r1_s4_Z_err__b6.50_eta02 (min_eta=0.02, tr=24): m_min=3.812e+07, m05=3.812e+07, m20=3.812e+07, m50=3.812e+07 | r(20/min)=1.0000 CI95[1.0000,1.0000] | same=24, delay_persist=0, missed_heal=0
+
+=== 5. COARSE-SYNDROME FLOW V14 (BURN-IN & MATCHED-WEIGHT I.I.D. REFERENCE) ===
+  rgflow14__rottor_s4__t20__b3.50: qwt=11487.8 | therm(s4=1012.4->s2=63.60->s0=0.396, nz0=19/96, lf=96) vs iid_ref(s4=15420.0->s2=74.41->s0=0.604, nz0=29/96, lf=96)
+  rgflow14__rottor_s4__t20__b4.50: qwt=1731.6 | therm(s4=159.4->s2=16.15->s0=0.396, nz0=19/96, lf=96) vs iid_ref(s4=3497.6->s2=56.12->s0=0.583, nz0=28/96, lf=96)
+  rgflow14__rottor_s4__t20__b5.50: qwt=240.0 | therm(s4=21.1->s2=1.36->s0=0.021, nz0=1/96, lf=0) vs iid_ref(s4=517.4->s2=8.33->s0=0.292, nz0=14/96, lf=0)
+  rgflow14__rottor_s4__t20__b5.75: qwt=130.6 | therm(s4=12.6->s2=0.61->s0=0.000, nz0=0/96, lf=12) vs iid_ref(s4=282.1->s2=3.10->s0=0.021, nz0=1/96, lf=0)
+  rgflow14__rottor_s4__t20__b6.00: qwt=85.4 | therm(s4=7.6->s2=0.27->s0=0.000, nz0=0/96, lf=0) vs iid_ref(s4=185.4->s2=1.10->s0=0.000, nz0=0/96, lf=0)
+  rgflow14__rottor_s4__t20__b6.25: qwt=52.4 | therm(s4=4.9->s2=0.08->s0=0.000, nz0=0/96, lf=0) vs iid_ref(s4=113.2->s2=0.77->s0=0.042, nz0=2/96, lf=0)
+  rgflow14__rottor_s4__t20__b6.50: qwt=32.0 | therm(s4=3.2->s2=0.15->s0=0.000, nz0=0/96, lf=0) vs iid_ref(s4=69.3->s2=0.42->s0=0.000, nz0=0/96, lf=0)
+  rgflow14__rottor_s4__t20__b7.00: qwt=14.2 | therm(s4=2.3->s2=0.02->s0=0.000, nz0=0/96, lf=0) vs iid_ref(s4=31.1->s2=0.06->s0=0.000, nz0=0/96, lf=0)
+  rgflow14__rottor_s4__t320.0__b5.50: qwt=7673.0 | therm(s4=63.1->s2=7.90->s0=0.354, nz0=17/96, lf=5) vs iid_ref(s4=12031.0->s2=72.52->s0=0.396, nz0=19/96, lf=71)
+  rgflow14__rottor_s4__t320.0__b6.00: qwt=2646.8 | therm(s4=17.1->s2=1.86->s0=0.062, nz0=3/96, lf=0) vs iid_ref(s4=5137.7->s2=65.98->s0=0.438, nz0=21/96, lf=70)
+  rgflow14__rottor_s4__t320.0__b6.25: qwt=1555.1 | therm(s4=11.2->s2=0.94->s0=0.000, nz0=0/96, lf=0) vs iid_ref(s4=3166.5->s2=50.00->s0=0.312, nz0=15/96, lf=71)
+  rgflow14__rottor_s4__t320.0__b6.50: qwt=908.2 | therm(s4=5.4->s2=0.45->s0=0.000, nz0=0/96, lf=0) vs iid_ref(s4=1899.8->s2=36.65->s0=0.521, nz0=25/96, lf=20)
+  rgflow14__rottor_s4__t5.0__b5.50: qwt=29.8 | therm(s4=8.2->s2=0.17->s0=0.000, nz0=0/96, lf=3) vs iid_ref(s4=64.6->s2=0.17->s0=0.000, nz0=0/96, lf=0)
+  rgflow14__rottor_s4__t5.0__b6.00: qwt=9.5 | therm(s4=3.3->s2=0.04->s0=0.000, nz0=0/96, lf=3) vs iid_ref(s4=21.1->s2=0.04->s0=0.000, nz0=0/96, lf=0)
+  rgflow14__rottor_s4__t5.0__b6.25: qwt=6.2 | therm(s4=2.7->s2=0.00->s0=0.000, nz0=0/96, lf=0) vs iid_ref(s4=13.4->s2=0.00->s0=0.000, nz0=0/96, lf=0)
+  rgflow14__rottor_s4__t5.0__b6.50: qwt=4.7 | therm(s4=2.2->s2=0.04->s0=0.000, nz0=0/96, lf=0) vs iid_ref(s4=10.2->s2=0.00->s0=0.000, nz0=0/96, lf=0)
+  rgflow14__rottor_s4__t80.0__b5.50: qwt=1535.3 | therm(s4=39.7->s2=4.20->s0=0.083, nz0=4/96, lf=0) vs iid_ref(s4=3121.0->s2=52.79->s0=0.625, nz0=30/96, lf=67)
+  rgflow14__rottor_s4__t80.0__b6.00: qwt=545.1 | therm(s4=14.0->s2=0.88->s0=0.000, nz0=0/96, lf=0) vs iid_ref(s4=1159.1->s2=23.33->s0=0.542, nz0=26/96, lf=0)
+  rgflow14__rottor_s4__t80.0__b6.25: qwt=350.4 | therm(s4=8.9->s2=0.38->s0=0.021, nz0=1/96, lf=0) vs iid_ref(s4=748.7->s2=13.53->s0=0.417, nz0=20/96, lf=0)
+  rgflow14__rottor_s4__t80.0__b6.50: qwt=195.1 | therm(s4=5.0->s2=0.12->s0=0.000, nz0=0/96, lf=0) vs iid_ref(s4=419.3->s2=5.83->s0=0.167, nz0=8/96, lf=0)
+
+=== 6. EXACT MATCHED-BETA_EFF WIRE TEST & OVERLAP RESIDUALS ===
+  [sq exact beta_eff=5.00]: gamma=2.202±0.068 (R2=0.9972), RMS_resid(w^2)=0.123 dex, max_resid=0.186 dex | w=1:1.000x, w=2:0.872x, w=4:1.136x, w=8:1.536x, w=16:1.534x
+  [sq exact beta_eff=5.50]: gamma=2.355±0.084 (R2=0.9962), RMS_resid(w^2)=0.339 dex, max_resid=0.458 dex | w=1:1.000x, w=2:1.800x, w=4:2.361x, w=8:2.508x, w=16:2.870x
+  [sq exact beta_eff=6.00]: gamma=2.235±0.073 (R2=0.9968), RMS_resid(w^2)=0.246 dex, max_resid=0.344 dex | w=1:1.000x, w=2:1.473x, w=4:2.012x, w=8:1.796x, w=16:2.207x
+  [tor exact beta_eff=5.00]: gamma=2.061±0.048 (R2=0.9998), RMS_resid(w^2)=0.054 dex, max_resid=0.082 dex | w=1:1.000x, w=2:1.124x, w=4:1.096x, w=8:1.151x, w=16:1.209x
+  [tor exact beta_eff=5.50]: gamma=2.020±0.047 (R2=0.9987), RMS_resid(w^2)=0.039 dex, max_resid=0.058 dex | w=1:1.000x, w=2:1.075x, w=4:1.142x, w=8:0.939x, w=16:1.128x
+  [tor exact beta_eff=6.00]: gamma=1.972±0.049 (R2=0.9990), RMS_resid(w^2)=0.034 dex, max_resid=0.068 dex | w=1:1.000x, w=2:0.981x, w=4:1.069x, w=8:0.854x, w=16:0.962x
