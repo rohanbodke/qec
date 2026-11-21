@@ -1,4 +1,4 @@
-# Finite-Size Thermal Protection in Compact Recursively Welded Codes (MIT 6.S980)
+# Thermal Protection in Compact Recursively Welded Codes (MIT 6.S980)
 
 **Authors:** Harshil Avlani, Rohan Bodke, Rushil Shah, Yichen Li
 
@@ -9,7 +9,7 @@ This directory (`gemini/`) contains the explicit recursive welded CSS code const
 ## Repository Map
 
 * **Manuscripts**
-  * `paper/main.tex` & `paper/main.pdf` — Main APS REVTeX 4.2 paper (*Finite-Size Thermal Protection in Compact Recursively Welded Codes*), with five figures and a concise three-part technical appendix.
+  * `paper/main.tex` & `paper/main.pdf` — Eight-page APS REVTeX 4.2 paper (*Thermal Protection in Compact Recursively Welded Codes*), with five clean figures and a concise three-part technical appendix.
   * `proposal_improved.tex` & `proposal_improved.pdf` — Two-page APS REVTeX 4.2 project summary.
   * `paper/references.bib` & `references.bib` — Bibliography including BDL (2026), Hayden Part I (2026), Stengele et al. (2026), Bergamaschi et al. (2025), Gu et al. (2026), Williamson (2026), and Qiu, Zoller, & Li (2020).
 
