@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{25}%
+\begin{thebibliography}{26}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -239,6 +239,21 @@
   stability}} (\bibinfo {year} {2026}),\ \Eprint
   {https://arxiv.org/abs/2611.21749} {arXiv:2611.21749 [quant-ph]} \BibitemShut
   {NoStop}%
+\bibitem [{\citenamefont {Bortz}\ \emph {et~al.}(1975)\citenamefont {Bortz},
+  \citenamefont {Kalos},\ and\ \citenamefont {Lebowitz}}]{bkl1975}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~B.}\ \bibnamefont
+  {Bortz}}, \bibinfo {author} {\bibfnamefont {M.~H.}\ \bibnamefont {Kalos}},\
+  and\ \bibinfo {author} {\bibfnamefont {J.~L.}\ \bibnamefont {Lebowitz}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Journal of
+  Computational Physics}\ }\textbf {\bibinfo {volume} {17}},\ \bibinfo {pages}
+  {10} (\bibinfo {year} {1975})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Davies}(1974)}]{davies1974}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~B.}\ \bibnamefont
+  {Davies}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Communications in Mathematical Physics}\ }\textbf {\bibinfo {volume} {39}},\
+  \bibinfo {pages} {91} (\bibinfo {year} {1974})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Delfosse}\ and\ \citenamefont
   {Nickerson}(2021)}]{delfosse_uf}%
   \BibitemOpen
@@ -257,25 +272,18 @@
   }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {IEEE Transactions
   on Information Theory}\ }\textbf {\bibinfo {volume} {68}},\ \bibinfo {pages}
   {3187} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Panteleev}\ and\ \citenamefont
+  {Kalachev}(2021)}]{panteleev_bposd}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Panteleev}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Kalachev}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Quantum}\ }\textbf {\bibinfo {volume} {5}},\ \bibinfo {pages} {585}
+  (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Kramers}(1940)}]{kramers1940}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~A.}\ \bibnamefont
   {Kramers}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
   {Physica}\ }\textbf {\bibinfo {volume} {7}},\ \bibinfo {pages} {284}
   (\bibinfo {year} {1940})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Bortz}\ \emph {et~al.}(1975)\citenamefont {Bortz},
-  \citenamefont {Kalos},\ and\ \citenamefont {Lebowitz}}]{bkl1975}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~B.}\ \bibnamefont
-  {Bortz}}, \bibinfo {author} {\bibfnamefont {M.~H.}\ \bibnamefont {Kalos}},\
-  and\ \bibinfo {author} {\bibfnamefont {J.~L.}\ \bibnamefont {Lebowitz}},\
-  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Journal of
-  Computational Physics}\ }\textbf {\bibinfo {volume} {17}},\ \bibinfo {pages}
-  {10} (\bibinfo {year} {1975})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Davies}(1974)}]{davies1974}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~B.}\ \bibnamefont
-  {Davies}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {Communications in Mathematical Physics}\ }\textbf {\bibinfo {volume} {39}},\
-  \bibinfo {pages} {91} (\bibinfo {year} {1974})}\BibitemShut {NoStop}%
 \end{thebibliography}%
