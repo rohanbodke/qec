@@ -155,12 +155,6 @@
   {\bibfield  {journal} {\bibinfo  {journal} {PRX Quantum}\ }\textbf {\bibinfo
   {volume} {7}},\ \bibinfo {pages} {010301} (\bibinfo {year}
   {2026})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Michnicki}(2014)}]{michnicki2014}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~P.}\ \bibnamefont
-  {Michnicki}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {Physical Review Letters}\ }\textbf {\bibinfo {volume} {113}},\ \bibinfo
-  {pages} {130501} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Haah}(2011)}]{haah2011cubic}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
@@ -192,6 +186,12 @@
   {\bibinfo {title} {Haah's {3D} cubic code thermalizes rapidly}} (\bibinfo
   {year} {2026}),\ \Eprint {https://arxiv.org/abs/2609.39959} {arXiv:2609.39959
   [quant-ph]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Michnicki}(2014)}]{michnicki2014}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~P.}\ \bibnamefont
+  {Michnicki}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review Letters}\ }\textbf {\bibinfo {volume} {113}},\ \bibinfo
+  {pages} {130501} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Williamson}\ and\ \citenamefont
   {Baspin}(2023)}]{layercodesydney}%
   \BibitemOpen
