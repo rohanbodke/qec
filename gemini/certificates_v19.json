@@ -1029,5 +1029,289 @@
       }
     ]
   },
-  "elapsed_seconds": 13.82
+  "selective_hierarchy_and_mixed_packing": {
+    "single_cycle_modules": [
+      {
+        "tag": "v15_sq_C3",
+        "seed": "planar",
+        "aniso": true,
+        "N": 1036,
+        "K": 1,
+        "M_X": 572,
+        "rank_H_X": 561,
+        "meta_X": 11,
+        "M_Z": 474,
+        "rank_H_Z": 474,
+        "meta_Z": 0,
+        "seam_qubit_fraction": 0.57529,
+        "flat_patch_qubit_fraction": 0.42471,
+        "Z_deg2_qubits": 862,
+        "X_deg2_qubits": 662,
+        "pushed_wLX": [
+          20
+        ],
+        "pushed_wLZ": [
+          21
+        ]
+      },
+      {
+        "tag": "v15_sq_R3",
+        "seed": "planar",
+        "aniso": true,
+        "N": 1480,
+        "K": 1,
+        "M_X": 896,
+        "rank_H_X": 846,
+        "meta_X": 50,
+        "M_Z": 636,
+        "rank_H_Z": 633,
+        "meta_Z": 3,
+        "seam_qubit_fraction": 0.92973,
+        "flat_patch_qubit_fraction": 0.07027,
+        "Z_deg2_qubits": 1176,
+        "X_deg2_qubits": 808,
+        "pushed_wLX": [
+          20
+        ],
+        "pushed_wLZ": [
+          24
+        ]
+      },
+      {
+        "tag": "v15_tor_C3",
+        "seed": "tor1",
+        "aniso": true,
+        "N": 1036,
+        "K": 2,
+        "M_X": 576,
+        "rank_H_X": 562,
+        "meta_X": 14,
+        "M_Z": 474,
+        "rank_H_Z": 472,
+        "meta_Z": 2,
+        "seam_qubit_fraction": 0.57529,
+        "flat_patch_qubit_fraction": 0.42471,
+        "Z_deg2_qubits": 950,
+        "X_deg2_qubits": 766,
+        "pushed_wLX": [
+          18,
+          58
+        ],
+        "pushed_wLZ": [
+          21,
+          21
+        ]
+      },
+      {
+        "tag": "v15_tor_R3",
+        "seed": "tor1",
+        "aniso": true,
+        "N": 1480,
+        "K": 2,
+        "M_X": 900,
+        "rank_H_X": 847,
+        "meta_X": 53,
+        "M_Z": 636,
+        "rank_H_Z": 631,
+        "meta_Z": 5,
+        "seam_qubit_fraction": 0.92973,
+        "flat_patch_qubit_fraction": 0.07027,
+        "Z_deg2_qubits": 1280,
+        "X_deg2_qubits": 832,
+        "pushed_wLX": [
+          18,
+          58
+        ],
+        "pushed_wLZ": [
+          24,
+          24
+        ]
+      },
+      {
+        "tag": "v15_sq_C3_iso",
+        "seed": "planar",
+        "aniso": false,
+        "N": 1271,
+        "K": 1,
+        "M_X": 710,
+        "rank_H_X": 694,
+        "meta_X": 16,
+        "M_Z": 576,
+        "rank_H_Z": 576,
+        "meta_Z": 0,
+        "seam_qubit_fraction": 0.581432,
+        "flat_patch_qubit_fraction": 0.418568,
+        "Z_deg2_qubits": 1082,
+        "X_deg2_qubits": 809,
+        "pushed_wLX": [
+          22
+        ],
+        "pushed_wLZ": [
+          21
+        ]
+      },
+      {
+        "tag": "v15_sq_R3_iso",
+        "seed": "planar",
+        "aniso": false,
+        "N": 2152,
+        "K": 1,
+        "M_X": 1344,
+        "rank_H_X": 1254,
+        "meta_X": 90,
+        "M_Z": 900,
+        "rank_H_Z": 897,
+        "meta_Z": 3,
+        "seam_qubit_fraction": 0.94052,
+        "flat_patch_qubit_fraction": 0.05948,
+        "Z_deg2_qubits": 1800,
+        "X_deg2_qubits": 1104,
+        "pushed_wLX": [
+          24
+        ],
+        "pushed_wLZ": [
+          24
+        ]
+      },
+      {
+        "tag": "v15_sq_C2",
+        "seed": "planar",
+        "aniso": true,
+        "N": 254,
+        "K": 1,
+        "M_X": 140,
+        "rank_H_X": 137,
+        "meta_X": 3,
+        "M_Z": 116,
+        "rank_H_Z": 116,
+        "meta_Z": 0,
+        "seam_qubit_fraction": 0.826772,
+        "flat_patch_qubit_fraction": 0.173228,
+        "Z_deg2_qubits": 168,
+        "X_deg2_qubits": 158,
+        "pushed_wLX": [
+          10
+        ],
+        "pushed_wLZ": [
+          10
+        ]
+      },
+      {
+        "tag": "v15_tor_C2",
+        "seed": "tor1",
+        "aniso": true,
+        "N": 254,
+        "K": 2,
+        "M_X": 144,
+        "rank_H_X": 138,
+        "meta_X": 6,
+        "M_Z": 116,
+        "rank_H_Z": 114,
+        "meta_Z": 2,
+        "seam_qubit_fraction": 0.826772,
+        "flat_patch_qubit_fraction": 0.173228,
+        "Z_deg2_qubits": 212,
+        "X_deg2_qubits": 166,
+        "pushed_wLX": [
+          8,
+          20
+        ],
+        "pushed_wLZ": [
+          10,
+          10
+        ]
+      }
+    ],
+    "step1_3x3_cell_anatomy": {
+      "C3_1rib": {
+        "faces_m": 24,
+        "N": 55,
+        "Z_deg2_qubits": 55,
+        "num_connected_flat_patches": 1,
+        "max_flat_patch_deg2_qubits": 55,
+        "meta_Z_pockets": 1,
+        "meta_X_pockets": 2
+      },
+      "R3_2rib": {
+        "faces_m": 30,
+        "N": 76,
+        "Z_deg2_qubits": 76,
+        "num_connected_flat_patches": 1,
+        "max_flat_patch_deg2_qubits": 76,
+        "meta_Z_pockets": 1,
+        "meta_X_pockets": 5
+      }
+    },
+    "mixed_hierarchy_L3_volume_growth": {
+      "m_C_isotropic": 24,
+      "m_R_isotropic": 30,
+      "nominal_3D_step_volume_L3": 27,
+      "pair_product_mC_mR": 720,
+      "nominal_pair_volume_27_sq": 729,
+      "two_cycle_mixed_faces_isotropic": 518400,
+      "two_cycle_uniform_RR_faces_isotropic": 810000,
+      "nominal_4step_volume_27_pow4": 531441,
+      "isotropic_RC_verified": {
+        "face_trajectory": [
+          30,
+          900,
+          21600,
+          518400
+        ],
+        "N_final": 1161148,
+        "lower_bound_3F_over_4": 388800.0
+      },
+      "isotropic_CR_verified": {
+        "face_trajectory": [
+          24,
+          576,
+          17280,
+          518400
+        ],
+        "N_final": 1247168,
+        "lower_bound_3F_over_4": 388800.0
+      },
+      "anisotropic_CC_verified": {
+        "face_trajectory": [
+          24,
+          474,
+          9438,
+          187854
+        ],
+        "N_final": 415004,
+        "lower_bound_3F_over_4": 140890.5
+      },
+      "anisotropic_RC_verified": {
+        "face_trajectory": [
+          30,
+          636,
+          11184,
+          223944
+        ],
+        "N_final": 499088,
+        "lower_bound_3F_over_4": 167958.0
+      },
+      "anisotropic_CR_verified": {
+        "face_trajectory": [
+          24,
+          474,
+          11712,
+          251304
+        ],
+        "N_final": 591208,
+        "lower_bound_3F_over_4": 188478.0
+      },
+      "anisotropic_RR_verified": {
+        "face_trajectory": [
+          30,
+          636,
+          13800,
+          298896
+        ],
+        "N_final": 709408,
+        "lower_bound_3F_over_4": 224172.0
+      }
+    }
+  },
+  "elapsed_seconds": 43.28
 }
