@@ -138,11 +138,11 @@ def render_fig1(data):
 
     # --- (a) Explicit local sheet regions in C2 (2x2, 1 rib), C3 (3x3, 1 rib), R3 (3x3, 2 ribs) ---
     ax_a = fig.add_subplot(gs[0, 0])
-    ax_a.set_xlim(-0.4, 31.8)
+    ax_a.set_xlim(-0.6, 32.6)
     ax_a.set_ylim(0.4, 15.2)
     ax_a.set_aspect("equal")
     ax_a.axis("off")
-    ax_a.text(-0.2, 14.3, "(a)", fontsize=10.8, fontweight="bold", color="#0f172a")
+    ax_a.text(-0.4, 14.3, "(a)", fontsize=10.8, fontweight="bold", color="#0f172a")
 
     def draw_module_sheet(x0, y0, w, L, ribs, seam_col, title_top, sub_bot, shade_flat=False):
         ax_a.add_patch(mpatches.Rectangle((x0, y0), w, w, facecolor="#f8fafc", edgecolor="#334155", lw=1.2))
@@ -170,17 +170,17 @@ def render_fig1(data):
         ax_a.text(x0 + 0.5 * w, y0 + w + 0.45, title_top, ha="center", va="bottom", fontsize=8.5, fontweight="bold", color="#0f172a")
         ax_a.text(x0 + 0.5 * w, y0 - 0.45, sub_bot, ha="center", va="top", fontsize=7.7, color="#334155")
 
-    w_box = 7.8
+    w_box = 7.6
     y_box = 3.2
-    draw_module_sheet(0.4,  y_box, w_box, 2, [1],    C_C2, r"$C_2$ ($2{\times}2$, $1$ rib)", "four $1{\\times}1$ faces\n($82.7\\%$ seam)")
-    draw_module_sheet(11.6, y_box, w_box, 3, [1],    C_C3, r"$C_3$ ($3{\times}3$, $1$ rib)", "$1{\\times}1, 1{\\times}2, 2{\\times}1, 2{\\times}2$\n($57.5\\%$ seam)", shade_flat=True)
-    draw_module_sheet(22.8, y_box, w_box, 3, [1, 2], C_RR, r"$R_3$ ($3{\times}3$, $2$ ribs)", "nine $1{\\times}1$ faces\n($93.0\\%$ seam)")
+    draw_module_sheet(0.2,  y_box, w_box, 2, [1],    C_C2, r"$C_2$ ($2{\times}2$, $1$ bridge)", "unit faces\n($82.7\\%$ seam)")
+    draw_module_sheet(11.9, y_box, w_box, 3, [1],    C_C3, r"$C_3$ ($3{\times}3$, $1$ bridge)", "flat patches\n($57.5\\%$ seam)", shade_flat=True)
+    draw_module_sheet(23.6, y_box, w_box, 3, [1, 2], C_RR, r"$R_3$ ($3{\times}3$, $2$ bridges)", "unit faces\n($93.0\\%$ seam)")
 
     u3 = w_box / 3.0
-    ax_a.text(11.6 + 0.5 * u3, y_box + 0.5 * u3, r"$1{\times}1$", ha="center", va="center", fontsize=6.9, color="#475569")
-    ax_a.text(11.6 + 0.5 * u3, y_box + 2.5 * u3, r"$1{\times}2$", ha="center", va="center", fontsize=6.9, color="#92400e")
-    ax_a.text(11.6 + 2.5 * u3, y_box + 0.5 * u3, r"$2{\times}1$", ha="center", va="center", fontsize=6.9, color="#92400e")
-    ax_a.text(11.6 + 2.5 * u3, y_box + 2.5 * u3, r"$2{\times}2$", ha="center", va="center", fontsize=7.4, fontweight="bold", color="#92400e")
+    ax_a.text(11.9 + 0.5 * u3, y_box + 0.5 * u3, r"$1{\times}1$", ha="center", va="center", fontsize=6.9, color="#475569")
+    ax_a.text(11.9 + 0.5 * u3, y_box + 2.5 * u3, r"$1{\times}2$", ha="center", va="center", fontsize=6.9, color="#92400e")
+    ax_a.text(11.9 + 2.5 * u3, y_box + 0.5 * u3, r"$2{\times}1$", ha="center", va="center", fontsize=6.9, color="#92400e")
+    ax_a.text(11.9 + 2.5 * u3, y_box + 2.5 * u3, r"$2{\times}2$", ha="center", va="center", fontsize=7.4, fontweight="bold", color="#92400e")
 
     # --- (b) Coarse-to-fine two-cycle placement schematic ---
     ax_b = fig.add_subplot(gs[0, 1])
@@ -212,10 +212,10 @@ def render_fig1(data):
         ax_b.text(x0 + 0.5 * w, y0 - 0.95, title_txt, ha="center", va="top", fontsize=8.8, fontweight="bold", color=border_col)
 
     tw = 6.5
-    draw_arch_tile(1.6,  10.8, tw, 3, [1, 2], 3, [1],    C_RC, r"$R_3 C_3$ ($\mathrm{RC}$)")
-    draw_arch_tile(11.1, 10.8, tw, 3, [1],    3, [1, 2], C_CR, r"$C_3 R_3$ ($\mathrm{CR}$)")
-    draw_arch_tile(1.6,  1.9,  tw, 3, [1, 2], 2, [1],    C_RC, r"$R_3 C_2$ ($\mathrm{RC}$)")
-    draw_arch_tile(11.1, 1.9,  tw, 2, [1],    3, [1, 2], C_CR, r"$C_2 R_3$ ($\mathrm{CR}$)")
+    draw_arch_tile(1.6,  10.8, tw, 3, [1, 2], 3, [1],    C_RC, r"$R_3 C_3$")
+    draw_arch_tile(11.1, 10.8, tw, 3, [1],    3, [1, 2], C_CR, r"$C_3 R_3$")
+    draw_arch_tile(1.6,  1.9,  tw, 3, [1, 2], 2, [1],    C_RC, r"$R_3 C_2$")
+    draw_arch_tile(11.1, 1.9,  tw, 2, [1],    3, [1, 2], C_CR, r"$C_2 R_3$")
 
     # --- (c) Single-cycle module lifetimes ---
     ax_c = fig.add_subplot(gs[0, 2])
@@ -234,7 +234,7 @@ def render_fig1(data):
     ax_c.set_yscale("log")
     ax_c.set_xlim(4.40, 7.38)
     ax_c.set_xlabel(r"Inverse temperature $\beta$")
-    ax_c.set_ylabel(r"Single-cycle first-failure time $\tau_Q$")
+    ax_c.set_ylabel(r"Single-cycle failure time $\tau_Q$")
     ax_c.legend(loc="upper left", frameon=False, handlelength=2.0, labelspacing=0.25)
 
     save_fig(fig, "fig_v21_1_modules")
@@ -290,7 +290,7 @@ def render_fig2(data):
     ax_a.set_xlim(4.40, 7.14)
     ax_a.set_ylim(0.025, 290.0)
     ax_a.set_xlabel(r"Inverse temperature $\beta$")
-    ax_a.set_ylabel(r"Coarse-vs-fine placement ratio")
+    ax_a.set_ylabel("Placement ratio (coarse vs. fine)")
     ax_a.legend(loc="upper left", frameon=False, ncol=1, handlelength=2.0, labelspacing=0.22, fontsize=7.3)
 
     # --- (b) Operational Final-Readout Fidelity P_id(t) = p_X(t) p_Z(t) at beta = 6.5 ---
@@ -324,8 +324,8 @@ def render_fig2(data):
     ax_b.set_xscale("log")
     ax_b.set_xlim(1e2, 3.98e6)
     ax_b.set_ylim(0.14, 1.04)
-    ax_b.set_xlabel(r"Prescribed readout time $t$ ($\beta = 6.5$)")
-    ax_b.set_ylabel(r"Final-readout recovery $P_{\mathrm{id}}(t)$")
+    ax_b.set_xlabel(r"Storage time $t$")
+    ax_b.set_ylabel(r"Logical recovery probability $P_{\mathrm{id}}(t)$")
     ax_b.legend(loc="upper right", frameon=False, handlelength=1.9, labelspacing=0.21, fontsize=7.1)
 
     # --- (c) Matched L=3 (C3 / R3) two-cycle lifetimes ---
@@ -345,7 +345,7 @@ def render_fig2(data):
     ax_c.set_yscale("log")
     ax_c.set_xlim(4.40, 7.12)
     ax_c.set_xlabel(r"Inverse temperature $\beta$")
-    ax_c.set_ylabel(r"First-failure time $\tau_Q$ ($C_3 / R_3$)")
+    ax_c.set_ylabel(r"Mean failure time $\tau_Q$")
     ax_c.legend(loc="upper left", frameon=False, handlelength=2.1)
 
     # --- (d) Unit-patch C2/R3 & single-rib C3/C2 two-cycle lifetimes ---
@@ -366,7 +366,7 @@ def render_fig2(data):
     ax_d.set_xlim(4.40, 7.12)
     ax_d.set_ylim(25.0, 4.5e7)
     ax_d.set_xlabel(r"Inverse temperature $\beta$")
-    ax_d.set_ylabel(r"First-failure time $\tau_Q$ ($C_2 / R_3,\; C_3 / C_2$)")
+    ax_d.set_ylabel(r"Mean failure time $\tau_Q$")
     ax_d.legend(loc="upper left", frameon=False, handlelength=2.0, labelspacing=0.24)
 
     save_fig(fig, "fig_v21_2_reversal")
@@ -385,10 +385,10 @@ def render_fig3(data):
 
     # Filled markers = pass thin-bridge 3D spectral volume screen; open square = fails screen (C2C2, 1-cycle C2)
     frontier_items = [
-        ("v15_sq_C2",     "o", C_C2,   True,  r"1-cyc $C_2$"),
-        ("v15_sq_C3",     "s", C_C3,   False, r"1-cyc $C_3$"),
-        ("v15_sq_R3",     "D", C_RR,   False, r"1-cyc $R_3$"),
-        ("v15_sq_pkg_CC", "s", C_CC,   True,  r"$C_2 C_2$ ($\rho > L_{\mathrm{blk}}^3$)"),
+        ("v15_sq_C2",     "o", C_C2,   True,  r"1-cycle $C_2$"),
+        ("v15_sq_C3",     "s", C_C3,   False, r"1-cycle $C_3$"),
+        ("v15_sq_R3",     "D", C_RR,   False, r"1-cycle $R_3$"),
+        ("v15_sq_pkg_CC", "s", C_CC,   True,  r"$C_2 C_2$"),
         ("v16_sq_C2C3",   "v", C_GOLD, False, r"$C_2 C_3$"),
         ("v16_sq_C3C2",   "P", C_C3,   False, r"$C_3 C_2$"),
         ("v15_sq_pkg_RC", "o", C_RC,   False, r"$R_3 C_2$"),
@@ -420,8 +420,8 @@ def render_fig3(data):
     ax_a.set_xlim(170, 1.3e6)
     ax_a.set_ylim(3.2e2, 3.5e6)
     ax_a.set_xlabel(r"Physical qubits $N$")
-    ax_a.set_ylabel(r"Planar first-failure time $\tau_Q$ ($\beta = 6.5$)")
-    ax_a.legend(loc="lower left", frameon=False, ncol=3, fontsize=7.0, handletextpad=0.35, columnspacing=0.65)
+    ax_a.set_ylabel(r"Mean failure time $\tau_Q$")
+    ax_a.legend(loc="lower left", frameon=False, ncol=3, fontsize=7.2, handletextpad=0.35, columnspacing=0.8)
 
     # --- (b) Proven spectral volume-growth ratio rho(T_blk) / L_blk^3 ---
     ax_b = fig.add_subplot(gs[0, 1])
@@ -447,16 +447,16 @@ def render_fig3(data):
     thin_vals = [b[1] for b in blocks]
     iso_vals = [b[2] for b in blocks]
 
-    ax_b.barh(y_pos - h / 2, thin_vals, height=h, color=C_RC, alpha=0.88, label="Thin-bridge recurrence")
-    ax_b.barh(y_pos + h / 2, iso_vals,  height=h, color="#94a3b8", alpha=0.78, label="Isotropic subdivision")
+    ax_b.barh(y_pos - h / 2, thin_vals, height=h, color=C_RC, alpha=0.88, label="Thin bridges")
+    ax_b.barh(y_pos + h / 2, iso_vals,  height=h, color="#94a3b8", alpha=0.78, label="Isotropic bridges")
 
     ax_b.set_yticks(y_pos)
     ax_b.set_yticklabels([b[0] for b in blocks])
     ax_b.invert_yaxis()
     ax_b.set_xscale("log")
     ax_b.set_xlim(0.18, 8.5)
-    ax_b.set_xlabel(r"Block spectral ratio $\rho(T_{\mathrm{blk}}) \,/\, L_{\mathrm{blk}}^3$")
-    ax_b.legend(loc="lower right", frameon=False, fontsize=7.6)
+    ax_b.set_xlabel(r"Face-growth ratio per unit volume")
+    ax_b.legend(loc="lower right", frameon=False, fontsize=7.7)
 
     save_fig(fig, "fig_v21_3_resources_growth")
 
@@ -474,10 +474,10 @@ def render_fig4(data):
     ax_a.axvline(1.0, color="#64748b", ls=":", lw=1.05)
 
     kin_specs = [
-        ("v15_sq_L3_RC", "flat",     "-o",  C_RC, False, r"Planar $R_3 C_3$, flat $d_Z{=}2$"),
-        ("v15_sq_L3_RC", "seamctrl", "--o", C_RC, True,  r"Planar $R_3 C_3$, seam control"),
-        ("v15_sq_L3_CR", "flat",     "-^",  C_CR, False, r"Planar $C_3 R_3$, flat $d_Z{=}2$"),
-        ("v15_sq_L3_CR", "seamctrl", "--^", C_CR, True,  r"Planar $C_3 R_3$, seam control"),
+        ("v15_sq_L3_RC", "flat",     "-o",  C_RC, False, r"$R_3 C_3$, flat-sheet qubits"),
+        ("v15_sq_L3_RC", "seamctrl", "--o", C_RC, True,  r"$R_3 C_3$, seam control"),
+        ("v15_sq_L3_CR", "flat",     "-^",  C_CR, False, r"$C_3 R_3$, flat-sheet qubits"),
+        ("v15_sq_L3_CR", "seamctrl", "--^", C_CR, True,  r"$C_3 R_3$, seam control"),
     ]
     for tag, mkind, fmt, col, hollow, lbl in kin_specs:
         rows = sorted(data["kinetic_zero_e"].get(tag, {}).get(mkind, []), key=lambda d: d["mu"])
@@ -496,9 +496,9 @@ def render_fig4(data):
     ax_a.set_xscale("log")
     ax_a.set_yscale("log")
     ax_a.set_ylim(1.8e3, 7.8e4)
-    ax_a.set_xlabel(r"Zero-energy rate factor $\mu$ ($\Delta E = 0$, $\beta = 6.5$)")
-    ax_a.set_ylabel(r"Sector first-failure time $\tau_X(\mu)$")
-    ax_a.legend(loc="center right", frameon=False, handlelength=2.0, fontsize=7.3)
+    ax_a.set_xlabel(r"Zero-energy flip rate factor $\mu$")
+    ax_a.set_ylabel(r"Mean failure time $\tau_X$")
+    ax_a.legend(loc="center right", frameon=False, handlelength=2.0, fontsize=7.4)
 
     # --- (b) Decoder recovery-cluster arrival time A_10 +/- SE ---
     ax_b = fig.add_subplot(gs[0, 1])
@@ -523,7 +523,7 @@ def render_fig4(data):
     ax_b.set_yscale("log")
     ax_b.set_xlim(5.92, 7.08)
     ax_b.set_xlabel(r"Inverse temperature $\beta$")
-    ax_b.set_ylabel(r"Decoder cluster arrival time $\bar{A}_{10}$")
+    ax_b.set_ylabel(r"Time to 10-cell cluster")
     ax_b.legend(loc="upper left", frameon=False, ncol=2, handlelength=2.0, fontsize=7.5)
 
     # --- (c) Conditional post-arrival residual survival E[T_X - A_6 | A_6 < T_X] ---
@@ -552,7 +552,7 @@ def render_fig4(data):
     ax_c.set_yscale("log")
     ax_c.set_xlim(5.92, 7.08)
     ax_c.set_xlabel(r"Inverse temperature $\beta$")
-    ax_c.set_ylabel(r"Conditional residual $\mathbb{E}[T_X - A_6 \mid A_6 < T_X]$")
+    ax_c.set_ylabel(r"Remaining time after 6-cell cluster")
     ax_c.legend(loc="upper left", frameon=False, ncol=2, handlelength=2.0, fontsize=7.5)
 
     # --- (d) Exploratory cold-slope comparison WITH 95% CIs on both axes ---
@@ -567,8 +567,8 @@ def render_fig4(data):
         ("pkg_rottor",  "D", C_C2,   r"Rotated torus $C_2 / R_3$"),
         ("C3C2_planar", "P", C_C3,   r"Planar $C_2 / C_3$"),
         ("C3C2_torus",  "X", "#6d28d9", r"Torus $C_2 / C_3$"),
-        ("L3_planar",   "^", C_CR,   r"Planar $C_3 / R_3$ ($2{\times}2$ patch)"),
-        ("L3_torus",    "v", C_GOLD, r"Torus $C_3 / R_3$ ($2{\times}2$ patch)"),
+        ("L3_planar",   "^", C_CR,   r"Planar $C_3 / R_3$"),
+        ("L3_torus",    "v", C_GOLD, r"Torus $C_3 / R_3$"),
     ]
     for skey, mk, col, lbl in sc_items:
         pair = data["slope_comparisons"].get(skey)
@@ -583,9 +583,9 @@ def render_fig4(data):
         )
 
     ax_d.set_ylim(-1.55, 2.55)
-    ax_d.set_xlabel(r"Single-cycle $\Delta_{\mathrm{eff}}(A) - \Delta_{\mathrm{eff}}(B)$")
-    ax_d.set_ylabel(r"Two-cycle $\Delta_{\mathrm{eff}}(A B) - \Delta_{\mathrm{eff}}(B A)$")
-    ax_d.legend(loc="lower right", frameon=False, fontsize=7.1, labelspacing=0.22)
+    ax_d.set_xlabel(r"Single-cycle slope difference")
+    ax_d.set_ylabel(r"Two-cycle slope difference")
+    ax_d.legend(loc="lower right", frameon=False, fontsize=7.2, labelspacing=0.22)
 
     save_fig(fig, "fig_v21_4_mechanism_causal")
 
