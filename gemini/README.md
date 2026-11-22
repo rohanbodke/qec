@@ -1,4 +1,4 @@
-# Selective Multi-Scale Protection in Recursively Welded Quantum Memories (MIT 6.S980)
+# Selective Structure in Welded Quantum Memories (MIT 6.S980)
 
 **Authors:** Harshil Avlani, Rohan Bodke, Rushil Shah, Yichen Li
 
@@ -9,7 +9,7 @@ This directory (`gemini/`) contains the explicit recursive welded CSS code const
 ## Repository Map
 
 * **Manuscripts**
-  * `paper/main.tex` & `paper/main.pdf` — Ten-page APS REVTeX 4.2 paper (*Selective Multi-Scale Protection in Recursively Welded Quantum Memories*), formatted in *Physical Review X* style with four clean figures, two quantitative specification/lifetime tables, and a three-part technical appendix.
+  * `paper/main.tex` & `paper/main.pdf` — Ten-page APS REVTeX 4.2 paper (*Selective Structure in Welded Quantum Memories*), formatted in *Physical Review X* style with four clean figures, two quantitative specification/lifetime tables, and a three-part technical appendix.
   * `proposal_improved.tex` & `proposal_improved.pdf` — Two-page APS REVTeX 4.2 project summary.
   * `paper/references.bib` & `references.bib` — Bibliography including BDL (2026), Hayden Part I (2026), Stengele et al. (2026), Bergamaschi et al. (2025), Gu et al. (2026), Williamson (2026), and Qiu, Zoller, & Li (2020).
 

@@ -321,7 +321,7 @@ def render_fig2(v15):
     style_prx_ax(ax_d, "d", x_off=-0.15)
 
     pts_budget = [
-        ("v15_sq_R3",     "*",  "#0f172a", r"1-cyc $R_3$"),
+        ("v15_sq_R3",     "*",  "#0f172a", r"1-cycle $R_3$"),
         ("v15_sq_pkg_CC", "s",  C_CC,      r"$C_2/R_3$ $\mathrm{CC}$"),
         ("v15_sq_pkg_RC", "o",  C_RC,      r"$C_2/R_3$ $\mathrm{RC}$"),
         ("v15_sq_pkg_CR", "^",  C_CR,      r"$C_2/R_3$ $\mathrm{CR}$"),
@@ -366,13 +366,13 @@ def render_fig3(v15, v14):
     gs = GridSpec(2, 2, figure=fig, wspace=0.25, hspace=0.28)
 
     span_specs = [
-        ("v15_sq_pkg_RC", "-o",  C_RC, False, r"$C_2/R_3$ $\mathrm{RC}$ ($98.5\%$ seam)"),
-        ("v15_sq_pkg_CR", "-^",  C_CR, False, r"$C_2/R_3$ $\mathrm{CR}$ ($98.5\%$ seam)"),
-        ("v15_sq_L3_CR",  "--^", C_CR, True,  r"$C_3/R_3$ $\mathrm{CR}$ ($96.5\%$ seam)"),
-        ("v15_sq_L3_RC",  "--o", C_RC, True,  r"$C_3/R_3$ $\mathrm{RC}$ ($66.5\%$ seam)"),
+        ("v15_sq_pkg_RC", "-o",  C_RC, False, r"$C_2/R_3$ $\mathrm{RC}$"),
+        ("v15_sq_pkg_CR", "-^",  C_CR, False, r"$C_2/R_3$ $\mathrm{CR}$"),
+        ("v15_sq_L3_CR",  "--^", C_CR, True,  r"$C_3/R_3$ $\mathrm{CR}$"),
+        ("v15_sq_L3_RC",  "--o", C_RC, True,  r"$C_3/R_3$ $\mathrm{RC}$"),
     ]
 
-    # --- (a) Fine-to-coarse 10-cell excursion arrival time tau_sp10(beta) ---
+    # --- (a) Fine-to-coarse 10-cell excursion arrival time tau_10(beta) ---
     ax_a = fig.add_subplot(gs[0, 0])
     style_prx_ax(ax_a, "a", x_off=-0.15)
 
@@ -391,10 +391,10 @@ def render_fig3(v15, v14):
     ax_a.set_yscale("log")
     ax_a.set_xlim(4.90, 7.12)
     ax_a.set_xlabel(r"Inverse temperature $\beta$")
-    ax_a.set_ylabel(r"10-cell excursion arrival time $\bar{\tau}_{\mathrm{sp10}}$")
-    ax_a.legend(loc="upper left", frameon=False, handlelength=2.1, fontsize=7.6)
+    ax_a.set_ylabel(r"10-cell arrival time $\tau_{10}$")
+    ax_a.legend(loc="upper left", frameon=False, handlelength=2.1)
 
-    # --- (b) Post-escape coarse survival amplification tau_X / tau_sp6 ---
+    # --- (b) Survival ratio tau_X / tau_6 ---
     ax_b = fig.add_subplot(gs[0, 1])
     style_prx_ax(ax_b, "b", x_off=-0.15)
 
@@ -404,32 +404,31 @@ def render_fig3(v15, v14):
         pts = [p for p in v15["codes"][tag]["points"] if p["beta"] >= 5.0 and p.get("span_stats")]
         bs = [p["beta"] for p in pts]
         amps = [p["span_stats"]["survival_amplification_tau_over_sp6"] for p in pts]
-        short_lbl = lbl.split(" (")[0]
         ax_b.plot(
             bs, amps, fmt, color=col, ms=5.3,
             mfc=("white" if hollow else col), mew=1.35,
-            lw=(1.8 if not hollow else 1.4), label=short_lbl,
+            lw=(1.8 if not hollow else 1.4), label=lbl,
         )
 
     ax_b.set_yscale("log")
     ax_b.set_xlim(4.90, 7.12)
     ax_b.set_xlabel(r"Inverse temperature $\beta$")
-    ax_b.set_ylabel(r"Post-escape survival $\tau_X \,/\, \bar{\tau}_{\mathrm{sp6}}$")
+    ax_b.set_ylabel(r"Survival ratio $\tau_X \,/\, \tau_6$")
     ax_b.legend(loc="upper left", frameon=False, handlelength=2.1)
 
-    # --- (c) Two-cycle slope splitting vs single-cycle coarse-module slope difference ---
+    # --- (c) Two-cycle slope splitting vs single-cycle module slope difference ---
     ax_c = fig.add_subplot(gs[1, 0])
     style_prx_ax(ax_c, "c", x_off=-0.15)
     ax_c.axhline(0.0, color="#334155", ls=":", lw=1.15)
 
     sl = v15["slopes_cold"]
     fam_bars = [
-        (r"Planar" + "\n" + r"$C_2/R_3$",   "v15_sq_pkg_RC",     "v15_sq_pkg_CR",     "v15_sq_R3",     "v15_sq_C2",     C_RC),
-        (r"Torus" + "\n" + r"$C_2/R_3$",    "v15_tor_pkg_RC",    "v15_tor_pkg_CR",    "v15_tor_R3",    "v15_tor_C2",    C_RC),
-        (r"Rot.Tor." + "\n" + r"$C_2/R_3$", "v15_rottor_pkg_RC", "v15_rottor_pkg_CR", "v15_rottor_R3", "v15_rottor_C2", C_RC),
-        (r"Iso.Pl." + "\n" + r"$C_2/R_3$",  "v15_sq_iso_RC",     "v15_sq_iso_CR",     "v15_sq_R3_iso", "v15_sq_C2",     C_RC),
-        (r"Planar" + "\n" + r"$C_3/R_3$",   "v15_sq_L3_RC",      "v15_sq_L3_CR",      "v15_sq_R3",     "v15_sq_C3",     C_CR),
-        (r"Torus" + "\n" + r"$C_3/R_3$",    "v15_tor_L3_RC",     "v15_tor_L3_CR",     "v15_tor_R3",    "v15_tor_C3",    C_CR),
+        ("Planar\n" + r"$C_2/R_3$",     "v15_sq_pkg_RC",     "v15_sq_pkg_CR",     "v15_sq_R3",     "v15_sq_C2",     C_RC),
+        ("Torus\n" + r"$C_2/R_3$",      "v15_tor_pkg_RC",    "v15_tor_pkg_CR",    "v15_tor_R3",    "v15_tor_C2",    C_RC),
+        ("Rotated\n" + r"$C_2/R_3$",    "v15_rottor_pkg_RC", "v15_rottor_pkg_CR", "v15_rottor_R3", "v15_rottor_C2", C_RC),
+        ("Isotropic\n" + r"$C_2/R_3$",  "v15_sq_iso_RC",     "v15_sq_iso_CR",     "v15_sq_R3_iso", "v15_sq_C2",     C_RC),
+        ("Planar\n" + r"$C_3/R_3$",     "v15_sq_L3_RC",      "v15_sq_L3_CR",      "v15_sq_R3",     "v15_sq_C3",     C_CR),
+        ("Torus\n" + r"$C_3/R_3$",      "v15_tor_L3_RC",     "v15_tor_L3_CR",     "v15_tor_R3",    "v15_tor_C3",    C_CR),
     ]
     xs_f, dy_2, se_2, dy_1 = [], [], [], []
     xlbls, cols_f = [], []
@@ -446,10 +445,10 @@ def render_fig3(v15, v14):
     for x, y2, s2, col in zip(xs_f, dy_2, se_2, cols_f):
         lbl_i = None
         if col == C_RC and not seen_c:
-            lbl_i = r"2-cycle $\hat{\Delta}(\mathrm{RC}) - \hat{\Delta}(\mathrm{CR})$ ($1{\times}1$ patch)"
+            lbl_i = r"2-cycle $\mathrm{RC} - \mathrm{CR}$ ($C_2/R_3$)"
             seen_c = True
         elif col == C_CR and not seen_o:
-            lbl_i = r"2-cycle $\hat{\Delta}(\mathrm{RC}) - \hat{\Delta}(\mathrm{CR})$ ($2{\times}2$ patch)"
+            lbl_i = r"2-cycle $\mathrm{RC} - \mathrm{CR}$ ($C_3/R_3$)"
             seen_o = True
         ax_c.errorbar(
             [x - 0.11], [y2], yerr=[s2], fmt=("o" if col == C_RC else "^"), color=col,
@@ -457,15 +456,15 @@ def render_fig3(v15, v14):
         )
     ax_c.plot(
         [x + 0.11 for x in xs_f], dy_1, "D", color="#0f172a", mfc="white", mew=1.5, ms=5.6,
-        label=r"1-cycle $\hat{\Delta}(R) - \hat{\Delta}(C)$",
+        label=r"1-cycle $R - C$",
     )
 
     ax_c.set_xticks(xs_f)
     ax_c.set_xticklabels(xlbls, fontsize=7.9)
     ax_c.set_xlim(-0.55, len(xs_f) - 0.45)
     ax_c.set_ylim(-1.85, 3.35)
-    ax_c.set_ylabel(r"Cold-slope difference $\Delta\hat{\Delta}_{\mathrm{eff}}$")
-    ax_c.legend(loc="upper left", frameon=False, handlelength=1.5, fontsize=7.3, labelspacing=0.25)
+    ax_c.set_ylabel(r"Slope difference")
+    ax_c.legend(loc="upper left", frameon=False, handlelength=1.5, fontsize=7.5, labelspacing=0.26)
 
     # --- (d) Supporting causal check: fixed-code coarse vs fine weld weakening ---
     ax_d = fig.add_subplot(gs[1, 1])
@@ -555,10 +554,10 @@ def render_fig4(v15, v13, certs):
     f_rr_ani = mh["anisotropic_RR_verified"]["face_trajectory"]
 
     for traj, fmt, col, hollow, lbl in [
-        (f_rr_iso, "-D",  C_MACRO, False, r"Uniform $R_3$ (iso., $30$)"),
-        (f_rc_iso, "-o",  C_RC,    False, r"Mixed $\mathrm{RC}$ (iso., $26.83$)"),
-        (f_cr_iso, "--^", C_CR,    True,  r"Mixed $\mathrm{CR}$ (iso., $26.83$)"),
-        (f_cc_iso, "-s",  C_CC,    False, r"Uniform $C_3$ (iso., $24$)"),
+        (f_rr_iso, "-D",  C_MACRO, False, r"Uniform $R_3$ ($30$)"),
+        (f_rc_iso, "-o",  C_RC,    False, r"Mixed $\mathrm{RC}$ ($26.83$)"),
+        (f_cr_iso, "--^", C_CR,    True,  r"Mixed $\mathrm{CR}$ ($26.83$)"),
+        (f_cc_iso, "-s",  C_CC,    False, r"Uniform $C_3$ ($24$)"),
         (f_rr_ani, ":D",  C_RR,    True,  r"Thin-bridge $\mathrm{RR}$"),
     ]:
         gm = [traj[q - 1] ** (1.0 / q) for q in qs]
