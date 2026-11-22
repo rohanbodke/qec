@@ -1047,7 +1047,18 @@ def cert_6_selective_hierarchy_modules_and_mixed_packing():
                     b_cnt += 1
             assert s_cnt == int(sb[0]) and b_cnt == int(sb[1])
             assert s_cnt + b_cnt == len(c.faces)
-            rec = {"q": q_idx, "S": s_cnt, "B": b_cnt, "F": len(c.faces)}
+            max_ed = max(len(inc) for inc in c.edge_faces)
+            vf_cnt = Counter(v for f in c.faces for v in f[:4])
+            max_vf = max(vf_cnt.values())
+            assert max_ed <= 4 and max_vf <= 12, (max_ed, max_vf)
+            rec = {
+                "q": q_idx,
+                "S": s_cnt,
+                "B": b_cnt,
+                "F": len(c.faces),
+                "max_edge_faces": max_ed,
+                "max_vert_faces": max_vf,
+            }
             if check_diam and len(c.faces) <= 5000:
                 nq_d, hx_d, hz_d, *_ = sheaf_to_css_with_seams(c)
                 adj = [set() for _ in range(nq_d)]

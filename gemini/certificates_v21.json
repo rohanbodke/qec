@@ -1295,6 +1295,8 @@
               "S": 8,
               "B": 4,
               "F": 12,
+              "max_edge_faces": 4,
+              "max_vert_faces": 8,
               "N": 19,
               "tanner_diam": 4
             },
@@ -1303,6 +1305,8 @@
               "S": 80,
               "B": 36,
               "F": 116,
+              "max_edge_faces": 4,
+              "max_vert_faces": 9,
               "N": 254,
               "tanner_diam": 10
             },
@@ -1311,6 +1315,8 @@
               "S": 784,
               "B": 356,
               "F": 1140,
+              "max_edge_faces": 4,
+              "max_vert_faces": 12,
               "N": 1942,
               "tanner_diam": 20
             },
@@ -1318,7 +1324,9 @@
               "q": 4,
               "S": 7696,
               "B": 3492,
-              "F": 11188
+              "F": 11188,
+              "max_edge_faces": 4,
+              "max_vert_faces": 12
             }
           ]
         },
@@ -1339,6 +1347,8 @@
               "S": 18,
               "B": 12,
               "F": 30,
+              "max_edge_faces": 4,
+              "max_vert_faces": 8,
               "N": 44,
               "tanner_diam": 6
             },
@@ -1347,6 +1357,8 @@
               "S": 396,
               "B": 240,
               "F": 636,
+              "max_edge_faces": 4,
+              "max_vert_faces": 9,
               "N": 1480,
               "tanner_diam": 20
             },
@@ -1354,13 +1366,17 @@
               "q": 3,
               "S": 4128,
               "B": 1824,
-              "F": 5952
+              "F": 5952,
+              "max_edge_faces": 4,
+              "max_vert_faces": 12
             },
             {
               "q": 4,
               "S": 40320,
               "B": 18336,
-              "F": 58656
+              "F": 58656,
+              "max_edge_faces": 4,
+              "max_vert_faces": 12
             }
           ]
         },
@@ -1381,6 +1397,8 @@
               "S": 8,
               "B": 4,
               "F": 12,
+              "max_edge_faces": 4,
+              "max_vert_faces": 8,
               "N": 19,
               "tanner_diam": 4
             },
@@ -1389,6 +1407,8 @@
               "S": 80,
               "B": 36,
               "F": 116,
+              "max_edge_faces": 4,
+              "max_vert_faces": 9,
               "N": 254,
               "tanner_diam": 10
             },
@@ -1397,6 +1417,8 @@
               "S": 1656,
               "B": 1032,
               "F": 2688,
+              "max_edge_faces": 4,
+              "max_vert_faces": 12,
               "N": 4176,
               "tanner_diam": 29
             },
@@ -1404,7 +1426,9 @@
               "q": 4,
               "S": 36000,
               "B": 21936,
-              "F": 57936
+              "F": 57936,
+              "max_edge_faces": 4,
+              "max_vert_faces": 12
             }
           ]
         },
@@ -1425,6 +1449,8 @@
               "S": 18,
               "B": 6,
               "F": 24,
+              "max_edge_faces": 4,
+              "max_vert_faces": 8,
               "N": 41,
               "tanner_diam": 6
             },
@@ -1433,6 +1459,8 @@
               "S": 360,
               "B": 114,
               "F": 474,
+              "max_edge_faces": 4,
+              "max_vert_faces": 9,
               "N": 1036,
               "tanner_diam": 20
             },
@@ -1441,6 +1469,8 @@
               "S": 3336,
               "B": 1554,
               "F": 4890,
+              "max_edge_faces": 4,
+              "max_vert_faces": 12,
               "N": 8270,
               "tanner_diam": 40
             },
@@ -1448,7 +1478,9 @@
               "q": 4,
               "S": 32904,
               "B": 14898,
-              "F": 47802
+              "F": 47802,
+              "max_edge_faces": 4,
+              "max_vert_faces": 12
             }
           ]
         },
@@ -1469,6 +1501,8 @@
               "S": 8,
               "B": 4,
               "F": 12,
+              "max_edge_faces": 4,
+              "max_vert_faces": 8,
               "N": 19,
               "tanner_diam": 4
             },
@@ -1477,6 +1511,8 @@
               "S": 80,
               "B": 36,
               "F": 116,
+              "max_edge_faces": 4,
+              "max_vert_faces": 9,
               "N": 254,
               "tanner_diam": 10
             },
@@ -1485,6 +1521,8 @@
               "S": 1656,
               "B": 516,
               "F": 2172,
+              "max_edge_faces": 4,
+              "max_vert_faces": 12,
               "N": 3882,
               "tanner_diam": 29
             },
@@ -1492,7 +1530,9 @@
               "q": 4,
               "S": 32904,
               "B": 10452,
-              "F": 43356
+              "F": 43356,
+              "max_edge_faces": 4,
+              "max_vert_faces": 12
             }
           ]
         },
@@ -1512,25 +1552,33 @@
               "q": 1,
               "S": 18,
               "B": 6,
-              "F": 24
+              "F": 24,
+              "max_edge_faces": 4,
+              "max_vert_faces": 8
             },
             {
               "q": 2,
               "S": 360,
               "B": 114,
-              "F": 474
+              "F": 474,
+              "max_edge_faces": 4,
+              "max_vert_faces": 9
             },
             {
               "q": 3,
               "S": 7164,
               "B": 2274,
-              "F": 9438
+              "F": 9438,
+              "max_edge_faces": 4,
+              "max_vert_faces": 12
             },
             {
               "q": 4,
               "S": 142596,
               "B": 45258,
-              "F": 187854
+              "F": 187854,
+              "max_edge_faces": 4,
+              "max_vert_faces": 12
             }
           ]
         },
@@ -1550,25 +1598,33 @@
               "q": 1,
               "S": 18,
               "B": 12,
-              "F": 30
+              "F": 30,
+              "max_edge_faces": 4,
+              "max_vert_faces": 8
             },
             {
               "q": 2,
               "S": 396,
               "B": 240,
-              "F": 636
+              "F": 636,
+              "max_edge_faces": 4,
+              "max_vert_faces": 9
             },
             {
               "q": 3,
               "S": 8568,
               "B": 2616,
-              "F": 11184
+              "F": 11184,
+              "max_edge_faces": 4,
+              "max_vert_faces": 12
             },
             {
               "q": 4,
               "S": 169920,
               "B": 54024,
-              "F": 223944
+              "F": 223944,
+              "max_edge_faces": 4,
+              "max_vert_faces": 12
             }
           ]
         },
@@ -1588,25 +1644,33 @@
               "q": 1,
               "S": 18,
               "B": 6,
-              "F": 24
+              "F": 24,
+              "max_edge_faces": 4,
+              "max_vert_faces": 8
             },
             {
               "q": 2,
               "S": 360,
               "B": 114,
-              "F": 474
+              "F": 474,
+              "max_edge_faces": 4,
+              "max_vert_faces": 9
             },
             {
               "q": 3,
               "S": 7164,
               "B": 4548,
-              "F": 11712
+              "F": 11712,
+              "max_edge_faces": 4,
+              "max_vert_faces": 12
             },
             {
               "q": 4,
               "S": 156240,
               "B": 95064,
-              "F": 251304
+              "F": 251304,
+              "max_edge_faces": 4,
+              "max_vert_faces": 12
             }
           ]
         },
@@ -1626,25 +1690,33 @@
               "q": 1,
               "S": 18,
               "B": 12,
-              "F": 30
+              "F": 30,
+              "max_edge_faces": 4,
+              "max_vert_faces": 8
             },
             {
               "q": 2,
               "S": 396,
               "B": 240,
-              "F": 636
+              "F": 636,
+              "max_edge_faces": 4,
+              "max_vert_faces": 9
             },
             {
               "q": 3,
               "S": 8568,
               "B": 5232,
-              "F": 13800
+              "F": 13800,
+              "max_edge_faces": 4,
+              "max_vert_faces": 12
             },
             {
               "q": 4,
               "S": 185616,
               "B": 113280,
-              "F": 298896
+              "F": 298896,
+              "max_edge_faces": 4,
+              "max_vert_faces": 12
             }
           ]
         },
@@ -1664,25 +1736,33 @@
               "q": 1,
               "S": 36,
               "B": 24,
-              "F": 60
+              "F": 60,
+              "max_edge_faces": 4,
+              "max_vert_faces": 8
             },
             {
               "q": 2,
               "S": 792,
               "B": 480,
-              "F": 1272
+              "F": 1272,
+              "max_edge_faces": 4,
+              "max_vert_faces": 9
             },
             {
               "q": 3,
               "S": 8256,
               "B": 3648,
-              "F": 11904
+              "F": 11904,
+              "max_edge_faces": 4,
+              "max_vert_faces": 12
             },
             {
               "q": 4,
               "S": 80640,
               "B": 36672,
-              "F": 117312
+              "F": 117312,
+              "max_edge_faces": 4,
+              "max_vert_faces": 12
             }
           ]
         },
@@ -1702,31 +1782,41 @@
               "q": 1,
               "S": 18,
               "B": 12,
-              "F": 30
+              "F": 30,
+              "max_edge_faces": 4,
+              "max_vert_faces": 8
             },
             {
               "q": 2,
               "S": 396,
               "B": 240,
-              "F": 636
+              "F": 636,
+              "max_edge_faces": 4,
+              "max_vert_faces": 9
             },
             {
               "q": 3,
               "S": 4128,
               "B": 1824,
-              "F": 5952
+              "F": 5952,
+              "max_edge_faces": 4,
+              "max_vert_faces": 12
             },
             {
               "q": 4,
               "S": 40320,
               "B": 18336,
-              "F": 58656
+              "F": 58656,
+              "max_edge_faces": 4,
+              "max_vert_faces": 12
             },
             {
               "q": 5,
               "S": 835776,
               "B": 260256,
-              "F": 1096032
+              "F": 1096032,
+              "max_edge_faces": 4,
+              "max_vert_faces": 12
             }
           ]
         }
@@ -1900,5 +1990,5 @@
       }
     ]
   },
-  "elapsed_seconds": 62.88
+  "elapsed_seconds": 63.72
 }
