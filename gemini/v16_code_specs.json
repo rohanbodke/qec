@@ -1,0 +1,242 @@
+{
+  "codes": {
+    "v16_sq_C3C2": {
+      "name": "v16_sq_C3C2",
+      "seed": "planar",
+      "sched": [
+        [
+          3,
+          [
+            1
+          ],
+          "X"
+        ],
+        [
+          3,
+          [
+            1
+          ],
+          "Z"
+        ],
+        [
+          2,
+          [
+            1
+          ],
+          "X"
+        ],
+        [
+          2,
+          [
+            1
+          ],
+          "Z"
+        ]
+      ],
+      "aniso": true,
+      "N": 107140,
+      "K": 1,
+      "M_X": 62056,
+      "M_Z": 47802,
+      "F_C1": 474,
+      "seam_qubit_fraction": 0.9163711032294195,
+      "max_wX": 7,
+      "max_wZ": 7,
+      "max_deg": 7,
+      "pushed_wLX": [
+        154
+      ],
+      "pushed_wLZ": [
+        195
+      ],
+      "build_sec": 2.64
+    },
+    "v16_sq_C2C3": {
+      "name": "v16_sq_C2C3",
+      "seed": "planar",
+      "sched": [
+        [
+          2,
+          [
+            1
+          ],
+          "X"
+        ],
+        [
+          2,
+          [
+            1
+          ],
+          "Z"
+        ],
+        [
+          3,
+          [
+            1
+          ],
+          "X"
+        ],
+        [
+          3,
+          [
+            1
+          ],
+          "Z"
+        ]
+      ],
+      "aniso": true,
+      "N": 95896,
+      "K": 1,
+      "M_X": 53928,
+      "M_Z": 43356,
+      "F_C1": 116,
+      "seam_qubit_fraction": 0.6511220488862934,
+      "max_wX": 7,
+      "max_wZ": 6,
+      "max_deg": 7,
+      "pushed_wLX": [
+        164
+      ],
+      "pushed_wLZ": [
+        182
+      ],
+      "build_sec": 2.15
+    },
+    "v16_tor_C3C2": {
+      "name": "v16_tor_C3C2",
+      "seed": "tor1",
+      "sched": [
+        [
+          3,
+          [
+            1
+          ],
+          "X"
+        ],
+        [
+          3,
+          [
+            1
+          ],
+          "Z"
+        ],
+        [
+          2,
+          [
+            1
+          ],
+          "X"
+        ],
+        [
+          2,
+          [
+            1
+          ],
+          "Z"
+        ]
+      ],
+      "aniso": true,
+      "N": 107140,
+      "K": 2,
+      "M_X": 62072,
+      "M_Z": 47802,
+      "F_C1": 474,
+      "seam_qubit_fraction": 0.9163711032294195,
+      "max_wX": 7,
+      "max_wZ": 7,
+      "max_deg": 7,
+      "pushed_wLX": [
+        150,
+        602
+      ],
+      "pushed_wLZ": [
+        195,
+        195
+      ],
+      "build_sec": 2.97
+    },
+    "v16_tor_C2C3": {
+      "name": "v16_tor_C2C3",
+      "seed": "tor1",
+      "sched": [
+        [
+          2,
+          [
+            1
+          ],
+          "X"
+        ],
+        [
+          2,
+          [
+            1
+          ],
+          "Z"
+        ],
+        [
+          3,
+          [
+            1
+          ],
+          "X"
+        ],
+        [
+          3,
+          [
+            1
+          ],
+          "Z"
+        ]
+      ],
+      "aniso": true,
+      "N": 95896,
+      "K": 2,
+      "M_X": 53944,
+      "M_Z": 43356,
+      "F_C1": 116,
+      "seam_qubit_fraction": 0.6511220488862934,
+      "max_wX": 7,
+      "max_wZ": 6,
+      "max_deg": 7,
+      "pushed_wLX": [
+        160,
+        536
+      ],
+      "pushed_wLZ": [
+        182,
+        182
+      ],
+      "build_sec": 2.22
+    }
+  },
+  "qmasks": {
+    "v15_sq_L3_RC": {
+      "tag": "v15_sq_L3_RC",
+      "N": 499088,
+      "flat_dz2_count": 163392,
+      "seam_dz2_pool": 287064,
+      "ctrl_dz2_count": 163392
+    },
+    "v15_sq_L3_CR": {
+      "tag": "v15_sq_L3_CR",
+      "N": 591208,
+      "flat_dz2_count": 16576,
+      "seam_dz2_pool": 490800,
+      "ctrl_dz2_count": 16576
+    },
+    "v15_tor_L3_RC": {
+      "tag": "v15_tor_L3_RC",
+      "N": 499088,
+      "flat_dz2_count": 167248,
+      "seam_dz2_pool": 287064,
+      "ctrl_dz2_count": 167248
+    },
+    "v15_tor_L3_CR": {
+      "tag": "v15_tor_L3_CR",
+      "N": 591208,
+      "flat_dz2_count": 20720,
+      "seam_dz2_pool": 490800,
+      "ctrl_dz2_count": 20720
+    }
+  }
+}

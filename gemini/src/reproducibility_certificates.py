@@ -1,46 +1,33 @@
 #!/usr/bin/env python3
 """
 reproducibility_certificates.py
-Standalone, reproducible verification suite for all algebraic, topological,
-and small-instance dynamical claims in the V19 manuscript
-"Finite-Size Thermal Protection in Compact Recursively Welded Codes":
+Standalone, reproducible verification suite for all algebraic, combinatorial,
+spectral-growth, and finite-state Markov-chain claims in
+"The Thermal Value of Welding Across Scales":
 
-  1. Auxiliary Single-Cross Cell Certificates (Sec. II):
+  1. Auxiliary Single-Cross Cell Certificates (Appendix A):
      - 2x2 single-cross cell (12 variables, 9 equality hyperedges, 4,096 assignments):
        * Per-wall minority bound W_wall <= 2 * V (tight: 4 extremizers, min_{V>0} V = 2).
        * Separate 5-bit wall-majority quotient bound C <= (2/5) * V (tight: 92 extremizers),
          with explicit witness a=0000, b=0111, c=0110 where W_wall=6, V=5, C=2 (C > W_wall/5).
-       * Literal XOR counterexample count (1,088 violations of W_wall <= 2 * V_xor).
      - 3x3 single-cross cell (24 variables, 27 equality hyperedges, 16,777,216 assignments):
-       * Per-wall minority bound W_wall <= 2 * V and 7-bit wall-majority bound C <= (2/7) * V,
-         with explicit canonical list of all 27 hyperedges and 4 boundary walls.
+       * Per-wall minority bound W_wall <= 2 * V and 7-bit wall-majority bound C <= (2/7) * V.
 
-  2. Physical CSS Construction, Seed Parameters, Parity-Generator Basis, & Pockets (Sec. II):
-     - Exact seed matrices, GF(2) ranks, logical representatives, and sector distances:
-       * Planar seed `seed_planar_11()`: [[2, 1, (2, 1)]] (d = min(2, 1) = 1).
-       * Rotated torus seed `seed_rot_torus_422()`: [[4, 2, 2]] ((d_X, d_Z) = (2, 2)).
-     - Full instance table across planar (s=0..4), torus (s=0..4), 3x3 single-cross (s=1..3),
-       compact 2-rib (`sq_aniso_L3r2_s2`, 1,480q), and ell=8 grid-subdivided 2-rib (`sq_bdl_8_8_r2`, 56,312q):
-       exact commutation H_X H_Z^T == 0 (mod 2), K = N - rank(H_X) - rank(H_Z), check weights, and qubit degrees.
-     - Exact physical red-seam parity-generator identification on the 2x2 Z-weld cell:
-       V <= V_phys <= (11/5) V, W_wall <= V_phys, and C <= (2/5) V_phys across all 4,096 dual face subsets m,
-       plus multi-cell verification of simultaneous 4-wall coarse coboundary inversion (H_Z^fine)^T (pi^* y).
-     - Exact 3x3 periodic torus meta-check pocket provenance (dim ker H_Z^T = 10 for 1-rib vs 37 for 2-rib).
+  2. Physical CSS Construction, Seed Parameters, Z-Cochain Wall Lemma, & Pockets (Sec. II & Appendix A):
+     - Planar seed [[2, 1, (2, 1)]], 1-face torus (K = 2), and 2-face rotated torus [[4, 2, 2]] (K = 2).
+     - Exact physical Z-stabilizer cochain e_Z = H_Z^T m (satisfying H_X e_Z = 0 inside an even-weld cell):
+       V <= V_phys <= (11/5) V (19/9 on an isolated cell), W_wall <= 2 * V_phys (attained at a=0000,
+       b=1111, c=0000 where V=4, V_phys=4, W_wall=8, C=0), and C <= (2/5) V_phys across all 4,096 m.
 
-  3. Construction-Specific Ablations (Sec. II):
-     - Pruned 3-arm T-bridge (`cb3rib`) and simultaneous 1-step X+Z cross weld (`apply_mixed_xz_step`).
+  3. Construction-Specific Ablations & 3x3 Flat-Region Partition.
 
-  4. Analytical & Numerical Physical Graph Recurrences for Conditional R^3 Packing (Sec. V):
-     - Verification of double-counting bound 3 F_q <= I_q <= 4 N_q => N_q >= (3/4) F_0 m(L)^q
-       and physical Tanner-graph diameter recurrence D_q = O(L^q) across L = 2 (m = 12) and L = 3 (m = 24).
-     - Sheet-collar anatomy of `sq_bdl_8_8_r2` (56,312q, zero weight-2 checks, 96.7% interior Z-degree-2 sheet qubits).
+  4. Two-Type Thin-Bridge Face-Growth Recurrence & Spectral Volume Screen (Proposition 1 & Appendix B):
+     - Direct verification on the generator across uniform and mixed multi-step schedules (up to 5 steps,
+       N = 1,992,152) that every face is either ordinary (0 cyl edges) or thin-bridge (2 cyl edges),
+       obeying (S_{q+1}, B_{q+1})^T = T(L_{q+1}, r_{q+1}) (S_q, B_q)^T with T(L, r) = [[2L^2, 2L], [2rL, r]],
+       together with incidence N_q >= (3/4) F_q, diameter D_q = O(prod L_t), and spectral radii rho(T_blk).
 
-  5. Exact CSS Check-Leg Wire Construction & Dynamical CTMC Validation (Sec. V):
-     - Exact verification on `rottor_iso_L2r1_s2` (N(w) = 646 + 288(w - 1), M_Z = 288, rank H_Z = 286,
-       M_X = 376, rank H_X = 358, K = 2) and `sq_iso_L2r1_s2` (N(w) = 323 + 144(w - 1), K = 1)
-       that rank H_Z(w) = rank H_Z(1) + M_Z(w - 1), rank H_X(w) = rank H_X(1), H_X(w) H_Z(w)^T = 0, K(w) = K(1).
-     - Exact finite-size Gibbs marginalization (including redundant meta-checks M_Z > rank H_Z) and
-       exact 16-state continuous-time Markov-chain (CTMC) matrix-inverse validation on [[4, 1, 2]].
+  5. Exact CSS Check-Leg Wire Marginal & Detailed-Balance Verification of Zero-Energy Kinetic Scaling.
 """
 
 from collections import Counter, defaultdict, deque
@@ -541,6 +528,16 @@ def cert_2_physical_sheaf_and_instances():
             for wq in wall_qs:
                 assert all(int(qv_lift[q]) == (y0 ^ y1) for q in wq)
 
+    assert abs(max_ww_vp - 2.0) < 1e-12 and abs(max_c_vp - 0.4) < 1e-12
+    # Explicit sharpness witness a=0000, b=1111 (bits 4..7), c=0000 => V=4, V_phys=4, W_wall=8, C=0:
+    m_b1111 = np.zeros(len(hzZt), dtype=np.int8)
+    for k in range(4, 8):
+        m_b1111[cell0_faces[k]] = 1
+    qv_b1111 = (HZt_mat.T @ m_b1111) % 2
+    vp_b1111 = int(qv_b1111[c0_int_q].sum())
+    ww_b1111 = sum(min(int(qv_b1111[wq].sum()), 5 - int(qv_b1111[wq].sum())) for wq in wall_qs)
+    assert vp_b1111 == 4 and ww_b1111 == 8
+
     out["physical_parity_basis_2x2_Z_cell"] = {
         "cell_faces": 12,
         "interior_parity_qubits": len(c0_int_q),
@@ -549,6 +546,12 @@ def cert_2_physical_sheaf_and_instances():
         "max_V_phys_over_V_rep": max_vp_v,
         "max_W_wall_over_V_phys": max_ww_vp,
         "max_C_round_over_V_phys": max_c_vp,
+        "sharpness_witness_a0000_b1111_c0000": {
+            "V_rep": 4,
+            "V_phys": vp_b1111,
+            "W_wall": ww_b1111,
+            "C_round": 0,
+        },
         "multicell_coarse_coboundary_verified": True,
     }
 
@@ -1014,19 +1017,114 @@ def cert_6_selective_hierarchy_modules_and_mixed_packing():
     iso_cr = count_faces_sched(C3 + R3, False)
     assert iso_rc["face_trajectory"][-1] == 518400 and iso_cr["face_trajectory"][-1] == 518400
 
-    # Exact 2x2 branching matrices for thin anisotropic bridges (aniso=True) at L = 3:
-    # Face types at each step:
-    #   Type 0 (square face, 0 prev_cyl edges -> Lx=3, Ly=3):
-    #     produces 2*9 = 18 Type-0 sheet faces + 2*r*3 = 6*r Type-1 strip bridge faces!
-    #   Type 1 (strip face, 2 opposite prev_cyl edges -> Lx=3, Ly=1):
-    #     produces 2*3 = 6 Type-0? Wait: on a 3x1 strip face, its Ly=1 edges have NO interior rib points,
-    #     and its Lx=3 edges are subdivided into 3, so its 2*3 = 6 sheet sub-faces have NO prev_cyl edges
-    #     -> they BECOME Type-0 square faces at the next step! Meanwhile its r interior ribs of length Ly=1
-    #     produce r bridge faces of size 1x1 (2 prev_cyl edges + 2 new_cyl edges -> Type 2, or let's verify exact counts!):
-    aniso_cc = count_faces_sched(C3 + C3, True)
-    aniso_rc = count_faces_sched(R3 + C3, True)
-    aniso_cr = count_faces_sched(C3 + R3, True)
-    aniso_rr = count_faces_sched(R3 + R3, True)
+    # Exact two-type transfer matrix T(L, r) = [[2*L^2, 2*L], [2*r*L, r]] for thin bridges (aniso=True):
+    # At every step q, cyl_q consists strictly of vertical cylinder edges created in step q.
+    # Every sheet descendant has all 4 boundary edges in out_e[0 : 2*n_xe] (disjoint from cyl_q),
+    # hence has 0 edges in cyl_q (ordinary type S_q, subdividing as L_{q+1} x L_{q+1}).
+    # Every bridge face created in step q has 2 sheet-rib edges outside cyl_q and 2 vertical edges in cyl_q
+    # (thin-bridge type B_q, subdividing as L_{q+1} x 1 with 2*L_{q+1} sheet children and r_{q+1} new bridges).
+    def T_thin(L, r):
+        return np.array([[2 * L * L, 2 * L], [2 * r * L, r]], dtype=np.int64)
+
+    def verify_thin_schedule(label, seed_fn, sched, check_diam=False):
+        c = seed_fn()
+        cyl = set()
+        sb = np.array([len(c.faces), 0], dtype=np.int64)
+        hist = [{"q": 0, "S": int(sb[0]), "B": int(sb[1]), "F": len(c.faces)}]
+        for q_idx, (L_s, rb, it) in enumerate(sched, 1):
+            c, cyl = apply_sheaf_step(c, L_s, rb, it, prev_cyl=cyl)
+            sb = T_thin(L_s, len(rb)) @ sb
+            # Direct structural audit on the generated complex `c`:
+            s_cnt, b_cnt = 0, 0
+            for f in c.faces:
+                eb, et, el, er = f[4], f[5], f[6], f[7]
+                in_c = [eb in cyl, et in cyl, el in cyl, er in cyl]
+                if not any(in_c):
+                    s_cnt += 1
+                else:
+                    # Must be opposite vertical edges (el, er) in cyl and (eb, et) outside cyl:
+                    assert in_c == [False, False, True, True], in_c
+                    b_cnt += 1
+            assert s_cnt == int(sb[0]) and b_cnt == int(sb[1])
+            assert s_cnt + b_cnt == len(c.faces)
+            rec = {"q": q_idx, "S": s_cnt, "B": b_cnt, "F": len(c.faces)}
+            if check_diam and len(c.faces) <= 5000:
+                nq_d, hx_d, hz_d, *_ = sheaf_to_css_with_seams(c)
+                adj = [set() for _ in range(nq_d)]
+                for r in hx_d + hz_d:
+                    for i in range(len(r)):
+                        for j in range(i + 1, len(r)):
+                            adj[r[i]].add(r[j])
+                            adj[r[j]].add(r[i])
+                starts = range(nq_d) if nq_d <= 1500 else np.linspace(0, nq_d - 1, 48, dtype=int)
+                dm = 0
+                for s0 in starts:
+                    dist = [-1] * nq_d
+                    dist[int(s0)] = 0
+                    dq = deque([int(s0)])
+                    while dq:
+                        u = dq.popleft()
+                        for w in adj[u]:
+                            if dist[w] == -1:
+                                dist[w] = dist[u] + 1
+                                dq.append(w)
+                    dm = max(dm, max(dist))
+                rec["N"] = nq_d
+                rec["tanner_diam"] = dm
+            hist.append(rec)
+        nq_f, hx_f, hz_f, *_ = sheaf_to_css_with_seams(c)
+        qz = Counter(qi for r in hz_f for qi in r)
+        assert min(len(r) for r in hz_f) >= 3 and max(qz.values()) <= 4
+        assert nq_f >= 0.75 * len(c.faces)
+        h_code = hashlib.sha256(
+            json.dumps({"N": nq_f, "HX": [sorted(r) for r in hx_f], "HZ": [sorted(r) for r in hz_f]}).encode()
+        ).hexdigest()
+        return {"label": label, "N_final": nq_f, "F_final": len(c.faces), "sha256_css": h_code, "steps": hist}
+
+    thin_verified = {
+        "C2C2": verify_thin_schedule("sq_pkg_CC", seed_planar_11, C2 + C2, check_diam=True),
+        "R3C2": verify_thin_schedule("sq_pkg_RC", seed_planar_11, R3 + C2, check_diam=True),
+        "C2R3": verify_thin_schedule("sq_pkg_CR", seed_planar_11, C2 + R3, check_diam=True),
+        "C3C2": verify_thin_schedule("sq_C3C2", seed_planar_11, C3 + C2, check_diam=True),
+        "C2C3": verify_thin_schedule("sq_C2C3", seed_planar_11, C2 + C3, check_diam=True),
+        "L3_CC": verify_thin_schedule("sq_L3_CC", seed_planar_11, C3 + C3),
+        "L3_RC": verify_thin_schedule("sq_L3_RC", seed_planar_11, R3 + C3),
+        "L3_CR": verify_thin_schedule("sq_L3_CR", seed_planar_11, C3 + R3),
+        "L3_RR": verify_thin_schedule("sq_L3_RR", seed_planar_11, R3 + R3),
+        "rottor_R3C2": verify_thin_schedule("rottor_pkg_RC", seed_rot_torus_422, R3 + C2),
+        "mixed_5step": verify_thin_schedule("sq_R3_C2_C3s1", seed_planar_11, R3 + C2 + [(3, [1], "X")]),
+    }
+
+    def pf_radius(M):
+        vals = np.linalg.eigvals(M.astype(np.float64))
+        return float(np.max(np.real(vals)))
+
+    T_C2 = T_thin(2, 1)
+    T_C3 = T_thin(3, 1)
+    T_R3 = T_thin(3, 2)
+    M_R3C2 = T_C2 @ T_C2 @ T_R3 @ T_R3
+    M_C2R3 = T_R3 @ T_R3 @ T_C2 @ T_C2
+    M_C3C2 = T_C2 @ T_C2 @ T_C3 @ T_C3
+    M_R3C3 = T_C3 @ T_C3 @ T_R3 @ T_R3
+
+    spectral_screen = {
+        "thin_C2_1step": {"rho": pf_radius(T_C2), "vol_bound": 8, "passes": pf_radius(T_C2) <= 8.0},
+        "thin_C2C2_block": {"rho": pf_radius(T_C2 @ T_C2 @ T_C2 @ T_C2), "vol_bound": 16 ** 3, "passes": pf_radius(T_C2) ** 4 <= 4096.0},
+        "thin_C3_1step": {"rho": pf_radius(T_C3), "vol_bound": 27, "passes": pf_radius(T_C3) <= 27.0},
+        "thin_R3_1step": {"rho": pf_radius(T_R3), "vol_bound": 27, "passes": pf_radius(T_R3) <= 27.0},
+        "thin_C3C2_block": {"matrix": M_C3C2.tolist(), "rho": pf_radius(M_C3C2), "vol_bound": 36 ** 3, "passes": pf_radius(M_C3C2) <= 46656.0},
+        "thin_R3C2_block": {"matrix": M_R3C2.tolist(), "rho": pf_radius(M_R3C2), "rho_reversed": pf_radius(M_C2R3), "vol_bound": 36 ** 3, "passes": pf_radius(M_R3C2) <= 46656.0},
+        "thin_R3C3_block": {"matrix": M_R3C3.tolist(), "rho": pf_radius(M_R3C3), "vol_bound": 81 ** 3, "passes": pf_radius(M_R3C3) <= 531441.0},
+        "iso_C2_1step": {"m": 12, "vol_bound": 8, "passes": False},
+        "iso_C3_1step": {"m": 24, "vol_bound": 27, "passes": True},
+        "iso_R3_1step": {"m": 30, "vol_bound": 27, "passes": False},
+        "iso_R3C2_block": {"m_blk": (12 ** 2) * (30 ** 2), "vol_bound": 36 ** 3, "passes": False},
+        "iso_R3C3_block": {"m_blk": (24 ** 2) * (30 ** 2), "vol_bound": 81 ** 3, "passes": True},
+    }
+    assert spectral_screen["thin_C2_1step"]["passes"] is False
+    assert spectral_screen["thin_C3C2_block"]["passes"] is True
+    assert spectral_screen["thin_R3C2_block"]["passes"] is True
+    assert abs(spectral_screen["thin_R3C2_block"]["rho"] - spectral_screen["thin_R3C2_block"]["rho_reversed"]) < 1e-8
 
     out["mixed_hierarchy_L3_volume_growth"] = {
         "m_C_isotropic": m_C,
@@ -1039,12 +1137,60 @@ def cert_6_selective_hierarchy_modules_and_mixed_packing():
         "nominal_4step_volume_27_pow4": vol_step ** 4,
         "isotropic_RC_verified": iso_rc,
         "isotropic_CR_verified": iso_cr,
-        "anisotropic_CC_verified": aniso_cc,
-        "anisotropic_RC_verified": aniso_rc,
-        "anisotropic_CR_verified": aniso_cr,
-        "anisotropic_RR_verified": aniso_rr,
+        "thin_bridge_two_type_verified": thin_verified,
+        "spectral_volume_screen": spectral_screen,
     }
     return out
+
+
+def cert_7_zero_energy_kinetic_detailed_balance():
+    """
+    Exact 64-state Markov-generator verification that scaling zero-energy (Delta E == 0)
+    flip rates on any chosen qubit subset Q_* by mu > 0 preserves exact pairwise detailed
+    balance and leaves the Boltzmann-Gibbs stationary distribution pi_beta unchanged.
+    """
+    nq = 6
+    checks = [[0, 1, 2], [1, 3], [2, 4, 5], [3, 4]]  # q=1,3,4 have deg 2 (nontrivial Delta E == 0 flips!)
+    qmask = {1, 3}
+    states = np.arange(1 << nq, dtype=np.int32)
+    energies = np.zeros(1 << nq, dtype=np.float64)
+    for r in checks:
+        par = np.zeros(1 << nq, dtype=np.int32)
+        for q in r:
+            par ^= (states >> q) & 1
+        energies += par.astype(np.float64)
+
+    rows = []
+    for beta in (2.5, 6.5):
+        pi = np.exp(-beta * energies)
+        pi /= pi.sum()
+        for mu in (0.01, 0.05, 0.2, 1.0, 5.0):
+            Q = np.zeros((1 << nq, 1 << nq), dtype=np.float64)
+            n_zero_scaled = 0
+            for x in range(1 << nq):
+                for q in range(nq):
+                    y = x ^ (1 << q)
+                    dE = energies[y] - energies[x]
+                    rate = 1.0 / (1.0 + np.exp(beta * dE))
+                    if abs(dE) < 1e-12 and q in qmask:
+                        rate *= mu
+                        n_zero_scaled += 1
+                    Q[x, y] = rate
+                Q[x, x] = -np.sum(Q[x, :])
+            assert n_zero_scaled > 0
+            db_err = float(np.max(np.abs(pi[:, None] * Q - (pi[:, None] * Q).T)))
+            stat_err = float(np.max(np.abs(pi @ Q)))
+            assert db_err < 1e-15 and stat_err < 1e-15
+            rows.append(
+                {
+                    "beta": beta,
+                    "mu": mu,
+                    "scaled_zero_e_transitions": n_zero_scaled,
+                    "max_detailed_balance_error": db_err,
+                    "max_stationary_gibbs_error": stat_err,
+                }
+            )
+    return {"verified_pairs": rows}
 
 
 def main():
@@ -1056,13 +1202,14 @@ def main():
         "packing_recurrences_and_grid_anatomy": cert_4_packing_recurrences_and_grid_anatomy(),
         "exact_css_wires_and_ctmc": cert_5_exact_css_wires_and_ctmc(),
         "selective_hierarchy_and_mixed_packing": cert_6_selective_hierarchy_modules_and_mixed_packing(),
+        "zero_energy_kinetic_detailed_balance": cert_7_zero_energy_kinetic_detailed_balance(),
         "elapsed_seconds": None,
     }
     report["elapsed_seconds"] = round(time.time() - t0, 2)
-    for fname in ("certificates_v20.json", "certificates_v19.json", "certificates_v17.json"):
+    for fname in ("certificates_v21.json", "certificates_v20.json", "certificates_v19.json", "certificates_v17.json"):
         with open(os.path.join(ROOT, fname), "w") as f:
             json.dump(report, f, indent=2)
-    print(f"Wrote verified certificates to certificates_v20.json in {report['elapsed_seconds']}s")
+    print(f"Wrote verified certificates to certificates_v21.json in {report['elapsed_seconds']}s")
 
 
 if __name__ == "__main__":
