@@ -38,27 +38,35 @@ preserving exact CSS commutation $H_X H_Z^T = 0 \pmod 2$, the seed's rank-derive
    - Asymmetric $X/Z$ seam welding lifts 1-step barriers from $(3, 3)$ to $(3, 4)$ and boosts 2-step storage **$61.6\times$** ($[40.6, 85.0]$) at identical $N = 5{,}088$ (`cc2s_R3`: $6.16 \times 10^6$ vs. self-dual `cc2s_R3_sd`: $1.00 \times 10^5$).
    - Unwelded 2D 4.8.8 color tori still degrade **$7.89\times$** (`[4.06, 12.1]`) across $L = 3 \to 12$ ($6.02 \times 10^5 \to 7.63 \times 10^4$). Pure-$L = 3$ 2-step welded `cc2s_RX3` ($4{,}128$ qubits, $\dim_F = 2.843 < 3, R_{\max} = 3.01$) reaches **$8.91 \times 10^6$** ($[5.72, 13.5]\times 10^6$) at $\beta = 6.5$ (**$117\times$** 2D $L = 12$, **$29.5\times$** opposite-cut `cc2s_RZ3`, **$803\times$** $[509, 1{,}244]$ BDL `R_3 R_3` at $172\times$ fewer qubits, and **$18.8\times$** $C_3 R_3^{ZX}$ at warmer $\beta = 5.0$). Mixed $(3, 2)$ `cc2s_mix32` ($2{,}208$ qubits) reaches $3.69 \times 10^7$ ($\beta = 6.5$), while 3-step `cc3s_X3r1Z3r2X3r1` ($81{,}888$ qubits, $\dim_F = 2.802 < 3$) reaches $1.41 \times 10^6$ ($7.61\times$ `1-1-1`, $127\times$ `R_3 R_3`). Paired `BP-OSD` lifts unrelaxed color-code $p_{0.80}$ by $1.63\text{--}3.17\times$ ($1.97\% \to 4.60\%$ on `cc2s_R3`) while agreeing with `UF` under cold Glauber dynamics (`BP/UF` $= 0.95\text{--}1.00$ at $\beta = 6.5$).
 
+7. **Extension A & Regimes 1/3: Scaling Anatomy, T-Junction Dispersion (`jog1`), and Open-Boundary (`css_dual`) Color Codes (`src/verify_3d_extensionA_and_regimes.py`, `cluster_v9/build_v23_extensionA.py`, `src/parse_v23_extensionA.py`, `270` tasks, `0` errors, `0` pre-$t_{0.80}$ caps):**
+   - **Same-parity scaling & $E = 2$ bulk dimer entropy (Regime 1):** Holding limiting-sector parity fixed (`1s L_{3,2}` $240 \to$ `3s 1-2-1` $81{,}888$), $\beta = 6.5$ storage grows **$2.49\times$** (`[1.49, 4.04]`). Exact adjacent-pair enumeration isolates why 3-step color codes lag 2-step `cc2s_RX3`: degree-$3$ 4.8.8 sheets carry **$118{,}600$** limiting-sector $E = 2$ dimer traps on 3s `1-2-1` ($0.268$ occupied dimers at $\beta = 6.5$) vs. **$5{,}832$** on 2s `cc2s_RX3` ($0.013$ dimers) and zero $E \le 2$ pairs on degree-$4$ Haah. Splitting $d = 3$ seams symmetrically half-$X$/half-$Z$ breaks topological order ($K \to 8, 12$; $\min \deg \to 2$).
+   - **BDL `jog1` T-junction dispersion (Extension A1):** Shifting transverse bridges by one unit removes all $d = 4$ seam pillars (`d4_edge_count = 0`, $w_{\max} \le (14, 18)$, $R_{\max} \le 4.53$) across single-bridge `v23_disp_1s/2s/3s_L3`. Reinforced 2s `v23_disp_2s_RX3` ($4{,}272$ qubits, $8$ residual $d = 4$ seams) reaches **$1.11 \times 10^7$** (`[5.47, 15.4]\times 10^6$) at $\beta = 6.5$ (`1.24x [0.58, 2.13]` vs. `cc2s_RX3`), while single-bridge `v23_disp_3s_L3` ($80{,}648$ qubits, $127{,}876$ $E = 2$ traps) reaches $1.11 \times 10^5$ ($\beta = 6.5$) and $6.85 \times 10^5$ ($\beta = 7.0$), confirming $r = 2$ limiting-step bridges and $E = 2$ dimer entropy govern 3-step lifetimes. Paired `BP-OSD` lifts i.i.d. $p_{0.80}$ on `v23_disp_2s_L3` from $2.09\%$ to $5.16\%$ ($2.47\times$).
+   - **Open-boundary `css_dual` planar color codes (Regime 3 / Extension A2):** Alternating smooth/rough boundary checks lock logical degeneracy at invariant **$K = 2$** across every step without periodic wraparound—in sharp contrast to periodic Haah $\mathbb{T}^3$, which oscillates **$K(L) \in [2, 62]$** across $L = 3\text{--}17$. Open planar 2s `v23_plan_cc2s_RX3` ($4{,}128$ qubits, $K = 2$) reaches **$4.15 \times 10^6$** (`[2.51, 6.71]\times 10^6$) at $\beta = 6.5$, outperforming open 2D $L = 12$ ($1.08 \times 10^4$) by **$383\times$** (`[210, 636]`) with `BP-OSD` i.i.d. threshold $5.51\%$ ($2.89\times$ `UF`).
+
 ## Reproducing All Suites
 
 ```bash
 # 1. Constructive R^3 geometry, pruning algebra, quotients, and color-welded algebraic certificates
 python3 src/verify_3d_local_embeddings_and_L3.py
 python3 src/verify_3d_color_welded_algebra.py
+python3 src/verify_3d_extensionA_and_regimes.py
 python3 src/eval_L3_collared_predictions.py
 python3 src/verify_local_quotients_and_algebra.py
 
-# 2. Build V21 (surface), V20 (benchmarks), and V22 (4.8.8 color-welded) SubMIT campaigns
+# 2. Build V21 (surface), V20 (benchmarks), V22 (4.8.8 color-welded), and V23 (Extension A) SubMIT campaigns
 python3 cluster_v9/build_v21_3d_local.py
 python3 cluster_v9/build_v20_benchmarks.py
 python3 cluster_v9/build_v20b_j1.py
 python3 cluster_v9/build_v22_color_welded.py
+python3 cluster_v9/build_v23_extensionA.py
 
-# 3. Parse V21 (648 tasks), V20 (630 tasks), and V22 (564 tasks) with 10,000-draw bootstrap CIs
+# 3. Parse V21 (648 tasks), V20 (630 tasks), V22 (564 tasks), and V23 (270 tasks) with 10,000-draw bootstrap CIs
 python3 src/parse_v21_3d_local.py
 python3 src/parse_v20_benchmarks.py
 python3 src/parse_v22_color_welded.py
+python3 src/parse_v23_extensionA.py
 
-# 4. Render Figures 1-8 and compile REVTeX 4.2 manuscripts
+# 4. Render Figures 1-9 and compile REVTeX 4.2 manuscripts
 python3 src/render_v26_3d_local_figures.py
 cd paper && pdflatex main.tex && bibtex main && pdflatex main.tex && pdflatex main.tex
 cd .. && pdflatex proposal_improved.tex && bibtex proposal_improved && pdflatex proposal_improved.tex && pdflatex proposal_improved.tex
@@ -73,5 +81,6 @@ cd .. && pdflatex proposal_improved.tex && bibtex proposal_improved && pdflatex 
 - `frozen_interface_predictions.json`, `src/freeze_interface_predictor.py`: Pre-registered collared $3 \times 3$ patch curves (`frozen_sha256: 36048c6919f8633d9e7487a5b886c96deca5ce18f32b1ac9cc0f828be23a0ff4`).
 - `cluster_v21_results.txt`, `v21_code_specs.json`, `parsed_v21_3d_local.json`, `cluster_v9/build_v21_3d_local.py`, `src/parse_v21_3d_local.py`: Raw trajectory logs (`648` tasks, `0` errors) and bootstrap parser for the pure-$L = 3$ surface campaign.
 - `cluster_v22_results.txt`, `v22_code_specs.json`, `parsed_v22_color_welded.json`, `cluster_v9/build_v22_color_welded.py`, `src/parse_v22_color_welded.py`, `cluster_v9/slurm_worker_v22.sh`: Raw trajectory logs (`564` tasks, `0` errors) and bootstrap parser for the V22 3D-local welded 4.8.8 color-code campaign.
+- `verified_v23_extensionA.json`, `v23_code_specs.json`, `cluster_v23_results.txt`, `parsed_v23_extensionA.json`, `cluster_v9/build_v23_extensionA.py`, `cluster_v9/slurm_worker_v23.sh`, `src/verify_3d_extensionA_and_regimes.py`, `src/parse_v23_extensionA.py`: V23 Extension A (`270` tasks, `0` errors) geometries, exact dimer-trap / Haah $K(L)$ certificates, and bootstrap parser for `jog1` T-junction dispersion and `css_dual` open-boundary planar hierarchies.
 - `cluster_v20_results.txt`, `parsed_v20_benchmarks.json`, `src/parse_v20_benchmarks.py`: Cross-family $J = 1$ benchmarks across 2D Toric, Michnicki 1-cycle 3D Welded, and $\mathbb{Z}^3$-local Haah's Cubic Code.
-- `src/render_v26_3d_local_figures.py`, `figures/fig_v26_*.{pdf,png}`, `figures/fig_v27_8_color_welded.{pdf,png}`: Publication figure generator and vector graphics for Figures 1–8.
+- `src/render_v26_3d_local_figures.py`, `figures/fig_v26_*.{pdf,png}`, `figures/fig_v27_8_color_welded.{pdf,png}`, `figures/fig_v28_9_regimes_and_dispersion.{pdf,png}`: Publication figure generator and vector graphics for Figures 1–9.

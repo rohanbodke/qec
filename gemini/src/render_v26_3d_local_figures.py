@@ -855,7 +855,7 @@ def render_fig8(v20, v21, v22):
     ax_b.set_xlim(3.85, 6.68)
     ax_b.set_xticks([4.0, 4.5, 5.0, 5.5, 6.0, 6.5])
     ax_b.set_ylim(25.0, 5.0e9)
-    ax_b.set_xlabel("Inverse temperature $\\beta$ ($J = 1$)")
+    ax_b.set_xlabel("Inverse temp. $\\beta$ ($J{=}1$)")
     ax_b.set_ylabel("BP-OSD $t_{0.80}$")
     ax_b.legend(loc="lower right", frameon=True, framealpha=0.94, edgecolor="#cbd5e1", fontsize=4.85, borderpad=0.20, labelspacing=0.16, handlelength=1.30)
 
@@ -884,6 +884,168 @@ def render_fig8(v20, v21, v22):
     save_fig(fig, "fig_v27_8_color_welded")
 
 
+def render_fig9(v20, v21, v22, v23, ext_geom):
+    arms20 = v20.get("arms", {})
+    arms21 = v21.get("arms", {})
+    arms22 = v22.get("arms", {})
+    arms23 = v23.get("arms", {})
+    if not arms23:
+        return
+
+    fig = plt.figure(figsize=(7.25, 2.85))
+    gs = GridSpec(1, 3, figure=fig, width_ratios=[1.05, 1.04, 1.08], wspace=0.42)
+
+    # Panel (a): Regime 1 — Same-parity fixed-temperature scaling vs Haah's finite-L ceiling
+    ax_a = fig.add_subplot(gs[0, 0])
+    style_ax(ax_a, "a", x_off=-0.22)
+
+    # 1) Haah at beta=4.00 (turns downward across L=5..17)
+    hx, hy = [], []
+    for L in [5, 7, 9, 11, 13, 17]:
+        k = f"v20_haah_L{L}__br4.00"
+        if k in arms20:
+            d = arms20[k]["decoders"]["bposd"]
+            hx.append(L); hy.append(d["t_80"])
+            plot_dstat(ax_a, L, d, C_RED, "^", 4.1)
+    if hx:
+        ax_a.plot(hx, hy, color=C_RED, ls="-", lw=1.3, label="Haah ($\\mathbb{T}^3$, $\\beta{=}4.0$)")
+    if "v20_haah_L15__br4.00" in arms20:
+        plot_dstat(ax_a, 15, arms20["v20_haah_L15__br4.00"]["decoders"]["bposd"], C_RED, "v", 4.3, hollow=True)
+
+    # 2) Michnicki 1-cycle collapse (L=3..8, beta=6.5)
+    mx, my = [], []
+    for L in [2, 3, 4, 6, 8]:
+        k = f"v20_mich1c_L{L}__br6.50"
+        if k in arms20:
+            d = arms20[k]["decoders"]["bposd"]
+            mx.append(L); my.append(d["t_80"])
+            plot_dstat(ax_a, L, d, C_AMBER, "D", 3.9)
+    if mx:
+        ax_a.plot(mx, my, color=C_AMBER, ls="--", lw=1.25, label="Michnicki 1-cyc. ($\\beta{=}6.5$)")
+
+    # 3) Even-step Toric XZZX (s=2 -> s=4 at beta=6.5)
+    tx, ty = [], []
+    for Lval, k in [(3, "v21_L3_R3ZX__b6.50"), (81, "v21_4s_R3_R3ZX__b6.50")]:
+        if k in arms21:
+            d = arms21[k]["decoders"]["bposd"]
+            tx.append(Lval); ty.append(d["t_80"])
+            plot_dstat(ax_a, Lval, d, C_GREEN, "s", 4.5)
+    if tx:
+        ax_a.plot(tx, ty, color=C_GREEN, ls="-", lw=1.45, label="Toric $XZZX$ $s{=}2{\\to}4$ ($6.5$)")
+
+    # 4) Odd-step Color (same parity s=1 -> s=3) at beta=6.5 and dispersed s=1 -> s=3 at beta=7.0
+    for lbl, col, mk, ls, pts in [
+        ("Color $1{\\to}3$ std ($6.5$)", C_PURP, "o", "-.", [(3, arms22.get("v22_cc1s_L3r2__b6.50")), (27, arms22.get("v22_cc3s_X3r1Z3r2X3r1__b6.50"))]),
+        ("Color $1{\\to}3$ disp ($6.5$)", C_BLUE, "*", "-", [(3, arms23.get("v23_disp_1s_L3__b6.50")), (27, arms23.get("v23_disp_3s_L3__b6.50"))]),
+        ("Color $1{\\to}3$ disp ($7.0$)", C_TEAL, "P", "-", [(3, arms23.get("v23_disp_1s_L3__b7.00")), (27, arms23.get("v23_disp_3s_L3__b7.00"))]),
+    ]:
+        px, py = [], []
+        ms = 5.4 if mk == "*" else 4.3
+        for Lval, arm in pts:
+            if arm is None:
+                continue
+            d = arm["decoders"]["bposd"]
+            px.append(Lval); py.append(d["t_80"])
+            plot_dstat(ax_a, Lval, d, col, mk, ms)
+        if px:
+            ax_a.plot(px, py, color=col, ls=ls, lw=1.35, label=lbl)
+
+    ax_a.set_xscale("log")
+    ax_a.set_yscale("log")
+    ax_a.set_xlim(1.7, 110.0)
+    ax_a.set_xticks([2, 3, 5, 9, 17, 27, 81])
+    ax_a.set_xticklabels(["2", "3", "5", "9", "17", "27", "81"], fontsize=7.5)
+    ax_a.set_ylim(1.2e2, 4.5e8)
+    ax_a.set_xlabel("Box size $L_{\\mathrm{blk}}$ (fixed $\\beta$)")
+    ax_a.set_ylabel("BP-OSD $t_{0.80}$")
+    ax_a.legend(loc="upper right", frameon=True, framealpha=0.93, edgecolor="#cbd5e1", fontsize=4.6, borderpad=0.20, labelspacing=0.14)
+
+    # Panel (b): Extension A1 — BDL T-junction dispersion vs + pillars across temperature
+    ax_b = fig.add_subplot(gs[0, 1])
+    style_ax(ax_b, "b", x_off=-0.22)
+    b_series = [
+        (C_SLATE, "o", "--", "2s $C_3$ ($+$ pillar, $3.8\\mathrm{k}$)",      [(b, arms22.get(f"v22_cc2s_C3__b{b:.2f}")) for b in (4.5, 5.0, 5.5, 6.0, 6.5)]),
+        (C_TEAL,  "s", "-",  "2s Disp. ($T$ junc., $4.0\\mathrm{k}$)",      [(b, arms23.get(f"v23_disp_2s_L3__b{b:.2f}")) for b in (4.5, 5.0, 5.5, 6.0, 6.5, 7.0)]),
+        (C_PURP,  "*", "-",  "2s $R_{X3}$ ($4.1\\mathrm{k}$)",               [(b, arms22.get(f"v22_cc2s_RX3__b{b:.2f}")) for b in (4.5, 5.0, 5.5, 6.0, 6.5)]),
+        ("#db2777", "D", "-", "2s $R_X$ + Disp. ($4.3\\mathrm{k}$)",         [(b, arms23.get(f"v23_disp_2s_RX3__b{b:.2f}")) for b in (5.0, 5.5, 6.0, 6.5)]),
+        (C_AMBER, "v", "--", "3s $1{-}1{-}1$ ($+$ pillar, $75\\mathrm{k}$)", [(b, arms22.get(f"v22_cc3s_X3r1Z3r1X3r1__b{b:.2f}")) for b in (4.5, 5.0, 5.5, 6.0, 6.5)]),
+        (C_BLUE,  "^", "-.", "3s $1{-}2{-}1$ ($82\\mathrm{k}$)",             [(b, arms22.get(f"v22_cc3s_X3r1Z3r2X3r1__b{b:.2f}")) for b in (4.5, 5.0, 5.5, 6.0, 6.5)] + [(7.0, arms23.get("v23_cc3s_121_ref__b7.00"))]),
+        (C_GREEN, "P", "-",  "3s Disp. ($T$ junc., $81\\mathrm{k}$)",      [(b, arms23.get(f"v23_disp_3s_L3__b{b:.2f}")) for b in (4.5, 5.0, 5.5, 6.0, 6.5, 7.0)]),
+    ]
+    for col, mk, ls, lbl, pts in b_series:
+        xs, ys = [], []
+        ms = 5.3 if mk == "*" else 4.1
+        for b, arm in pts:
+            if arm is None:
+                continue
+            d = arm["decoders"]["bposd"]
+            xs.append(b); ys.append(d["t_80"])
+            plot_dstat(ax_b, b, d, col, mk, ms)
+        if xs:
+            ax_b.plot(xs, ys, color=col, ls=ls, lw=1.35, zorder=3)
+            ax_b.plot([], [], color=col, marker=mk, ls=ls, lw=1.35, ms=ms, label=lbl)
+    ax_b.set_yscale("log")
+    ax_b.set_xlim(4.35, 7.18)
+    ax_b.set_xticks([4.5, 5.0, 5.5, 6.0, 6.5, 7.0])
+    ax_b.set_ylim(3.0e2, 2.8e8)
+    ax_b.set_xlabel("Inverse temp. $\\beta$ ($J = 1$)")
+    ax_b.set_ylabel("BP-OSD $t_{0.80}$")
+    ax_b.legend(loc="upper left", frameon=True, framealpha=0.93, edgecolor="#cbd5e1", fontsize=4.65, borderpad=0.20, labelspacing=0.14)
+
+    # Panel (c): Regime 3 — Open-boundary planar 4.8.8 (`K=2`) + inset K(L) vs Haah
+    ax_c = fig.add_subplot(gs[0, 2])
+    style_ax(ax_c, "c", x_off=-0.22)
+    px, py = [], []
+    for t in ["v23_plan_cc2d_L6", "v23_plan_cc2d_L12"]:
+        k = f"{t}__b6.50"
+        if k in arms23:
+            d = arms23[k]["decoders"]["bposd"]
+            px.append(arms23[k]["N"]); py.append(d["t_80"])
+            plot_dstat(ax_c, arms23[k]["N"], d, C_SLATE, "o", 4.4)
+    if px:
+        ax_c.plot(px, py, color=C_SLATE, ls="-", lw=1.35)
+        ax_c.text(560.0, 3.6e3, "Open 2D\n($L{=}6,12$)", fontsize=5.2, color=C_SLATE, ha="center", va="top")
+
+    for k, col, mk, txt, mult, ha_al in [
+        ("v23_plan_cc1s_L3r2__b6.50",  C_AMBER, "D", "1s",        (1.00, 2.35), "center"),
+        ("v23_plan_disp_2s_L3__b6.50", C_TEAL,  "s", "Disp. 2s",  (1.00, 0.34), "center"),
+        ("v23_plan_cc2s_RX3__b6.50",   C_PURP,  "*", "$R_{X3}$",  (1.00, 2.35), "center"),
+        ("v23_plan_cc2s_R3__b6.50",    C_BLUE,  "^", "$R_3$",     (1.30, 0.85), "left"),
+    ]:
+        if k in arms23:
+            nv = arms23[k]["N"]
+            d = arms23[k]["decoders"]["bposd"]
+            plot_dstat(ax_c, nv, d, col, mk, 5.8 if mk == "*" else 4.6)
+            ax_c.text(nv * mult[0], d["t_80"] * mult[1], txt, fontsize=5.6, color=C_DARK, ha=ha_al, va="center")
+
+    ax_c.set_xscale("log")
+    ax_c.set_yscale("log")
+    ax_c.set_xlim(140.0, 1.35e4)
+    ax_c.set_ylim(2.0e2, 4.5e7)
+    ax_c.set_xlabel("Planar qubits $N$ ($K{=}2$)")
+    ax_c.set_ylabel("BP-OSD $t_{0.80}$ ($\\beta = 6.5$)")
+
+    # Inset: Constant K (planar welded) vs oscillating K(L) (periodic Haah)
+    if "haah_K_vs_L" in ext_geom:
+        axins = ax_c.inset_axes([0.16, 0.53, 0.44, 0.41])
+        hkl = sorted(ext_geom["haah_K_vs_L"].values(), key=lambda x: x["L"])
+        ls_h = [x["L"] for x in hkl]
+        ks_h = [x["K"] for x in hkl]
+        axins.plot(ls_h, ks_h, color=C_RED, marker=".", ms=3.5, lw=1.0, label="Haah ($\\mathbb{T}^3$)")
+        axins.axhline(2, color=C_PURP, ls="--", lw=1.1, label="Color ($K{=}2$)")
+        axins.axhline(1, color=C_GREEN, ls=":", lw=1.1, label="Surf. ($K{=}1$)")
+        axins.set_yscale("log")
+        axins.set_xlim(2.5, 17.5)
+        axins.set_ylim(0.7, 130.0)
+        axins.set_xticks([3, 8, 15, 17])
+        axins.tick_params(labelsize=5.4, pad=1.0)
+        axins.set_xlabel("$L$", fontsize=5.8, labelpad=0.8)
+        axins.set_ylabel("$K$", fontsize=5.8, labelpad=0.8)
+        axins.legend(loc="upper left", frameon=False, fontsize=4.4, handlelength=1.0, labelspacing=0.1)
+
+    save_fig(fig, "fig_v28_9_regimes_and_dispersion")
+
+
 def main():
     with open(ROOT / "verified_3d_local_L3_geometry.json") as f:
         geom = json.load(f)
@@ -905,6 +1067,10 @@ def main():
         v21 = json.load(f)
     v22_p = ROOT / "parsed_v22_color_welded.json"
     v22 = json.load(open(v22_p)) if v22_p.exists() else {"arms": {}, "iid_arms": {}}
+    v23_p = ROOT / "parsed_v23_extensionA.json"
+    v23 = json.load(open(v23_p)) if v23_p.exists() else {"arms": {}, "iid_arms": {}}
+    ext_p = ROOT / "verified_v23_extensionA.json"
+    ext_geom = json.load(open(ext_p)) if ext_p.exists() else {}
 
     render_fig1(geom, suiteA, v21)
     render_fig2(v21)
@@ -914,6 +1080,7 @@ def main():
     render_fig6(v21, v19, loc_quot)
     render_fig7(v20, v21, v22)
     render_fig8(v20, v21, v22)
+    render_fig9(v20, v21, v22, v23, ext_geom)
 
 
 if __name__ == "__main__":
