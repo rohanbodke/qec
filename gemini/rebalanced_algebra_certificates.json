@@ -1,0 +1,200 @@
+{
+  "quartet_complex": {
+    "XZXZ": {
+      "N": 25148,
+      "M_X": 14600,
+      "M_Z": 11188,
+      "num_vertices": 5976,
+      "num_edges": 15724,
+      "num_faces": 11188,
+      "edge_fdeg_hist": {
+        "1": 1744,
+        "3": 12912,
+        "4": 1068
+      },
+      "color_fdeg_hist": {
+        "blue_d1": 872,
+        "blue_d3": 4344,
+        "blue_d4": 204,
+        "red_d1": 872,
+        "red_d3": 8568,
+        "red_d4": 864
+      },
+      "red_seam_extra_qubits": 10296,
+      "dz_hist": {
+        "1": 872,
+        "2": 19728,
+        "3": 4344,
+        "4": 204
+      },
+      "dx_hist": {
+        "1": 504,
+        "2": 14348,
+        "3": 7976,
+        "4": 2288,
+        "5": 32
+      },
+      "max_wX": 7,
+      "max_wZ": 7
+    },
+    "ZXXZ": {
+      "N": 24276,
+      "M_X": 13640,
+      "M_Z": 11188,
+      "num_vertices": 5976,
+      "num_edges": 15724,
+      "num_faces": 11188,
+      "edge_fdeg_hist": {
+        "1": 1744,
+        "3": 12912,
+        "4": 1068
+      },
+      "color_fdeg_hist": {
+        "blue_d1": 872,
+        "blue_d3": 5144,
+        "blue_d4": 240,
+        "red_d1": 872,
+        "red_d3": 7768,
+        "red_d4": 828
+      },
+      "red_seam_extra_qubits": 9424,
+      "dz_hist": {
+        "1": 872,
+        "2": 18020,
+        "3": 5144,
+        "4": 240
+      },
+      "dx_hist": {
+        "1": 488,
+        "2": 14756,
+        "3": 6792,
+        "4": 2224,
+        "5": 16
+      },
+      "max_wX": 6,
+      "max_wZ": 7
+    },
+    "XZZX": {
+      "N": 20476,
+      "M_X": 9840,
+      "M_Z": 11188,
+      "num_vertices": 5976,
+      "num_edges": 15724,
+      "num_faces": 11188,
+      "edge_fdeg_hist": {
+        "1": 1744,
+        "3": 12912,
+        "4": 1068
+      },
+      "color_fdeg_hist": {
+        "blue_d1": 872,
+        "blue_d3": 7768,
+        "blue_d4": 828,
+        "red_d1": 872,
+        "red_d3": 5144,
+        "red_d4": 240
+      },
+      "red_seam_extra_qubits": 5624,
+      "dz_hist": {
+        "1": 872,
+        "2": 11008,
+        "3": 7768,
+        "4": 828
+      },
+      "dx_hist": {
+        "1": 832,
+        "2": 14644,
+        "3": 4456,
+        "4": 544
+      },
+      "max_wX": 7,
+      "max_wZ": 6
+    },
+    "ZXZX": {
+      "N": 19604,
+      "M_X": 9056,
+      "M_Z": 11188,
+      "num_vertices": 5976,
+      "num_edges": 15724,
+      "num_faces": 11188,
+      "edge_fdeg_hist": {
+        "1": 1744,
+        "3": 12912,
+        "4": 1068
+      },
+      "color_fdeg_hist": {
+        "blue_d1": 872,
+        "blue_d3": 8568,
+        "blue_d4": 864,
+        "red_d1": 872,
+        "red_d3": 4344,
+        "red_d4": 204
+      },
+      "red_seam_extra_qubits": 4752,
+      "dz_hist": {
+        "1": 872,
+        "2": 9300,
+        "3": 8568,
+        "4": 864
+      },
+      "dx_hist": {
+        "1": 800,
+        "2": 14780,
+        "3": 3528,
+        "4": 496
+      },
+      "max_wX": 7,
+      "max_wZ": 6
+    }
+  },
+  "spectral_radii": {
+    "C2_4step (all 4 orders)": {
+      "rho": 9280.558647258675,
+      "L_blk_cubed": 4096
+    },
+    "C3_C2 & C3_C2ZX": {
+      "rho": 37636.44904472855,
+      "L_blk_cubed": 46656
+    },
+    "RX3_C2 & RX3_C2ZX": {
+      "rho": 40964.987623275236,
+      "L_blk_cubed": 46656
+    },
+    "R3_C2 & R3_C2ZX": {
+      "rho": 45930.19412912197,
+      "L_blk_cubed": 46656
+    },
+    "3step_X2_Z3r2_X2 (2 cycles = 6 steps)": {
+      "rho_3step": 2123.085213153822,
+      "L_blk_cubed": 1728
+    }
+  },
+  "two_step_barriers": {
+    "C2_XZ": {
+      "N": 254,
+      "M_X": 140,
+      "M_Z": 116,
+      "barrier_X": [
+        2,
+        "exact"
+      ],
+      "barrier_Z": [
+        2,
+        "exact"
+      ]
+    },
+    "C2_ZX": {
+      "N": 210,
+      "M_X": 96,
+      "M_Z": 116,
+      "barrier_X": [
+        3,
+        "exact"
+      ],
+      "barrier_Z": [
+        2,
+        "exact"
+      ]
+    }
+  }
+}
