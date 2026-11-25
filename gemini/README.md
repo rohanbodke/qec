@@ -74,7 +74,7 @@ cd .. && pdflatex proposal_improved.tex && bibtex proposal_improved && pdflatex 
 
 ## Key Files
 
-- `paper/main.tex`, `paper/main.pdf`, `paper/references.bib`: *Physical Review X*-formatted strictly 3D-local manuscript (`10` pages, Sections I–VI, Figures 1–5, and Appendices A–C).
+- `paper/main.tex`, `paper/main.pdf`, `paper/references.bib`: *Physical Review X*-formatted strictly 3D-local manuscript (`10` pages, Sections I–VI, Figures 1–4, and Appendices A–C).
 - `proposal_improved.tex`, `proposal_improved.pdf`: 2-page project summary.
 - `verified_3d_local_L3_geometry.json`, `src/verify_3d_local_embeddings_and_L3.py`, `src/eval_L3_collared_predictions.py`: Constructive $\mathbb{R}^3$ coordinate embeddings, $L = 3$ pruning/barrier certificates, and zero-parameter collared $3 \times 3$ pure-$L = 3$ predictions.
 - `verified_3d_color_welded_geometry.json`, `src/verify_3d_color_welded_algebra.py`: Flag 4.8.8 color-welded geometry, constructive $\mathbb{R}^3$ diameter certificates, and 1-step BFS barrier certificates.
@@ -83,4 +83,4 @@ cd .. && pdflatex proposal_improved.tex && bibtex proposal_improved && pdflatex 
 - `cluster_v22_results.txt`, `v22_code_specs.json`, `parsed_v22_color_welded.json`, `cluster_v9/build_v22_color_welded.py`, `src/parse_v22_color_welded.py`, `cluster_v9/slurm_worker_v22.sh`: Raw trajectory logs (`564` tasks, `0` errors) and bootstrap parser for the V22 3D-local welded 4.8.8 color-code campaign.
 - `verified_v23_extensionA.json`, `v23_code_specs.json`, `cluster_v23_results.txt`, `parsed_v23_extensionA.json`, `cluster_v9/build_v23_extensionA.py`, `cluster_v9/slurm_worker_v23.sh`, `src/verify_3d_extensionA_and_regimes.py`, `src/parse_v23_extensionA.py`: V23 Extension A (`270` tasks, `0` errors) geometries, exact dimer-trap / Haah $K(L)$ certificates, and bootstrap parser for T-junction dispersion and open-boundary planar hierarchies.
 - `cluster_v20_results.txt`, `parsed_v20_benchmarks.json`, `src/parse_v20_benchmarks.py`: Cross-family $J = 1$ benchmarks across 2D Toric, Michnicki 1-cycle 3D Welded, and $\mathbb{Z}^3$-local Haah's Cubic Code.
-- `src/render_v26_3d_local_figures.py`, `figures/fig_v26_*.{pdf,png}`, `figures/fig_v27_8_color_welded.{pdf,png}`, `figures/fig_v28_9_regimes_and_dispersion.{pdf,png}`: Publication figure generator and vector graphics for Figures 1–5 of the main paper plus supporting diagnostic plots.
+- `src/render_v26_3d_local_figures.py`, `figures/fig_v26_*.{pdf,png}`, `figures/fig_v29_*.{pdf,png}`: Publication figure generator and vector graphics for Figures 1–4 of the main paper plus supporting plots.

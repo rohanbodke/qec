@@ -1047,6 +1047,281 @@ def render_fig9(v20, v21, v22, v23, ext_geom):
     save_fig(fig, "fig_v28_9_regimes_and_dispersion")
 
 
+def render_fig_paper3(v20, v21, v22):
+    """Two-panel J=1 cross-family benchmark: (a) temperature scaling, (b) beta=6.5 N landscape."""
+    arms20 = v20["arms"]
+    arms21 = v21["arms"]
+    arms22 = v22["arms"]
+    fig = plt.figure(figsize=(7.15, 3.05))
+    gs = GridSpec(1, 2, figure=fig, width_ratios=[1.00, 1.14], wspace=0.28, top=0.80, bottom=0.16, left=0.09, right=0.985)
+
+    def get_pt(src, k):
+        m = arms20 if src == "v20" else (arms21 if src == "v21" else arms22)
+        return m[k]["decoders"]["bposd"] if k in m else None
+
+    # Panel (a): J=1 temperature scaling across representative families
+    ax_a = fig.add_subplot(gs[0, 0])
+    style_ax(ax_a, "a", x_off=-0.18, y_off=1.05)
+    curves_a = [
+        (C_SLATE, "o", "-",  "2D Toric (prior)", [
+            (4.50, get_pt("v20", "v20_tor2d_L16__br4.50")),
+            (5.00, get_pt("v20", "v20_tor2d_L16__br5.00")),
+            (5.50, get_pt("v20", "v20_tor2d_L16__bq5.50")),
+            (6.00, get_pt("v20", "v20_tor2d_L16__bq6.00")),
+            (6.50, get_pt("v20", "v20_tor2d_L16__bq6.50")),
+            (7.00, get_pt("v20", "v20_tor2d_L16__bq7.00")),
+        ]),
+        (C_AMBER, "D", "--", "Michnicki 1-cyc. (prior)", [
+            (4.50, get_pt("v20", "v20_mich1c_L4__br4.50")),
+            (5.00, get_pt("v20", "v20_mich1c_L4__br5.00")),
+            (5.50, get_pt("v20", "v20_mich1c_L4__br5.50")),
+            (6.00, get_pt("v20", "v20_mich1c_L4__br6.00")),
+            (6.50, get_pt("v20", "v20_mich1c_L4__br6.50")),
+            (7.00, get_pt("v20", "v20_mich1c_L4__br7.00")),
+        ]),
+        (C_BLUE, "^", "-.", "Ours: Surf. cut $C_3 R_{X3}$", [
+            (4.50, get_pt("v21", "v21_4s_C3_RX3__b4.50")),
+            (5.00, get_pt("v21", "v21_4s_C3_RX3__b5.00")),
+            (5.50, get_pt("v21", "v21_4s_C3_RX3__b5.50")),
+            (6.00, get_pt("v21", "v21_4s_C3_RX3__b6.00")),
+            (6.50, get_pt("v21", "v21_4s_C3_RX3__b6.50")),
+            (7.00, get_pt("v21", "v21_4s_C3_RX3__b7.00")),
+        ]),
+        (C_GREEN, "s", "-",  "Ours: Surf. $XZZX$ ($422\\mathrm{k}$)", [
+            (4.50, get_pt("v21", "v21_4s_C3_R3ZX__b4.50")),
+            (5.00, get_pt("v21", "v21_4s_C3_R3ZX__b5.00")),
+            (5.50, get_pt("v21", "v21_4s_C3_R3ZX__b5.50")),
+            (6.00, get_pt("v21", "v21_4s_C3_R3ZX__b6.00")),
+            (6.50, get_pt("v21", "v21_4s_C3_R3ZX__b6.50")),
+            (7.00, get_pt("v21", "v21_4s_C3_R3ZX__b7.00")),
+        ]),
+        (C_PURP, "*", "-",   "Ours: 3D Color $R_{X3}$ ($4.1\\mathrm{k}$)", [
+            (4.00, get_pt("v22", "v22_cc2s_RX3__b4.00")),
+            (4.50, get_pt("v22", "v22_cc2s_RX3__b4.50")),
+            (5.00, get_pt("v22", "v22_cc2s_RX3__b5.00")),
+            (5.50, get_pt("v22", "v22_cc2s_RX3__b5.50")),
+            (6.00, get_pt("v22", "v22_cc2s_RX3__b6.00")),
+            (6.50, get_pt("v22", "v22_cc2s_RX3__b6.50")),
+        ]),
+        (C_RED, "P", "-",    "Haah Cubic $L{=}7$ (prior)", [
+            (4.00, get_pt("v20", "v20_haah_L7__br4.00")),
+            (4.25, get_pt("v20", "v20_haah_L7__br4.25")),
+            (4.50, get_pt("v20", "v20_haah_L7__br4.50")),
+            (5.00, get_pt("v20", "v20_haah_L7__br5.00")),
+            (6.50, get_pt("v20", "v20_haah_L7__br6.50")),
+        ]),
+    ]
+    for col, mk, ls, lbl, pts in curves_a:
+        xs, ys = [], []
+        ms = 5.6 if mk == "*" else 4.2
+        for b, d in pts:
+            if d is None:
+                continue
+            xs.append(b); ys.append(d["t_80"])
+            plot_dstat(ax_a, b, d, col, mk, ms)
+        if xs:
+            ax_a.plot(xs, ys, color=col, ls=ls, lw=1.35, zorder=3)
+            ax_a.plot([], [], color=col, marker=mk, ls=ls, lw=1.35, ms=ms, label=lbl)
+
+    ax_a.set_yscale("log")
+    ax_a.set_xlim(3.85, 7.18)
+    ax_a.set_xticks([4.0, 5.0, 6.0, 7.0])
+    ax_a.set_ylim(5.0, 6.5e9)
+    ax_a.set_xlabel("Inverse temp. $\\beta$ ($J = 1$)")
+    ax_a.set_ylabel("BP-OSD $t_{0.80}$")
+    handles_a, labels_a = ax_a.get_legend_handles_labels()
+
+    # Panel (b): Complete beta=6.5 landscape vs physical qubits N (2D, Surface, Color, Haah)
+    ax_b = fig.add_subplot(gs[0, 1])
+    style_ax(ax_b, "b", x_off=-0.16, y_off=1.05)
+
+    for grp, tlist, col, mk, ls in [
+        ("v20", ["v20_tor2d_L8", "v20_tor2d_L16", "v20_tor2d_L32", "v20_tor2d_L64"], C_SLATE, "o", "-"),
+        ("v20", ["v20_mich1c_L2", "v20_mich1c_L3", "v20_mich1c_L4", "v20_mich1c_L6", "v20_mich1c_L8"], C_AMBER, "D", "--"),
+        ("v22", ["v22_cc2d_L3", "v22_cc2d_L6", "v22_cc2d_L9", "v22_cc2d_L12"], C_TEAL, "o", ":"),
+    ]:
+        xs, ys = [], []
+        m = arms20 if grp == "v20" else arms22
+        sfx = "__bq6.50" if grp == "v20" and "tor2d" in tlist[0] else ("__br6.50" if grp == "v20" else "__b6.50")
+        for t in tlist:
+            k = f"{t}{sfx}"
+            if k in m:
+                d = m[k]["decoders"]["bposd"]
+                xs.append(m[k]["N"]); ys.append(d["t_80"])
+                plot_dstat(ax_b, m[k]["N"], d, col, mk, 4.1)
+        if xs:
+            ax_b.plot(xs, ys, color=col, ls=ls, lw=1.35, zorder=3)
+    ax_b.text(210.0, 2.2e4, "2D Color\n($L{=}3{\\to}12$)", fontsize=5.3, color=C_TEAL, ha="center", va="center")
+
+    # Self-dual color ablation & BDL hollow prior
+    if "v22_cc2s_R3_sd__b6.50" in arms22:
+        nv = arms22["v22_cc2s_R3_sd__b6.50"]["N"]
+        d = arms22["v22_cc2s_R3_sd__b6.50"]["decoders"]["bposd"]
+        plot_dstat(ax_b, nv, d, C_RED, "v", 4.5, hollow=True)
+        ax_b.text(nv * 1.10, d["t_80"] * 0.44, "Self-dual\nseams", fontsize=5.2, color=C_RED, ha="center", va="center")
+
+    if "v21_4s_R3_R3__b6.50" in arms21:
+        nv = arms21["v21_4s_R3_R3__b6.50"]["N"]
+        d = arms21["v21_4s_R3_R3__b6.50"]["decoders"]["bposd"]
+        plot_dstat(ax_b, nv, d, C_BLUE, "^", 4.8, hollow=True)
+        ax_b.text(nv * 0.78, d["t_80"] * 0.36, "BDL $R_3 R_3$\n(prior)", fontsize=5.2, color=C_BLUE, ha="center", va="center")
+
+    if "v21_4s_C3_RX3__b6.50" in arms21:
+        nv = arms21["v21_4s_C3_RX3__b6.50"]["N"]
+        d = arms21["v21_4s_C3_RX3__b6.50"]["decoders"]["bposd"]
+        plot_dstat(ax_b, nv, d, C_BLUE, "^", 4.6)
+        ax_b.text(nv * 0.56, d["t_80"] * 0.85, "$C_3 R_{X3}$", fontsize=5.5, color=C_DARK, ha="right", va="center")
+
+    for k, txt, mult, ha_al in [
+        ("v21_4s_C3_R3ZX__b6.50", "$C_3 R_3^{ZX}$", (0.64, 0.55), "right"),
+        ("v21_4s_R3_R3ZX__b6.50", "$R_3 R_3^{ZX}$", (0.72, 2.35), "center"),
+    ]:
+        if k in arms21:
+            nv = arms21[k]["N"]
+            d = arms21[k]["decoders"]["bposd"]
+            plot_dstat(ax_b, nv, d, C_GREEN, "s", 4.6)
+            ax_b.text(nv * mult[0], d["t_80"] * mult[1], txt, fontsize=5.5, color=C_DARK, ha=ha_al, va="center")
+
+    for k, txt, mult, ha_al in [
+        ("v22_cc2s_RX3__b6.50",          "Color $R_{X3}$", (1.35, 1.50), "left"),
+        ("v22_cc3s_X3r1Z3r2X3r1__b6.50", "Color 3s",       (1.30, 0.75), "left"),
+    ]:
+        if k in arms22:
+            nv = arms22[k]["N"]
+            d = arms22[k]["decoders"]["bposd"]
+            plot_dstat(ax_b, nv, d, C_PURP, "*", 5.8)
+            ax_b.text(nv * mult[0], d["t_80"] * mult[1], txt, fontsize=5.5, color=C_PURP, ha=ha_al, va="center")
+
+    for k, txt, mult in [
+        ("v20_haah_L7__br6.50",  "Haah $L{=}7$",  (1.38, 1.08)),
+        ("v20_haah_L11__br6.50", "Haah $L{=}11$", (1.38, 0.85)),
+    ]:
+        if k in arms20:
+            nv = arms20[k]["N"]
+            d = arms20[k]["decoders"]["bposd"]
+            plot_dstat(ax_b, nv, d, C_RED, "P", 4.8)
+            ax_b.text(nv * mult[0], d["t_80"] * mult[1], txt, fontsize=5.5, color=C_RED, va="center")
+
+    ax_b.set_xscale("log")
+    ax_b.set_yscale("log")
+    ax_b.set_xlim(50.0, 2.2e6)
+    ax_b.set_ylim(80.0, 6.5e9)
+    ax_b.set_xlabel("Physical qubits $N$ ($\\beta = 6.5$)")
+    ax_b.set_ylabel("BP-OSD $t_{0.80}$")
+
+    fig.legend(
+        handles_a, labels_a,
+        loc="upper center", bbox_to_anchor=(0.53, 0.985),
+        ncol=3, frameon=True, framealpha=0.95, edgecolor="#cbd5e1",
+        fontsize=6.0, columnspacing=1.0, handlelength=1.45, borderpad=0.28, labelspacing=0.22,
+    )
+
+    save_fig(fig, "fig_v29_3_benchmarks_and_color")
+
+
+def render_fig_paper4(v20, v22, v23, ext_geom):
+    """Two-panel welded color scaling / open-boundary summary + stacked Haah K(L) and turnover."""
+    arms20 = v20.get("arms", {})
+    arms22 = v22.get("arms", {})
+    arms23 = v23.get("arms", {})
+    if not arms23:
+        return
+
+    fig = plt.figure(figsize=(7.20, 3.25))
+    gs = GridSpec(1, 2, figure=fig, width_ratios=[1.26, 1.00], wspace=0.32, top=0.90, bottom=0.22, left=0.09, right=0.985)
+
+    # Panel (a): Grouped fixed-beta=6.5 comparison for 2s T-junction, 1s->3s scaling, and open K=2
+    ax_a = fig.add_subplot(gs[0, 0])
+    style_ax(ax_a, "a", x_off=-0.15, y_off=1.04)
+
+    items = [
+        ("2s $R_{X3}$",         arms22.get("v22_cc2s_RX3__b6.50"),           C_PURP,  "*"),
+        ("2s $R_{X3}$+T-jc.",   arms23.get("v23_disp_2s_RX3__b6.50"),        "#db2777", "D"),
+        ("1s $L_{3,2}$",        arms22.get("v22_cc1s_L3r2__b6.50"),          C_TEAL,  "o"),
+        ("3s $1{-}2{-}1$",      arms22.get("v22_cc3s_X3r1Z3r2X3r1__b6.50"),  C_BLUE,  "^"),
+        ("3s $1{-}1{-}1$",      arms22.get("v22_cc3s_X3r1Z3r1X3r1__b6.50"),  C_AMBER, "v"),
+        ("3s T-jc.",            arms23.get("v23_disp_3s_L3__b6.50"),         C_GREEN, "P"),
+        ("Open 2D",             arms23.get("v23_plan_cc2d_L12__b6.50"),      C_SLATE, "o"),
+        ("Open 2s $R_3$",       arms23.get("v23_plan_cc2s_R3__b6.50"),       C_BLUE,  "^"),
+        ("Open 2s $R_{X3}$",    arms23.get("v23_plan_cc2s_RX3__b6.50"),      C_PURP,  "*"),
+    ]
+    for xi, (lbl, arm, col, mk) in enumerate(items):
+        if arm is None:
+            continue
+        d = arm["decoders"]["bposd"]
+        ms = 6.2 if mk == "*" else 4.9
+        plot_dstat(ax_a, xi, d, col, mk, ms)
+
+    ax_a.axvline(1.5, color="#cbd5e1", ls=":", lw=1.0)
+    ax_a.axvline(5.5, color="#cbd5e1", ls=":", lw=1.0)
+    ax_a.text(0.5, 2.7e7, "2-step\n($K{=}4$)", fontsize=5.8, color=C_DARK, ha="center", va="top")
+    ax_a.text(3.5, 2.7e7, "Same-parity $1\\mathrm{s}{\\to}3\\mathrm{s}$ ($K{=}4$)", fontsize=5.8, color=C_DARK, ha="center", va="top")
+    ax_a.text(7.0, 2.7e7, "Open bdry\n($K{=}2$)", fontsize=5.8, color=C_DARK, ha="center", va="top")
+
+    # Clean ratio callouts inside Panel (a)
+    if "v22_cc3s_X3r1Z3r2X3r1__b6.50" in arms22:
+        ax_a.text(3.0, arms22["v22_cc3s_X3r1Z3r2X3r1__b6.50"]["decoders"]["bposd"]["t_80"] * 2.15, "$2.5\\times$", fontsize=5.6, color=C_BLUE, ha="center")
+    if "v23_plan_cc2s_RX3__b6.50" in arms23:
+        ax_a.text(7.95, arms23["v23_plan_cc2s_RX3__b6.50"]["decoders"]["bposd"]["t_80"] * 2.10, "$383\\times$", fontsize=5.6, color=C_PURP, ha="center")
+
+    ax_a.set_yscale("log")
+    ax_a.set_xlim(-0.6, 8.6)
+    ax_a.set_ylim(3.5e3, 4.5e7)
+    ax_a.set_xticks(range(len(items)))
+    ax_a.set_xticklabels([x[0] for x in items], fontsize=6.4, rotation=30, ha="right")
+    ax_a.set_ylabel("BP-OSD $t_{0.80}$ ($\\beta = 6.5$)")
+
+    # Panel (b): Stacked sub-axes for periodic Haah K(L) and fixed-temperature finite-L turnover
+    gs_b = gs[0, 1].subgridspec(2, 1, height_ratios=[0.72, 1.20], hspace=0.12)
+    ax_bt = fig.add_subplot(gs_b[0, 0])
+    ax_bb = fig.add_subplot(gs_b[1, 0], sharex=ax_bt)
+    style_ax(ax_bt, "b", x_off=-0.20, y_off=1.08)
+
+    if "haah_K_vs_L" in ext_geom:
+        hkl = sorted(ext_geom["haah_K_vs_L"].values(), key=lambda x: x["L"])
+        ax_bt.plot([x["L"] for x in hkl], [x["K"] for x in hkl], color=C_RED, marker=".", ms=4.2, lw=1.15, label="Haah ($\\mathbb{T}^3$)")
+    ax_bt.axhline(2, color=C_PURP, ls="--", lw=1.25, label="Open Color ($K{=}2$)")
+    ax_bt.axhline(1, color=C_GREEN, ls=":", lw=1.25, label="Planar Surf. ($K{=}1$)")
+    ax_bt.set_yscale("log")
+    ax_bt.set_ylim(0.55, 180.0)
+    ax_bt.set_ylabel("$K$", fontsize=7.5)
+    ax_bt.tick_params(axis="x", labelbottom=False)
+    ax_bt.legend(loc="upper left", ncol=2, frameon=False, fontsize=4.9, handlelength=1.1, columnspacing=0.6, labelspacing=0.1)
+
+    Ls_k2 = [5, 7, 9, 11, 13, 17]
+    for mode_s, col, mk, ls, lbl in [
+        ("bq6.50", C_AMBER, "o", "--", "$\\beta{=}3.25$ ($K{=}2$)"),
+        ("bq7.55", C_TEAL,  "s", "-.", "$\\beta{=}3.78$ ($K{=}2$)"),
+        ("br4.00", C_RED,   "^", "-",  "$\\beta{=}4.00$ ($K{=}2$)"),
+    ]:
+        xs, ys = [], []
+        for L in Ls_k2:
+            k = f"v20_haah_L{L}__{mode_s}"
+            if k in arms20:
+                d = arms20[k]["decoders"]["bposd"]
+                xs.append(L); ys.append(d["t_80"])
+                plot_dstat(ax_bb, L, d, col, mk, 4.1)
+        if xs:
+            ax_bb.plot(xs, ys, color=col, ls=ls, lw=1.3, zorder=3)
+            ax_bb.plot([], [], color=col, marker=mk, ls=ls, lw=1.3, ms=4.1, label=lbl)
+    for mode_s, col in [("bq6.50", C_AMBER), ("bq7.55", C_TEAL), ("br4.00", C_RED)]:
+        k15 = f"v20_haah_L15__{mode_s}"
+        if k15 in arms20:
+            plot_dstat(ax_bb, 15, arms20[k15]["decoders"]["bposd"], col, "v", 4.5, hollow=True)
+    if "v20_haah_L15__bq6.50" in arms20:
+        ax_bb.text(15.0, arms20["v20_haah_L15__bq6.50"]["decoders"]["bposd"]["t_80"] * 2.0, "$L{=}15$\n($K{=}50$)", fontsize=5.1, color=C_DARK, ha="center", va="bottom")
+
+    ax_bb.set_yscale("log")
+    ax_bb.set_xlim(2.5, 18.0)
+    ax_bb.set_xticks([3, 5, 7, 9, 11, 13, 15, 17])
+    ax_bb.set_ylim(2.2e2, 4.0e7)
+    ax_bb.set_xlabel("Cubic lattice size $L$")
+    ax_bb.set_ylabel("Haah $t_{0.80}$", fontsize=7.5)
+    ax_bb.legend(loc="upper right", frameon=True, framealpha=0.93, edgecolor="#cbd5e1", fontsize=4.9, borderpad=0.20, labelspacing=0.14)
+
+    save_fig(fig, "fig_v29_4_scaling_and_boundaries")
+
+
 def main():
     with open(ROOT / "verified_3d_local_L3_geometry.json") as f:
         geom = json.load(f)
@@ -1082,6 +1357,8 @@ def main():
     render_fig7(v20, v21, v22)
     render_fig8(v20, v21, v22)
     render_fig9(v20, v21, v22, v23, ext_geom)
+    render_fig_paper3(v20, v21, v22)
+    render_fig_paper4(v20, v22, v23, ext_geom)
 
 
 if __name__ == "__main__":
