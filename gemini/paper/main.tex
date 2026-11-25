@@ -31,7 +31,7 @@
 \date{November 2026 --- MIT 6.S980: Quantum Error Correction}
 
 \begin{abstract}
-Recursive sheet welding can stabilize three-dimensional (3D) passive quantum memories, yet proof-motivated templates use multiple parallel bridges and alternating steps that inflate finite-size overhead. We ask which local structures are genuinely needed at each length scale, and how fine-scale error dynamics determines where coarse-scale reinforcement helps, under unit stabilizer couplings ($J = 1$), Glauber bath dynamics, single-shot readout, and strict 3D geometric locality. An exact face-growth recurrence proves that subdivision $L = 2$ violates 3D packing ($\log_2 \rho \approx 3.30 > 3$), making $L = 3$ ($\log_3 \rho \in [2.72, 2.80] < 3$) the minimal 3D-local scale. At pure $L = 3$, the alternating $(X, Z, X, Z)$ two-bridge surface baseline ($R_3 R_3$, $709{,}408$ qubits) reaches $\beta = 6.5$ recovery time $t_{0.80} = 1.11 \times 10^4$. Local bridge deletions fail when they leave barrier-one paths, whereas pre-registered $3 \times 3$ interface probes guide sector-selective cuts ($C_3 R_{X3}$: $2.25\times$ longer at $-27.1\%$ qubits; $R_{X3} R_{X3}$: $4.71\times$ at $\beta = 6.5$ and $5.58\times$ at $\beta = 7.0$). Reordering steps without changing the 3D complex yields even larger gains: compact three-step $(X, Z, X)$ ($19{,}174$ qubits) beats $R_3 R_3$ by $2.56\times$, and symmetric $(X, Z, Z, X)$ ($R_3 R_3^{ZX}$, $504{,}352$ qubits, $-28.9\%$) reaches $6.49 \times 10^6$ planar ($585\times$) and $1.24 \times 10^7$ torus ($1{,}085\times$). Direct $J = 1$ comparisons against Haah's Cubic Code trace the remaining surface-code deficit to bulk check degree~$2$. Replacing surface sheets with degree-$\ge 3$ 4.8.8 color-code sheets under asymmetric seam welding reaches $8.91 \times 10^6$ on $4{,}128$-qubit $R_{X3}$ ($803\times$ $R_3 R_3$ at $172\times$ fewer qubits), staggered T-junction dispersion reaches $1.11 \times 10^7$ ($4{,}272$ qubits), $E = 2$ bulk pair traps explain three-step drag alongside $2.49\times$ same-parity growth, and alternating open boundaries maintain invariant $K = 2$ up to $4.15 \times 10^6$ ($383\times$ above 2D $L = 12$).
+Recursive sheet welding can stabilize three-dimensional (3D) passive quantum memories, yet proof-motivated templates use extra parallel bridges and alternating steps that carry steep finite-size overhead. Under unit stabilizer couplings ($J = 1$), Glauber bath dynamics, single-shot readout, and strict 3D geometric locality, we ask which local features are actually needed at each scale and how BDL's construction can be simplified and strengthened. Proving that subdivision $L = 2$ violates 3D packing ($\log_2 \rho \approx 3.30 > 3$) establishes $L = 3$ as the minimal 3D-local scale. At pure $L = 3$, cutting nonlimiting bridges ($C_3 R_{X3}, R_{X3} R_{X3}$) and reordering steps on the exact same 3D complex---compact three-step $(X, Z, X)$ ($19\mathrm{k}$ qubits) and symmetric $(X, Z, Z, X)$ ($504\mathrm{k}$ qubits, $-28.9\%$)---lifts $\beta = 6.5$ lifetime up to $585\times$ planar ($6.49 \times 10^6$) and $1{,}085\times$ torus ($1.24 \times 10^7$) over BDL's $709\mathrm{k}$ baseline ($1.11 \times 10^4$), with paired decoders confirming thermal crossing. Direct $J = 1$ benchmarks trace the remaining gap to Haah's Cubic Code to bulk degree-$2$ surface qubits. Replacing surface sheets with degree-$\ge 3$ 4.8.8 color-code sheets under asymmetric seams reaches $8.91 \times 10^6$ at $4{,}128$ qubits ($803\times$ BDL at $172\times$ fewer qubits), staggered T-junction dispersion reaches $1.11 \times 10^7$ while isolating bulk $E = 2$ pair traps as the three-step bottleneck ($2.49\times$ same-parity growth), and alternating open boundaries hold invariant $K = 2$ up to $4.15 \times 10^6$ ($383\times$ above 2D $L = 12$).
 \end{abstract}
 
 \maketitle
@@ -39,141 +39,95 @@ Recursive sheet welding can stabilize three-dimensional (3D) passive quantum mem
 \section{Introduction}
 \label{sec:intro}
 
-\subsection{Three-Dimensional Locality and Recursive Sheet Welding}
+Active quantum error correction protects encoded states by measuring stabilizer checks repeatedly and correcting errors before they spread \cite{bravyi_bb2024}. A passive quantum memory instead stores quantum information in the ground space of a static local Hamiltonian coupled weakly to a cold thermal bath at inverse temperature $\beta = 1/T$. Energy penalties suppress new excitations, thermal relaxation heals small clusters during storage, and classical decoding runs only once at readout \cite{quantumMemories, selfcorrecting4D, alicki4D}.
 
-Active quantum error correction preserves logical states by repeatedly measuring stabilizer checks and applying classical feedback before errors spread \cite{bravyi_bb2024}. A passive quantum memory instead stores information in the ground space of a static local Hamiltonian weakly coupled to a cold thermal bath at inverse temperature $\beta = 1/T$. Energy penalties suppress new excitations, thermal relaxation heals small clusters, and classical decoding runs only once at readout \cite{quantumMemories, selfcorrecting4D, alicki4D}.
+Achieving passive protection in three-dimensional Euclidean space ($\mathbb{R}^3$) is difficult because energy barriers must overcome the growing entropy of defect pathways \cite{chesi2010, siva2017, bergamaschi2025mixing}. In a 2D surface code, creating a defect pair costs a fixed energy, after which single-qubit flips move defects across flat sheets at zero energy cost \cite{selfcorrecting2D}. Non-Euclidean expander codes block spreading via long-range links \cite{bravyi_bb2024, hong2025trivial, guo2026neutral}, whereas 3D-local codes must obstruct motion within $\mathbb{R}^3$. On the cubic lattice $\mathbb{Z}^3$, Haah's Cubic Code removes string logical operators to achieve logarithmic barriers and strong finite-size storage \cite{haah2011cubic, yoshida2011, bravyi_haah2013}, though positive-temperature mixing remains rapid asymptotically \cite{stengele2026haah}. Michnicki's 3D welded surface code achieves a power-law barrier by joining sheets along three-way seams where defects split \cite{michnicki2014}, yet zero-energy spreading across growing flat patches causes lifetime to collapse past a finite size \cite{siva2017}. Layer and cored-product codes exhibit related finite-size trade-offs \cite{layercodesydney, layercodesyale, williamson2026layer, roberts2026cored}.
 
-Achieving passive protection with geometrically local interactions in three dimensions ($\mathbb{R}^3$) is difficult because static energy barriers must outgrow the entropy of defect motion \cite{chesi2010, siva2017, bergamaschi2025mixing}. In a 2D surface code, creating a defect pair costs a constant energy, after which single-qubit flips move defects across flat sheets at zero energy cost \cite{selfcorrecting2D}. Non-Euclidean expander codes suppress spreading through long-range links \cite{bravyi_bb2024, hong2025trivial, guo2026neutral}, whereas 3D-local codes must obstruct motion within three spatial dimensions. On the cubic lattice $\mathbb{Z}^3$, Haah's Cubic Code removes string logical operators to obtain logarithmic energy barriers and strong finite-size protection \cite{haah2011cubic, yoshida2011, bravyi_haah2013}, though positive-temperature mixing remains rapid asymptotically \cite{stengele2026haah}. Michnicki's 3D welded surface code achieves a power-law static barrier by joining sheets along three-way seams where defects split \cite{michnicki2014}, yet zero-energy diffusion across growing flat patches causes thermal lifetimes to drop past a finite crossover size \cite{siva2017}. Layer and cored-product codes likewise exhibit rich finite-size behavior \cite{layercodesydney, layercodesyale, williamson2026layer, roberts2026cored}.
+Balasubramanian, Davydova, and Lin (BDL) \cite{selfcorrecting3D} proved passive self-correction in $\mathbb{R}^3$ by welding subdivided sheets recursively so flat patches never grow with system size (see also Ref.~\cite{hayden2026}). At each step, BDL scales vertex coordinates in $\mathbb{R}^3$, applies small local vertex shifts to keep junctions separated, duplicates the complex along a unit vector, and attaches vertical bridges along interior grid lines \cite{selfcorrecting3D}. For worst-case proofs, their template places \emph{two} parallel interior bridge crosses in every cell and alternates $(X, Z, X, Z)$ steps. At finite size and fixed temperature, however, extra bridges and seams inflate qubit counts and create thermal birth sites.
 
-Balasubramanian, Davydova, and Lin (BDL) \cite{selfcorrecting3D} proved passive self-correction in $\mathbb{R}^3$ using recursive sheet welding so that flat patches never grow with system size (see also Ref.~\cite{hayden2026}). At each step, BDL scales vertex coordinates in $\mathbb{R}^3$ by a subdivision factor $\ell$, applies small local vertex shifts so multi-sheet junctions do not stack at one point, duplicates the complex along a unit vector, and attaches vertical bridge faces along interior grid lines. This construction embeds natively in $\mathbb{R}^3$ with bounded qubit density per unit volume and bounded interaction range \cite{selfcorrecting3D}.
+In this paper, we strictly enforce 3D Euclidean locality throughout and answer one central question: \emph{which local features of recursive sheet welding are actually needed at each scale, and how can the architecture be simplified and strengthened for finite-time storage?} The narrative proceeds in three steps:
+\begin{enumerate}
+  \item \emph{Minimal 3D scale and baseline bottlenecks} (Section~\ref{sec:scale}): An exact face-growth recurrence proves $L = 2$ violates 3D packing while $L = 3$ preserves it. Within BDL's $(X, Z, X, Z)$ baseline, we identify why fine flat patches fail early, why partial bridge-arm cuts open barrier-one failure modes, and why step~4 overprotects $Z$.
+  \item \emph{Selective cuts and step reordering on surface sheets} (Section~\ref{sec:surface}): Deleting nonlimiting whole bridges ($C_3 R_{X3}, R_{X3} R_{X3}$) and reordering steps on the exact same 3D complex---compact three-step $(X, Z, X)$ and symmetric $(X, Z, Z, X)$---extends storage by up to three orders of magnitude at lower qubit cost, independently of readout decoder choice.
+  \item \emph{Why surface sheets lag Haah, and closing the gap with 4.8.8 color codes} (Sections~\ref{sec:benchmarks}--\ref{sec:color}): Uniform $J = 1$ benchmarks isolate degree-$2$ sheet qubits as the surface-code bottleneck. Upgrading sheets to degree-$\ge 3$ 4.8.8 color codes with asymmetric seams matches surface-code lifetimes at two orders of magnitude fewer qubits, while staggered T-junction dispersion and alternating open boundaries clarify finite-size scaling and preserve $K = 2$ without periodic wraparound.
+\end{enumerate}
+Throughout, prior-art baselines are 2D Toric, Michnicki 1-cycle, BDL $R_3 R_3$, and Haah's Cubic Code; our four 3D-preserving designs are sector-selective whole-bridge cuts, three-step $(X, Z, X)$, symmetric $(X, Z, Z, X)$, and welded 4.8.8 color-code sheets (with staggered T-junctions and alternating open boundaries). All finite-$L = 3$ codes implement BDL's thin-bridge geometry directly, omitting their large-$N$ boundary-padding gadget ($\ell = 8$), and are evaluated as finite 3D-local memories rather than an $N \to \infty$ proof.
 
-For asymptotic proofs, BDL's template makes two protective choices: (i)~placing \emph{two} parallel interior bridge crosses in every cell so any syndrome can be swept to a boundary without intermediate weight growth, and (ii)~alternating $X$- and $Z$-welding steps in an $(X, Z, X, Z)$ ($XZXZ$) sequence \cite{selfcorrecting3D}. At finite size and fixed temperature, however, extra bridges and seams add physical qubits and thermal defect-birth sites. Enforcing strict 3D Euclidean locality throughout, we ask which local bridge structures and step sequences maximize finite-time storage at smaller qubit cost, whether cold failures reflect thermal crossing or readout decoding, and how 3D-local welded memories compare at finite size with $\mathbb{Z}^3$-local codes.
+\subsection{Storage Model and Evaluation Protocol}
 
-To keep attribution clear, our prior-art baselines are Kitaev's 2D toric code, Michnicki's single-scale 1-cycle welded surface code \cite{michnicki2014}, BDL's alternating $(X, Z, X, Z)$ four-step hierarchy ($R_3 R_3$) \cite{selfcorrecting3D}, and Haah's $\mathbb{Z}^3$-local Cubic Code \cite{haah2011cubic}. On that same 3D complex and coordinate map, we introduce four 3D-preserving modifications: \emph{sector-selective single-bridge cuts} ($R_{X3}, R_{Z3}$), \emph{three-step $(X, Z, X)$ hierarchies}, \emph{symmetric four-step $(X, Z, Z, X)$ ($XZZX$) ordering}, and \emph{welded 4.8.8 flag color-code sheets} (with both staggered three-way T-junction dispersion and alternating open boundaries; Section~\ref{sec:color_welded}). Because bridge cuts only remove faces and 4.8.8 sheets replace each square face locally with eight corner qubits \cite{bombin2006color, kubica2015color}, every design preserves 3D locality whenever the subdivision satisfies $L \ge 3$ (Section~\ref{sec:frontier}). Our finite-$L = 3$ codes implement BDL's thin-bridge geometry directly, omitting their large-$N$ boundary-padding gadget ($\ell = 8$), and are studied as finite 3D-local memories rather than an $N \to \infty$ proof.
-
-\subsection{Storage Model and Metrics}
-
-Every architecture is a Calderbank--Shor--Steane (CSS) stabilizer code with check matrices $H_X, H_Z$ and unit-coupling Hamiltonian ($J = 1$)
+Every code is a Calderbank--Shor--Steane (CSS) stabilizer code with parity-check matrices $H_X, H_Z$ and unit-coupling Hamiltonian ($J = 1$)
 \begin{equation}
-  H \;=\; \frac{1}{2}\sum_{a}\bigl(I - S_a^X\bigr) \;+\; \frac{1}{2}\sum_{b}\bigl(I - S_b^Z\bigr),
+  H \;=\; \frac{1}{2}\sum_{a}\bigl(I - S_a^X\bigr) \;+\; \frac{1}{2}\sum_{b}\bigl(I - S_b^Z\bigr).
   \label{eq:hamiltonian}
 \end{equation}
-where each violated check adds unit energy. Under independent single-qubit Pauli $X$ and $Z$ baths at inverse temperature $\beta$ \cite{davies1974}, the two sectors evolve as independent continuous-time Markov chains with Glauber transition rates
+Under independent single-qubit Pauli $X$ and $Z$ thermal baths at inverse temperature $\beta$ \cite{davies1974}, the two sectors evolve independently in exact continuous time via the Bortz--Kalos--Lebowitz algorithm \cite{bkl1975} with Glauber rates
 \begin{equation}
   r(\Delta E) \;=\; \frac{1}{1 + e^{\beta \Delta E}},
   \label{eq:glauber}
 \end{equation}
-simulated in exact continuous physical time via the Bortz--Kalos--Lebowitz algorithm \cite{bkl1975}. Flipping a qubit touching $d$ checks, $u$ of which are already violated, shifts the energy by $\Delta E = d - 2u$.
-
-At readout time $t$, single-shot snapshots are decoded with unweighted Union-Find (UF) \cite{delfosse_uf, delfosse_qldpc_uf} and belief-propagation ordered-statistics decoding (BP-OSD) \cite{panteleev_bposd, roffe_bposd2020} (Section~\ref{sec:decoders} and Appendix~\ref{app:css}). Combining sector recovery probabilities $p_X(t)$ and $p_Z(t)$ gives $P_{\mathrm{rec}}^{\mathcal{A}}(t; \beta) = p_X(t)\,p_Z(t)$ and the $80\%$ operational lifetime
+where flipping a qubit touching $d$ checks with $u$ violated shifts energy by $\Delta E = d - 2u$. At readout time $t$, single-shot snapshots are decoded with unweighted Union-Find (UF) \cite{delfosse_uf, delfosse_qldpc_uf} and belief-propagation ordered-statistics decoding (BP-OSD) \cite{panteleev_bposd, roffe_bposd2020} (Appendix~\ref{app:decoders}). Total recovery is $P_{\mathrm{rec}}^{\mathcal{A}}(t; \beta) = p_X(t)\,p_Z(t)$, yielding the $80\%$ lifetime
 \begin{equation}
   t_p(\mathcal{A}; \beta) \;=\; \inf\bigl\{t \ge 0 : P_{\mathrm{rec}}^{\mathcal{A}}(t; \beta) < p\bigr\}
   \label{eq:tp}
 \end{equation}
-by log-linear interpolation at $p = 0.80$. For a storage target $t_*$, we seek to minimize qubit count
-\begin{equation}
-  \min_{\mathcal{A}} N(\mathcal{A}) \quad \text{subject to} \quad P_{\mathrm{rec}}^{\mathcal{A}}(t_*; \beta) \ge 0.80,
-  \label{eq:design_objective}
-\end{equation}
-while preserving exact commutation $H_X H_Z^T = 0 \pmod 2$, the seed's logical qubit count $K = N - \mathrm{rank}\,H_X - \mathrm{rank}\,H_Z$ ($K = 1$ planar, $K = 2$ torus; relaxed only in the subsystem test of Section~\ref{sec:pruning}), and 3D packing dimension below~$3$. Confidence intervals ($95\%$) use $10{,}000$ independent sector resamples ($5{,}000$ on the initial fine-$C_3$ baselines), and zero observed failures in $n = 96$ ($64$) runs bounds one-sided sector failure probability below $3.08\%$ ($4.58\%$).
+at $p = 0.80$ via log-linear interpolation. All codes satisfy exact CSS commutation $H_X H_Z^T = 0 \pmod 2$, seed logical dimension $K = N - \mathrm{rank}\,H_X - \mathrm{rank}\,H_Z$ ($K = 1$ planar, $K = 2$ surface torus, $K = 4$ color torus), and 3D packing dimension below~$3$. Confidence intervals ($95\%$) use $10{,}000$ independent sector resamples ($5{,}000$ on the initial fine-$C_3$ baselines), and zero failures in $n = 96$ ($64$) trials bounds sector failure probability below $3.08\%$ ($4.58\%$).
 
 \begin{figure*}[!tbp]
   \centering
   \includegraphics[width=0.97\textwidth]{../figures/fig_v26_1_frontier.pdf}
-  \caption{(a)~Thin-bridge packing dimension $d_{\mathrm{pack}}(L, r) = \log_L \rho(T_{L,r})$ versus subdivision $L$ for one ($r = 1$) and two ($r = 2$) bridges per direction; $L = 2$ ($C_2$, $3.30 > 3$) violates 3D packing, whereas $L \ge 3$ stays strictly below~$3$. (b)~3D box qubit density $N / L_{\mathrm{blk}}^3$ under explicit $\mathbb{R}^3$ embedding across $s \in \{2, 3, 4\}$ steps, diverging at $L = 2$ while remaining bounded for pure $L = 3$. (c)~Planar UF recovery time $t_{0.80}$ at $\beta = 6.5$ ($95\%$ bootstrap intervals) for one-cycle $L = 3$ modules and all four two-cycle combinations in the $(X, Z, X, Z)$ sequence.}
+  \caption{(a)~Thin-bridge packing dimension $d_{\mathrm{pack}}(L, r) = \log_L \rho(T_{L,r})$ versus subdivision $L$ for one ($r = 1$) and two ($r = 2$) bridges per direction; $L = 2$ ($3.30 > 3$) violates 3D packing, whereas $L \ge 3$ stays strictly below~$3$. (b)~3D box qubit density $N / L_{\mathrm{blk}}^3$ under explicit $\mathbb{R}^3$ placement across $s \in \{2, 3, 4\}$ steps, diverging at $L = 2$ while remaining bounded at $L = 3$. (c)~Planar UF recovery time $t_{0.80}$ at $\beta = 6.5$ ($95\%$ intervals) across one-cycle $L = 3$ modules and all four two-cycle combinations in BDL's $(X, Z, X, Z)$ sequence.}
   \label{fig:frontier}
 \end{figure*}
 
-\section{3D Packing Cutoff and Pure-\texorpdfstring{$L = 3$}{L = 3} Baseline}
-\label{sec:frontier}
+\section{Minimal 3D-Local Scale and Baseline Bottlenecks}
+\label{sec:scale}
 
-\subsection{Why \texorpdfstring{$L = 2$}{L = 2} Fails 3D Locality While \texorpdfstring{$L \ge 3$}{L >= 3} Preserves It}
+\subsection{Why \texorpdfstring{$L = 2$}{L = 2} Violates 3D Packing While \texorpdfstring{$L \ge 3$}{L >= 3} Preserves It}
 
-At each welding step, non-unit edges subdivide into $L$ parts, each face splits into two parallel sheets, and vertical bridge faces join those sheets along $1 \le r \le L - 1$ interior grid lines per direction. Under BDL's thin-bridge rule, newly added vertical edges remain at unit length for the next step so check weights stay $\le 7$ and qubit degrees stay $\le 5$ per sector (Appendix~\ref{app:css}). We first determine which factors $L$ admit bounded qubit density and bounded check diameter in $\mathbb{R}^3$.
-
-Tracking ordinary sheet faces and unit-width bridge faces separately gives a $2 \times 2$ growth matrix $T_{L,r} = \bigl(\begin{smallmatrix} 2L^2 & 2L \\ 2rL & r \end{smallmatrix}\bigr)$ (Proposition~\ref{prop:growth}, Appendix~\ref{app:packing}) with dominant eigenvalue
+At each welding step, non-unit edges subdivide into $L$ segments, faces duplicate into two sheets, and vertical bridge faces attach along $1 \le r \le L - 1$ interior grid lines per direction. Holding newly created bridge edges at unit length keeps check weights $\le 7$ and qubit degrees $\le 5$ per sector (Appendix~\ref{app:construction}). Partitioning ordinary sheet faces and unit-width bridge faces gives a $2 \times 2$ face-growth matrix $T_{L,r} = \bigl(\begin{smallmatrix} 2L^2 & 2L \\ 2rL & r \end{smallmatrix}\bigr)$ (Proposition~\ref{prop:growth}, Appendix~\ref{app:construction}) with leading eigenvalue
 \begin{equation}
-  \rho(T_{L,r}) \;=\; \frac{1}{2}\Bigl(2L^2 + r + \sqrt{(2L^2 + r)^2 + 8rL^2}\Bigr)
+  \rho(T_{L,r}) \;=\; \frac{1}{2}\Bigl(2L^2 + r + \sqrt{(2L^2 + r)^2 + 8rL^2}\Bigr).
   \label{eq:spectral_radius}
 \end{equation}
-and packing dimension $d_{\mathrm{pack}}(L, r) = \log_L \rho(T_{L,r})$, measuring how fast face counts grow compared with the 3D box volume $L_{\mathrm{blk}}^3$ ($L_{\mathrm{blk}} = \prod_{q=1}^s L_q$). Because $N_s \ge \frac{3}{4}F_s$, embedding checks with bounded range inside $[0, O(L_{\mathrm{blk}})]^3$ requires $d_{\mathrm{pack}} \le 3$.
+Because $s$ steps stretch the bounding box to $L_{\mathrm{blk}} = \prod_{q=1}^s L_q$ with $N_s \ge \frac{3}{4}F_s$, bounded-density placement in $\mathbb{R}^3$ requires the packing dimension $d_{\mathrm{pack}}(L, r) = \log_L \rho(T_{L,r})$ to satisfy $d_{\mathrm{pack}} \le 3$.
 
-Equation~\eqref{eq:spectral_radius} separates $L = 2$ from $L \ge 3$ (Fig.~\ref{fig:frontier}a). At $L = 2, r = 1$ ($C_2$), each step multiplies faces by $\rho(T_{2,1}) \approx 9.815 > 2^3 = 8$, giving $d_{\mathrm{pack}}(2, 1) \approx 3.30 > 3$. Explicit coordinate tracking in $\mathbb{R}^3$ across $s = 2, 3, 4$ steps confirms that $L = 2$ box density $N / L_{\mathrm{blk}}^3$ grows unboundedly ($3.97 \to 3.79 \to 6.14$, with peak unit-cube occupancy jumping $17 \to 25 \to 94$ qubits; Fig.~\ref{fig:frontier}b). Thus uniform $L = 2$ hierarchies cannot fit locally in 3D space.
+Equation~\eqref{eq:spectral_radius} establishes a sharp cutoff between $L = 2$ and $L \ge 3$ (Fig.~\ref{fig:frontier}a). At $L = 2, r = 1$, faces grow by $\rho(T_{2,1}) \approx 9.815 > 2^3$, giving $d_{\mathrm{pack}}(2, 1) \approx 3.30 > 3$; explicit $\mathbb{R}^3$ placement across $s = 2, 3, 4$ steps confirms that box density $N/L_{\mathrm{blk}}^3$ diverges ($3.97 \to 3.79 \to 6.14$, with peak unit-cube occupancy jumping $17 \to 25 \to 94$; Fig.~\ref{fig:frontier}b). By contrast, both one-bridge ($d_{\mathrm{pack}}(3, 1) \approx 2.723$) and two-bridge ($d_{\mathrm{pack}}(3, 2) \approx 2.800$) steps at $L = 3$ lie strictly below~$3$. Across every pure-$L = 3$ code in Appendix~\ref{app:construction} (Table~\ref{tab:specs}), effective dimension remains $\dim_{\mathrm{eff}} = \log_{L_{\mathrm{blk}}} M_Z \in [2.76, 2.94] < 3$, box density stays bounded ($1.42 \to 0.98 \to 0.80$), and every check fits inside Euclidean diameter $R_{\max} \le 3.79$. We enforce $L \ge 3$ at every step henceforth.
 
-At $L = 3$, both one-bridge ($d_{\mathrm{pack}}(3, 1) \approx 2.723$) and two-bridge ($d_{\mathrm{pack}}(3, 2) \approx 2.800$) steps remain strictly below~$3$ (Fig.~\ref{fig:frontier}a). Under explicit $\mathbb{R}^3$ placement inside $[0, 3^s]^3$ (Appendix~\ref{app:packing}), every pure-$L = 3$ code in Table~\ref{tab:specs} has effective dimension $\dim_{\mathrm{eff}} = \log_{L_{\mathrm{blk}}} M_Z \in [2.76, 2.94] < 3$, non-increasing global box density ($1.42 \to 0.98 \to 0.80$ along $C_3 \to X_{3,1}Z_{3,2}X_{3,1} \to C_3 R_3^{ZX}$; Fig.~\ref{fig:frontier}b), $5.2\text{--}9.5$ qubits per occupied unit cube, and maximum check Euclidean diameter $R_{\max} \le 3.79$. We therefore require $L \ge 3$ at every step throughout.
+\subsection{Bottlenecks in BDL's Baseline and Limits of Blind Cuts}
 
-\begin{table}[!htbp]
-\caption{Parameters of 3D-local welded surface codes ($L \ge 3$ at every step, planar $K = 1$): physical qubits $N$, check rows $(M_X, M_Z)$, box side $L_{\mathrm{blk}}$, effective dimension $\dim_{\mathrm{eff}} = \log_{L_{\mathrm{blk}}} M_Z < 3$, and clean-state flip hazards $(\Gamma_X^{(0)}, \Gamma_Z^{(0)})$ at $\beta = 6.5$. Periodic tori ($K = 2$) share $N, M_Z, L_{\mathrm{blk}}$, and $\dim_{\mathrm{eff}}$.}
-\label{tab:specs}
-{\scriptsize
-\setlength{\tabcolsep}{1.8pt}
-\begin{ruledtabular}
-\begin{tabular}{lccccr}
-Architecture & $N$ & $(M_X, M_Z)$ & $L_{\mathrm{blk}}$ & $\dim_{\mathrm{eff}}$ & $(\Gamma_X^{(0)},\Gamma_Z^{(0)})$ \\
-\colrule
-$C_3$ & $1{,}036$ & $(572, 474)$ & $9$ & $2.804$ & $(0.134, 0.158)$ \\
-$R_{X3}$ & $1{,}078$ & $(572, 516)$ & $9$ & $2.843$ & $(0.140, 0.158)$ \\
-$R_{Z3}$ & $1{,}426$ & $(896, 588)$ & $9$ & $2.902$ & $(0.153, 0.098)$ \\
-$R_3$ & $1{,}480$ & $(896, 636)$ & $9$ & $2.938$ & $(0.159, 0.098)$ \\
-$C_3^{ZX}$ & $860$ & $(396, 474)$ & $9$ & $2.804$ & $(0.133, 0.134)$ \\
-$R_{Z3}^{ZX}$ & $986$ & $(480, 516)$ & $9$ & $2.843$ & $(0.140, 0.146)$ \\
-$R_3^{ZX}$ & $1{,}064$ & $(480, 636)$ & $9$ & $2.938$ & $(0.157, 0.146)$ \\
-\colrule
-$Z_{3,1} X_{3,1} Z_{3,1}$ & $20{,}954$ & $(11{,}820, 9{,}438)$ & $27$ & $2.777$ & $(0.877, 0.981)$ \\
-$X_{3,1} Z_{3,1} X_{3,1}$ & $16{,}798$ & $(7{,}664, 9{,}438)$ & $27$ & $2.777$ & $(0.859, 0.802)$ \\
-$X_{3,2} Z_{3,1} X_{3,1}$ & $18{,}088$ & $(8{,}120, 10{,}344)$ & $27$ & $2.805$ & $(0.902, 0.829)$ \\
-$X_{3,1} Z_{3,2} X_{3,1}$ & $19{,}174$ & $(9{,}224, 10{,}236)$ & $27$ & $2.802$ & $(0.900, 0.876)$ \\
-$R_3 X_{3,2}$ & $22{,}160$ & $(9{,}728, 13{,}800)$ & $27$ & $2.892$ & $(1.051, 0.906)$ \\
-\colrule
-$C_3 C_3$ & $415{,}004$ & $(233{,}128, 187{,}854)$ & $81$ & $2.763$ & $(6.121, 6.265)$ \\
-$R_3 C_3$ & $499{,}088$ & $(282{,}832, 223{,}944)$ & $81$ & $2.803$ & $(6.835, 6.890)$ \\
-$C_3 R_{X3}$ & $431{,}188$ & $(233{,}128, 203{,}772)$ & $81$ & $2.782$ & $(6.308, 6.555)$ \\
-$C_3 R_{Z3}$ & $570{,}476$ & $(363{,}040, 233{,}112)$ & $81$ & $2.812$ & $(7.181, 4.320)$ \\
-$C_3 R_3$ & $591{,}208$ & $(363{,}040, 251{,}304)$ & $81$ & $2.830$ & $(7.368, 4.366)$ \\
-$R_{X3} R_{X3}$ & $470{,}332$ & $(253{,}192, 223{,}296)$ & $81$ & $2.803$ & $(6.650, 6.884)$ \\
-$R_3 R_3$ & $709{,}408$ & $(439{,}168, 298{,}896)$ & $81$ & $2.869$ & $(8.199, 4.861)$ \\
-\colrule
-$C_3 C_3^{ZX}$ & $343{,}436$ & $(160{,}904, 187{,}854)$ & $81$ & $2.763$ & $(5.812, 5.556)$ \\
-$C_3 R_3^{ZX}$ & $422{,}296$ & $(192{,}816, 251{,}304)$ & $81$ & $2.830$ & $(6.663, 6.111)$ \\
-$R_{X3} R_3^{ZX}$ & $460{,}480$ & $(209{,}376, 275{,}376)$ & $81$ & $2.850$ & $(7.004, 6.423)$ \\
-$R_{Z3} R_3^{ZX}$ & $464{,}104$ & $(213{,}648, 273{,}648)$ & $81$ & $2.849$ & $(7.000, 6.458)$ \\
-$R_3 R_3^{ZX}$ & $504{,}352$ & $(231{,}168, 298{,}896)$ & $81$ & $2.869$ & $(7.343, 6.773)$ \\
-\end{tabular}
-\end{ruledtabular}
-}
-\end{table}
-
-\subsection{Pure-\texorpdfstring{$L = 3$}{L = 3} Baseline in BDL's \texorpdfstring{$XZXZ$}{XZXZ} Sequence}
-
-One $(X, Z)$ welding cycle at $L = 3$ yields two building-block modules (Table~\ref{tab:specs}): one-bridge $C_3$ ($r = 1$, $1{,}036$ qubits, leaving an un-bridged $2 \times 2$ flat patch in each $3 \times 3$ face) and two-bridge $R_3$ ($r = 2$, $1{,}480$ qubits, dividing sheets down to $1 \times 1$ unit faces). Composing a coarse cycle $A$ with a fine cycle $B$ in BDL's $(X, Z, X, Z)$ sequence forms the four baselines $\{C_3, R_3\}^2$ ($415{,}004\text{--}709{,}408$ qubits, $L_{\mathrm{blk}} = 81$; Fig.~\ref{fig:frontier}c and Table~\ref{tab:frontier}).
-
-Three observations motivate our simplifications:
+One $(X, Z)$ welding cycle at $L = 3$ produces one-bridge $C_3$ ($r = 1$, $1{,}036$ qubits, leaving an un-bridged $2 \times 2$ flat patch per $3 \times 3$ face) and two-bridge $R_3$ ($r = 2$, $1{,}480$ qubits, dividing sheets into $1 \times 1$ unit faces). Composing coarse cycle $A$ with fine cycle $B$ in BDL's alternating $(X, Z, X, Z)$ sequence yields $\{C_3, R_3\}^2$ ($415\mathrm{k}\text{--}709\mathrm{k}$ qubits; Fig.~\ref{fig:frontier}c and Table~\ref{tab:frontier}), revealing three core bottlenecks:
 \begin{enumerate}
-  \item \emph{Fine flat patches control early failure:} Standalone $R_3$ outlives $C_3$ by $9.81\times$ ($3.44 \times 10^4$ vs.\ $3.50 \times 10^3$ UF; $9.53\times$ BP-OSD) because $C_3$'s $2 \times 2$ patch leaves static $X$ barrier $\Delta_X = 2$, whereas $R_3$ raises both barriers to $(3, 3)$ (Appendix~\ref{app:certificates}). In two-cycle codes, fine-$C_3$ variants fail early ($1.85\text{--}3.19 \times 10^3$), whereas fine $R_3$ raises $t_{0.80}$ roughly sixfold ($1.88 \times 10^4$ on $C_3 R_3$; $1.11 \times 10^4$ BP-OSD on $R_3 R_3$).
-  \item \emph{Cutting coarse bridges helps rather than hurts:} Replacing coarse $R_3$ with $C_3$ ($C_3 R_3$ vs.\ $R_3 R_3$) removes $118{,}200$ qubits ($-16.7\%$) while \emph{increasing} $\beta = 6.5$ lifetime by $1.69\times$ (BP-OSD, $[1.42, 1.98]$), exceeding simple $1/N$ ($1.20\times$) and $\Gamma_X^{(0)}$ ($1.11\times$) scaling because extra coarse seams generate defects without fixing the fine $X$ bottleneck.
-  \item \emph{Severe sector imbalance:} In both $C_3 R_3$ and $R_3 R_3$, failures come entirely from $X$ errors while $Z$-sector lifetimes exceed $3.98 \times 10^5$ to $2.51 \times 10^7$ ($p_Z(t_{0.80}) = 1.00$), meaning the fourth $Z$ step spends hundreds of thousands of qubits overprotecting $Z$.
+  \item \emph{Fine flat-patch diffusion:} Standalone $R_3$ ($3.44 \times 10^4$) outlives $C_3$ ($3.50 \times 10^3$) by $9.81\times$ because $C_3$'s un-bridged $2 \times 2$ patch leaves static $X$ barrier $\Delta_X = 2$ and allows zero-energy defect spreading. Slowing fine-$C_3$ $\Delta E = 0$ patch moves by $\mu = 0.01$ extends $C_3 C_3$ and $R_3 C_3$ lifetimes $7.0\text{--}8.1\times$ (Appendix~\ref{app:surface_diagnostics}), explaining why fine-$C_3$ hierarchies fail early ($1.85\text{--}3.19 \times 10^3$) while fine $R_3$ boosts survival roughly sixfold.
+  \item \emph{Coarse overbuilding and $X/Z$ imbalance:} Replacing coarse $R_3$ with $C_3$ ($C_3 R_3$ vs.\ $R_3 R_3$) removes $118{,}200$ qubits ($-16.7\%$) while \emph{raising} $\beta = 6.5$ lifetime $1.69\times$ ($1.88 \times 10^4$ vs.\ $1.11 \times 10^4$). Both $C_3 R_3$ and $R_3 R_3$ fail exclusively in $X$ while $Z$-sector lifetimes exceed $3.98 \times 10^5$ to $2.51 \times 10^7$ ($p_Z(t_{0.80}) = 1.00$), so step~4 spends hundreds of thousands of qubits overprotecting $Z$.
+  \item \emph{Why partial arm pruning fails:} Simply deleting one bridge arm inside $C_3$ works in $X$ ($1{,}028$ qubits, ratio $1.13\times$), but cutting a $Z$-step arm ($971$ qubits) creates eleven extra logical modes ($K = 12$) and opens a barrier-$(1, 1)$ logical path, collapsing protected-subsystem lifetime $28\text{--}36\times$ (Appendix~\ref{app:surface_diagnostics}, Table~\ref{tab:pruning}). Retaining $K = 1$ requires cutting \emph{entire} parallel bridges in nonlimiting sectors instead.
 \end{enumerate}
 
 \begin{table}[!htbp]
-\caption{Baseline recovery times $t_{0.80}$ at pure $L = 3$ in BDL's $(X, Z, X, Z)$ sequence under paired UF and BP-OSD ($10{,}000$ bootstrap draws, zero trajectories truncated before $t_{0.80}$).}
+\caption{Pure-$L = 3$ alternating $(X, Z, X, Z)$ baseline versus sector-selective bridge cuts ($10{,}000$ bootstrap draws, zero trajectories truncated before $t_{0.80}$).}
 \label{tab:frontier}
 {\scriptsize
-\setlength{\tabcolsep}{1.8pt}
+\setlength{\tabcolsep}{1.2pt}
 \begin{ruledtabular}
-\begin{tabular}{llcccc}
-Code & Seed & $\beta$ & $(n_X, n_Z)$ & UF $t_{0.80}$ & BP-OSD $t_{0.80}$ [$95\%$ CI] \\
+\begin{tabular}{llcccr}
+Code & Seed & $N$ & $\beta$ & UF $t_{0.80}$ & BP-OSD $t_{0.80}$ [$95\%$ CI] \\
 \colrule
-$C_3$ & Plan. & $6.5$ & $(512, 512)$ & $3.50{\times}10^3$ & $3.61{\times}10^3$ $[2.85, 4.47]{\times}10^3$ \\
-$R_3$ & Plan. & $6.5$ & $(256, 256)$ & $3.44{\times}10^4$ & $3.44{\times}10^4$ $[2.03, 4.91]{\times}10^4$ \\
+$C_3$ & Plan. & $1{,}036$ & $6.5$ & $3.50{\times}10^3$ & $3.61{\times}10^3$ $[2.85, 4.47]{\times}10^3$ \\
+$R_3$ & Plan. & $1{,}480$ & $6.5$ & $3.44{\times}10^4$ & $3.44{\times}10^4$ $[2.03, 4.91]{\times}10^4$ \\
 \colrule
-$C_3 C_3$ & Plan. & $6.5$ & $(112, 64)$ & $3.19{\times}10^3$ & --- $[2.31, 3.59]{\times}10^3$$^*$ \\
-$R_3 C_3$ & Plan. & $6.5$ & $(112, 64)$ & $1.85{\times}10^3$ & --- $[1.74, 2.08]{\times}10^3$$^*$ \\
-$C_3 R_3$ & Plan. & $6.5$ & $(96, 96)$ & $1.88{\times}10^4$ & $1.88{\times}10^4$ $[1.69, 2.11]{\times}10^4$ \\
-$R_3 R_3$ & Plan. & $6.5$ & $(96, 96)$ & $1.18{\times}10^4$ & $1.11{\times}10^4$ $[1.00, 1.28]{\times}10^4$ \\
-$R_3 R_3$ & Torus & $6.5$ & $(96, 96)$ & $1.02{\times}10^4$ & $1.14{\times}10^4$ $[0.86, 1.25]{\times}10^4$ \\
+$C_3 C_3$ & Plan. & $415{,}004$ & $6.5$ & $3.19{\times}10^3$ & --- $[2.31, 3.59]{\times}10^3$$^*$ \\
+$R_3 C_3$ & Plan. & $499{,}088$ & $6.5$ & $1.85{\times}10^3$ & --- $[1.74, 2.08]{\times}10^3$$^*$ \\
+$C_3 R_3$ & Plan. & $591{,}208$ & $6.5$ & $1.88{\times}10^4$ & $1.88{\times}10^4$ $[1.69, 2.11]{\times}10^4$ \\
+$R_3 R_3$ & Plan. & $709{,}408$ & $6.5$ & $1.18{\times}10^4$ & $1.11{\times}10^4$ $[1.00, 1.28]{\times}10^4$ \\
+$R_3 R_3$ & Torus & $709{,}408$ & $6.5$ & $1.02{\times}10^4$ & $1.14{\times}10^4$ $[0.86, 1.25]{\times}10^4$ \\
 \colrule
-$C_3 R_3$ & Plan. & $7.0$ & $(64, 64)$ & $2.06{\times}10^5$ & $1.80{\times}10^5$ $[1.01, 2.66]{\times}10^5$ \\
-$R_3 R_3$ & Plan. & $7.0$ & $(64, 64)$ & $1.88{\times}10^5$ & $1.95{\times}10^5$ $[1.00, 2.26]{\times}10^5$ \\
+$C_3 R_{Z3}$ & Plan. & $570{,}476$ & $6.5$ & $1.74{\times}10^3$ & $1.80{\times}10^3$ $[1.44, 2.08]{\times}10^3$ \\
+$C_3 R_{X3}$ & Plan. & $431{,}188$ & $6.5$ & $4.15{\times}10^4$ & $4.23{\times}10^4$ $[2.80, 4.80]{\times}10^4$ \\
+$R_{X3} R_{X3}$ & Plan. & $470{,}332$ & $6.5$ & $5.23{\times}10^4$ & $5.23{\times}10^4$ $[4.13, 5.98]{\times}10^4$ \\
+\colrule
+$C_3 R_3$ & Plan. & $591{,}208$ & $7.0$ & $2.06{\times}10^5$ & $1.80{\times}10^5$ $[1.01, 2.66]{\times}10^5$ \\
+$R_3 R_3$ & Plan. & $709{,}408$ & $7.0$ & $1.88{\times}10^5$ & $1.95{\times}10^5$ $[1.00, 2.26]{\times}10^5$ \\
+$C_3 R_{X3}$ & Plan. & $431{,}188$ & $7.0$ & $2.53{\times}10^5$ & $3.68{\times}10^5$ $[2.37, 4.44]{\times}10^5$ \\
+$R_{X3} R_{X3}$ & Plan. & $470{,}332$ & $7.0$ & $1.08{\times}10^6$ & $1.09{\times}10^6$ $[0.81, 1.67]{\times}10^6$ \\
 \end{tabular}
 \end{ruledtabular}
 }
@@ -182,133 +136,32 @@ $R_3 R_3$ & Plan. & $7.0$ & $(64, 64)$ & $1.88{\times}10^5$ & $1.95{\times}10^5$
 
 \begin{figure*}[!tbp]
   \centering
-  \includegraphics[width=0.97\textwidth]{../figures/fig_v26_2_pruning.pdf}
-  \caption{(a)~One-bridge $3 \times 3$ cell $C_3$ (shaded $2 \times 2$ flat patch) versus a partial cut removing one bridge arm. (b)~Target recovery $P_{\mathrm{rec}}(t)$ across all four arm-pruned variants of $C_3$ at $\beta = 6.5$ ($n_X = n_Z = 512$, UF readout); cutting the $Z$-step arm produces $11$ extra logical modes ($K = 12$) and barrier-one collapse. (c)~One-cycle $L = 3$ lifetimes $t_{0.80}$ at $\beta = 6.5$ ($n_X = n_Z = 256\text{--}512$) comparing $(X, Z)$ modules against reversed $(Z, X)$ modules.}
-  \label{fig:pruning}
-\end{figure*}
-
-\section{When Local Bridge Deletions Fail}
-\label{sec:pruning}
-
-\subsection{Exact Quotient Analysis of Elementary Cells}
-
-To separate birth rates from barrier heights cleanly on small welded cells, we group physical $X$ errors that violate identical $Z$ checks into equivalence classes modulo $X$ stabilizers ($\mathrm{rowspace}(H_X)$; Appendix~\ref{app:quotient}). Because stabilizer-equivalent configurations have identical transition energies, projecting onto independent syndromes $s$ and logical parity $\ell$ forms an exact Markov chain on $N - \mathrm{rank}\,H_X = \mathrm{rank}\,H_Z + K$ bits.
-
-For any $K = 1$ symmetric quotient with clean states $a = (0, 0)$ and $b = (0, 1)$ and partition function $Z = \sum_x e^{-\beta E(x)}$, logical symmetry reduces transition-path theory \cite{metzner2009tpt} to
-\begin{equation}
-  T_{\mathrm{clean}} = \mathbb{E}_a[\tau_b] = \frac{Z}{2\kappa} = \frac{Z}{2\Gamma \bar{h}}, \quad \kappa = \sum_{i} r_{ai}\Pr_i(\tau_b < \tau_a),
-  \label{eq:tclean_identity}
-\end{equation}
-factoring escape into the initial birth rate $\Gamma = \sum_{i \ne a} r_{ai}$ and the conditional logical-crossing probability $\bar{h} = \kappa/\Gamma$. Exact solutions on one-step $L = 3$ cells at $\beta = 7.0$ explain why $R_3$ beats $C_3$: $C_3$ ($N = 41$, $X$ barrier~$2$) gives $T_{\mathrm{clean}}^X \approx 2.61 \times 10^5$ ($\Gamma = 1.28 \times 10^{-2}$, $\bar{h} = 3.06 \times 10^{-4}$), whereas two-bridge $R_3$ ($N = 44$, $X$ barrier~$3$) reaches $T_{\mathrm{clean}}^X \approx 9.41 \times 10^7$---tolerating $14\%$ \emph{more} initial births ($\Gamma = 1.46 \times 10^{-2}$) while suppressing escape more than $400$-fold ($\bar{h} = 7.40 \times 10^{-7}$). Meanwhile, on a single $8{,}192$-state test cell where exact optimal maximum-likelihood recovery $P^{\mathrm{opt}}(t)$ can be computed at $\beta = 7.0$, deleting one bridge arm trims $t_{0.80}^{\mathrm{opt}, X}$ by $6.15\%$ ($92{,}046 \to 86{,}387$, near the zero-temperature limit $93.78\%$), while leaving combined $Q$ recovery unchanged at $46.67$ because the un-welded $Z$ sector sets the ceiling.
-
-\subsection{Partial Arm Cuts versus Whole-Bridge Selection}
-
-In the full two-step module $C_3$ ($N = 1{,}036, K = 1$), deleting one vertical bridge arm works in $X$ ($N = 1{,}028, K = 1$, barriers $(2, 3)$, $t_{0.80}$ ratio $1.13\times$ $[0.84, 1.49]$), yet fails dramatically in $Z$ (Fig.~\ref{fig:pruning}a,b and Table~\ref{tab:pruning}). Cutting a $Z$-step arm ($N = 971$) or both arms ($N = 963$) lowers $\mathrm{rank}\,H_X$ by $58$ and spawns eleven unintended logical qubits ($K = 12$). Even when tracking only the original seed qubit as a protected subsystem \cite{poulin2005} while treating all extra modes as unused gauge degrees of freedom, $t_{0.80}$ drops $28\text{--}36\times$ ($127.4$ and $98.0$ vs.\ $3{,}503$). Exact low-energy search (Appendix~\ref{app:certificates}) traces this collapse to a barrier-$(1, 1)$ logical path opening through the cut junction.
-
-\begin{table}[!htbp]
-\caption{Partial bridge-arm cuts on $C_3$ at $\beta = 6.5$ ($n_X = n_Z = 512$, UF readout, $10{,}000$ bootstrap draws), showing check ranks $\mathrm{rk}(H_X, H_Z)$, total versus tracked logical qubits $K/K_{\mathrm{t}}$, certified barriers $(\Delta_X, \Delta_Z)$, and target $t_{0.80}$.}
-\label{tab:pruning}
-{\scriptsize
-\setlength{\tabcolsep}{1.1pt}
-\begin{ruledtabular}
-\begin{tabular}{lccccr}
-Variant & $N$ & $\mathrm{rk}(H_X, H_Z)$ & $K/K_{\mathrm{t}}$ & $(\Delta_X,\Delta_Z)$ & UF $t_{0.80}$ [$95\%$ CI] \\
-\colrule
-Full & $1{,}036$ & $(561, 474)$ & $1/1$ & $(2, 3)$ & $3{,}503$ $[2{,}847, 4{,}243]$ \\
-Prune $X$ & $1{,}028$ & $(560, 467)$ & $1/1$ & $(2, 3)$ & $3{,}959$ $[3{,}153, 4{,}726]$ \\
-Prune $Z$ & $971$ & $(503, 456)$ & $12/1$ & $(1, 1)$ & $127.4$ $[97.5, 149.1]$ \\
-Prune both & $963$ & $(502, 449)$ & $12/1$ & $(1, 1)$ & $98.0$ $[81.0, 121.4]$ \\
-\end{tabular}
-\end{ruledtabular}
-}
-\end{table}
-
-Removing an entire parallel bridge from the nonlimiting sector avoids gauge proliferation completely while cutting far more qubits (Fig.~\ref{fig:pruning}c). In $(X, Z)$ order, $90.5\%$ of $R_3$'s extra qubits over $C_3$ ($402$ of $444$) belong to the second $Z$ bridge. Deleting that bridge defines $R_{X3} = (X_{3,2}, Z_{3,1})$ ($1{,}078$ qubits, $-27.2\%$ vs.\ $R_3$), keeping barriers $(3, 3)$ and lifting $t_{0.80}$ to $4.74 \times 10^4$, whereas cutting the limiting $X$ bridge ($R_{Z3}$, $1{,}426$ qubits) drops $\Delta_X$ to $2$ and $t_{0.80}$ to $2{,}825$. Reversing module order to $(Z, X)$ eliminates multi-qubit $Z$ seams at the denser second step: $R_3^{ZX}$ ($1{,}064$ qubits) and $R_{Z3}^{ZX}$ ($986$ qubits) both preserve $(3, 3)$, achieve $4.21 \times 10^4$ and $2.88 \times 10^4$ overall, and raise $X$-sector lifetimes past $2.05 \times 10^5$ to $1.58 \times 10^6$---the mechanism used in Section~\ref{sec:rebalance}.
-
-\begin{figure*}[!tbp]
-  \centering
-  \includegraphics[width=0.97\textwidth]{../figures/fig_v26_3_mechanism.pdf}
-  \caption{(a)~Operational recovery $P_{\mathrm{rec}}(t)$ (solid) versus no-prior-failure survival (dashed) on planar $C_3 R_{X3}$ ($431{,}188$ qubits); shaded regions indicate errors that healed before readout. (b)~Matched 3D-local $L = 4$ placement ($N = 2{,}926$, offset $1+3$ vs.\ centered $2+2$) with identical qubit count, weight spectrum, ranks, and clean hazards at $\beta = 6.5$. (c)~Planar $t_{0.80}$ on $C_3 C_3$ and $R_3 C_3$ ($\beta = 6.5$) when zero-energy flips are slowed by $\mu$ on fine $2 \times 2$ flat patches versus seam controls.}
-  \label{fig:mechanism}
-\end{figure*}
-
-\section{Physical Mechanisms Beyond Static Barriers}
-\label{sec:mechanism}
-
-\subsection{Flat-Patch Zero-Energy Mobility}
-
-Static barriers omit zero-energy ($\Delta E = 0$) defect spreading across un-bridged patches. Scaling selected symmetric $\Delta E = 0$ rates by $0 < \mu \le 1$ preserves $H, Z$, and $\Gamma$, and Dirichlet's variational principle gives
-\begin{equation}
-  0 \;\le\; \frac{d\log\kappa}{d\log\mu} \;=\; \frac{\sum_{\{x,y\}\in M} \pi_x r_{xy}(q_x - q_y)^2}{\mathrm{cap}(a, b)} \;\le\; 1,
-  \label{eq:variational_mu}
-\end{equation}
-so slowing zero-energy moves cannot shorten $T_{\mathrm{clean}}$ under $a \leftrightarrow b$ symmetry (Appendix~\ref{app:quotient} gives a four-state counterexample without symmetry). Contracting fast transitions on one-step $C_3$ \cite{dorfler2011kron} at $\mu = \lambda e^{-\beta}$ yields $\kappa_{C_3} \sim \frac{3(\lambda + 1)}{\lambda + 3}e^{-2\beta}$, showing how flat diffusion competes directly against thermal activation. At $\beta = 6.5$ on $C_3 C_3$ and $R_3 C_3$ (Fig.~\ref{fig:mechanism}c), slowing fine-$C_3$ flat-patch $\Delta E = 0$ flips to $\mu = 0.01$ extends $t_{0.80}$ by $7.0\text{--}8.1\times$ ($3.0\text{--}4.8\times$ above seam controls), confirming flat-patch diffusion as the failure channel of fine $C_3$.
-
-\subsection{Healed Excursions and Matched \texorpdfstring{$L = 4$}{L = 4} Placement}
-
-Operational recovery $P_{\mathrm{rec}}(t)$ also exceeds absorbing first-failure time because defects frequently cross back into the correct logical coset before readout. On planar $C_3 R_{X3}$ (Fig.~\ref{fig:mechanism}a), healed excursions account for $P_{\mathrm{healed}} = 0.146$ near $t_{0.80}$ at $\beta = 6.5$ and $0.125$ at $\beta = 7.0$, extending operational $t_{0.80}$ by $1.44\times$ ($4.15 \times 10^4$ vs.\ $2.87 \times 10^4$) and $1.35\times$ ($2.53 \times 10^5$ vs.\ $1.88 \times 10^5$).
-
-To test subface geometry without confounding qubit count or birth-rate differences, we compare two 3D-local $L = 4$ one-bridge modules ($d_{\mathrm{pack}}(4, 1) = 2.54 < 3, N = 2{,}926, K = 1$; Fig.~\ref{fig:mechanism}b): an offset cross (subfaces $1+3$, largest patch $3 \times 3$) and a centered cross ($2+2$, largest patch $2 \times 2$). Both have identical $N$, check weights, ranks, degrees, and clean hazards ($\Gamma_X^{(0)} = 0.2281$). At $\beta = 6.5$, centered placement delays first failure by $6.19\times$ ($1{,}127$ vs.\ $182$), yet offset placement experiences $3.8\times$ more post-crossing returns ($P_{\mathrm{healed}} = 0.478$ vs.\ $0.126$), compressing the operational $t_{0.80}$ ratio to $1.66\times$ ($[0.89, 3.12]$).
-
-\begin{figure*}[!tbp]
-  \centering
-  \includegraphics[width=0.97\textwidth]{../figures/fig_v26_4_transfer.pdf}
-  \caption{(a)~Local $\beta = 6.5$ lifetimes on open $1 \times 1$ cells versus collared $3 \times 3$ neighbor patches for $B \in \{C_3, R_{X3}, R_{Z3}, R_3\}$. (b)~Whole-memory $(N, t_{0.80})$ outcomes at $\beta = 6.5$ ($n_X = n_Z = 96$, UF readout) comparing selective $Z$-bridge cuts ($C_3 R_{X3}, R_{X3} R_{X3}$) against $C_3 R_{Z3}$ and unpruned baselines. (c)~Cold $\beta = 7.0$ outcomes ($n_X = n_Z = 64$), showing activation of coarse $X$ bridges in $R_{X3} R_{X3}$.}
-  \label{fig:transfer}
-\end{figure*}
-
-\section{Zero-Parameter Interface Predictions at Pure \texorpdfstring{$L = 3$}{L = 3}}
-\label{sec:transfer}
-
-\subsection{Collared \texorpdfstring{$3 \times 3$}{3 x 3} Local Interface Probe}
-
-On an isolated $1 \times 1$ cell, open boundaries allow strings to terminate at zero cost. Inside a welded hierarchy, shared parent seams penalize exported defects ($E \ge 2$) and pull excursions back. To capture this interface physics with zero fitted parameters, we embed each fine candidate $B \in \{C_3, R_{X3}, R_{Z3}, R_3\}$ inside a $3 \times 3$ planar grid $\mathcal{P}_{3\times 3}(B)$ ($8{,}956\text{--}12{,}852$ qubits, $35\text{--}80\times$ smaller than full two-cycle codes; Fig.~\ref{fig:transfer}a). Inverting the pre-registered collared patch recovery curves yields an effective edge-error rate $p_{\mathrm{collar}}^{(B,\sigma)}(t)$, which propagates directly through coarse $A \in \{C_3, R_{X3}, R_{Z3}, R_3\}$ UF decoding.
-
-\subsection{Selective Bridge Cuts and Cold Coarse Activation}
-
-Table~\ref{tab:transfer} and Fig.~\ref{fig:transfer}b,c compare these parameter-free predictions with full pure-$L = 3$ simulations.
-
-\begin{table}[!htbp]
-\caption{Zero-parameter collared predictions versus pure-$L = 3$ outcomes: qubit change $\Delta N$, inverse size and hazard ratios $(N^{-1}, \Gamma_{\mathrm{tot}}^{-1})$, predicted ratio ($\beta = 6.5$), and observed UF and BP-OSD $t_{0.80}$ ratios ($10{,}000$ bootstrap draws).}
-\label{tab:transfer}
-{\scriptsize
-\setlength{\tabcolsep}{1.0pt}
-\begin{ruledtabular}
-\begin{tabular}{lccccc}
-Contrast ($L{=}3$) & $\Delta N$ & $(N^{-1},\Gamma^{-1})$ & Pred. & UF & BP [$95\%$ CI] \\
-\colrule
-$C_3 R_{X3} / C_3 R_3$ & $-27.1\%$ & $(1.37, 0.91)$ & $2.89$ & $2.21$ & $2.25$ $[1.43, 2.65]$ \\
-$C_3 R_{Z3} / C_3 R_3$ & $-3.5\%$ & $(1.04, 1.02)$ & $0.111$ & $0.092$ & $0.096$ $[0.075, 0.118]$ \\
-$C_3 R_{X3} / C_3 R_{Z3}$ & $-24.4\%$ & $(1.32, 0.89)$ & $26.0$ & $24.0$ & $23.5$ $[14.1, 30.2]$ \\
-$C_3 R_{X3} / R_3 R_3$ & $-39.2\%$ & $(1.65, 1.02)$ & $3.19$ & $3.51$ & $3.82$ $[2.39, 4.47]$ \\
-$R_{X3} R_{X3} / R_3 R_3$ & $-33.7\%$ & $(1.51, 0.96)$ & $1.87$ & $4.42$ & $4.71$ $[3.57, 5.59]$ \\
-\colrule
-$R_{X3} R_{X3} / C_3 R_{X3}$ & $+9.1\%$ & $(0.92, 0.95)$ & ---$^\dagger$ & $4.28$ & $2.95$ $[2.01, 7.27]$ \\
-$R_{X3} R_{X3} / R_3 R_3$ & $-33.7\%$ & $(1.51, 0.96)$ & ---$^\dagger$ & $5.77$ & $5.58$ $[4.13, 12.3]$ \\
-\end{tabular}
-\end{ruledtabular}
-}
-\raggedright\footnotesize $^\dagger$Evaluated at $\beta = 7.0$, where 3D multi-sheet coarse $X$ bridges activate.
-\end{table}
-
-At $\beta = 6.5$, clean birth rates ($\Gamma_X^{(0)} + \Gamma_Z^{(0)} = 12.86$ on $C_3 R_{X3}$ vs.\ $11.50$ on $C_3 R_{Z3}$) rank the two cuts backward ($0.89\times$). By contrast, the collared probe predicts $2.89\times$ gain for cutting the nonlimiting fine-$Z$ bridge ($C_3 R_{X3}$) and $0.111\times$ collapse for cutting the limiting fine-$X$ bridge ($C_3 R_{Z3}$). Whole-memory runs match those predictions: $C_3 R_{X3}$ ($431{,}188$ qubits) reaches $4.23 \times 10^4$ ($2.25\times$ over $C_3 R_3$, $3.82\times$ planar and $2.43\times$ torus over $R_3 R_3$), whereas $C_3 R_{Z3}$ drops to $1{,}799$, giving a $23.5\times$ separation. Removing the $Z$ bridge at both cycles ($R_{X3} R_{X3}$, $470{,}332$ qubits, $-33.7\%$) reaches $5.23 \times 10^4$ at $\beta = 6.5$ ($4.71\times$ over $R_3 R_3$) and jumps to $1.09 \times 10^6$ at $\beta = 7.0$ ($5.58\times$ over $R_3 R_3$ and $2.95\times$ over $C_3 R_{X3}$; Fig.~\ref{fig:transfer}c), where coarse $X$ bridges activate strongly.
-
-\begin{figure*}[!tbp]
-  \centering
   \includegraphics[width=0.97\textwidth]{../figures/fig_v26_5_welding_order.pdf}
-  \caption{(a)~Planar $t_{0.80}$ at $\beta = 6.5$ and $7.0$ across three-step $(Z, X, Z)$ and $(X, Z, X)$ memories ($N = 16{,}798\text{--}22{,}160, L_{\mathrm{blk}} = 27$). (b)~All four $(X, Z)$ welding orders at $L = 3, r = 2$ sharing the identical $298{,}896$-face 3D complex across $\beta \in \{5.5, 6.0, 6.5, 7.0\}$, plus torus $R_3 R_3^{ZX}$. (c)~3D-local planar $(N, t_{0.80})$ frontier at $\beta = 6.5$ across one-, three-, and four-step surface hierarchies.}
+  \caption{(a)~Planar $t_{0.80}$ at $\beta = 6.5$ and $7.0$ across three-step $(Z, X, Z)$ and $(X, Z, X)$ memories ($N = 16{,}798\text{--}22{,}160, L_{\mathrm{blk}} = 27$). (b)~All four $(X, Z)$ welding orders at $L = 3, r = 2$ sharing the identical $298{,}896$-face 3D complex across $\beta \in \{5.5, 6.0, 6.5, 7.0\}$, alongside torus $R_3 R_3^{ZX}$. (c)~3D-local planar $(N, t_{0.80})$ frontier at $\beta = 6.5$ across one-, three-, and four-step surface hierarchies.}
   \label{fig:rebalance}
 \end{figure*}
 
-\section{Three-Step \texorpdfstring{$XZX$}{XZX} and Symmetric \texorpdfstring{$XZZX$}{XZZX} Sequences}
-\label{sec:rebalance}
+\section{Simplifying and Reordering Surface Hierarchies}
+\label{sec:surface}
 
-\subsection{Pure-\texorpdfstring{$L = 3$}{L = 3} Three-Step \texorpdfstring{$(X, Z, X)$}{(X, Z, X)} Hierarchies}
+\subsection{Sector-Selective Bridge Cuts}
 
-Removing the overprotected fourth $Z$ step produces compact three-step $(X, Z, X)$ memories at pure $L = 3$ ($N = 16{,}798\text{--}22{,}160, L_{\mathrm{blk}} = 27, R_{\max} = 3.30$; Fig.~\ref{fig:rebalance}a and Table~\ref{tab:rebalance}). With two $X$ steps flanking one middle $Z$ step, the bottleneck reverses from $X$ to $Z$. Starting from one-bridge $X_{3,1} Z_{3,1} X_{3,1}$ ($16{,}798$ qubits, $t_{0.80}^{\mathrm{BP}} = 3{,}116$), adding a second bridge to the nonlimiting outer $X$ step ($X_{3,2} Z_{3,1} X_{3,1}$, $18{,}088$ qubits) lowers $t_{0.80}^{\mathrm{BP}}$ to $2{,}110$ ($\beta = 6.5$), whereas reinforcing the limiting middle $Z$ step ($X_{3,1} Z_{3,2} X_{3,1}$, $19{,}174$ qubits) raises $t_{0.80}^{\mathrm{BP}}$ to $2.84 \times 10^4$ at $\beta = 6.5$ and $1.29 \times 10^5$ at $\beta = 7.0$. That middle-$Z$ design beats outer-$X$ placement by $13.5\times$ ($\beta = 6.5$) and $18.0\times$ ($\beta = 7.0$), and outperforms $709{,}408$-qubit BDL $R_3 R_3$ by $2.56\times$ using $37\times$ fewer qubits.
+In a one-cycle $(X, Z)$ module, $90.5\%$ of $R_3$'s extra qubits over $C_3$ come from the second $Z$ bridge. Deleting only that nonlimiting bridge defines $R_{X3} = (X_{3,2}, Z_{3,1})$ ($1{,}078$ qubits, barriers $(3, 3)$, $t_{0.80} = 4.74 \times 10^4$), whereas deleting the limiting $X$ bridge ($R_{Z3}$, $1{,}426$ qubits) drops $\Delta_X$ to~$2$ ($t_{0.80} = 2{,}825$).
+
+Pre-registered $3 \times 3$ interface probes with zero fitted parameters accurately predict how those local module choices transfer into two-cycle hierarchies (Appendix~\ref{app:surface_diagnostics}, Table~\ref{tab:transfer}). Cutting the nonlimiting fine-$Z$ bridge in $C_3 R_{X3}$ ($431{,}188$ qubits, $-27.1\%$ vs.\ $C_3 R_3$) raises $\beta = 6.5$ lifetime $2.25\times$ ($4.23 \times 10^4$, beating $R_3 R_3$ $3.82\times$ planar and $2.43\times$ torus; Table~\ref{tab:frontier}), whereas cutting the limiting fine-$X$ bridge in $C_3 R_{Z3}$ drops lifetime to $1{,}799$, giving a $23.5\times$ separation between opposite cuts. Cutting the $Z$ bridge at both scales ($R_{X3} R_{X3}$, $470{,}332$ qubits, $-33.7\%$ vs.\ $R_3 R_3$) reaches $5.23 \times 10^4$ at $\beta = 6.5$ ($4.71\times$ over $R_3 R_3$) and $1.09 \times 10^6$ at $\beta = 7.0$ ($5.58\times$ over $R_3 R_3$ and $2.95\times$ over $C_3 R_{X3}$), where coarse $X$ bridges activate strongly.
+
+\subsection{Three-Step \texorpdfstring{$XZX$}{XZX} and Symmetric \texorpdfstring{$XZZX$}{XZZX} Reordering}
+
+Even after cutting the fine-$Z$ bridge, step~4 still accounts for roughly twentyfold qubit growth while leaving $Z$ unchallenged. Dropping step~4 altogether produces compact three-step $(X, Z, X)$ memories ($N = 16{,}798\text{--}22{,}160, L_{\mathrm{blk}} = 27, R_{\max} = 3.30$; Fig.~\ref{fig:rebalance}a and Table~\ref{tab:rebalance}). Because two $X$ steps now flank one middle $Z$ step, the bottleneck flips from $X$ to $Z$: adding a second bridge to the limiting middle $Z$ step ($X_{3,1} Z_{3,2} X_{3,1}$, $19{,}174$ qubits) reaches $2.84 \times 10^4$ at $\beta = 6.5$ and $1.29 \times 10^5$ at $\beta = 7.0$---beating outer-$X$ reinforcement by $13.5\text{--}18.0\times$ and exceeding $709{,}408$-qubit BDL $R_3 R_3$ by $2.56\times$ at $37\times$ fewer qubits.
+
+Much larger gains come from rebalancing four-step welding on the \emph{exact same} $298{,}896$-face 3D complex inside $[0, 81]^3$ ($\dim_{\mathrm{eff}} = 2.869 < 3, R_{\max} = 3.79$; Fig.~\ref{fig:rebalance}b). An $X$-weld seam carries one shared qubit, whereas a $Z$-weld seam carries $d - 1$ qubits. Ending step~4 on $X$ instead of $Z$ in symmetric $(X, Z, Z, X)$ ($R_3 R_3^{ZX}$, $504{,}352$ qubits) removes $205{,}056$ seam qubits ($-28.9\%$ vs.\ $R_3 R_3$) while concentrating $Z$-check protection on $X$. At $\beta = 6.5$, symmetric $R_3 R_3^{ZX}$ climbs from BDL's $1.11 \times 10^4$ to $6.49 \times 10^6$ ($585\times$ planar; $2.16 \times 10^7$ at $\beta = 7.0$) and $1.24 \times 10^7$ on periodic tori ($1{,}085\times$). Combining $XZZX$ with selective cuts simplifies coarse $C_3 R_3^{ZX}$ to $422{,}296$ qubits ($-40.5\%$, $9.50 \times 10^5$ at $\beta = 6.5$ and $2.13 \times 10^7$ at $\beta = 7.0$), and because fine $R_3^{ZX}$ shifts failure to $Z$, coarse reinforcement now favors coarse $Z$ ($R_{Z3} R_3^{ZX}$, $7.39 \times 10^6$) over coarse $X$ ($R_{X3} R_3^{ZX}$, $7.06 \times 10^5$) by $10.5\times$ (Fig.~\ref{fig:rebalance}c).
+
+\subsection{Readout Independence Under Cold Storage}
+
+To verify that these gains reflect physical thermalization rather than Union-Find decoder artifacts, we tested four paired single-shot decoders across every pure-$L = 3$ surface hierarchy (UF, Hier-UF, Cool-UF \cite{kubica_sweep2019}, and BP-OSD; Appendix~\ref{app:decoders}, Table~\ref{tab:decoders}). Under unrelaxed i.i.d.\ noise, BP-OSD boosts threshold $p_{0.80}$ $2.15\text{--}2.77\times$ over UF ($2.46\% \to 6.24\%$ on $C_3 R_3^{ZX}$). Under cold $\beta = 6.5\text{--}7.0$ Glauber storage, however, UF, Cool-UF, and BP-OSD give identical lifetimes ($1.00\times$ ratio, $0\%$ BP-OSD rescue on $C_3 R_3^{ZX}$ and $R_3 R_3^{ZX}$), and both match $94.5\text{--}96.8\%$ of exact maximum-likelihood decoding on a solvable $8{,}192$-state test cell. Cold lifetimes are therefore set by physical thermal crossings into the wrong logical basin.
 
 \begin{table}[!htbp]
-\caption{Novel three-step $(X, Z, X)$ and symmetric four-step $(X, Z, Z, X)$ pure-$L = 3$ surface memories ($10{,}000$ bootstrap draws; zero runs truncated before $t_{0.80}$ except $9/64$ $Z$ runs near $2.1 \times 10^7$ on $\beta = 7.0$ $C_3 R_3^{ZX}$).}
+\caption{Three-step $(X, Z, X)$ and symmetric four-step $(X, Z, Z, X)$ pure-$L = 3$ surface memories ($10{,}000$ bootstrap draws; zero runs truncated before $t_{0.80}$ except $9/64$ $Z$ runs near $2.1 \times 10^7$ on $\beta = 7.0$ $C_3 R_3^{ZX}$).}
 \label{tab:rebalance}
 {\scriptsize
 \setlength{\tabcolsep}{1.0pt}
@@ -344,89 +197,22 @@ $R_{Z3} R_3^{ZX}$ & Plan. & $464{,}104$ & $6.5$ & $Z$ & $7.39{\times}10^6$ $[6.0
 }
 \end{table}
 
-\subsection{Symmetric \texorpdfstring{$XZZX$}{XZZX} Welding on the Identical 3D Complex}
-
-In four-step hierarchies, we can balance $X$ and $Z$ protection without changing the 3D complex or its $\mathbb{R}^3$ embedding at all by testing all four sequences $(XZXZ, ZXZX, ZXXZ, XZZX)$ on the same $298{,}896$-face complex inside $[0, 81]^3$ ($\dim_{\mathrm{eff}} = 2.869 < 3, R_{\max} = 3.79$; Fig.~\ref{fig:rebalance}b). An $X$-weld seam holds one shared qubit, whereas a $Z$-weld seam holds $d - 1$ qubits. Because step~4 creates most multi-sheet seams, ending on $X$ in symmetric $R_3 R_3^{ZX}$ ($XZZX$, $504{,}352$ qubits) removes $205{,}056$ seam qubits ($-28.9\%$ vs.\ $R_3 R_3$, lowering peak cube density from $302$ to $198$) while strengthening fine $Z$-check protection on $X$.
-
-Symmetric sequences outperform alternating ones across every temperature (Table~\ref{tab:rebalance}). At $\beta = 6.5$, planar $t_{0.80}^{\mathrm{BP}}$ climbs from $1.11 \times 10^4$ ($XZXZ$) through $8.62 \times 10^4$ ($ZXZX$, $7.77\times$) and $3.19 \times 10^5$ ($ZXXZ$, $28.7\times$) to $6.49 \times 10^6$ on $R_3 R_3^{ZX}$ ($585\times$, $[481, 706]$ BP-OSD; $548\times$ UF), reaching $2.16 \times 10^7$ ($111\times$) at $\beta = 7.0$. On periodic tori at $\beta = 6.5$, $R_3 R_3^{ZX}$ reaches $1.24 \times 10^7$, beating torus $R_3 R_3$ by $1{,}085\times$.
-
-\subsection{Selective Bridge Cuts Inside Symmetric \texorpdfstring{$XZZX$}{XZZX}}
-
-Combining symmetric $(X, Z, Z, X)$ welding with selective cuts charts the upper surface-code frontier (Fig.~\ref{fig:rebalance}c and Table~\ref{tab:rebalance}). Simplifying the coarse cycle to one bridge ($C_3 R_3^{ZX}$, $422{,}296$ qubits, $-40.5\%$ vs.\ $R_3 R_3$) yields $9.50 \times 10^5$ at $\beta = 6.5$ ($85.6\times$ over $R_3 R_3$) and $2.13 \times 10^7$ at $\beta = 7.0$. Cutting a fine bridge follows Section~\ref{sec:pruning}'s local rule: $C_3 R_{Z3}^{ZX}$ ($391{,}228$ qubits, barriers $(3, 3)$) keeps $4.68 \times 10^5$, whereas $C_3 R_{X3}^{ZX}$ ($\Delta_Z = 2$) falls $28\times$ to $1.68 \times 10^4$. Because fine $R_3^{ZX}$ shifts residual failures from $X$ to $Z$, coarse reinforcement now favors coarse $Z$ ($R_{Z3} R_3^{ZX}$, $464{,}104$ qubits) over coarse $X$ ($R_{X3} R_3^{ZX}$, $460{,}480$ qubits)---reversing Section~\ref{sec:transfer}'s preference by $9.45\times$ at $\beta = 6.0$ and $10.5\times$ at $\beta = 6.5$ ($7.39 \times 10^6$ vs.\ $7.06 \times 10^5$).
-
-\begin{figure*}[!tbp]
-  \centering
-  \includegraphics[width=0.97\textwidth]{../figures/fig_v26_6_decoders.pdf}
-  \caption{(a)~Unrelaxed single-shot recovery $P_{\mathrm{rec}}(p)$ under i.i.d.\ noise on planar $C_3 R_3^{ZX}$ ($422{,}296$ qubits; $n_X = n_Z = 64$) across four decoders, with $p_{0.80}$ thresholds in parentheses. (b)~One-step $\beta = 7.0$ calibration ($n = 2{,}048$) comparing UF and BP-OSD against exact maximum-likelihood recovery $P^{\mathrm{opt}}(t)$. (c)~Breakdown of UF failures near $t_{0.80}$ into wrong-basin settlements, unrescued excited states, and states rescued by BP-OSD.}
-  \label{fig:decoders}
-\end{figure*}
-
-\section{Thermal Crossing versus Readout Decoding}
-\label{sec:decoders}
-
-\subsection{Unrelaxed Thresholds and Exact Maximum-Likelihood Check}
-
-To verify whether cold failures are set by physical thermalization or greedy decoding, we compare four single-shot decoders on the same error snapshots: unweighted Union-Find (UF) \cite{delfosse_uf, delfosse_qldpc_uf}, zero-temperature strictly downhill pre-cooling plus UF (Cool-UF) \cite{kubica_sweep2019}, staged multiscale Union-Find (Hier-UF), and BP-OSD \cite{panteleev_bposd, roffe_bposd2020} (Appendix~\ref{app:css}).
-
-Under unrelaxed i.i.d.\ noise (Fig.~\ref{fig:decoders}a and Table~\ref{tab:decoders}), decoder choice changes $p_{0.80}$ strongly: BP-OSD lifts thresholds $2.15\text{--}2.77\times$ over UF, reaching $5.89\%$ on $C_3 R_{X3}$, $6.24\%$ on $C_3 R_3^{ZX}$, and $6.02\%$ on $R_3 R_3^{ZX}$. On the $8{,}192$-state one-step benchmark at $\beta = 7.0$ (Fig.~\ref{fig:decoders}b), both UF and BP-OSD match $94.5\%$ ($X$) and $96.8\%$ ($Q$) of the exact maximum-likelihood lifetime (BP-OSD/UF ratio $1.005$ $[0.999, 1.012]$).
-
-\begin{table}[!htbp]
-\caption{Paired four-decoder comparison on pure-$L = 3$ surface codes: unrelaxed i.i.d.\ $p_{0.80}$ (top, $n_X = n_Z = 64$), trajectory-paired thermal Cool-UF/UF and BP-OSD/UF ratios near $t_{0.80}$, quenched wrong-basin share $\phi_{\mathrm{b}}$, and BP-OSD rescued share $\phi_{\mathrm{BP}}$ (bottom; $10{,}000$ bootstrap draws).}
-\label{tab:decoders}
-{\scriptsize
-\setlength{\tabcolsep}{0.6pt}
-\begin{ruledtabular}
-\begin{tabular}{lcccc}
-i.i.d.\ code & $p_{0.80}^{\mathrm{UF}}$ & $p_{0.80}^{\mathrm{Cool}}$ & $p_{0.80}^{\mathrm{BP}}$ & BP/UF [$95\%$ CI] \\
-\colrule
-$R_3 X_{3,2}$ & $2.61\%$ & $4.20\%$ & $5.63\%$ & $2.15$ $[2.05, 2.34]$ \\
-$C_3 R_{X3}$ & $2.69\%$ & $4.38\%$ & $5.89\%$ & $2.19$ $[2.12, 2.27]$ \\
-$C_3 R_3^{ZX}$ & $2.46\%$ & $4.68\%$ & $6.24\%$ & $2.53$ $[2.38, 2.75]$ \\
-$R_3 R_3^{ZX}$ & $2.17\%$ & $4.52\%$ & $6.02\%$ & $2.77$ $[2.67, 2.84]$ \\
-\colrule
-Thermal ($\beta$) & Cool/UF & BP/UF [$95\%$ CI] & $\phi_{\mathrm{b}}$ & $\phi_{\mathrm{BP}}$ \\
-\colrule
-$C_3$ ($6.5$) & $1.00$ & $1.03$ $[0.95, 1.12]$ & $0.61$ & $0.06$ \\
-$R_3^{ZX}$ ($6.5$) & $1.00$ & $1.00$ $[0.95, 1.03]$ & $0.83$ & $0.00$ \\
-$X_{3,1} Z_{3,2} X_{3,1}$ ($7.0$) & $1.00$ & $1.00$ $[1.00, 1.03]$ & $0.41$ & $0.00$ \\
-$C_3 R_{X3}$ ($6.5$) & $1.00$ & $1.02$ $[0.72, 1.40]$ & $0.00$ & $0.12$ \\
-$R_{X3} R_{X3}$ ($6.5$) & $1.00$ & $1.00$ $[0.87, 1.10]$ & $0.00$ & $0.16$ \\
-$C_3 R_3^{ZX}$ ($4.5$) & $1.01$ & $1.13$ $[0.97, 1.26]$ & $0.00$ & $0.76$ \\
-$C_3 R_3^{ZX}$ ($5.5$) & $0.95$ & $1.06$ $[0.65, 1.82]$ & $0.00$ & $0.47$ \\
-$C_3 R_3^{ZX}$ ($6.5$) & $1.00$ & $1.00$ $[0.96, 1.00]$ & $0.00$ & $0.00$ \\
-$C_3 R_3^{ZX}$ ($7.0$) & $1.00$ & $1.00$ $[1.00, 1.00]$ & $0.00$ & $0.00$ \\
-$R_3 R_3^{ZX}$ ($6.5$) & $1.00$ & $1.00$ $[1.00, 1.00]$ & $0.00$ & $0.00$ \\
-$R_{Z3} R_3^{ZX}$ ($6.5$) & $1.00$ & $1.00$ $[1.00, 1.00]$ & $0.00$ & $0.00$ \\
-\end{tabular}
-\end{ruledtabular}
-}
-\end{table}
-
-\subsection{Failure Anatomy Under Cold Storage}
-
-At $\beta \in \{6.5, 7.0\}$, Cool-UF and BP-OSD recover essentially identical thermal lifetimes to UF across every architecture (Table~\ref{tab:decoders}). As $\beta$ cools from $4.5$ to $7.0$ on $C_3 R_3^{ZX}$, the fraction of UF failures rescued by BP-OSD drops from $76\% \to 47\% \to 26\% \to 0\%$ (Fig.~\ref{fig:decoders}c). During cold evolution, the bath continuously relaxes small clusters so errors happen when an entire thermal cluster crosses the energy saddle into the wrong logical basin, making all architectural gains invariant to decoder upgrades.
-
 \begin{figure*}[!tbp]
   \centering
   \includegraphics[width=0.97\textwidth]{../figures/fig_v26_7_benchmarks.pdf}
-  \caption{(a)~BP-OSD recovery time $t_{0.80}$ versus inverse temperature $\beta$ at unit coupling ($J = 1$) comparing prior baselines (2D toric, Michnicki 1-cycle, Haah $L = 7$) against our pure-$L = 3$ codes ($C_3 R_{X3}$, $C_3 R_3^{ZX}$, Color $R_{X3}$). Colors and markers in (a) match (b). (b)~Fixed-$\beta = 6.5$ scaling across qubit count $N$, separating prior baselines from our 3D-local surface and 4.8.8 color-code hierarchies. (c)~Fixed-temperature scaling of Haah's Cubic Code across odd $L = 5\text{--}17$ at $\beta \in \{3.25, 3.78, 4.00\}$; open triangles mark $L = 15$ ($K = 50$).}
+  \caption{(a)~BP-OSD recovery time $t_{0.80}$ versus inverse temperature $\beta$ at $J = 1$ comparing prior baselines (2D toric, Michnicki 1-cycle, Haah $L = 7$) against our pure-$L = 3$ codes ($C_3 R_{X3}$, $C_3 R_3^{ZX}$, Color $R_{X3}$). Colors and markers in (a) match (b). (b)~Fixed-$\beta = 6.5$ scaling across qubit count $N$, separating prior baselines from our 3D-local surface and 4.8.8 color-code hierarchies. (c)~Fixed-temperature scaling of Haah's Cubic Code across odd $L = 5\text{--}17$ at $\beta \in \{3.25, 3.78, 4.00\}$; open triangles mark $L = 15$ ($K = 50$).}
   \label{fig:benchmarks}
 \end{figure*}
 
-\section{Finite-Size Comparison Across 3D-Local Families}
+\section{Finite-Size Benchmarks Across 3D-Local Families}
 \label{sec:benchmarks}
 
-\subsection{Uniform \texorpdfstring{$J = 1$}{J = 1} Protocol}
+To place these welded improvements in context without large-$N$ boundary padding, we compare all architectures under the exact same $J = 1$ Hamiltonian~\eqref{eq:hamiltonian} and BP-OSD readout against 2D Toric ($N = 2L^2$), Michnicki 1-cycle 3D welded ($L = 2\text{--}8$), BDL $R_3 R_3$, and $\mathbb{Z}^3$-local Haah's Cubic Code~1 ($N = 2L^3, w_{\max} = 8$) \cite{haah2011cubic, bravyi_haah2013, stengele2026haah} (Fig.~\ref{fig:benchmarks} and Table~\ref{tab:benchmarks}).
 
-Because finite-depth $L = 3$ codes are evaluated directly without large-$N$ boundary padding, we benchmark them alongside prior-art baselines under the exact same Hamiltonian~\eqref{eq:hamiltonian} ($J = 1$), temperature $\beta$, and BP-OSD readout (Fig.~\ref{fig:benchmarks} and Table~\ref{tab:benchmarks}):
-\begin{enumerate}
-  \item \emph{Translation-invariant lattice codes:} 2D toric codes ($N = 2L^2, w_{\max} = 4$) and Haah's Cubic Code~1 \cite{haah2011cubic, bravyi_haah2013, stengele2026haah} ($N = 2L^3, w_{\max} = 8$, odd $L \in \{5,\dots,17\}$).
-  \item \emph{Single-scale 3D welded surface codes:} Michnicki-type 1-cycle welded codes \cite{michnicki2014, siva2017} ($L \in \{2,3,4,6,8\}, N = 254\text{--}39{,}326, w_{\max} = 6$).
-  \item \emph{Multiscale 3D-local welded hierarchies:} BDL's $R_3 R_3$ baseline ($709{,}408$ qubits), our three-step and four-step surface hierarchies ($\dim_{\mathrm{eff}} < 3, R_{\max} \le 3.79$), and our welded 4.8.8 color-code hierarchies ($N = 4{,}128\text{--}81{,}888, R_{\max} \le 4.25$; Section~\ref{sec:color_welded}).
-\end{enumerate}
+At $\beta = 6.5$, 2D toric decays from $1{,}220$ ($L = 8$) to $170$ ($L = 64$), and Michnicki 1-cycle collapses $29.4\times$ from $6{,}145$ ($L = 2$) to $209$ ($L = 8$) as flat patches grow \cite{siva2017}. Our symmetric $XZZX$ surface codes overcome that collapse ($0.95\text{--}12.4 \times 10^6$), yet every surface-sheet hierarchy still trails Haah's Cubic Code ($L = 7, N = 686, \ge 1.00 \times 10^9$; $L = 11, \ge 3.98 \times 10^8$). The microscopic reason is check degree: Haah's bulk qubits touch four checks per sector ($\Delta E_1 = 4$), whereas surface-sheet qubits touch only two ($\Delta E_1 = 2$) and hop at $\Delta E = 0$. (Meanwhile, Haah's fixed-$\beta$ lifetime peaks near $L = 7\text{--}9$ and turns downward above $L = 9$ for $\beta \le 4.00$; Fig.~\ref{fig:benchmarks}c.) Raising sheet check degree above~$2$ is therefore essential to close the finite-size gap.
 
 \begin{table}[tbp]
-\caption{Finite-size comparison at unit coupling ($J = 1, \beta = 6.5$), separating prior-art baselines from our 3D-local surface and 4.8.8 color-code designs ($10{,}000$ bootstrap draws).}
+\caption{Finite-size comparison at unit coupling ($J = 1, \beta = 6.5$), separating prior baselines from our pure-$L = 3$ surface and 4.8.8 color-code architectures ($10{,}000$ bootstrap draws).}
 \label{tab:benchmarks}
 {\scriptsize
 \setlength{\tabcolsep}{0.2pt}
@@ -460,132 +246,86 @@ Haah $L{=}11$ & Prior ($\mathbb{Z}^3$) & $2{,}662$ ($2$) & $8$ & ${\ge}3.98{\tim
 }
 \end{table}
 
-\subsection{Why Surface Sheets Still Trail Haah's Cubic Code}
-
-At $\beta = 6.5$, 2D toric lifetimes drop from $1{,}220$ ($L = 8$) to $170$ ($L = 64$), and Michnicki 1-cycle codes drop $29.4\times$ from $6{,}145$ ($L = 2$) to $209$ ($L = 8$, $39{,}326$ qubits) as flat patches widen \cite{siva2017}. Our symmetric $XZZX$ surface codes overcome that collapse at $N \sim 4\text{--}5 \times 10^5$ ($0.95\text{--}12.4 \times 10^6$). Nevertheless, all surface-sheet codes still trail Haah's Cubic Code at $L = 7$ ($686$ qubits, $\ge 1.00 \times 10^9$) and $L = 11$ ($\ge 3.98 \times 10^8$) by orders of magnitude in both lifetime and qubit efficiency. Every qubit in Haah's code participates in four weight-$8$ cube checks per sector ($\Delta E_1 = 4$), whereas surface sheets give bulk qubits only two checks ($\Delta E_1 = 2$) and allow zero-energy sheet hopping. (Meanwhile, Haah's finite-size scaling turns downward above $L = 7\text{--}9$ at warmer fixed temperatures $\beta = 3.25\text{--}4.00$; Fig.~\ref{fig:benchmarks}c.) Upgrading welded sheets from surface codes to 4.8.8 color codes directly addresses this bulk degree-$2$ bottleneck.
-
 \begin{figure*}[!tbp]
   \centering
   \includegraphics[width=0.97\textwidth]{../figures/fig_v27_8_color_welded.pdf}
-  \caption{(a)~BP-OSD recovery time $t_{0.80}$ versus physical qubits $N$ at $\beta = 6.5$ ($J = 1$) comparing unwelded 2D 4.8.8 color tori ($L = 3 \to 12$), 1-step $L = 3$ controls, self-dual seam ablations, and pure-$L = 3$ 2-step and 3-step asymmetric welded color hierarchies. (b)~Temperature scaling ($\beta = 4.0\text{--}6.5$) comparing 2D 4.8.8 ($L = 12$), symmetric toric $XZZX$ ($422\mathrm{k}$), 3-step and 2-step welded color codes ($82\mathrm{k}$ and $4.1\mathrm{k}$), and Haah's Cubic Code ($L = 7$). (c)~Paired four-decoder unrelaxed single-shot recovery on welded Color $R_3$ ($5{,}088$ qubits, $n_X = n_Z = 64$).}
+  \caption{(a)~BP-OSD recovery time $t_{0.80}$ versus physical qubits $N$ at $\beta = 6.5$ ($J = 1$) comparing unwelded 2D 4.8.8 tori ($L = 3 \to 12$), 1-step $L = 3$ controls, self-dual seam ablations, and pure-$L = 3$ 2-step and 3-step asymmetric welded color hierarchies. (b)~Temperature scaling ($\beta = 4.0\text{--}6.5$) comparing 2D 4.8.8 ($L = 12$), symmetric toric $XZZX$ ($422\mathrm{k}$), 3-step and 2-step welded color codes ($82\mathrm{k}$ and $4.1\mathrm{k}$), and Haah's Cubic Code ($L = 7$). (c)~Paired four-decoder unrelaxed single-shot recovery on welded Color $R_3$ ($5{,}088$ qubits, $n_X = n_Z = 64$).}
   \label{fig:color_welded}
 \end{figure*}
 
-\section{Closing the 3D Gap: Welded 4.8.8 Color-Code Sheets}
-\label{sec:color_welded}
+\section{Welded 4.8.8 Color-Code Sheets and Scaling Limits}
+\label{sec:color}
 
 \subsection{Minimum Degree \texorpdfstring{$\ge 3$}{>= 3} and Asymmetric Seam Welding}
 
-We keep BDL's exact 3D welded cell complex (preserving $L = 3$ packing $d_{\mathrm{pack}} < 3$) while decorating every square face with eight local corner-flag qubits forming a 4.8.8 color code ($N = 8F, K = 4$ on periodic 1-face torus seeds; Appendix~\ref{app:css}) \cite{bombin2006color, kubica2015color}. Every face and edge carries symmetric weight-8 and weight-4 checks, while multi-sheet seams carry asymmetric $(d - 1)$ pair checks in one sector and a single weight-$2d$ sum check in the conjugate sector.
+Keeping BDL's 3D cell complex ($L \ge 3, d_{\mathrm{pack}} < 3$), we replace square surface sheets with \emph{4.8.8 flag color-code sheets} \cite{bombin2006color, kubica2015color} by placing eight corner-flag qubits on each face ($N = 8F, K = 4$ on periodic torus seeds; Appendix~\ref{app:construction}). Every qubit now touches at least three independent checks per sector ($\min\deg_X, \min\deg_Z \ge 3$), cutting $\beta = 6.5$ birth rates by $> 6 \times 10^5$-fold relative to $C_3 R_3^{ZX}$ ($12.77 \to 1.97 \times 10^{-5}$ on Color $R_{X3}$) and eliminating $\Delta E = 0$ flat-sheet hopping because every sheet move passes through weight-4 and weight-8 checks ($E: 2 \to 3 \to 2$). Along seams, asymmetric checks---$(d - 1)$ pair checks in one sector and one weight-$2d$ sum check in the other---split defects across sheets: reversing self-dual seams ($R_3^{\mathrm{SD}}$, $1.00 \times 10^5$) to asymmetric seams at identical $N = 5{,}088$ lifts 2-step lifetime $61.6\times$ to $6.16 \times 10^6$ (Fig.~\ref{fig:color_welded}a and Table~\ref{tab:color}).
 
-This sheet replacement removes both surface-code weaknesses at once:
+Evaluating strictly pure-$L = 3$ torus hierarchies (Fig.~\ref{fig:color_welded} and Table~\ref{tab:color}) demonstrates three gains. First, whereas unwelded 2D 4.8.8 color tori degrade $7.89\times$ ($6.02 \times 10^5 \to 7.63 \times 10^4$) across $L = 3 \to 12$, 2-step Color $R_3$ reverses that collapse by $80.6\times$. Second, our selective cut rule transfers directly: cutting the extra bridge in the nonlimiting first step defines Color $R_{X3}$ ($4{,}128$ qubits, $\dim_{\mathrm{eff}} = 2.843 < 3, R_{\max} = 3.01$), reaching $8.91 \times 10^6$ at $\beta = 6.5$---$29.5\times$ above opposite-cut $R_{Z3}$, $117\times$ above 2D $L = 12$, $803\times$ above $709\mathrm{k}$ BDL $R_3 R_3$ using $172\times$ fewer qubits, and $18.8\times$ above $422\mathrm{k}$ $C_3 R_3^{ZX}$ at $\beta = 5.0$ (Fig.~\ref{fig:color_welded}b). Third, paired BP-OSD lifts unrelaxed i.i.d.\ $p_{0.80}$ by $2.33\text{--}3.17\times$ ($1.97\% \to 4.60\%$ on $R_3$; Fig.~\ref{fig:color_welded}c), while matching UF under cold storage (BP/UF $= 0.95\text{--}1.00$ at $\beta = 6.5$).
+
+\subsection{Scaling Diagnosis, T-Junctions, and Open Boundaries}
+
+Three natural questions remain for 3D welded color codes: why 3-step hierarchies sit below 2-step $R_{X3}$ at $\beta = 6.5$ in Fig.~\ref{fig:benchmarks}b, whether four-sheet seam intersections cause that drag, and whether periodic torus boundaries can be dropped while holding $K$ fixed. Table~\ref{tab:color} and Fig.~\ref{fig:regimes} answer all three directly:
 \begin{enumerate}
-  \item \emph{Minimum check degree $\ge 3$ and no $\Delta E = 0$ sheet hops:} Across all welded 4.8.8 geometries, every qubit touches at least three independent checks per sector ($\min\deg_X, \min\deg_Z \ge 3$). Single-qubit excitations cost at least $E \ge 3$, reducing clean birth rates at $\beta = 6.5$ by over $6 \times 10^5$-fold---from $12.77$ on $C_3 R_3^{ZX}$ to $1.97 \times 10^{-5}$ on Color $R_{X3}$ ($4{,}128$ qubits). Moving a defect across a flat sheet must flip adjacent weight-4 and weight-8 checks through $E: 2 \to 3 \to 2$, eliminating zero-energy sheet diffusion.
-  \item \emph{Asymmetric seams split defects:} Replicating symmetric pair checks in both $H_X$ and $H_Z$ along seams (self-dual ablation SD in Fig.~\ref{fig:color_welded}a and Table~\ref{tab:color_welded}) prevents defect splitting and freezes 1-step barriers at $(3, 3)$. Alternating $X$- and $Z$-welded seams raises 1-step barriers to $(3, 4)$ and increases 2-step storage at identical qubit count $N = 5{,}088$ ($R_{\max} = 3.01$) by $61.6\times$ ($[40.6, 85.0]$) at $\beta = 6.5$ ($6.16 \times 10^6$ vs.\ $1.00 \times 10^5$; $8.37\times$ already at $\beta = 5.0$).
-\end{enumerate}
-
-\begin{table}[!htbp]
-\caption{3D-local welded 4.8.8 color-code torus hierarchies versus 2D 4.8.8 controls ($K = 4, J = 1$, zero runs truncated before $t_{0.80}$). Qubits $N$ ($\dim_{\mathrm{eff}}$), max check weight $w$, and BP-OSD $t_{0.80}$ at $\beta = 5.0$ and $6.5$ ($10{,}000$ bootstrap draws; $n = 96$ on 1-step/2-step/2D, $64$ on 3-step).}
-\label{tab:color_welded}
-{\scriptsize
-\setlength{\tabcolsep}{0.9pt}
-\begin{ruledtabular}
-\begin{tabular}{lcccr}
-Color code & $N$ ($\dim_{\mathrm{eff}}$) & $w$ & $\beta{=}5.0$ $t_{0.80}^{\mathrm{BP}}$ & $\beta{=}6.5$ $t_{0.80}^{\mathrm{BP}}$ [$95\%$ CI] \\
-\colrule
-2D $L{=}3$ & $72$ ($2.00$) & $8$ & $1.29{\times}10^4$ & $6.02{\times}10^5$ $[3.57, 7.62]{\times}10^5$ \\
-2D $L{=}6$ & $288$ ($2.00$) & $8$ & $2.33{\times}10^3$ & $3.23{\times}10^5$ $[1.96, 5.74]{\times}10^5$ \\
-2D $L{=}9$ & $648$ ($2.00$) & $8$ & $2.41{\times}10^3$ & $1.26{\times}10^5$ $[0.88, 1.73]{\times}10^5$ \\
-2D $L{=}12$ & $1{,}152$ ($2.00$) & $8$ & $1.06{\times}10^3$ & $7.63{\times}10^4$ $[5.33, 11.3]{\times}10^4$ \\
-\colrule
-1s $L_{3,1}$ & $192$ ($2.89$) & $16$ & $6.12{\times}10^3$ & $4.41{\times}10^5$ $[2.82, 6.70]{\times}10^5$ \\
-1s $L_{3,2}$ & $240$ ($3.10$)$^*$ & $16$ & $5.67{\times}10^3$ & $5.68{\times}10^5$ $[4.15, 8.18]{\times}10^5$ \\
-1s $L_{3,2}^{\mathrm{SD}}$ & $240$ ($3.10$)$^*$ & $16$ & $7.09{\times}10^3$ & $6.19{\times}10^5$ $[3.51, 8.97]{\times}10^5$ \\
-\colrule
-2s SD ($R_3^{\mathrm{SD}}$) & $5{,}088$ ($2.94$) & $18$ & $8.19{\times}10^2$ & $1.00{\times}10^5$ $[1.00, 1.00]{\times}10^5$ \\
-2s $C_3$ & $3{,}792$ ($2.80$) & $16$ & $3.18{\times}10^3$ & $4.28{\times}10^5$ $[2.64, 6.25]{\times}10^5$ \\
-2s $R_{Z3}$ & $4{,}704$ ($2.90$) & $16$ & $3.04{\times}10^3$ & $3.02{\times}10^5$ $[2.18, 4.94]{\times}10^5$ \\
-2s $R_3$ & $5{,}088$ ($2.94$) & $16$ & $6.85{\times}10^3$ & $6.16{\times}10^6$ $[4.06, 8.50]{\times}10^6$ \\
-2s $R_{X3}$ & $4{,}128$ ($2.84$) & $16$ & $9.82{\times}10^3$ & $8.91{\times}10^6$ $[5.72, 13.5]{\times}10^6$ \\
-\colrule
-3s $1{-}1{-}1$ & $75{,}504$ ($2.78$) & $24$ & $2.19{\times}10^3$ & $1.86{\times}10^5$ $[1.51, 2.06]{\times}10^5$ \\
-3s $1{-}2{-}1$ & $81{,}888$ ($2.80$) & $24$ & $4.08{\times}10^3$ & $1.41{\times}10^6$ $[0.95, 1.93]{\times}10^6$ \\
-3s $R_3 X$ & $110{,}400$ ($2.89$) & $24$ & $2.71{\times}10^3$ & $6.16{\times}10^5$ $[5.17, 6.90]{\times}10^5$ \\
-\end{tabular}
-\end{ruledtabular}
-}
-\raggedright\footnotesize $^*$At one step ($s = 1$, $L_{\mathrm{blk}} = 3$), boundary-face terms sit slightly above the asymptotic $d_{\mathrm{pack}}(3, 2) = 2.80 < 3$ scaling reached for $s \ge 2$.
-\end{table}
-
-\subsection{Reversing 2D Color Collapse, Selective Cuts, and Readout}
-
-Evaluating all strictly pure-$L = 3$ color hierarchies (Table~\ref{tab:color_welded} and Fig.~\ref{fig:color_welded}) yields four findings:
-\begin{enumerate}
-  \item \emph{Reversing 2D color degradation:} Despite zero $\Delta E = 0$ sheet hops, unwelded 2D 4.8.8 tori degrade monotonically with size at $\beta = 6.5$ because string logicals split pairs over short $O(1)$ bridges: $t_{0.80}^{\mathrm{BP}}$ drops $7.89\times$ ($[4.06, 12.1]$) from $6.02 \times 10^5$ ($L = 3$) to $7.63 \times 10^4$ ($L = 12$). Pure-$L = 3$ 2-step Color $R_3$ ($5{,}088$ qubits) reverses that drop, beating 2D $L = 12$ by $80.6\times$ at $\beta = 6.5$ and $6.46\times$ at $\beta = 5.0$.
-  \item \emph{Selective cuts carry over:} In two-step $(X, Z)$ color codes, the second $Z$ step limits survival ($t_{0.80}^X > 10^9$ vs.\ $t_{0.80}^Z = 6.16 \times 10^6$). Cutting the extra bridge in the nonlimiting step ($R_{X3}$, $4{,}128$ qubits, $\dim_{\mathrm{eff}} = 2.843 < 3, R_{\max} = 3.01$) yields $t_{0.80}^{\mathrm{BP}} = 8.91 \times 10^6$ ($[5.72, 13.5] \times 10^6$) at $\beta = 6.5$---beating $R_{Z3}$ by $29.5\times$, beating 2D $L = 12$ by $117\times$, exceeding $709{,}408$-qubit BDL $R_3 R_3$ by $803\times$ with $172\times$ fewer qubits, and surpassing $422{,}296$-qubit $C_3 R_3^{ZX}$ by $18.8\times$ at $\beta = 5.0$ (Fig.~\ref{fig:color_welded}b).
-  \item \emph{Three-step scaling and multi-sheet trade-off:} Across pure-$L = 3$ three-step color hierarchies ($75{,}504\text{--}110{,}400$ qubits, $R_{\max} = 4.25$), reinforcing the limiting middle $Z$ step ($1{-}2{-}1$, $81{,}888$ qubits) reaches $1.41 \times 10^6$ at $\beta = 6.5$ ($7.61\times$ over $1{-}1{-}1$, $127\times$ over $R_3 R_3$). Even so, 3-step color codes trail 2-step $R_{X3}$ at $\beta = 6.5$ while Haah $L = 7, 11$ retains a $45\text{--}112\times$ lead; we dissect that scaling drop next.
-  \item \emph{Single-shot readout vs.\ thermal failure:} Under unrelaxed i.i.d.\ noise (Fig.~\ref{fig:color_welded}c), BP-OSD raises $p_{0.80}$ from $3.85\%$ to $6.28\%$ on 2D $L = 9$, $1.97\%$ to $4.60\%$ ($2.33\times$) on 2s $R_3$, and $1.36\%$ to $4.29\%$ ($3.17\times$) on 3s $1{-}2{-}1$, whereas under cold $\beta = 6.5$ storage UF and BP-OSD agree closely (BP/UF $= 0.95$ on $R_{X3}$ and $1.00$ on $R_3$).
-\end{enumerate}
-
-\subsection{Scaling Diagnosis, T-Junction Dispersion, and Open Boundaries}
-\label{sec:extA}
-
-To understand why the 3-step color codes in Fig.~\ref{fig:benchmarks}b drop below the 2-step codes, and to eliminate multi-sheet intersection pillars and periodic boundary conditions, we study ten additional dispersed and open-boundary color-code geometries (Table~\ref{tab:extensionA} and Fig.~\ref{fig:regimes_extA}, with zero trajectories truncated before $t_{0.80}$). Three physical mechanisms emerge:
-\begin{enumerate}
-  \item \emph{Same-parity scaling versus bulk $E = 2$ pair entropy:} Comparing 2-step ($Z$-limited) directly against 3-step ($X$-limited) mixes parity sectors. Holding limiting-sector parity fixed from 1-step $L_{3,2}$ ($240$ qubits) to 3-step $1{-}2{-}1$ ($81{,}888$ qubits), fixed-$\beta = 6.5$ lifetime instead \emph{grows} $2.49\times$ ($[1.49, 4.04]$; Fig.~\ref{fig:regimes_extA}a), mirroring symmetric 3D $XZZX$ surface growth ($s = 2 \to 4$) while periodic Haah ($\mathbb{T}^3$, $\beta = 4.0$) peaks near $L = 9\text{--}11$. The loss going from 2-step $R_{X3}$ to 3-step stems from degree-$3$ bulk dimer creation: counting nearest-neighbor qubit pairs shows $5{,}832$ $E = 2$ traps in the limiting $Z$-error sector of 2s $R_{X3}$ ($5{,}832 e^{-2\beta} = 0.013$ occupied dimers at $\beta = 6.5$) versus $118{,}600$ $E = 2$ traps in the limiting $X$-error sector of 3s $1{-}2{-}1$ ($0.268$ occupied dimers). By contrast, degree-$4$ Haah has zero single-qubit $E \le 2$ pairs ($e^{-4\beta} = 5.1 \times 10^{-12}$). Splitting $d = 3$ seams evenly between $X$ and $Z$ at one step was also tested on 1s $L_{3,2}$ and ruled out because mixed corner seams break topological order ($K$ jumps from $4$ to $8$ or $12$ and minimum degree drops to $2$).
-  \item \emph{Staggered T-junction dispersion:} Offsetting transverse bridges by one lattice unit separates four-sheet crossings into staggered three-way T-junctions with zero degree-$4$ seam intersections across all single-bridge hierarchies and lowers 3-step max check weight from $(12, 24)$ to $(14, 18)$. Combining staggered dispersion with two-bridge reinforcement in the limiting step (leaving $8$ residual four-sheet intersections) gives $t_{0.80}^{\mathrm{BP}} = 1.11 \times 10^7$ ($[5.47, 15.4] \times 10^6$) on 2s $R_{X3} + \text{T-junc.}$ ($4{,}272$ qubits, $\beta = 6.5$, Fig.~\ref{fig:regimes_extA}b). Notably, pillar-free single-bridge dispersed 3s ($80{,}648$ qubits, $127{,}876$ limiting $E = 2$ pairs) reaches $1.11 \times 10^5$ ($\beta = 6.5$) and $6.85 \times 10^5$ ($\beta = 7.0$), staying below two-bridge $1{-}2{-}1$ ($1.41 \times 10^6$ and $1.58 \times 10^7$) and showing that limiting-step parallel bridges ($r = 2$) and $E = 2$ dimer entropy---rather than four-sheet pillars---control 3-step lifetime. Under unrelaxed i.i.d.\ noise, BP-OSD lifts dispersed 2s $p_{0.80}$ from $2.09\%$ (UF) to $5.16\%$ ($2.47\times$).
-  \item \emph{Open-boundary planar hierarchies with invariant $K = 2$:} On periodic $\mathbb{T}^3$, Haah's Cubic Code has logical degeneracy varying sensitively with size ($K = 2, 14, 2, 6, 2, 30, 2, 6, 2, 14, 2, 6, 50, 62, 2$ across $L = 3\text{--}17$; Fig.~\ref{fig:regimes_extA}c inset). Closing opposing 4.8.8 faces with alternating rough and smooth open boundaries keeps $K = 2$ invariant across all steps with no periodic wraparound. At $\beta = 6.5$, open 2D 4.8.8 patches saturate near $1.00\text{--}1.08 \times 10^4$ ($L = 6, 12$), whereas open planar 2s $R_{X3}$ ($4{,}128$ qubits, $K = 2$) achieves $4.15 \times 10^6$ ($[2.51, 6.71] \times 10^6$)---$383\times$ ($[210, 636]$) above open 2D $L = 12$, with BP-OSD lifting i.i.d.\ $p_{0.80}$ from $1.91\%$ to $5.51\%$ ($2.89\times$).
+  \item \emph{Same-parity scaling versus bulk $E = 2$ pair traps:} Comparing 2-step ($Z$-limited) directly to 3-step ($X$-limited) mixes parity sectors; holding sector parity fixed across $L_{\mathrm{blk}} = 3 \to 27$ (1-step $L_{3,2}$ to 3-step $1{-}2{-}1$), $\beta = 6.5$ lifetime \emph{grows} $2.49\times$ ($[1.49, 4.04]$; Fig.~\ref{fig:regimes}a). The drop from 2-step $R_{X3}$ to 3-step stems from degree-$3$ bulk dimer entropy: exact adjacent-pair counting yields $5{,}832$ $E = 2$ traps in the limiting $Z$-error sector of 2s $R_{X3}$ ($0.013$ equilibrium dimers at $\beta = 6.5$) versus $118{,}600$ traps in the limiting $X$-error sector of 3s $1{-}2{-}1$ ($0.268$ occupied dimers), whereas degree-$4$ Haah has zero $E \le 2$ pairs. (Splitting $d = 3$ seams evenly between $X$ and $Z$ in one step was also tested on 1s $L_{3,2}$ and ruled out because mixed corner seams break topological order, jumping $K$ from $4$ to $8, 12$ and dropping minimum qubit degree to $2$.)
+  \item \emph{Staggered T-junction dispersion:} Offsetting transverse bridges by one unit breaks four-sheet intersections into staggered three-way T-junctions with zero degree-$4$ seams across all single-bridge stacks and cuts 3-step max weight from $(12, 24)$ to $(14, 18)$. Combined with two-bridge reinforcement in step~2 (leaving $8$ residual four-sheet intersections), 2s $R_{X3}$ with T-junctions ($4{,}272$ qubits) reaches $1.11 \times 10^7$ at $\beta = 6.5$ (Fig.~\ref{fig:regimes}b), with BP-OSD lifting i.i.d.\ $p_{0.80}$ from $2.09\%$ to $5.16\%$. Meanwhile, pillar-free single-bridge 3s ($80{,}648$ qubits, $127{,}876$ $E = 2$ traps) reaches $1.11 \times 10^5$ ($\beta = 6.5$) and $6.85 \times 10^5$ ($\beta = 7.0$), staying below two-bridge $1{-}2{-}1$ ($1.41 \times 10^6$ and $1.58 \times 10^7$) and confirming that limiting-step bridges ($r = 2$) and $E = 2$ pair traps---not four-sheet intersections---govern 3-step lifetime.
+  \item \emph{Open-boundary planar hierarchies with invariant $K = 2$:} Whereas periodic Haah ($\mathbb{T}^3$) oscillates in logical count $K(L) = 2, 14, 2, 6, 2, 30, 2, 6, 2, 14, 2, 6, 50, 62, 2$ across $L = 3\text{--}17$ (Fig.~\ref{fig:regimes}c inset), closing opposing 4.8.8 faces with alternating rough and smooth boundaries enforces exact $K = 2$ at every scale without periodic wraparound. Open planar 2s $R_{X3}$ ($4{,}128$ qubits, $K = 2$) achieves $4.15 \times 10^6$ at $\beta = 6.5$---$383\times$ ($[210, 636]$) above open 2D $L = 12$ ($1.08 \times 10^4$), with BP-OSD raising i.i.d.\ $p_{0.80}$ from $1.91\%$ to $5.51\%$.
 \end{enumerate}
 
 \begin{figure*}[!tbp]
   \centering
   \includegraphics[width=\textwidth]{../figures/fig_v28_9_regimes_and_dispersion.pdf}
-  \caption{(a)~Same-parity fixed-temperature scaling across box size $L_{\mathrm{blk}} = 3 \to 27$ for 4.8.8 color codes ($1\mathrm{s} \to 3\mathrm{s}$, growing $2.49\times$ at $\beta = 6.5$, while single-bridge T-junction $1\mathrm{s} \to 3\mathrm{s}$ eases its drop from $0.23\times$ at $\beta = 6.5$ to $0.33\times$ at $\beta = 7.0$), alongside symmetric $XZZX$ growth ($s = 2 \to 4$), periodic Haah ($\beta = 4.0$), and Michnicki 1-cycle collapse ($\beta = 6.5$). (b)~Staggered T-junction dispersion versus multi-bridge welded color codes across $\beta = 4.5\text{--}7.0$. (c)~Open-boundary planar 4.8.8 hierarchies ($K = 2$) at $\beta = 6.5$, where 2s $R_{X3}$ reaches $4.15 \times 10^6$ ($383\times$ open 2D $L = 12$). Inset: Haah $K(L)$ on $\mathbb{T}^3$ across $L = 3\text{--}17$ versus invariant $K = 2$ (planar color) and $K = 1$ (planar surface).}
-  \label{fig:regimes_extA}
+  \caption{(a)~Same-parity fixed-$\beta$ scaling across box size $L_{\mathrm{blk}} = 3 \to 27$ for 4.8.8 color codes ($1\mathrm{s} \to 3\mathrm{s}$ grows $2.49\times$ at $\beta = 6.5$; T-junction $1\mathrm{s} \to 3\mathrm{s}$ eases its drop from $0.23\times$ at $\beta = 6.5$ to $0.33\times$ at $\beta = 7.0$), contrasted with symmetric $XZZX$ growth ($s = 2 \to 4$), periodic Haah ($\beta = 4.0$), and Michnicki 1-cycle collapse ($\beta = 6.5$). (b)~Staggered T-junction dispersion versus multi-bridge welded color codes across $\beta = 4.5\text{--}7.0$. (c)~Open-boundary planar 4.8.8 hierarchies ($K = 2$) at $\beta = 6.5$, where 2s $R_{X3}$ reaches $4.15 \times 10^6$ ($383\times$ open 2D $L = 12$). Inset: Haah $K(L)$ on $\mathbb{T}^3$ across $L = 3\text{--}17$ versus invariant $K = 2$ (planar color) and $K = 1$ (planar surface).}
+  \label{fig:regimes}
 \end{figure*}
 
-\begin{table}[tbp]
-\caption{Staggered T-junction (torus, $K = 4$) and open-boundary planar ($K = 2$) 4.8.8 color-code benchmarks ($J = 1$; BP-OSD $t_{0.80}$; zero runs truncated before $t_{0.80}$).}
-\label{tab:extensionA}
+\begin{table}[!htbp]
+\caption{3D-local welded 4.8.8 color-code hierarchies across torus ($K = 4$), staggered T-junction ($K = 4$), and open-boundary planar ($K = 2$) geometries versus 2D 4.8.8 controls ($J = 1$; zero runs truncated before $t_{0.80}$).}
+\label{tab:color}
 {\scriptsize
-\setlength{\tabcolsep}{0.3pt}
+\setlength{\tabcolsep}{0.1pt}
 \begin{ruledtabular}
 \begin{tabular}{lcccr}
 Color code & $N$ ($\dim_{\mathrm{eff}}$) & $w$ & $\beta{=}5.0$ $t_{0.80}^{\mathrm{BP}}$ & $\beta{=}6.5$ $t_{0.80}^{\mathrm{BP}}$ [$95\%$ CI] \\
 \colrule
-T-junc.\ 1s $L_3$ & $200$ ($2.93$) & $14$ & $4.71{\times}10^3$ & $4.79{\times}10^5$ $[3.77, 6.97]{\times}10^5$ \\
-T-junc.\ 2s $L_3$ & $3{,}992$ ($2.83$) & $14$ & $3.73{\times}10^3$ & $3.19{\times}10^5$ $[2.08, 4.56]{\times}10^5$ \\
-T-junc.\ 2s $R_{X3}$ & $4{,}272$ ($2.86$) & $16$ & $1.13{\times}10^4$ & $1.11{\times}10^7$ $[5.47, 15.4]{\times}10^6$ \\
-T-junc.\ 3s $L_3$ & $80{,}648$ ($2.80$) & $18$ & $2.10{\times}10^3$ & $1.11{\times}10^5$ $[1.00, 1.33]{\times}10^5$ \\
+2D $L{=}3$ & $72$ ($2.00$) & $8$ & $1.29{\times}10^4$ & $6.02{\times}10^5$ $[3.57, 7.62]{\times}10^5$ \\
+2D $L{=}12$ & $1{,}152$ ($2.00$) & $8$ & $1.06{\times}10^3$ & $7.63{\times}10^4$ $[5.33, 11.3]{\times}10^4$ \\
+1s $L_{3,1}$ & $192$ ($2.89$) & $16$ & $6.12{\times}10^3$ & $4.41{\times}10^5$ $[2.82, 6.70]{\times}10^5$ \\
+1s $L_{3,2}$ & $240$ ($3.10$)$^*$ & $16$ & $5.67{\times}10^3$ & $5.68{\times}10^5$ $[4.15, 8.18]{\times}10^5$ \\
+2s SD & $5{,}088$ ($2.94$) & $18$ & $8.19{\times}10^2$ & $1.00{\times}10^5$ $[1.00, 1.00]{\times}10^5$ \\
+2s $C_3$ & $3{,}792$ ($2.80$) & $16$ & $3.18{\times}10^3$ & $4.28{\times}10^5$ $[2.64, 6.25]{\times}10^5$ \\
+2s $R_{Z3}$ & $4{,}704$ ($2.90$) & $16$ & $3.04{\times}10^3$ & $3.02{\times}10^5$ $[2.18, 4.94]{\times}10^5$ \\
+2s $R_3$ & $5{,}088$ ($2.94$) & $16$ & $6.85{\times}10^3$ & $6.16{\times}10^6$ $[4.06, 8.50]{\times}10^6$ \\
+2s $R_{X3}$ & $4{,}128$ ($2.84$) & $16$ & $9.82{\times}10^3$ & $8.91{\times}10^6$ $[5.72, 13.5]{\times}10^6$ \\
+3s $1{-}1{-}1$ & $75{,}504$ ($2.78$) & $24$ & $2.19{\times}10^3$ & $1.86{\times}10^5$ $[1.51, 2.06]{\times}10^5$ \\
+3s $1{-}2{-}1$ & $81{,}888$ ($2.80$) & $24$ & $4.08{\times}10^3$ & $1.41{\times}10^6$ $[0.95, 1.93]{\times}10^6$ \\
+3s $R_3 X$ & $110{,}400$ ($2.89$) & $24$ & $2.71{\times}10^3$ & $6.16{\times}10^5$ $[5.17, 6.90]{\times}10^5$ \\
+\colrule
+T-jc.\ 1s $L_3$ & $200$ ($2.93$) & $14$ & $4.71{\times}10^3$ & $4.79{\times}10^5$ $[3.77, 6.97]{\times}10^5$ \\
+T-jc.\ 2s $L_3$ & $3{,}992$ ($2.83$) & $14$ & $3.73{\times}10^3$ & $3.19{\times}10^5$ $[2.08, 4.56]{\times}10^5$ \\
+T-jc.\ 2s $R_{X3}$ & $4{,}272$ ($2.86$) & $16$ & $1.13{\times}10^4$ & $1.11{\times}10^7$ $[5.47, 15.4]{\times}10^6$ \\
+T-jc.\ 3s $L_3$ & $80{,}648$ ($2.80$) & $18$ & $2.10{\times}10^3$ & $1.11{\times}10^5$ $[1.00, 1.33]{\times}10^5$ \\
 \colrule
 Plan.\ 2D $L{=}6$ & $288$ ($2.00$) & $8$ & $5.11{\times}10^2$ & $1.00{\times}10^4$ $[1.00, 1.06]{\times}10^4$ \\
 Plan.\ 2D $L{=}12$ & $1{,}152$ ($2.00$) & $8$ & $5.84{\times}10^2$ & $1.08{\times}10^4$ $[1.00, 1.43]{\times}10^4$ \\
 Plan.\ 1s $L_{3,2}$ & $240$ ($3.10$)$^*$ & $16$ & $2.42{\times}10^2$ & $1.00{\times}10^4$ $[1.00, 1.00]{\times}10^4$ \\
-Plan.\ T-junc.\ 2s & $3{,}992$ ($2.83$) & $14$ & $1.58{\times}10^3$ & $1.15{\times}10^5$ $[0.80, 2.11]{\times}10^5$ \\
+Plan.\ T-jc.\ 2s & $3{,}992$ ($2.83$) & $14$ & $1.58{\times}10^3$ & $1.15{\times}10^5$ $[0.80, 2.11]{\times}10^5$ \\
 Plan.\ 2s $R_3$ & $5{,}088$ ($2.94$) & $16$ & $7.88{\times}10^3$ & $2.90{\times}10^6$ $[2.20, 4.16]{\times}10^6$ \\
 Plan.\ 2s $R_{X3}$ & $4{,}128$ ($2.84$) & $16$ & $1.05{\times}10^4$ & $4.15{\times}10^6$ $[2.51, 6.71]{\times}10^6$ \\
 \end{tabular}
 \end{ruledtabular}
 }
-\raggedright\footnotesize $^*$Single step ($s = 1, L_{\mathrm{blk}} = 3$) prior to $d_{\mathrm{pack}}(3, 2) = 2.80 < 3$ asymptotics.
+\raggedright\footnotesize $^*$At one step ($s = 1, L_{\mathrm{blk}} = 3$), boundary-face counts precede the asymptotic $d_{\mathrm{pack}}(3, 2) = 2.80 < 3$ scaling reached for $s \ge 2$.
 \end{table}
 
 \section{Conclusion}
 \label{sec:conclusion}
 
-Enforcing 3D Euclidean locality clarifies both what structural features welded memories actually need and where their finite-size bottlenecks lie. Subdivision $L = 3$ ($\log_3 \rho \in [2.72, 2.80] < 3$) forms the minimal 3D-local scale because $L = 2$ exceeds 3D packing. On pure-$L = 3$ surface hierarchies, local arm cuts fail by opening barrier-one gauge paths, whereas pre-registered $3 \times 3$ interface probes identify whole-bridge deletions in nonlimiting sectors ($C_3 R_{X3}$ and $R_{X3} R_{X3}$). Moving beyond $(X, Z, X, Z)$ on the exact same 3D complex produces compact three-step $(X, Z, X)$ ($19{,}174$ qubits) and symmetric four-step $(X, Z, Z, X)$ memories ($R_3 R_3^{ZX}, C_3 R_3^{ZX}, R_{Z3} R_3^{ZX}$) that extend $\beta = 6.5$ lifetimes $85.6\text{--}1{,}085\times$ while cutting $205\mathrm{k}\text{--}287\mathrm{k}$ qubits. Uniform $J = 1$ benchmarks trace the remaining gap to Haah's Cubic Code to degree-$2$ sheet qubits, and replacing surface sheets with degree-$\ge 3$ 4.8.8 color-code sheets under asymmetric seam welding reaches $8.91 \times 10^6$ on $4{,}128$-qubit $R_{X3}$ ($803\times$ BDL $R_3 R_3$ at $172\times$ fewer qubits). Staggered T-junction dispersion reaches $1.11 \times 10^7$ while isolating $E = 2$ dimer traps and $r = 2$ bridges as the three-step bottleneck, same-parity scaling grows $2.49\times$ ($1\mathrm{s} \to 3\mathrm{s}$), and alternating open boundaries maintain invariant $K = 2$ up to $4.15 \times 10^6$ ($383\times$ above 2D $L = 12$). Code, verification scripts, and data are available at \url{https://github.com/rohanbodke/qec/tree/main/gemini}.
+Three clear design principles govern finite-size 3D-local welded quantum memories. First, geometric packing requires subdivision $L \ge 3$ ($d_{\mathrm{pack}} \in [2.72, 2.80] < 3$), and retaining logical protection requires whole-bridge selection in nonlimiting sectors ($C_3 R_{X3}, R_{X3} R_{X3}$) rather than partial bridge-arm pruning. Second, simply reordering welding steps on the exact same 3D complex---into three-step $(X, Z, X)$ or symmetric $(X, Z, Z, X)$---raises surface-code lifetimes up to $1{,}085\times$ while removing hundreds of thousands of seam qubits, with paired BP-OSD confirming physical thermal crossing. Third, overcoming the bulk degree-$2$ bottleneck of surface sheets via degree-$\ge 3$ 4.8.8 color-code sheets and asymmetric seams reaches $8.91 \times 10^6$ at $4{,}128$ qubits ($1.11 \times 10^7$ with staggered T-junctions) and preserves $K = 2$ on open boundaries up to $4.15 \times 10^6$, pointing naturally toward degree-$4$ 3D welded sheets to suppress remaining $E = 2$ pair traps. Code, verification scripts, and data are available at \url{https://github.com/rohanbodke/qec/tree/main/gemini}.
 
 \appendix
 
-\section{Seeds, Seam Rules, and Decoders}
-\label{app:css}
-
-The planar surface seed $[[2, 1, (2, 1)]]$ consists of one square face with two rough edges ($q \in \{0, 1\}$, $H_Z = (1\;1)$, $H_X = \emptyset$, $\bar{X} = X_0 X_1$, $\bar{Z} = Z_0$), and the periodic torus seed has one face ($K = 2$). At each step, non-unit edges subdivide by $L \ge 3$, sheets duplicate, and vertical bridges attach along $r$ interior lines per direction. Ordering faces around edge $e$ as $f_0 < \dots < f_{d-1}$, ordinary ($d = 2$) and $X$-weld edges hold one qubit in all $d$ face checks, while $Z$-weld seams ($d \ge 3$) hold $d - 1$ qubits coupling adjacent pairs $\{f_j, f_{j+1}\}$. At each vertex $v$ with local $\mathbb{F}_2$ subspace dimension $d_v \le 7$, we enumerate nonzero combinations constant across $X$-weld edges and even across $Z$-weld edges, keeping $d_v$ minimum-weight independent $X$ checks ($w_{\max} \le 7$).
-
-For welded 4.8.8 color codes in Section~\ref{sec:color_welded}, each face $f$ hosts eight $(v, e, f)$ corner qubits ($N = 8F$; $K = 4$ on torus seeds, $K = 2$ with alternating rough/smooth open boundaries). Both $H_X$ and $H_Z$ include one weight-8 check per face, $(d - 1)$ weight-4 pair checks and/or one weight-$2d$ sum check per edge (asymmetric between $X$ and $Z$ on seams), and minimum-weight nullspace vertex checks enforcing even overlap on every face and edge check. All codes satisfy $R_{\max} \le 4.53$ in $\mathbb{R}^3$ ($1.34, 3.01, 4.25$ for $s = 1, 2, 3$ standard; $1.34, 3.19, 4.53$ with T-junctions and zero $d = 4$ edges on single-bridge steps), $H_X H_Z^T = 0 \pmod 2$, rank-verified $K$, and zero syndrome/commutation errors. At readout, UF grows clusters until solvable over $\mathbb{F}_2$, and BP-OSD runs $28$ damped min-sum iterations ($\alpha = 0.625, \omega = 0.50$) plus order-$36$ elimination.
-
-\section{Thin-Bridge Recurrence and \texorpdfstring{$\mathbb{R}^3$}{R3} Embedding}
-\label{app:packing}
+\section{Constructions, Packing Proof, and Barrier Certificates}
+\label{app:construction}
 
 \begin{proposition}[Thin-Bridge 3D Packing Cutoff]
 \label{prop:growth}
@@ -601,24 +341,129 @@ Partitioning faces at step $q \ge 0$ into ordinary faces $S_q$ and unit-width br
   \begin{pmatrix} F_0 \\ 0 \end{pmatrix},
   \label{eq:thin_recurrence}
 \end{equation}
-with $M_{Z,q} = F_q = S_q + B_q$, $N_q \ge \frac{3}{4}F_q$, and graph diameter $D_q = O(\prod_{t=1}^q L_t)$. Bounded-density, bounded-range placement in $\mathbb{R}^3$ therefore fails at $L = 2$ ($\log_2 \rho(T_{2,1}) \approx 3.295 > 3$) and requires $L \ge 3$ ($\log_3 \rho(T_{3,1}) \approx 2.723$, $\log_3 \rho(T_{3,2}) \approx 2.800$).
+with $M_{Z,q} = F_q = S_q + B_q$, $N_q \ge \frac{3}{4}F_q$, and graph diameter $D_q = O(\prod_{t=1}^q L_t)$. Bounded-density placement in $\mathbb{R}^3$ fails at $L = 2$ ($\log_2 \rho(T_{2,1}) \approx 3.295 > 3$) and requires $L \ge 3$ ($\log_3 \rho(T_{3,1}) \approx 2.723$, $\log_3 \rho(T_{3,2}) \approx 2.800$).
 \end{proposition}
 
 \begin{proof}
-Each ordinary face subdivides into $2L^2$ sheet subfaces and $2rL$ new vertical bridge faces; each thin bridge face subdivides into $2L$ sheet subfaces and $r$ new $1 \times 1$ bridge faces. Since every $Z$-check has weight $\ge 3$ and every qubit touches $\le 4$ faces, $N_q \ge \frac{3}{4}F_q$; fitting bounded-range checks inside $[0, O(L_{\mathrm{blk}})]^3$ requires $\rho(T_{L,r}) \le L^3$.
+Each ordinary face splits into $2L^2$ sheet subfaces and $2rL$ new vertical bridge faces; each thin bridge face splits into $2L$ sheet subfaces and $r$ new $1 \times 1$ bridge faces. Since every $Z$-check has weight $\ge 3$ and every qubit touches $\le 4$ faces, $N_q \ge \frac{3}{4}F_q$; fitting bounded-range checks inside $[0, O(L_{\mathrm{blk}})]^3$ requires $\rho(T_{L,r}) \le L^3$.
 \end{proof}
 
-Following BDL Theorem~2 \cite{selfcorrecting3D}, vertex coordinates scale by $L_q$ per step, apply bounded sub-voxel shifts $\|\eta\|_\infty \le 0.30$ to separate overlapping vertices, interpolate subdivided faces, and translate the duplicated copy by a unit vector before adding unit bridges, yielding $R_{\max} \le 3.79$ across Table~\ref{tab:specs}.
+\begin{table}[!htbp]
+\caption{Parameters of 3D-local welded surface codes ($L \ge 3$, planar $K = 1$): qubits $N$, check rows $(M_X, M_Z)$, box side $L_{\mathrm{blk}}$, effective dimension $\dim_{\mathrm{eff}}$, and clean $\beta = 6.5$ hazards $(\Gamma_X^{(0)}, \Gamma_Z^{(0)})$.}
+\label{tab:specs}
+{\scriptsize
+\setlength{\tabcolsep}{1.5pt}
+\begin{ruledtabular}
+\begin{tabular}{lccccr}
+Architecture & $N$ & $(M_X, M_Z)$ & $L_{\mathrm{blk}}$ & $\dim_{\mathrm{eff}}$ & $(\Gamma_X^{(0)},\Gamma_Z^{(0)})$ \\
+\colrule
+$C_3$ & $1{,}036$ & $(572, 474)$ & $9$ & $2.804$ & $(0.134, 0.158)$ \\
+$R_{X3}$ & $1{,}078$ & $(572, 516)$ & $9$ & $2.843$ & $(0.140, 0.158)$ \\
+$R_{Z3}$ & $1{,}426$ & $(896, 588)$ & $9$ & $2.902$ & $(0.153, 0.098)$ \\
+$R_3$ & $1{,}480$ & $(896, 636)$ & $9$ & $2.938$ & $(0.159, 0.098)$ \\
+$X_{3,1} Z_{3,2} X_{3,1}$ & $19{,}174$ & $(9{,}224, 10{,}236)$ & $27$ & $2.802$ & $(0.900, 0.876)$ \\
+$C_3 C_3$ & $415{,}004$ & $(233{,}128, 187{,}854)$ & $81$ & $2.763$ & $(6.121, 6.265)$ \\
+$C_3 R_{X3}$ & $431{,}188$ & $(233{,}128, 203{,}772)$ & $81$ & $2.782$ & $(6.308, 6.555)$ \\
+$R_{X3} R_{X3}$ & $470{,}332$ & $(253{,}192, 223{,}296)$ & $81$ & $2.803$ & $(6.650, 6.884)$ \\
+$C_3 R_3$ & $591{,}208$ & $(363{,}040, 251{,}304)$ & $81$ & $2.830$ & $(7.368, 4.366)$ \\
+$R_3 R_3$ & $709{,}408$ & $(439{,}168, 298{,}896)$ & $81$ & $2.869$ & $(8.199, 4.861)$ \\
+$C_3 R_3^{ZX}$ & $422{,}296$ & $(192{,}816, 251{,}304)$ & $81$ & $2.830$ & $(6.663, 6.111)$ \\
+$R_{Z3} R_3^{ZX}$ & $464{,}104$ & $(213{,}648, 273{,}648)$ & $81$ & $2.849$ & $(7.000, 6.458)$ \\
+$R_3 R_3^{ZX}$ & $504{,}352$ & $(231{,}168, 298{,}896)$ & $81$ & $2.869$ & $(7.343, 6.773)$ \\
+\end{tabular}
+\end{ruledtabular}
+}
+\end{table}
 
-\section{Quotient Identity and Asymptotic Conductance}
-\label{app:quotient}
+Starting from the planar seed $[[2, 1, (2, 1)]]$ ($H_Z = (1\;1)$) or 1-face torus ($K = 2$), surface edges ($d = 2$) and $X$-weld seams hold one qubit in $d$ face checks, while $Z$-weld seams hold $d - 1$ pair qubits; minimum-weight $\mathbb{F}_2$ vertex checks yield $w_{\max} \le 7$. Following BDL Theorem~2 \cite{selfcorrecting3D}, vertex shifts $\|\eta\|_\infty \le 0.30$ and unit translation embed all Table~\ref{tab:specs} codes with $R_{\max} \le 3.79$. For 4.8.8 color codes (Section~\ref{sec:color}), each face hosts eight corner qubits ($N = 8F$; $K = 4$ torus, $K = 2$ alternating open boundaries), with weight-8 face checks, asymmetric edge/seam checks, and nullspace vertex checks giving $R_{\max} \le 4.53$ (zero degree-$4$ edges on single-bridge T-junction steps).
 
-In a $K = 1$ reversible quotient with clean states $a = (0, 0)$ and $b = (0, 1)$, logical involution $\sigma(s, \ell) = (s, \ell \oplus 1)$ satisfies $\pi_{\sigma(x)} = \pi_x$ and $q_{\sigma(x)} = 1 - q_x$ for $q_x = \Pr_x(\tau_b < \tau_a)$. Pairing $x$ with $\sigma(x)$ in $\mathbb{E}_a[\tau_b] = (\sum_x \pi_x(1 - q_x))/\mathrm{cap}(a, b)$ \cite{metzner2009tpt} simplifies the numerator to $Z/2$, giving Eq.~\eqref{eq:tclean_identity}. Without $a \leftrightarrow b$ symmetry, slowing an excited edge can shorten hitting time (a four-state model with $c_{12} = \mu$ gives $\mathbb{E}_0[\tau_3](1.0) = 0.7038 > \mathbb{E}_0[\tau_3](0.1) = 0.6994$). As $\beta \to \infty$, physical conductances $(e^{\beta E(x)} + e^{\beta E(y)})^{-1}$ contract sub-barrier transitions into supernodes \cite{dorfler2011kron}; on $C_3$ with flat $\Delta E = 0$ flips scaled by $\mu = \lambda e^{-\beta}$, Kron reduction gives $\kappa_{C_3} \sim \frac{3(\lambda + 1)}{\lambda + 3}e^{-2\beta}$.
+Every CSS code was verified for $H_X H_Z^T = 0 \pmod 2$ and exact logical commutation. Exact search certifies barriers $(\Delta_X, \Delta_Z) = (2, 3)$ on $C_3, R_{Z3}$, $(3, 2)$ on $C_3^{ZX}, R_{X3}^{ZX}$, and $(3, 3)$ on $R_{X3}, R_3, R_{Z3}^{ZX}, R_3^{ZX}$; on 1-step 4.8.8 color codes, search certifies $(3, 3)$ on torus 1-step $R_1$, self-dual $R_2^{\mathrm{SD}}$, and T-junction $L_3$, $(3, 4)$ on asymmetric torus $R_2$, and $(2, 4)$ on open planar 1-step $R_2$.
 
-\section{Algebraic and Low-Energy Barrier Certificates}
-\label{app:certificates}
+\section{Surface-Code Quotient, Pruning, and Interface Details}
+\label{app:surface_diagnostics}
 
-Every CSS code in Tables~\ref{tab:specs}--\ref{tab:extensionA} was verified for $H_X H_Z^T = 0 \pmod 2$ and exact logical commutation. On 1-cycle $L = 3$ planar surface modules, exact search (energy $\le 2$) certifies $(\Delta_X, \Delta_Z) = (2, 3)$ on $C_3, R_{Z3}$, $(3, 2)$ on $C_3^{ZX}, R_{X3}^{ZX}$, and $(3, 3)$ on $R_{X3}, R_3, R_{Z3}^{ZX}, R_3^{ZX}$. On $C_3$ arm cuts (Table~\ref{tab:pruning}), full and $X$-pruned variants preserve $K = 1$ and $(2, 3)$, whereas $Z$-pruned and doubly pruned variants give $K = 12$ and barrier-$(1, 1)$ logical paths. On 1-step 4.8.8 color codes (search at energy $\le 3$, weight $\le 6$), torus 1-step $R_1$, self-dual $R_2^{\mathrm{SD}}$, and T-junction $L_3$ certify $(3, 3)$; asymmetric torus $R_2$ gives $(3, 4)$; and open planar 1-step $R_2$ ($K = 2$) gives $(2, 4)$.
+Grouping $X$ errors modulo $\mathrm{rowspace}(H_X)$ forms an exact Markov chain on syndromes and logical parity. For any $K = 1$ symmetric quotient with clean states $a = (0, 0)$ and $b = (0, 1)$, logical involution $\sigma(s, \ell) = (s, \ell \oplus 1)$ satisfies $\pi_{\sigma(x)} = \pi_x$ and $q_{\sigma(x)} = 1 - q_x$, reducing transition-path theory \cite{metzner2009tpt} to
+\begin{equation}
+  T_{\mathrm{clean}} = \mathbb{E}_a[\tau_b] = \frac{Z}{2\kappa} = \frac{Z}{2\Gamma \bar{h}},
+  \label{eq:tclean_identity}
+\end{equation}
+separating birth rate $\Gamma = \sum_{i \ne a} r_{ai}$ from crossing probability $\bar{h}$. At $\beta = 7.0$, one-step $C_3$ ($N = 41$, barrier~$2$) has $T_{\mathrm{clean}}^X \approx 2.61 \times 10^5$ ($\bar{h} = 3.06 \times 10^{-4}$), whereas two-bridge $R_3$ ($N = 44$, barrier~$3$) reaches $9.41 \times 10^7$ ($\bar{h} = 7.40 \times 10^{-7}$). Scaling symmetric $\Delta E = 0$ moves by $\mu \in (0, 1]$ obeys $0 \le d\log\kappa / d\log\mu \le 1$, so slowing flat moves cannot shorten $T_{\mathrm{clean}}$ (a four-state non-symmetric counterexample with $c_{12} = \mu$ gives $\mathbb{E}_0[\tau_3](1.0) = 0.7038 > 0.6994$), and Kron reduction \cite{dorfler2011kron} on $C_3$ at $\mu = \lambda e^{-\beta}$ gives $\kappa_{C_3} \sim \frac{3(\lambda + 1)}{\lambda + 3}e^{-2\beta}$. On matched 3D-local $L = 4$ modules ($N = 2{,}926, d_{\mathrm{pack}} = 2.54$), centered bridges delay first failure $6.19\times$ ($1{,}127$ vs.\ $182$), while offset bridges heal $3.8\times$ more excursions ($P_{\mathrm{healed}} = 0.478$ vs.\ $0.126$), leaving operational $t_{0.80}$ within $1.66\times$.
+
+Table~\ref{tab:pruning} summarizes the $C_3$ arm-pruning breakdown (where $Z$-pruning opens $K = 12$ gauge modes \cite{poulin2005} and barrier-$(1, 1)$ paths), and Table~\ref{tab:transfer} compares our zero-parameter $3 \times 3$ interface-probe predictions ($\mathcal{P}_{3\times 3}(B)$, $8{,}956\text{--}12{,}852$ qubits) with full two-cycle outcomes.
+
+\begin{table}[!htbp]
+\caption{Bridge-arm pruning on $C_3$ at $\beta = 6.5$ ($n_X = n_Z = 512$, UF readout, $10{,}000$ bootstrap draws).}
+\label{tab:pruning}
+{\scriptsize
+\setlength{\tabcolsep}{1.1pt}
+\begin{ruledtabular}
+\begin{tabular}{lccccr}
+Variant & $N$ & $\mathrm{rk}(H_X, H_Z)$ & $K/K_{\mathrm{t}}$ & $(\Delta_X,\Delta_Z)$ & UF $t_{0.80}$ [$95\%$ CI] \\
+\colrule
+Full & $1{,}036$ & $(561, 474)$ & $1/1$ & $(2, 3)$ & $3{,}503$ $[2{,}847, 4{,}243]$ \\
+Prune $X$ & $1{,}028$ & $(560, 467)$ & $1/1$ & $(2, 3)$ & $3{,}959$ $[3{,}153, 4{,}726]$ \\
+Prune $Z$ & $971$ & $(503, 456)$ & $12/1$ & $(1, 1)$ & $127.4$ $[97.5, 149.1]$ \\
+Prune both & $963$ & $(502, 449)$ & $12/1$ & $(1, 1)$ & $98.0$ $[81.0, 121.4]$ \\
+\end{tabular}
+\end{ruledtabular}
+}
+\end{table}
+
+\begin{table}[!htbp]
+\caption{Pre-registered $3 \times 3$ interface-probe predictions ($\beta = 6.5$) versus pure-$L = 3$ outcomes ($10{,}000$ bootstrap draws).}
+\label{tab:transfer}
+{\scriptsize
+\setlength{\tabcolsep}{1.0pt}
+\begin{ruledtabular}
+\begin{tabular}{lccccc}
+Contrast ($L{=}3$) & $\Delta N$ & $(N^{-1},\Gamma^{-1})$ & Pred. & UF & BP [$95\%$ CI] \\
+\colrule
+$C_3 R_{X3} / C_3 R_3$ & $-27.1\%$ & $(1.37, 0.91)$ & $2.89$ & $2.21$ & $2.25$ $[1.43, 2.65]$ \\
+$C_3 R_{Z3} / C_3 R_3$ & $-3.5\%$ & $(1.04, 1.02)$ & $0.111$ & $0.092$ & $0.096$ $[0.075, 0.118]$ \\
+$C_3 R_{X3} / C_3 R_{Z3}$ & $-24.4\%$ & $(1.32, 0.89)$ & $26.0$ & $24.0$ & $23.5$ $[14.1, 30.2]$ \\
+$C_3 R_{X3} / R_3 R_3$ & $-39.2\%$ & $(1.65, 1.02)$ & $3.19$ & $3.51$ & $3.82$ $[2.39, 4.47]$ \\
+$R_{X3} R_{X3} / R_3 R_3$ & $-33.7\%$ & $(1.51, 0.96)$ & $1.87$ & $4.42$ & $4.71$ $[3.57, 5.59]$ \\
+\end{tabular}
+\end{ruledtabular}
+}
+\end{table}
+
+\section{Paired Four-Decoder Calibration}
+\label{app:decoders}
+
+At readout, UF grows check-qubit clusters until solvable over $\mathbb{F}_2$, Hier-UF runs staged cluster radii ($16 \to 64 \to 256 \to \infty$), Cool-UF applies zero-temperature strictly downhill pre-cooling before UF \cite{kubica_sweep2019}, and BP-OSD runs $28$ damped min-sum iterations ($\alpha = 0.625, \omega = 0.50$) plus order-$36$ elimination \cite{panteleev_bposd, roffe_bposd2020}. Table~\ref{tab:decoders} lists paired i.i.d.\ thresholds and thermal failure shares across our pure-$L = 3$ surface campaign.
+
+\begin{table}[!htbp]
+\caption{Paired four-decoder comparison on pure-$L = 3$ surface memories: unrelaxed i.i.d.\ $p_{0.80}$ (top, $n = 64$) and thermal ratios near $t_{0.80}$ alongside quenched wrong-basin share $\phi_{\mathrm{b}}$ and BP-OSD rescued share $\phi_{\mathrm{BP}}$ (bottom; $10{,}000$ bootstrap draws).}
+\label{tab:decoders}
+{\scriptsize
+\setlength{\tabcolsep}{0.6pt}
+\begin{ruledtabular}
+\begin{tabular}{lcccc}
+i.i.d.\ code & $p_{0.80}^{\mathrm{UF}}$ & $p_{0.80}^{\mathrm{Cool}}$ & $p_{0.80}^{\mathrm{BP}}$ & BP/UF [$95\%$ CI] \\
+\colrule
+$R_3 X_{3,2}$ & $2.61\%$ & $4.20\%$ & $5.63\%$ & $2.15$ $[2.05, 2.34]$ \\
+$C_3 R_{X3}$ & $2.69\%$ & $4.38\%$ & $5.89\%$ & $2.19$ $[2.12, 2.27]$ \\
+$C_3 R_3^{ZX}$ & $2.46\%$ & $4.68\%$ & $6.24\%$ & $2.53$ $[2.38, 2.75]$ \\
+$R_3 R_3^{ZX}$ & $2.17\%$ & $4.52\%$ & $6.02\%$ & $2.77$ $[2.67, 2.84]$ \\
+\colrule
+Thermal ($\beta$) & Cool/UF & BP/UF [$95\%$ CI] & $\phi_{\mathrm{b}}$ & $\phi_{\mathrm{BP}}$ \\
+\colrule
+$C_3$ ($6.5$) & $1.00$ & $1.03$ $[0.95, 1.12]$ & $0.61$ & $0.06$ \\
+$R_3^{ZX}$ ($6.5$) & $1.00$ & $1.00$ $[0.95, 1.03]$ & $0.83$ & $0.00$ \\
+$X_{3,1} Z_{3,2} X_{3,1}$ ($7.0$) & $1.00$ & $1.00$ $[1.00, 1.03]$ & $0.41$ & $0.00$ \\
+$C_3 R_{X3}$ ($6.5$) & $1.00$ & $1.02$ $[0.72, 1.40]$ & $0.00$ & $0.12$ \\
+$R_{X3} R_{X3}$ ($6.5$) & $1.00$ & $1.00$ $[0.87, 1.10]$ & $0.00$ & $0.16$ \\
+$C_3 R_3^{ZX}$ ($4.5$) & $1.01$ & $1.13$ $[0.97, 1.26]$ & $0.00$ & $0.76$ \\
+$C_3 R_3^{ZX}$ ($5.5$) & $0.95$ & $1.06$ $[0.65, 1.82]$ & $0.00$ & $0.47$ \\
+$C_3 R_3^{ZX}$ ($6.5$) & $1.00$ & $1.00$ $[0.96, 1.00]$ & $0.00$ & $0.00$ \\
+$C_3 R_3^{ZX}$ ($7.0$) & $1.00$ & $1.00$ $[1.00, 1.00]$ & $0.00$ & $0.00$ \\
+$R_3 R_3^{ZX}$ ($6.5$) & $1.00$ & $1.00$ $[1.00, 1.00]$ & $0.00$ & $0.00$ \\
+$R_{Z3} R_3^{ZX}$ ($6.5$) & $1.00$ & $1.00$ $[1.00, 1.00]$ & $0.00$ & $0.00$ \\
+\end{tabular}
+\end{ruledtabular}
+}
+\end{table}
 
 \bibliographystyle{apsrev4-2}
 \bibliography{references}
