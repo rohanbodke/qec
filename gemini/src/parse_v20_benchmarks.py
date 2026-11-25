@@ -1,19 +1,15 @@
 #!/usr/bin/env python3
 """
 parse_v20_benchmarks.py
-Zero-trust parser and 10,000-draw bootstrap analyzer for the V20 cross-family finite-size
-benchmark campaign (`cluster_v20_results.txt`), comparing:
+Zero-trust parser and 10,000-draw bootstrap analyzer for the V20 3D cross-family benchmark
+campaign (`cluster_v20_results.txt`) under standard unit stabilizer coupling (J = 1),
+comparing:
   1. 2D Toric Code (`L = 8, 16, 32, 64`)
   2. Single-Scale 3D Welded Surface Codes (`L = 2, 3, 4, 6, 8`, 1-cycle Michnicki-type)
-  3. Haah's 3D Cubic Code 1 (`L = 5, 7, 9, 11, 13, 15, 17`)
-  4. 4D Toric Code (`L = 3, 4, 5`)
-  5. Multiscale Selective & Palindromic 3D Welded Hierarchies (`C2`, `X2 R_{3Z} X2`, `R3 X2`,
-     `C2 C2`, `C2 C2^{ZX}`, `C3 C2^{ZX}`)
+  3. 3D-Volume-Admissible Multiscale Welded Codes (`C3 C2`, `RX3 C2`, `C3 C2^ZX`, `RZ3 C2^ZX`)
+  4. Haah's 3D Cubic Code 1 (`L = 5, 7, 9, 11, 13, 15, 17`, strictly Z^3 nearest-neighbor)
 under identical continuous-time BKL Glauber dynamics and paired 4-decoder readout (`UF`,
-`Cool-UF`, `Hier-UF`, `BP-OSD`), across all three energy normalizations:
-  - Equal mean Hamiltonian coupling per physical qubit (`bq`: `beta_q = beta * d_tot / 4`)
-  - Equal clean bulk single-qubit flip gap (`bg`: `beta * DeltaE_bulk = 13.0`)
-  - Raw unnormalized per-check coupling `J = 1` (`br`: `beta = 6.50`)
+`Cool-UF`, `Hier-UF`, `BP-OSD`).
 """
 
 from collections import defaultdict
@@ -26,7 +22,7 @@ import numpy as np
 ROOT = Path(__file__).resolve().parent.parent
 V20_RAW = ROOT / "cluster_v20_results.txt"
 V20_SPECS = ROOT / "v20_code_specs.json"
-V19_JSON = ROOT / "parsed_v19_rebalance_and_decoders.json"
+V19_SPECS = ROOT / "v19_code_specs.json"
 OUT_JSON = ROOT / "parsed_v20_benchmarks.json"
 
 DECS = ("uf", "cool", "hier", "bposd")
@@ -133,6 +129,18 @@ def indep_ratio(a_num, a_den, dec="bposd"):
 def main():
     with open(V20_SPECS) as f:
         specs = json.load(f)
+    if V19_SPECS.exists():
+        with open(V19_SPECS) as f:
+            s19 = json.load(f)
+        for k, v in s19.items():
+            if k not in specs:
+                specs[k] = {
+                    "tag": k,
+                    "N": v["N"],
+                    "K": v["K"],
+                    "max_w": 7,
+                    "d_tot": 4.63,
+                }
 
     trajs = defaultdict(dict)
     grids = {}
@@ -183,34 +191,30 @@ def main():
         ev["mode"] = mode_lbl
         ev["N"] = sp["N"]
         ev["K"] = sp["K"]
-        ev["max_w"] = sp["max_w"]
-        ev["d_tot"] = sp["d_tot"]
-        ev["beta_check"] = betas[arm_key]
-        ev["beta_q"] = betas[arm_key] * sp["d_tot"] / 4.0
+        ev["max_w"] = sp.get("max_w", 7)
+        ev["d_tot"] = sp.get("d_tot", 4.63)
+        ev["beta"] = betas[arm_key]
         arms[arm_key] = ev
 
         u = ev["decoders"]["uf"]
         bp = ev["decoders"]["bposd"]
-        rbp = ev["paired_bposd_vs_uf"]
         p_u = "" if u["t_80_crossed"] else "+"
         p_b = "" if bp["t_80_crossed"] else "+"
         print(
-            f"  {arm_key:32s}: N={sp['N']:7,d} K={sp['K']:2d} d_tot={sp['d_tot']:.2f} b={ev['beta_check']:.3f} (bq={ev['beta_q']:.2f}) "
-            f"n=({ev['n_X']},{ev['n_Z']}) cap=({ev['capped_X']},{ev['capped_Z']}) "
-            f"| UF={u['t_80']:9.1f}{p_u} | BPOSD={bp['t_80']:9.1f}{p_b} [{bp['t_80_ci95'][0]:.3g},{bp['t_80_ci95'][1]:.3g}] (BP/UF={rbp['ratio']:.2f})"
+            f"  {arm_key:32s}: N={sp['N']:7,d} K={sp['K']:2d} beta={ev['beta']:.3f} "
+            f"n=({ev['n_X']},{ev['n_Z']}) pre_cap=({ev['capped_pre_t80_X']},{ev['capped_pre_t80_Z']}) "
+            f"| UF={u['t_80']:9.1f}{p_u} | BPOSD={bp['t_80']:9.1f}{p_b} [{bp['t_80_ci95'][0]:.3g},{bp['t_80_ci95'][1]:.3g}]"
         )
 
     contrasts = {}
     c_specs = [
-        ("bq65_sqXZZX_over_haahL7",   "v20_weld_4s_sqXZZX__bq6.50",  "v20_haah_L7__bq6.50"),
-        ("bq65_torXZZX_over_haahL7",  "v20_weld_4s_torXZZX__bq6.50", "v20_haah_L7__bq6.50"),
-        ("bq65_C3C2ZX_over_haahL7",   "v20_weld_4s_C3C2ZX__bq6.50",  "v20_haah_L7__bq6.50"),
-        ("bq65_sqXZZX_over_tor2dL32", "v20_weld_4s_sqXZZX__bq6.50",  "v20_tor2d_L32__bq6.50"),
-        ("bq65_sqXZZX_over_michL4",   "v20_weld_4s_sqXZZX__bq6.50",  "v20_mich1c_L4__bq6.50"),
-        ("bq65_haahL7_over_haahL17",  "v20_haah_L7__bq6.50",         "v20_haah_L17__bq6.50"),
-        ("bq755_sqXZZX_over_haahL7",  "v20_weld_4s_sqXZZX__bq7.55",  "v20_haah_L7__bq7.55"),
-        ("bq755_torXZZX_over_haahL7", "v20_weld_4s_torXZZX__bq7.55", "v20_haah_L7__bq7.55"),
-        ("bq755_haahL7_over_haahL17", "v20_haah_L7__bq7.55",         "v20_haah_L17__bq7.55"),
+        ("mich_L2_over_L8_b65",  "v20_mich1c_L2__br6.50", "v20_mich1c_L8__br6.50"),
+        ("tor2d_L8_over_L64_b65","v20_tor2d_L8__bq6.50",  "v20_tor2d_L64__bq6.50"),
+        ("haah_L5_over_L17_b325","v20_haah_L5__bq6.50",   "v20_haah_L17__bq6.50"),
+        ("haah_L7_over_L17_b325","v20_haah_L7__bq6.50",   "v20_haah_L17__bq6.50"),
+        ("haah_L5_over_L17_b40", "v20_haah_L5__br4.00",   "v20_haah_L17__br4.00"),
+        ("haah_L7_over_L17_b40", "v20_haah_L7__br4.00",   "v20_haah_L17__br4.00"),
+        ("haah_L7_over_L17_b378","v20_haah_L7__bq7.55",   "v20_haah_L17__bq7.55"),
     ]
     for cname, k_num, k_den in c_specs:
         if k_num in arms and k_den in arms:
@@ -219,7 +223,7 @@ def main():
                 "uf": indep_ratio(arms[k_num], arms[k_den], "uf"),
             }
             rb = contrasts[cname]["bposd"]
-            print(f"  [{cname:28s}]: BPOSD ratio = {rb['ratio']:8.2f}x [{rb['ci95'][0]:.2f}, {rb['ci95'][1]:.2f}]")
+            print(f"  [{cname:24s}]: BPOSD ratio = {rb['ratio']:8.2f}x [{rb['ci95'][0]:.2f}, {rb['ci95'][1]:.2f}]")
 
     clean_arms = {k: {kk: vv for kk, vv in v.items() if not kk.startswith("_")} for k, v in arms.items()}
     with open(OUT_JSON, "w") as f:
