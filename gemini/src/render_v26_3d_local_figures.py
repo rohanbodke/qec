@@ -577,21 +577,22 @@ def render_fig6(v21, v19, loc_quot):
     save_fig(fig, "fig_v26_6_decoders")
 
 
-def render_fig7(v20, v21):
+def render_fig7(v20, v21, v22):
     arms20 = v20["arms"]
     arms21 = v21["arms"]
-    fig = plt.figure(figsize=(7.15, 2.80))
-    gs = GridSpec(1, 3, figure=fig, width_ratios=[1.04, 1.08, 1.00], wspace=0.34)
+    arms22 = v22["arms"]
+    fig = plt.figure(figsize=(7.15, 2.85))
+    gs = GridSpec(1, 3, figure=fig, width_ratios=[1.04, 1.12, 1.00], wspace=0.34)
 
     def get_pt(src, k):
-        m = arms20 if src == "v20" else arms21
+        m = arms20 if src == "v20" else (arms21 if src == "v21" else arms22)
         return m[k]["decoders"]["bposd"] if k in m else None
 
-    # Panel (a): J = 1 temperature scaling across strictly 2D & 3D-local families (pure L = 3 welded!)
+    # Panel (a): J = 1 temperature scaling across 2D & 3D-local families (explicit prior vs ours!)
     ax_a = fig.add_subplot(gs[0, 0])
     style_ax(ax_a, "a", x_off=-0.22)
     curves_a = [
-        (C_SLATE, "o", "-", "2D Toric ($\\mathbb{Z}^2$)", [
+        (C_SLATE, "o", "-", "2D Toric (prior)", [
             (4.50, get_pt("v20", "v20_tor2d_L16__br4.50")),
             (5.00, get_pt("v20", "v20_tor2d_L16__br5.00")),
             (5.50, get_pt("v20", "v20_tor2d_L16__bq5.50")),
@@ -599,7 +600,7 @@ def render_fig7(v20, v21):
             (6.50, get_pt("v20", "v20_tor2d_L16__bq6.50")),
             (7.00, get_pt("v20", "v20_tor2d_L16__bq7.00")),
         ]),
-        (C_AMBER, "D", "--", "1-cyc. 3D Welded", [
+        (C_AMBER, "D", "--", "Michnicki 1-cyc. (prior)", [
             (4.50, get_pt("v20", "v20_mich1c_L4__br4.50")),
             (5.00, get_pt("v20", "v20_mich1c_L4__br5.00")),
             (5.50, get_pt("v20", "v20_mich1c_L4__br5.50")),
@@ -607,7 +608,7 @@ def render_fig7(v20, v21):
             (6.50, get_pt("v20", "v20_mich1c_L4__br6.50")),
             (7.00, get_pt("v20", "v20_mich1c_L4__br7.00")),
         ]),
-        (C_BLUE, "^", "-.", "2-cyc. $XZXZ$ ($L{=}3$)", [
+        (C_BLUE, "^", "-.", "Ours: XZXZ cut ($L{=}3$)", [
             (4.50, get_pt("v21", "v21_4s_C3_RX3__b4.50")),
             (5.00, get_pt("v21", "v21_4s_C3_RX3__b5.00")),
             (5.50, get_pt("v21", "v21_4s_C3_RX3__b5.50")),
@@ -615,7 +616,7 @@ def render_fig7(v20, v21):
             (6.50, get_pt("v21", "v21_4s_C3_RX3__b6.50")),
             (7.00, get_pt("v21", "v21_4s_C3_RX3__b7.00")),
         ]),
-        (C_GREEN, "s", "-", "2-cyc. $XZZX$ ($L{=}3$)", [
+        (C_GREEN, "s", "-", "Ours: XZZX ($L{=}3$)", [
             (4.50, get_pt("v21", "v21_4s_C3_R3ZX__b4.50")),
             (5.00, get_pt("v21", "v21_4s_C3_R3ZX__b5.00")),
             (5.50, get_pt("v21", "v21_4s_C3_R3ZX__b5.50")),
@@ -623,7 +624,15 @@ def render_fig7(v20, v21):
             (6.50, get_pt("v21", "v21_4s_C3_R3ZX__b6.50")),
             (7.00, get_pt("v21", "v21_4s_C3_R3ZX__b7.00")),
         ]),
-        (C_RED, "P", "-", "3D Haah ($\\mathbb{Z}^3$)", [
+        (C_PURP, "*", "-", "Ours: 3D Color ($L{=}3$)", [
+            (4.00, get_pt("v22", "v22_cc2s_RX3__b4.00")),
+            (4.50, get_pt("v22", "v22_cc2s_RX3__b4.50")),
+            (5.00, get_pt("v22", "v22_cc2s_RX3__b5.00")),
+            (5.50, get_pt("v22", "v22_cc2s_RX3__b5.50")),
+            (6.00, get_pt("v22", "v22_cc2s_RX3__b6.00")),
+            (6.50, get_pt("v22", "v22_cc2s_RX3__b6.50")),
+        ]),
+        (C_RED, "P", "-", "Haah Cubic (prior)", [
             (4.00, get_pt("v20", "v20_haah_L7__br4.00")),
             (4.25, get_pt("v20", "v20_haah_L7__br4.25")),
             (4.50, get_pt("v20", "v20_haah_L7__br4.50")),
@@ -633,14 +642,15 @@ def render_fig7(v20, v21):
     ]
     for col, mk, ls, lbl, pts in curves_a:
         xs, ys = [], []
+        ms = 5.6 if mk == "*" else 4.2
         for b, d in pts:
             if d is None:
                 continue
             xs.append(b); ys.append(d["t_80"])
-            plot_dstat(ax_a, b, d, col, mk, 4.3)
+            plot_dstat(ax_a, b, d, col, mk, ms)
         if xs:
             ax_a.plot(xs, ys, color=col, ls=ls, lw=1.35, zorder=3)
-            ax_a.plot([], [], color=col, marker=mk, ls=ls, lw=1.35, ms=4.3, label=lbl)
+            ax_a.plot([], [], color=col, marker=mk, ls=ls, lw=1.35, ms=ms, label=lbl)
 
     ax_a.set_yscale("log")
     ax_a.set_xlim(3.85, 7.18)
@@ -660,7 +670,7 @@ def render_fig7(v20, v21):
         if k in arms20:
             d = arms20[k]["decoders"]["bposd"]
             xs.append(arms20[k]["N"]); ys.append(d["t_80"])
-            plot_dstat(ax_b, arms20[k]["N"], d, C_SLATE, "o", 4.3)
+            plot_dstat(ax_b, arms20[k]["N"], d, C_SLATE, "o", 4.2)
     ax_b.plot(xs, ys, color=C_SLATE, ls="-", lw=1.35, zorder=3)
 
     xs, ys = [], []
@@ -669,50 +679,65 @@ def render_fig7(v20, v21):
         if k in arms20:
             d = arms20[k]["decoders"]["bposd"]
             xs.append(arms20[k]["N"]); ys.append(d["t_80"])
-            plot_dstat(ax_b, arms20[k]["N"], d, C_AMBER, "D", 4.3)
+            plot_dstat(ax_b, arms20[k]["N"], d, C_AMBER, "D", 4.2)
     ax_b.plot(xs, ys, color=C_AMBER, ls="--", lw=1.35, zorder=3)
 
-    for k, txt, mult, ha_al in [
-        ("v21_4s_R3_R3__b6.50",   "$R_3 R_3$",   (0.95, 0.44), "center"),
-        ("v21_4s_C3_RX3__b6.50",  "$C_3 R_{X3}$",(0.68, 0.90), "right"),
-    ]:
-        if k in arms21:
-            nv = arms21[k]["N"]
-            d = arms21[k]["decoders"]["bposd"]
-            plot_dstat(ax_b, nv, d, C_BLUE, "^", 4.6)
-            ax_b.text(nv * mult[0], d["t_80"] * mult[1], txt, fontsize=5.8, color=C_DARK, ha=ha_al, va="center")
+    # BDL original XZXZ baseline R_3 R_3 plotted hollow with explicit prior label
+    if "v21_4s_R3_R3__b6.50" in arms21:
+        nv = arms21["v21_4s_R3_R3__b6.50"]["N"]
+        d = arms21["v21_4s_R3_R3__b6.50"]["decoders"]["bposd"]
+        plot_dstat(ax_b, nv, d, C_BLUE, "^", 4.8, hollow=True)
+        ax_b.text(nv * 0.90, d["t_80"] * 0.36, "BDL $R_3 R_3$ (prior)", fontsize=5.2, color=C_BLUE, ha="center", va="center")
+
+    if "v21_4s_C3_RX3__b6.50" in arms21:
+        nv = arms21["v21_4s_C3_RX3__b6.50"]["N"]
+        d = arms21["v21_4s_C3_RX3__b6.50"]["decoders"]["bposd"]
+        plot_dstat(ax_b, nv, d, C_BLUE, "^", 4.6)
+        ax_b.text(nv * 0.58, d["t_80"] * 0.88, "$C_3 R_{X3}$", fontsize=5.4, color=C_DARK, ha="right", va="center")
 
     for k, txt, mult, ha_al in [
-        ("v21_4s_C3_R3ZX__b6.50", "$C_3 R_3^{ZX}$", (0.68, 0.85), "right"),
-        ("v21_4s_R3_R3ZX__b6.50", "$R_3 R_3^{ZX}$", (0.90, 2.25), "center"),
+        ("v21_4s_C3_R3ZX__b6.50", "$C_3 R_3^{ZX}$", (0.68, 0.56), "center"),
+        ("v21_4s_R3_R3ZX__b6.50", "$R_3 R_3^{ZX}$", (0.88, 2.45), "center"),
     ]:
         if k in arms21:
             nv = arms21[k]["N"]
             d = arms21[k]["decoders"]["bposd"]
-            plot_dstat(ax_b, nv, d, C_GREEN, "s", 4.7)
-            ax_b.text(nv * mult[0], d["t_80"] * mult[1], txt, fontsize=5.8, color=C_DARK, ha=ha_al, va="center")
+            plot_dstat(ax_b, nv, d, C_GREEN, "s", 4.6)
+            ax_b.text(nv * mult[0], d["t_80"] * mult[1], txt, fontsize=5.4, color=C_DARK, ha=ha_al, va="center")
+
+    # Ours: strictly pure-L=3 3D-local welded color-code family overlay (dim_F < 3)
+    for k, txt, mult, ha_al in [
+        ("v22_cc2s_RX3__b6.50",          "Color $R_{X3}$", (1.35, 1.90), "left"),
+        ("v22_cc2s_R3__b6.50",           "Color $R_3$",    (1.40, 0.55), "left"),
+        ("v22_cc3s_X3r1Z3r2X3r1__b6.50", "Color 3s",       (1.36, 0.92), "left"),
+    ]:
+        if k in arms22:
+            nv = arms22[k]["N"]
+            d = arms22[k]["decoders"]["bposd"]
+            plot_dstat(ax_b, nv, d, C_PURP, "*", 5.6)
+            ax_b.text(nv * mult[0], d["t_80"] * mult[1], txt, fontsize=5.4, color=C_PURP, ha=ha_al, va="center")
 
     for k, txt, mult in [
-        ("v20_haah_L7__br6.50",  "Haah $L{=}7$",  (1.38, 0.92)),
-        ("v20_haah_L11__br6.50", "Haah $L{=}11$", (1.38, 0.86)),
+        ("v20_haah_L7__br6.50",  "Haah $L{=}7$",  (1.38, 1.05)),
+        ("v20_haah_L11__br6.50", "Haah $L{=}11$", (1.38, 0.88)),
     ]:
         if k in arms20:
             nv = arms20[k]["N"]
             d = arms20[k]["decoders"]["bposd"]
-            plot_dstat(ax_b, nv, d, C_RED, "P", 4.9)
-            ax_b.text(nv * mult[0], d["t_80"] * mult[1], txt, fontsize=5.8, color=C_RED, va="center")
+            plot_dstat(ax_b, nv, d, C_RED, "P", 4.8)
+            ax_b.text(nv * mult[0], d["t_80"] * mult[1], txt, fontsize=5.5, color=C_RED, va="center")
 
     ax_b.set_xscale("log")
     ax_b.set_yscale("log")
-    ax_b.set_xlim(85.0, 1.8e6)
+    ax_b.set_xlim(85.0, 2.0e6)
     ax_b.set_ylim(80.0, 6.5e9)
     ax_b.set_xlabel("Physical qubits $N$ ($\\beta = 6.5$)")
     ax_b.set_ylabel("BP-OSD $t_{0.80}$")
     ax_b.legend(
         handles_a, labels_a,
-        loc="center left", bbox_to_anchor=(0.02, 0.53),
-        frameon=True, framealpha=0.93, edgecolor="#cbd5e1",
-        fontsize=5.3, borderpad=0.24, labelspacing=0.20, handlelength=1.45,
+        loc="center left", bbox_to_anchor=(0.015, 0.42),
+        frameon=True, framealpha=0.94, edgecolor="#cbd5e1",
+        fontsize=4.75, borderpad=0.20, labelspacing=0.16, handlelength=1.28,
     )
 
     # Panel (c): Haah's 3D Cubic Code finite-size crossover vs lattice size L (J = 1)
@@ -753,6 +778,112 @@ def render_fig7(v20, v21):
     save_fig(fig, "fig_v26_7_benchmarks")
 
 
+def render_fig8(v20, v21, v22):
+    arms20 = v20["arms"]
+    arms21 = v21["arms"]
+    arms22 = v22["arms"]
+    iid22 = v22["iid_arms"]
+    fig = plt.figure(figsize=(7.15, 2.75))
+    gs = GridSpec(1, 3, figure=fig, width_ratios=[1.08, 1.04, 1.00], wspace=0.35)
+
+    # Panel (a): Unwelded 2D 4.8.8 color tori (L=3..12) vs 3D-Local Welded Color-Code hierarchies at beta = 6.5
+    ax_a = fig.add_subplot(gs[0, 0])
+    style_ax(ax_a, "a", x_off=-0.22)
+
+    xs, ys = [], []
+    for L in (3, 6, 9, 12):
+        k = f"v22_cc2d_L{L}__b6.50"
+        if k in arms22:
+            d = arms22[k]["decoders"]["bposd"]
+            xs.append(arms22[k]["N"]); ys.append(d["t_80"])
+            plot_dstat(ax_a, arms22[k]["N"], d, C_SLATE, "o", 4.3)
+    if xs:
+        ax_a.plot(xs, ys, color=C_SLATE, ls="-", lw=1.35, label="2D 4.8.8 ($L{=}3{\\to}12$)", zorder=3)
+
+    for k, col, mk, hol, txt, mult, ha_al in [
+        ("v22_cc1s_L3r2_sd__b6.50",      C_AMBER, "x", False, "1s SD",        (1.00, 1.95), "center"),
+        ("v22_cc1s_L3r2__b6.50",         C_TEAL,  "D", False, "1s $R_3$",     (1.50, 1.15), "left"),
+        ("v22_cc2s_mix32__b6.50",        C_GREEN, "D", True,  "$(3,2)$",      (1.00, 2.05), "center"),
+        ("v22_cc2s_R3_sd__b6.50",        C_RED,   "v", False, "2s SD",        (1.00, 0.48), "center"),
+        ("v22_cc2s_C3__b6.50",           C_PURP,  "^", False, "$C_3$",        (0.68, 1.25), "right"),
+        ("v22_cc2s_RZ3__b6.50",          C_SLATE, "^", False, "$R_{Z3}$",     (1.42, 0.90), "left"),
+        ("v22_cc2s_R3__b6.50",           C_PURP,  "P", False, "$R_3$",        (1.42, 0.72), "left"),
+        ("v22_cc2s_RX3__b6.50",          C_PURP,  "*", False, "$R_{X3}$",     (0.65, 1.55), "right"),
+        ("v22_cc3s_X3r1Z3r1X3r1__b6.50", C_BLUE,  "o", False, "3s $1{-}1{-}1$", (0.66, 0.78), "right"),
+        ("v22_cc3s_X3r1Z3r2X3r1__b6.50", C_BLUE,  "s", False, "3s $1{-}2{-}1$", (0.66, 1.65), "right"),
+        ("v22_cc3s_R3X3r2__b6.50",       C_BLUE,  "D", False, "3s $R_3X$",    (0.66, 0.56), "right"),
+    ]:
+        if k in arms22:
+            nv = arms22[k]["N"]
+            d = arms22[k]["decoders"]["bposd"]
+            ms = 5.6 if mk == "*" else 4.5
+            plot_dstat(ax_a, nv, d, col, mk, ms, hollow=hol)
+            ax_a.text(nv * mult[0], d["t_80"] * mult[1], txt, fontsize=5.3, color=C_DARK, ha=ha_al, va="center")
+
+    ax_a.set_xscale("log")
+    ax_a.set_yscale("log")
+    ax_a.set_xlim(45.0, 2.6e5)
+    ax_a.set_ylim(2.5e4, 2.0e8)
+    ax_a.set_xlabel("Physical qubits $N$ ($\\beta = 6.5$)")
+    ax_a.set_ylabel("BP-OSD $t_{0.80}$")
+    ax_a.legend(loc="upper right", frameon=True, framealpha=0.94, edgecolor="#cbd5e1", fontsize=5.4, borderpad=0.22)
+
+    # Panel (b): Temperature scaling of 3D Welded Color vs 3D Welded Toric (XZZX) vs 2D Color vs Haah
+    ax_b = fig.add_subplot(gs[0, 1])
+    style_ax(ax_b, "b", x_off=-0.22)
+    b_curves = [
+        (C_SLATE, "o", "-",  "2D Color ($L{=}12$)",     [(b, arms22.get(f"v22_cc2d_L12__b{b:.2f}")) for b in (4.0, 4.5, 5.0, 5.5, 6.0, 6.5)]),
+        (C_GREEN, "s", "--", "Toric $XZZX$ ($422\\mathrm{k}$)", [(b, arms21.get(f"v21_4s_C3_R3ZX__b{b:.2f}")) for b in (4.5, 5.0, 5.5, 6.0, 6.5)]),
+        (C_BLUE,  "^", "-.", "Color 3s ($82\\mathrm{k}$)", [(b, arms22.get(f"v22_cc3s_X3r1Z3r2X3r1__b{b:.2f}")) for b in (4.5, 5.0, 5.5, 6.0, 6.5)]),
+        (C_PURP,  "*", "-",  "Color $R_{X3}$ ($4.1\\mathrm{k}$)", [(b, arms22.get(f"v22_cc2s_RX3__b{b:.2f}")) for b in (4.0, 4.5, 5.0, 5.5, 6.0, 6.5)]),
+        (C_TEAL,  "D", "-",  "Color $(3,2)$ ($2.2\\mathrm{k}$)", [(b, arms22.get(f"v22_cc2s_mix32__b{b:.2f}")) for b in (4.0, 4.5, 5.0, 5.5, 6.0, 6.5)]),
+        (C_RED,   "P", "-",  "3D Haah ($L{=}7$)",       [(b, arms20.get(f"v20_haah_L7__br{b:.2f}")) for b in (4.0, 4.5, 5.0, 6.5)]),
+    ]
+    for col, mk, ls, lbl, pts in b_curves:
+        xs, ys = [], []
+        ms = 5.5 if mk == "*" else 4.2
+        for b, arm in pts:
+            if arm is None:
+                continue
+            d = arm["decoders"]["bposd"]
+            xs.append(b); ys.append(d["t_80"])
+            plot_dstat(ax_b, b, d, col, mk, ms)
+        if xs:
+            ax_b.plot(xs, ys, color=col, ls=ls, lw=1.35, zorder=3)
+            ax_b.plot([], [], color=col, marker=mk, ls=ls, lw=1.35, ms=ms, label=lbl)
+    ax_b.set_yscale("log")
+    ax_b.set_xlim(3.85, 6.68)
+    ax_b.set_xticks([4.0, 4.5, 5.0, 5.5, 6.0, 6.5])
+    ax_b.set_ylim(25.0, 5.0e9)
+    ax_b.set_xlabel("Inverse temperature $\\beta$ ($J = 1$)")
+    ax_b.set_ylabel("BP-OSD $t_{0.80}$")
+    ax_b.legend(loc="lower right", frameon=True, framealpha=0.94, edgecolor="#cbd5e1", fontsize=4.85, borderpad=0.20, labelspacing=0.16, handlelength=1.30)
+
+    # Panel (c): Paired 4-decoder single-shot i.i.d. threshold on 3D-local welded color code `v22_cc2s_R3` (5,088 qubits)
+    ax_c = fig.add_subplot(gs[0, 2])
+    style_ax(ax_c, "c", x_off=-0.22)
+    target_iid = "v22_cc2s_R3" if "v22_cc2s_R3" in iid22 else "v22_cc3s_X3r1Z3r2X3r1"
+    if target_iid in iid22:
+        ia = iid22[target_iid]
+        pg = np.array(ia["p_grid"]) * 100.0
+        for d, col, ls, mk, nm in [
+            ("uf",    C_SLATE, "-",  "o", "UF"),
+            ("hier",  C_AMBER, "--", "s", "Hier-UF"),
+            ("cool",  C_BLUE,  "-.", "^", "Cool-UF"),
+            ("bposd", C_PURP,  "-",  "D", "BP-OSD"),
+        ]:
+            p80 = ia["decoders"][d]["p_80"] * 100.0
+            ax_c.plot(pg, ia["decoders"][d]["curve_Q"], color=col, ls=ls, marker=mk, ms=3.4, markevery=2, lw=1.45, label=f"{nm} (${p80:.2f}\\%$)")
+    ax_c.axhline(0.80, color="#94a3b8", lw=0.8, ls=":")
+    ax_c.set_xlim(0.4, 8.2)
+    ax_c.set_ylim(0.0, 1.04)
+    ax_c.set_xlabel("Bit/phase flip rate $p$ (%)")
+    ax_c.set_ylabel("Single-shot $P_{\\mathrm{rec}}(p)$")
+    ax_c.legend(loc="lower left", frameon=True, framealpha=0.94, edgecolor="#cbd5e1", fontsize=5.7, borderpad=0.24)
+
+    save_fig(fig, "fig_v27_8_color_welded")
+
+
 def main():
     with open(ROOT / "verified_3d_local_L3_geometry.json") as f:
         geom = json.load(f)
@@ -772,6 +903,8 @@ def main():
         v20 = json.load(f)
     with open(ROOT / "parsed_v21_3d_local.json") as f:
         v21 = json.load(f)
+    v22_p = ROOT / "parsed_v22_color_welded.json"
+    v22 = json.load(open(v22_p)) if v22_p.exists() else {"arms": {}, "iid_arms": {}}
 
     render_fig1(geom, suiteA, v21)
     render_fig2(v21)
@@ -779,7 +912,8 @@ def main():
     render_fig4(frozen, geom, v21)
     render_fig5(v21)
     render_fig6(v21, v19, loc_quot)
-    render_fig7(v20, v21)
+    render_fig7(v20, v21, v22)
+    render_fig8(v20, v21, v22)
 
 
 if __name__ == "__main__":
