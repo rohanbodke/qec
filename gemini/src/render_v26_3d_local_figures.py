@@ -564,7 +564,7 @@ def render_fig6(v21, v19, loc_quot):
     f_ex = np.array([arms21[k]["failure_anatomy_near_t80"]["frac_excited_unrescued"] for k, _ in present])
     f_bp = np.array([arms21[k]["failure_anatomy_near_t80"]["frac_rescued_by_bposd"] for k, _ in present])
 
-    ax_c.bar(xs, f_gq, width=0.58, color=C_TEAL, label="Wrong basin ($s{=}0$/quench)")
+    ax_c.bar(xs, f_gq, width=0.58, color=C_TEAL, label="Wrong logical basin")
     ax_c.bar(xs, f_ex, width=0.58, bottom=f_gq, color=C_AMBER, label="Excited (both fail)")
     ax_c.bar(xs, f_bp, width=0.58, bottom=f_gq + f_ex, color=C_GREEN, label="Rescued by BP-OSD")
     ax_c.set_xticks(xs)
@@ -801,32 +801,36 @@ def render_fig8(v20, v21, v22):
         ax_a.plot(xs, ys, color=C_SLATE, ls="-", lw=1.35, label="2D 4.8.8 ($L{=}3{\\to}12$)", zorder=3)
 
     for k, col, mk, hol, txt, mult, ha_al in [
-        ("v22_cc1s_L3r2_sd__b6.50",      C_AMBER, "x", False, "1s SD",        (1.00, 1.95), "center"),
-        ("v22_cc1s_L3r2__b6.50",         C_TEAL,  "D", False, "1s $R_3$",     (1.50, 1.15), "left"),
-        ("v22_cc2s_mix32__b6.50",        C_GREEN, "D", True,  "$(3,2)$",      (1.00, 2.05), "center"),
-        ("v22_cc2s_R3_sd__b6.50",        C_RED,   "v", False, "2s SD",        (1.00, 0.48), "center"),
-        ("v22_cc2s_C3__b6.50",           C_PURP,  "^", False, "$C_3$",        (0.68, 1.25), "right"),
-        ("v22_cc2s_RZ3__b6.50",          C_SLATE, "^", False, "$R_{Z3}$",     (1.42, 0.90), "left"),
-        ("v22_cc2s_R3__b6.50",           C_PURP,  "P", False, "$R_3$",        (1.42, 0.72), "left"),
-        ("v22_cc2s_RX3__b6.50",          C_PURP,  "*", False, "$R_{X3}$",     (0.65, 1.55), "right"),
-        ("v22_cc3s_X3r1Z3r1X3r1__b6.50", C_BLUE,  "o", False, "3s $1{-}1{-}1$", (0.66, 0.78), "right"),
-        ("v22_cc3s_X3r1Z3r2X3r1__b6.50", C_BLUE,  "s", False, "3s $1{-}2{-}1$", (0.66, 1.65), "right"),
-        ("v22_cc3s_R3X3r2__b6.50",       C_BLUE,  "D", False, "3s $R_3X$",    (0.66, 0.56), "right"),
+        ("v22_cc1s_L3r2_sd__b6.50",      C_AMBER, "x", False, "",               (1.00, 1.00), "center"),
+        ("v22_cc1s_L3r2__b6.50",         C_TEAL,  "D", False, "1-step",         (1.50, 1.15), "left"),
+        ("v22_cc2s_R3_sd__b6.50",        C_RED,   "v", False, "2s SD",          (1.00, 0.48), "center"),
+        ("v22_cc2s_C3__b6.50",           C_PURP,  "^", False, "",               (0.68, 1.25), "right"),
+        ("v22_cc2s_RZ3__b6.50",          C_SLATE, "^", False, "",               (1.42, 0.90), "left"),
+        ("v22_cc2s_R3__b6.50",           C_PURP,  "P", False, "$R_3$",          (1.42, 0.72), "left"),
+        ("v22_cc2s_RX3__b6.50",          C_PURP,  "*", False, "$R_{X3}$",       (0.62, 1.00), "right"),
+        ("v22_cc3s_X3r1Z3r1X3r1__b6.50", C_BLUE,  "o", False, "",               (0.66, 0.78), "right"),
+        ("v22_cc3s_X3r1Z3r2X3r1__b6.50", C_BLUE,  "s", False, "3-step $1{-}2{-}1$", (0.64, 1.65), "right"),
+        ("v22_cc3s_R3X3r2__b6.50",       C_BLUE,  "D", False, "",               (0.66, 0.56), "right"),
     ]:
         if k in arms22:
             nv = arms22[k]["N"]
             d = arms22[k]["decoders"]["bposd"]
             ms = 5.6 if mk == "*" else 4.5
             plot_dstat(ax_a, nv, d, col, mk, ms, hollow=hol)
-            ax_a.text(nv * mult[0], d["t_80"] * mult[1], txt, fontsize=5.3, color=C_DARK, ha=ha_al, va="center")
+            if txt:
+                ax_a.text(nv * mult[0], d["t_80"] * mult[1], txt, fontsize=5.3, color=C_DARK, ha=ha_al, va="center")
 
+    ax_a.plot([], [], color=C_TEAL, ls="None", marker="D", ms=4.2, label="1-step ($L{=}3$)")
+    ax_a.plot([], [], color=C_RED, ls="None", marker="v", ms=4.2, label="Self-dual seams")
+    ax_a.plot([], [], color=C_PURP, ls="None", marker="*", ms=5.0, label="2-step ($L{=}3$)")
+    ax_a.plot([], [], color=C_BLUE, ls="None", marker="s", ms=4.2, label="3-step ($L{=}3$)")
     ax_a.set_xscale("log")
     ax_a.set_yscale("log")
     ax_a.set_xlim(45.0, 2.6e5)
-    ax_a.set_ylim(2.5e4, 2.0e8)
+    ax_a.set_ylim(2.5e4, 6.0e7)
     ax_a.set_xlabel("Physical qubits $N$ ($\\beta = 6.5$)")
     ax_a.set_ylabel("BP-OSD $t_{0.80}$")
-    ax_a.legend(loc="upper right", frameon=True, framealpha=0.94, edgecolor="#cbd5e1", fontsize=5.4, borderpad=0.22)
+    ax_a.legend(loc="upper right", frameon=True, framealpha=0.94, edgecolor="#cbd5e1", fontsize=5.0, borderpad=0.22, labelspacing=0.14)
 
     # Panel (b): Temperature scaling of 3D Welded Color vs 3D Welded Toric (XZZX) vs 2D Color vs Haah
     ax_b = fig.add_subplot(gs[0, 1])
@@ -836,7 +840,6 @@ def render_fig8(v20, v21, v22):
         (C_GREEN, "s", "--", "Toric $XZZX$ ($422\\mathrm{k}$)", [(b, arms21.get(f"v21_4s_C3_R3ZX__b{b:.2f}")) for b in (4.5, 5.0, 5.5, 6.0, 6.5)]),
         (C_BLUE,  "^", "-.", "Color 3s ($82\\mathrm{k}$)", [(b, arms22.get(f"v22_cc3s_X3r1Z3r2X3r1__b{b:.2f}")) for b in (4.5, 5.0, 5.5, 6.0, 6.5)]),
         (C_PURP,  "*", "-",  "Color $R_{X3}$ ($4.1\\mathrm{k}$)", [(b, arms22.get(f"v22_cc2s_RX3__b{b:.2f}")) for b in (4.0, 4.5, 5.0, 5.5, 6.0, 6.5)]),
-        (C_TEAL,  "D", "-",  "Color $(3,2)$ ($2.2\\mathrm{k}$)", [(b, arms22.get(f"v22_cc2s_mix32__b{b:.2f}")) for b in (4.0, 4.5, 5.0, 5.5, 6.0, 6.5)]),
         (C_RED,   "P", "-",  "3D Haah ($L{=}7$)",       [(b, arms20.get(f"v20_haah_L7__br{b:.2f}")) for b in (4.0, 4.5, 5.0, 6.5)]),
     ]
     for col, mk, ls, lbl, pts in b_curves:
@@ -921,7 +924,7 @@ def render_fig9(v20, v21, v22, v23, ext_geom):
             mx.append(L); my.append(d["t_80"])
             plot_dstat(ax_a, L, d, C_AMBER, "D", 3.9)
     if mx:
-        ax_a.plot(mx, my, color=C_AMBER, ls="--", lw=1.25, label="Michnicki 1-cyc. ($\\beta{=}6.5$)")
+        ax_a.plot(mx, my, color=C_AMBER, ls="--", lw=1.25, label="Michnicki 1-cyc. (6.5)")
 
     # 3) Even-step Toric XZZX (s=2 -> s=4 at beta=6.5)
     tx, ty = [], []
@@ -931,13 +934,13 @@ def render_fig9(v20, v21, v22, v23, ext_geom):
             tx.append(Lval); ty.append(d["t_80"])
             plot_dstat(ax_a, Lval, d, C_GREEN, "s", 4.5)
     if tx:
-        ax_a.plot(tx, ty, color=C_GREEN, ls="-", lw=1.45, label="Toric $XZZX$ $s{=}2{\\to}4$ ($6.5$)")
+        ax_a.plot(tx, ty, color=C_GREEN, ls="-", lw=1.45, label="Surface $XZZX$ (6.5)")
 
     # 4) Odd-step Color (same parity s=1 -> s=3) at beta=6.5 and dispersed s=1 -> s=3 at beta=7.0
     for lbl, col, mk, ls, pts in [
-        ("Color $1{\\to}3$ std ($6.5$)", C_PURP, "o", "-.", [(3, arms22.get("v22_cc1s_L3r2__b6.50")), (27, arms22.get("v22_cc3s_X3r1Z3r2X3r1__b6.50"))]),
-        ("Color $1{\\to}3$ disp ($6.5$)", C_BLUE, "*", "-", [(3, arms23.get("v23_disp_1s_L3__b6.50")), (27, arms23.get("v23_disp_3s_L3__b6.50"))]),
-        ("Color $1{\\to}3$ disp ($7.0$)", C_TEAL, "P", "-", [(3, arms23.get("v23_disp_1s_L3__b7.00")), (27, arms23.get("v23_disp_3s_L3__b7.00"))]),
+        ("Color $1{\\to}3$ (6.5)", C_PURP, "o", "-.", [(3, arms22.get("v22_cc1s_L3r2__b6.50")), (27, arms22.get("v22_cc3s_X3r1Z3r2X3r1__b6.50"))]),
+        ("Color T-junc. (6.5)",  C_BLUE, "*", "-",  [(3, arms23.get("v23_disp_1s_L3__b6.50")), (27, arms23.get("v23_disp_3s_L3__b6.50"))]),
+        ("Color T-junc. (7.0)",  C_TEAL, "P", "-",  [(3, arms23.get("v23_disp_1s_L3__b7.00")), (27, arms23.get("v23_disp_3s_L3__b7.00"))]),
     ]:
         px, py = [], []
         ms = 5.4 if mk == "*" else 4.3
@@ -956,21 +959,19 @@ def render_fig9(v20, v21, v22, v23, ext_geom):
     ax_a.set_xticks([2, 3, 5, 9, 17, 27, 81])
     ax_a.set_xticklabels(["2", "3", "5", "9", "17", "27", "81"], fontsize=7.5)
     ax_a.set_ylim(1.2e2, 4.5e8)
-    ax_a.set_xlabel("Box size $L_{\\mathrm{blk}}$ (fixed $\\beta$)")
+    ax_a.set_xlabel("Linear box size $L_{\\mathrm{blk}}$")
     ax_a.set_ylabel("BP-OSD $t_{0.80}$")
-    ax_a.legend(loc="upper right", frameon=True, framealpha=0.93, edgecolor="#cbd5e1", fontsize=4.6, borderpad=0.20, labelspacing=0.14)
+    ax_a.legend(loc="upper right", frameon=True, framealpha=0.93, edgecolor="#cbd5e1", fontsize=4.7, borderpad=0.20, labelspacing=0.14)
 
-    # Panel (b): Extension A1 — BDL T-junction dispersion vs + pillars across temperature
+    # Panel (b): T-junction dispersion vs multi-sheet seams across temperature
     ax_b = fig.add_subplot(gs[0, 1])
     style_ax(ax_b, "b", x_off=-0.22)
     b_series = [
-        (C_SLATE, "o", "--", "2s $C_3$ ($+$ pillar, $3.8\\mathrm{k}$)",      [(b, arms22.get(f"v22_cc2s_C3__b{b:.2f}")) for b in (4.5, 5.0, 5.5, 6.0, 6.5)]),
-        (C_TEAL,  "s", "-",  "2s Disp. ($T$ junc., $4.0\\mathrm{k}$)",      [(b, arms23.get(f"v23_disp_2s_L3__b{b:.2f}")) for b in (4.5, 5.0, 5.5, 6.0, 6.5, 7.0)]),
-        (C_PURP,  "*", "-",  "2s $R_{X3}$ ($4.1\\mathrm{k}$)",               [(b, arms22.get(f"v22_cc2s_RX3__b{b:.2f}")) for b in (4.5, 5.0, 5.5, 6.0, 6.5)]),
-        ("#db2777", "D", "-", "2s $R_X$ + Disp. ($4.3\\mathrm{k}$)",         [(b, arms23.get(f"v23_disp_2s_RX3__b{b:.2f}")) for b in (5.0, 5.5, 6.0, 6.5)]),
-        (C_AMBER, "v", "--", "3s $1{-}1{-}1$ ($+$ pillar, $75\\mathrm{k}$)", [(b, arms22.get(f"v22_cc3s_X3r1Z3r1X3r1__b{b:.2f}")) for b in (4.5, 5.0, 5.5, 6.0, 6.5)]),
-        (C_BLUE,  "^", "-.", "3s $1{-}2{-}1$ ($82\\mathrm{k}$)",             [(b, arms22.get(f"v22_cc3s_X3r1Z3r2X3r1__b{b:.2f}")) for b in (4.5, 5.0, 5.5, 6.0, 6.5)] + [(7.0, arms23.get("v23_cc3s_121_ref__b7.00"))]),
-        (C_GREEN, "P", "-",  "3s Disp. ($T$ junc., $81\\mathrm{k}$)",      [(b, arms23.get(f"v23_disp_3s_L3__b{b:.2f}")) for b in (4.5, 5.0, 5.5, 6.0, 6.5, 7.0)]),
+        (C_PURP,    "*", "-",  "2-step $R_{X3}$ ($4.1\\mathrm{k}$)",           [(b, arms22.get(f"v22_cc2s_RX3__b{b:.2f}")) for b in (4.5, 5.0, 5.5, 6.0, 6.5)]),
+        ("#db2777", "D", "-",  "2-step $R_{X3}$ + T-junc. ($4.3\\mathrm{k}$)", [(b, arms23.get(f"v23_disp_2s_RX3__b{b:.2f}")) for b in (5.0, 5.5, 6.0, 6.5)]),
+        (C_BLUE,    "^", "-.", "3-step $1{-}2{-}1$ ($82\\mathrm{k}$)",         [(b, arms22.get(f"v22_cc3s_X3r1Z3r2X3r1__b{b:.2f}")) for b in (4.5, 5.0, 5.5, 6.0, 6.5)] + [(7.0, arms23.get("v23_cc3s_121_ref__b7.00"))]),
+        (C_AMBER,   "v", "--", "3-step $1{-}1{-}1$ ($75\\mathrm{k}$)",         [(b, arms22.get(f"v22_cc3s_X3r1Z3r1X3r1__b{b:.2f}")) for b in (4.5, 5.0, 5.5, 6.0, 6.5)]),
+        (C_GREEN,   "P", "-",  "3-step T-junc. ($81\\mathrm{k}$)",             [(b, arms23.get(f"v23_disp_3s_L3__b{b:.2f}")) for b in (4.5, 5.0, 5.5, 6.0, 6.5, 7.0)]),
     ]
     for col, mk, ls, lbl, pts in b_series:
         xs, ys = [], []
@@ -1007,10 +1008,10 @@ def render_fig9(v20, v21, v22, v23, ext_geom):
         ax_c.text(560.0, 3.6e3, "Open 2D\n($L{=}6,12$)", fontsize=5.2, color=C_SLATE, ha="center", va="top")
 
     for k, col, mk, txt, mult, ha_al in [
-        ("v23_plan_cc1s_L3r2__b6.50",  C_AMBER, "D", "1s",        (1.00, 2.35), "center"),
-        ("v23_plan_disp_2s_L3__b6.50", C_TEAL,  "s", "Disp. 2s",  (1.00, 0.34), "center"),
-        ("v23_plan_cc2s_RX3__b6.50",   C_PURP,  "*", "$R_{X3}$",  (1.00, 2.35), "center"),
-        ("v23_plan_cc2s_R3__b6.50",    C_BLUE,  "^", "$R_3$",     (1.30, 0.85), "left"),
+        ("v23_plan_cc1s_L3r2__b6.50",  C_AMBER, "D", "1-step",     (1.00, 2.35), "center"),
+        ("v23_plan_disp_2s_L3__b6.50", C_TEAL,  "s", "T-junc. 2s", (1.00, 0.34), "center"),
+        ("v23_plan_cc2s_RX3__b6.50",   C_PURP,  "*", "$R_{X3}$",   (1.00, 2.35), "center"),
+        ("v23_plan_cc2s_R3__b6.50",    C_BLUE,  "^", "$R_3$",      (1.30, 0.85), "left"),
     ]:
         if k in arms23:
             nv = arms23[k]["N"]
@@ -1027,7 +1028,7 @@ def render_fig9(v20, v21, v22, v23, ext_geom):
 
     # Inset: Constant K (planar welded) vs oscillating K(L) (periodic Haah)
     if "haah_K_vs_L" in ext_geom:
-        axins = ax_c.inset_axes([0.16, 0.53, 0.44, 0.41])
+        axins = ax_c.inset_axes([0.19, 0.54, 0.42, 0.40])
         hkl = sorted(ext_geom["haah_K_vs_L"].values(), key=lambda x: x["L"])
         ls_h = [x["L"] for x in hkl]
         ks_h = [x["K"] for x in hkl]
@@ -1040,7 +1041,7 @@ def render_fig9(v20, v21, v22, v23, ext_geom):
         axins.set_xticks([3, 8, 15, 17])
         axins.tick_params(labelsize=5.4, pad=1.0)
         axins.set_xlabel("$L$", fontsize=5.8, labelpad=0.8)
-        axins.set_ylabel("$K$", fontsize=5.8, labelpad=0.8)
+        axins.set_ylabel("$K$", fontsize=5.8, labelpad=1.6)
         axins.legend(loc="upper left", frameon=False, fontsize=4.4, handlelength=1.0, labelspacing=0.1)
 
     save_fig(fig, "fig_v28_9_regimes_and_dispersion")
